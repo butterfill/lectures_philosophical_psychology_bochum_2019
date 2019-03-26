@@ -1,0 +1,232 @@
+
+\def \papersize {a4paper}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Philosophical Psychology: Action, Perception and Metarepresentation (MA)}
+\def \isubtitle {}
+\def \iauthor {University of Warwick, Autumn Term 2016--7}
+\def \iemail{s.butterfill@warwick.ac.uk}
+%\def \iauthor {}
+%\def \iemail{}
+\date{}
+
+
+\input{preamble_steve_report2_pdftex}
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings
+\usepackage{bibentry}
+
+
+%adjust title size & font
+\pretitle{
+	\begin{center}
+	%\sffamily
+	\LARGE
+}
+
+%\author{}
+
+%use titlesec package to make subsections bold italics
+%\titleformat*{\section}{\bfseries\itshape}
+
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std}
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+
+\bibliographystyle{apalike} %newapa
+
+\nobibliography{$HOME/endnote/phd_biblio}
+%\bibliography{/Users/stephenbutterfill/endnote/phd_biblio}
+
+\tolerance=5000
+
+
+\maketitle
+%\tableofcontents
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1}
+
+%\begin{abstract}
+%\noindent
+%***
+%\end{abstract}
+
+
+\section{Outline}
+Philosophical investigation is indispensable for fully understanding many discoveries in the cognitive sciences, and for identifying new areas of investigation. Key questions include: Are any cognitive processes modular? Is a distinction such as that between implicit and explicit knowledge needed in explaining cognitive development? Are there distinct roles for intention and motor representation in explaining the purposiveness of action? How if it all do motor representations shape experiences of actions, one’s own or others’? What is categorical perception and how is it related to phenomenology? Are there multiple systems for tracking others’ actions, beliefs and other mental states? Can emotions or other mental phenomena be known by means of perceiving them? When two or more agents act together, in virtue of what can their actions have a collective goal? What is it for agents to act together cooperatively, or to be committed to do so?
+
+
+{
+	%increase space between rows
+	\renewcommand{\arraystretch}{1.5}
+\begin{table}[htbp]
+\begin{center}
+\footnotesize	%shrink for better spacing
+\begin{tabular*}{1\textwidth}{ l l }
+
+\toprule
+
+\newcounter{num}
+
+	\\  \stepcounter{num}
+	\arabic{num}.
+		& \textit{Seeing Red: Do Humans Visually Experience Categorical Colour Properties?}
+			\\ & Reading: \citet{witzel2014category,webster:2012_color}
+
+			\\ \stepcounter{num}
+			\arabic{num}.
+				&  \textit{Purposive Action: Intention and Motor Representation}
+				 \\ & Reading: \citet{butterfill:2012_intention,mylopoulos:2016_intentions}
+
+			\\  \stepcounter{num}
+			\arabic{num}.
+				& \textit{On the Motor Theory of Speech Perception}
+					\\ & Reading: \citet{Liberman:1985bn,Galantucci:2006mo}
+
+\\  \stepcounter{num}
+\arabic{num}.
+	& \textit{Understanding Action: Motor Representation in Action Observation, and the Teleological Stance}
+		\\ & Reading: \citet{sinigaglia:2015_goal_ascription,sinigaglia:2015_puzzle}
+
+\\ \stepcounter{num}
+\arabic{num}.
+	& \textit{Seeing Causal Interactions}
+	\\ & Reading: \citet{Butterfill:2009vs,rips:2011_causation}
+	%	\newline  Reading: \citet{Franklin:2005hp,Kowalski:2006hk}
+%
+
+
+%
+\\ \stepcounter{num}
+\arabic{num}.
+	&  \textit{Do Humans Perceive Others' Feelings?}
+	\\ & Reading: \citet{butterfill:2015_perceiving}
+	%	\newline Reading: \citet{Baillargeon:gx}
+%
+
+\\ \stepcounter{num}
+\arabic{num}.
+	& 	\textit{Acting Together: Collective Goals and Motor Representation}
+	\\ & Reading: \citet{vesper_minimal_2010,butterfill:2015_planning,butterfill:2016_minimal}
+	%	\newline Reading: \citet{lidz:2003_what, lidz:2004_reaffirming}
+
+\\ \stepcounter{num}
+\arabic{num}.
+	& 	\textit{Mindreading in Humans: Systems, Models and Signature Limits}
+	\\ & Reading: \citet{butterfill_minimal,Apperly:2009ju,carruthers:2015_mindreading}
+
+
+	\\ \stepcounter{num}
+	\arabic{num}.
+		&  \textit{Mindreading in Nonhuman Animals}
+		\\ & Reading: \citet{halina:2015_there,heyes:2014_animal,butterfill:2016_animal_mindreading}
+
+
+\\ \stepcounter{num}
+\arabic{num}.
+	&  \textit{Interaction in Radical Interpretation}
+	\\ & Reading: \citet{butterfill:2012_interacting,Davidson:1973jx,Dennett:1987sf}
+%\\
+%
+\\
+%
+\bottomrule
+%
+\end{tabular*}
+\caption{Provisional schedule of topics}
+\label{table:schedule}
+\end{center}	%careful -- position of this affects distance between table and caption(!)
+\end{table}
+}
+
+
+
+
+\section{Reading}
+
+
+\vspace{.5em} \noindent \bibentry{adolphs:2001_neurobiology}
+
+\vspace{.5em} \noindent \bibentry{Apperly:2010kx}
+
+\vspace{.5em} \noindent \bibentry{Apperly:2009ju}
+
+\vspace{.5em} \noindent \bibentry{aviezer:2012_body}
+
+\vspace{.5em} \noindent \bibentry{Borg:2007kh}
+
+\vspace{.5em} \noindent \bibentry{blair:2003_facial}
+
+\vspace{.5em} \noindent \bibentry{butterfill:2015_perceiving}
+
+\vspace{.5em} \noindent \bibentry{butterfill_minimal}
+
+% \vspace{.5em} \noindent \bibentry{carruthers:2013_mindreading}
+
+\vspace{.5em} \noindent \bibentry{carruthers:2015_two}
+
+% \vspace{.5em} \noindent \bibentry{carruthers:1996_theories}
+
+\vspace{.5em} \noindent \bibentry{Clayton:2007fh}
+
+\vspace{.5em} \noindent \bibentry{Davidson:1973jx}
+
+\vspace{.5em} \noindent \bibentry{Dennett:1987sf}
+
+\vspace{.5em} \noindent \bibentry{Gallese:2004dm}
+
+\vspace{.5em} \noindent \bibentry{Gergely:1995sq}
+
+\vspace{.5em} \noindent \bibentry{Etcoff:1992zd}
+
+\vspace{.5em} \noindent \bibentry{Heider:1944ts}
+
+\vspace{.5em} \noindent \bibentry{Jacob:2005fz}
+
+\vspace{.5em} \noindent \bibentry{Liberman:1985bn}
+
+\vspace{.5em} \noindent \bibentry{Low:2012_identity}
+
+\vspace{.5em} \noindent \bibentry{rizzolatti_mirrors_2008}
+
+\vspace{.5em} \noindent \bibentry{Samson:2010jm}
+
+\vspace{.5em} \noindent \bibentry{scholl:2013_perceiving}
+
+\vspace{.5em} \noindent \bibentry{schneider:2014_what}
+
+\vspace{.5em} \noindent \bibentry{sinigaglia:2015_puzzle}
+
+\vspace{.5em} \noindent \bibentry{smith:2010_seeing}
+
+\vspace{.5em} \noindent \bibentry{smith:2013_phenomenology}
+
+\vspace{.5em} \noindent \bibentry{Wel:2013uq}
+
+\vspace{.5em} \noindent \bibentry{Wilson:2005qu}
+
+\vspace{.5em} \noindent \bibentry{Zacks:2001vo}
+
+\vspace{.5em} \noindent \bibentry{zawidzki:2013_mindshaping}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

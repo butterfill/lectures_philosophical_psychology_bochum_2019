@@ -1,0 +1,106 @@
+---cson
+layout: 'deck_unit'
+title: "Some Evidence"
+tags: []
+description: """
+  Many animals including scrub jays (Clayton, Dally and Emery 2007), ravens (Bugnyar, Reber and Buckner
+  2016), goats (Kaminski, Call and Tomasello 2006), dogs (Kaminski et al. 2009), ringtailed lemurs
+  (Sandel, MacLean and Hare 2011), monkeys (Burkart and Heschl 2007; Hattori, Kuroshima and Fujita 2009)
+  and chimpanzees (Melis, Call and Tomasello 2006; Karg et al. 2015) reliably vary their actions in ways
+  that are appropriate given facts about another’s mental states. 
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+//-
+  +slide_middle
+    .premack-quote
+      .notes Researchers sometimes use the term ‘theory of mind’.
+      .handout.notes.show
+        span ‘In saying that an individual has a 
+        span.theory-of-mind theory of mind,
+        span  we mean that the individual [can ascribe] mental states’ 
+      .handout.notes.ctd \citep[p.\ 515]{premack_does_1978}
+      p.right.grey-text Premack & Woodruff, 1978 p. 515
+    .notes: :t
+      What sort of evidence might cause researchers to accept that a 
+      nonhuman has a theory of mind?
+
+
++slide({bkg:'hare_2001_fig1.png'})
+  p.source Hare et al (2001, figure 1)
+    .notes: :t
+      In this experiment by Brian Hare and colleagues, a subordinate chimpanzee makes predictions about a
+      dominant chimpanzee’s ability to retrieve food. They found that the subordinate’s predictions take
+      into account whether the dominant’s view was blocked while the food was placed. This could be
+      explained by the Third Principle. For the subordinate to predict that the dominant will not be able
+      to recover the food, it is sufficient to think: because the dominant did not encounter the food,
+      she will not be able to retrieve it.
+    .notes.handout: :t
+      ‘In informed trials dominant individuals witnessed the experimenter hiding 
+      food behind one of the occluders whereas in uninformed trials they could 
+      not see the baiting procedure. In misinformed trials, dominants witnessed 
+      the experimenter hiding food behind one of the occluders, and once the 
+      dominant’s visual access was blocked, the experimenter switched the food 
+      from its original location to the other occluder’ \citep{Hare:2001ph}.
+      
+
++slide
+  +img_clip('clayton_2007_fig11.png')
+  p.source Clayton et al, 2007 figure 11
+
++slide
+  +img_clip('clayton_2007_fig12.png')
+  p.source Clayton et al, 2007 figure 12
+  .notes.handout: :t
+    ‘the jays were much more likely to re-cache if they had been observed by a conspecific while they
+    were caching than when they had cached in private. By re-caching items that the observer had seen
+    them cache, the cachers significantly reduce the chance of cache theft, as observers would be unable
+    to rely on memory to facilitate accurate cache theft’ \citep[p.~516]{Clayton:2007fh}.
+
++slide
+  +img_clip('bugnyar_2016_fig1.png', 'rect(0px,999px,365px,0px)')
+  p.source Bugnyar et al, 2016 figure 1
+  .notes: :t
+    First show that window open vs window closed affects caching behaviour.
+    Then familiarise ravens with the peephole, letting them use it while humans
+    cache and letting them ‘steal’ the human-cached food.
+    Now test them by allowing them to cache when there’s apparently (from the sound,
+    which is actually a recording) 
+    a raven on the other side.
++slide
+  +img_clip('bugnyar_2016_fig2a.png', 'rect(0px, 430px, 999px, 0px)')
+  p.source Bugnyar et al, 2016 figure 2a
+  .notes: :t
+    Conclusion 1:
+    ‘Peephole designs can allow researchers to overcome the confound of gaze cues’ \citep{bugnyar:2016_ravens}.
+  .handout: :t
+    ‘ravens can transfer knowledge from their own experience in a novel context---using peepholes to look
+    into an adjacent room---to a caching situation in which they can hear but not see a conspecific in that
+    room’ \citep{bugnyar:2016_ravens}.
+
++slide
+  +img_clip('bugnyar_2016_fig1.png')
+  p.source Bugnyar et al, 2016 figure 1
++slide
+  +img_clip('bugnyar_2016_fig2a.png')
+
+
++slide
+  video(width="640", height="480", controls)
+    source(src="/mov/Krupenye_2016_s1.mp4",type="video/mp4")
+  p.source Krupenye et al, 2016
+
++slide_middle
+  .notes.show
+    span ‘In saying that an individual has a 
+    span.theory-of-mind theory of mind,
+    span  we mean that the individual [can ascribe] mental states’ 
+  p.right.grey-text Premack & Woodruff, 1978 p. 515
+  .slide
+    p.em-above Which action a chimp or jay predicts another will perform
+    p depends to some extent on
+    p what the other sees, knows or believes.

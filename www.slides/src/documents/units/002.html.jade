@@ -1,0 +1,139 @@
+--- cson
+layout: 'deck_unit'
+title: "Contrast Cases and the Simple View"
+tags: ['contrast-case', 'simple-view']
+description: """
+  Getting a pre-theoretical handle on joint action is best done by contrasting 
+  joint actions with actions that are merely individual but occur in parrallel.
+  
+  The method of contrast cases is familiar from \citet{Pears:1971fk}, who used 
+  contrast cases to argue that whether something is an ordinary, individual action 
+  depends on its antecedents.
+  """
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
++slide_middle
+  p.center 
+    span Two contrast cases
+
++slide_img('unit_001/slide03.jpg')
++slide_img('unit_001/slide04.jpg')
++slide_img('unit_001/slide05.jpg')
++slide_img('unit_001/slide06.jpg')
++slide_img('unit_001/slide07.jpg')
+
++slide_middle
+  .notes.handout.show
+    p.huge-glow Question
+    p.under-huge-glow(style='margin-top:-3em;'): :t
+      What distinguishes genuine joint actions from parallel but merely individual actions?
+  .notes: :t
+    This is the organising question for our project (the project to be investigated in this 
+    series of lectures).  Of course there will be lots of further questions, but I like to
+    have something simple to frame our thinking and this question serves that purpose.
+  .notes: :t
+    My hope is that by answering this seemingly straightforward question, we will be 
+    in a position to answer the hard question about which forms of shared agency
+    underpin our social nature.
+  .notes: :t
+    The first two contrast cases are supposed to show that this question isn’t easy
+    to answer because the most obvious, simplest things you might appeal to---coordination
+    and common effects---won’t enable you to draw the distinction.
+  .slide
+    .notes.handout.show
+      p.huge-glow Aim
+      p.under-huge-glow(style='margin-top:-3em;'): :t
+        An account of joint action must draw a line between joint actions and parallel but 
+        merely individual actions.
+    .notes: :t
+      This invites us to think in terms of necessary and sufficient conditions.
+      Of course, there are all kinds of reasons why this might be problematic, and we 
+      will consider many such reasons.
+      But as I just said, having simple ideas to frame our thinking is good, and that’s why
+      I take this as my working aim.
+      (The ultimate aim is a ‘Blueprint for a Social Animal’, but it is difficult to be
+      precise about what that will involve at this stage.)
+  
+
++slide_middle
+  .notes.handout \emph{The Simple View}
+  p The Simple View
+  .notes.handout.show.em-above
+    +simple_account
+  .slide
+    +invert('.act-type')
+    .notes: :t
+      Explain: ‘I wish I had done that’.
+  .slide
+    +uninvert('.act-type')
+    +invert('.phi')
+  .slide
+    +uninvert('.phi')
+    +highlight('.intentional', 'orange')
+    .notes: :t
+      We are no longer talking about joint action generally, only about intentional joint action.
+      Compare individual action: much individual action is arguably purposive but not 
+      intentional.  Similarly, we might think that there are non-intentional but purposive joint
+      actions.  
+    .notes: :t
+      A further problem concerns the link between intentional joint action and intention.
+      Consider individual action.  Bratman has good arguments for holding that actions can
+      be intentional under a description even when no intention specifies that description;
+      and he also holds that agents incapable of intending may nevertheless perform intentional
+      actions.
+      So it is conceivable that not all intentional joint action will involve intention.
+      In that case, the Simple View may not even be a fully general account of intentional
+      joint action.
+    .notes: :t
+      I’m not going to pursue these issues yet, but we will come back to them.
+      For now I just want to note that, for all its simplicity, the Simple View raises some
+      tricky questions.
+  .slide
+    +unhighlight('.intentional', 'orange')
+    +invert('.necessary-and-sufficient')
+    .notes: :t
+      For now I am treating the Simple View as offering necessary and sufficient conditions
+      for intentional joint action, because I want to start with an ambitious claim.
+      But reflecion on the relation between intention and intentional action may force us to back
+      down later.
+  .slide
+    +uninvert('.necessary-and-sufficient')
+    +invert('.appropriately-related')
+    .notes: :t
+      Explain: deviant causal chains.
+  .slide
+    +uninvert('.appropriately-related')
+    +highlight('.together', 'red')
+    .notes: :t
+      Explain: threat of circularity.
+
+  .slide
+    .notes: :t
+      Let me explain what I'm doing ...
+    p.em-above plan
+    ol 
+      li Contrast cases -> Question
+      li Question -> Simple View
+      li.simple-account Simple View -> 
+        span.circularity Circularity
+        span ?
+      +highlight('.circularity', 'red')
+      li.slide Circularity -> Complex Account
+      .notes: :t
+        Explain: circularity is sometimes held to be a ground for rejecting the simple view,
+        and this in turn motivates considering much more complex accounts.
+      .slide
+        +highlight-row('.simple-account')
+        .notes: :t
+          Given that, as we’ll eventually see, the complex accounts are really quite complex,
+          let’s first consider the threat of circularity more carefully.
+          Is it really circular to appeal to acting together in explaining joint action?

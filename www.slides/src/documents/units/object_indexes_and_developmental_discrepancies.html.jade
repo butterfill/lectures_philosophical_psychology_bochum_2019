@@ -1,0 +1,97 @@
+---cson
+layout: 'deck_unit'
+title: "A Partial Solution to the Puzzle about the Development of Causal Understanding?"
+tags: []
+description: """
+  Can a conjecture about the role of object indexes in explaining the launching effect
+  provide 
+  a partial solution to the puzzle about the development of causal understanding?
+"""
+---
+
+include ../../../fragments/unit_mixins
+
++slide
+  .notes: :t
+    Recall the puzzle ....
+  +img_clip('spelke_1992_fig2a.png', 'auto')
+  p.source Spelke et al 1992, figure 2
+
++slide({bkg:'slide_lecture04_012.jpg'})
+
++slide_middle
+  p Can six-month-olds know simple facts about particular causal interactions?
+  p.indent.em-around No  (Berthier et al, 2000; Hood et al, 2003)
+  p.em-above What explains their sensitivity to causal interactions  (e.g. Spelke, 1992; Baillargeon, 1987) if not knowledge?
+  .slide.em-above
+    p
+      span Working hypothesis: Causal interactions are detected, or otherwise treated specially, by   
+      span.processes perceptual processes
+      span  involved in segmenting and tracking objects.
+
+
+
++slide
+  .list-layer.hide
+    .notes: :t
+      [Key idea: object indexes cannot explain too much otherwise 
+      it would be a mystery why 2 years olds fail to search.
+      But then how do you get looking times out of them?]
+    .notes: :t
+      In adult humans,
+      there is a system of object indexes which enables them to track 
+      potentially moving objects in ongoing actions such as visually tracking or 
+      reaching for objects, and which influences how their attention is allocated 
+      \citep{flombaum:2008_attentional}.
+    p object indexes 
+      span  ...
+    ul
+      li guide ongoing action (e.g. visual tracking, reaching)
+      li influence how attention is allocated
+      li.judgement-independent can conflict with beliefs and knowledge states
+      .notes: :t
+        This system of object indexes
+        does not involve belief or knowledge
+        and may assign indexes to objects in ways that are inconsistent with
+        a subject’s beliefs about the identities of objects 
+        \citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}
+  .layer.what-can-oi-explain
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.huge-glow-50(style='line-height:40px;') What can object indexes explain?
+  .slide
+    +show('.list-layer')
+
+
++slide
+  +img_clip('spelke_1992_fig2a.png', 'auto')
+  p.source Spelke et al 1992, figure 2
+  .notes: :t
+    The primary functions of object indexes include influencing the allocation
+    of attention and perhaps guiding ongoing action.
+    If this is right, it may be possible to explain anticipatory looking 
+    directly by appeal to the operations of  object indexes.
+    But the operations of object indexes cannot directly explain differences 
+    in how novel things are to an infant.
+    And nor can the operations of object indexes directly explain why infants
+    look longer at stimuli involving discrepancies in the physical behaviour
+    of objects.
+  .notes: :t
+    To illustrate this point, recall this famous habituation experiment ....
+  .notes: :t
+    We know that infants are likely to maintain object indexes for the object
+    while it is occluded.
+    Accordingly, when the screen drops in the condition labelled 
+    ‘impossible outcome’, there is an interruption to the normal 
+    operation of object indexes: infants have assigned two object indexes 
+    but there is only one object.
+    But why does this cause infants to look longer at in the
+    ‘impossible outcome’ condition than in the ‘possible outcome’ condition?
+    How does a difference in operations involving object indexes result
+    in a difference in looking times?
+  .notes: :t
+    Claim (supported by the developmental discrepancy): the phenomenology
+    associated with the launching effect is rich enough to support habituation
+    effects but not manual search.
+    Consequence: the experience is probably not an experience of causal interaction.
+

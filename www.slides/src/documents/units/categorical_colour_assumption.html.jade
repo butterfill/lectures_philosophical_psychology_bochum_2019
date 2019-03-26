@@ -1,0 +1,100 @@
+---cson
+layout: 'deck_unit'
+title: "A ‘subject-determining platitude’ about colour"
+tags: []
+description: """
+  According to Frank Jackson (1996, pp. 199–200),
+  it is a ‘subject-determining platitude’
+  that ‘“red” denotes the property of an object putatively presented in visual experience 
+  when that object looks red’, and likewise for other colour terms.
+"""
+---
+
+include ../../../fragments/unit_mixins
+
+
+section.slide
+  .notes: :t
+    Here are three patches of colour.
+    The patches are all different colours, but the two leftmost are both the
+    same colour---they are both blue.
+    This sounds contradictory but isn't.
+    In one case we're talking about the particular colours of things,
+    which I’ll call ‘shades’; in the
+    other case we're talking about colour category.
+  .notes: :t
+    Today my focus is not the shades but the categorical colour properties,
+    properties like red, green and blue.
+  .words: .middle
+    .container_12
+      .grid_4
+        mixin colour-box('rgb(51,153,255)', 100)
+        p.center 2.5B
+      .grid_4
+        mixin colour-box('rgb(85,100,255)', 100)
+        p.center 7.5BG
+      .grid_4
+        mixin colour-box('rgb(42,162,42)', 100)
+        p.center 2.5BG
+
+
++slide_middle
+  .notes: :t
+    It has been quite widely accepted (among philosophers, at least)  that:
+    %
+    \begin{quote}
+    ‘If someone with normal color vision looks at a tomato in good light, the tomato will appear to have a distinctive property—a property that strawberries and cherries also appear to have, and which we call ‘red’ in English’ \citep[p.\ 4]{byrne:2003_color}
+    \end{quote}
+    %
+    Claims such as this are sometimes treated as common ground in controversies about colour.
+  .handout ‘If someone with normal color vision looks at a tomato in good light, the tomato will appear to have a distinctive property—a property that strawberries and cherries also appear to have, and which we call ‘red’ in English’ \citep[p.\ 4]{byrne:2003_color}
+  p: span: :t
+    ‘If someone with normal color vision looks at a tomato in good light, 
+    the tomato will appear to have a distinctive property—a property that 
+    strawberries and cherries also appear to have, and which we call ‘red’ in 
+    English’ 
+  p.right.grey-text: span (Byrne & Hilbert 2003, p. 4)
+  .slide
+    p.em-above
+      span It is a ‘subject-determining platitude’
+      span that 
+      span.noblur ‘“red” denotes the property of an object putatively presented in visual experience 
+      span.noblur when that object looks red’
+      span , and likewise for other colour terms.
+    p.right.grey-text: span (Jackson 1996, pp. 199–200)
+    .handout: :t
+      It is a ‘subject-determining platitude’
+      that ‘“red” denotes the property of an object putatively presented in visual experience 
+      when that object looks red’, and likewise for other colour terms 
+      \citep[pp.\ 199--200]{Jackson:1996zz}.
+  .slide
+    +blur('span:not(.noblur)')
+    .notes: :t
+      Is this true?
+      Does ‘“red” denote the property of an object putatively presented in visual experience 
+      when that object looks red’?
+
+  
+    
++slide_middle
+  .handout.show
+    p Question:
+    p.ctd Does ‘“red” denote the property of an object putatively presented in visual experience when that object looks red’?
+  .slide
+    .handout.show
+      p.em-above Simplifying assumptions:
+      p 1. There is a property denoted by ‘red’ which some objects have;  call this property   
+        span.italic red
+        span .
+  .slide
+    .handout.show
+      p 2. If the property 
+        span.italic red
+        span  (say) is presented in visual experience, then things which have this property  thereby differ in  visual appearance from things which do not have it.
+  .slide
+    .handout.show
+      p.em-above Question (reformulated):
+      p.ctd Do red things differ in visual appearance from non-red things?
+
+
+//- INSERT SOME BACKGROUND HERE ON CATEGORICAL PERCEPTION.  USE CHAPTER FROM DEVELOPING MIND.

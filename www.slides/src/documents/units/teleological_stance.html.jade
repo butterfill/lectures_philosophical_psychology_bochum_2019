@@ -1,0 +1,602 @@
+---cson
+layout: 'deck_unit'
+title: "The Teleological Stance"
+tags: []
+description: """
+  The Teleological Stance (Gergeley and Csibra , 1995) provides a computational
+  theory of pure goal ascription.
+  Pure goal ascription is the process of identifying goals to which anothers’
+  actions are directed independently of any knowledge, or beliefs about,
+  the intentions or other mental states of an agent.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 How?
+  +reset
+    +_slide_middle_inner
+      p.center Motor representations concerning the goals of observed actions sometimes facilitate the identification of goals.
+
++slide_middle
+  .notes: :t
+    To illustrate that there’s really a question here (How is it that motor representations concerning
+    the goals of observed actions sometimes influence thoughts about them?), consider this about MT:
+  p.handout.notes.show: :t
+    ‘it is not clear how these [production-perception] links or MNs [mirror neurons] would solve the
+    problems of mapping variable acoustics to linguistic representations, which first motivated MT [the
+    motor theory of speech perception].’
+  .notes.handout.ctd \citep[p.~205]{holt:2014_alluring}
+  p.right.grey-text Holt and Lotto 2014, p. 205
+  
+
+            
+  
++slide_middle
+  .notes: :t
+    To solve this problem, we need to start with an account of pure goal ascription.
+  .notes: :t
+    An account of pure goal ascription is an account of how you could 
+    in principle infer facts about the goals to which actions are directed from
+    facts about joint displacements, bodily configurations and their effects 
+    (e.g. sounds).
+    Such an account is a computational theory of pure goal ascription.
+  .notes: :t
+    Empahsize: in the case of speech, the problem is to get from acoustic and visual
+    information to articulatory gestures.
+  .notes: :t
+    Empahsize: in the case of actions, the problem is to get from bodily configurations
+    and joint displacements to goals to which actions are directed.
+  p.huge-glow-60 pure goal ascription
+  p(style='margin-top:-2em;')
+    span.infer Infer
+    span  The Goals from The Evidence
+  .slide
+    p.em-above The Goals: facts which goals particular actions are directed to ...
+  .slide
+    p.em-above 
+      span.the-evidence The Evidence
+      span: :t
+        : facts about events and states of affairs that could be known without 
+        knowing which goals any particular actions are directed to, nor any facts
+        about particular mental states ...
+
+
+
+mixin diagram_action_goal_individual(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('show' in p)
+    - p.show = []
+
+  svg(width='665px', height='445px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1')
+
+    defs
+      filter(id="glow-large", width='3', height='3', x='-.5', y='-.5')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='15')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='10')
+        feGaussianBlur(result='blurOut3', in='SourceGraphic', stddeviation='5')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='blurOut3')
+          femergenode(in='SourceGraphic')
+      filter(id="glow-small", width='1.5', height='1.5', x='-.25', y='-.25')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='4')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='4')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='SourceGraphic')
+      filter#dropGlowBlack(width='1.5', height='1.5', x='-.25', y='-.25')
+        fegaussianblur(in='SourceAlpha', stdDeviation='10', result='blur')
+        femerge
+          femergenode(in='blur')
+          femergenode(in='SourceGraphic')
+      g(id='action-ellipse')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='#000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter="url(#dropGlowBlack)")
+      g(id='action-ellipse-neon')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+    
+    g(transform='translate(0.5,0.5)')
+      g.action-light
+        ellipse(cx='42', cy='42', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(12,27)')
+          switch
+            foreignobject(pointer-events='all', width='59', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') light
+            text(x='30', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.action-smoke
+        ellipse(cx='132', cy='402', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(91,387)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') smoke
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.joint-action
+        //- black fill, black glow (to cover actions behind)
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#dropGlowBlack)')
+        g.neon-rect.hide
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g.action.drop
+          use( xlink:href='#action-ellipse', x='87', y='132')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='87', y='132')
+          g(transform='translate(51,117)')
+            switch
+              foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') open
+              text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.throw
+          use( xlink:href='#action-ellipse', x='82', y='242')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='82', y='242')
+          g(transform='translate(44,227)')
+            switch
+              foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') pour
+              text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.discard
+          use( xlink:href='#action-ellipse', x='112', y='312')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='112', y='312')
+          g(transform='translate(68,297)')
+            switch
+              foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') tilt
+              text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(521,77)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') soak
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(527,257)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') scare
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.freakout(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='522', cy='362', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(483,332)')
+          switch
+            foreignobject(pointer-events='all', width='77', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') freak out
+            text(x='39', y='43', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.block(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        //- two glow for stronger effect
+        g.block-glow(class='#{p.show.indexOf("block-glow")>-1 ? "" : "hide"}')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse.no-glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(547,167)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') fill
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
+        g.the-box
+          rect(x='242', y='262', width='210', height='60', rx='9', ry='9', fill='#ffffff', stroke='#ffffff', stroke-width='3', transform='rotate(-15,347,292)', pointer-events='none')
+          g(transform='translate(252,262)rotate(-15,94.5,30)')
+            switch
+              foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
+                    | intention
+                    span.mr.remove-me(class='#{p.show.indexOf("mr")>-1 ? "" : "hide"}').noinvert  or motor representation
+                    br
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or ???
+        g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g(transform='translate(199,155)')
+            switch
+              foreignobject(pointer-events='all', width='126', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') coordinates
+              text(x='63', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+        g.represents(class='#{p.show.indexOf("represents")>-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          path(d='M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          g(transform='translate(374,167)rotate(-12,58,12)')
+            switch
+              foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') specifies
+              text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+  
+
+//- TODO : simplify (just need the distinction here!)
+        
+
++slide_middle({bkg:'bkg_red.jpg'})
+  p.center goal != intention
+
+
++slide({bkg:'ants1.jpg'})
+  .notes: :t
+    Some ants harvest plant hair and fungus in order to build traps to capture large insects; 
+    once captured, many worker ants sting the large insects, transport them and carve them up
+    \citep{Dejean:2005vb}.
+  .notes: :t
+    We can think of the ants’ behaviour as goal-directed 
+    without also thinking of it as involving intention.
+
+
++slide
+  +diagram_action_goal_individual
+  .notes: :t
+    As this illustrates, 
+    some actions involving are purposive in the sense that 
+  .slide
+    +show('.outcome')
+    .notes: :t
+      among all their actual and possible consequences, 
+  .slide
+    +show('.outcome.block .block-glow')
+    .notes: :t
+      there are outcomes to which they are directed
+  .slide
+    +show('.joint-action .neon-rect')
+    .notes: :t
+      In such cases we can say that the actions are clearly purposive.
+  .slide
+    +show('.explain-collective-directedness')
+    .notes: :t
+      The standard answer to this question involves intention.
+  .slide
+    +show('.represents')
+    .notes: :t
+      An intention (1) specifies an outcome, 
+  .slide
+    +show('.coordinates')
+    .notes: :t
+      (2) coordinates the one or several activities which comprise the action; 
+    .notes: :t
+      and (3) coordinate these activities in a way that would normally facilitate the outcome’s occurrence.
+    .notes: :t
+      What binds particular component actions together into larger purposive actions?  
+      It is the fact that these actions are all parts of plans involving a single intention.
+      What singles out an actual or possible outcome as one to which the component 
+      actions are collectively directed?  It is the fact that this outcome is 
+      represented by the intention.
+    .notes: :t
+      So the intention is what binds component actions together into purposive actions and 
+      links the action taken as a whole to the outcomes to which they are directed.
+
+
++slide({bkg:'goal_ascription_requirements/Slide1.jpg'})
+  .notes: :t
+    It is important to see that the third item---representing the directedness---is necessary.
+  .notes: :t
+    This is quite simple but very important, so let me slowly explain why goal ascription requires representing the directedness of an action to an outcome.
++slide({bkg:'goal_ascription_requirements/Slide2.jpg'})
+  .notes: :t
+    Imagine two people, Ayesha and Beatrice, who each intend to break an egg.
+    Acting on her intention, Ayesha breaks her egg.
+    But Beatrice accidentally drops her egg while carrying it to the kitchen.
+    So Ayesha and Beatrice perform visually similar actions which result in the same type of outcome,
+    the breaking of an egg; but Beatrice's action is not directed to the outcome of her action whereas
+    Ayesha's is.
++slide({bkg:'goal_ascription_requirements/Slide3.jpg'})
+  .notes: :t
+    Goal ascription requires the ability to distinguish between Ayesha's action and Beatrice's action. 
+    This requires representing not only actions and outcomes but also the directedness of actions to outcomes.
+  .notes: :t
+    This is why I say that goal ascription requires representing the directedness of an action to an outcome, and not just representing the action and the outcome.
+  
+
+
+
+
++slide_middle
+  p Requirements:
+  p.hem-around (1) reliably: R(a,G)  
+    span.when when
+    span  and 
+    span.only-when only when
+    span  a is directed to G
+  p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around &nbsp;
+  p.hem-around.candidate-teleological.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the most justifiable action towards [G] that is available within the constraints of reality’?
+  .slide
+    +show('.candidate-teleological')
+    .notes: :t
+      Why not define $R$ in terms of teleological function?
+      This would enable us to meet the first condition but not the second.
+      How could we tell whether an action happens because it brought about a particular outcome in the past? 
+      This might be done with insects.
+      But it can's so easily be done with primates, who have a much broader repertoire of actions.
+    .slide
+      +highlight-row('.detectable-without')
+    .slide
+      +unhighlight-row('.detectable-without')
+      +highlight-row('.readily-detectable','red')
+    .slide
+      +unhighlight-row('.readily-detectable','red')
+      +blur('.candidate-teleological')
+  .slide
+    +show('.candidate-causes')
+    .notes: :t
+      How about taking $R$ to be causation?
+      That is, how about defining $R(a,G)$ as $a$ causes $G$?
+      This proposal does not meet the first criterion, (1), above.
+      We can see this by mentioning two problems.
+
+      [*Might skip over-generate and discuss that as a problem for Rationality/Efficiency]
+      First problem: actions typically have side-effects which are not goals.
+      For example,
+      %---not a good example because can't be avoided by any account
+      %--- (would require attribution of desire)
+      %For example, walking to the corner results in me warming up, in me expending energy, and in me being at the corner.
+      %Sometimes I walk to the corner for exercise,
+      %so that being at the corner is an unwanted side-effect (I then have to walk back).
+      %And sometimes I walk to the corner to be at the corner (so that expending energy is an unwanted side-effect, I'd rather have been chauffeured there).  
+      suppose that I walk over here with the goal of being next to you.
+      This action has lots of side-effects: 
+      \begin{itemize}
+      \item 	I will be at this location.
+      \item	I will expend some energy.
+      \item	I will be further away from the front
+      \end{itemize}
+      These are all causal consequence of my action.
+      But they are not goals to which my action is directed.
+      So this version of $R$ will massively over-generate goals.
+
+      Second problem: actions can fail.  [...]
+      So this version of $R$ will under-generate goals.
+    .slide
+      +highlight('.only-when', 'red')
+    .slide
+      +unhighlight('.only-when', 'red')
+      +highlight('.when', 'red')
+    .slide
+      +unhighlight('.when', 'red')
+      +blur('.candidate-causes')
+  .slide
+    +show('.candidate-ts')
+    
+  
+    
+        
+
+section.slide
+  .words: .container_12
+    .grid_3
+      p.quote.notes.handout.show(style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+        span ‘an action can be explained by a 
+        span.goal-state goal state
+        span  if, and only if, it is 
+        span.seen-as seen as 
+        span  the 
+        span.most-justifiable 
+          span.most most
+          span  justifiable action 
+        span towards that 
+        span.goal-state goal state
+        span  that is available within the constraints of reality’
+      .notes.handout.ctd \citep[p.~255]{Csibra:1998cx}
+      p.quote.right.grey-text Csibra & Gergely (1998, 255)
+    .slide
+      +invert('.goal-state')
+      .notes: :t
+        A goal is an outcome to which an action is directed.
+        A goal-state is a representation of the outcome in virtue of which
+        the action is directed to that outcome.
+        So an intention is a goal state.
+        By contrast, a goal is not a mental state at all.
+        In order for this to be about *pure* goal ascription, we need to ignore
+        the Csibra and Gergely’s odd choice of terminology.
+    .slide
+      +uninvert('.goal-state')
+    .slide
+      +highlight('.most-justifiable')
+    .slide
+      .grid_9
+        p.step1.hide 1. action a is directed to some goal;
+        p.step2.hide  2. actions of a’s type are 
+          span.normally normally
+          span  means of realising outcomes of G’s type;
+        p.step3.hide 3. no available alternative action is a significantly  
+          span.better better*
+          span  means of realising outcome G;
+        p.step4.hide 4. the occurrence of outcome G is  
+          span.desirable desirable
+          span ;
+        p.step5.hide 5. there is no other outcome, G′, the occurrence of which would be at least comparably desirable and where (2) and (3) both hold of G′ and a
+        p.step6.hide Therefore:
+        p.step7 6. 
+          span.g G
+          span   is a goal to which action 
+          span.a a
+          span   is directed.
+      .slide
+        +invert('.step7 .g')
+      .slide
+        +uninvert('.step7 .g')
+        +invert('.step7 .a')
+      .slide
+        +uninvert('.step7 .a')
+      .slide
+        +show('.step1')
+        .notes: :t
+          We start with the assumption that we know the event is an action.
+      .slide
+        +show('.step2')
+      .slide
+        +unhighlight('.most-justifiable')
+        +invert('.normally')
+      .slide
+        +invert('.seen-as')
+        .notes: :t
+          Why normally? Because of the ‘seen as’.
+      .slide
+        +uninvert('.normally')
+        +uninvert('.seen-as')
+      .slide
+        +invert('.most')
+      .slide
+        +show('.step3')
+      .slide
+        +uninvert('.most')
+      .slide
+        +invert('.better')
+        .notes: :t
+          What does it mean to say that one means is better than another?
+          There are different respects in which one action can be better than another as a means 
+          to some realising some outcome; for example, one action can require less effort than 
+          another, or one action be a more reliable way to bring the outcome about than another.
+        .notes.handout: :t
+          An action of type $a'$ is a \emph{better} means of realising outcome $G$ in a given situation than an action of type $a$ if, for instance, actions of type $a'$ normally involve less effort than actions of type $a$ 
+          in situations with the salient features of this situation 
+          and everything else is equal; 
+          or if, for example, actions of type $a'$ are normally more likely to realise outcome $G$ than actions of type $a$
+          in situations with the salient features of this situation 
+          and everything else is equal.
+          
+      .slide
+        +uninvert('.better')
+      .slide
+        +blur('.quote')
+        +show('.step6')
+        .notes: :t
+          Any objections?
+        .notes: :t
+          I have an objection.
+          Consider a case in which I perform an action directed to 
+          the outcome of pouring some hot tea into a mug.
+          Could this pattern of inference imply that the outcome be the goal of my action?
+          Only if it also implies that moving my elbow is a goal of my action
+          as well.
+          And pouring some liquid. 
+          And moving air in a certain way.
+          And ...
+        .notes: :t
+          How can we avoid this objection?
+      .slide
+        +show('.step4')
+      .slide
+        +highlight('.desirable')
+        .notes: :t
+          Doesn’t this conflict with the aim of explaining *pure* behaviour reading?
+          Not if desirable is understood as something objective.
+          [explain]
+      .slide
+        +unhighlight('.desirable')
+        .notes: :t
+          Now we are almost done, I think.
+      .slide
+        +show('.step5')
+        .notes: :t
+          We just need to add a clause ensuring that the goal in question is maximally 
+          desirable; this is an attempt to reduce overgeneration of goals.
+      .slide
+        +unblur('.quote')
+        .notes: :t
+          OK, I think this is reasonably true to the quote.
+          So we’ve understood the claim.
+          But is it true?
+      .slide
+        +blur('.quote')
+        +invert('.better')
+        .notes: :t
+          How good is the agent at optimising the selection of means to her goals?
+          And how good is the observer at identifying the optimality of means in relation to outcomes?
+          \textbf{
+          For optimally correct goal ascription, we want there to be a match between
+          (i) how well the agent can optimise her choice of means
+          and
+          (i) how well the observer can detect such optimality.}
+          Failing such a match, the inference will not result in correct goal ascription.
+        .notes: :t
+          But I don’t think this is an objection to the Teleological Stance as a
+          computational theory of pure goal ascription.  It is rather a detail
+          which concerns the next level, the level of representations and algorithms.
+          The computational theory imposes demands at the next level.
+        .handout: :t
+          ‘Such calculations require detailed knowledge of biomechanical factors that
+          determine the motion capabilities and energy expenditure of agents. However,
+          in the absence of such knowledge, one can appeal to heuristics that approximate
+          the results of these calculations on the basis of knowledge in other domains
+          that is certainly available to young infants. For example, the length of
+          pathways can be assessed by geometrical calculations, taking also into
+          account some physical factors (like the impenetrability of solid objects).
+          Similarly, the fewer steps an action sequence takes, the less effort it might
+          require, and so infants’ numerical competence can also contribute to efficiency
+          evaluation.’ \citep{csibra:2013_teleological}
+
+
+
++slide_middle
+  p Requirements:
+  p.hem-around (1) reliably: R(a,G)  
+    span.when when
+    span  and 
+    span.only-when only when
+    span  a is directed to G
+  p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around &nbsp;
+  p.hem-around.candidate-teleological.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the 
+    span.most-justifiable most justifiable
+    span  action towards [G] that is available within the constraints of reality’?
+  +show('.candidate-teleological', 0)
+  +blur('.candidate-teleological', '2px', 0)
+  +show('.candidate-causes', 0)
+  +blur('.candidate-causes', '2px', 0)
+  +show('.candidate-ts', 0)
+  .slide
+    +invert('.most-justifiable')
+    .notes: :t
+      It will work if we can match observer and agent: both must be ‘equally optimal’.
+      But how can we ensure this?
+  .slide
+    +highlight('.only-when', 'orange')
+    +highlight('.when', 'orange')
+    .notes: :t
+      How good is the agent at optimising the rationality, or the efficiency, of her actions?
+      And how good is the observer at identifying the optimality of actions in relation to outcomes?
+      \textbf{
+      If there are too many discrepancies between
+      		how well the agent can optimise her actions
+      	and
+      		how well the observer can detect optimality,
+      then these principles will fail to be sufficiently reliable}.
+    
+

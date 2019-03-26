@@ -1,0 +1,532 @@
+---cson
+layout: 'deck_unit'
+title: "How to Measure Phenomenology"
+tags: []
+description: """
+  It is perhaps tempting to assume that claims about phenomenology
+  cannot be tested scientifically.
+  But this is a mistake.  We can use experiments to address the question, 
+  Do things which have the property denoted by ‘red’ thereby appear to be different from things which lack it?
+"""
+---
+
+include ../../../fragments/unit_mixins
+
+
+      
++slide_middle({bkg:'colour_space1.jpg'})
+  +hide('img.bkg',0)
+  p.center Do red things differ in visual appearance from non-red things?
+  .notes: :t
+    Recall that our question is, 
+    Do red things differ in visual appearance from non-red things?
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      How could we tell whether
+      things which have the property denoted by ‘red’ thereby appear to be different from things which lack it?
+
+
++slide({bkg:'colour_space2.jpg'})
+  .notes: :t
+    An immediate problem arises from the fact that pairs of things  just one of which is \emph{red} (i.e. has the property denoted by ‘red’) differ not only in this way but also in which particular shade of colour they have.
+    How can we tell whether differences in visual appearance are due in part to differences in being \emph{red} rather than entirely due to differences in shade?
+
++slide({bkg:'categorical_colour_difference1.jpg'})
+  .notes: :t
+    The problem can be overcome by introducing a third thing.  Consider constructing a sequence of three things which are indiscriminable except by colour.  Let the middle thing be \emph{red}, and let the first thing not be \emph{red}.  Now consider the difference between the particular hues of these two things.  Ensure the difference is small, but large enough that any two things which differ in hue by this amount are readily discriminable.  
+    Finally, let the third thing be \emph{red}, and let the difference with respect to hue between the third and second thing be the same as the difference between the first and second thing.  (Research on colour perception shows that such differences can be equated, and that sequences of this type exist; see 
+    \citealp{kuehni:2001_color} on perceptual uniformity and \citealp{witzel:2013_categorical} on categories.)  
+    Consider the visual appearances of these three things.
++slide({bkg:'categorical_colour_difference2.jpg'})
+
+
+
+    
+mixin theMethodsSlide()
+  +slide({bkg:'categorical_colour_difference3.jpg'})
+    .methods
+      p.title(style="margin-top:350px;") Methods
+      p.indent.hem-around.first 1. Which outer thing is most like the middle one?
+      p.indent.hem-around.second 2. Adjust the middle object so that it appears midway between the two outer objects.
+      p.indent.hem-around.third 3. Perceptual grouping ...
+    block
+
+
++theMethodsSlide
+  .handout: :t
+    \begin{center}
+    \includegraphics[scale=0.25]{img/categorical_colour_difference3.jpg}
+    \end{center}
+  
+  .handout: :t
+    Methods:
+    \begin{enumerate}
+    
+    \item People are asked to judge, for each sequence, which of the two outer
+    things is more similar to the middle thing. Given that visual appearances typically influence
+    judgements of similarity, if things which differ in whether they are
+    \emph{red} thereby differ in visual appearance, we would expect people to
+    judge that the outer thing which is \emph{red} is more similar to the
+    middle thing than the other outer thing
+    \citep{kay_what_1984,witzel2014category}.
+    
+    \item People are asked to the middle object so that it appears to be mid-way
+    between the two outer objects. (What people are in fact adjusting here is
+    the hue of the object, but no mention is made of hue: their instructions
+    are to match differences in appearance.) If things which differ in whether
+    they are \emph{red} thereby differ in visual appearance, we would expect
+    people to compensate for this in adjusting hue. In fact they do not
+    \citep{witzel2014category}.
+    
+    \item Perceptual grouping: people make visual judgements about orientation which
+    reveal how things differing in colour are perceptually grouped.  If things which differ in whether
+    they are \emph{red} thereby differ in visual appearance, we would expect
+    this to affect how things are perceptually grouped \citet{webster:2012_color}.
+    
+    \end{enumerate}
+  +hide('.methods .title, .methods .first, .methods .second, .methods .third', 0)
+  .notes: :t
+    If, as the subject-determining platitude implies, humans visually experience properties like \emph{red}, then (given the premise) the first and second thing should differ in visual appearance more than the second and third thing.
+  .slide
+    +show('.methods .title')
+    .notes: :t
+      How can we test whether such differences in visual appearance  exist?  
+      Several methods have recently been used \citep{witzel2014category,webster:2012_color,davidoff:2012_perceptual}. %(*cite thesis?).  
+  .slide
+    +show('.methods .first')
+    .notes: :t
+      In one people are asked to judge, for each sequence, which of the two outer things (i.e. the first and third thing) is more similar to the middle thing (i.e. the second thing).  
+      Given that visual appearances typically influence judgements of similarity,
+      if things which differ in whether they are \emph{red} thereby differ in visual appearance, we would expect people to judge that the outer thing which is 
+      \emph{red} is more similar to the middle thing than the other outer thing.  
+  .slide
+    +show('.methods .second')
+    .notes: :t
+      Another method involves asking people to adjust the colour of the middle object so that it appears to be mid-way between the two outer objects.
+      What people  are in fact adjusting here is the hue of the object, but no mention is made of hue: their instructions are to match differences in appearance.
+      If things which differ in whether they are \emph{red} thereby differ in visual appearance, we would expect people to compensate for this in adjusting hue.
+      In fact they do not \citep{witzel2014category}.
+    
+  .slide
+    +show('.methods .third')
+    .notes: :t
+      I’ll explain this method in a while.
+      First, 
+    .slide
+      +highlight-row('.methods .first')
+      .notes: :t
+        Let’s consider the first method, which involves 
+        making judgements about similarity.
+    
+
+//-  Kay and Kempton ...
++slide({bkg:'kay_1984_fig3_p71.png'})
+  p.source Key & Kempton 1984, figure 3
+  +clip('img.bkg', 'rect(0,380px,200px,0)')
+  .notes: :t
+    In brief: Kay and Kempton contrasted the responses of native English 
+    speakers (who have words for green and blue) with native Tarahumara (a Uto-Aztecan language of 
+    northern Mexico) speakers, whose basic colour words mark no such distinction.
+  .notes: :t
+    Here you see a triad of colours, A, B and C.
+    Kay and Kempton first measured ‘discrimination distance’.
+    That is, how far apart are each of these in terms of JNDs?
+    As it turns out, JNDs are not affected by which categorical colour properties you can name
+    \citep{witzel:2013_categorical}.
+    So we would expect discrimination distance to be approximately the same for all 
+    participants. (Some studies do measure discrimination distance for
+    each subject individually and find indiviudal differences; e.g. \citep{witzel:2014_categorical}).
+    In this case, you can see that A is further from B in JNDs than B is from C.
+  .notes: :t
+    ‘discrimination distance’:
+    ‘The scale of psychological distance between colors we take as the "real" scale
+    for present pur- poses is called discrimination distance. The unit of this
+    scale is the just noticeable dif- ference (jnd), that is, the smallest physical
+    difference in wavelength that can be detected by the human eye.’
+    \citep[p.~68]{kay_what_1984}
+    
+  .notes: :t
+    Next Kay and Kempton measured how visually similar their subjects judged these
+    samples to be.
+    To do this, they showed them different triads of colours and asked them,
+    Which is the most different from the other two?
+    For each pair they then computed the proportion of times that pair was split.
+    (As they write: ‘The psychological distance between A and B relative to other
+    stimulus pairs in the set is given by the proportion of times A and B are split
+    by the subject's selection of one of them as the most different item in the
+    triad.’ p. 70.)
+    This is what you see from the Tarahumara speakers and the English speakers
+    under the circles.
+  .notes: :t
+    Looking at the numbers, you can see that 
+    the English speakers tended to split B and C more often than A and B, 
+    whereas the Tarahumara speakers did the opposite.
+  .notes: :t
+    And note that the B-C pair crosses the blue-green boundary.
+    What does this mean?
+    ‘The presence of the blue-green lexical category boundary appears to cause
+    speakers of English to exaggerate the subjective distances of colors close to
+    this boundary. Tarahumara, which does not lexicalize the blue-green contrast,
+    does not show this distorting effect.’
+  .notes: :t
+    \citep[p.~77]{kay_what_1984}:
+    ‘the English speaker judges chip B to be more similar to A than to C because
+    the blue-green boundary passes between B and C, even though B is perceptually
+    closer to C than to A.’ 
+  .notes: :t
+    This is exactly the sort of evidence that should persuade us 
+    that red things differ in visual appearance from non-red things.
+    
+  .slide
+    +clip('img.bkg', 'rect(0,380px,900px,0)')
+    .notes: :t
+      Here’s another comparison.
+      In this case, the discrimination distance (in JNDs) was the same between
+      the three colour samples.
+      Both groups thought that B and C are most different, and these cross
+      the blue-green boundary.  But this effect was stronger in the English speakers.
+  .slide
+    +clip('img.bkg', 'auto')
+    .notes: :t
+      There were some other comparisons that I won’t talk about.
+    .notes: :t
+      Overall, this is evidence for the conclusion that 
+      red things differ in visual appearance from non-red things.
+  .slide
+    +blur('img.bkg, .source','7px')
+    +reset-escape-inner
+      +_slide_middle_inner
+        .notes.show
+          p.center Is the effect due to 
+          p.center visual appearances
+          p.center or merely to 
+          p.center the ‘Name Strategy’?
+        .notes.handout: :t
+          The ‘name strategy’: ‘We propose that faced with this situation the 
+          English-speaking subject reasons
+          unconsciously as follows: “It's hard to decide here which one looks the most
+          different. Are there any other kinds of clues I might use? Aha! A and B are
+          both CALLED green while C is CALLED blue. That solves my problem; I'll pick C
+          as most different.” ... this cognitive strategy ... we will call the
+          “name strategy”’ \citep[p.~72]{kay_what_1984}.
+        .notes: :t
+          ‘According to the name strategy hypothesis, the speaker who is
+          confronted with a difficult task of classificatory judgment may use the lexical
+          classification of the judged objects as if it were correlated with the required
+          dimension of judgment even when it is not, so long as the structure of the task
+          does not block this possibility’ (p. 75). 
+
++slide_middle
+  p.center Kay & Kempton (1984, Experiment 2)
+  .notes: :t
+    They consider a modification to block
+    use of the naming strategy.
+    This involves showing subjects only two of the three
+    stimuli at any one time (Experiment 2). 
+  .notes: :t
+    (‘The three chips were arranged in a
+    container with a sliding top that permitted the subject to see alternately
+    either of two pairs of the three chips, but never all three at once. For
+    example, in triad (A, B, C) the pairs alternately made visible were (A, B) and
+    (B, C).’) When they do this, categorical colour properties have no effects on
+    perceptual judgements of similarlity. ‘Subjective similarity judgments follow
+    discrimination distance and reflect no influence from lexical category
+    boundaries’ (p. 73).
+    
+      
++slide({bkg:'kay_1984_fig4_p74.png'})
+  p.source Key & Kempton 1984, figure 4
+  .notes: :t
+    Here are the results from experiment 2.
+    In this case, there are only English speaking subjects.
+    And the numbers for the subjects are 
+    ‘simply the number out of 21 subjects who chose the indicated pairwise subjective distance as larger.’
+  .notes: :t
+    The results now are quite different.
+    Top left: subjects appear to go with discriminability (JND distance)
+    rather than colour category.
+    Bottom left: when discriminability (JND distance) is equated, 
+    subjects show no significant effect of colour category (although there is a trend).
+  .notes.handout: :t
+    ‘Subjective similarity judgments follow
+    discrimination distance and reflect no influence from lexical category
+    boundaries.’ \citep[p.~73]{kay_what_1984}
+  .slide
+    +blur('img.bkg, .source','7px',400)
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center conclusion: red things do not differ in visual appearance from non-red things
+        .notes: :t
+          Conclusion: the name strategy explains the effects of Experiment 1.
+          Red things do not differ in visual appearance from non-red things
+        .slide
+          p.em-above objection:
+          p
+            span ‘I’d like you to tell me which is bigger:  
+            span.to-highlight the difference in  greeness
+            span  between the two chips on the left or the difference in 
+            span blueness between the two chips on the right.’ 
+          .notes: :t
+            They changed the instructions between Experiment 1 and Experiment 2.
+          .slide
+            +invert('.to-highlight')
+            .notes: :t
+              This change invites the objection that the instruction
+              encouraged 
+              subjects to attend to hue and ignore other features of the colour.
+              So the results are inconclusive.
+          .slide
+            +blur('p','3px',900)
+            .notes: :t
+              Why spend so long on flawed research from which we can’t draw a conclusion 
+              either way?  To illustrate that the issue is quite complex,
+              and that you have to read papers carefully!
+              (You aren’t supposed to discuss minutae of papers in your essays;
+              you’re not an expert on stats or methods.  But if you cite a paper
+              in support of a claim, you’d better be as sure as you can that the
+              paper really does support that claim.)
+            
+            
+            
++slide_middle
+  p.center Witzel & Gegenfurtner (2014)
+  p.em-above ++ discrimination and category boundary measurements for individual subjects
+  p.em-above ++ more categories tested (‘Rosa’, ‘Braun’, ‘Orange’, ‘Gelb’, ‘Gruen’, ‘Blau’, and ‘Lila’)
+  .notes: :t
+    According to more recent research discussed in \citep{witzel2014category}
+    (a published report is not yet available), in fact they do not. That is,
+    whether things are \emph{red} appears to make no difference to judgements
+    of similarity (\citealp{witzel2014category}; actually these researchers did
+    not test ‘red’, but they did test the German terms ‘Rosa’, ‘Braun’,
+    ‘Orange’, ‘Gelb’, ‘Gruen’, ‘Blau’, and ‘Lila’.) This indicates that things
+    which are \emph{red} do not thereby differ in visual appearance from things
+    that are not \emph{red}.
+  .slide
+    p.em-above ++ prototype effects found, but ‘there were literally no effects at boundaries’ (p.c.).
+    .notes: :t
+      From correspondence: ‘that experiment was originally reported in the same
+      paper as the "Categorical facilitation" one, but it was too long. Up to now
+      it is only in my thesis and there is the abstract, which I paste you below.
+      Note, however, that we found slight traces of perceptual magnet effects
+      around prototypes when reanalysing the data later on, which is reflected in
+      the book chapter, but not the older abstract. The found effects are quite
+      systematic (happening at almost all prototypes), but also extremely weak,
+      and there were literally no effects at boundaries.’
+    .notes: :t
+      How can we defend the view that red things differ in visual appearance from
+      non-red things? Maybe there are differences in visual appearance that we
+      are not aware of? Maybe the judgements of similarlity are not sensitive
+      enough? (But note that \citet{witzel2014category} did find evidence for the
+      effect of prototypes on judgements of similarity, so the method seems good:
+      to test this, the three colour samples were arranged so that the prototype
+      was positioned between a middle and an outer sample. ‘Colours close to the
+      prototypes were judged to be more similar than they actually were in terms
+      of pure discrimination’.)
+
+    
+
+
+//- method 2 : ajust to make equi-similar
++theMethodsSlide
+  .slide
+    +highlight-row('.methods .first')
+  .slide
+    +unhighlight-row('.methods .first')
+    +highlight-row('.methods .second')
+    .notes: :t
+      Another method involves asking people to adjust the colour of the middle object so that it appears to be mid-way between the two outer objects.
+      What people  are in fact adjusting here is the hue of the object, but no mention is made of hue: their instructions are to match differences in appearance.
+      If things which differ in whether they are \emph{red} thereby differ in visual appearance, we would expect people to compensate for this in adjusting hue.
+      In fact they do not \citep{witzel2014category}.
+      %
+      %*NB: second approach (and third approach = perceptual grouping) matters
+      because you might say that the things do appear differently, just in a
+      way that we are unaware of. Unawareness of the difference less plausibly
+      affects grouping and hue matching; after all, if it doesn't affect these
+      what does the difference in appearance affect?
+    .notes: :t
+      How can we defend the view that red things differ in visual appearance from non-red things?
+      You could insist that the difference in appearance is not manifest in this particular case.
+      Perhaps, for example, because the slider people used to ajust the middle sample changed 
+      its hue, subjects attended to hue and ignored other features of the colour.
+      (There’s no evidence for this speculation and subjects were not asked about the hue.)
+      Against this possibility, consider that \citep{witzel2014category} report that they
+      did find effects for prototypes.
+      (p. 207: ‘According to the idea of a perceptual magnet effect (e.g. Kuhl 1991), it is also possible that similarity is perceived to be greater around the prototype. In this case, the presence of a prototype between a triad extreme and the discrimination centre should reduce their apparent di erence, and the point of subjective centrality should be shi ed away from the prototype.’)
+      (p. 207: ‘both tasks showed prototype e ects in centre triads. Colours close to the prototypes were judged to be more similar than they actually were in terms of pure discrimination.  is  finnding indicates that colour differences subjectively appear to be lower around the prototype.’)
+      The fact that prototypes had an effect indicates that subjects did not focus exclusively 
+      on hue.  
+      This makes it harder to understand why, if categorical colour properties influence
+      visual appearance, the categorical colour properties did not influence visual
+      judgements about which of the three colour samples differed most from the others.
+    .notes: :t
+      Are there other objections?
+    .notes: :t
+      Could you object that the difference in appearance between red and non-red things
+      is already built into the metric used for the colour space?  In that case you would not
+      expect additional effects of categorical colour property on appearance. These effects would be
+      already taken into account in the measurements of similarity.
+    .notes: :t
+      To answer this objection we need to note that there are multiple ways of 
+      measuring perceptual similarity.
+      In this case, the researchers used JNDs.
+      They have previously shown that category boundaries (as specified by an individual 
+      subject’s colour words) do not affect JNDs.  That is, JNDs are not generally smaller at the
+      category boundaries \citep{witzel:2013_categorical}.
+      But when you take pairs of colours that are, say, 3 JNDs apart, then whether or not 
+      the pair straddles a category boundary will affect speed and accuracy of discimination
+      \citep{witzel:2014_categorical}.
+      So we can be confident that using JNDs to measure perceptual similarity does not
+      take into account differences in the ways categorical colour propreties appear.
+    
+  .slide
+    +unhighlight-row('.methods .second')
+    +highlight-row('.methods .third')
+    
+
+//- method 3 : perceptual grouping
+section.slide
+  +_slide_middle_inner
+    +img('webster_2012_fig1.png')
+  +reset
+  +_slide_inner
+    p.source Webster & Kay 2012, figure 1
+  .notes: :t
+    Converging evidence that things labelled with different basic colour terms
+    do not thereby differ in visual appearance involves a third method for
+    detecting visual appearances (\citealp{webster:2012_color}). The idea, as
+    illustrated in Figure \vref{fig:perceptual_grouping}, is that how things
+    appear with respect to colour should influence how likely it is that they
+    will be grouped together perceptually. The results are consistent with the
+    view that whether objects are labelled with the same basic colour term
+    makes no measurable difference to how they are grouped perceptually. This
+    further supports suspicion that properties denoted by colour terms like
+    ‘red’ make no difference to visual appearances (see also
+    \citealp{davidoff:2012_perceptual}).
+  .notes: :t
+    Let’s consider the experiment in more detail.
+    ‘circles at opposite diagonal corners of the square had the same color,
+    while the two diagonals differed in color by a fixed angle of 30°’.
+  .notes: :t
+    The center circle could either be the same colour as one of the diagonals
+    (as in the left and right panels),
+    or it could be an inbetween colour (as in the middle panel).
+    When the central colour is the same as one of the diagonals, you should perceptually
+    group the diagonal as a line, like \/ or \\.
+  .notes: :t
+    Subjects’ task was indeed to judge which way the diagonal went.
+    \citet{webster:2012_color} varied the center colour to find at what point
+    a given subject was equally like to judge that the line was \/ or \\.
+    Call this the ‘grouping midpoint colour’.
+    (p. 378: ‘Observers made a two-alternative forced choice response to indicate
+    whether the perceived orientation was clockwise or counterclockwise. A
+    staircase varied the center color angle to estimate the an- gle at which
+    both orientations appeared equally likely, with the point of subjective
+    equality estimated from the mean of the final 10 of 13 reversals in the
+    staircase.’)
+    
++slide
+  +img_clip('webster_2012_fig2.png')
+  p.source Webster & Kay 2002, figure 2
+  .notes: :t
+    \citet{webster:2012_color} reasoned like this:
+    \begin{enumerate}
+    \item Where the two diagonals are from within the same colour category,
+    the grouping midpoint colour should be the midpoint in a colour space that
+    represents retinal colour discrimination.
+    \item Where the two diagonals are from different colour categories (one is 
+    green, the other is blue), and one of the diagonals is just over a boundary,
+    then the grouping midpoint colour should be closer to the colour of the diagonal
+    that is just over the boundary in a colour space that
+    represents retinal colour discrimination.
+    \end{enumerate}
+  .notes: :t
+    This prediction is illustrated in the figure.
+    The dotted line shows the prediction if there is no effect of colour category
+    on perceptual grouping; the solid lines show different strengths of effect.
+  .notes: :t
+    They found that almost no indicators of an
+    effect of colour category on perceptual grouping
+    (there are a variety of measures and one was signifiant: 
+    p. 381: ‘the participants’ settings thus trended toward a (very weak) CP effect,
+    with an average bias of 0.10 (which was nevertheless significantly differ-
+    ent from zero; t (7) = 3.73, p < .01).’).
+    They also suggested that these effects may be due to the use of 
+    CIELAB as a colour space
+    (p. 382: ‘ the small biases we found in the observer’s settings may in part
+    include an artifact of the stimulus space, weakening further the evidence for a
+    clear CP effect in the grouping task.’)
+    
++slide_middle
+  p.center hue scaling
+  p.em-above: :t
+    ‘observers are typically shown a set
+    of colors one at a time, and for each report the relative proportions of each
+    primary they perceive.’
+  .notes: :t
+    ‘In the hue scaling experiment observers are typically shown a set
+    of colors one at a time, and for each report the relative proportions of each
+    primary they perceive.’
+  .notes: :t
+    \citet{webster:2012_color} did an analysis of other studies and found 
+    an effect across the blue-green category boundary.
+    Roughly speaking, native English speakers’ tendancy to say how much 
+    green or blue is in a colour cannot be predicted by its position in a 
+    cone-opponent colour space (one based on retinal colour processing)
+    but also appears to be influenced by categories.
+    (p. 385: ‘The prediction for the average curve ... indicates a CP bias of
+    0.23 across the blue–green boundary. This ... underestimates the degree of
+    bias in individual observer’s settings, which spanned a very wide range
+    from 0.02 to 0.92 with a mean of 0.35 ... The distribution of categorical
+    biases in the hue settings is substantially different from 0 (t (58) =
+    15.79, p < 0.0001).’)
+  .notes: :t
+    I don’t think this is very informative for two reasons.
+    First, it seems to me that hue scaling could be influenced by tendancies to
+    label a colour. The judgements aren’t obviously a reflection of how things
+    appear.
+  .notes: :t
+    Second, colour discrimination may not be well controlled in this study.
+    (There are also issues about the blue-green boundary: the effects could in
+    principle be due to the fact that the boundary ‘falls close to the L pole
+    of the LvsM axis of cone-opponent space (Malkoc et al., 2005)’
+    \citep[p.~388]{webster:2012_color} .)
+
++theMethodsSlide
+  .slide
+    +highlight-row('.methods .third')
+  .slide
+    +unhighlight-row('.methods .third')
+    .notes: :t
+      The point of all of these experiments is to see whether differences with 
+      respect to the properties denoted by colour terms such as ‘red’ affect visual
+      appearances. 
+      Mostly the findings suggest that they do not.
+
++slide_middle({bkg:'colour_space1.jpg'})
+  p.center 
+    span Do red things differ in visual appearance from non-red things?
+  .notes: :t
+    So do red things differ in visual appearance from non-red things?
+  .slide
+    p.center
+      span.afaik As far as we know: 
+      span.no No!
+    .notes: :t
+      While doubts might be raised about the details of one or another method, the
+      overall pattern is clear: the most careful attempts to find differences in
+      appearance associated with properties denoted by colour terms like ‘red’ have
+      all failed. 
+    .notes: :t
+      To reject this conclusion, we would have to insist that differences in
+      appearance exist but influence neither judgements of perceptual similarity nor
+      perceptual grouping and so are too subtle to detect. 
+      This is certainly possible, but it seems wrong simply to insist that it is correct.
+  .slide
+    +invert('.afaik')
+    .notes: :t
+      Whether colour terms like ‘red’ denote properties of objects that are
+      presented in visual experience is something best decided experimentally, not
+      introspectively; and, as far as we know, they do not.
+

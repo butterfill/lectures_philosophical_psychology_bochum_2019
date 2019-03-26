@@ -1,0 +1,178 @@
+---cson
+layout: 'deck_unit'
+title: "A Puzzle about the Development of Causal Understanding"
+tags: []
+description: """
+  While many findings indicate that four month old human infants
+  can track simple causal interactions, other evidence suggests
+  that two year olds have systematic difficulties tracking causal
+  interactions.
+  As many researchers have noted, this may motivate appeal to a 
+  dual process account (or one involving ‘core knowledge’ or ‘modularity’).
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide
+  .notes: :t
+    Consider this case where a ball falls and lands on a bench.
+    Suppose that there was a barrier in front of the bench, like the dotted line.
+    Because the bench protrudes from the barrier, you could easily see where the ball will land.
+    But of course you can only see this if you know that barriers stop solid balls.
+    Spelke used this observation to provide evidence that 4-month-old infants can track objects' causal interactions.
+  +img_clip('spelke_1992_fig2a.png', 'rect(0px,480px,434px,240px)')
+  p.source Spelke et al 1992, figure 2
+  .slide
+    +clip('img:eq(0)', 'rect(0px,240px,434px,0px)')
+    .notes: :t
+      Infants were habituated to a display in which a ball fell behind a screen,
+      the screen came forwards and the ball was revealed to be on the ground,
+      just where you'd expect it to be.
+      After habituation infants were shown one of two displays.
+      Infants in the 'consistent group' were shown this.
+  .slide
+    +clip('img:eq(0)', 'rect(0px,480px,434px,0px)')
+    .notes Whereas infants in the 'inconsistent group' were shown this.
+  .slide
+    +clip('img:eq(0)', 'rect(0px,720px,434px,0px)')
+    .notes: :t
+      What should we predict?
+      If infants were only paying attention to the shapes and ignoring properties
+      like solid, they should have dishabituated more to the consistent than to
+      the inconsistent stimlus.
+      After all, that stimlus is more different from the habituation stimulus in
+      terms of the surfaces.
+      But if infants were are to track some simple causal interactions, then they
+      might dishabituate to the 'inconsistent' stimulus more than to the
+      'consistent' stimulus because that one involves an apparent violation of a
+      physical laws.
+  
++slide
+  .notes Here are the results.
+  .notes (Recall that the subjects are 4-month-old infants.)
+  img(src='/img/spelke_1992_fig3a.png', style="max-width:750px;")
+  p.source Spelke et al 1992, figure 3
+  .notes: :t
+    This is evidence that infants can track causal interactions among objects,
+    even when those causal interactions are occluded.
+
+
+
++slide
+  +img_clip('baillargeon_1987_fig1.png', 'auto')
+  p.source Baillargeon et al 1987, figure 1
+  .notes: :t
+    Recall this experiment which used habituation to demonstrate infants' abilities to represent
+    objects as persiting while unperceived (in this case, because occluded).
+    Infants can do this sort of task from 2.5 months or earlier \citep{Aguiar:1999jq}.
+    
+    
++slide
+  .notes Chimpanzees also understand something of phyiscal interactions insofar as their looking times show sensitivity to support relations \citep{cacchione:2004_recognizing}.
+  img(src='/img/cacchione_2004_fig2.png', style="max-width:750px;")
+  p.source Cacchione & Krist 2004, figure 2
+
++slide
+  .notes Here are the results.
+  img(src='/img/cacchione_2004_fig3.png', style="max-width:550px;")
+  p.source Cacchione & Krist 2004, figure 3
+  .notes Lots of studies like this have been done with infants in their first six months of life.
+
+
+
+
+
+
++slide
+  .notes: :t
+    Recall this experiment about causal interactions, which used a habituation paradigm.
+    Now imagine a version which involved getting infants to reach for the object rather than simply looking.
+    What would the results be?
+    There is an experiment much like this which has been replicated several times, and which shows 
+    a discrepancy between looking and searching.
+    Basically infants will look but not search.
+  +img_clip('spelke_1992_fig2a.png', 'auto')
+  p.source Spelke et al 1992, figure 2
+
+
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_010.jpg')
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_011.jpg')
+section.slide
+  .notes *todo
+  img.bkg(src='/img/slide_lecture04_012.jpg')
+section.slide
+  .notes Here are the looking time results.
+  img.bkg(src='/img/slide_lecture04_013.jpg')
+
+section.slide
+  .notes You can even do looking time and reaching experiments with the same subjects and apparatus \citep{Hood:2003yg}.
+  .notes 2.5-year-olds look longer when experimenter removes the ball from behind the wrong door, but don't reach to the correct door 
+  img.bkg(src='/img/slide_lecture04_014.jpg')
++slide
+  p search
+  .notes here are the search results (shocking).
+  img(src='/img/hood_2003_fig4.png', style="max-width:750px;")
+  p.source Hood et al 2003, figure 4
+section.slide
+  .notes *todo: describe
+  .notes **todo: Mention that \citep{mash:2006_what} show infants can also predict the location of the object (not just identify a violation, but look forward to where the object is)
+  img.bkg(src='/img/slide_lecture04_015.jpg')
+  
+
++slide({bkg:'slide_cp_london_180.jpg'})
+  .notes: :t
+    Amazingly, 2 year old children still do badly when only the doors are opaque, so that the
+    ball can be seen rolling between the doors, as in this diagram \citep{Butler:2002bv}.
++slide({bkg:'slide_cp_london_181.jpg'})
+
+
++slide_middle
+  p Can six-month-olds know simple facts about particular causal interactions?
+  p.indent.em-around No  (Berthier et al, 2000; Hood et al, 2003)
+  p.em-above What explains their sensitivity to causal interactions  (e.g. Spelke, 1992; Baillargeon, 1987) if not knowledge?
+
++slide
+  .notes: :t
+    Similar discrepancies between looking and reaching are also found in some
+    nonhuman primates, both apes and monkeys (chimpanzees, cotton-top tamarins
+    and marmosets). (Some of this is based on the gravity tube task and
+    concerns gravity bias.)
+  .step1-and-2
+    p.handout.notes.show ‘A similar permanent dissociation in understanding object support relations  
+      | might exist in chimpanzees. They identify impossible support relations in looking tasks, 
+      | but fail to do so in active problem solving.’
+    .handout.notes.ctd \citep{gomez:2005_species}
+    p.right (Gomez 2005)
+    .slide
+      p.em-above Likewise for cotton-top tamarins (Santos et al 2006) and marmosets (Cacchione et al 2012).
+  .slide
+    +blur('.step1-and-2')
+    .notes: :t
+      Note that this research is evidence of dissociations between looking and
+      search in adult primates, not infants.
+      This is important because it indicates that the failures to search are a
+      feature of the core knowledge system rather than a deficit in human
+      infants.
+    .notes.handout ‘to date, adult primates’ failures on search tasks appear to 
+      | exactly mirror the cases in which human toddlers perform poorly.’
+    p.em-above ‘to date, adult primates’ failures on search tasks appear to 
+      | exactly mirror the cases in which human toddlers perform poorly.’
+    .notes.handout.ctd \citep[p.\ 17]{santos:2009_object}
+    p.right (Santos & Hood 2009, p. 17)
+
+
++slide_middle
+  p.center dual process / core system / module ?
+  p.center.em-above perception of causation?
+  .notes: :t
+    Can we develop either of these strategies for answering the question?
+    And what is the relation between the two? (E.g. Rips, 2011 suggests that
+    the question about perception of causation just is a question about 
+    modularity (although I would disagree: after all, modules are supposed to 
+    be ‘built on the outputs of innate perceptual analyzers’))

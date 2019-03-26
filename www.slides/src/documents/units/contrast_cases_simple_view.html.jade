@@ -1,0 +1,205 @@
+---cson
+layout: 'deck_unit'
+title: "Contrast Cases and the Simple View"
+tags: ['contrast-case', 'simple-view']
+description: """
+  Getting a pre-theoretical handle on joint action is best done by contrasting 
+  joint actions with actions that are merely individual but occur in parrallel.
+  
+  The method of contrast cases is familiar from \citet{Pears:1971fk}, who used 
+  contrast cases to argue that whether something is an ordinary, individual action 
+  depends on its antecedents.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+//- +slide_middle
+//-   p.center
+//-     span Two contrast cases
+
++slide_img('unit_001/slide03.jpg')
++slide_img('unit_001/slide04.jpg')
++slide_img('unit_001/slide05.jpg')
++slide_img('unit_001/slide06.jpg')
++slide_img('unit_001/slide07.jpg')
+
++slide_middle
+  .notes.handout.show
+    p.huge-glow Question
+    p.under-huge-glow.ctd(style='margin-top:-3em;'): :t
+      What distinguishes genuine joint actions from parallel but merely individual actions?
+  .notes: :t
+    This is the organising question for our project (the project to be investigated in this 
+    series of lectures).  Of course there will be lots of further questions, but I like to
+    have something simple to frame our thinking and this question serves that purpose.
+  .notes: :t
+    My hope is that by answering this seemingly straightforward question, we will be 
+    in a position to answer the hard question about which forms of shared agency
+    underpin our social nature.
+  .notes: :t
+    The first two contrast cases are supposed to show that this question isn’t easy
+    to answer because the most obvious, simplest things you might appeal to---coordination
+    and common effects---won’t enable you to draw the distinction.
+  .slide
+    .notes.handout.show
+      p.huge-glow Aim
+      p.under-huge-glow.ctd(style='margin-top:-3em;'): :t
+        An account of joint action must draw a line between joint actions and parallel but 
+        merely individual actions.
+    .notes: :t
+      This invites us to think in terms of necessary and sufficient conditions.
+      Of course, there are all kinds of reasons why this might be problematic, and we 
+      will consider many such reasons.
+      But as I just said, having simple ideas to frame our thinking is good, and that’s why
+      I take this as my working aim.
+      (The ultimate aim is a ‘Blueprint for a Social Animal’, but it is difficult to be
+      precise about what that will involve at this stage.)
+  
+
++slide_middle
+  .notes.handout \emph{The Simple View}
+  p The Simple View
+    span.notes.handout.ctd : 
+  .notes.handout.ctd.show.em-above
+    +simple_account
+  .slide
+    +invert('.act-type')
+    .notes: :t
+      Explain: ‘I wish I had done that’.
+  .slide
+    +uninvert('.act-type')
+    +invert('.phi')
+  .slide
+    +uninvert('.phi')
+    +highlight('.intentional', 'orange')
+    .notes: :t
+      We are no longer talking about joint action generally, only about intentional joint action.
+      Compare individual action: much individual action is arguably purposive but not 
+      intentional.  Similarly, we might think that there are non-intentional but purposive joint
+      actions.  
+    .notes: :t
+      A further problem concerns the link between intentional joint action and intention.
+      Consider individual action.  Bratman has good arguments for holding that actions can
+      be intentional under a description even when no intention specifies that description;
+      and he also holds that agents incapable of intending may nevertheless perform intentional
+      actions.
+      So it is conceivable that not all intentional joint action will involve intention.
+      In that case, the Simple View may not even be a fully general account of intentional
+      joint action.
+    .notes: :t
+      I’m not going to pursue these issues yet, but we will come back to them.
+      For now I just want to note that, for all its simplicity, the Simple View raises some
+      tricky questions.
+  .slide
+    +unhighlight('.intentional', 'orange')
+    +invert('.necessary-and-sufficient')
+    .notes: :t
+      For now I am treating the Simple View as offering necessary and sufficient conditions
+      for intentional joint action, because I want to start with an ambitious claim.
+      But reflecion on the relation between intention and intentional action may force us to back
+      down later.
+  .slide
+    +uninvert('.necessary-and-sufficient')
+    +invert('.appropriately-related')
+    .notes: :t
+      Explain: deviant causal chains.
+  .slide
+    +uninvert('.appropriately-related')
+    +highlight('.together', 'red')
+    .notes: :t
+      Explain: threat of circularity.
+  .slide
+    +unhighlight('.together', 'red')
+    .notes: :t
+      There are lots of reasons to reject the Simple View.
+      However, many accounts of joint action in effect build extra conditions on to the 
+      Simple View (e.g. Bratman and accounts inspired by his).
+    .notes: :t
+      I want to suggest that the Simple View and related accounts is likely to be 
+      too limited for our purposes ...
+
+
+
++slide_middle
+  .notes: :t
+    Few discussions of joint action have considered the existence of
+    Very Small Scale Shared Agency ...
+  p.center.huge-glow-50 Very Small Scale
+    br 
+    span Shared Agency
+
++slide_lh_white
+  +hide('.right-half', 0)
+  .notes.handout: :t
+    A \emph{very small scale action} is one that is typically distantly related
+    as a descendent by the means-end relation to the actions which are
+    sometimes described as ‘small scale’ actions, such as playing a sonata,
+    cooking a meal or painting a house \citep[e.g.][p.~8]{bratman:2014_book}.
+  .notes: :t
+    There are very small scale joint actions  like playing a chord together in the 
+    course of playing a duet,
+    clinking glasses in the course of toasting our success,
+    or plassing a plate between us in the course of doing the washing up together.
+  +left_half_lh_white
+    p.center Small Scale
+      br
+      span Shared Agency
+  +right_half_lh_white
+    p.center Very Small Scale
+      br
+      span Shared Agency
+    
+  +run_across
+  +left_half_lh_white
+    p Playing a piano duet
+  +right_half_lh_white
+    p  Playing a chord together
+
+  +run_across
+  +left_half_lh_white
+    p Toasting our success together
+  +right_half_lh_white
+    p  Clinking glasses
+  
+  +run_across
+  +left_half_lh_white
+    p Washing up together
+  +right_half_lh_white
+    p Passing a plate between us
+  .slide
+    +show('.right-half')
+  .notes: :t
+    Philosophers have rarely considered such very small scale joint actions.  
+    But at least some such cases seem to involve exercising shared agency no less 
+    than larger scale activities like painting a house together.  
+  .notes: :t
+    But very small scale joint actions create a challenge to
+    views like Gilbert’s.
+  .notes: :t
+    Those views
+    hinge on the roles of intention and practical reasoning.
+  .notes: :t
+    But in at least some cases, very small scale joint actions are
+    not a consequence of practical reasoning concerning those particular actions,
+    nor need they involve intentions which specify outcomes to which the very
+    small scale joint actions are directed.
+    There is simply no need for practical reasoning, or intention, in many such cases.
+    This is particularly obvious if you think about very small scale joint actions
+    which occur in the context of larger scale activities, such as our playing a chord
+    in the course of playing a piano duet.
+  .notes: :t
+    Of course, there is no principled bar to having intentions concerning the goals of 
+    such very small scale actions (as far as I know), and such intentions may sometimes exist.
+    But in very small scale cases of acting together, intentions and practical reasoning
+    are often superfluous and sometimes absent.
+  .notes: :t
+    Despite this, these very small scale interactions appear to involve exercises 
+    of shared agency no less than small scale activities such as playing a piano duet.
+  .notes: :t
+    For very small scale cases, in virtue of what might they have collective goals?
+
+      
+    

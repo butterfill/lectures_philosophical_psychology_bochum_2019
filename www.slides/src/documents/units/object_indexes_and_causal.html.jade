@@ -1,0 +1,536 @@
+---cson
+layout: 'deck_unit'
+title: "Object Indexes and the Launching Effect"
+tags: []
+description: """
+  *
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+//- TOOD: \citep{choi:2006_measuring} on Kruschke and Fragassi
+
++slide_middle
+  .notes: :t
+    The question was how we can get beyond intuition in understanding the verbal reports.
+  p How to get beyond intuition?
+  p The launching effect: detecting a 50ms difference in the delay between two movements.
+  .notes: :t
+    Part of the answer is this.  We don't worry about the content of the verbal reports.
+    We just focus on the fact that their content changes depending on a tiny, 50 millisecond
+    difference in the delay between two movements.
+    Call this \emph{launching effect}.
+  .notes: :t
+    This doesn't tell us what people are detecting.
+    But it does tell us that the effect is not merely confabulation or making it up.
+    So we have taken a tiny step beyond intuition.  But we also have to answer two questions.
+  ol.notes.show
+    li.focus How is launching detected?  For example, does it involve perceptual processes?
+    li Why is a delay of up to around 70ms consistent with the launching effect occuring?
+  +blur('p, ol li:not(".focus")', '2px', 0)
+                  
+
+    
++slide_middle
+  p.center object indexes require 
+    span.causal
+      span.highlight tracking
+      span  some 
+      span.highlight causal interactions
+    span  ...
+  .slide
+    +highlight('.causal')
+    .notes: :t
+      But before we get to that, what is this about causal interactions?
+      It's reasonably obvious that object indexes require segmentation (otherwise how would they
+      attach to *objects*), and the evidence that they can survive occlusion is relatively easy to
+      understand.  But the point that having object indexes involves tracking causal interactions
+      is less straightforward.  So let's consider that ...
+  
++slide({bkg:'slide_causal_london_52.jpg'})
+  .notes: :t
+    Object indexes are linked to causation.
+    In order to track objects, a perceptual system has to be sensitive to be causal interactions
+  .notes: :t
+    Why is this true?
+    Because when you have a causal interaction, there's a conflict between principles of object 
+    perception e.g. distinct surfaces=>two objects, vs good continuity of motion=>one object
+    The perceptual system needs to know when conflicts should be reconciled and when they should 
+    be written off.
+    We get perceptual effects of causal interactions when there are conflicts among cues of object 
+    identity.
+  .notes: :t
+    This is a point Michotte made.  He found that launching occurs when there is a conflict between 
+    cues to object identity: good continuity of movement suggests a single object whereas the 
+    existence of two distinct surfaces indicates two objects.
+  .notes: :t
+    It is plausible that other types of causal interaction also involve conflicts between cues 
+    to object identity.
+
+
+
+
+
+
++slide_middle
+  p.center evidence
+
+
+  
++slide({bkg:'kruschke_1996_fig2_1.jpg'})
+  p.source Kruschke and Fragassi, 1996 figure 2 (part)
+  .notes: :t
+    Krushke and Fragassi (1996) have shown that the object-specific preview effect vanishes 
+    in launching but not in various spatio-temporally similar sequences.  Since the object-specific 
+    preview effect is regarded as diagnostic of feature binding, this is evidence that in launching 
+    sequences, features of the second object (such as motion) remain bound to the first object for 
+    a short time after the second object starts to move. 
+  
++slide({bkg:'kruschke_1996_fig2_2.jpg'})
+  p.source Kruschke and Fragassi, 1996 figure 2
+
++slide
+  +img_clip('kruschke_1996_fig3.png')
+  p.source Kruschke and Fragassi, 1996 figure 3
+
++slide_middle
+  .notes: :t
+    This fits almost perfectly with Michotte’s phenomenological analysis ...
+  p.notes.show: :t
+    ‘the movement performed by object B appears simultaneously under two
+    different guises: (i) as a movement (belonging to object A), (ii) as a
+    change in relative position (by object B)’
+  .notes.ctd \citep[p.~136]{Michotte:1946nz}
+  p.right.grey-text Michotte 1946 [1963], p. 136 
+  p.em-above.notes.show: :t
+    ‘the physical movement of the object struck gives rise to a double
+    representation. This movement appears at one and the same time (a) as a
+    continuation of the previous movement of the motor object, and (b) as a
+    change of relative position (a purely spatial withdrawal) of the projectile
+    in relation to the motor object.’
+  .notes.ctd \citep[p.~140]{Michotte:1946nz}
+  p.right.grey-text Michotte 1946 [1963], p. 140
+
++slide_middle
+  p.center   object index assignment error 
+  p.center   ↓ 
+  p.center   phenomenal effect 
+  p.center   ↓ 
+  p.center   judgement of causality
+
+
+
++slide_middle
+  .handout.notes: :t
+    \emph{Causal Object Index Conjecture}: 
+  p Causal Object Index Conjecture: 
+  .handout.notes.show.ctd: :t
+    Effects associated with the ‘perception of causation’
+    are consequences of errors (or error-like patterns) in the assignments of object indexes and
+    their phenomenal effects.
+  .slide.em-above.caution
+    .notes caution is required ...
+    p: :t
+      ‘Unfortunately, this preliminary study has not received any published follow-up work, to our
+      knowledge, so it is not clear if it would also generalize beyond highly specific contrasts.’
+    .notes: :t
+      \citep{choi:2006_measuring} on Kruschke and Fragassi:
+      ‘one previous study suggested that causal events gave rise to diVerent
+      patterns of object-specific priming than non-causal events (Kruschke &
+      Fragassi, 1996). Unfortunately, this preliminary study has not received any
+      published follow-up work, to our knowledge, so it is not clear if it would
+      also generalize beyond highly specific contrasts’  \citep[p.~108]{choi:2006_measuring}.
+    p.grey-text.right Choi & Scholl, 2006 p. 108
+      
+  .slide.em-above
+    +blur('.caution')
+    p.notes.handout.show: :t
+      Predictions: 
+      (i) Where there is perception of causation, there will be errors (or error-like patterns)
+      in the assignments of object indexes.
+      (ii) Factors that can influence how object indexes are assigned or maintained can influence 
+      perception of causation.
+
++slide_middle
+  .notes: :t
+    The conditions that affect launching are consistent with it being a consequence 
+    of how object indexes are updated and maintained ...
+  p.toblur.notes.handout.show: :t
+    ‘Michotte and his followers worked out many of the factors which mediate
+    the perception of causality, such as the role of absolute and relative
+    speeds, spatial and temporal gaps in the objects' trajectories, differences
+    in the durations and angles of each object's trajectory, etc ...
+  p.notes.handout.ctd.show
+    span.toblur ‘This research has generally shown that many different  
+    span spatiotemporal parameters are critical for perceiving causality, but 
+    span.toblur  that 
+    span featural parameters (eg colors, shapes, sizes) play little or no role.
+    span.toblur ’
+  .notes.handout.ctd \citep[p.~456]{Scholl:2004dx}
+  p.right.grey-text Scholl and Nakayama 2004, p. 456
+  .slide
+    +blur('.toblur')
+
+
++slide
+  .notes: :t
+    Assignments of object indexes are not generally sensitive to featural information 
+    (*check: perceiving expressions of emotion paper / dev.mind).
+  +img_clip('scholl_2007_fig4.png')
+  p.source Scholl 2007, figure 4
+
++slide_middle
+  .notes: :t
+    If you've read Rips (2011) you’ll know about 
+    dissociations between the launching effect and causal reasoning.
+  p.center dissociations between the launching effect and causal reasoning 
+    span.grey-text (Rips 2011)
+  .notes: :t
+    Schlottmann and Shanks (1992, Experiment 2) ... The point of this
+    experiment was to distinguish between cues to causality provided by
+    perceptual features within a display (launching vs. delay) and by
+    statistical contingencies (between Object A moving and Object B moving) as
+    observed across trials. If Michotte’s hypothesis is correct, statistical
+    contingencies should not affect perceptual judgments of whether a
+    launching has occurred. Conversely, perceptual features should not affect
+    judgments of whether A’s movement is statistically necessary for B’s
+    movement.  ... The results of the study were clear cut ...: Launching versus delay
+    affected ratings of how convincing the collisions looked but not ratings of
+    necessity. However, the presence of a predictive statistical relation
+    affected ratings of necessity but not ratings of convincingness. These
+    results are consistent with Michotte’s hypothesis: Statistical
+    contingencies over trials do not affect the cause detector on the right of
+    Figure 3A, which is sensitive only to purely spatio-temporal properties of
+    the individual displays.
+    \citep[p.~87]{rips:2011_causation}
+  .notes: :t
+    Schlottman & Shanks (1992, p. 340): 
+    ‘Despite the fact that a colour change of Object B more reliably predicted B’s movement than did the
+    impact of Object A, where was no impact of the predictive relationship on subjects’ ratings of
+    perceived causality. In other experiments asking subjects to make causal judgements, however, such
+    alternative predictive signals are known to reduce subjects’ ratings dramatically (Shanks, 1986).’
+  .notes: :t
+    ‘The clearest dissociation among the neuropsychology studies comes from
+    Roser, Fugelsang, Dunbar, Corballis, and Gazzaniga (2005), who tested two
+    split-brain patients. ... The patients were able to discriminate the
+    launching sequence from the others only if their right hemisphere processed
+    the event. By contrast, the same patients were able to solve a causal
+    reasoning problem—figuring out which of two switches controlled a
+    light—only if the problem appeared to their left hemisphere.’
+    \citep[p.~88]{rips:2011_causation}
+
+
+
+
+
+
++slide_middle
+  .notes: :t
+    Guess how the launching effect works! A natural thought is this: first you
+    perceive objects, then you identify causal interactions based on contiguity
+    etc. This turns out to be completely wrong.
+  p.center more evidence
+
++slide
+  .notes: :t
+    The impression of launching is judgement-independent.
+    So it can't be a consequence of thinking about the interaction.
+    Still, it might be a consequence of perceiving objects in certain relations to each other.
+    However a key finding shows that this is wrong.
+    Surprisingly, we don't first perceive objects and then get the launching effect;
+    rather, the launching effect is tied up with perceptual process of identifying objects' surfaces.
+  p judgement-independent
+  img(src='/img/thines_1991_fig.png')
+  p.source Thines et al (1991)
+
+  
+section.slide
+  .notes: :t
+    [I'm about to talk about illusory causal crescents.  I first show them two videos.
+    This is a full overlap video.
+    You can drag the slider to show them that it's full overlap, but first ask them what they see.]
+    [Static images follow in case video doesn't work.]
+  +_slide_inner
+    video(width="640", height="480", controls)
+      source(src="/mov/01_FullOverlap.mp4",type="video/mp4")
+  .slide
+    +blur('video', '5px')
+    +reset
+      +middle
+        p.center what did you see?
+        .notes: :t
+          Normally, if the two balls overlap completely, subjects report seeing a single object 
+          changing colour.
+    
+  
+section.slide
+  .notes: :t
+    [This is a causal capture video with full overlap.
+    Focus on the top sequence.  Tell me what you saw!
+    You can drag the slider to show them that it's full overlap, but first ask them what they see.]
+    [Static images follow in case video doesn't work.]
+  +_slide_inner
+    video.full-overlap(width="640", height="480", controls)
+      source(src="/mov/02_CausalCapture.mp4",type="video/mp4")
+  .slide
+    +blur('video', '5px')
+    +reset
+      +middle
+        p.center what did you see?
+        .notes: :t
+          Normally in this case people report the impression that the top sequence collided.
+          That is, they didn't pass, they collided.
+        .slide
+          p.center causal capture
+          .notes: :t
+            Causal capture is described by \citep{Scholl:2002eb}.
+            As I said,
+            normally, if the two balls overlap completely, subjects report seeing a single object 
+            changing colour.
+            But if we show subjects a sequence like the launching effect but where the first square 
+            overlaps the second's position before it moves.  When this event is shown is isolation 
+            almost all subjects see it as a single object changing colour.  But when the event is 
+            shown with an 
+            unambiguous launching effect nearby, almost all subjects now see the 'overlap' event as 
+            a launching.
+            Causal capture means that we can show subjects a sequence with complete overlap and 
+            still have the report a causal effect.
+            
+          .notes: :t
+            Why do we care about causal capture?  Because it gives rise to illusory causal 
+            crescents ...
+          
+
+    
++slide
+  .notes: :t
+    [Now I'll explain illusory causal cresecents.]
+  +img_clip('scholl_2004_fig2ab.png', 'rect(0,240px,550px,0px)')
+  p.source Scholl and Nakayama 2004, figure 2 (part)
+  .notes: :t
+    Here's a static image representing the sequence you saw first, when there was full overlap.
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes.handout: :t
+      ‘when there is a launching event beneath the overlap (or underlap event) timed such that 
+      the launch occurs at the point of maximum overlap, observers inaccurately report that 
+      the overlap is incomplete, suggesting that they see an illusory crescent.’ 
+      \citep[p.\ 461]{Scholl:2004dx}
+    .notes.handout: :t
+      Why does the illusory causal crescent appear?  Scholl and Nakayama suggest a  
+      ‘a simple categorical explanation for the Causal Crescents illusion: the visual system, 
+      when led by other means to perceive an event as a causal collision, effectively 
+      ‘refuses’ to see the two objects as fully overlapped, because of an internalized 
+      constraint to the effect that such a spatial arrangement is not physically possible. 
+      As a result, a thin crescent of one object remains uncovered by the other one-as 
+      would in fact be the case in a straight-on billiard-ball collision where the motion 
+      occurs at an angle close to the line of sight.’ 
+      \citep[p.\ 466]{Scholl:2004dx}
+    .notes: :t
+      *here or later?
+      Contrast Spelke’s view.
+      ‘objects are conceived: Humans come to know about an object’s unity, boundaries, and 
+      persistence in ways like those by which we come to know about its material composition 
+      or its market value.’
+      \citep[p.\ 198]{Spelke:1988xc}.
+
++slide
+  +img_clip('scholl_2004_fig5.png')
+  p.source Scholl and Nakayama 2004, figure 5
+  .notes (*This figure just shows when the overlap event was perceived as causal.)
+
+
++slide_middle
+  .notes This fits perfectly with Spelke’s brilliant insight.
+  p.notes.handout.show ‘object perception reflects basic constraints on the motions of physical bodies …’
+  p.right (Spelke 1990: 51)
+  .notes.handout.ctd \citep[p.\ 51]{Spelke:1990jn}
+  p.notes.handout.show.em-above ‘A single system of  
+    span.knowledge knowledge
+    span   … appears to underlie object perception and physical reasoning’
+  .notes.handout.ctd \citep[p.\ 175]{Carey:1994bh}
+  p.right (Carey and Spelke 1994: 175)
+  .notes: :t
+    I think there's something here that should be uncontroversial, and
+    something that's more controversial.
+  .slide
+    +invert('.knowledge')
+    .notes: :t
+      It can’t be knowledge, but let’s not worry about that because there’s a worse objection.
+  .slide
+    +uninvert('.knowledge')
+  .slide
+    p.em-above Rips’ objection (2011, p. 92)
+    .notes: :t
+      ‘This possibility, though, is not one that advocates of Michotte’s
+      hypothesis have taken up. The favored view is one in which separate
+      modules are responsible for descriptions of objects and of their
+      mechanical interactions, with central mechanisms then resolving potential
+      conflicts between them. 
+      For example, Leslie (1988) argues that perceptual
+      modules do not by themselves settle inconsistencies between the spatial
+      positions of objects and their causal interactions. In certain 
+      illusions, adults tend to perceive solid objects passing through each other
+      (Leslie cites the Pulfrich double-pendulum illusion; see Wilson &
+      Robinson, 1986). Thus, the module for object tracking doesn’t prohibit
+      interpretations of physical events that are causally impossible. Of
+      course, people realize that such events cannot really be taking place and
+      are surprised when they perceive them, but that is because they have
+      principles stored in long-term memory—for example, the principle that two
+      solid objects cannot be in the same place at the same time—that classify
+      these events as illusions or anomalies. Leslie’s argument suggests
+      that people individuate objects and calculate their causal relations by
+      means of separate mechanisms; thus, we can’t count on causal constraints
+      being part of the object-tracking module. If Leslie is right, there is
+      reason to question Butterfill’s (2009) conjecture that ‘object
+      perception and causal perception are one and the same process’’ (p.
+      421).’
+    .notes: :t
+      Response: it was too simple to say that 
+      ‘object perception and causal perception are one and the same process’ or to
+      talk about ‘object perception and physical reasoning’ because object perception 
+      is a complicated thing with many aspects.
+      What Carey and Spelke (and following them, Butterfill) should have said is that
+      there is a system of object indexes which assigns indexes in ways that reflects
+      physical constraints such as solidity on objects’ motions, and this is what gives
+      rise to the launching effect.
+
+
+
+section.slide
+  +_slide_inner
+    video(width="640", height="480", controls)
+      source(src="/mov/Video_S6--Vertical-launch display--Exp 2.mov",type="video/mp4")
+    p.source Kim et al 2013, S6
+
++slide
+  +img_clip('kim_2016_fig2.png')
+  p.source Kim et al 2013, figure 2
++slide
+  +img_clip('kim_2016_fig3.png')
+  p.source Kim et al 2013, figure 3
+
+//-
+  Could talk about RM representational momentum from Perceiving expressions of emotion paper
+  but it’s just speculation ...
+
+
+
++slide_middle
+  .notes The question was, 
+  ol
+    li.em-around.q1.notes.ctd.show.focus: :t
+      How is launching detected?  For example, does it involve perceptual processes?
+    li.em-around.q2 Why is a delay of up to around 70ms consistent with the launching effect occuring?
+  +blur('.q2','2px',0)
+  .notes: :t
+    We've just taken a step towards answering this first question.  As 
+    \citet[p.\ 299]{Scholl:2000eq} put it,
+  .handout.notes: :t
+    ‘just as the visual system works to recover the physical structure of the world by inferring 
+    properties such as 3-D shape, so too does it work to recover the causal …  structure of 
+    the world by inferring properties such as causality’ 
+    \citep[p.\ 299]{Scholl:2000eq}
+  .notes: :t
+    But more is needed ...
+  .slide
+    +unblur('.q2')
+    +blur('.q1')
+    .notes: :t
+      The second question, Why is a delay of up to around 70ms consistent with the 
+      launching effect occuring?, remains open.
+
+    .notes: :t
+      This is an important question insofar as we are concerned with detecting causal interactions.
+      Is what people detect when the launching effect occurs a causal interaction?
+      You might say, it can't be a causal interaction 
+      because no delay between two movements is consistent with a causal interaction.
+    .slide
+      .notes: :t
+        Michotte said this:
+      p.em-above.notes.show: :t
+        ‘anyone not very familiar with the procedure involved in framing the physical concepts of 
+        inertia, energy, conservation of energy, etc., might think that these concepts are simply 
+        derived from the data of immediate experience.’
+      span.notes.ctd \citep[p.\ 223]{Michotte:1946nz}
+      p.right Michotte (1946, p. 223)
+      .notes: :t
+        How is this consistent with the laws of mechanics—surely no pause can be tolerated? 
+        Ingeniously, Michotte compares launching with the movement of a single object. The single 
+        object moves half way across a screen then pauses before continuing to move. Michotte found 
+        that the longest pause between the two movements consistent with subjects experiencing them 
+        as a single movement is around 80ms, exactly the longest pause consistent with experiences 
+        characteristic of launching \citep[pp.\ 91--8, 124]{Michotte:1946nz}. Accordingly, the 
+        experience characteristic of launching appears to require that the two movements be 
+        experienced as uninterrupted—--this is why they can be separated by a pause of up to but 
+        no longer than 80ms.
+
+
+
++slide_middle
+  p.center perceptual process vs perceptual experience
+  .notes What if anything do the findings tell us about phenomenology?
+
++slide_middle
+  .notes: :t
+    Recall this argument ...
+  .notes.show
+    p.hem-around Consider an encounter with three two-object movements where the delays between movements are 50, 100 and 150ms.
+    p.indent.hem-around (1) The phemomenal difference between the first two encounters is larger than the phenomenal difference between the second two.
+    p.indent.hem-around (2) This difference in differences is a fact in need of explanation.
+    p.indent.hem-around.three (3) The fact cannot be explained by perceptual experience of objects or their motion.
+    p.indent.hem-around (4) The best explanation for (1) is that we perceptually experience causal interactions.
+  .slide
+    +highlight-row('.three','red')
+    .notes: :t
+      The research on object experiences suggests this is false.
+      The causes are causal, but the experiences is of objects.
+      Or rather, of an interruption to the way objects are perceived.
+    .notes: :t
+      The launching effect is all about how motion is processed perceptually,
+      so it is natural to suppose that the phenomenology reflects this.
+    .notes: :t
+      Michotte went to great lengths to argue that the experience of one object
+      having another’s movement amounted to experiencing causation (‘ampliation of the 
+      movement’), but this appears unjustified.
+
+
+
+
++slide_middle
+  .notes A question was:
+  p.notes.ctd.show Can humans perceive causal interactions?
+  .notes: :t
+    Now I think we have achieved an answer:
+  p.indent.em-above.notes.show
+    span Working hypothesis: Causal interactions are detected, or otherwise treated specially, by   
+    span.processes perceptual processes
+    span  involved in segmenting and tracking objects.
+  .notes: :t
+    The perceptual system responsible for identifying objects must also concern itself with certain 
+    kinds of causal interaction in order to reconcile conflicting cues to object identity. 
+  .notes: :t
+    In slightly more detail: one function of our perceptual systems is to identify and track 
+    objects; this is done by means of various cues; sometimes the visual system is faced with 
+    conflicting cues to object identity which need to be resolved in order to arrive at a 
+    satisfactory interpretation; when certain types of causal interaction occur there is a 
+    conflict among cues to object identity; these conflicts must be treated differently from other 
+    conflicts because they do not indicate failures of object identification and so do not  
+    require resolution or further perceptual processing. 
+    So object perception depends on sensitivity to certain types of causal interaction and this is 
+    why the launching effect occurs.
+  .notes: :t
+    This is unexpected insofar as perception is often supposed to be limited to features of the 
+    world less abstract that causal interactions.  Indeed, the notion that perceptual processes
+    represent three-dimensional objects rather than mere surfaces was at one time controversial.
+    The research we have reviewed shows that perceptual processes represent not only 
+    three-dimensional but properly physical objects, that is, objects capable of causally
+    interacting with each other.
+  .slide
+    +invert('.processes')
+    .notes So much for the processes, what about the phenomenology?
+  .slide
+    p.indent.em-above.notes.show: :t
+      Conjecture: These detections affect the phenomenal character of experiences,
+      giving rise to spontaneous judgements of causality.

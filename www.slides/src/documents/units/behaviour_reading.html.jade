@@ -1,0 +1,239 @@
+---cson
+layout: 'deck_unit'
+title: "Ingredients for a Theory of Behaviour Reading"
+tags: []
+description: """
+  ‘A better conception of ‘not mindreading’ would be more disparate and 
+  less dependent on common sense than the current conception of behaviour reading’
+  (Heyes, 2015, p. 322).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
++slide_middle
+  p.q What could 
+    span.infants infants
+    span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
+  +line-through('.infants')
+
++slide_rh_white
+  +left_half
+    p The standard question:
+    p Do nonhuman animals represent mental states or only behaviours?
+    p The ‘Logical Problem’ ...
+  +right_half
+    p Alternative question: 
+    p How might nonhuman animals model others’ behaviours, and how might they predict them?
+    .slide.em-above
+      p.notes.handout.show: :t
+        ‘a better conception of ‘not mindreading’ would be more disparate and 
+        less dependent on common sense than the current conception of behaviour reading’
+      .notes.handout.ctd \citep[p.~322]{heyes:2014_animal}
+      p.right.grey-text Heyes (2015, p. 322)
+  
++slide
+  .notes: :t
+    Start with a case in which behaviour reading is clearly involved.
+    I take Byrne’s study
+    to demonstrate that chimps are capable of sophisticated behaviour reading.
+    But how might they represent behaviours?
+  .notes: :t
+    The procedure for preparing a nettle to eat while avoiding contact with its stings is shown in
+    \vref{fig:byrne_2003_fig1}. It involves multiple steps. Some steps may be repeated varying numbers of
+    times, and not all steps occur in every case. The fact that gorillas can learn this and other
+    procedures for acquiring and preparing food by observing others’ behaviour suggests that they have
+    sophisticated behaviour reading abilities \citep[p.~513]{Byrne:2003wx}. If we understood the nature
+    of these behaviour reading abilities and their limits, we might be better able to understand their
+    abilities to track mental states too.
+    
+  p.center
+    img.handout.show(src='/img/byrne_2003_fig1.png', style="height:400px;")
+  p.source Byrne 2003, figure 1
+  
+  .notes.handout: :t
+    ‘great apes [are] able to acquire complex and elaborate local traditions of food
+    acquisition, some of them involving tool use’ \citep[p~513]{Byrne:2003wx}
+  .notes: :t
+    So even quite sophisticated behaviour reading is possible without any
+    reliance on communication by language.
+    We can therefore think of behaviour reading as foundational for any kind 
+    of radical interpretation.
+  .notes: :t
+    [background]
+    ‘Nettles, Laportea alatipes, are an important food of mountain gorillas in Rwanda (Watts 1984), 
+    rich in protein and low in secondary compounds and structural carbohydrate (Waterman et al. 1983). 
+    Unfortunately for the gorillas, this plant is 'defended' by powerful stinging hairs, 
+    especially dense on the stem, petioles and leaf-edges. 
+    All gorillas in the local population process nettles in broadly the same way, 
+    a technique that minimizes contact of sting- ing hairs with their hands and 
+    lips (Byrne & Byrne 1991; figure 1). A series of small transformations is 
+    made to plant material: stripping leaves off stems, accumulating
+    larger bundles of leaves, detachment of petioles, picking out unwanted debris, 
+    and finally folding a package of leaf blades within a single leaf before 
+    ingestion. The means by which each small change is made are idiosyncratic and
+    variable with context (Byrne & Byrne 1993), thus presum- ably best learned 
+    by individual experience. However, the overall sequence of five discrete 
+    stages in the process is standardized and appears to be essential for efficiency
+    (Byrne et al. 2001a).’ \citep[pp.~531--2]{Byrne:2003wx}
+  .notes: :t
+    ‘Like other complex feeding tasks in great apes, preparing nettles is a hierarchically 
+    organized skill, showing considerable flexibility: stages that are occasionally 
+    unnecessary are omitted, and sections of the process (of one or several ordered stages) 
+    are often repeated iteratively to a criterion apparently based on an adequate size of 
+    food bundle (Byrne & Russon 1998).’ \citep[pp.~532]{Byrne:2003wx}
+
+
++slide_middle
+  p Behaviour reading matters for
+  .hem-around-children
+    p identifying mental states
+    .notes: :t
+      Because ascriptions of mental states are based on observed behaviours.
+    .slide
+      p identifying effects of actions
+      p predicting when an event of interest will occur
+      p learning how to do things
+    .handout.notes: :t
+      Our primary concern here with behaviour reading is as a potential basis for abilities to track others’ mental states without representing them.
+      But behaviour reading is plausibly important in other ways.
+      In mindreaders, behaviour reading is thought to be useful or even necessary for identifying intentions and other mental states (\citealp[p.~861]{Newtson:1977dw}; \citealp[p.~708]{Baldwin:2001rn}).
+      Behaviour reading may also matter for efficiently representing events \citep{Kurby:2008bk}, identifing the likely effects of actions \citep{Byrne:1999jk}, predicting when an event likely to be of interest will occur \citep[p.~121]{Swallow:2008cf},
+      and learning through observation how to do things \citep{Byrne:2003wx}.
+      And of course a special case of pure behaviour reading, ‘speech perception’, underpins communication by language in humans.
+      
+
+
++slide_middle
+  .hem-around-children
+    p segmentation: Where does an action begin an end?
+    .notes: :t
+      Behaviour reading involves at least three components: segmentation, categorisation and structure extraction.
+      First, it is necessary to segment continuous streams of bodily movements into units of interest.
+      Adult humans can readily impose boundaries on continuous sequences of behaviour \citep{Newtson:1976ni,Zacks:2001ua,Kurby:2008bk}, as can infants \citep{Baldwin:2001rs}.
+      Segmentation is probably complicated by the fact that units are not performed one after another but can overlap, as when you bat away a fly while squeezing a lemon and talking on the phone.
+      A further complication is that identifying unit boundaries probably involves taking into account the context in which a behaviour occurs \citep[p.~847]{Newtson:1977dw}.
+      How could segmentation be achieved?
+      Commencement and completion of a goal or subgoal typically coincide with dramatic changes in physical features of the movements such as velocity \citep{Zacks:2001vo}.
+      Baldwin and Baird express this idea graphically with the notion of a ‘ballistic trajectory’ that provides an ‘envelope’ for a unit of action \citep[p.~174]{Baldwin:2001rs}.
+      Research using schematic animations has shown that adults can use a variety of movement features to group behavioural chunks into units
+      \citep{Zacks:2004vd,Hard:2006gr}.
+    .slide
+      p categorisation: What is the type of that action?
+      .notes: :t
+        A second component of behaviour reading is categorisation.
+        Adult humans spontaneously label units of behaviour as ‘running’, ‘grasping’, or ‘searching’ (say).
+        This is categorisation: two units which may involve quite different bodily configurations and joint displacements and which may occur in quite different contexts are nevertheless treated as equivalent.
+        How are categories identified in pure behaviour reading?
+        One possibility is that some categorisation processes involve mirroring motor cognition.
+        When a monkey or a human observes another’s action, there are often motor representations in her that would normally occur if it were her, the observer, who was performing the action (see \citealp[][]{rizzolatti_functional_2010,rizzolatti_mirrors_2008} for reviews).
+        Further, in preparing, performing and monitoring actions, units of action are represented motorically in ways that abstract from particular patterns of joint displacements and bodily configurations \citep[e.g.][]{rizzolatti:1988_functional, Rizzolatti:2001ug, hamilton:2008_action, cattaneo:2010_state-dependent,Umilta:2001zr, villiger:2010_activity, koch:2010_resonance}.
+        And, in observation as performance, what is represented motorically depends on contextual factors such as the presence of particular objects on which certain actions might be performed (\citealp{Gallese:2011uq}).
+        Taken together, these findings indicate that %there may be a deep connection between processes involved in action performance and one process of categorisation in behaviour reading.
+        %Perhaps
+        one process by which units of action are categorised is the process by which, in other contexts, your own actions are prepared.
+    .slide
+      p structure extraction: Are these actions related to those?
+      .notes: :t
+        A third component of behaviour reading is structure extraction.
+        Many actions can be analysed as a structure of goals hierarchically ordered by the means-ends relation
+        A behaviour reader should be able to extract some or all of this structure.
+        But how?
+        Units of behaviour that are all involved in bringing about a single outcome are more likely to occur in succession than chunks not so related.
+        This suggests that transitional probabilities in the sequence of units could in principle be used to identify larger structures of units, much as phonemes can be grouped into words by means of tracking transitional probabilities \citep{Saffran:1996aj,Gomez:2000jr}.
+        We know that human adults can learn to group small chunks of behaviour into larger word-like units on the basis of statistical features alone \citep{Baldwin:2008mw}.
+        A statistical learning mechanism required for discerning such units is automatic \citep{Fiser:2001cx}, domain-general \citep{Kirkham:2002cj} and probably present in human infants \citep{saffran:2007_dog} as well as other species including monkeys \citep{Hauser:2001oo}, pigeons \citep{herbranson:_artificial},
+        songbirds \citep{abe:2011_songbirds} and rats \citep{Toro:2005ma,murphy:2008_rule}.
+        It is therefore plausible that at least some animals’ pure behaviour reading abilities enable them to extract some of the hierarchical structure of actions.
+    .slide
+      p goal ascription: What is the goal of those actions?
+      .notes: :t
+        Here I think the teleological stance (which may involve motor processes) 
+        is helpful.
+
+
++slide({bkg:'behaviour_reading_17.jpg'})
+  .notes: :t
+    Let me recap the four ingredients with a diagram ....
++slide({bkg:'behaviour_reading_18.jpg'})
++slide({bkg:'behaviour_reading_19.jpg'})
++slide({bkg:'behaviour_reading_20.jpg'})
++slide({bkg:'behaviour_reading_21.jpg'})
++slide({bkg:'behaviour_reading_22.jpg'})
++slide({bkg:'behaviour_reading_23.jpg'})
++slide({bkg:'behaviour_reading_24.jpg'})
++slide({bkg:'behaviour_reading_25.jpg'})
+
+
++slide_middle
+  p.center Limits of Behaviour Reading?
+  .notes: :t
+    What are the limits of pure behaviour reading?
+    While little is currently known about pure behaviour reading outside of communication by language,
+    it is perhaps reasonable to assume that structure extraction depends on domain-general learning mechanisms.
+    After all, such mechanisms appear sufficient and there is currently little evidence for domain-specific mechanisms.
+    %(even in adult humans, the most abundant lab animals)
+    This assumption allows us to make conjectures about the limits of pure behaviour reading.
+  .notes: :t
+    One limit concerns the kinds of structure which animals of a given species might extract.
+    How complex are the patterns of behaviour which can be extracted?
+    
+  .slide
+    p.center.em-above
+      span.serial adjacent
+      span  vs 
+      span.hierarchical non-adjacent
+      span  dependencies
+  .slide
+    +invert('.serial')
+
+  .slide
+    +uninvert('.serial')
+    +invert('.hierarchical')
+    .notes: :t
+      There is a non-adjacent dependency in my behaviour when, for example, my now having a line of sight to an object that is currently unobtainable because of a competitor’s presence results in me retrieving the object at some arbitrary later time when the competitor is absent.
+      In this case, my retrieving the object depends on my having had it in my line of sight, but there is an arbitrary interval between these events.
+      The hypothesis is that structures involving non-adjacent dependencies are relatively difficult to learn and identify, and that difficulty increases as the number of non-adjacent dependencies increases.%
+      \footnote{%
+      Compare \citet[][]{vries:2012_processing}.
+      Of course, whether non-adjacent dependencies are intrinsically difficult depends on the cognitive architecture \citep{udden:2012_implicit}.
+      There is evidence that monkeys \citep{ravignani:2013_action} and chimpanzees \citep{sonnweber:2015_non} can learn patterns involving one non-adjacent dependency.
+      }
+
++slide_middle
+  p.center The Birdsong Limit?
+  .notes: :t
+    To generalise, suppose we assume that extracting structure in pure behaviour reading involves domain-general learning mechanisms only.
+    Then whenever an animal’s abilities to track others’ mental states are underpinned by pure behaviour reading only, her abilities to learn and identify patterns should be subject to domain-general limits.
+    Since birdsongs are discriminable and involve diverse behavioural structures \citep{berwick:2011_songs}, we might take the \emph{Birdsong Limit} as a rough working hypothesis: structures not found in birdsong cannot be extracted in pure behaviour reading.
+  .handout: :t
+    The \emph{Birdsong Limit}: structures not found in birdsong cannot be extracted in pure behaviour reading.
+  .handout.notes: :t
+    ‘The current study tested the hypothesis that a non-human primate species could detect abstract,
+    non-adjacent dependencies in acoustic stimuli, even when dependencies occurred over an arbitrary
+    variable number of intervening sounds ... Squirrel monkeys consistently recognized and generalized
+    the pattern ABnA at different levels, showing sensitivity to arbitrary-distance dependencies’
+    (\citealp{ravignani:2013_action}; see also\citealp{sonnweber:2015_non}).
+
++slide({bkg:'hare_2001_fig1.png'})
+  p.source Hare et al (2001, figure 1)
+  .notes: :t
+    Although not designed to test such limits, some existing experimental designs involve features which plausibly exclude explaining subjects’ performance in terms of pure behaviour reading only.
+    To illustrate, consider the sequence of events in the ‘misinformed’ condition of \citet[][Experiment 1]{Hare:2001ph}.
+    A competitor observes food being placed [$A$], the competitor’s access is blocked [$B$], stuff happens [$X^N$], food is moved [$C$], more stuff happens [$Y^N$], and the competitor’s access is restored [$D$].
+    Finding evidence that chimpanzees can learn to identify patterns of this form [$ABX^NCY^ND$] and use them to predict the conspecifics’ behaviours would represent a major discovery.
+  .notes: :t
+    ‘Before the subordinate’s door was raised, thus allowing her to enter the middle cage, we closed the dominant’s door, regard- less of whether it had been open before, and it remained closed until the subordinate’s hand first touched the floor of the middle cage.’ Hare et al (2001, p. 142)
+  .slide
+    +blur('img, .source')
+    +fade('img, .source')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p A competitor observes food being placed 
+        p the competitor’s access is blocked 
+        p stuff happens 
+        p food is moved
+        p more stuff happens
+        p the competitor’s access is restored 

@@ -1,0 +1,690 @@
+---cson
+layout: 'deck_unit'
+title: "Collective Goals and Motor Representations"
+tags: []
+description: ""
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/lecture_mixins
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
++slide({bkg:'family_railcard.jpg'})
+
+.handout: :t
+  Motor representations concern not only bodily configurations and movements but also more distal
+  outcomes such as the grasping of a mug or the pressing of a switch
+  \citep{butterfill:2012_intention,hamilton:2008_action,cattaneo:2009_representation}.
+.handout: :t
+  Some motor processes are planning-like in that they involve deriving means by which the outcomes could
+  be brought about and in that they involve coordinating subplans
+  \citep{jeannerod_motor_2006,zhang:2007_planning}.
+.handout: :t
+  Motor processes concerning actions others will perform occur in observing others act
+  \citep{Gangitano:2001ft}---and even in observing several others act jointly
+  \citep{manera:2013_time}---and enables us to anticipate their actions
+  \citep{ambrosini:2011_grasping,aglioti_action_2008}.
+.handout: :t
+  In joint action, motor processes concerning actions another will perform can occur
+  \citep{kourtis:2012_predictive, meyer:2011_joint}, and can inform planning for one's own actions
+  \citep{vesper:2012_jumping,novembre:2013_motor,loehr:2011_temporal}.
+.handout: :t
+  In some joint actions, the agents have a single representation of the whole action (not only separate
+  representations of each agent's part)
+  \citep{tsai:2011_groop_effect,loehr:2013_monitoring,Menoret:2013fk}, and may each make a plan for both
+  their actions \citep{meyer:2013_higher-order,kourtis:2014_attention}.
+.handout: :t
+  An interagential structure of motor representation: 
+  \begin{enumerate} \item there is an outcome to
+  which a joint action could be collectively directed and in each agent there is a motor representation
+  of this outcome; \item these motor representations trigger planning-like processes in each agent which
+  result in plan-like hierarchies of motor representations; \item the plan-like hierarchy in each agent
+  involves motor representations concerning another's actions as well as her own; \item the plan-like
+  hierarchies of motor representations in the agents nonaccidentally match. 
+  \end{enumerate}
+
+
+
++slide({bkg:'prosecco_accident.png'})
+  p.question.hide  In virtue of what do actions involving multiple agents ever have collective goals?
+  .notes: :t
+    Recall how Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+    and unfortunately the prosecco misses the glass, soaking Zachs’s trousers.  
+  //- .notes: :t
+  //-   Ayesha might say, truthfully, ‘The collective goal of our actions was not to soak Zach's trousers in
+  //-   sparkling wine but only to fill this glass.’
+  //-   What could make Ayesha’s statement true?
+  .slide
+    +diagram_action_goal
+    .notes: :t
+      As this illustrates, 
+      some actions involving multiple agents are purposive in the sense that 
+  .slide
+    +show('.outcome')
+    .notes: :t
+      among all their actual and possible consequences, 
+  .slide
+    +show('.outcome.block .block-glow')
+    .notes: :t
+      there are outcomes to which they are directed
+  .slide
+    +show('.joint-action .neon-rect')
+    .notes: :t
+      and the actions are collectively directed to this outcome
+  .slide
+    +hide('.joint-action .neon-rect')  
+    +show('.joint-action .neon-ellipse')
+    .notes: :t
+      so it is not just a matter of each individual action being directed to this outcome.
+  .slide
+    +hide('.joint-action .neon-ellipse')
+    +show('.joint-action .neon-rect')
+    .notes: :t
+      In such cases we can say that the actions have a collective goal.
+  .slide
+    +show('.question')
+    .notes: :t
+  .slide
+    +show('.explain-collective-directedness')
+    .notes: :t
+      As what Ayesha and Beatrice are doing---filling a glass together---is a paradigm case of joint action, it might seem natural to answer the question by invoking a notion of shared (or `collective') intention.
+      Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
+      Then, on many accounts of shared intention,
+  .slide
+    +show('.represents')
+    .notes: :t
+      the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
+      or each of them being in some other state which picks out this outcome. 
+  .slide
+    +show('.coordinates')
+    .notes: :t
+      The shared intention also provides for the coordination of their actions (so that, for example, 
+      Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And 
+      coordination of this type would normally facilitate occurrences of the type of outcome intended. 
+      In this way, invoking a notion of shared intention provides one answer to our question about what 
+      it is for some actions to be collectively directed to an outcome.
+  .slide
+    +show('.iasmr')
+    .notes: :t
+      But we’ve already seen that the existence of collective goal does not 
+      require a shared intention.  Collective goals can also exist in virtue of 
+      the way two or more agents’ actions are coordinated.
+    .notes: :t
+      Are there also ways of answering the question which involve psychological structures 
+      other than shared intention? In this talk I shall argue that there are.  
+      Our actions having collective goals is not always only a matter of what we intend: 
+      sometimes it constitutively involves motor representation. 
+
+
+
++slide_middle
+  p.center one agent
+  .notes: :t
+    Let me start by stepping back and consider an individual action.
+    Consider what Ayesha and Beatrice do---their attempt to fill Zach's glass by one pouring prosecco while the 
+    other holds a glass---but now imagine that one person does both parts of the action.
+  .notes: :t
+    In virtue of what do actions involving just one agent ever have goals?
+  .notes: :t
+    A standard answer involves appeal to intention.
+    For an intention identifies an outcome, coordinates some of the agent’s actions around that outcome, and coordinates them in such a way that, normally, the coordination would facilitate the occurrence of the outcome.
+    Thus someone's intention to wash the dishes might, for example, constrain the order of her actions so that that the prosecco glasses are done before greasy pans.
+    In this way, appealing to an intention concerning an outcome and its role in coordinating actions can sometimes allow us to explain in virtue of what several actions are collectively directed to that outcome.
+    Are there other facts in virtue of which  multiple actions involving just one agent can be collectively directed to an outcome?
+  .notes: :t
+    But some philosophers have argued that some actions have goals in virtue of motor 
+    representation rather than intention.
+    It will be helpful to outline these arguments since my aim today is 
+    an attempt to generalise such arguments from one agent to multiple agents.
+
+
++insert_unit({unit:'motor_representation_intro', title_slide:false, images:images, handout:true})
+
+
++slide({bkg:'individual_joint_diagram/Slide1.jpg'})
+  .notes: :t
++slide({bkg:'individual_joint_diagram/Slide2.jpg'})
+  .notes: :t
++slide({bkg:'individual_joint_diagram/Slide3.jpg'})
+  .notes: :t
++slide({bkg:'individual_joint_diagram/Slide4.jpg'})
+  .notes: :t
++slide({bkg:'individual_joint_diagram/Slide5.jpg'})
+  .notes: :t
+
+
+mixin conjecture-iasmr()
+  ol
+    li Each represents a single outcome motorically
+      span.step-next , and 
+    li.em-above in each agent this representation triggers planning-like processes
+    li.em-above concerning all the agents’ actions
+      span.step-next , with the result that
+    li.em-above
+      span.coordination coordination of their actions is facilitated.
+
+
+
++slide
+  .notes.show
+    p Conjecture
+    p.em-above Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+  .notes
+    +conjecture-iasmr
+  .slide
+    .em-above.conjecture-iasmr
+      +conjecture-iasmr
+    +hide('.conjecture-iasmr li:gt(0), .step-next', 0)
+    .notes: :t
+      What do we need?
+      (i) Evidence that a single outcome to which all the actions are directed is represented motorically.
+  .slide
+    +show('.conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next')
+    .notes: :t
+      (ii) Evidence that this triggers planning-like processes,
+  .slide
+    +show('.conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next')
+    .notes: :t
+      (iii) where these  concern all the agents' actions,
+  .slide
+    +show('.conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next')
+    .notes: :t
+      and (iv) the existence of such representations facilitates coordination of the agents' actions.
+
+
++slide
+  .notes.show
+    p Conjecture
+    p.em-above Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+  .notes
+    +conjecture-iasmr
+  .s
+    .em-above.conjecture-iasmr
+      +conjecture-iasmr
+    +hide('.conjecture-iasmr li:gt(0), .step-next', 0)
+    .notes: :t
+      What do we need?
+      (i) Evidence that a single outcome to which all the actions are directed is represented motorically.
+  .s
+    +show('.conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next')
+    .notes: :t
+      (ii) Evidence that this triggers planning-like processes,
+  .s
+    +show('.conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next')
+    .notes: :t
+      (iii) where these  concern all the agents' actions,
+  .s
+    +show('.conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next')
+    .notes: :t
+      and (iv) the existence of such representations facilitates coordination of the agents' actions.
+    
+
++insert_unit({unit:'kourtis_2014', title_slide:false, images:images, handout:true})
+
++slide_middle
+  p Prediction
+  p.em-above: :t
+    There are minimally different pairs of cases, one involving joint action
+    and one involving parallel but merely individual action,
+    which differ on whether a collective goal is represented motorically.
+
+
++insert_unit({unit:'della_gatta_drawing_together', title_slide:false, images:images, handout:true})
+
+//- Just in case people ask
++slide_middle
+  p: :t
+    “Look at the screen in front of you. You will see either circles or lines drawn by
+    the experimenter [i.e. confederate] sitting in front of you. Look at them while
+    drawing either a circle or a line. While drawing, please don’t lift the pen from the
+    tablet and try to take advantage of the whole drawing area.”
+  .slide
+    p.em-above: :t
+      “You and Gabriele [name
+      of confederate] are old friends who have the collective goal of drawing lines and
+      circles together in order to produce a single design. Look at the screen in front of
+      you. You will see either circles or lines drawn by Gabriele. Look at them while
+      drawing either a circle or a line together with him. While drawing, please don’t lift
+      your pens from the tablet and try to take advantage of the whole drawing area.”
+    
+
+//- +slide
+//-   p Conjecture
+//-   p.em-above Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+//-   .em-above.conjecture-iasmr
+//-     +conjecture-iasmr
+//-   .notes: :t
+//-     There is more evidence for this conjecture than I have given here,
+//-     but there is not a lot more converging evidence.
+//-     This is a conjecture that we hope will be tested further
+//-     rather than something we take to be established already.
+
+//-
+//- +slide_middle
+//-   p.center prediction
+//-   .notes Need to emphasise that this conjecture is a source of predictions. Here's one.
+//- +slide({bkg:'prediction_slides/Slide2.jpg'})
+//- +slide({bkg:'prediction_slides/Slide3.jpg'})
+//- +slide({bkg:'prediction_slides/Slide4.jpg'})
+
+
++slide
+  p Conjecture
+  p.em-above Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+  .em-above.conjecture-iasmr
+    +conjecture-iasmr
+  .notes: :t
+    There is more evidence for this conjecture than I have given here,
+    but there is not a lot more converging evidence.
+    This is a conjecture that we hope will be tested further 
+    rather than something we take to be established already.
+  .slide
+    +invert('.coordination')
+    .notes: :t
+      What about coordination?
+      There is a little bit of direct evidence for this that I won't mention.
+      But I do want to take you through why the interagential structure of motor representation
+      might in theory result in the agents actions being coordinated.
+
+
+//- 
+  +slide
+    .notes Outcomes are represented motorically not only in performing an action but sometimes also in observing another agent perform that action.
+    div in observing others act 
+    div motor planning* for others’ actions occurs
+    .slide
+      .notes This can happen not only when observing a single agent acting alone but even when observing several agents performing a joint action \citep{manera:2013_time}.
+      div.right.lightgrey-text(style='float:right') Manera et al (2013)
+      div --- even when several others act jointly ---
+    .slide
+      .notes These motor representations trigger planning-like processes in the observer much like those that would occur if the observer were actually acting, 
+      .notes and thereby sometimes enable you to anticipate the targets of others’ actions, so that it is almost as if you were covertly anticipating their actions by planning how someone in their situation would proceed \citep{ambrosini:2011_grasping,Costantini:2012fk}.
+      div and enables us to anticipate their actions.
+      div.right.lightgrey-text(style='line-height:0;') Costantini et al (2013)
+  
+    .slide
+      .notes Consider one agent who is engaged in joint action with another:
+      .notes they are moving a mug from one place to another, passing it between their hands half-way through. 
+      .notes Motor representations concerning outcomes to which the other’s actions are directed,
+      .notes and the associated planning-like processes, 
+      .notes can occur in these agents \citep{kourtis:2010_favoritism,kourtis:2012_predictive,meyer:2011_joint}. 
+      .notes &nbsp;
+      .notes Now these agents engaged in joint action are performing complementary actions.
+      .notes In general, performing one action while observing (or even imagining) a complementary action produces interference,
+      .notes and at least some of this interference is probably caused by motor representations related to the observed action \citep{kilner:2003_interference,ramsey:2010_incongruent_}.
+      .notes Given this, we might guess that 
+      .notes when motor representations concerning the other’s actions occur in joint actions involving complementary actions, 
+      .notes these representations would interfere with the agents’ performance and so impair coordination.
+      div.em-above In joint action 
+      div.right.lightgrey-text(style='float:right') Kourtis et al (2010; 2012)
+      div it can also occur
+    .slide
+      .notes However, it turns out that the opposite is true, at least in some cases.
+      .notes &nbsp;
+      .notes Motor representations concerning another’s actions can facilitate interpersonal coordination in joint action.
+      .notes (This is true for a variety of joint actions including passing an object, ballistic actions and playing a piano duet.  
+        | (\citealp[p.\ 9]{kourtis:2012_predictive};  
+        | \citealp{loehr:2011_temporal}; 
+        | \citealp{novembre:2013_motor}; 
+        | \citealp{vesper:2012_jumping}; 
+        | \citealp{vesper:2013_our}).
+      .notes &nbsp;
+      .notes But how might motor representations concerning another’s actions facilitate performance in joint action?
+      div.right.lightgrey-text(style='float:right') Vesper et al (2012);
+      div and informs planning* for our own actions.
+      div.right.lightgrey-text(style='float:right')  Novembre et al (2013)
+      .notes At this point it may be natural to suppose that in joint action 
+      .notes there are two (or more) separate sets of motor representations and processes:
+      .notes one for your own actions, another for the other’s (or others’)
+    .slide
+      div(style='position:absolute; top:-30px; left:300px;')
+        img(src='/img/motor_representation_in_joint_action/slide_parallel_planning_1.jpg', width='700px')
+      .notes Like this [image of two separate plans].
+
+    .slide
+      .notes This is indeed how things are in some competitive actions.
+      .notes In competitive actions there are sometimes  planning-like motor processes concerning an opponent’s action as well as concerning your own \citep{sartori:2011_simulation}. 
+      div.em-above In competitive action 
+      div we sometimes plan* the others’ action and then our own.
+      div.right.lightgrey-text(style='line-height:0;') Sartori et al (2011)
+    
+    .slide
+      .notes But there is evidence that in some joint actions, a single outcome to which the agents’ actions are collectively directed is represented motorically by each agent \citep{loehr:2013_monitoring,Menoret:2013fk,tsai:2011_groop_effect}.
+      div.em-above But in joint action, sometimes
+      div.right.lightgrey-text(style='float:right') Tsai et al (2011); 
+      div there is one goal that we each represent
+      div.right.lightgrey-text Loehr et al (2013); Ménoret (submitted); Vesper et al (in prep.)
+    .slide
+      div(style='position:absolute; top:-30px; left:300px;')
+        img(src='/img/motor_representation_in_joint_action/slide_parallel_planning_2.jpg', width='700px')
+    .slide 
+      .notes There is also evidence that when agents are engaged in joint action,
+      .notes they sometimes take into account future actions to be performed by others when choosing how to act now, and do so in much the way they would if they were performing the whole action alone  \citep{meyer:2013_higher-order}.
+      .notes Taken together, this evidence suggests that when an agent is involved in joint action, there is sometimes a single  plan-like structure of motor representations concerning both her own and the others’ actions.
+      .notes &nbsp;
+      .notes \textbf{In joint action, it is sometimes almost as if we each engage in motor planning for all of our actions.}
+      div and we each make 
+        span.single-plan a single plan* for both of our actions
+        span .
+      div.right.lightgrey-text Meyer et al 2013
+    +invert('.single-plan')
+    .notes: :t()
+      So my thought is that something analogous to parallel planning can involve motor processes 
+      rather than practical reasoning.  Let me say one more thing to complete the picture ...
+
+    .handout Motor representations concern not only bodily configurations and movements but also more distal outcomes such as the grasping of a mug or the pressing of a switch \citep{butterfill:2012_intention,hamilton:2008_action,cattaneo:2009_representation}.
+    .handout Some motor processes are planning-like in that they involve deriving means by which the outcomes could be brought about and in that they involve coordinating subplans \citep{jeannerod_motor_2006,zhang:2007_planning}.
+
+    .handout Motor processes concerning actions others will perform occur in observing others act \citep{Gangitano:2001ft}---and even in observing several others act jointly \citep{manera:2013_time}---and enables us to anticipate their actions \citep{ambrosini:2011_grasping,aglioti_action_2008}.
+      
+    .handout In joint action, motor processes concerning actions another will perform can occur \citep{kourtis:2012_predictive, meyer:2011_joint}, 
+    .handout.ctd and can inform planning for one's own actions \citep{vesper:2012_jumping,novembre:2013_motor,loehr:2011_temporal}.
+    .handout In some joint actions, the agents have a single representation of the whole action (not only separate representations of each agent's part) \citep{tsai:2011_groop_effect,loehr:2013_monitoring,Menoret:2013fk}, 
+    .handout.ctd and may each make a plan for both their actions \citep{meyer:2013_higher-order}.
+
+  
++slide({bkg:'action_hierarchy_diagrams/Slide3.jpg'})
+  .notes: :t()
+    Earlier we considered what is involved in performing an ordinary, individual action, where an agent 
+    fills a glass from a bottle, taking one in each hand and moving them in a carefully coordinated way.
+    Compare this individual action with the same action performed by two agents as a joint action.
+    One agent takes the glass while the other takes the bottle.
+    The joint action is like the individual action in several respects.
+
++slide({bkg:'action_hierarchy_diagrams/Slide4.jpg'})
+  .notes First, the goal to which the joint action is directed is the same, namely to move the mug from here to there.
+
++slide({bkg:'action_hierarchy_diagrams/Slide5.jpg'})
+  .notes: :t()
+    Second, there is a similar coordination problem---the agents’ two hands have to meet.
+
++slide({bkg:'action_hierarchy_diagrams/Slide6.jpg'})
+  .notes And, third, the evidence we have mentioned suggests that in joint action, motor representations and processes occur in each agent much like those that would occur if this agent were performing the whole action alone.
+  .notes Why would this be helpful?  
+  .notes &nbsp;
+  .notes Suppose the agents' planning-like motor processes are similar enough that, in this context, they will reliably produce approximately the same plan-like structures of motor representations.
+  .notes Then having a single planning-like motor process for the whole joint action in each agent means that
+  .notes \begin{enumerate}
+  .notes \item in each agent there is a plan-like structure of motor representations concerning each of the others’ actions,
+  .notes \item each agent's plan-like structure concerning another's actions is approximately the same as any other agent's plan-like structure concerning those actions,
+  .notes \item each agent's plan-like structure concerning her own actions is constrained by her plan-like structures concerning the other’s actions.
+  .notes \end{enumerate}
+  .notes So each agent’s plan-like structure of motor representations concerning her own actions is indirectly constrained by the other agents' plan-like structures concerning their own actions 
+  .notes by virtue of being directly constrained by her plan-like structures concerning their actions.
+  .notes In this way it is possible to use ordinary planning-like motor processes to achieve coordination in joint action.
+  .notes What enables the two or more agents' plan-like structures of motor representations to mesh is not that they represent each other's plans but that they processes motorically each other's actions and their own as parts of a single action.
+  .notes &nbsp;
+  .notes   So how does the joint action differ from the corresponding individual action?  
+  .notes There are at least two differences.  
+  .notes First, we now have two plan-like structures of motor representations because in each agent there is a planning-like motor process concerning the whole action.
+  .notes These two structures of motor representations have to be identical or similar enough that the differences don’t matter for the coordination of the agents’ actions---let us abbreviate this by saying that they have to \emph{match}.  
+  .notes The need for matching planning-like structures is not specific to joint action;
+  .notes it is also required where one agent observing another is able to predict her actions thanks to planning-like motor processes concerning the other’s actions (we mentioned evidence that this occurs above). 
+
++slide({bkg:'action_hierarchy_diagrams/Slide7.jpg'})
+  .notes A second difference between the joint action and the individual action is this.
+  .notes In joint action there are planning-like motor processes in each agent concerning some actions which she will not eventually perform. 
+  .notes There must therefore be something that prevents part but not all of the planning-like motor process leading all the way to action.
+  .notes Exactly how this selective prevention works is an open question.
+  .notes We expect bodily and environmental constraints are often relevant. 
+  .notes There may also be differences in how others’ actions are processed motorically \citep[compare][]{novembre:2012_distinguishing}.
+  .notes \footnote{\citep[p.\ 2901]{novembre:2012_distinguishing}: 'in the context of a joint action—the motor control system is particularly sensitive to the identity of the agent (self or other) of a represented action and that (social) contextual information is one means for achieving this distinction'}
+  .notes And inhibition could be involved too \citep[compare][]{sebanz:2006_twin_peaks}.
+  .slide
+    +blur('img:eq(0)')
+    +fade('img:eq(0)')
+    .notes: :t()
+       My proposal, then, is this.
+       In both practical reasoning and motorically, sometimes agents are able to achieve coordination
+        for joint action not by representing each others’ plans but 
+        by treating each other's actions and their own as if they were parts of a single action.
+    .notes: :t()
+      So perhaps joint action is not always only a matter of intention, knowledge or commitment: 
+      perhaps sometimes joint action constitutively involves motor representation.
+
+    
++slide_middle
+  p.center collective goals
+  .notes: :t()
+    So far this has all been about coordination.
+    But our question was about collective goals.
+    
+    
+//- *todo* duplicated except ??? changed to i.a.s.m.r.!
+
+mixin diagram_action_goal(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('show' in p)
+    - p.show = []
+
+  svg(width='665px', height='445px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1')
+
+    defs
+      filter(id="glow-large", width='3', height='3', x='-.5', y='-.5')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='15')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='10')
+        feGaussianBlur(result='blurOut3', in='SourceGraphic', stddeviation='5')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='blurOut3')
+          femergenode(in='SourceGraphic')
+      filter(id="glow-small", width='1.5', height='1.5', x='-.25', y='-.25')
+        feGaussianBlur(result='blurOut', in='SourceGraphic', stddeviation='4')
+        feGaussianBlur(result='blurOut2', in='SourceGraphic', stddeviation='4')
+        femerge
+          femergenode(in='blurOut')
+          femergenode(in='blurOut2')
+          femergenode(in='SourceGraphic')
+      filter#dropGlowBlack(width='1.5', height='1.5', x='-.25', y='-.25')
+        fegaussianblur(in='SourceAlpha', stdDeviation='10', result='blur')
+        femerge
+          femergenode(in='blur')
+          femergenode(in='SourceGraphic')
+      g(id='action-ellipse')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='#000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter="url(#dropGlowBlack)")
+      g(id='action-ellipse-neon')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        ellipse(cx='0', cy='0', rx='40', ry='40', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+    
+    g(transform='translate(0.5,0.5)')
+      g.action-light
+        ellipse(cx='42', cy='42', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(12,27)')
+          switch
+            foreignobject(pointer-events='all', width='59', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') light
+            text(x='30', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.action-smoke
+        ellipse(cx='132', cy='402', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(91,387)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') smoke
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.joint-action
+        //- black fill, black glow (to cover actions behind)
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#dropGlowBlack)')
+        g.neon-rect.hide
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#A0A', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#2C75FF', stroke-width='3', pointer-events='none', filter='url(#glow-small)')
+        //- white line, no fill
+        rect(x='32', y='72', width='140', height='310', rx='21', ry='21', fill='none', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g.action.drop
+          use( xlink:href='#action-ellipse', x='87', y='132')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='87', y='132')
+          g(transform='translate(51,117)')
+            switch
+              foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') drop
+              text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.throw
+          use( xlink:href='#action-ellipse', x='82', y='242')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='82', y='242')
+          g(transform='translate(44,227)')
+            switch
+              foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') throw
+              text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+        g.action.discard
+          use( xlink:href='#action-ellipse', x='112', y='312')
+          g.neon-ellipse.hide
+            use( xlink:href='#action-ellipse-neon', x='112', y='312')
+          g(transform='translate(68,297)')
+            switch
+              foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') discard
+              text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(521,77)')
+          switch
+            foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') amuse
+            text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(527,257)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') scare
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.freakout(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        ellipse(cx='522', cy='362', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(483,332)')
+          switch
+            foreignobject(pointer-events='all', width='77', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') freak out
+            text(x='39', y='43', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.outcome.block(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
+        //- two glow for stronger effect
+        g.block-glow(class='#{p.show.indexOf("block-glow")>-1 ? "" : "hide"}')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+          ellipse.glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none', filter='url(#glow-large)')
+        ellipse.no-glow(cx='582', cy='182', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
+        g(transform='translate(547,167)')
+          switch
+            foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+              div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                  font(color='#ffffff') block
+            text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
+      g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
+        g.the-box
+          rect(x='242', y='262', width='210', height='60', rx='9', ry='9', fill='#ffffff', stroke='#ffffff', stroke-width='3', transform='rotate(-15,347,292)', pointer-events='none')
+          g(transform='translate(252,262)rotate(-15,94.5,30)')
+            switch
+              foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 189px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
+                    | shared intention
+                    br
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or i.a.s.m.r.
+        g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
+          g(transform='translate(199,155)')
+            switch
+              foreignobject(pointer-events='all', width='126', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') coordinates
+              text(x='63', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+        g.represents(class='#{p.show.indexOf("represents")>-1 ? "" : "hide"}')
+          path(d='M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          path(d='M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none', filter="url(#dropGlowBlack)")
+          g(transform='translate(374,167)rotate(-12,58,12)')
+            switch
+              foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
+                  div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
+                    font(color='#ffffff') represents
+              text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
+
+
++slide({bkg:'prosecco_accident.png'})
+  //- p In virtue of what do actions involving multiple agents ever have collective goals?
+  +diagram_action_goal({show:['outcome','block-glow','explain-collective-directedness','represents','coordinates']})
+  .slide
+    +show('.iasmr')
+    +add-class('.iasmr', 'noinvert')
+  .notes: :t()
+    Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
+    Then, on many accounts of shared intention,
+  .notes: :t()
+    the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
+    or each of them being in some other state which picks out this outcome. 
+  .notes: :t()
+    The shared intention also provides for the coordination of their actions (so that, for example, 
+    Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And 
+    coordination of this type would normally facilitate occurrences of the type of outcome intended. 
+    In this way, invoking a notion of shared intention provides one answer to our question about what 
+    it is for some actions to be collectively directed to an outcome.
+  .notes: :t()
+    What we've just seen is that a parallel answer can be given by appeal to i.a.s.m.r. ...    
+
+
+
++slide
+  +left_half 
+    p Joint action:
+    p.ja-df1 An event with two or more agents.
+    .notes: :t
+      We’ve been considering the idea that we can extend our defintion of joint to include the notion 
+      of a collective goal ...
+    p.ja-df2.hide.em-above An event with two or more agents where the actions have a collective goal.
+    p.ja-df3.hide.em-above: :t
+      An event with two or more agents where the actions have a collective goal
+      in virtue of an interagential structure of motor representations.
+    .slide
+      +line-through('.ja-df1')
+      +show('.ja-df2')
+    .slide
+      +line-through('.ja-df2')
+      +show('.ja-df3')
+      .notes: :t
+        Against this idea we might offer two lines of objection, based on the idea 
+        that we want an account of joint action to distinguish genuine joint actions
+        from actions that are parallel but merely individual.
+      .notes: :t
+        The first line of objection is that it is too narrow.
+        There are surely joint actions which don't have collective goals
+        in virtue of any interagential structure of motor representations.
+      .notes: :t
+        The second line of objection is that it fails to make good on the idea
+        that cooperation is a feature of joint action.
+        An interagential structure
+        of motor representations appears to facilitate coordination; but 
+        it does not obviously matter for coopertion.  Or does it?
+        
+
+    

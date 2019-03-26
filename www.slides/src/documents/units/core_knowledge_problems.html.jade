@@ -1,0 +1,425 @@
+---cson
+layout: 'deck_unit'
+title: "Problems for the Notion of Core Knowledge"
+tags: []
+description: """
+  Accounts of core knowledge generally involve providing a list of features and 
+  yield no way of explaining puzzling patterns in development.
+  """
+depends: [''] 
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
++slide_middle
+  .notes.handout.show
+    p.quote.em-above
+      span ‘there is a third type of conceptual structure, 
+      br
+      span dubbed “core knowledge” ... 
+      br
+      span that differs systematically from both 
+      br
+      span sensory/perceptual representation[s] ... and ... knowledge.’ 
+    p.right.grey-text Carey, 2009 p. 10
+    
+  
+
++slide({bkg:'edge_detection.jpg'})
+  +hide('img.bkg', 0)
+  .notes What do people say core knowledge is?
+  .handout \subsection{Two-part definition}
+  .notes There are two parts to a good definition.  The first is an analogy that helps us get a fix on what we is meant by 'system' generally.  (The second part tells us which systems are core systems by listing their characteristic features.)
+  .step1
+    p.handout.show
+      span ‘Just as humans are endowed with multiple, 
+      span.noblur1 specialized perceptual systems
+      span , so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’
+    .handout.ctd \citep[p.\ 517]{Carey:1996hl}
+    p.right
+      span (Carey and Spelke 1996: 517)
+  .slide
+    +blur('.step1 p :not(.noblur1)')
+    +show('img.bkg')
+    .notes: :t
+      So talk of core knowledge is somehow supposed to latch onto the idea of a system.
+      What do these authors mean by talking about 'specialized perceptual systems'?
+      They talk about things like perceiving colour, depth or melodies.
+      Now, as we saw when talking about categorical perception of colour, we can think of the 'system' underlying categorical perception as largely separate from other cognitive systems--- we saw that they could be knocked out by verbal interference, for example.
+      So the idea is that core knowledge somehow involves a system that is separable from other cognitive mechanisms.
+      As Carey rather grandly puts it, understanding core knowledge will involve understanding something about 'the architecture of the mind'.
+    .notes Illustration: edge detection.
+  .slide.step2
+    +hide('img.bkg', 2000)
+    +blur('.step1')
+    p.handout.show
+      // ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      span ‘core systems are 
+      ol.handout.ctd.show
+        li largely innate 
+        li encapsulated 
+        li unchanging 
+        li arising from phylogenetically old systems 
+        li built upon the output of innate perceptual analyzers’ 
+    .handout.ctd \citep[p.\ 520]{Carey:1996hl}.
+    p.right (Carey and Spelke 1996: 520)
+    .handout \textit{Note} There are other, slightly different statements \citep[e.g.][]{carey:2009_origin}.  
+    .notes This, them is the two part definition.  An analogy and a list of features.
+
+
+//- * * * * * 
+//-  core knowledge and modularity
+
++slide_middle
+  .notes: :t
+    Core knowledge is closely related to something that philosophers are more familiar with,
+    namelly modularity.
+  .notes: :t
+    Jerry Fodor has written a book called 'Modularity of Mind' about what he calls modules.
+    And modules look a bit like core systems, as I'll explain.
+    Further, Spelke herself has at one point made a connection.
+  p.center core system = module?
+  .slide
+    p.em-above.handout.notes.show ‘In Fodor’s (1983) terms, visual tracking and preferential looking each may depend on 
+      span.module modular mechanisms
+      span .’
+    .handout.notes.ctd \citep[p.\ 137]{spelke:1995_spatiotemporal}
+    p.right.grey-text Spelke et al 1995, p. 137
+    .slide
+      +invert('.module')
+      .notes So what is a modular mechanism?
+
+
+
+section.slide
+  +fodorOnModules({step:false, final:false, handout:true})
+  .notes Modules are widely held to play a central role in explaining mental development and in accounts of the mind generally.
+  .notes Jerry Fodor makes three claims about modules:
+
+//-
+  +slide({bkg:'modularity_photo_seq/Slide1.jpg'})
+    p Modules
+    ol
+      li they are ‘the psychological systems whose operations present the world to thought’;
+      li they ‘constitute a natural kind’; and
+      li there is ‘a cluster of properties that they have in common … [they are] domain-specific computational systems characterized by informational encapsulation, high-speed, restricted access, neural specificity, and the rest’ (Fodor 1983: 101)
+
++slide
+  .notes What are these properties?
+  +propertiesOfModules({step:false, handout:true})
+  +blur('li','2px',0)
+  +unblur('li:eq(0)','2px',0)
+  .notes: :t
+    Domain specificity
+  .slide
+    +blur('li:eq(0)')
+    +unblur('li:eq(1)')
+    .notes: :t
+      limited accessibility
+    
+
+section.slide
+  .notes: :t
+    Let me illustrate limited accessibility ...
+  .notes: :t
+    Limited accessibility is a familiar feature of many cognitive systems.
+    When you grasp an object with a precision grip, it turns out that there is a very 
+    reliable pattern.
+    At a certain point in moving towards it your fingers will reach a maximum grip aperture 
+    which is normally a certain amount wider than the object to be grasped, and then start to close.
+    Now there's no physiological reason why grasping should work like this, rather than grip hand 
+    closing only once you contact the object.
+    Maximum grip aperture shows anticipation of the object: the mechanism responsible for 
+    guiding your action does so by representing various things including some features of 
+    the object.
+    But we ordinarily have no idea about this.
+    The discovery of how grasping is controlled depended on high speed photography.
+    This is an illustration of limited accessibility.
+    (This can also illustrate information encapsulation and domain specificity.)
+  .container_12
+    .grid_4
+      .words
+        p maximum grip aperture
+        p.right (source: Jeannerod 2009, figure 10.1)
+    .grid_8
+      img(src='/img/jeannerod_2009_fig10-1.png', style='max-height:600px;')
+
+//- 
+  +slide
+    +img('glover_2002_fig1a.png')
+    p.source Glover (2002, figure 1a)
+    .notes: :t
+      Illusion sometimes affects perceptual judgements but not actions:
+      information is in the system;
+      information is not available to knowledge \citep{glover:2002_visual}.
+    .notes: :t
+      See further \citet{bruno:2009_when}:
+      They argue that Glover & Dixon's model \citep{glover:2002_dynamic} is
+      incorrect, at least for grasping (pointing is a different story), because
+      it predicts that the presence or absence of visual information during
+      grasping shouldn't matter. But it does.
+
+    
+    
+    
++slide
+  +propertiesOfModules({step:false})
+  +blur('li','2px',0)
+  +unblur('li:eq(1)',0)
+  .slide
+    +blur('li:eq(1)')
+    +unblur('li:eq(2)')
+    .notes: :t
+      Information encapsulation
+    
+    
++slide
+  +img('vanWermeskerken_2013_fig1.png')
+  p.source van Wermeskerken et al 2013, figure 1
+  .notes: :t
+    You also get evidence for information encapsulation in four month olds.
+    To illustrate, consider \citet{vanwermeskerken:2013_getting} ...
+  .notes: :t
+    A Ponzo-like background can make one frog further away than the other.
+
++slide
+  +img('vanWermeskerken_2013_fig2.png')
+  p.source van Wermeskerken et al 2013, figure 2
+  .notes: :t
+    This affects which object four-month olds reach for,
+    but does not affect the kinematics of their reaching actions.
+
++slide
+  .notes What are these properties?
+  +propertiesOfModules({step:false})
+  +blur('li','2px',0)
+  +unblur('li:eq(2)',0)
+  .notes: :t
+    Information encapsulation
+  .slide
+    +blur('li:eq(2)')
+    +unblur('li:eq(3)')
+    .notes: :t
+      Innateness
+    
+  .slide
+    +unblur('li')
+    .notes So these are the key properties associated with modularity.
+
+
+  
+section.slide
+  .notes: :t
+    We've seen something like this list of properties before ...
+    Compare the notion of a core system with the notion of a module
+  .notes: :t
+    The two definitions are different, but the differences are subtle enough that we don't want both.
+    My recommendation: if you want a better definition of core system, adopt 
+    core system = module as a working assumption and then look to research on modularity 
+    because there's more of it.
+  //- 
+    .handout \subsection{Compare modularity}
+    .handout Modules are ‘the psychological systems whose operations present the world to thought’; 
+      | they ‘constitute a natural kind’; and 
+      | there is ‘a cluster of properties that they have in common’ \citep[p.\ 101]{Fodor:1983dg}.
+    .handout These properties include:
+    .handout \begin{itemize}
+    .handout \item domain specificity (modules deal with ‘eccentric’ bodies of knowledge)
+    .handout \item limited accessibility (representations in modules are not usually inferentially integrated with knowledge)
+    .handout \item information encapsulation (modules are unaffected by general knowledge or representations in other modules)
+    .handout \item innateness (roughly, the information and operations of a module not straightforwardly consequences of learning; but see \citet{Samuels:2004ho}).
+    .handout \end{itemize}
+  .words: .container_12: .grid_5
+    p ‘core systems are 
+      ol
+        li: span.innate largely innate, 
+        li
+          span.encapsulated  encapsulated
+          span , and 
+        li: span  unchanging, 
+        li: span  arising from phylogenetically old systems 
+        li: span  built upon the output of innate perceptual analyzers’ 
+    p.right (Carey and Spelke 1996: 520)
+  .slide
+    .right-half-white
+      .words: .container_12: .grid_6
+        div(style='padding-right:1em;')
+          p Modules are ‘the psychological 
+            span.present-the-world(style='z-index:0;') systems whose operations present the world to thought
+            span ’; 
+            | they ‘constitute a natural kind’; and 
+            | there is ‘a cluster of properties that they have in common’
+          ol
+            li: span.innate(style='z-index:0;')  innateness 
+            li: span.encapsulated(style='z-index:0;')  information encapsulation 
+            li: span  domain specificity 
+            li: span  limited accessibility 
+            li: span  ...
+    .slide
+      +highlight('.innate', 'pink')
+    .slide
+      +highlight('.encapsulated', 'blue')
+    .slide
+      +highlight('ol:eq(0) li:eq(4) span, .present-the-world', 'forestgreen')
+
+
+
+
+
++slide_middle
+  p.center core system = module ?
+  .notes: :t
+    I think it is reasonable to identify core systems with modules and to
+    largely ignore what different people say in introducing these ideas.
+    The theory is not strong enough to support lots of distinctions.
+
+//- end modularity
+//- * * * * * 
+
+
+
+
++slide_middle
+  .notes: :t
+    Recall the questions we are attempting to answer.
+  .notes: :t
+    Question 1: Four- and five-month-olds can track briefly occluded objects. How do they do
+    this? We’re thinking it’s maybe a consequence of their core knowledge (or of 
+    some modular process for tracking physical objects).
+  .notes: :t
+    Question 2: What explains the discrepancy between measures on which infants do, and
+    measures on which they do not, manifest their abilities to track physical objects? Also,
+    why does mode of disappearance (occlusion vs endarkening) also affect their performance?
+
+    
+  p(style='margin-left:3em;')
+    table.data
+      thead
+        tr
+          td 
+          td.center occlusion
+          td.center.endarkening endarkening
+      tbody
+        tr.v-of-e
+          td.center violation-of-expectations
+          td.center ✔
+          td.center
+            span.endarkening-cell
+              span.endarkening ✘
+        tr
+          td.center manual search
+          td.center ✘
+          td.center.endarkening ✔
+    p.source(style='margin-top:-300px;') Charles & Rivera (2009)
+
+
+
++slide
+  .notes Recall the definition of core knowledge.
+  .step1
+    p
+      span ‘Just as humans are endowed with multiple, 
+      span.noblur1 specialized perceptual systems
+      span , so we are endowed with multiple systems for representing and reasoning about entities of different kinds.’
+    p.right
+      span (Carey and Spelke 1996: 517)
+  .step2
+    p.show
+      //- ‘core systems are conceptual and provide a foundation for the growth of knowledge.  …
+      span ‘core systems are 
+      ol.ctd.show
+        li largely innate 
+        li encapsulated 
+        li unchanging 
+        li arising from phylogenetically old systems 
+        li built upon the output of innate perceptual analyzers’ 
+    p.right (Carey and Spelke 1996: 520)
+    .notes: :t
+      Now think about our problem --- explain the discrepancy between measures on which infants
+      do, and measures on which they do not, manifest their abilities to track physical objects?
+  .slide
+    +highlight-row('li:eq(0)')
+    .notes: :t
+      First problem: which of these features explain the discrepancy between
+      measures on which infants do, and measures on which they do not,
+      manifest their abilities to track physical objects?
+  .slide
+    +unhighlight-row('li:eq(0)')
+    +highlight-row('li:eq(1)')
+    .notes: :t
+      Why do they fail on some search tasks and but pass some v-of-e tasks
+      when the mode of disappearance is occlusion?
+  .slide
+    +unhighlight-row('li:eq(1)')
+    +highlight-row('li:eq(2)')
+    .notes: :t
+      And, equally pressingly, why do they do the converse (pass search, fail v-of-e)
+      when the mode is endarkening?
+  .slide
+    +unhighlight-row('li:eq(2)')
+    +highlight-row('li:eq(3)')
+  .slide
+    +unhighlight-row('li:eq(3)')
+    +highlight-row('li:eq(4)')
+
+  //-
+    .slide.step3
+      +unhighlight-row('li:eq(4)')
+      p.em-above representational format: iconic (Carey 2009)
+      .notes There is one more feature that I want to mention; this is important although I won't disucss it here.
+      .notes To say that a represenation is iconic means, roughly, that parts of the representation represent parts of the thing represented.
+      .notes Pictures are paradigm examples of representations with iconic formats.
+      .notes For example, you might have a picture of a flower where some parts of the picture represent the petals and others the stem.
+  //-     
+    .notes But we quickly run into the problem that different researchers say different things, and it isn't obvious which differences matter.
+    .notes We also run into the problem that the definitions on offer aren't obviously correct: they list features that maybe aren't all necessary.
+//- 
+  +slide_middle
+    .notes: :t
+      Another reason for doubting that the notion of a core system is explanatory arises from the 
+      way we have introduced it.
+      We have introduced it by providing a list of features.
+      But why suppose that this particular list of features constitutes a natural kind?
+      This worry has been brought into sharp focus by criticisms of 'two systems' approaches.
+      (These criticisms are not directed specifically at claims about core knowledge, but the criticisms apply.)
+    .step1
+      .handout \subsection{Objection}
+      p.handout.notes.show ‘there is a 
+        span.highlight1 paucity of … data
+        span  to suggest that they are the only or the best way of carving up the processing,
+    //-   p.handout.notes.show ‘and it
+    //-     span.highlight1 seems doubtful
+    //-     span  that the often long lists of correlated attributes should come as a package’
+    //-   .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+    //-   p.right Adolphs (2010 p. 759)
+    //- .slide.step2
+    //-   p.handout.notes.show.em-above ‘
+    //-     span.highlight1 we wonder
+    //-     span  whether the dichotomous characteristics used to define the two-system models
+    //-     | are … perfectly correlated …
+    //-   p.handout.ctd.notes [and] whether a hybrid system that combines characteristics from both systems could not be … viable’
+    //-   .handout.notes.ctd \citep[p.\ 537]{keren_two_2009}
+    //-   p.right Keren and Schul (2009, p. 537)
+    //- .slide
+    //-   +highlight('.highlight1','pink')
+    //-   .notes: :t
+    //-     (This is weak.
+    //-     Criticism is easy, especially if you don't have to prove someone is wrong.
+    //-     Construction is hard, and worth more.)
+    .slide
+      //- +blur('.step1, .step2')
+      .notes Even so, there is a problem here.
+      p.handout.notes.show.em-above
+        | ‘the process architecture of social cognition is still very much in need of a detailed theory’
+      .handout.notes.ctd \citep[p.\ 759]{adolphs_conceptual_2010}
+      p.right Adolphs (2010 p. 759)
+      .notes: :t
+        Objections so far:
+        Is definition by listing features (a) justified, and is it (b) compatible with the claim that core knowledge is explanatory?
+  

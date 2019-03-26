@@ -1,0 +1,297 @@
+---cson
+layout: 'deck_unit'
+title: "Four- and Five-month-olds Can Track Briefly Occluded Objects"
+tags: []
+description: """
+  Evidence that four- and five-month-olds can track momentarily occluded objects comes from studies
+  using habituation, violation-of-expectations, anticipatory looking and the completion of an action
+  directed to a fully occluded object that was prepared in advance of the object being fully
+  occluded.
+  """
+---
+
+
+include ../../../fragments/unit_mixins
+include tmp_mixins
+
+
++slide_middle
+  .notes A wide range of evidence suggests that 
+  p.center.notes.ctd.show 4- and 5-month-olds can track briefly occluded objects.
+  .notes: :t
+    Let me illustrate with an old and famous experiment by Karen Wynn 
+    involving 5-month-old subjects ...
+  
+//- Wynn
++slide
+  .wynn-1992
+    .img1
+      +img_clip('wynn_1992_fig1a.png', 'rect(0px, 180px, 160px, 0px)')
+    .img2.hide
+      +img_clip('wynn_1992_fig1a.png', 'rect(160px, 360px, 340px, 0px)')
+  p.source Wynn 1992, fig 1 (part)
+  
+  .notes: :t
+    Consider this famous violation-of-expectations
+    experiment by \citet{wynn:1992_addition}.
+    Her subjects were five-month-olds.
+  .slide
+    +clip('.wynn-1992 .img1 img','rect(0px,360px,160px,0px)')
+  .slide
+    +clip('.wynn-1992 .img1 img','rect(0px,540px,160px,0px)')
+  .slide
+    +clip('.wynn-1992 .img1 img','rect(0px,720px,160px,0px)')
+  .slide
+    +show('.wynn-1992 .img2')
+  .slide
+    +clip('.wynn-1992 .img2 img','rect(160px, 720px, 340px, 0px)')
+    .notes: :t
+      How many mice do infants expect there to be ?
+
++slide
+  +img('wynn_1992_table1fig.jpg', 'width:720px')
+  //- figure includes source information
+  
+  .notes: :t
+    Here you see the results.
+    The looking times are always over 10 seconds, and infants look
+    more than a second longer (mean looking time) at the impossible event.
+  .notes: :t
+    This is good evidence that 5-month-olds can track briefly occluded objects.
+    And indeed much further evidence supports this view ...
+  .notes: :t
+    The ‘baseline’ refers to a pretest in which infants were simply shown
+    a display containing one object, or else a display containing two objects,
+    and the question was whether they would prefer to look at one object or at two.
+    In fact, they didn’t have a preference.
+
++slide_middle
+  +fade('tr td:nth-child(2) span')
+  .notes: :t()
+    There is a wide range of evidence that four- and five-month-olds can track 
+    briefly occluded objects.
+    Such evidence comes from infants’ reactions to a range of different scenarios. 
+    Some scenrios involve a comparision between the number of objects 
+    \citep[e.g.][]{spelke:1995_spatiotemporal},
+    others involve infants’ abilities to track the causal effects of 
+    unperceived objects
+    \citep[e.g][]{baillargeon:1987_object}, 
+    while others require infants to track properties such as the shape and 
+    size of unperceived objects
+    \citep[e.g.][]{wang:2004_young},
+    or to remember the location of a hidden object \citep[e.g.][]{wilcox:1996_location}.
+  .slide
+    +fade('tr td:first-child span')
+    +unfade('tr td:nth-child(2) span')
+    .notes: :t()
+      The evidence also comes from studies using a variety of different methods 
+      including
+      habituation \citep[e.g.][]{spelke:1995_spatiotemporal}, 
+      violation-of-expectations \citep[e.g.][]{wang:2004_young}, 
+      and
+      anticipatory looking \citep[e.g.][]{rosander:2004_infants,bertenthal:2013_differential}.
+    //-
+      and the completion of an 
+      action directed to a fully occluded object that was prepared in advance of 
+      the object being fully occluded .
+    .notes: :t()
+    
+  +infants-track-table
+
+  .slide
+    +invert('.track')
+    .notes: :t()
+      I have described these findings as supporting a conclusion 
+      about tracking rather than about representing.
+    .notes: :t()
+      For a process to \emph{track} the path of an occluded object 
+      is for it to nonaccidentally  depend in some way on  
+      the occluded object’s path: in an interesting but limited range of 
+      situations, changes to the object’s path will cause corresponding 
+      changes to how the process unfolds.
+      Relatedly, to say that someone can track occluded objects
+      is to say that there are processes in her (or otherwise appropriately 
+      involving her) 
+      which track the paths of some occluded objects. 
+      
+  .slide
+    +uninvert('.track')
+    +blur('table', '5px')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.huge-glow-120 How?
+    .notes: :t
+      The fact that four- and five-month-olds can track briefly
+      occluded objects raises a question.  
+      How do they do this?
+
+section.slide
+  .layer0: .container_12: .grid_12: .words: .middle
+    
+    p.center.step3.hide What is
+    p.center 
+      span.hide.step2 core 
+      span  
+      span.knowledge knowledge
+      span.step3.hide ?
+    .notes: :t
+      How do infants track briefly occluded objects?
+      An early idea was that infants’ earliest abilities involved
+      knowledge of physical objects.  On this view, infants know simple principles
+      governing how objects behave (for example, that they follow continuous paths through
+      space and time) and infants know the locations of some briefly occluded objects.
+      In an early paper Spelke offered a strong statement of this view.
+    .slide
+      .spelke-quote.notes.show
+        p.quote.em-above ‘objects are conceived: Humans come to know about an object’s ... boundaries ... in ways like those by which we come to know about its material composition or its market value’
+        p.right Spelke 1988, p. 198
+      .notes: :t
+        But there are now some compelling objections to the view that
+        infants know the facts about the locations of briefly occluded objects ...
+    .slide
+      +hide('.layer0')
+      +show('.layer.shinskey-2001')
+      .notes: :t()
+        To illustrate, consider an ingenious experiment by \citet{Shinskey:2001fk}.
+        There was an opaque screen that could rotate between lying flat on the ground and being raised to conceal a toy behind it.
+        \citeauthor{Shinskey:2001fk} also used a second piece of apparatus just like the first except that the screen was transparent rather than opaque.
+        They reasoned that infants would quite often pull the screen forwards just for fun, regardless of what is behind it.
+        However, they also guessed that when infants know there is an interesting toy behind the screen, then they will pull it forwards more often than when they know that there is nothing behind the screen.
+        This is just what happened when infants were presented with the apparatus involving a transparent screen:
+        they sometimes pulled the screen forwards when there was no toy behind it, but they pulled it forwards significantly more often when the toy was behind it.
+        What happened  when infants were presented with the opaque screen?
+        Here infants pulled the screen forwards no more often when they had observed a toy being placed behind it then when they had observed that there was nothing behind it.
+        This is evidence that  seven-month-old infants do not know that a toy they have very recently seen hidden behind a screen is behind the screen.
+        After all, since knowledge guides action we would expect infants who know that a toy is behind an opaque screen to pull the screen forward more often than infants who know there is nothing behind the screen, just as they do when the screen is transparent.
+      .notes: :t()
+        More than two decades of research strongly supports the view that 
+        infants fail to search for objects hidden behind barriers or screens 
+        until around eight months of age \citep[p.\ 202]{Meltzoff:1998wp} or 
+        maybe even later \citep{moore:2008_factors}.
+        Researchers have carefully controlled for the possibility that infants’
+        failures to search are due to extraneous demands on memory or the 
+        control of action.
+        We must therefore conclude, I think, that four- and five-month-old 
+        infants do not have beliefs about the locations of briefly occluded 
+        objects.  
+        It is the absence of belief that explains their failures to search.
+    .slide
+      +hide('.layer.shinskey-2001')
+      +show('.layer.shinskey-2001-results')
+      .notes: :t
+        Here are their results with 7-month old infants.
+      .notes: :t
+        We are interested in whether infants were more likely to pull the screen forwards when the 
+        object was present than when it was absent.
+        Since infants wanted the toy, if they knew it was behind the barrier they should have pulled
+        forward the barrier more often when the toy was behind it.
+        This is exactly what they did when the barrier was transparent.
+        But look what happens when the barrier is opaque, so that the toy is not visible to infants 
+        when they have to prepare the pulling action: they no longer pull the barrier more often
+        when the toy was behind it.
+      .notes: :t
+        This is good evidence that 7 month olds do not know facts about the locations of objects 
+        they cannot perceive.
+        And this is not isolated evidence; for example, \citet{moore:2008_factors} use a different 
+        methods also involving manual search to provide converging evidence for this conclusion. 
+        But now we have a problem ...
+    .slide
+      +hide('.layer.shinskey-2001-results')
+      +show('.layer.charles-rivera')
+      +hide('.charles-rivera .endarkening', 0)
+      .notes: :t
+        Because this point is controversial, I want to mention one further
+        piece of the puzzle.
+    .slide
+      +show('.charles-rivera .endarkening', 0)
+      +hide('.v-of-e .endarkening', 0)
+      .notes: :t
+        What happens if we change the way an object disappears.
+        Instead of occluding it?
+      .notes: :t
+        There’s much evidence that 
+        infants will reach for an object hidden in darkness \citep[e.g.][]{jonsson:2003_infants}.
+    .slide
+      +highlight('.endarkening-cell', 'red')
+      .notes: :t
+        But what happens if instead of measuring reaching we measure looking times?
+        \citet{charles:2009_object} compared what happens when an object is momentarily hidden behind a screen with what happens when an object is momentarily  hidden by darkness.
+        They used a trick with light and mirrors so that for some of the infants, the object did not reappear when the screen came up or the light returned.
+        Surprisingly, five-month-old infants’ looking times indicated that an expectation had been violated only when the object was hidden behind a screen but not when hidden by darkness.
+    .slide
+      +show('.v-of-e .endarkening')
+      .notes: :t
+        So five-month-olds not only sometimes fail to search for hidden objects but 
+        also sometimes fail to look longer when a momentarily hidden object fails 
+        to reappear as if by magic.
+      .notes: :t
+        I think this pattern of findings is good evidence against the hypothesis
+        that four- or five-month-olds have beliefs about, or knowledege of,
+        the locations of 
+        unperceived objects.
+        After all, 
+        a belief is essentially the kind of state that can inform actions of any
+        kind, whether they involve looking, searching with the hands or anything
+        else.
+    .slide
+      +hide('.layer.charles-rivera')
+      +show('.layer0')
+      +highlight('.knowledge', 'red')
+      +blur('.spelke-quote')
+      .notes: :t
+        While this view still has adovates (notably Renee Baillargeon), many researchers have 
+        rejected this view because it generates too many incorrect predictions.
+    .slide
+      +unhighlight('.knowledge', 'red')
+      +show('.step2')
+      .notes: :t
+        ... on ‘core knowledge’.
+    //-
+        \begin{quote}
+        ‘objects are conceived: Humans come to know about an object’s \ldots\ boundaries \ldots\ in ways like those by which we come to know about its material composition or its market value’
+        \citep[p.\ 198]{Spelke:1988xc}.
+        \end{quote}
+    .slide
+      +hide('.spelke-quote')
+      +show('.step3')
+    
+  .layer.hide.shinskey-2001
+    +clear-slide-escape-inner
+      +_slide_inner
+        p.center
+          +img('shinskey_munakata_2001_fig1.png')
+        p.source Shinskey & Munakata 2001, figure 1
+
+  .layer.hide.shinskey-2001-results
+    +clear-slide-escape-inner
+      +_slide_inner
+        p.center
+          +img('shinskey_munakata_2001_fig2.png')
+        p.source Shinskey & Munakata 2001, figure 2
+
+
+
+
+  .layer.hide.charles-rivera
+    +clear-slide-escape-inner
+      +_slide_middle_inner
+        p(style='margin-left:3em;')
+          table.data
+            thead
+              tr
+                td 
+                td.center occlusion
+                td.center.endarkening endarkening
+            tbody
+              tr.v-of-e
+                td.center violation-of-expectations
+                td.center ✔
+                td.center
+                  span.endarkening-cell
+                    span.endarkening ✘
+              tr
+                td.center manual search
+                td.center ✘
+                td.center.endarkening ✔
+          p.source(style='margin-top:-300px;') Charles & Rivera (2009)
+

@@ -1,0 +1,185 @@
+---cson
+layout: 'deck_unit'
+title: "How are infants first able to track goals?"
+tags: []
+description: """
+  The Teleological Stance provides a computational description of goal tracking.
+  It hinges on the principle that the goals of an action are those outcomes which the means are a
+  best available way of brining about.
+  Given this principle, we can infer goals from means by identifying which outcomes the means 
+  are a best available way of brining about.
+  But how is this computation performed?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180(style="font-family:Lato") How?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show Infants can track goals from nine months of age (or earlier).
+  .notes: :t
+    The question, of course, is how?
+
+
++slide_rh_white({step:true})
+  .teleological.hide
+    +run_across
+      p.center
+        span The ‘Teleological Stance’
+        br
+        span(style='mix-blend-mode:difference') ~ The goals of an action are those outcomes which the means is a best available way of brining about.
+    p.right.invert Csibra & Gergely
+    
+  +left_half
+    p.center.invert Planning
+    p.hem-around 1. This outcome, G, is the goal (specification)
+    p.hem-around 2. Means m is a best available
+       span.star *
+       span  way of bringing G about
+    p.hem-above 3. ∴ adopt m
+  +right_half({step:true})
+    p.center.noinvert Tracking
+    p.hem-around.one 1. This means, m, has been adopted (observation)
+    p.hem-around.two 2. G is an outcome such that: m is a best available
+      span.star *
+      span  way of brining G about
+    p.hem-above 3. ∴ G is a goal of the observed action
+    .notes: :t
+      So planning is the process of moving from goals to means,
+      whereas tracking goes in the reverse direction, from means to goals.
+      But what is common to the two is the relation between means and goals.
+      In both cases, planning and goal-tracking, the means that are adopted should be a best available
+      way of bringing the goal about.
+  .slide
+    +invert('.star')
+  .slide
+    +uninvert('.star')
+    +show('.teleological', 0)
+    .notes: :t
+      Note that this is not exactly an answer to our question,
+      How can infants track goals from nine months of age (or earlier)?
+      It provides what Marr would call a computational description.
+    .notes: :t
+      That is, it provides a function
+      from 
+      facts about events and states of affairs that could be known without knowing which goals any
+      particular actions are directed to, nor any facts about particular mental states
+      to 
+      one or more outcomes which are the goals of an action.
+    .notes: :t
+      Providing this function explains how pure goal-tracking is possible in principle.
+    .notes: :t
+      But what we want to know, of course, is how infants (and adults) actually compute this function.
+      If this is (roughly) the function which computationally describes pure goal tracking,
+      what are the representations and processes involved in pure goal tracking?
+  .slide
+    +hide('.left-half')
+    //-   +highlight-row('.one')
+    //-   .notes: :t
+    //-     We need to know how they identify means from observing joint displacements and bodily movements ...
+    //- .slide
+    //-   +unhighlight-row('.one')
+    +highlight-row('.two')
+    .notes: :t
+      An we need to know how they compute to which outcome a means is the best available.
+      
++slide_middle({bkg:'teleological_stance_diy.jpeg'})
+  +hide('img.bkg',0)
+  p.center The Simple View
+  .notes: :t
+    The principles comprising the Teleological Stance are things we know or believe, and we are
+    able to track goals by making inferences from these principles and our beliefs about the
+    means someone is pursuing.
+  .notes: :t
+    Infants and adults engaged in goal-tracking reason about 
+    to which outcome a means is the best available
+    in fundamentally the same way that you or I do when trying to work it out explicitly.
+  .slide
+    +show('img.bkg')
+    .notes  [*TODO: illustrate with picture.]
+    
+  .slide.step2
+    +blur('img.bkg','5px')
+    .notes: :t
+      Although I don’t think they have written about it in quite the terms I use,
+      I take Gergely and Csibra to be endorsing the Simple View.
+    p.em-above.notes.show: :t
+      ‘when taking the teleological stance one-year-olds apply the same
+      inferential principle of rational action that drives everyday mentalistic
+      reasoning about intentional actions in adults’ 
+    p.right.grey-text (Gergely and Csibra 2003; cf. Csibra, Bíró, et al. 2003; Csibra and Gergely 1998: 259)
+  
+  .slide
+    +blur('.step2')
+    +fade('img.bkg')
+    //- p.center.em-above Action perception? No.
+    .notes: :t
+      The Simple View makes no use of the idea that there might be action perception.
+    .notes: :t
+      Relation to Q3: no special system.
+      [Q3: Are these properties and happenings tracked by modality specific systems, or are they tracked by
+      special purpose perceptual mechanisms of their own (e.g. Liberman, 1967)/ cross-modal objects of
+      perception?]
+    .notes: :t
+      Relation to Q6: teleological stance is continuous with mindreading (the latter merely involves
+      using an enriched model with includes mental states; the two can be parts of a single process).
+      [Q6: How do these processes relate to theory of mind abilities (e.g. Simmons et al., 2009)?]
+
+
+section.slide
+  +_slide_middle_inner
+    .how
+      p.center.huge-glow-180(style="font-family:Lato") How?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show Infants can track goals from nine months of age (or earlier).
+
+
+
+
+//- 
+  +slide
+    p: :t
+      Assume an action is directed to some goal; an outcome, G, is among the goals of this action
+      if none of the following are untrue:
+    ol
+      li.hem-above actions of this type are normally means of realising outcomes of G’s type;
+      li.hem-above no available alternative action is a significantly better* means of realising outcome G;
+      li.hem-above the occurrence of outcome G is desirable;
+      li.hem-above there is no other outcome, G′, the occurrence of which would be at least comparably desirable and where (2) and (3) both hold of G′.
+
+            
+//-
+  +slide_middle
+    .notes: :t
+      To solve this problem, we need to start with an account of pure goal tracking.
+    .notes: :t
+      An account of pure goal tracking is an account of how you could 
+      in principle infer facts about the goals to which actions are directed from
+      facts about joint displacements, bodily configurations and their effects 
+      (e.g. sounds).
+      Such an account is a computational theory of pure goal tracking.
+    .notes: :t
+      Empahsize: in the case of speech, the problem is to get from acoustic and visual
+      information to articulatory gestures.
+    .notes: :t
+      Empahsize: in the case of actions, the problem is to get from bodily configurations
+      and joint displacements to goals to which actions are directed.
+    p.huge-glow-60 pure goal tracking
+    p(style='margin-top:-2em;')
+      span.infer Infer
+      span  The Goals from The Evidence
+    .slide
+      p.em-above The Goals: facts which goals particular actions are directed to ...
+    .slide
+      p.em-above 
+        span.the-evidence The Evidence
+        span: :t
+          : facts about events and states of affairs that could be known without 
+          knowing which goals any particular actions are directed to, nor any facts
+          about particular mental states ...
+

@@ -1,0 +1,203 @@
+---cson
+layout: 'default2'
+title: 'Lecture 06: Three Questions about Mindreading'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  
+  """
+lecture_date: '2017/11/24'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('joint_action05')
+
+
+
+
++slide_rh_white
+  .notes: :t
+    My topic is mindreading, the process of identifying mental states and purposive actions as
+    the mental states and purposive actions of a particular subject.
+  .notes: :t
+    Let me start with a canonical illustration of mindreading in action.
+  +run_across
+    p.center.hide.step2 Which box will Maxi look in?
+  +left_half
+    p.center Mindreading
+  +right_half
+    p.center Not Mindreading
+  .clear
+  +left_half
+    p.hide.step2 Maxi wants his chocolate.
+  +right_half
+    p Chocolate is good.
+  .clear
+  +left_half
+    p.belief.hide.step2 Maxi 
+      span.believes believes
+      span  his chocolate is in the blue box.
+  +right_half
+    p Maxi’s chocolate is in the red box.
+  .clear
+  +left_half
+    p.hide.step2 Therefore:
+  +right_half
+    p Therefore:
+  .clear
+  +left_half
+    p.prediction.hide.step2 Maxi will look in the blue box.
+  +right_half
+    p Maxi will look in the red box.
+  +hide('.right-half, .right-half-white', 0)
+  .slide
+    +show('.step2')
+  .slide
+    +show('.right-half, .right-half-white')
+  
+  .slide
+    +highlight-row('.belief')
+    .notes: :t
+      So where the nonmindreader uses facts to generate predictions about actions, the
+      mindreading attributes beliefs.
+  .slide
+    +unhighlight-row('.belief')
+    +highlight-row('.prediction')
+    .notes: :t
+      In many cases, you will get the same predictions whether you are mindreading
+      or just using facts.  But in cases like this, where there are false belief,
+      the predictions can come apart.
+      \textbf{This means that we can detect mindreading by measuring action predictions.}
+  
+  .slide
+    +unhighlight-row('.prediction')
+    +invert('.believes')
+    .notes: :t
+      In what follows I’m going to focus on belief.
+    .notes: :t
+      The existence of mindreading processes for tracking beliefs raises many questions:
+    .notes.handout: :t
+      \begin{enumerate}
+      \item Why is belief-tracking in adults sometimes but not always automatic? (or automatic to varying
+      degrees) 
+      \item How and why is automatic belief-tracking limited in ways that nonautomatic belief-tracking is not?
+      \item How and why are inhibition, attention and working memory involved in belief-tracking?
+      
+      \item Why is there an age at which children pass some false belief tasks but systematically fail
+      others? 
+      \item What feature or features distinguish the tasks these children fail from those they
+      pass?
+      
+      \end{enumerate}
+    
+    .notes: :t
+      I think there is more than one kind of mindreading process which tracks beliefs.
+      That’s why my title is ...
+
+
+
+
++title_slide({document:document, images:images})
+  .notes: :t
+
+
+//- 
+  Q1 What do nonhuman animals represent that enables them to track others’ mental states?
++insert_unit({unit:'nonhuman_mindreading_evidence', title_slide:false, images:images, handout:true})
++insert_unit({unit:'nonhuman_mindreading_question', title_slide:true, images:images, handout:true})
++insert_unit({unit:'how_do_nonhumans_model_minds', title_slide:false, images:images, handout:true})
+
+//- 
+  Q2 infants
++insert_unit({unit:'infants_track_false_beliefs', title_slide:true, images:images, handout:true})
++insert_unit({unit:'mindreading_developmental_puzzle', title_slide:true, images:images, handout:true})
+
+
++slide_middle
+  p.huge-glow Q1
+  p(style='margin-top:-4em;'): :t
+    What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+    limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes?
+  p.huge-glow Q2
+  p(style='margin-top:-4em;'): :t
+    Why do infants manifest abilities to track beliefs in some cases but not all?
+
+
+//- 
+  Q3 adults
+  
+
+
++insert_unit({unit:'mindreading_is_automatic', title_slide:true, images:images, handout:true})
+
+
++slide_middle
+  .q1.hide
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+      limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes?
+      
+  .q2.hide
+    p.huge-glow Q2
+    p(style='margin-top:-4em;'): :t
+      Why do infants manifest abilities to track beliefs in some cases but not all?
+  
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;'): :t
+      Why is belief-tracking in adults sometimes but not always automatic?
+      How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  .slide
+    +show('.q2')
+  .slide
+    +show('.q1')
+
+
+//- 
+  FOR NEXT TIME : SOLVE THE PROBLEMS WITH DUAL PROCESS
+  THEN LINK BACK TO METARESENTATION
+  
+
+  +slide_middle
+    p.center.huge-glow-120 conclusion
+
+  +slide_middle
+    .hem-around-children
+      p Some but not all mindreading is automatic.
+      p.slide: :t
+        [Dual process] automatic and nonautomatic mindreading processes are distinct
+        in that whether they occur and which ascriptions they yield depends on different conditions.
+      p.slide: :t
+        [Speed-Accuracy] automatic and nonautomatic mindreading processes allow us to make
+        complementary speed-accuracy trade offs.
+      p.slide: :t
+        Automatic mindreading trades accuracy for speed by virtue of involving a noncanonical
+        model of minds and actions.
+      p.slide: :t
+        And this noncanonical model is specified by minimal theory of mind.
+
+
+  //- 
+    Proposals
+  //- 
+    Q1 proposal : nonhuman animals
+
+  +slide_rh_white({step:true})
+    +left_half
+      p Conjecture
+      .hem-around-children
+        p Nonhuman mindreading processes resemble automatic mindreading processes in humans
+        p and are characterised by minimal theory of mind.
+    +right_half({step:true})
+      p Predictions
+      .no-hem-around-children
+        p Nonhuman mindreading ...
+        p ... has signature limits in common with nonhuman mindreading.
+        p ... is affected by conditions affecting automatic mindreading in humans (eg. delays).
+        p ... is unaffected by conditions not affecting  ... (eg. time constraints).
+        p ... creates altercentric interference.

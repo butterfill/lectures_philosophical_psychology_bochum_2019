@@ -1,0 +1,31 @@
+Week 3
+ - (c) unify lectures 1 & 2 by talking about motor experience
+     [start with Bruderer et al, 2015 on motor in infant speech perception]
+     - recap interface problem
+     - recap motor theory of goal tracking
+       - nb mr can affect judgements about actions
+     - defence of mTgt in adults (maybe update to use some Rika Mottonnen papers? Use notes)
+     - something about speech (maybe mTgt -> audition -> judgement)
+     - direct vs indirect hypotheses
+     - argument from categorical perception (a) fails; (b) does it generalise?
+     - material from paris talk
+
+Other options:
+ - (a) metacognitive feelings Tuebingen talk
+ - (b) perceiving expressions of emotion
+
+---
+
+Might start with something on the nature of folk psychology.
+Reading: Stich, Stephen, and Ian Ravenscroft. “What Is Folk Psychology?” Cognition 50, no. 1–3 (April 1994): 447–68. doi:10.1016/0010-0277(94)90040-X.
+
+Also good: controversy about intuitive physics (Kubricht et al, 2017). Seems this motivates a good theory of implicit/explicit or dual processes.
+
+Metacognitive feelings (London talk)
+
+    * What is folk psychology?
+    * Dual process theories of mindreading
+    * Modularity, Core Knowledge and the Linking Problem
+    * The Interface Problem
+    * Metacognitive feelings
+    * Drawn together: motor representation in joint action

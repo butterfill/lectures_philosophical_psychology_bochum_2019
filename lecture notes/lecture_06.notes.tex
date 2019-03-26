@@ -1,0 +1,1119 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: Lecture Notes}
+\def \isubtitle {Lecture 01}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper4}
+\input{$HOME/Documents/submissions/preamble_steve_lecture_notes}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1}
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std}
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa}
+\bibliographystyle{apalike}
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+
+
+
+%---------------
+%--- start paste
+
+
+
+
+\title {Philosophical Psychology \\ Lecture 06: Acting Together}
+
+
+
+\maketitle
+
+\subsection{title-slide}
+In this seminar, I will outline a minimal framework for theorising
+about joint action.
+I will also argue that attention to the role of
+motor representation in coordinating joint action
+proves unexpectedly helpful in enabling us to understand
+the sophisticated sort of cooperative interactions that are often
+the focus of philosophical discussions of joint action.
+
+
+
+\section{Contrast Cases and the Simple View}
+
+Getting a pre-theoretical handle on joint action is best done by contrasting
+joint actions with actions that are merely individual but occur in parrallel.
+
+The method of contrast cases is familiar from citet{Pears:1971fk}, who used
+contrast cases to argue that whether something is an ordinary, individual action
+depends on its antecedents.
+
+\subsection{slide-9}
+Question
+
+
+
+What distinguishes genuine joint actions from parallel but merely individual actions?
+
+
+
+This is the organising question for our project (the project to be investigated in this
+series of lectures).  Of course there will be lots of further questions, but I like to
+have something simple to frame our thinking and this question serves that purpose.
+
+My hope is that by answering this seemingly straightforward question, we will be
+in a position to answer the hard question about which forms of shared agency
+underpin our social nature.
+
+The first two contrast cases are supposed to show that this question isn’t easy
+to answer because the most obvious, simplest things you might appeal to---coordination
+and common effects---won’t enable you to draw the distinction.
+
+\subsection{slide-10}
+Aim
+
+
+
+An account of joint action must draw a line between joint actions and parallel but
+merely individual actions.
+
+
+
+This invites us to think in terms of necessary and sufficient conditions.
+Of course, there are all kinds of reasons why this might be problematic, and we
+will consider many such reasons.
+But as I just said, having simple ideas to frame our thinking is good, and that’s why
+I take this as my working aim.
+(The ultimate aim is a ‘Blueprint for a Social Animal’, but it is difficult to be
+precise about what that will involve at this stage.)
+
+\subsection{slide-11}
+\emph{The Simple View}
+:
+Two or more agents perform an intentional joint action exactly when there is an act-type, φ, such that each of several agents intends that they, these agents, φ  together and their intentions are  appropriately related  to their actions.
+
+
+\subsection{slide-12}
+Explain: ‘I wish I had done that’.
+
+\subsection{slide-14}
+We are no longer talking about joint action generally, only about intentional joint action.
+Compare individual action: much individual action is arguably purposive but not
+intentional.  Similarly, we might think that there are non-intentional but purposive joint
+actions.
+
+A further problem concerns the link between intentional joint action and intention.
+Consider individual action.  Bratman has good arguments for holding that actions can
+be intentional under a description even when no intention specifies that description;
+and he also holds that agents incapable of intending may nevertheless perform intentional
+actions.
+So it is conceivable that not all intentional joint action will involve intention.
+In that case, the Simple View may not even be a fully general account of intentional
+joint action.
+
+I’m not going to pursue these issues yet, but we will come back to them.
+For now I just want to note that, for all its simplicity, the Simple View raises some
+tricky questions.
+
+\subsection{slide-15}
+For now I am treating the Simple View as offering necessary and sufficient conditions
+for intentional joint action, because I want to start with an ambitious claim.
+But reflecion on the relation between intention and intentional action may force us to back
+down later.
+
+\subsection{slide-16}
+Explain: deviant causal chains.
+
+\subsection{slide-17}
+Explain: threat of circularity.
+
+\subsection{walking\_together\_tarantino}
+
+
+\section{Walking Together in the Tarantino Sense}
+
+The Simple View, having survived the objection that it involves circularity,
+now faces a yet more challenging objection.
+Apparently the Simple View cannot distinguish bewteen all the contrast cases
+that an account of shared agency must distinguish.
+(Contrast cases are pairs of cases where one involves shared agency
+and the other does not and which are otherwise as similar as possible).
+
+\subsection{slide-19}
+Here’s the simple view again.  My aim now is to present the most convincing objection
+to it that I can.
+
+\subsection{slide-20}
+Suppose that you and I each intend that we, you and I, go to New York together.
+If we act on our intentions and succeed, will our going to New York thereby
+involve an exercise of shared agency?
+
+Michael Bratman offers a counterexample.  Suppose we elaborate the story so
+that your plan is to point a gun at me and bundle me into the boot (or trunk) of your car.
+Then you still intend that we go to New York together, but in a way that doesn't
+depend on my intentions.  As you see things, I'm going to New York with you whether
+I like it or not.  This doesn't seem like the basis for shared agency.
+After all, your plan involves me being abducted.
+
+But it is still a case in which we each intend that we go to New York together and we do.
+So, apparently, the conditions of the Simple View are met (or almost met) and yet there is
+no shared agency.
+
+\subsection{slide-21}
+Bratman’s brilliant idea for avoiding this sort of problem is to suggest that we don’t just each intend the action but rather we each intend to act by way of the other's intentions.
+
+We can put this by saying that our intentions must interlock: mine specify yours and yours mind.
+
+Now this appeal to interlocking intentions enables Bratman to avoid counterexamples like the Tarantino walkers; if I intend that we walk by way of your intention that we walk, I suppose can't rationally also point a gun at you and coerce you to walk.
+
+\subsection{slide-22}
+In making this idea more precise, Bratman proposes sufficient conditions for us to have
+a shared intention that we J ...
+... the idea is then that an intentional joint action is an action that is appropriately
+related to a shared intention.
+
+How does this rule out the ‘mafia case’?
+
+\subsection{slide-23}
+This is how it  rules out the ‘mafia case’ ...
+
+\subsection{slide-24}
+Now Bratman’s account initially seems like a friendly ammendment to the Simple View.
+But if we go down this route, things are going to get hairy very quickly.
+
+You might notice that Bratman’s approach has quite a bit in common with Grice’s ideas
+about meaning ...
+
+... and, as this suggests, there are further counterexamples, increasingly bizarre,
+which might involve adding further clauses.
+Although Bratman’s is the leading, best developed account, there are few philosophers
+who think this approach will work.
+
+It’s just here that, in philosophy at least, things get a little wild.
+Attempts to provide the missing ingredient in characterising joint action
+include introducing novel kinds of intentions \citep{Searle:1990em} or
+modes \citep{gallotti:2013_social}, novel kinds of agents \citep{helm_plural_2008},
+and novel kinds of reasoning \citep{Gold:2007zd}.
+Others suggest embedding intentions in special kinds of commitment \citep{gilbert:2014_book}.
+
+Before we get into this huge mess, let’s be clear about why we are doing it.
+So far it is just becase Bratman’s ‘mafia case’ appears to be a counterexample to
+the Simple View.  But is it really a counterexample? ...
+
+\subsection{slide-25}
+We’re considering that Bratman’s ‘mafia case’ provides a counterexample to
+the Simple View.  But does it really?
+
+
+\subsection{slide-26}
+The mafia case fails as a counterexample to the Simple View because if you go through
+with your plan, my actions won’t be appropriately related to my intention.
+
+And, on the other hand, if you don’t go through with your plan, that it is at best
+unclear that your having had that plan matters for whether we have shared agency.
+
+I suggest that what is wrong in the Mafia Case is not that the agent’s need further
+intentions, but just that if their intentions don’t connect to their actions in the
+right way then there won’t be intentional joint action.
+
+Before I go on, let me pause for a second to consider a counterargument,
+that is, an argument that the mafia case is indeed a counterexample to the simple view.
+
+\subsection{slide-27}
+Here is my attempt to improve on Bratman’s counterexample.
+Contrast friends walking together in the way friends ordinarily walk,
+which is a paradigm example of joint action,
+with two gangsters who walk together like this ...
+
+... Gangster 1 pulls a gun on Gangster 2 and says: “let’s walk”
+But Gangster 2 does the same thing to Gangster 1 simultaneously.
+
+\subsection{slide-28}
+We might call this ‘walking together in the Tarrantino sense’.
+
+The conditions of the Simple View are met both in ordinary walking together
+and in walking together in the Tarantino sense.  [*Discuss ‘appropriately related’].
+So according to the Simple View, both are intentional joint actions.
+
+\subsection{slide-29}
+Now I wanted to say that walking together in the Tarantino sense
+is not an intentional joint action unless the central event of of Reservoir Dogs
+is also a case of joint action.
+And I think it’s pretty clear that that isn’t a joint action.
+But I was surprised to find that at least two people responded, independently of each other,
+to this suggestion by saying that walking together in the Tarantino sense really is a joint action.
+
+My opponent reasoned that each is acting intentionally, and that coercion is no
+bar to shared agency.
+
+\subsection{slide-30}
+Just here we come to a tricky issue.
+There is a danger that we will just end up trying to say something systematic
+about one or another set of intutitons, where nothing deep underpins these intutions.
+
+I think this is a real threat; you’ll see that most philosophers are not careful
+about their starting point in theorising about shared agency.  They merely give
+examples or a couple of contrast cases and off they go.
+Adopting this undisciplined approach risks achieving nothing more than
+organising one’s own inutitions.  (It’s fine to organise intuitions on weekends and evenings,
+but it shouldn’t be your day job.)
+
+That’s why I want to go slowly here --- maybe this is very frustrating and you want to get
+into the really exciting, weird and crazy stuff about plural subjects, shared emotions
+or aggregate animals.  But before we can do this seriously we need some sort of foundation
+that will ensure we aren’t merely organising intutitions.
+
+\subsection{slide-31}
+Imagine two sisters who, getting off an aeroplane, tacitly agree to exact revenge on
+the unruly mob of drunken hens behind them by standing so as to block the aisle together.
+This is a joint action.
+Meanwhile on another flight, two strangers happen to be so configured that they are
+collectively blocking the aisle.
+The first passenger correctly anticipates that the other passenger, who is a
+complete stranger, will not be moving from her current position for some time.
+This creates an opportunity for the first passenger: she intends that they,
+she and the stranger, block the aisle.
+And, as it happens, the second passenger’s thoughts mirror the first’s.
+
+\subsection{slide-32}
+So the feature under consideration as distinctive of joint action is present:
+each passenger is acting on her intention that they, the two passengers, block the aisle.
+
+\subsection{slide-33}
+But the contrast between this case and the sisters exacting revenge suggests
+that these passengers are not taking part in an intentional joint action.
+
+Now I’m not confident that we can say there is no intentional joint action
+outright ...
+
+\subsection{slide-34}
+...  But I am confident that there is a contrast with respect to shared agency.
+[*Something about shared agency from the agent’s own perspectives?]
+
+And this is all that really matters for us: either the Simple View fails altogether
+to capture shared agency, or else it captures only a weak form of shared agency.
+Either way we will need more than the Simple View.
+
+\subsection{slide-35}
+I’ve been arguing that the Simple View is either outright wrong or else radically incomplete
+as an account of shared agency.
+
+Apparently, it is possible for two or more agents to each intend that
+they do one thing together and to act on these intentions without them thereby
+exercising shared agency a strong-ish sense.
+
+\subsection{slide-36}
+So the Simple View fails to provide a satisfying answer to the question, What distinguishes
+genuine joint actions from parallel but merely individual actions?
+
+Let me pause to say why this matters and how it fits into the big picture ...
+
+Philosophers have offered a tremendous variety of incompatible, wildly complicated and
+conceptually innovative theories about shared agency.
+The Simple View is an obstacle to discussing these theories.
+If the Simple View is correct, none of the complexity philosophers have offered is needed.
+
+The first problem I encounter in thinking about shared agency is that philosophers
+seem to take for granted without argument that the Simple View can be excluded.
+In fact it is surprisingly difficult to show that the Simple View is wrong.
+The usual argument against it is that it is circular, but we saw that this argument
+depends on the mistaken assumption that all cases of acting together involve joint action.
+
+A better objection to the Simple View involves counterexamples.
+But we saw that the standard counterexample, Bratman’s mafia cases, does not work.
+However refining that counterexample does appear to present a problem for the
+Simple View.
+
+Note that I don’t claim that the objection to the Simple View is decisive;
+in fact one of my aims in these lectures is to show that it is possible to
+save the Simple View.
+Nevertheless I do think that the objections to it are serious enough that we
+must now explore what proper philosophers have to say about shared agency.
+
+That’s why your first seminar task is to read and write about Searle’s early
+article.  This along with some less-readable but perhaps deeper efforts by Raimo Tuomela
+are often regarded as having initiated contemporary discussions of joint action.
+
+\subsection{multi\_agent\_events}
+
+
+\section{Multi-Agent Events}
+
+\subsection{slide-38}
+I want to start with a claim from Kirk Ludwig's semantic analysis.
+
+A \emph{joint action} is an event with two or more agents, as contrasted
+with an \emph{individual action} which is an event with a single agent
+\citep[p.\ 366]{ludwig_collective_2007}.
+
+\subsection{slide-39}
+[Grounding]
+Events $D_1$, ...\ $D_n$ \emph{ground} $E$, if: $D_1$, ...\ $D_n$ and $E$ occur;
+$D_1$, ...\ $D_n$ are each (perhaps improper) parts of $E$; and
+every event that is a proper part of $E$ but does not overlap  $D_1$, ...\ $D_n$ is caused by some or all of $D_1$, ...\ $D_n$.
+
+For an individual to be \emph{among the agents of an event} is for there to be actions $a_1$, ...\ $a_n$ which ground this event where the individual is an agent of some (one or more) of these actions.
+
+A joint action is an event with two or more agents.\citep{ludwig_collective_2007}
+
+\subsection{slide-40}
+This definition is too broad.
+
+To see why, consider an example.
+
+\subsection{slide-41}
+Nora and Olive killed Fred.
+Each fired a shot.
+Neither shot was individually fatal but together they were deadly.
+An ambulance arrived on the scene almost at once but Fred didn't make it to the hospital.
+On the revised simple definition, this event is a joint action just because Nora and
+Olive are both agents of it.
+Now suppose that Nora and Olive have no knowledge of each other, nor of each other's
+actions, and that their efforts are entirely uncoordinated.
+We might even suppose that Nora and Olive are so antagonistic to each other that they
+would, if either knew the other's location, turn their guns on each other.
+The event of their killing Fred is nevertheless a joint action on the revised simple definition.
+
+Why is this a problem?
+
+\subsection{slide-42}
+Because it shows that our present characterisation of joint action as an event
+with two or more agents doesn't match intutions about contrasts between joint and
+parallel but merely individual action.
+So we need to improve on this.
+
+\subsection{slide-43}
+What is missing from this first attempt at characterising joint action?
+I think one missing feature is the notion of a collective goal.
+Here I need to go slowly ...
+
+\subsection{collective\_goals}
+
+
+\section{Collective Goals}
+
+\subsection{slide-45}
+Let me first explain something about this notion of a collective goal ...
+
+Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+unfortunately the prosecco misses the glass and soak Zachs’s trousers.
+
+\subsection{slide-46}
+Here are two sentences, both true:
+
+The tiny drops fell from the bottle.
+
+
+The tiny drops soaked Zach’s trousers.
+
+
+\subsection{slide-47}
+The first sentence is naturally read *distributively*; that is, as specifying something
+that each drop did individually.  Perhaps first drop one fell, then another fell.
+
+\subsection{slide-48}
+But the second sentence is naturally read *collectively*.
+No one drop soaked Zach’s trousers; rather the soaking was something that the drops
+accomplised together.
+
+If the sentence is true on this reading, the tiny drops' soaking Zach’s trousers is not
+a matter of each drop soaking Zach’s trousers.
+
+\subsection{slide-49}
+Now consider an example involving actions and their outcomes:
+
+Their thoughtless actions soaked Zach’s trousers. [causal]
+
+\subsection{slide-50}
+This sentence can be read in two ways, distributively or collectively.
+We can imagine that we are talking about a sequence of actions done
+over a period of time, each of which soaked Zach’s trousers.
+In this case the outcome, soaking Zach’s trousers, is an outcome of each action.
+
+Alternatively we can imagine several actions which have this outcome collectively---as in
+our illustration where Ayesha holds a glass while Beatrice pours.
+In this case the outcome, soaking Zach’s trousers, is not necessarily an outcome of any of the
+individual actions but it is an outcome of all of them taken together.
+That is, it is a collective outcome.
+
+(Here I'm ignoring complications associated with the possibility that some
+of the actions collectively soaked Zach’s trousers while others did so distributively.)
+
+Note that there is a genuine ambiguity here.
+To see this, ask yourself how many times Zach’s trousers were soaked.
+On the distributive reading they were soaked at least as many times as there are actions.
+On the collective reading they were not necessarily soaked more than once.
+(On the distributive reading there are several outcomes of the same type and each
+action has a different token outcome of this type; on the collective reading there is a single token
+outcome which is the outcome of two or more actions.)
+
+Conclusion so far: two or more actions involving multiple agents can have outcomes
+distributively or collectively.
+This is not just a matter of words; there is a difference in the relation between
+the actions and the outcome.
+
+\subsection{slide-51}
+Now consider one last sentence:
+
+The goal of their actions was to fill Zach’s glass. [teleological]
+
+
+\subsection{slide-52}
+Whereas the previous sentence was causal, and so concened an actual outcome of some actions,
+this sentence is teleological, and so concerns an outcome to which actions are directed.
+
+\subsection{slide-53}
+Like the previous sentence, this sentence has both distributive and collective readings.
+On the distributive reading, each of their actions was directed to an outcome,
+namely soaking Zach’s trousers.  So there were as many attempts on his trousers as there
+are actions.
+On the collective reading, by contrast, it is not necessary that any of the actions
+considered individually was directed to this outcome;
+rather the actions were collectively directed to this outcome.
+
+Conclusion so far: two or more actions involving multiple agents can be collectively
+directed to an outcome.
+
+\subsection{slide-54}
+Where two or more actions are collectively directed to an outcome, we will say that this
+outcome is a *collective goal* of the actions.
+Note two things.
+First, this definition involves no assumptions about the intentions or other mental states
+of the agents.  Relatedly, it is the actions rather than the agents which have a collective goal.
+Second, a collective goal is just an actual or possible outcome of an action.
+
+\subsection{slide-55}
+We can extend our defintion of joint to include the notion
+of a collective goal ...
+
+Joint action:
+
+
+
+An event with two or more agents.
+
+
+
+
+
+An event with two or more agents where the actions have a collective goal.
+
+
+Is this good enough?  I think it isn’t ...
+
+Suppose two or more agent’s actions are coordinated around an outcome.
+That is, their actions are coordinated and they are coordinated in
+such a way that, normally, they would bring about this type of action.
+
+When this occurs, it seems to me that the actions are directed to the outcome.
+And because this is (in part, at least) a consequence of their coordination,
+it is not just that each action is individually directed to the outcome.
+So the outcome is one to which their actions are collectively directed.
+That is, it is a collective goal of their actions.
+
+\subsection{slide-56}
+One consequence of this is that actions can have collective goals of which
+the agents may be completely unaware.
+
+For example, when two agents between them lift a heavy block by means of each agent pulling on either end of a rope connected to the block via a system of pulleys, their pullings count as coordinated just because the rope relates the force each exerts on the block to the force exerted by the other.
+
+In this  case, the agents' activities are coordinated by a mechanism in their environment, the rope, and not necessarily by any psychological mechanism.
+
+\subsection{slide-57}
+To make a conjecture based on work with bees and ants, in some cases ...
+
+the coordination needed for a collective goal may even be supplied by behavioural patterns \citep{seeley2010honeybee}   and  pheromonal signals \citep[pp.\ 178-83, 206-21]{hoelldobler2009superorganism}.
+
+\subsection{slide-58}
+So the definition seems inadequate.
+Either it includes things that are not joint actions at all,
+or else it captures a notion of joint action that is broader than
+the core cases of shared agency that have been of primary interest to
+philosophers.
+
+And, to return to the point about cooperation, the bare idea that
+our actions have a collective goal implies nothing about cooperation.
+
+\footnote{%
+This is not to say that collective goals never involve psychological states.
+As we’ll see, one way for several actions to have a collective goal is for their agents to be acting on a shared intention;
+a shared intention supplies the required coordination.
+}
+
+\subsection{slide-59}
+We’ve been considering the idea that we can extend our defintion of joint to include the notion
+of a collective goal ... On our current working definition,
+a joint action is an event with two or more agents where the actions have a collective goal.
+
+\subsection{slide-60}
+The defintion is still too broad.
+To make progress we need to think not just about collective goals
+but about the different kinds of thing in virtue of which some actions can
+have a collective goal ...
+
+\subsection{collective\_goals\_and\_motor\_representations}
+
+
+\section{Collective Goals and Motor Representations}
+
+\subsection{slide-63}
+Recall how Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+and unfortunately the prosecco misses the glass, soaking Zachs’s trousers.
+
+\subsection{slide-64}
+As this illustrates,
+some actions involving multiple agents are purposive in the sense that
+
+\subsection{slide-65}
+among all their actual and possible consequences,
+
+\subsection{slide-66}
+there are outcomes to which they are directed
+
+\subsection{slide-67}
+and the actions are collectively directed to this outcome
+
+\subsection{slide-68}
+so it is not just a matter of each individual action being directed to this outcome.
+
+\subsection{slide-69}
+In such cases we can say that the actions have a collective goal.
+
+\subsection{slide-70}
+
+\subsection{slide-71}
+As what Ayesha and Beatrice are doing---filling a glass together---is a paradigm case of joint action, it might seem natural to answer the question by invoking a notion of shared (or `collective') intention.
+Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
+Then, on many accounts of shared intention,
+
+\subsection{slide-72}
+the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass;
+or each of them being in some other state which picks out this outcome.
+
+\subsection{slide-73}
+The shared intention also provides for the coordination of their actions (so that, for example,
+Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And
+coordination of this type would normally facilitate occurrences of the type of outcome intended.
+In this way, invoking a notion of shared intention provides one answer to our question about what
+it is for some actions to be collectively directed to an outcome.
+
+\subsection{slide-74}
+But we’ve already seen that the existence of collective goal does not
+require a shared intention.  Collective goals can also exist in virtue of
+the way two or more agents’ actions are coordinated.
+
+Are there also ways of answering the question which involve psychological structures
+other than shared intention? In this talk I shall argue that there are.
+Our actions having collective goals is not always only a matter of what we intend:
+sometimes it constitutively involves motor representation.
+
+\subsection{slide-75}
+Let me start by stepping back and consider an individual action.
+Consider what Ayesha and Beatrice do---their attempt to fill Zach's glass by one pouring prosecco while the
+other holds a glass---but now imagine that one person does both parts of the action.
+
+In virtue of what do actions involving just one agent ever have goals?
+
+A standard answer involves appeal to intention.
+For an intention identifies an outcome, coordinates some of the agent’s actions around that outcome, and coordinates them in such a way that, normally, the coordination would facilitate the occurrence of the outcome.
+Thus someone's intention to wash the dishes might, for example, constrain the order of her actions so that that the prosecco glasses are done before greasy pans.
+In this way, appealing to an intention concerning an outcome and its role in coordinating actions can sometimes allow us to explain in virtue of what several actions are collectively directed to that outcome.
+Are there other facts in virtue of which  multiple actions involving just one agent can be collectively directed to an outcome?
+
+But some philosophers have argued that some actions have goals in virtue of motor
+representation rather than intention.
+It will be helpful to outline these arguments since my aim today is
+an attempt to generalise such arguments from one agent to multiple agents.
+
+
+
+\section{Introduction to Motor Representation}
+
+\subsection{slide-76}
+Let me mention some almost uncontroversial facts about motor representations and
+their action-coordinating role.
+
+\subsection{slide-77}
+Explaining the coordination of
+sequences of very small scale actions appears to involve representations but not, or not
+only, intentions.  To a first approximation, \emph{motor representation} is a label for
+such representations.  But why accept that motor representations exist?
+
+Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.
+Even for such mundane, routine actions, the constraints on adequate performance can vary significantly depending on subtle variations in context. For example, the position of a hot pan may require altering the trajectory along which the egg is transported, or time pressures may mean that the action must be performed unusually swiftly on this occasion.
+Further, many of the constraints on performance involve relations between actions occurring at different times.
+To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces to which you will subject the egg in lifting it later.
+It turns out that people reliably grip objects such as eggs just tightly enough across a range of conditions in which the optimal tightness of grip varies.
+This indicates (along with much other evidence) that information about the cook’s anticipated future hand and arm movements appropriately influences how tightly she initially grips the egg (compare \citealp{kawato:1999_internal}).
+This anticipatory control of grasp,
+like several other features of action performance (\citealp[see][chapter 1]{rosenbaum:2010_human} for more examples),
+is not plausibly a consequence of mindless physiology, nor of intention and practical reasoning.
+This is one reason for postulating motor representations, which characteristically play a role in coordinating sequences of very small scale actions such as grasping an egg in order to lift it.%
+\footnote{%
+Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
+}
+
+\subsection{slide-78}
+What do motor representations represent? An initially attractive, conservative
+view would be that they represent bodily configurations and joint displacements,
+or perhaps sequences of these, only.
+However there is now a significant body of evidence that some motor representations
+do not specify particular sequences of bodily configurations and joint displacements,
+but rather represent outcomes such as the grasping of an egg or the pressing of a switch.
+These are outcomes which might, on different occasions, involve very different bodily
+configurations and joint displacements
+(see \citealp{rizzolatti_functional_2010} for a selective review).
+
+Such outcomes are abstract relative to bodily configurations and joint displacements
+in that there are many different ways of achieving them.
+
+
+\subsection{slide-80}
+Consider this case.
+An agent fills a glass by holding it in one hand, holding the bottle in the other,
+bringing the two together and pouring from the bottle into the glass.
+
+[*demonstrate].
+
+\subsection{slide-81}
+It’s a familiar idea that motor representations of outcomes resemble intentions in that they can
+trigger processes which are like planning in some respects.
+These processes are like planning in that they involve starting with representations of relatively
+distal outcomes and gradually filling in details, resulting in a structure of motor representations
+that can be hierarchically arranged by the means-end relation \citep{bekkering:2000_imitation,
+grafton:2007_evidence}.
+Processes triggered by motor representations of outcomes are also planning-like in that they
+involve selecting means for actions to be performed now in ways that anticipate future actions
+\citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}.
+
+\subsection{slide-82}
+Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the
+exchange between her two hands.
+(If her action is fluid,
+she may proactively adjust her left hand in advance of the mug’s being lifted by her right hand
+\citep[compare][]{diedrichsen:2003_anticipatory,hugon:1982_anticipatory, lum:1992_feedforward}.)
+How could such tight coordination be achieved?
+Part of the answer involves the fact that motor representations and processes concerning the
+actions involving each hand are not entirely independent of each other.
+Rather there is a plan-like structure of motor representation for the whole action and motor
+representations concerning actions involving each hand are components of this larger plan-like structure.
+It is in part because they are components of a larger plan-like structure that the movements of
+one hand constrain and are constrained by the movements of the other hand.
+
+\subsection{slide-83}
+But how is any of this relevant to our question about in virtue of what an individuals’ actions can
+have a goal?
+
+The idea is that motor representations can ground the directedness of actions to goals,
+much as intentions can.
+For, like intentions, motor representations represent outcomes, trigger
+planning-like processes which compute means-ends relations, and thereby provide
+for the coordination of actions.
+
+\subsection{slide-84}
+
+\subsection{slide-85}
+
+\subsection{slide-86}
+
+\subsection{slide-87}
+
+\subsection{slide-88}
+
+\subsection{slide-89}
+Conjecture
+
+
+
+Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+
+
+
+
+Each represents a single outcome motorically, and
+
+
+in each agent this representation triggers planning-like processes
+
+
+concerning all the agents’ actions, with the result that
+
+
+coordination of their actions is facilitated.
+
+
+
+\subsection{slide-90}
+What do we need?
+(i) Evidence that a single outcome to which all the actions are directed is represented motorically.
+
+\subsection{slide-91}
+(ii) Evidence that this triggers planning-like processes,
+
+\subsection{slide-92}
+(iii) where these  concern all the agents' actions,
+
+\subsection{slide-93}
+and (iv) the existence of such representations facilitates coordination of the agents' actions.
+
+\subsection{slide-89}
+
+
+\section{Kourtis et al (2014)}
+
+\subsection{slide-94}
+I think we're a long way from having a large body of converging evidence for this conjecture,
+but there is some that points in this direction.
+One of the most relevant experiments is this one by \citet{kourtis:2014_attention}.
+
+They contrasted a simple joint action involving two agents clinking glasses.
+
+\subsection{slide-97}
+Here's the procedure.
+
+\subsection{slide-98}
+This is fine but what are we going to measure?
+
+\subsection{slide-99}
+This is a signal of motor preparation for action which is time-locked to action onset.
+In previous research, Kourtis et al show (i) that the CNV occurs when joint action
+partners act, suggesting that when acting together we represent others' actions motorically
+as well as our own \cite{kourtis:2012_predictive};
+and
+(ii) (roughly) a stronger CNV occurs in relation to actions of others one is engaged in joint action than
+in relation to actions of others one is merely observing \cite{kourtis:2010_favoritism}.
+
+Kourtis et al hypothesised that in actions like clinking glasses,
+A single outcome represented is motorically,
+which triggers planning-like processes
+concerning all the agents' actions.
+This leads to the prediction that the CNV in joint action will resemble that occurring in
+bimanual action more than that occuring in unimanual action.
+
+\subsection{slide-100}
+... and this is exactly what they found.
+
+\subsection{slide-101}
+
+
+\section{Kourtis et al (2014)}
+
+\subsection{slide-102}
+To test this conjecture, Corrado Sinigaglia and I teamed up with
+Francesco della Gatta, Francesca Garbarini and Marco Rabuffetti.
+We adapted a bimanual paradigm, the circle-line drawing paradigm, which has been
+extensively employed for investigating bimanual interference (Franz et al, 1991).
+
+When people have to simultaneously perform noncongruent movements,
+such as drawing lines with one hand while drawing circles with the
+other hand, each movement interferes with the other and line trajectories
+tend to become ovalized. This “ovalization” has been described as a \textbf{bimanual coupling effect},
+suggesting that motor representations for drawing circles can affect motor representations
+for drawing lines (Garbarini et al. 2012; 2013a; 2015a; 2015b; Garbarini and Pia 2013;
+Piedimonte et al. 2014).
+
+In the key conditions of our adapted version of the circle-line drawing paradigm,
+participants were asked to unimanually draw circles with their right hands
+while observing either lines being unimanually drawn by a confederate (Garbarini et al, 2013b;
+Garbarini et al, 2016).
+
+We contrasted a Parallel Action task with a Joint Action task.
+These tasks differed only in the instructions given.
+
+In the Joint Action task participants were instructed to perform the task
+together with the confederate, as if their two drawing hands gave shape to a single design.
+
+In the Parallel Action task, participants were given no such instruction so that
+they could draw in parallel, observing each other but not acting together.
+
+If participants were to follow our instructions, their actions would have
+the collective goal of drawing a circle and a line in the Joint Action task but not in
+the Parallel Task.
+
+Our conjecture entails that this collective goal could be represented motorically.
+Accordingly, we predicted that there should be an interpersonal motor coupling effect.
+This would result in greater ovalization of the lines drawn in the Joint Action task
+than in the Parallel Action task ...
+
+\subsection{slide-103}
+And that was actually what we found.
+
+Our hypothesis is that interpersonal motor coupling may occur when an individual is acting unimanually, providing she is acting jointly with another and not merely acting in parallel. This is because in joint action, but not in parallel action, an individual could represent motorically the collective goal of drawing both a circle and a line even if she is actually only drawing a line. Somewhat as in the case of individual bimanual action, so also in joint action: the motor representations of one hand’s drawing can influence the motor representations of the other hand’s drawing.  One difference in joint action, of course, is that the hands belong to different individuals.
+
+\subsection{slide-106}
+There is more evidence for this conjecture than I have given here,
+but there is not a lot more converging evidence.
+This is a conjecture that we hope will be tested further
+rather than something we take to be established already.
+
+\subsection{slide-107}
+What about coordination?
+There is a little bit of direct evidence for this that I won't mention.
+But I do want to take you through why the interagential structure of motor representation
+might in theory result in the agents actions being coordinated.
+
+\subsection{slide-108}
+Earlier we considered what is involved in performing an ordinary, individual action, where an agent
+fills a glass from a bottle, taking one in each hand and moving them in a carefully coordinated way.
+Compare this individual action with the same action performed by two agents as a joint action.
+One agent takes the glass while the other takes the bottle.
+The joint action is like the individual action in several respects.
+
+\subsection{slide-109}
+First, the goal to which the joint action is directed is the same, namely to move the mug from here to there.
+
+\subsection{slide-110}
+Second, there is a similar coordination problem---the agents’ two hands have to meet.
+
+\subsection{slide-111}
+And, third, the evidence we have mentioned suggests that in joint action, motor representations and processes occur in each agent much like those that would occur if this agent were performing the whole action alone.
+
+Why would this be helpful?
+
+
+
+Suppose the agents' planning-like motor processes are similar enough that, in this context, they will reliably produce approximately the same plan-like structures of motor representations.
+
+Then having a single planning-like motor process for the whole joint action in each agent means that
+
+\begin{enumerate}
+
+\item in each agent there is a plan-like structure of motor representations concerning each of the others’ actions,
+
+\item each agent's plan-like structure concerning another's actions is approximately the same as any other agent's plan-like structure concerning those actions,
+
+\item each agent's plan-like structure concerning her own actions is constrained by her plan-like structures concerning the other’s actions.
+
+\end{enumerate}
+
+So each agent’s plan-like structure of motor representations concerning her own actions is indirectly constrained by the other agents' plan-like structures concerning their own actions
+
+by virtue of being directly constrained by her plan-like structures concerning their actions.
+
+In this way it is possible to use ordinary planning-like motor processes to achieve coordination in joint action.
+
+What enables the two or more agents' plan-like structures of motor representations to mesh is not that they represent each other's plans but that they processes motorically each other's actions and their own as parts of a single action.
+
+
+
+So how does the joint action differ from the corresponding individual action?
+
+There are at least two differences.
+
+First, we now have two plan-like structures of motor representations because in each agent there is a planning-like motor process concerning the whole action.
+
+These two structures of motor representations have to be identical or similar enough that the differences don’t matter for the coordination of the agents’ actions---let us abbreviate this by saying that they have to \emph{match}.
+
+The need for matching planning-like structures is not specific to joint action;
+
+it is also required where one agent observing another is able to predict her actions thanks to planning-like motor processes concerning the other’s actions (we mentioned evidence that this occurs above).
+
+\subsection{slide-112}
+A second difference between the joint action and the individual action is this.
+
+In joint action there are planning-like motor processes in each agent concerning some actions which she will not eventually perform.
+
+There must therefore be something that prevents part but not all of the planning-like motor process leading all the way to action.
+
+Exactly how this selective prevention works is an open question.
+
+We expect bodily and environmental constraints are often relevant.
+
+There may also be differences in how others’ actions are processed motorically \citep[compare][]{novembre:2012_distinguishing}.
+
+\footnote{\citep[p.\ 2901]{novembre:2012_distinguishing}: 'in the context of a joint action—the motor control system is particularly sensitive to the identity of the agent (self or other) of a represented action and that (social) contextual information is one means for achieving this distinction'}
+
+And inhibition could be involved too \citep[compare][]{sebanz:2006_twin_peaks}.
+
+\subsection{slide-113}
+My proposal, then, is this.
+In both practical reasoning and motorically, sometimes agents are able to achieve coordination
+ for joint action not by representing each others’ plans but
+ by treating each other's actions and their own as if they were parts of a single action.
+
+So perhaps joint action is not always only a matter of intention, knowledge or commitment:
+perhaps sometimes joint action constitutively involves motor representation.
+
+\subsection{slide-114}
+So far this has all been about coordination.
+But our question was about collective goals.
+
+\subsection{slide-116}
+Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
+Then, on many accounts of shared intention,
+
+the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass;
+or each of them being in some other state which picks out this outcome.
+
+The shared intention also provides for the coordination of their actions (so that, for example,
+Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And
+coordination of this type would normally facilitate occurrences of the type of outcome intended.
+In this way, invoking a notion of shared intention provides one answer to our question about what
+it is for some actions to be collectively directed to an outcome.
+
+What we've just seen is that a parallel answer can be given by appeal to i.a.s.m.r. ...
+
+\subsection{slide-117}
+We’ve been considering the idea that we can extend our defintion of joint to include the notion
+of a collective goal ...
+
+\subsection{slide-119}
+Against this idea we might offer two lines of objection, based on the idea
+that we want an account of joint action to distinguish genuine joint actions
+from actions that are parallel but merely individual.
+
+The first line of objection is that it is too narrow.
+There are surely joint actions which don't have collective goals
+in virtue of any interagential structure of motor representations.
+
+The second line of objection is that it fails to make good on the idea
+that cooperation is a feature of joint action.
+An interagential structure
+of motor representations appears to facilitate coordination; but
+it does not obviously matter for coopertion.  Or does it?
+
+\subsection{motor\_representations\_and\_cooperation}
+
+
+\section{Motor Representation Underpins Cooperation}
+
+\subsection{slide-121}
+Recall our issue earlier with the Simple View
+
+The counterexample shows that you can meet the conditions of the Simple
+Account without cooperating or being disposed to cooperate.
+But, arguably, shared agency involves cooperation in some way.
+
+‘The notion of a [shared intention] ... implies the notion of cooperation’
+
+\citep[p.~95]{Searle:1990em}
+
+\subsection{slide-122}
+Where our actions have a collective goal in virtue of an interagential structure
+of motor representations, we are not merely acting together: we are acting as one.
+
+Why is this true?
+Because in the sort of parallel-planning triggered by the motor representations in
+an interagential structure of motor representations, there is no distinction
+between actions I will perform and actions you will perform.
+
+I am, in effect, just trying to work out the best way to achieve the outcome irrespective
+of who does what; and so are you; and this is the hallmark of effective cooperation.
+
+\subsection{slide-123}
+Let's go back to the Simple View ...
+
+\subsection{slide-125}
+We have to be careful in specifying under what description they intend that they phi.
+To avoid circularity can't always be the case that phi is an intentional joint action.
+Bratman says it is cooperatively neutral.
+This is weak.
+Maybe we can say:
+
+\subsection{slide-126}
+φ comprises two or more actions involving multiple agents where the actions have a collective goal in virtue of an interagential structure of motor representation.
+
+\subsection{slide-127}
+I think this gets around the Tarrantino walkers counterexample.
+(Because if you have the iasmr you don't need a gun!)
+
+\subsection{slide-128}
+But it leaves us with another problem ...
+
+\subsection{slide-129}
+People can't intend phi under this description unless they can identify the
+interagential structure of motor representation we have been characterising.
+
+\subsection{slide-130}
+So we have to give up on this idea as it stands.
+But maybe we can modify it.
+
+\subsection{slide-132}
+φ is an act-type we know through experiences arising from interagential structure of motor representations grounding collective goals.
+
+Compare individual action.
+We know what it is to grasp by virtue of experiences created by motor representations.
+...
+
+--------
+\subsection{slide-133}
+In conclusion, my question was about in virtue of what ... collective goals.
+Many researchers have answered this question by appeal to one or another kind of shared intention.
+What we have shown is that in some cases the right answer to the question involves
+motor representation rather than intention.
+And, more tenatively, this suggests that there may be a role for motor representation
+in characterising joint action.
+Perhaps understanding joint action and shared intention requires appeal not just to intention, commitment and the rest,
+but also to motor representation.
+
+
+    
+
+
+
+
+%--- end paste
+%---------------
+
+
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}

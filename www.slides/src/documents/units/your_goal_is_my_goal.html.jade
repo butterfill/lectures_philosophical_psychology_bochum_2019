@@ -1,0 +1,284 @@
+---cson
+layout: 'deck_unit'
+title: "Your goal is my goal"
+tags: []
+description: """
+  If an interpreter is able to interact with her targets,
+  if she is not limited to merely observing them,
+  how might this enable her to exploit a route to knowledge of the goals of their actions?
+  The answer hinges on interactions involving collective goals.
+  
+  """
+---
+
+include ../../../fragments/unit_mixins
+
++slide_rh_white
+  .handout.notes: :t
+    An outcome is a \emph{collective goal} of two or more actions involving multiple agents
+    just if the actions are directed to this goal and this is not, or not just, a matter
+    of each action being individually directed to that goal.
+  +left_half
+    p.center collective 
+  +right_half
+    p.center.step2.hide not collective
+  +run_across
+    p.center goals
+  .slide
+    +show('.step2')
+    +left_half
+      p.em-above Jack’s and Ayehsa’s actions are collectively directed to getting the food.
+    +right_half
+      p.em-above Ilsa and Ahmed’s actions are each individually directed to getting the food.
+  .clear
+  .slide
+    +run_across
+      p.center functions
+    +left_half
+      p.em-above Those speakers collectively provide high fidelity reproduction.
+    +right_half
+      p.em-above Each of those speakers is individually provides high fidelity reproduction
+  .slide
+    +blur('p')
+    .notes: :t
+      In what follows I’m going to rely on two assumptions:
+      (1) joint actions involve collective goals
+      (2) you can identify something as a joint action without ascribing any mental states.
+
++slide_middle
+  p.center intuitive idea
+    span.its-wrong.hide , not quite right
+  .notes: :t
+    Here is an intuitive idea that doesn't quite work:
+    if an interpreter is engaged in an interaction with her target that involves a collective goal, 
+    it may be easy for the interpreter to know what the goal of her target's actions is because this 
+    goal is the goal of her own actions.
+    So if she knows the goal of her own actions and she knows that she is engaged with 
+    her target in an interaction involving a collective goal,
+    then she already knows what the goal of her target's actions are.
+  .notes: :t
+    Roughly speaking, the mindreader can reason about her target thus: your goal is my goal.
+  .slide
+    +show('.its-wrong')
+    .notes: :t
+      Of course this intuitive idea is no use it stands.  
+      For the inference it captures relies on the premise that the interpreter and her 
+      target are engaged in actions with a collective goal.
+      But for the mindreader to know this premise it seems she must   
+      already know which goal her target's actions are directed to.
+  .slide
+    p.em-above.center but: cues to joint action
+    .notes: :t
+      Fortunately there is a way around this.  
+      For there are various cues which signal that one agent is prepared 
+      to engage in some joint action or other with another,
+      and joint actions involve collective goals.  
+      \label{twin_pram}
+      Seeing you struggling to get your twin pram onto a bus and noticing you have 
+      the haggard look of a new parent, a passing stranger  grabs the front wheels 
+      and makes eye contact with you, raising her eyebrows and smiling.
+      (The noise of the street rules out talking.)   
+      In this way she signals that she is about to act jointly with you.   
+      Since you are fully committed to getting your pram onto the bus,
+      you know what the sole goal of your own actions will be.
+      But you also know that the stranger will engage in joint action with you,
+      which means that, taken together, her actions and your actions will have a collective goal.
+      This may enable you to infer the goal of the stranger's imminent actions: 
+      her goal is your goal, to get the pram onto the bus.
+
++slide({bkg:'whitney.png'})
+  .handout.notes: :t
+    \begin{enumerate}
+    \label{your_goal_is_my_goal}
+    \item You are 
+    about to attempt to 
+    engage in some joint action\footnote{
+    We leave open the issue of how joint action is to be characterised subject only to the 
+    requirement that all joint actions must involve collective goals.
+    Attempts to characterise joint action in ways relevant to explaining development include
+    	\citet{Tollefsen:2005vh},
+    	\citet{Carpenter:2009wq},
+    	\citet{pacherie_framing_2011} and
+    	\citet{Butterfill:2011fk}.
+    }
+    or other with me.
+    %(for example, because you have made eye contact with me while I was in the middle of attempting to do something).
+
+    \item I am not about to change the single goal to which my actions will be directed.
+
+    \end{enumerate}
+    %
+    Therefore:
+    %
+    \begin{enumerate}[resume]
+    %
+    \item A goal of your actions will be my goal, the goal I now envisage that my actions will be directed to.
+    \end{enumerate}
+    
+  
+  .slide
+    p Your-goal-is-my-goal
+    +fade('img.bkg')
+    +blur('img.bkg')
+    p.one.em-above: :t
+      1. You are about to attempt to 
+      engage in some joint action
+      or other with me.
+    .notes: :t
+      For example, because you have made eye contact with me while I was in the middle of attempting to do something)
+    .slide
+      p.two.em-above: :t
+        2. I am not about to change the single goal to which my actions will be directed.
+    .slide
+      p.em-above Therefore:
+      p.three.em-above: :t
+        3. A goal of your actions will be my goal, the goal I now envisage that my actions will be directed to.
+      .notes: :t
+        I claim (i) you could know the premises without already knowing the conclusion,
+        and (ii) knowing the premises could put you in a position to know the conclusion.
+        So the inference is a route to knowledge.
+      .notes: :t
+        It describes how interacting interpreters might come to know facts
+        about the goals of others’ actions.
+      .notes: :t
+        The teleological stance is one route to knowlegde of other’s goals,
+        and this is another.
+
++slide_middle
+  p.center What about the Problem of False Belief?
+
++slide_middle
+  .notes: :t
+    So the Teleological Stance and Your-Goal-Is-My-Goal provide
+    computational descriptions of complementary processes of goal
+    ascription.  Each is limited, but in different ways than the other.
+  .container_12.em-above
+    .grid_6
+      //- p.center EITHER:
+      p.center
+        //- img(src='/img/hummus.jpg', style="width:200px; height:169px")
+        +colour-box('red','150')
+      p.center [contains food]
+    .grid_6
+      //- p.center OR:
+      p.center 
+        //- img(src='/img/hamburger.jpeg', style="width:200px")
+        +colour-box('blue','150')
+      p.center [contains poison]
+    .clear
+    .grid_12
+    .slide.em-above
+      p.em-above.center
+        table.data
+          thead
+            tr
+              td action
+              td belief
+              td teleological stance
+              td your-goal-is-my-goal 
+          tbody
+            tr
+              td blue
+              td true
+              td.center ✓
+              td.center ✓
+            tr
+              td blue
+              td false
+              td.center ✗
+              td.center ✓
+      
+
++slide_middle
+  p.center What about the Problem of Opaque Means?
+
++slide_middle
+  .notes: :t
+    The two routes to knowledge are complementary: one 
+    demands knowledge of means-ends relations and so is no good when the
+    means are opaque to the interpreter; the other places different demands
+    on the interpreter.
+  table.data
+    thead
+      tr
+        td 
+        td teleological stance
+        td your-goal-is-my-goal
+    tbody
+      tr.even
+        td demands know means
+        td.center(valign='middle') ✓
+        td.center(valign='middle') ✗
+      tr.odd
+        td demands can interact
+        td.center(valign='middle') ✗
+        td.center(valign='middle') ✓
+
++slide_middle
+  p.center What about the problem of opaque means?
+  .notes: :t
+    I claim that your-goal-is-my-goal enables you to avoid 
+    the problem of opaque means.  But how does it work?
+  .notes: :t
+    Earlier I mentioned three examples.
+    Let’s see how your-goal-is-my-goal enables you to avoid 
+    the problem of opaque means in each of these three cases.
+  .slide
+    .eg
+      p.hem-around e.g. pram -> bus
+        span.step2 ; gorilla preparing nettles
+    .eg
+      p.hem-around e.g. tool use 
+        span.inversion-of-demand.hide illustrates inversion of demands
+    .eg
+      p.hem-around e.g. communicative actions
+  .slide
+    +highlight-row('.eg:eq(0)')
+    .notes Actually I already did this one in introducing the inference.
+  .slide
+    +unhighlight-row('.eg:eq(0)')
+    +highlight-row('.eg:eq(1)')
+    .notes: :t
+      We saw earlier that the problem of opaque means  may impair goal 
+      ascription where actions involve novel uses for tools.
+      How could your-goal-is-my-goal mitigate the problem in such cases?
+      Imagine we are interacting with a young child,
+      Ayesha,
+      and want her to understand how a new tool is used.  
+      It is difficult to convey this to her directly.  
+      So we first get her interested in achieving an outcome that would require the new tool,
+      knowing that she will perform actions directed to achieving this outcome.  
+      We then signal to Ayesha that we will act jointly with her.  
+      Now she is in a position to know what the goal of our action will be when we deploy the tool.  
+      She is able to identify this goal 
+      despite being unable to recognize it as an end to which our tool-using action is a means.
+      She is able to identify this goal 
+      because she knows that this is her goal
+      and that we were attempting to engage in joint action with her.
+      This is one illustration of how 
+      interacting interpreters have at their disposal ways of
+      identifying the goals of actions involving novel uses of tools
+      which are unavailable to interpreters who can only observe.
+  .slide
+    +show('.inversion-of-demand')
+    .notes: :t
+      As this example indicates,
+      exploiting your-goal-is-my-goal 
+      can shift the burden of identifying goals from a mindreader to her target.
+      In the example Ayesha is the focal mindreader and we are her target;
+      but her success in identifying the goal of our actions
+      depends on this,
+      that our willingness to act jointly with her is based on \emph{our} knowledge of the goals of \emph{her} actions.
+      In purely observational mindreading, the target's beliefs about the goals of the mindreader's actions are not normally relevant (except, of course, when the mindreader is ascribing such beliefs).
+      But interacting mindreaders who rely on your-goal-is-my-goal
+      thereby rely on their targets' having correctly identified the goals of their actions.
+      Of course this is sometimes a reason not to rely on your-goal-is-my-goal.
+      But where the target understands relevant means-ends relations,
+      such as actions involving novel tools,
+      the your-goal-is-my-goal route to knowledge of others' goals may sometimes be the only option.
+      
+  .slide
+    +unhighlight-row('.eg:eq(1)')
+    +highlight-row('.eg:eq(2)')
+    .notes: :t
+      This is a bit of a problem ...

@@ -1,0 +1,101 @@
+---cson
+layout: 'deck_unit'
+title: "Marr’s Threefold Distinction"
+tags: []
+description: """
+  Marr helpfully distinguishes computational description (What is the thing for and how does it achieve this?)
+  from representations and algorithms (How are the inputs and outputs represented, and how is the transformation accomplished?)
+  and from the hardware implementation (How are the  representations and algorithms physically realised?)
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+
+
++slide_middle
+  .handout: :t
+    \citet[p.~22ff]{Marr:1982kx} distinguishes:
+  .handout: :t
+    \begin{itemize}
+  .handout: :t
+    \item computational description---What is the thing for and how does it achieve this?
+  .handout: :t
+    \item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
+  .handout: :t
+    \item hardware implementation---How are the representations and algorithms physically realised?
+  .handout: :t
+    \end{itemize}
+  .notes: :t
+    One possibility is to appeal to David Marr’s famous three-fold distinction
+    bweteen levels of description of a system: the computational theory, the 
+    representations and algorithm, and the hardware implementation.  
+  .notes: :t
+    This is easy to understand in simple cases.
+    To illustrate, consider a GPS locator.
+    It receives information from four satellites and tells you where on Earth the device is.
+  .notes: :t
+    There are three ways in which we can characterise this device.
+  .slide
+    .computational
+      p 1. computational description
+      .notes: :t
+        First, we can explain how in theory it is possible to infer the 
+        device’s location from it receives from satellites.
+        This involves a bit of maths: given time signals from four different satellites,
+        you can work out what time it is and how far you are away from each
+        of the satellites.
+        Then, if you know where the satellites are and what shape the Earth is,
+        you can work out where on Earth you are.
+      .slide
+        p.indent -- What is the thing for and how does it achieve this?
+      .notes: :t
+        The computational description tells us what the GPS locator does and 
+        what it is for.
+        It also establishes the theoretical possibility of a GPS locator.
+      .notes: :t
+        But merely having the computational description does not enable you to build 
+        a GPS locator, nor to understand how a particular GPS locator works.
+        For that you also need to identify representations and alogrithms ...
+  .slide
+    p.em-above 2. representations and algorithms
+    .notes: :t
+      At the level of representations and algorthms we specify 
+      how the GPS receiver represents the information it receives from the satellites
+      (for example, it might in principle be a number, a vector or a time).
+      We also specify the algorithm the device uses to compute the time and its location.
+      The algorithm will be different from the computational theory: it is a procedure
+      for discovering time and location.
+      The algorithm may involve all kinds of shortcuts and approximations.
+      And, unlike the computational theory, constraints on time, memory and other
+      limited resources will be evident.
+    .slide
+      .notes So an account of the representations and algorithms tells us ...
+      p.notes.show.indent -- How are the inputs and outputs represented, and how is the transformation accomplished?
+  .slide
+    p.em-above 3. hardware implementation
+    .notes: :t
+      The final thing we need to understand the GPS locator is a description of the
+      hardware in which the algorithm is implemented.  It’s only here that 
+      we discover whether the device is narrowly mechanical device, using cogs, say, 
+      or an electronic device, or some new kind of biological entity.
+  .slide
+    p.indent -- How are the  representations and algorithms physically realised?
+    .notes: :t
+      The hardware implementation tells us how the representations and algorithms are represented physically.
+  p.right.grey-text Marr (1992, 22ff)
+  .slide
+    +blur('p')
+    .notes: :t
+      How is this relevant to the teleological stance?
+      It provides a computational description of goal ascription.
+      Whereas the Motor Theory provides an account of the representations and algorithms 
+  .slide
+    +unblur('p')
+    +highlight-row('.computational')
+    .notes: :t
+      I suggest that an account of radical interpretation is suppsoed to provide
+      a computational description of social cognition; it tells us what social
+      cognition is for and how, in the most abstract sense, it is possible.
+

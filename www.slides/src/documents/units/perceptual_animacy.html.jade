@@ -1,0 +1,207 @@
+---cson
+layout: 'deck_unit'
+title: "Perceptual Animacy"
+tags: []
+description: """
+  Perceptual animacy is
+  the detection by broadly perceptual processes of animate objects and their targets
+  \citet[e.g.][]{gao:2009_psychophysics}.
+  Could its existence provide us with a solution to the developmental puzzle about 
+  goal tracking?
+  """
+---
+  
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
++slide
+  .notes: :t
+    \emph{perceptual animacy},
+    the detection by broadly perceptual processes of animate objects and their targets.
+      
+  +img_clip('gao_2009_fig2.png')
+  p.source Gao et al, 2009 figure 2
+  
+  .notes: :t
+    Evidence for the existence of perceptual animacy comes from a variety of studies 
+    where adults are given a simple visual task such as identifying which circle is the ‘wolf’
+    and which the ‘sheep’, or, in another experiment, moving the sheep around in order to 
+    avoid being caught by the wolf.  
+  .notes: :t
+    It is also possible to examine how having a sheep and a wolf affects how attention is allocated by
+    measuring how well participants can detect probes placed on different shapes.
+  .notes: :t
+  
+  .notes: :t
+    The literature on perceptual animacy mostly confounds it with goal tracking.
+    But there are two key differences.  
+  .notes: :t
+    First, perceptual animacy is a broadly
+    perceptual phenomenon.
+  .notes: :t
+    Second,
+    the perceptual detection of animacy is clearly distinct from goal tracking
+    for it involves detecting relations between objects in motion rather than
+    outcomes to which actions are directed.
+    Relatedly, it does not involve sensitivity to the type of action.
+    And the perceptual detection of animacy appears to depend on simple cues
+    and heuristics and is unlikely to be correctly described by the
+    Teleological Stance.
+    So perceptual animacy does not involve tracking goals to which an action is
+    directed: it is a matter of tracking objects to which animate movements are
+    directed.
+
++slide
+  +img_clip('gao_2009_fig4a_part.png')
+  p.source Gao et al, 2009 figure 3b
+  .notes: :t
+    \emph{{perceptual animacy}},
+    the detection by broadly perceptual processes of animate objects and their targets.
+    To illustrate, consider a groundbreaking experiment by \citet[experiment 1]{gao:2009_psychophysics}.
+    Adults were shown a display which contained some moving circles.
+    In some cases the circles moved independently of each other, but in other cases there was a ‘wolf’
+    which chased a ‘sheep’ with varying degrees of subtlety.
+    The adults’ task was simply to detect the presence of a wolf.
+    \citeauthor{gao:2009_psychophysics} established that adults can do this providing the chasing is not too subtle.
+    In further experiments, they also showed that adults’ abilities to perceptually detect chasing
+    depend on several cues including whether the chaser ‘faces’ its target (‘directionality’) and how
+    directly the chaser approaches its target (‘subtlety’).
+    The detection of animacy appears to be a broadly perceptual phenomena since it depends on areas of
+    the brain associated with vision and influences how perceptual attention is allocated
+    \citep{scholl:2013_perceiving} irrespective of your beliefs and intentions
+    \citep{buren:2016_automaticity}.
++slide
+  +img_clip('gao_2009_fig4a.png')
+  p.source Gao et al, 2009 figures 3b, 4a
+
+
++slide_middle
+  .notes: :t
+    [This comparison is a bit confused because pure-goal tracking is the kind of thing 
+    that can be (and is) achieved by way of different mechanisms (e.g. reasoning; motor processes),
+    whereas perceptual animacy is a mechanism.]
+  
+  table.data(style='table-layout:fixed;width:100%;')
+    thead
+      tr(style='width:30%')
+        td
+        td(style='width:35%') pure goal-tracking
+        td(style='width:35%') perceptual animacy
+    tbody
+      tr.slide.even
+        td What is tracked?
+        td goals
+        td targets
+      tr.slide.odd
+        td How is it tracked?
+        td Teleological Stance
+        td spatio-temporal 
+          span heuristics
+          br
+          span (e.g. subtlety, directionality)
+      tr
+        td
+        td
+        td
+
+  .notes: :t
+    The perceptual detection of animacy resembles goal tracking, for it involves detecting a relation
+    between a chaser and its target.
+    However the perceptual detection of animacy is clearly distinct from goal tracking.%
+    \footnote{%
+    Contrast \citet{schlottmann:2010_goal,Scholl:2000eq} who all claim that perceptual animacy is a matter of, or involves, tracking goals.
+    }
+    For one thing, it involves detecting relations between objects in motion rather than outcomes to
+    which actions are directed.
+    Relatedly, it does not involve sensitivity to the type of action.
+    Finally, the perceptual detection of animacy appears to depend on simple cues and heuristics and is
+    unlikely to be correctly described by the Teleological Stance.
+    For these reasons, we should distinguish the perceptual detection of animacy from tracking goals to which actions are directed.
+
+
++slide_rh_white({step:true})
+  +left_half
+    .notes.show
+      p Conjecture
+      p.em-above: :t
+        In 9-month-olds, 
+      p.hem-above: :t
+        all pure goal-tracking is explained by the Motor Theory;
+      p.hem-above: :t
+        appearances that goal-tracking is not limited by their abilities to act
+        are due to perceptual animacy.
+  +right_half({step:true})
+    .notes.show
+      p: :t
+        Predictions
+      p.em-above
+        span Where 9-month-olds appear to be tracking goals 
+        br
+        span in ways not limited by their abilities to act,
+        br 
+        span they will be subject to signature limits of perceptual animacy
+        br
+        span (e.g. subtlety, directionality);
+      p.hem-above: :t
+        and the processes underlying their abilities will be broadly perceptual.
+      
++slide_middle
+  p.center Objection: Skerry et al, 2013
+  .notes: :t
+    [Haven’t slides; will use printout from their paper]
+
+section.slide
+  .notes: :t
+    How does the conjecture help with the puzzles about development?
+  +_slide_middle_inner
+    p.center.huge-glow-180(style='font-family:lato;') Puzzles
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show 
+        span In infants, 
+        br
+        span it 
+        span.appears appears
+        span  that 
+        span.first-puzzle.hide
+          br
+          span some, 
+          br
+          span but not all, 
+          br
+          span.gt goal-tracking
+          span  is limited by their abilities to act ...
+      p.center.hem-above.notes.show
+        span.second-puzzle
+          span.first-puzzle.hide ... and that 
+          span.gt goal-tracking
+          span  sometimes manifests in dishabitution or pupil dilation but not proactive gaze.
+      .notes: :t
+        The second puzzle was a dissociation between dishabituation and pupil dilation on the one
+        hand and proactive gaze on the other.
+        The conjecture I have formulated suggests a solution: perhaps perceptual animacy is sometimes
+        responsible for pupil dilation and dishabituation; but never responsible for proactive gaze.
+    .slide
+      +blur('.second-puzzle')
+      +show('.first-puzzle')
+      .notes: :t
+        The first puzzle was the appearance of cases of goal-tracking in infancy which is not
+        limited by infants’ abilities to act.
+        The conjecture I have proposed suggests a solution to this too: those cases 
+        are underpinned by perceptual animacy and so not genuine cases of goal-tracking at all.
+        
+
++slide_middle({bkg:'gredebäck_2010_fig.jpg'})
+  +hide('img.bkg',0)
+  p.center further complication: associative learning for sequencing
+  .slide
+    +show('img.bkg',0)
+    p.source Gredebäck & Melinder, 2010
+    .notes: :t
+      Pupil dilation at 6 and 12-months of age; unlike proactive gaze, it  does not 
+      correlate with experience of being fed; but it isn’t plausibly perceptual animacy either.
+      (Why would perceptual animacy predict a difference between spoon going to mouth or hand?)
+      Instead it may be a consequence of associative learning about the typical sequence
+      of chunks of actions.
+

@@ -1,0 +1,240 @@
+---cson
+layout: 'deck_unit'
+title: "Speech Perception"
+tags: []
+description: """
+  ***
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+
++slide_middle
+  p.center articulatory gesture
+  .notes: :t
+    In speaking we produce an overlapping sequence of articulatory gestures, which are motor actions
+    involving coordinated movements of the lips, tongue, velum and larynx. These gestures are the units
+    in terms of which we plan utterances (Browman and Goldstein 1992; Goldstein, Fowler, et al. 2003).
+  .notes: :t
+    These are the actions I want to focus on first in thinking about
+    what we experience when we encounter others’ actions.
+    
+    
++slide
+  +img_clip('browman_1996_fig1.png')
+  p.source Browman & Goldstein 1986, figure 1
+  .notes: :t
+    ‘Trajectory of lower lip in [abe] as measured by tracking infra-redLED
+    placed on subject's lower lip’
+  .notes: :t
+    ‘Not every utterance of word transcribed with /b/ will display exactly the trajectory
+    of Fig. 1.: the trajectory will vary with vowel context, syllable position,
+    stress, speaking rate and speaker.
+    We must, therefore, ultimately characterise /b/ as a family of patterns of lip
+    movement’
+    \citep[p.~224]{browman:1986_towards}
+    
+//- distinct processes
+
++slide_middle
+  p.center Speech and auditory perception involve distinct processes
+
++slide({bkg:'duplex_01.jpg'})
+  .notes: :t
+    A schematic spectrogram for a synthetic sound which is normally perceived as [ra]. The horizontal
+    axis represents time, the vertical frequency.
+  .notes: :t
+    A schematic spectrogram for [la].  
+
++slide({bkg:'duplex_02.jpg'})
+  .notes: :t
+    In the middle you see the \emph{base}, i.e. the part of the spectrogram common to [ra] and [la]. This
+    is played to one ear
+  .notes: :t
+    Below you see the transitions, , i.e. the parts of the spectrogram that differ between [ra] and [la].
+    When played in isolation these sound like a chirp. When played at the same time as the base but in
+    the other ear, subjects hear a chirp and a [ra] or a [la] depending on which transition is played.
+  .notes: :t
+    How do we know that the same stimuli may be processed by different perceptual systems
+    concurrently—for instance, how do we know that speech and auditory processing are distinct? A
+    phenomenon called “duplex” perception demonstrates their distinctness occurs in. Artificial
+    speech-like stimuli for two syllables, [ra] and [la], are generated. The acoustic signals for each
+    syllable is artificially broken up into two parts, the “base” and “transition” (see Fig. *** below).
+    The syllables have the same “base” but differ in the “transition”. When the “transition” is played
+    alone it sounds like a chirp and quite unlike anything we normally hear in speech. Duplex perception
+    occurs when the base and transition are played together but in separate ears. In this case, subjects
+    hear both the chirp that they hear when the transition is played in isolated, and the syllable [la]
+    or [ra]. Which syllable they hear depends on which transition is played, so speech processing must
+    have combined the base and transition. By contrast, auditory processing must have failed to combine
+    them because otherwise the chirp would not have been heard. In this case, then, the perception
+    resulting from the duplex presentation involves simultaneous auditory and speech recognition
+    processes. This shows that auditory and speech processing are distinct perceptual processes.
+  .notes: :t
+    The duplex case is unusual. We can’t normally hear the chirps we make in speaking because speech
+    processing inhibits this level of auditory processing. But plainly speech is subject to some auditory
+    processing for we can hear extra-linguistic qualities of speech; some of these provide cues to
+    emotional state, gender and class. Perception of these extra-linguistic qualities enables us to
+    distinguish stimuli within a category. As already mentioned, this is a problem for Repp’s operational
+    definition. Our ability to discriminate stimuli is the product of both categorical speech processing
+    and non-categorical auditory processing. If we want to get at the essence of categorical perception
+    it seems there is no alternative but to appeal to particular perceptual processes rather than
+    behaviours.
+    
+  .notes Source: \citep{Liberman:1981xk}
+
+
+
+
+//- categorical perception of speech exists
++slide({bkg:'categorical_perception_of_speech/Slide01.jpg'})
+  .notes: :t
+    Here are 12 speech-like sounds.
+    Acoustically each differs from its neighbours no more than any other does.
+    
+
++slide({bkg:'categorical_perception_of_speech/Slide02.jpg'})
+  .notes: :t
+    They would be labelled differently
+
++slide({bkg:'categorical_perception_of_speech/Slide03.jpg'})
+  .notes: :t
+    And within a label they are relatively hard to disciminate whereas ...
+
++slide({bkg:'categorical_perception_of_speech/Slide04.jpg'})
+  .notes: :t
+    Discriminating acoustically no less similar stimuli that are given
+    different labels is easier (faster and more accurate).
+  .notes: :t
+    This is categorical perception: speed and accuracy maps onto labelling ...
+    
+  
++slide({bkg:'categorical_perception_of_speech/Slide06.jpg'})
+  .notes: :t
+    Categorical perception of mating calls and perhaps other acoustic signals is widespread in non-human
+    animals including monkeys, mice and chinchillas (Ehret 1987; Kuhl 1987), and is even found in
+    cognitively unsophisticated animals such as frogs (Baugh, Akre and Ryan 2008) and crickets
+    (Wyttenbach, May and Hoy 1996).
+
+
+
+
+//- WHAT ARE THE OBJECTS OF CATEGORICAL PERCEPTION
+
++slide_middle
+  p.center What are the objects of categorical perception?
+
++slide({bkg:'categorical_perception_of_speech/Slide26.jpg'})
+  .notes: :t
+    the location of the category boundaries changes depending on contextual factors such as the
+    speaker’s dialect,22 or the rate at which the speaker talks;23 both factors dramatically affect
+    which sounds are produced.
++slide({bkg:'categorical_perception_of_speech/Slide27.jpg'})
+  .notes: :t
+    This means that in two different contexts, different stimuli may result in the same perceptions, and
+    the same stimulus may result in different perceptions.
++slide({bkg:'categorical_perception_of_speech/Slide23.jpg'})
++slide({bkg:'categorical_perception_of_speech/Slide24.jpg'})
++slide({bkg:'categorical_perception_of_speech/Slide25.jpg'})
+  .notes: :t
+    co-articulation, the fact that phonic gestures overlap (this is what makes talking fast).
+
++slide_middle
+  p.center What are the objects of categorical perception?
+  .notes.show.em-above
+    p.em-around 1. Speech perception is categorical
+    p.em-around   2. The category boundaries correspond (imperfectly but robustly) to differences in articulatory gestures
+    p.em-around   3.  The best explanation of (2) involves the hypothesis that the objects of speech perception are articulatory gestures
+  .notes: :t
+    \emph{Articulatory Gesture:}
+    In speaking we produce an overlapping sequence of articulatory gestures, which are motor actions
+    involving coordinated movements of the lips, tongue, velum and larynx. These gestures are the units
+    in terms of which we plan utterances (Browman and Goldstein 1992; Goldstein, Fowler, et al. 2003).
+    
++slide_middle
+  p The objects of speech perception are articulatory gestures.
+  p.em-above ... Does this entail that we perceptually experience articulatory gestures?
+  .slide
+    p.em-above ‘Describing [Mary’s experience] as being as of a dodecahedron … is … normally intended to describe its introspectable character’
+    p.grey-text.right (Martin 1992: 762).
+  .slide
+    p.em-above Perceptual experiences are reasons for beliefs ...
+
+
+
+//- PERCEPTUAL EXPERIENCE
+
++slide_middle
+  p.center An argument for perceptual experience of articulatory gestures.
+
++slide({bkg:'categorical_perception_of_speech/Slide06.jpg'})
++slide({bkg:'categorical_perception_of_speech/Slide07.jpg'})
++slide({bkg:'categorical_perception_of_speech/Slide08.jpg'})
++slide({bkg:'categorical_perception_of_speech/Slide09.jpg'})
++slide({bkg:'categorical_perception_of_speech/Slide10.jpg'})
+  .notes: :t
+    The difference in differences ...
+  .notes: :t
+    Here is the argument. Consider two sequences of sensory encounters: (a) a sequence of sensory
+    encounters with two phonetic events that do not differ with respect to category (both are
+    realisations of /d/, say), and (b) a sequence of sensory encounters with two phonetic events that do
+    so differ (one is a realisation of /d/ the other of /g/, say).11 Let the events encountered in the
+    first sequence differ from each other acoustically in the same way and by the same amount as the
+    events encountered in the second sequence differ from each other. (That it is possible to find two
+    such pairs of events follows from the fact that we enjoy categorical perception of speech.) The two
+    sequences are depicted in Fig. 3. Now:
++slide_middle
+  p.hem-around (1) The second sequence of sensory encounters, (b), differ from each other more in phenomenal character than the first sequence of sensory encounters, (a), differ from each other.
+  p.hem-around.slide (2) This difference in differences in phenomenal character is a fact in need of explanation.
+  p.hem-around.slide (3) The difference cannot be fully explained by appeal only to perceptual experiences as of acoustic features of the stimuli.
+  p.hem-around.slide (4) The difference can be explained in terms of perceptual experiences as of phonetic properties.
+  p.hem-around.slide (5) There is no better explanation of the difference.
+  .notes: :t
+    The fourth step in this argument, (4), needs some filling in. How would the thesis that categorical
+    perception of speech is a form of perceptual experience explain the difference in differences in
+    phenomenal character? If the thesis is true, the first sequence of sensory encounters, (a), involves
+    two perceptual experiences as of a single phoneme whereas the second sequence of encounters, (b),
+    involves perceptual experiences as of different phonemes.12 Let us assume (not very controversially)
+    that perceptual experiences have phenomenal characters and that which phenomenal character a
+    perceptual experience has depends in part on what it is as of.13 It follows that differences in what
+    perceptual experiences are as of can explain differences in the phenomenal characters of those
+    perceptual experiences. In particular, if it is a fact that (b) involves perceptual experiences as
+    of different things whereas (a) does not, this could explain why the sensory encounters in (b)
+    differ in phenomenal character in a way that the sensory encounters in (a) do not.
+
+
+
+//- Repeat the question.  
++slide_middle
+  .notes: :t
+    Recall the question ...
+  p.center What do we experience when we encounter others’ 
+    span.speech speech 
+    span  actions?
+  p.em-above.center Indirect Hypothesis vs  
+    span.direct-h Direct Hypothesis
+  .slide
+    +invert('.direct-h')
+  .notes: :t
+    It looks like the Direct Hypothesis wins, or at least that we must reject the 
+    Indirect Hypothesis.  
+  .notes: :t
+    There’s just one little problem ...
+
++slide_middle
+  p.notes.handout.show How could the objects of categorical perception of speech be articulatory gestures?
+  .notes: :t
+    The puzzle here is twofold.
+    [a] Categorical perception of speech happens raidly, and goal-directed actions
+    are complex.  How can something so complex be computed so quickly?
+    [b] How could you recover articulatory gestures from acoustic and visual inputs?
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘Humans [can] understand speech delivered at a rate of 20 to 30 ... phonemes per second’
+    .notes.handout.ctd  \citep{Devlin:2006qg}
+    p.right.grey-text Devlin (2006)
+    .notes: :t
+      Before facing this problem directly, I want to think about action more generally ...
+  
+

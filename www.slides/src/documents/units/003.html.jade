@@ -1,0 +1,325 @@
+---
+layout: 'deck_unit'
+title: "Acting Together and the Threat of Circularity"
+tags: ['plural-predication','Gilbert','class-exercise']
+description: "Some philosophers think that acting together invariably involves shared agency.  If they are, the Simple View is circular.  Are they right?"
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
++slide
+  .first-quote
+    p.notes.handout.show ‘Examples of what I shall refer to ... as “acting together” include dancing together, building a house together, and marching together against the enemy, where 
+      span.contrast these are construed as something other than a matter of doing the same thing concurrently and in the same place
+      span ’ 
+    p.right.grey-text Gilbert 2013, p. 23
+    .notes.handout.ctd \citep[p.~23]{gilbert:2014_book}
+  .photobox-bottom-right
+    +img('margaret_gilbert.jpg')
+  .notes: :t()
+    Say hello to the first of several major figures on joint action, Margaret Gilbert.
+  .slide
+    +highlight('.contrast')
+    .notes: :t()
+      Note the contrast she wants to draw between acting togther and several people 
+      ‘doing the same thing concurrently and in the same place’.
+      This seems reasonable.
+    .notes: :t()
+      Now for our purposes Gilbert is relevant because she takes acting together to be
+      the same thing as joint action.  In that case, the Simple Account would clearly be
+      circular. (You can’t appeal to acting together in explaining what joint action is
+      if acting together *is* joint action.)
+  .slide
+    +unhighlight('.contrast')
+    +blur('.first-quote')
+    .notes: :t()
+      Let me emphasise this point with a different quote from Gilbert.
+    p.notes.handout.show ‘The key question in the philosophy of collective action is simply ... under what conditions are two or more people doing something together?’ 
+    .notes.handout.ctd \citep[p.\ 67]{Gilbert:2010fk}
+    p.right.grey-text Gilbert 2010, p. 67
+    .notes: :t()
+      We are going to explore Gilbert’s views in some detail later, but let
+      us have a quick peek at what she thinks is involved in acting together ...
+
++slide
+  .notes: :t
+    Here is Gilbert’s own statement of her view.
+  .first-quote
+    p.notes.handout.show
+      span ‘two or more people are acting together if [and only if] they are 
+      span.jointly-committed jointly committed 
+      span  to espousing as a body a certain goal, and each one is acting in 
+      span a way appropriate to the achievement of that goal, where each one is doing 
+      span this in light of the fact that he or she is subject to a joint commitment 
+      span to espouse the goal in question as a body.’
+    p.right.grey-text Gilbert 2013, p. 34
+    .notes.handout.ctd \citep[p.~34]{gilbert:2014_book}
+  .notes: :t
+    There is a lot going on here but I want to zoom in on just one feature for now,
+    the joint committment.
+  .slide
+    +invert('.jointly-committed')
+    .notes: :t
+      Joint committment is Gilbert's central notion.  
+      Start with individual committment (which Gilbert calls ‘personal commitment’).
+      You can make an individual committment to me that you will write an essay,
+      and I can make an individual committment to you that I will mark it.
+      In this case the committment entails certain obligations and perhaps rights.
+      Gilbert’s idea is that several people can also become collectively committed,
+      in which case they have a joint committment which entails collective obligations.
+      So the idea is that a joint commitment
+      is something irreducibly collective.
+      This is an interesting idea which will become clearer later.
+      (We need to think more carefully about the basic individual/collective contrast.)
+      But for now I just want to note that Gilbert thinks along these lines ...
+  .slide
+    +blur('.first-quote')
+    ol.em-above.notes.show
+      li Every event of acting together is a joint action.
+      li Every joint action constitutively involves joint committment.
+    .notes: :t
+      If Gilbert is right the worry about the circularity of the Simple View is
+      clearly justified.  But is Gilbert right?
+      
++slide({bkg:'lifting_a_block.jpg'})  
+  //- Use this later but put it first so that it appears behind the question.
+  .timerQuestion.hide
+    +reset-escape-inner
+      +middle  
+        +timer-element('timer2','120s')
+  
+  .notes: :t
+    Two ropes hanging over either side of a high wall are connected to a heavy block 
+    via a system of pulleys. Ayesha and Beatrice pull the ropes simultaneously, 
+    causing the heavy block to rise as a common effect of their actions. Each 
+    individually intends to raise the block. Each can see the block’s rise but, 
+    because of the high walls, neither of them is aware of the other, nor 
+    even that anything other than her own action is necessary for the block 
+    to rise. 
+  .notes: :t
+    In fact neither is aware that they are acting with another individual.
+    Each believes, falsely, that there is a simple motor on the other end of the
+    pulley, and that when the rope tenses the motor will turn.
+  .notes: :t
+    Consider three questions ...
+  +middle
+    .slide
+      +blur('img.bkg')
+      p.q1 Are Ayesha and Beatrice acting together?
+    .slide
+      p.q2 Do Ayesha and Beatrice have a joint commitment?
+      +fade('img.bkg')
+      .notes: :t
+        These are easy questions. And they show Gilbert is wrong that acting together
+        entails joint committment.
+        (Btw, this is not an isolated example; we'll consider others later.)
+    .slide
+      +blur('.q1,.q2')
+      p Is Ayesha and Beatrice’s lifting the block together a joint action?
+      .notes: :t
+        This question is less straightforward to answer than the first two.
+        There actions are coordinated and have a common effect,
+        but we saw earlier that this is true of many things which merely involve 
+        people acting in parallel rather than exercising shared agency.
+      .notes: :t
+        I think most people working in this area would say that 
+        Ayesha and Beatrice’s lifting the block together is not a joint action.
+        But in this area there is a real danger that we are just trading intutions.
+        So let’s see if we can find a basis for deciding whether this is a joint action.
+  .slide
+    +show('.timerQuestion')
+    +start-timer('timer2')
+
+
++slide_middle
+  .notes Here are two sentences:
+  .notes.show
+    p The tiny drops fell from the bottle. 
+  p.step2.indent.hide  - distributive
+  .notes.show
+    p.em-above The tiny drops soaked Zach's trousers. 
+  p.step3.indent.hide  - collective
+  .slide
+    +show('.step2')
+    .notes: :t()
+      The first sentence is naturally read *distributively*; that is, as specifying something
+      that each drop did individually.  Perhaps first drop one fell, then another fell.  
+  .slide
+    +show('.step3')
+    .notes: :t()
+      But the second sentence is naturally read *collectively*.
+      No one drop soaked Zach's trousers; rather the soaking was something that the drops
+      accomplised together.
+    .notes: :t()
+      If the sentence is true on this reading, the tiny drops' soaking Zach's trousers is not
+      a matter of each drop soaking Zach's trousers.
+    .notes: :t
+      [*Might need more examples.  Bad pint?
+      Ask them to think of an example?]
+
+
++slide({bkg:'ants1.jpg'})
+  .notes: :t
+    Here is a second example contrasting distributive vs collective interpretations.
+    Consider the sentence ‘The ants carried stones’.  This is naturally interpreted as 
+    implying only that each ant carried a stone, which is a distributive interpretation.
+    By contrast, consider this ...
++slide({bkg:'ants2.jpg'})
+  .notes: :t
+    Some ants harvest plant hair and fungus in order to build traps to capture large insects; 
+    once captured, many worker ants sting the large insects, transport them and carve them up
+    \citep{Dejean:2005vb}. 
+    There’s a lot you might extract from this behaviour (and we will return to the ants later), 
+    but for now just focus on the killing.
+    Each ant stings the large insect they have captured, where none of the stings are 
+    individually fatal although together they are deadly.
+    So when I tell you that the ants killed the large insect, this should be interpreted
+    collectively.  That is, it is not a matter of each ant killing the large insect;
+    rather killing is collectively predicated of the ants.
+
+
+
+
++slide_middle  
+  .notes: :t
+    You have two minutes to think of two sentences which, like mine,
+    illustrate the contrast between collective and distributive.
+  +timer-element('timer1','120s')
+    p.center Give another contrast pair.
+  +start-timer('timer1')
+  
++slide_middle
+  .notes: :t
+    Here are is my first example of the distinction between distributive and collective interpretations again ...
+  p The tiny drops fell from the bottle. 
+  p.indent  - distributive
+  p.em-above The tiny drops soaked Zach's trousers. 
+  p.indent  - collective
+  .slide
+    +blur('p:lt(4)')
+    .notes: :t()
+      Now consider an example involving actions and their outcomes: 
+    p.em-above.notes.show Their thoughtless actions 
+      span.outcome soaked Zach's trousers.
+      span.hide.causal(style='margin-left:1em')  [causal]
+  .slide
+    p.indent - ambiguous 
+      span.hide.step5 (really!)
+    .notes: :t
+      This sentence can be read in two ways, distributively or collectively.
+      We can imagine that we are talking about a sequence of actions done 
+      over a period of time, each of which soaked Zach's trousers.
+      In this case the outcome, soaking Zach's trousers, is an outcome of each action.
+    .notes: :t
+      Alternatively we can imagine several actions which have this outcome collectively---as in
+      our illustration where Ayesha holds a glass while Beatrice pours.
+      In this case the outcome, soaking Zach's trousers, is not necessarily an outcome of any of the 
+      individual actions but it is an outcome of all of them taken together.
+      That is, it is a collective outcome.
+    .notes: :t
+      (Here I'm ignoring complications associated with the possibility that some
+      of the actions collectively soaked Zach's trousers while others did so distributively.)
+  .slide
+    +show('.step5')
+    +invert('.step5')
+    .notes: :t
+      Note that there is a genuine ambiguity here.
+      To see this, ask yourself how many times Zach's trousers were soaked.
+      On the distributive reading they were soaked at least as many times as there are actions.
+      On the collective reading they were not necessarily soaked more than once.
+      (On the distributive reading there are several outcomes of the same type and each 
+      action has a different token outcome of this type; on the collective reading there is a single token 
+      outcome which is the outcome of two or more actions.)
+  .slide
+    .notes.show
+      p.em-above Claim:
+      ol
+        li When distributive, they merely act in parallel.
+        li When collective, they act together.
++slide
+  .notes: :t
+    Compare these three sentences ...
+  .notes.show
+    p The tiny drops soaked Zach’s trousers together.
+    p The three legs of the tripod support the camera together.
+    p Ayesha and Beatrice lifted the block together.
+  .notes: :t
+    I want to suggest that reflection on these allows us to distinguish
+    merely acting together from performing a joint action.  Why? ...
+  .slide
+    ol.em-above.notes.show
+      li In each case there is a collective interpretation.
+      li The collective interpretation is what makes ‘together’ appropriate.
+      li It is the same sense of ‘together’ in each case.
+      li (1) and (2) are not joint actions (nor actions).
+      li So ‘together’ does not entail joint action.
+
+
+
++slide({bkg:'lifting_a_block.jpg'})  
+  .notes: :t
+    Let me go back to Ayesha and Beatrice lifting the block,
+    and the three questions about their action.
+  .slide
+    +blur('img.bkg')
+    +middle
+      .notes.show
+        p.q1 Are Ayesha and Beatrice acting together?
+        p.q2 Do Ayesha and Beatrice have a joint commitment?
+        p Is Ayesha and Beatrice’s lifting the block together a joint action?        
+    .notes: :t
+      Earlier I think we agreed that the answer to 1 is yes, and that the
+      answer to 2 is no.
+      But I suggested that the third quesiton can’t be answered without further reflection.
+      Reflection on collective and distributive readings of sentences
+      suggested this: from the fact that we are doing something together,
+      it doesn’t follow that there is any joint action (or even any action).
+      So while I don’t think it matters very much what you decide in this 
+      particular case, I do think the answer isn’t always going to be yes.
+    .notes: :t
+      So my conclusion is that ...
+
++slide_middle
+  .notes: :t
+    ...
+  p.center.notes.show acting together doesn’t entail joint action
+  .slide
+    p.center.em-above parallel action < acting together < joint action
+    .notes: :t
+      So we have a three-fold distinction, where acting together is understood
+      by appeal to the distinction between distributive and collective interpretations.
+  .slide
+    p.em-above.notes.handout.show ‘any random group of agents is a group that does something together’
+    .notes.handout.ctd \citep[p.~128]{ludwig:2014_ontology}
+    p.grey-text.right Ludwig (2014, p. 128)
+  
+//- come back to this
+  +slide
+    p Neutral with respect to shared intentionality ...
+
++slide_middle
+  p Simple Account
+  +simple_account
+  +highlight('.together', 'red')
+  .notes: :t
+    I've been explaining the threat of circularity arising from the fact that the Simple View
+    involves appeal to ‘acting together’.
+    The threat was that all events in which we act together are joint actions and so the 
+    Simple View would be explaining joint action by appeal to joint action.
+    Support from this view comes from Gilbert, who does think that 
+    all events in which we act together are joint actions.
+    However reflection on the distinction between distributive and collective 
+    interpretations of sentences, inclduing sentences that are not about action at all,
+    suggested that acting together can occur without there being a joint action.
+  .notes: :t
+    As things stand, then, we do not yet have a reason to reject the Simple Account.
+
+

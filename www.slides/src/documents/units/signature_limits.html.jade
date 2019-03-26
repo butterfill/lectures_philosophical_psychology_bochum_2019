@@ -1,0 +1,398 @@
+---cson
+layout: 'deck_unit'
+title: "Signature Limits"
+tags: []
+description: """
+  A signature limit of a model is a prediction which can be derived from the model,
+  which cannot be derived from any other models under consideration, and which is untrue.
+  Signature limits make it possible to test hypotheses about which model characterises
+  a particular mindreading process.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+.handout: :t
+  Automatic belief-tracking in adults and
+  belief-tracking in infants are both subject to signature limits
+  associated with minimal theory of mind
+  (\citealp{wang:2015_limits,Low:2012_identity,low:2014_quack,mozuraitis:2015_privileged};
+  contrast \citealp{scott:2015_infants}).
+  
++slide_middle
+  .notes.show
+    p How can we test 
+    p which model of the 
+      span.mental mental 
+      span 
+      span.physical.remove-me physical 
+    p
+      span  a process is using?
+  //- .slide
+  //- +line-through('.mental')
+  //- +unremove('.physical')
+
+  .slide
+      p.center.em-above Using signature limits!
+      .notes [First say what signature limits in general are]
+      .notes
+        As I said,
+        a signature limit of a model is a set of predictions derivable from the model which 
+        are incorrect, and which are not predictions of other models under consideration.
+
+
+section.slide
+  .notes: :t
+    Let me pause to spell out the logic of this.
+  +_slide_inner
+    p.center.invert signature limits
+  .right-half-white
+  .container_12.notes.show
+    +left_half
+      .hypothesis
+        p Hypothesis 1
+        p.indent 
+          span.response Response R
+          span  is the product of a process using a model characterised by  
+          span.theory1 Theory 1
+        .notes: :t
+          These are the hypotheses I wanted to test.
+      .fact.hide
+        p.em-above Fact
+        p.indent Theory 1 predicts that the protagonist will J.
+      .prediction.hide
+        p.em-above Prediction of Hypothesis 1
+        p.indent Response R will proceed as if the protagonist will J.
+    +right_half
+      .hypothesis
+        p Hypothesis 2
+        p.indent 
+          span.response Response R
+          span  is the product of a process using a model characterised by 
+          span.theory2 Theory 2
+      .fact.hide
+        p.em-above Fact
+        p.indent Theory 2 predicts that the protagonist will not J.
+      .prediction.hide
+        p.em-above Prediction of Hypothesis 2
+        p.indent Response R will proceed as if the protagonist will not J
+    .slide
+      +invert('.theory1')
+      .notes: :t
+        E.g. minimal theory of mind.
+    .slide
+      +invert('.theory2')
+      .notes: :t
+        E.g. canonical theory of mind.
+    .slide
+      +uninvert('.theory1, .theory2')
+      +invert('.response')
+      .notes: :t
+        The response might be an explicit verbal response, a proactive gaze, or anything else
+        that can indicate belief-tracking and its absence.
+    .slide
+      +uninvert('.response')
+    .slide
+      +show('.fact')
+      .notes: :t
+        To test the hypotheses, I need to identify an area where the theories describing the models
+        make incompatible predictions.
+        This is a signature limit of impetus mechanics.
+    .slide
+      +show('.prediction')
+      .notes: :t
+        The fact allows me to derive different predicts from the hypotheses.
+
+
+// [Cambridge slides 45--65] Signature limits; Prediction; Experiments 
+
++slide({bkg:'unit_451/slide_cambridge_model_046.jpg'})
+  // *todo* remove first figure, replace with something more informative
+  .handout \begin{center}
+  .handout \includegraphics[width=0.25\textwidth]{fig/signature_limits_table.png}
+  .handout \end{center}
+  .handout \begin{center}
+  .handout   \includegraphics[width=0.3\textwidth]{fig/low_2012_fig.png}
+  .handout \end{center} 
++slide({bkg:'unit_451/slide_cambridge_model_047.jpg'})
++slide({bkg:'unit_451/slide_cambridge_model_048.jpg'})
++slide({bkg:'unit_451/slide_cambridge_model_049.jpg'})
+
++slide_middle
+  .hem-around-children
+    p While the protagonist is present, the item is placed in Location-1.
+    p The protagonist [ stays / leaves ], 
+    p and the item is 
+      span.step2.hide [ 
+      span moved
+      span.step2.hide  / transformed ]
+      span .
+    .slide
+      +show('.step2')
+
++slide({bkg:'low_watts2.jpg'})
++slide({bkg:'low_watts3.jpg'})
++slide({bkg:'low_watts4.jpg'})
++slide({bkg:'low_watts5.jpg'})
++slide({bkg:'low_watts1.jpg'})
+
+
++slide({bkg:'unit_451/slide_cambridge_model_061.jpg'})
+  p.source drawn from Low & Watts (2013); Low et al (2014)
+  .notes: :t()
+    Here are standard anticipatory looking and looking time responses 
+    (Since they are approximately the same and this is rough, I'm only
+    giving you one bar for both measures)
++slide({bkg:'unit_451/slide_cambridge_model_062.jpg'})
+  p.source drawn from Low & Watts (2013); Low et al (2014)
+  .notes: :t()
+    Now look at what happens when we change the task to an identity/appearance task.
++slide({bkg:'unit_451/slide_cambridge_model_063.jpg'})
+  p.source drawn from Low & Watts (2013); Low et al (2014)
+  .notes: :t()
+    And this isn't because the subjects are confused: 
+    the switch from location to identity/appearance has no measurable effect
+    on explicit verbal responses.
+
+
+
++slide
+  p signature limits
+  .notes [First say what signature limits in general are]
+  .notes
+    As I said,
+    a signature limit of a model is a set of predictions derivable from the model which 
+    are incorrect, and which are not predictions of other models under consideration.
+  .notes: :t
+    As the study just mentioned \citep{kozhevnikov:2001_impetus} beautifully illustrates, 
+    identifying signature limits can make it possible to test conjectures about which theory 
+    underpins a given cognitive phenomenon.
+  .slide
+    p of minimal models of mind
+    p.indent - identity as compression/expansion 
+      span.tested.hide [has been tested
+        span.caveat *
+        span ]
+    p.indent - duck/rabbit 
+      span.tested.hide [has been tested
+        span.caveat *
+        span ]
+    p.indent - fission/fusion 
+      span.tested.hide [is being tested
+        span.caveat *
+        span ]
+    p.indent - quantification 
+  .slide
+    +show('.tested')
+  .slide
+    +invert('.caveat')
+    .notes: :t
+      There is a caveat.
+      I want to test the claim that automatic processes use minimal models of the mental.
+      When testing limits, people have used certain measures ...
+  .slide
+    .notes.show
+    p.em-above measures:
+      p.indent - spontaneous anticipatory looking
+      p.indent - looking duration
+      p.indent - active helping (Fizke et al, 2017; unpublished data)
+    .notes: :t
+      And now you can see the problem.
+      Which of these measures are driven by automatic processes?
+      Only for the second, looking duration, 
+      do we have evidence that it sometimes reflects processes that are
+      automatic in false belief tasks \citep{schneider:2014_task}.
+
+
++slide({bkg:'fizke_unpublished_stimuli.jpg'})
+  .notes: :t
+    Just say that you can do this with other stimuli and paradigms, and we
+    have done this with infants and would like to do it with adults.
+    
+  .notes: :t
+    These findings complicate the picture: is helping driven by automatic processes only?
+    If not, why do we predict that the signature limit of minimal theory of mind
+    is found in this case too?
+
++slide
+  p.center
+    .brightness-150
+      .contrast-150
+        img.fill(src='/img/scott_2015_fig2b.png')
+  p.source Scott et al (2015, figure 2b)
+  .notes: :t
+    Scott and colleagues \citep{scott:2015_infants} provided other evidence 
+    suggesting that infants’ mindreading may be relatively sophisticated. 
+    Specifically, 17-month-olds watched a thief attempt to steal a preferred 
+    object (a rattling toy) when its owner was momentarily absent by substituting 
+    it with a less-preferred object (a non-rattling toy). Infants looked longer 
+    when the thief substituted the preferred object with a non-visually-matching 
+    silent toy compared to when the thief substituted it with a visually-matching 
+    silent toy. The authors postulated that infants can ascribe to the thief an 
+    intention to implant in the owner a false-belief about the identity of the 
+    substituted toy. The authors further suggested that infants make such ascriptions 
+    only when the substitution involves a visually-matching toy and the owner will 
+    not test whether the toy rattles on her return. 
+  .notes: :t
+    However, Scott et al.’s \citep{scott:2015_infants} explanations also 
+    require postulating that infants take the thief to be strikingly inept; 
+    despite having opportunity simply to pilfer from a closed box known to 
+    contain at least three rattling toys, the thief engages in elaborate 
+    deception which will be uncovered whenever the substituted toy is next 
+    shaken and the thief, as sole suspect, easily identified. A further 
+    difficulty is that factors unrelated to the thief’s mental states vary 
+    between conditions, such as the frequencies with which toys visually matching 
+    one present during the final phase of the test trial have rattled. These 
+    considerations jointly indicate that further evidence would be needed to 
+    support the claim that humans’ early mindreading capacity enables them to 
+    ascribe intentions concerning false beliefs involving numerical identity.
+    
+    
+
+
++slide_middle
+  .notes: :t
+    A note on the method again ...
+  .hem-around-children
+    p.center  1. a dual-process theory
+    p.center  motivates conjectures about
+    p.center  2. a minimal model of minds and actions
+    p.center  which entails
+    p.center  3. signature limits
+    p.center  that generate predictions.
+
+//- ok but needs to be consistent with what was said in previous unit
+  +slide_middle
+    .notes To conclude the discussion of limits,
+    .notes.show
+      p Constructing minimal theories of mind yields models of the mental which
+      p are used by some mindreading processes,
+      p including some that are probably automatic.
+
+//- 
+  +slide({bkg:'car_butler_identity/Slide01.jpg'})
+  +slide({bkg:'car_butler_identity/Slide02.jpg'})
+  +slide({bkg:'car_butler_identity/Slide03.jpg'})
+  +slide({bkg:'car_butler_identity/Slide04.jpg'})
+  +slide({bkg:'car_butler_identity/Slide05.jpg'})
+  +slide({bkg:'car_butler_identity/Slide06.jpg'})
+  +slide({bkg:'car_butler_identity/Slide07.jpg'})
+  +slide({bkg:'car_butler_identity/Slide08.jpg'})
+  +slide({bkg:'car_butler_identity/Slide09.jpg'})
+  +slide({bkg:'car_butler_identity/Slide10.jpg'})
+  +slide({bkg:'car_butler_identity/Slide11.jpg'})
+  +slide({bkg:'car_butler_identity/Slide12.jpg'})
+  +slide({bkg:'car_butler_identity/Slide13.jpg'})
+  +slide({bkg:'car_butler_identity/Slide14.jpg'})
+  +slide({bkg:'car_butler_identity/Slide15.jpg'})
+  +slide({bkg:'car_butler_identity/Slide16.jpg'})
+  +slide({bkg:'car_butler_identity/Slide17.jpg'})
+  +slide({bkg:'car_butler_identity/Slide18.jpg'})
+  +slide({bkg:'car_butler_identity/Slide19.jpg'})
+  +slide({bkg:'car_butler_identity/Slide20.jpg'})
+  +slide({bkg:'car_butler_identity/Slide21.jpg'})
+
++slide
+  .notes: :t
+    A wish : an identity version of this van der Wel et al task which uses a paradigm optimal for
+    distinguishing automatic and non-automatic processes ...
+  +img('van_der_wel_2014_fig1_phase1.png', "margin-left:auto;margin-right:auto;display:block;")
+  +img('van_der_wel_2014_fig1_phase2.png', "margin-left:auto;margin-right:auto;display:block;")
+  +img('van_der_wel_2014_fig1_phase3_TF.png', "margin-left:auto;margin-right:auto;display:block;")
+  +img('van_der_wel_2014_fig1_phase4.png', "margin-left:auto;margin-right:auto;display:block;")
+  p.source van der Wel et al (2014, figure 1)
+  .notes: :t()
+    Prediction: when the process is automatic, the difference in curve will vanish 
+    when the task concerns a mistake about identity rather than location. 
+  .notes: :t()
+    To make the task about identity, let the cube (say) transform into a
+    third shape, a diamond (say).  Then let the cylinder transform into a cube
+    and, let the diamond transform into a cylinder.
+    Let this happen when the protagonist is present (id-TB) or absent (id-FB).
+    This should not affect tracking the objects,
+    but it should affect tracking the protagonists' beliefs about the objects.
+    (Good controls are possible because can show the effect still 
+    occurs in location-FB vs location-TB with the transformations
+    (i.e. location-FB+id-TB vs location-TB+id-TB.))
+
++slide_middle
+  .notes We've just seen evidence for the second claim, as promised.
+  .notes.show.hem-around-children
+    p Constructing minimal theories of mind yields models of the mental which
+    p.indent ... could be used by automatic mindreading processes.
+    p.indent.second-claim.bkg-grey-row ... are used by some automatic mindreading processes.
+    p.indent.third-claim ... are the only models used by automatic mindreading processes.
+  .slide
+    +unhighlight-row('.second-claim')
+    +highlight-row('.third-claim')
+    .notes: :t
+      The evidence we have doesn’t support the third claim (that minimal theories of mind
+      yield models which are are the only models used by automatic mindreading).
+  .slide
+    +unhighlight-row('.third-claim')
+    +highlight-row('.third-claim', 'red')
+    .notes: :t
+      I do think there's an interesting theoretical argument for the third claim but 
+      I'm not sure how interested people are so I've left that out.
+      (It's in an appendix.)
+
+
+  .slide.second-part.em-above
+    p
+      span.efficiency-required Automaticity requires 
+        span.caveat (some degree of)
+        span  cognitive efficiency,
+    p.canonical-is-demanding but using a canonical model is cognitively demanding.
+    +invert('.caveat')
+    .notes [Move ahead to schneiders puzzle and then come back here.]
+    +uninvert('.caveat')
+    .slide
+      p.indent - working memory
+      p.indent - attention
+      p.indent - inhibitory control 
+      .notes: :t()
+        [*todo: lots of references missing from the following, e.g. Quereshi et al;
+        good summary in Schniedier et al 2014 WHat do we know ... paper.]
+      .handout.notes: :t()
+        For adults (and children who can do this),
+        representing perceptions and beliefs as such---and even merely holding in mind 
+        what another believes, where no inference is required---involves a measurable 
+        processing cost \citep{apperly:2008_back,apperly:2010_limits}, consumes attention 
+        and working memory in fully competent adults \citealp{Apperly:2009cc, 
+        lin:2010_reflexively, McKinnon:2007rr},  may require inhibition \citep{bull:2008_role} 
+        and makes demands on executive function \citep{apperly:2004_frontal,samson:2005_seeing}.
+      .notes: :t()
+        People sometimes argue that what is cognitively demanding has nothing to do with
+        belief ascription but extraneous demands imposed in these tasks.
+        But there is a wide range of evidence (listed on your handout) using different paradigms
+        and carefully controlling for just this possibility (for example, some studies
+        compare tasks that are about beliefs with tasks that are as similar as possible
+        but not about beliefs).
+      .notes: :t()
+        It makes sense to suppose that these cognitive demands are intrinsic rather than extraneous.
+        Compare representing beliefs in a canonical model with measuring temperature
+        using centigrade ...
+      .notes: :t()
+        Let me say one more thing about the cognitive demands of using a canonical model
+        of mental states for mindreading ... 
+      .slide
+        p.indent - 
+          span.bkg-pink it makes people slow down
+      .notes: :t
+        ... it makes people slow down \citep{Wel:2013uq}.
+        (Also note that in \citet{lin:2010_reflexively}, even for people with high working 
+        memory capacity where no additional cognitive load is imposed, it takes significantly
+        longer to follow an instruction that requires visual perspective taking than
+        to follow an instruction that does not.)
+
+.handout: :t
+  Objection:
+  ‘the theoretical arguments offered [...] are [...] unconvincing, and [...]
+  the data can be explained in other terms’
+  (\citealp{carruthers:2015_two}; see also \citealp{carruthers:2015_mindreading}).
+
+.handout: :t
+  ‘A cooperative multi-system architecture is better able to explain infant belief representation than a
+  parallel architecture, and causal representation, schemas and models provide a more promising basis
+  for flexible belief representation than does a rule-based approach of the kind described by Butterfill
+  and Apperly’ (\citealp{christensen:_twoa}; see also \citealp{michael:2016_flexible,michael:2013_mindreading}).

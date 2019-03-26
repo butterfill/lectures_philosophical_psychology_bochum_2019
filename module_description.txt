@@ -1,0 +1,37 @@
+Philosophical Psychology
+
+Philosophical investigation is indispensable for fully understanding many discoveries in the cognitive sciences, and for identifying new areas of investigation. Despite this, philosophers have mostly focussed on large-scale claims about the nature of minds generally. An important recent trend is the emergence of attempts by philosophers to combine philosophical tools with experiments in answering small-scale, domain-specific questions. This module will examine a range of areas in which philosophers have contributed to cognitive science, or in which experimental findings have generated broadly philosophical puzzles. By the end you will be equipped to pursue research in philosophical psychology; you will have undertaken an in-depth project in a specific domain; and you will have insight into a variety of controversies and puzzles in philosophical psychology.
+
+
+# Programme content
+
+This module introduces you to philosophical research which has informed, or arisen from, scientific discoveries. Some of the key questions in this area include the following (not all of which will feature in the module):
+
+    * Are any cognitive processes modular? 
+    * What are metacognitive feelings and what is their role?
+    * Are altercentric effects in visuo-spatial perspective taking tasks a result of domain-general mechanisms?
+    * Is a distinction such as that between implicit and explicit knowledge needed in explaining cognitive development? 
+    * Are there distinct roles for intention and motor representation in explaining the purposiveness of action? 
+    * How if it all do motor representations shape experiences of actions, one’s own or others’? 
+    * What is categorical perception and how is it related to phenomenology? 
+    * Are there multiple systems for tracking others’ actions, beliefs and other mental states? 
+    * Can emotions or other mental phenomena be known by means of perceiving them?
+    * When two or more agents act together, in virtue of what can their actions have a collective goal? 
+    * What is it for agents to act together cooperatively, or to be committed to do so?
+
+
+# Topics covered
+
+The following is a provisional, partial list of topics to be covered. There is  scope for our research and discussions to influence exactly what happens on the course. Also note that since the course covers contemporary scientific research, it is possible that new breakthroughs (such as a failure to replicate, for example) could influence the exact topics covered.
+
+    * What is folk psychology?
+    * Dual process theories of mindreading
+    * Modularity, Core Knowledge and the Linking Problem
+    * The Interface Problem
+    * Metacognitive feelings
+    * Drawn together: motor representation in joint action
+
+
+[Possible photos:]
+ - https://philosophical-psychology.butterfill.com/lecture_09.html#title-slide
+ - https://philosophical-psychology.butterfill.com/lecture_04.html#title-slide

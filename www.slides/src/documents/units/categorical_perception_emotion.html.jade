@@ -1,0 +1,151 @@
+---
+layout: 'deck_unit'
+title: "Categorical Perception & Emotion"
+tags: []
+description: ""
+---
+
+include ../../../fragments/unit_mixins
+
+
+
+section.slide
+  .words: .middle
+    .container_12
+      .grid_4
+        mixin colour-box('rgb(51,153,255)', 100)
+        p.center 2.5B
+      .grid_4
+        mixin colour-box('rgb(85,100,255)', 100)
+        p.center 7.5BG
+      .grid_4
+        mixin colour-box('rgb(42,162,42)', 100)
+        p.center 2.5BG
+    .notes: :t
+      Categorical perception is perhaps most easily understood from the case of colour.
+    .notes: :t
+      [For later: colour is doubly relevant because there's been serious debate about 
+      whether it's possible to perceive categorical 
+      colour properties despite copious verbal reports.
+      This case shows how evidence can bear on questions about phenomenology,
+      although I won’t be talking about that here (probably).]
+
+
++slide_middle
+  .notes.show
+    p fix initial system of categories
+    p measure disciminatory responses
+    p observe between- vs within-category differences 
+    p exclude non-cognitive explanations for the differences
+  .notes: :t
+    greater discrimination between than within catgeories indicated that the inital
+    system of categories may be having some influence on whatever underpins
+    the responses.
+  .notes: :t
+    Do any perceptual processes in humans discriminate stimuli according to the expressions 
+    of emotion they involve?
+    That is, do humans have \emph{categorical perception} of expressions of emotion?
+
+//- TODO
+        
++slide({bkg:'categorical_perception_emotion/Slide01.jpg'})
+  .notes: :t
+    Assume that we as theorists have a system which allows us to categorise 
+    static pictures of faces and other stimuli according to which emotion we 
+    think they are expressing: some faces are happy, others fearful, and so on.
+  .notes.handout: :t
+    There is a way of categorising static pictures of faces and other stimuli according to which emotion
+    someone might think they are expressing: some faces are happy, others fearful, and so on
+    From five months of age, 
+    or possibly much earlier \citep{field:1982_discrimination}, 
+    through to adulthood, humans are better at distinguishing faces when they 
+    differ with respect to these categories than when they do not 
+    \citep{Etcoff:1992zd,Gelder:1997bf,Bornstein:2003vq,Kotsoni:2001ph,cheal:2011_categorical,hoonhorst:2011_categoricala}.
+  
++slide({bkg:'categorical_perception_emotion/Slide02.jpg'})
+  .notes: :t
+    To illustrate, consider these pictures of faces.
+    The idea is this.
+  .notes: :t
+    With respect to all features apart from the expression of emotion, each face picture differs from its neighbours no more than any other picture differs from its neighbours.
+    
++slide({bkg:'categorical_perception_emotion/Slide03.jpg'})
+  .notes: :t
+    Most neighbouring pairs of face pictures would be relatively hard to distinguish, 
++slide({bkg:'categorical_perception_emotion/Slide04.jpg'})
+  .notes: :t
+    especially if they were not presented side-by-side. 
++slide({bkg:'categorical_perception_emotion/Slide05.jpg'})
+  .notes: :t
+    But most people find one pair of neighbouring face pictures  relatively easy to distinguish---you may notice this yourself.
++slide({bkg:'categorical_perception_emotion/Slide06.jpg'})
++slide({bkg:'categorical_perception_emotion/Slide07.jpg'})
++slide({bkg:'categorical_perception_emotion/Slide08.jpg'})
++slide({bkg:'categorical_perception_emotion/Slide09.jpg'})
++slide({bkg:'categorical_perception_emotion/Slide10.jpg'})
+  .notes: :t
+    What underlies these patterns of discrimination?
+    Several possibilities that would render them uninteresting for our purposes can be ruled out.
+  .notes.handout: :t
+    The patterns of discrimination do not appear to be an artefact of linguistic labels
+    (\citealp{sauter:2011_categorical}; see also \citealp{laukka:2005_categorical}, p.\ 291),%
+  .notes: :t
+    %
+    \footnote{
+    Puzzlingly, experiments by \citet{fugate:2010_reading} using photos of chimpanzee faces with human subjects are sometimes cited as evidence that categorical perception of expressions of emotion depends on, or can be modulated by, the use of verbal labels for stimuli (e.g.\ \citealp[p.\ 288]{barrett:2011_context}; \citealp[p.\ 315]{gendron:2012_emotion}).
+    Caution is needed in interpreting these findings
+    given that there may be differences in the ways  humans process human and chimpanzee faces.
+    In fact, what \citeauthor{fugate:2010_reading}'s findings show may be simply that `human viewers do not show [categorical perception] for the chimpanzee facial configurations used in their study' \citep[p.\ 1482]{sauter:2011_categorical}.
+    }
+    % 
+  .notes.handout.ctd: :t
+    nor of the particular choices subjects in these experiments are presented with \citep{bimler:2001_categorical,fujimura:2011_categorical}.
+    Nor are the patterns of discrimination due to narrowly visual features of the stimuli used \citep{sato:2009_detection}.
+  .notes: :t
+    We can be confident, then, that the patterns of discrimination probably reflect one or more processes which categorises stimuli by expression of emotion.
+
+    
++slide
+  .notes: :t
+    Examples of stimuli used (they had 200 ish faces) by Batty and Taylor in their ERP study.
+  +img_clip('batty_2003_fig1.png')
+  p.source Batty & Taylor, 2003 figure 1
+
++slide
+  .notes Don't have details, this is just to stress it's early (around 200ms) and plausibly automatic.
+  .notes.handout: :t
+    ‘at a mean latency of 140 ms) the N170 showed both amplitude and latency
+    modulation differentially with emotional expressions. ...
+    [BUT] Whether this is due presently to low-level stimulus factors or to the use of emotional faces
+    is still to be determined’ \citep[p.~616]{batty:2003_early}.
+  .notes: :t
+    ‘As the task did not require the subjects to focus on particular emotional expressions ...
+    these data suggest an early automatic encoding of emotional facial expression’ \citep[p.~616]{batty:2003_early}.
+  +img_clip('batty_2003_fig2.png')
+  p.source Batty & Taylor, 2003 figure 2
+  .notes: :t
+    At least some of the processes underpinning categorical perception of facial expressions
+    of emotion are rapid (occurring within roughly 200 milliseconds of a stimulus' appearance),
+    pre-attentive \citep{vuilleumier:2001_emotional} and automatic in the sense that whether they occur
+    is to a significant degree independent of subjects' tasks and motivations \citep{batty:2003_early}.%
+  
++slide_middle
+  p Perceptual?
+  p At least for fear & happiness 
+  p.indent - ERP (Campanella et al 2002)
+  p.indent - visual search : behavioural (Williams et al 2005)
+  .notes: :t
+    But are any of the processes that categorise stimuli by expression of emotion perceptual?
+    %That is, are the observed abilities to discriminate  expressions of emotion ever based on perceptual processes?
+    Answering this question is complicated by the fact that many parts of the brain are involved \citep{adolphs:2002_recognizing,vuilleumier:2007_distributed}.  
+    There is evidence that both the amygdala \citep{harris:2012_morphing,harris:2014_dynamic} and also some cortical structures \citep{batty:2003_early}
+    respond categorically to  expressions of emotion;
+    and that intervening in the operations of the somatosensory cortex can impair categorisation (\citealp{pitcher:2008_transcranial}; see also \citealp{banissy:2011_superior}).
+    To my knowledge, so far it is only for happy and fearful stimuli that we have direct evidence 
+    from both neurophysiological \citep{Campanella:2002aa} and behavioural measures \citep{williams:2005_looka}
+    of categorisation occurring in perceptual processing.
+    So while the evidence is not conclusive,
+    there is converging evidence that some perceptual processes categorise stimuli including faces by  expression of emotion.
+    Humans may have categorical perception not only for speech, colour, orientation and other properties but also for expressions of emotion.
+
+

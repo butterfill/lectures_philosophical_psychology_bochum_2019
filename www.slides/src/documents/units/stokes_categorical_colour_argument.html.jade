@@ -1,0 +1,102 @@
+---cson
+layout: 'deck_unit'
+title: "Do you visually experience red because you call things ‘red’?"
+tags: []
+description: """
+  “surprising it would be indeed if I have a perceptual experience as of red
+  because I call the perceived object ‘red’” 
+  (Stokes 2006, pp. 324--5).
+"""
+---
+
+include ../../../fragments/unit_mixins
+
++slide_middle
+  p.notes.handout.show
+    span “surprising it would 
+    span be indeed if I have a perceptual experience as of red 
+    span.italic because
+    span  I call the perceived object 
+    span.red-word ‘red’.
+    span ” 
+  .notes.handout.ctd \citep[pp.~324--5]{Stokes:2006fd}.
+  p.right.grey-text (Stokes 2006, pp. 324--5)
+  .notes: :t
+    Stokes makes this observation in passing.  I want to show 
+    that what Stokes finds so suprising is true, or would be if it were true that 
+    red things differ in visual appearance from non-red things.
+  .slide
+    +invert('.red-word')
+    .notes: :t
+      Stokes has formulated things badly here.
+      The important thing isn’t the particular word I use, ‘red’ vs, say, ‘rot’,
+      ‘rosso’ or ‘rose’.
+      Rather it’s that I have a label for the perceived object which I also 
+      use for all the things that have the property red.
+      
+    
++slide_middle
+  .handout: :t
+    Argument:
+    \begin{enumerate}
+    \item Red things differ in visual appearance from non-red things.
+    \item The capacity to detect the difference in visual appearance between
+    red and non-red things is, or depends on, the capacity to visually
+    discriminate red and non-red things.
+    \item The capacity to visually discriminate red and non-red things depends
+    on the capacity to label the red things (for example, using ‘red’).
+    \end{enumerate}
+    Therefore:
+    \begin{enumerate}[resume]
+    \item I have a perceptual experience as of red span.italic
+    because span I call the perceived object ‘red’.
+    \end{enumerate}
+  p.arg1 1. Red things differ in visual appearance from non-red things.
+  p.right.grey-text [assumption]
+  .slide.em-above
+    p.arg2: :t
+      2. The capacity to detect the difference in visual appearance between
+      red and non-red things 
+      is, or depends on,
+      the capacity to visually discriminate red and non-red things.
+    p.right.grey-text [unargued premise]
+  .slide.em-above
+    p: :t
+      3. The capacity to visually discriminate red and non-red things
+      depends on 
+      the capacity to label the red things (for example, using ‘red’).
+    p.right.grey-text [discovery]
+    .notes: :t
+      It turns out that
+      the ability to discriminate properties denoted by particular colour terms like
+      ‘red’ depends not only on having learned to use those very terms accurately in
+      the past \citep{Ozgen:2002yk,Winawer:2007im,zhou:2010_newly} but also on being
+      able to activate some component of the ability to apply the colour term at the
+      time a stimulus is presented
+      \citep{Roberson:2000ge,Pilling:2003bi,Wiggett:2008xt}. % page refs: (Roberson,
+      Davies and Davidoff 2000: 985; Pilling, Wiggett, et al. 2003: 549-50; Wiggett
+      and Davies 2008) 
+      
+      Someone who accepts that there are visual experiences as of
+      \emph{red} must either suppose that these experiences are only indirectly
+      related to abilities to discriminate or else accept the surprising idea that
+      such visual experiences are a consequence of covert labelling. This dilemma can
+      be avoided by rejecting the subject-determining platitude and with it the
+      existence in humans of visual experiences as of \emph{red}.
+
+  .slide.em-above
+    p Therefore:
+    p.em-above
+      span 4. I have a perceptual experience as of red 
+      span.italic because
+      span  I call the perceived object ‘red’.
+  
+  .slide
+    +highlight-row('.arg2')
+    .notes: :t
+      Should we reject this ...
+  .slide
+    +unhighlight-row('.arg2')
+    +highlight-row('.arg1')
+    .notes: :t
+      ... or this (or both)?

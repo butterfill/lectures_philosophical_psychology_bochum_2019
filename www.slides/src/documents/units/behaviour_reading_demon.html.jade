@@ -1,0 +1,338 @@
+---cson
+layout: 'deck_unit'
+title: "The Behaviour Reading Demon"
+tags: []
+description: """
+  The behaviour reading demon (a counterpart of Laplace’s demon) has unlimited cognitive capacities,
+  perfect knowledge of history and can conceptualise behaviours in any way imaginable. Although blind to
+  mental states, it can predict others’ future behaviours at least as well as any mindreader.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
++slide({bkg:'hare_2001_fig1.png'})
+  p.source Hare et al (2001, figure 1)
+  .notes: :t
+    Recall this experiment.
+    Could we explain success without appeal to the idea that chimpanzees
+    can ascribe knowledge and ignorance?
+
++slide
+  .container_12
+    .grid_9
+      p.handout.notes.show
+        span ‘an intelligent chimpanzee could simply use the  
+        span.behavioural-abstraction behavioural abstraction
+        span  […]:  ‘Joe was present and oriented; he will probably go after the food. 
+        span Mary was not present; she probably won’t.’’
+      .notes.handout.ctd \citep{Povinelli:2003bg}
+      p.right.grey-text Povinelli and Vonk (2003)
+  .slide
+    +invert('.behavioural-abstraction')
+    .notes What’s that?
+
++slide_middle
+  .handout.notes: :t
+    \begin{quote}
+    For any food (x) and agent (y), if any of the following do not hold:
+
+    (i) the agent (y) was present when the food (x) was placed,
+
+    (ii) the agent (y) was oriented to the food (x) when it was placed, 
+
+    and:
+
+    (iii) the agent (y) can go after the food (x) 
+
+    then probably not:
+
+    (iv) the agent (y) will go after the food (x).
+
+    Also, if all of (i)–(iii) do hold, then probably (iv).
+    \end{quote}
+  p.em-above For any food (x) and agent (y), if any of the following do not hold:
+  p.em-above.indent (i) the agent (y) was present when the food (x) was placed,
+  p.em-above.indent (ii) the agent (y) was oriented to the food (x) 
+    span.when-placed when it was placed
+    span , 
+  p.em-above and:
+  p.em-above.indent (iii) the agent (y) can go after the food (x) 
+  p.em-above then probably 
+    span.not not
+    span : 
+  p.em-above.indent (iv) the agent (y) will go after the food (x).
+  .slide
+    +invert('.when-placed')
+    .notes: :t
+      Doesn’t work as it stands because in the ‘misinformed’ condition
+      the dominant was oriented to the food when it was first placed
+      (just not when it was subsequently moved).
+    .notes: :t
+      Right way to formulate this is tricky: should we say last placed?
+      Or should we say when the food was last placed at its current location,
+      the dominant was oriented to the food there?
+  .slide
+    +uninvert('.when-placed')
+    +invert('.not')
+    .notes: :t
+      Predicting a non-behaviour is particularly challenging.
+    .notes: :t
+      There are some conditions which could trump this; for example,
+      if the food is in a place where food is has recently been found, or if the food 
+      is particularly smelly or noisy, or if a trail of grapes 
+      leads to the food ...
+    .notes: :t
+      So is the hypothesis that chimps ignore all such further factors,
+      or do we think that this claim should be elaborated?
+  .slide
+    p.em-above Also, if all of (i)–(iii) do hold, then probably (iv).
+  
++slide_middle
+  p.notes.handout.show: :t
+    ‘Don't go after food if a dominant who is present has oriented towards it’
+  .notes.handout.ctd \citep[p.~735]{Penn:2007ey}
+  p.right.grey-text Penn and Povinelli (2007, 735)
+  .notes: :t
+    By shifting from a prediction of the dominant’s behaviour to a 
+    restriction on how the subordinate behaves, a lot of the problems vanish.
+    But this clearly not an interesting proposal: to see why, we need to think
+    about scientific methodology (predicting vs retrodicting the order in which
+    people entered the room).
+
+
+
++slide_middle
+  p The ‘Logical Problem’ ...
+  .notes: :t
+    Maybe it’s not necessary that we actually construct detailed accounts of how each task
+    is solved using behavioural rules.  Following Povinelli and colleagues, Lurz has argued
+    that the sorts of experiments we have been considering are in principle incapable of 
+    eliminating a hypothesis about behaviour reading ...
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘since mental state attribution in [nonhuman] animals will (if extant) be based on observable 
+      features of other agents’ behaviors and environment ... every mindreading hypothesis has ... 
+      a complementary behavior-reading hypothesis.  
+    .notes.handout.ctd: :t
+      Such a hypothesis proposes that the animal relies upon certain behavioral/environmental cues 
+      to predict 
+      [... the behaviour which], on the mindreading hypothesis, 
+      the animal is hypothesized to use as its observable grounds for attributing the 
+      mental state in question.’
+    .notes.handout.ctd \citep[p.~26]{lurz:2011_mindreading}; also \citep[p.~453]{lurz:2011_how}
+    p.right.grey-text Lurz (2011, 26)
+  
+
+//- lurz and Krachun
+
+
++slide_middle
+  p.em-above 1. Ascriptions of mental states ultimately depend on information about behaviours
+  p.indent - information triggering ascription
+  p.indent - predictions derived from ascription
+  .slide
+    p.em-above 2. In principle, anything you can predict by ascribing a mental state you could have predicted just by tracking behaviours.
+
++slide_middle
+  p.center Is there an experimental solution to the ‘Logical Problem’?
+  p.center.em-above Lurz and Karchun (2011) : yes ...
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘Behavior-reading animals can appeal only to ...
+      reality-based, mind-independent facts, such as facts about agents’ past behavior or 
+      their current line of gaze to objects in the environment. 
+    p.notes.handout.show: :t
+      ‘Mindreading animals, in contrast, can appeal to the subjective ways environmental 
+      objects perceptually appear to agents to predict their behavior.’
+    .notes.handout.ctd \citep[p.~469]{lurz:2011_how}
+    .notes.handout: :t
+      Experimental implementations: e.g. \citep{karg:2015_goggles}
+    p.right.grey-text Lurz and Krachun (2011, p. 469)
+    .notes: :t
+      E.g. seeing an insect or a piece of fruit as an insect or piece of fruit
+
++slide({bkg:'lurz_krachun_2011_fig1.png'})
+  p.source Lurz & Krachun 2011, figure 1
+  .notes: :t
+    There’s a competitor, two graps and some size-distorting glass ... can 
+    Subject predict that Competitor will choose not the largest grape but
+    the one which appears largest?
+  .notes: :t
+    ‘The objective here is to test whether chimpanzees are capable of anticipating (as evidenced by their
+    looking behavior) the actions of a human competitor by understanding how an illusory stimulus (grape)
+    looks to the human.’ \citep{lurz:2011_how}
+  .notes: :t
+    ‘the competitor is absent when the grapes are placed inside the containers (as in the pretest stage),
+    he does not observe the change in apparent size of the grapes as they are placed inside the
+    containers, as the chimpanzee does. After the grapes are placed, the competitor enters the room, sits
+    at the table, looks at each grape through the sides of the containers’
+    \citep[p.~476]{lurz:2011_how}
+  .notes: :t
+    ‘dependent measure is anticipatory looking’.  
+    In this case, the subjects (chimps) know which grape is which and how they appear.
+    Also a Krachun-like competitive version (in this case, the chimps have to
+    infer which is larger from the failed reach of the human competitor)...
+  .notes: :t
+    Also a Krachun-like reaching measure:
+    ‘After the competitor has acted in one of these two ways toward the container with the large grape,
+    the experimenter places opaque coverings completely over each container and moves the platform toward
+    the chimpanzee. Once the platform is in place before the chimpanzee, the chimpanzee is allowed to
+    choose one of the two containers (by pointing to it through a finger hole). Since the containers are
+    covered, the chimpanzee cannot make its choice by seeing the grape or grapes inside the containers.
+    Rather, to make its preferred choice (which we assume will be the remaining small grape in
+    competitor-first success trials and the large grape in competitor-first failure trials) the chimpanzee
+    must attend to the selection process of the competitor.’
+    \citep[p.~475]{lurz:2011_how}
+
+
++slide_middle
+  .notes: :t
+    The Lurz and Krachun proposal looks really good because it identifies a gap
+    in the argument for the logical problem ...
+  p The logical problem
+  p.em-above 1. Ascriptions of mental states ultimately depend on information about behaviours 
+    span.step2a.hide and objects
+  p.indent - information triggering ascription
+  p.indent - predictions derived from ascription
+  p.indent
+    span.step2b.hide - ways objects appear
+  p.em-above 2. In principle, anything you can predict by ascribing a mental state you could have predicted just by tracking behaviours.
+  .slide
+    +show('.step2a')
+    +highlight('.step2a, .step2b')
+    +show('.step2b')
+    .notes: :t
+      Progress ... but does this enable us to solve the logical problem?
+  
++slide_middle
+  p.step1: :t
+    ‘Behavior-reading animals can appeal only to ...
+    reality-based, mind-independent facts, such as facts about agents’ past behavior or 
+    their current line of gaze to objects in the environment. 
+  p.step1: :t
+    ‘Mindreading animals, in contrast, can appeal to the subjective ways environmental 
+    objects perceptually appear to agents to predict their behavior.’
+  p.step1.right.grey-text Lurz and Krachun (2011, p. 469)
+  .notes: :t
+    E.g. seeing an insect or a piece of fruit as an insect or piece of fruit
+  .slide
+    +blur('.step1')
+    p.em-above But: objects have appearance properties, and provide affordances, which are independent of any particular mind. 
+    .notes: :t
+      Camoflauge ain’t mindreading.
+
++slide_middle
+  .notes: :t
+    Return to the question; this is for discussion ...
+  p.center.notes.show Do goggles solve the ‘Logical Problem’?
+  p.em-above.notes.handout.show: :t
+     ‘“self-informed” belief induction variables [... are those] that, if the participant is
+     capable of mentalizing, he or she knows only through extrapolation from her own experience to be
+     indicative of what an agent can or cannot see and, therefore, does or does not believe’
+  .notes.handout.ctd \citep[p.~139]{heyes:2014_submentalizing}
+  p.right.grey-text Heyes, 2014 p. 139
+
++slide
+  +img_clip('karg_2015_fig4.png')
+  p.source Karg et al, 2015 figure 4 (Experiment 2)
+  .notes: :t
+    Experiment 2: chimp attempts to steal from human, 
+    who will remove food if she sees the chimp approach.
+    One cover is transparent, the other opaque. But actually when they are down,
+    both look opaque from the chimp’s point of view.
++slide
+  +img_clip('karg_2015_fig5.png')
+  p.source Karg et al, 2015 figure 5 (Experiment 2)
+  .notes (This is just a photo of the apparatus, with covers up (top) and down (bottom).)
++slide
+  +img_clip('karg_2015_fig6.png')
+  p.source Karg et al, 2015 figure 5 (Experiment 2)
+  .notes: :t
+    ‘Mean percentage of trials with the choice of the opaque box across the three conditions. In the
+    transparent condition, one lid was opaque, the other transparent. In the screen condition, one lid
+    was a screen, the other opaque. The control was like the transparent condition, but without the
+    experimenter's presence at the time of choice. Error bars indicate 95% CI. The horizontal line
+    indicates chance level (50%). *P < 0.05; **P < 0.01’
+    \citep{karg:2015_goggles}.
+
++slide_middle
+  .notes: :t
+    Return to the question; this is for discussion ...
+  p.center.notes.show Do goggles solve the ‘Logical Problem’?
+  p.em-above.notes.show: :t
+     ‘“self-informed” belief induction variables [... are those] that, if the participant is
+     capable of mentalizing, he or she knows only through extrapolation from her own experience to be
+     indicative of what an agent can or cannot see and, therefore, does or does not believe’
+  .notes.ctd \citep[p.~139]{heyes:2014_submentalizing}
+  p.right.grey-text Heyes, 2014 p. 139
+  .notes: :t
+    I think: what you ‘project’ from your own experience could be merely knowledge
+    of affordances (in Bugnyar et al) and appearances (in Karg et al).  There’s no special
+    reason to think that what you project is mental states rather than a better understanding
+    of objects and their properties.
+
++slide_middle
+  p.center.notes.show Could altercentric interference effects solve the ‘Logical Problem’?
+  .notes: :t
+    [Not planning to talk about this at any length, just curious what they say.]
+
++slide_rh_white({step:true})
+  +run_across
+    p.center What does the ‘Logical Problem’ show?
+  +left_half
+    p Lurz, Krachun et al
+    p.em-above: :t
+      The ‘Logical Problem’ can be overcome with experimental design.
+  +right_half({step:true})
+    p Halina, Heyes (?), et al
+    p.em-above: :t
+      The ‘Logical Problem’ is a logical problem.
+  .clear
+  +left_half
+    p.em-above: :t
+      Its existence shows that these are the wrong experiments whereas those are the right ones.
+  +right_half
+    .step3.hide
+      p.em-above: :t
+        Its existence shows that being able to track mental states 
+        does not logically entail
+        being able to to represent mental states.
+      .notes: :t
+        I’m not here arguing for one side or the other, merely pointing out that
+        there are two sides.
+        But in what follows I will assume that the ‘Logical Problem’ is a logical problem.
+  .slide
+    +show('.step3')
+
+section.slide
+  .clear
+  .container_12.em-above
+    .grid_9
+      p
+        span ‘because behavioural strategies are so unconstrained ...
+        span it is very difficult indeed, 
+        span.perhaps-impossible perhaps impossible
+        span , to design experiments 
+        span that could show that animals are mindreading rather than behaviour reading.’
+      .handout.notes: :t
+        ‘because behavioural strategies are so unconstrained ...
+        it is very difficult indeed, perhaps impossible, to design experiments 
+        that could show that animals are mindreading rather than behaviour reading.’
+      .handout.notes.ctd \citep[p.~322]{heyes:2014_animal}
+      p.right.grey-text Heyes, 2015 322
+    .grid_3
+      p.right
+        +img('celia_heyes.png', 'width:150px')
+  .clear
+  .slide
+    .container_12.em-above
+      .grid_9
+        p.notes.handout.show: :t
+          ‘the logical problem ... is not solvable ...
+          any experiment aimed at testing mindreading will fail to reject the hypothesis that subjects are
+          reasoning in terms of observable regularities alone.
+          ... the logical problem is a general skeptical problem’
+        .notes.handout.ctd \citep[pp.~483--5]{halina:2015_there}
+        p.right.grey-text Halina, 2015 pp. 483-5

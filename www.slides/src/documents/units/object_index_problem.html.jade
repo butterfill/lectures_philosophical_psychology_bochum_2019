@@ -1,0 +1,79 @@
+---cson
+layout: 'deck_unit'
+title: "A Problem about Object Cognition"
+tags: []
+description: """
+  According to the Revised CLSTX Conjecture, 
+  Five-month-olds’ abilities to track briefly unperceived objects
+  are not grounded on belief or knowledge:
+  instead
+  they are consequences 
+  of the operations of a system of object indexes
+  and 
+  of a further, independent capacity to track physical objects which involves motor
+  representations and processes.
+  Can this conjecture explain performance on habituation and violation-of-expectation tasks?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+include tmp_mixins
+
+
++slide_middle
+  +CLSTXconjecture({handout:false})
+  p &nbsp;
+  p.hem-around: :t
+    ... and of a further, independent capacity to track physical objects which involves
+    motor representations and processes.
+
+
+
++slide_middle
+  p.center Objection:
+  p.center What can object indexes explain?
+
+
++slide
+  +img_clip('wynn_1992_fig1a.png')
+  p.source Wynn 1992, fig 1 (part)
+  .notes: :t
+    We know that infants are likely to maintain object indexes for the two
+    mice while they are occluded.
+    Accordingly, when the screen drops in the condition labelled 
+    ‘impossible outcome’, there is an interruption to the normal 
+    operation of object indexes: infants have assigned two object indexes 
+    but there is only one object.
+    But why does this cause infants to look longer at in the
+    ‘impossible outcome’ condition than in the ‘possible outcome’ condition?
+    How does a difference in operations involving object indexes result
+    in a difference in looking times?
+    
++slide
+  +img('wynn_1992_table1fig.jpg', 'width:720px')
+  //- figure includes source information
+
+
++slide_middle
+  p.hem-around Functions of object indexes:
+  p.indent.hem-around ✔ influence how attention is allocated
+  p.indent.hem-around ✔ guide ongoing actions (e.g. visual tracking, reaching)
+  p.indent.hem-around ✘ initiate purposive actions
+  .notes: :t
+    The primary functions of object indexes include influencing the allocation
+    of attention and perhaps guiding ongoing action.
+    If this is right, it may be possible to explain anticipatory looking 
+    directly by appeal to the operations of  object indexes.
+    But the operations of object indexes cannot directly explain differences 
+    in how novel things are to an infant.
+    And nor can the operations of object indexes directly explain why infants
+    look longer at stimuli involving discrepancies in the physical behaviour
+    of objects.
+
++slide_middle
+  +charlesRiveraOcclusionEndarkeningTable
+  .notes: :t
+    How does help us with the puzzles? 
+  +highlight('.v-of-e .occlusion', 'red')
+  .notes Object indexes can survive occlusion but ...

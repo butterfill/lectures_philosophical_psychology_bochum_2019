@@ -1,0 +1,247 @@
+---cson
+layout: 'deck_unit'
+title: "A signature limit of infant goal tracking?"
+tags: []
+description: """
+  A signature limit of a system is a pattern of behaviour the system exhibits which is both defective
+  given what the system is for and peculiar to that system.
+  There is some evidence that goal-tracking 
+  in infants (and adults) 
+  is limited by their abilities to act.
+  Could this be a signature limit of infant goal-tracking?
+  """
+---
+  
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+  
+
+//- In infants (and adults), goal-tracking is limited by their abilities to act.
+
++slide_middle
+  p Limit:
+  p.hem-above infants can only track goals of actions they can perform.
+  //- p.em-above e.g. grasping: Kanakogi & Itakuar, 2011
+
++slide
+  +img_clip('flanagan_2003_fig1.png','rect(0,395px,999px,0)')
+  p.source Flanagan and Johansson, 2003 figure 1 (part)
+  .notes: :t
+    To explain this I have to step back and show you something interesting about 
+    adults when they perform, and when they observe actions.
+  .notes: :t
+    Performing actions (e.g. stacking blocks): you don't look at your hand but at
+    the block it will pick up, or, when holding a block, at the location where it will place a block.
+    That is, in acting the eyes move just ahead of the action.
+  .slide
+    +clip('img')
+    .notes: :t
+      \citet{Flanagan:2003lm} showed that the same pattern occurs when adults observe another 
+      acting. 
+      In observing an action, the eyes move just ahead of the action.
+    .notes: :t
+      This proactive gaze is important for our purposes because it can reveal goal-tracking ...
+    .notes.handout: :t
+      \citet{Flanagan:2003lm} showed that 
+      ‘patterns of eye–hand coordination are similar when performing and observing a block stacking task’.
+
+//- 
+  +slide({bkg:'costantini_2012.png'})
+    p.source Costantini et al, 2012
+    .notes: :t
+      ‘We recorded proactive eye movements while participants observed an actor
+      grasping small or large objects. The participants' right hand either freely
+      rested on the table or held with a suitable grip a large or a small object,
+      respectively. Proactivity of gaze behaviour significantly decreased when
+      participants observed the actor reaching her target with a grip that was
+      incompatible with respect to that used by them to hold the object in their
+      own hand.’
+    .notes: :t
+      Follow ups: tie hands = \citet{ambrosini:2012_tie}; TMS (impair) = \citet{costantini:2013_how}.
+    .notes: :t
+      Planning-like processes in action observation have also been demonstrated
+      by measuring observers' predictive gaze. If you were to observe just the
+      early phases of a grasping movement, your eyes might jump to its likely
+      target, ignoring nearby objects \citep{ambrosini:2011_grasping}. These
+      proactive eye movements resemble those you would typically make if you were
+      acting yourself \citep{Flanagan:2003lm}. Importantly, the occurrence of
+      such proactive eye movements in action observation depends on your
+      representing the outcome of an action motorically; even temporary
+      interference in the observer's motor abilities will interfere with the eye
+      movements \citep{Costantini:2012fk}.
+    .notes.handout: :t
+      In human adults, motor representations and processes enable anticipatory looking
+      that is driven by goal ascription \citep[e.g.][]{Costantini:2012fk,ambrosini:2012_tie}.
+
+
+
++slide
+  +img_clip('kanakogi_2011_fig5.jpg')
+  p.source Kanakogi and Itakura, 2011 figure 5
+  .notes: :t
+    Kanakogi & Itakuar, 2011 show that abilities to grasp objects are correlated with
+    abilities to track the goal of a grasping action (as measured by proactive gaze).
+  .notes: :t
+    x-axis is alpha, grasping angle. ‘An α angle value from 90 to 180° indicates that the infant
+    is engaged in a one-handed grasping action.’
+  .notes: :t
+    ‘The angle α is an index of the development of the one­handed grasping action and was
+    calculated by measuring the angle of a straight line de ned by the infant’s two hands (the
+    apex of the junction of the thumb and index nger) when crossed by an imaginary line
+    projecting frontally from the infant (Fig. 2b). If infants grasped for the objects with their
+    le hand, we reversed the red right­angled triangle from one side to the other side and
+    calculated the angle α in the same way. e angle α value of 90° corresponded to a perfect
+    alignment of the hands in a two­handed reach. Therefore, the angle α value deviates from 90°
+    towards 180°, and bigger angle α value indicates more mature one­handed grasping. If the
+    angle α was over 90°, the infant was considered to be engaged in a one­handed grasping
+    action.’
+  .notes: :t
+    ‘three action conditions: grasping hand (GH, n = 31), back of hand (BH, n = 31), and
+    mechanical claw (MC, n = 32). Pearson’s r reflects the partial correlation between timing of
+    gaze arrival at the goal and grasping ability in each condition after controlling for age.
+    Asterisk indicates statistical signi cance, P < 0.05; ns, not significant.’
+
++slide
+  +img_clip('kanakogi_2011_fig1Cii.png')
+  +style('img',{filter:'contrast(1.2) brightness(1.5)'})
+  p.source Kanakogi and Itakura, 2011 figure 1C (part)
+  .notes: :t
+    Further, changing from a bodily action to the operation of a mechanical claw
+    (say) undermines the goal tracking effect.
+  .notes: :t
+    So  Kanakogi & Itakuar, 2011 make two points:
+    (i) goal-tracking depends on action capabilities; and 
+    (ii) only works for events involving biomechanically similar affectors
+
+  
+
++slide_middle
+  p If infants can only track goals of actions they can perform, what happens if you intervene on their abilities to act?
+  
+
++slide({bkg:'needham_sticky_mittens.png'})
+  p.source Needham et al, 2002 / https://news.vanderbilt.edu/files/sticky-mittens.jpg
+  .notes: :t
+    Needham et al, 2002 showed that putting ‘sticky mittens’ on 3-month-old infants 
+    (for 10-14 play sessions of 10 minutes each) resulted in their spending 
+    more time visually and manually exporing novel objects.
+
++slide_middle
+  p Sommerville, Woodward and Needham, 2005
+  p.indent.em-above Play wearing mittens then observe action.
+  p.indent.em-above vs
+  p.indent.em-above Observe action then play wearing mittens.
+  .notes: :t
+    In this study, I think infants wore the mittens for just 200 seconds
+    (so the play sessions were much shorter than in Needhman et al, 2002).
++slide
+  .notes The observation was based on this study, which we saw earlier
+  +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
+  p.source Woodward et al 2001, figure 1
+  .slide
+    +clip('img:eq(0)','auto')
+
+    
++slide
+  +img_clip('sommerville_2005_fig3_part.jpg')
+  p.source Sommerville, Woodward and Needham, 2005 figure 3
++slide
+  +img_clip('sommerville_2005_fig3.png')
+  p.source Sommerville, Woodward and Needham, 2005 figure 3
+  .notes: :t
+    The results show that infants who played wearing the mittens first
+    were more attentive to the goal.
+  .notes.handout: :t
+    From at least three months of age, some of infants’ abilities to identify
+    the goals of actions they observe are linked to their abilities to perform
+    actions \citep{woodward:2009_infants}.
+  .notes: :t
+    But one potential objection to this study concerns observation vs performance.
+    The infants who played wearing sticky mittens first had spent longer observing
+    actions by the time it came to the violation of expectations trial.
+    Could it be observation of action (including one’s own) rather than performance
+    that matters?
+  .handout: :t
+    In adults, tying the hands impairs proactive gaze \citep{ambrosini:2012_tie}; in 
+    infants, boosting grasping with ‘sticky mittens’ facilitates proactive gaze
+    (\citealp{sommerville:2005_action}; see also \citealp{sommerville:2008_experience},
+    \citealp{ambrosini:2013_looking}).
+  .slide
+    +reset-escape-inner
+      +_slide_middle_inner
+        //- +blur('img, .source')
+        +style('img, .source', {filter:'blur(5px) grayscale(1) opacity(0.5)'})
+        p.center.huge-glow-120(style='font-family:lato;') objection
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center It’s not really grasping
+        .notes: :t
+          nb something gets stuck to the mittens; it's not really grasping!
+
+
++slide
+  +img_clip('sommerville_2008_fig1.png')
+  p.source Sommerville et al 2008, figure 1
+  .notes: :t
+    To address this issue, \citet{sommerville:2008_experience} did a study in 
+    which one group had observation while the other group had performance.
+    The participants were 10-month-old infants this time.
+  .notes: :t
+    The materials were a bit different: so that training vs observation could 
+    be as similar as possible with respect to the causal structure exposed,
+    there was a hook to get an object.
+
++slide
+  +img_clip('sommerville_2008_fig2.png')
+  p.source Sommerville et al 2008, figure 2
+  .notes: :t
+    The results show that infants with the training paid attention to the
+    distal goal (choice of toy) whereas those without paid attention to the
+    choice of cane.
+
+
++slide
+  +img_clip('ambrosini_2013_fig1i.png')
+  p.source Ambrosini et al, 2013 figure 1 (part)
+  .notes: :t
+    Further support for a link between action performance and goal tracking
+    comes from a developmental study by Ambrosini et al which studied whether proactive
+    gaze in infants is influenced by pre-shaping of the hand, and, in particular, 
+    whether it is influenced by precision grips.
++slide
+  +img_clip('ambrosini_2013_fig1ii.png')
+  p.source Ambrosini et al, 2013 figure 1 (part)
++slide
+  +img_clip('ambrosini_2013_fig1iii.png')
+  p.source Ambrosini et al, 2013 figure 1 (part)
+  .notes: :t
+    By using no shaping (a fist), Ambrosini et al could treat sensitivity
+    to whole-hand grasp and precision grip separately.
+
++slide
+  +img_clip('ambrosini_2013_fig3.png')
+  p.source Ambrosini et al, 2013 figure 3
+  .notes: :t
+    ‘infants’ ability to perform specific grasping actions with fewer fingers directly predicted the degree with which they took advantage of the availability of corresponding pre-shape motor information in shifting their gaze towards the goal of others’ actions’ \citep[p.~6]{ambrosini:2013_looking}.
+  
+  
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180(style='font-family:lato;') Why?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show In infants (and adults), 
+        br
+        span goal-tracking is limited by their abilities to act.
+      .notes: :t
+        Why is this true?
+        Why is goal-tracking in infants (and adult) limited by their abilities to act?
+        On the Simple View, goal tracking is a matter of thinking and reasoning about the 
+        best means to perform an action. 
+        On this View, there’s no obvious reason why 
+        your goal-tracking should be limited by your abilities to act in this way.
+      .notes: :t
+        Although I can’t jump over a house, I can perfectly well think about different ways
+        to do so and distinguish better and worse approaches, at least to some extent.
+  

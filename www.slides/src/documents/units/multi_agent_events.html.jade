@@ -1,0 +1,70 @@
+  ---
+layout: 'deck_unit'
+title: "Multi-Agent Events"
+tags: []
+description: ""
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
++slide({bkg:'collective_goals/slide39.jpg'})
+  .notes I want to start with a claim from Kirk Ludwig's semantic analysis.  
+  .notes: :t
+    A \emph{joint action} is an event with two or more agents, as contrasted 
+    with an \emph{individual action} which is an event with a single agent 
+    \citep[p.\ 366]{ludwig_collective_2007}.
+  
+
++slide({bkg:'collective_goals/slide40.jpg'})
+  .notes [Grounding]
+  .notes.handout.ctd Events $D_1$, ...\ $D_n$ \emph{ground} $E$, if: $D_1$, ...\ $D_n$ and $E$ occur; 
+  .notes.handout.ctd $D_1$, ...\ $D_n$ are each (perhaps improper) parts of $E$; and 
+  .notes.handout.ctd every event that is a proper part of $E$ but does not overlap  $D_1$, ...\ $D_n$ is caused by some or all of $D_1$, ...\ $D_n$.
+
+  .notes.handout For an individual to be \emph{among the agents of an event} is for there to be actions $a_1$, ...\ $a_n$ which ground this event where the individual is an agent of some (one or more) of these actions.
+
+  .notes.handout A joint action is an event with two or more agents.\citep{ludwig_collective_2007}
+
++slide({bkg:'collective_goals/slide39.jpg'})
+  .notes This definition is too broad.
+  .notes To see why, consider an example.
+  
++slide({bkg:'collective_goals/slide44.jpg'})
+  .notes: :t
+    Nora and Olive killed Fred.  
+    Each fired a shot.
+    Neither shot was individually fatal but together they were deadly.
+    An ambulance arrived on the scene almost at once but Fred didn't make it to the hospital.
+    On the revised simple definition, this event is a joint action just because Nora and 
+    Olive are both agents of it.
+    Now suppose that Nora and Olive have no knowledge of each other, nor of each other's 
+    actions, and that their efforts are entirely uncoordinated.
+    We might even suppose that Nora and Olive are so antagonistic to each other that they 
+    would, if either knew the other's location, turn their guns on each other.
+    The event of their killing Fred is nevertheless a joint action on the revised simple definition.
+  .notes: :t
+    Why is this a problem?
++slide_middle({bkg:'collective_goals/slide45.jpg'})
+  .notes: :t
+    Because it shows that our present characterisation of joint action as an event 
+    with two or more agents doesn't match intutions about contrasts between joint and 
+    parallel but merely individual action. 
+    So we need to improve on this.
+  .slide
+    +blur('img', '5px', 500)
+    p.center What are we missing?
+    .notes: :t
+      What is missing from this first attempt at characterising joint action?
+      I think one missing feature is the notion of a collective goal.
+      Here I need to go slowly ...
+  
+

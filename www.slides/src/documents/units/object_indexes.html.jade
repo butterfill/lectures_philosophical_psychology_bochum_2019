@@ -1,0 +1,278 @@
+---cson
+layout: 'deck_unit'
+title: "Object Indexes"
+tags: []
+description: """
+  Perception involves a system (at least one) of indexes which attach to objects
+  These object indexes can be thought of, roughly, as mental analogues of the
+  pins that an old fashioned logistician sticks into a map in keeping track of
+  supply trucks.
+  When things go well, the movements of trucks on the ground are mirrored by
+  the movements of pins on the map.
+  The key characteristic of the pins is this: ignoring re-use, if you have
+  the same pin at two times, then the trucks it points to at those times are
+  one and the same truck.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+
+
++slide_middle
+  .notes: :t
+    Michotte thought of the launching effect as bound up  with the perception of 
+    objects and motion.
+    [This motivates thinking about object indexes ...]
+  p.notes.handout.show: :t
+    ‘the movement performed by object B appears simultaneously under two
+    different guises: (i) as a movement (belonging to object A), (ii) as a
+    change in relative position (by object B)’
+  .notes.handout.ctd \citep[p.~136]{Michotte:1946nz}
+  p.right.grey-text Michotte 1946 [1963], p. 136 
+  .slide.em-above
+    p.notes.handout.show: :t
+      ‘the physical movement of the object struck gives rise to a double
+      representation. This movement appears at one and the same time (a) as a
+      continuation of the previous movement of the motor object, and (b) as a
+      change of relative position (a purely spatial withdrawal) of the projectile
+      in relation to the motor object.’
+    .notes.handout.ctd \citep[p.~140]{Michotte:1946nz}
+    p.right.grey-text Michotte 1946 [1963], p. 140
+
+  
++slide
+  +img_clip('pylyshyn_2001_fig6.png','rect(0, 200px, 300px, 0)')
+  .notes: :t
+    Suppose you are shown a display involving eight stationary circles, like 
+    this one.
+  .kludge(style='margin-top:300px;') &nbsp;
+  .slide
+    +clip('img:eq(0)','rect(0, 370px, 300px, 0)')
+    .notes: :t
+      Four of these circles flash, indicating that you should track these circles.
+  .slide
+    +clip('img:eq(0)','rect(0, 530px, 300px, 0)')
+    .notes: :t
+      All eight circles now begin to move around rapidly, and keep moving unpredictably for some time.
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes: :t
+      Then they stop and one of the circles flashes.
+      Your task is to say whether the flashing circle is one you were supposed to track.
+      Adults are good at this task \citep{pylyshyn:1988_tracking}, indicating that they can use at least four object indexes simultaneously.
+    .notes: :t
+      (\emph{Aside.} That this experiment provides evidence for the existence of 
+      a system of object indexes has been challenged.  
+      See \citet[p.\ 59]{scholl:2009_what}:
+      \begin{quote}
+      `I suggest that what Pylyshyn’s (2004) experiments show is exactly what they intuitively 
+      seem to show: We can keep track of the targets in MOT, but not which one is which. 
+      [...]
+      all of this seems easily explained [...] by the view 
+      that MOT is simply realized by split object-based attention to the MOT targets as a set.'
+      \end{quote}
+      It is surely right that the existence of MOT does not, all by itself,
+      provide support for the existence of a system of object indexes.
+      However, contra what Scholl seems to be suggesting here, the MOT paradigm 
+      can be adapated to provide such evidence.
+      Thus, for instance, \citet{horowitz:2010_direction} show that, in a MOT paradigm, observers 
+      can report the direction of one or two targets without advance knowledge of which 
+      targets' directions they will be asked to report.)
+  p.source Pylyshyn 2001, figure 6
+      
+    
+
++slide
+  .notes: :t
+    There is a behavioural marker of object-indexes called the object-specific preview benefit.
+    Suppose that you are shown an array of two objects, as depicted here.
+    At the start a letter appears briefly on each object.
+    (It is not important that letters are used; in theory, any readily 
+    distinguishable features should work.)
+  +img_clip('kahneman_1992_fig3.png','rect(5px,175px, 600px, 0)')
+  .slide
+    +clip('img:eq(0)','rect(5px,315px, 600px, 0)')
+    .notes: :t
+      The objects now start moving.
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes: :t
+      At the end of the task, a letter appears on one of the objects.
+      Your task is to say whether this letter is one of the letters that appeared at the start or whether it is a new letter.
+      Consider just those cases in which the answer is yes: the letter at the end is one of those which you saw at the start.
+      Of interest is how long this takes you to respond in two cases: when the letter appears on the same object at the start and end, and, in contrast, when the letter appears on one object at the start and a different object at the end.
+      It turns out that most people can answer the question more quickly in the first case.
+      That is, they are faster when a letter appears on the same object twice than when it appears on two different objects 
+      \citep{Kahneman:1992xt}.
+      This difference in response times is the 
+      % $glossary: object-specific preview benefit
+      \emph{object-specific preview benefit}.
+      Its existence shows that, in this task, you are keeping track of which object is which as they move.
+      This is why the existence of an object-specific preview benefit is taken to be evidence that object indexes exist.
+  p.source Kahneman et al 1992, figure 3
+  .notes.handout: :t
+    The \emph{object-specific preview benefit}: ‘observers can identify target 
+    letters that matched the preview letter from the same object faster than 
+    they can identify target letters that matched the preview letter from the 
+    other object’ \citep[p.\ 2]{Krushke:1996ge}.
+
++slide
+  +img_clip('kahneman_1992_table4.png')
+  p.source Kahneman et al 1992, table 4
+
++slide_middle
+  p.center object index / file
+  .notes: :t
+    To clarify terminology,
+    I should say that whereas I’m talking about object indexes,
+    researchers more typically interpret this research in terms of object
+    files. 
+    I’m sticking to object indexes rather than object files for 
+    reasons of simplicity and caution.
+    If you believe in object files then you can interpret what I’m saying
+    as referring to object files.
+    And if you have doubts about object files, you might still have reason
+    to accept that a system of object indexes exists.
+
++slide
+  p Assignments of object indexes can conflict with beliefs and knowledge states.
+  +img_clip('scholl_2007_fig4.png')
+  p.source Scholl 2007, figure 4
+  .notes: :t
+    In this scenario, 
+    a patterned square disappears behind the barrier; later a plain black ring emerges.  
+    If you consider speed and direction only, these movements are consistent with there being just one object.
+    But given the distinct shapes and textures of these things, it seems all but certain that there must be two objects.
+    Yet in many cases these two objects will be assigned the same object index \citep{flombaum:2006_temporal,mitroff:2007_space}.
+    So one signature limit of systems of object indexes is that information about speed and distance can override information about shape and texture.
+  .notes: :t
+    This system of object indexes
+    does not involve belief or knowledge
+    and may assign indexes to objects in ways that are inconsistent with
+    a subject’s beliefs about the identities of objects 
+    \citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}  
+
+
+
+//- HERE
+//- 
+  Idea is (a) link object indexes to Spelke Principles of Object Perception
+  [see dev.min pp. 52 ff]
+  (b) then put the following on object indexes & causation into a separate unit
+  (the point is that (i) object indexes need to track interactions, and (ii) 
+  Kruske and Fragassi; and (iii) mention Rips, 2011)
+
++slide_middle
+  p.center What principles characterise how object indexes are assigned and maintained?
+  .notes: :t
+    To see the need for principles,
+    return to the old-fashioned logistician who is keeping track of supply trucks.
+    In doing this she has only quite limited information to go on.
+    She receives sporadic reports that a supply truck has been sighted at one or another location.
+    But these reports do not specify which supply truck is at that location.
+    She must therefore work out which pin to move to the newly reported location.
+    In doing this she might rely on assumptions about the trucks’ movements being constrained to trace continuous paths, and about the direction and speed of the trucks typically remaining constant.
+    These assumptions allow her to use the sporadic reports that some truck or other is there in forming views about the routes a particular truck has taken.
+    A system of object indexes faces the same problem when the indexed objects are not continuously perceptible.
+    What assumptions or principles are used to determine whether this object at time $t_1$ and that object at time $t_2$ have the same object index pinned to them?
+
++slide({bkg:'DSC_1028.JPG'})
+  .notes: :t
+    [ducks picture]
+    Is one object index assigned or two? 
+    Assigning object indexes requires segmentation.
+
++slide
+  p.center
+    +img_clip('spelke_1990_fig2ab.png', 'rect(0px,320px,214px,0px)')
+  p.source Spelke, 1990 figure 2a
+  .slide(style='margin-top:254px')
+    ul
+      li cohesion
+        span.principle.cohension: :t
+          —‘two surface points lie on the same object only if the points are linked by a path of 
+          connected surface points’
+      li rigidity
+        span.principle.rigidity —‘objects are interpreted as moving rigidly if such an interpretation exists’
+        .handout &nbsp;
+  .notes: :t
+    Consider a stick moving behind a screen, so that the middle part of it is occluded.
+    Assigning one index even though there is no information about continuity of surfaces
+    may depend on analysis of motion.
+    
+    
+
++slide
+  .container_12
+    .grid_6
+      +img_clip('franconeri_2012_fig2ai.png')
+      p &nbsp;
+    .grid_5
+      p.em-above principle of continuity---
+      p an object traces exactly one connected path over space and time
+  p.source Franconeri et at, 2012 figure 2a (part)
+  .notes: :t
+    [Here we’re interested in the issue rather than the details: the point is just that
+    continuity of motion is important for assigning and maintaining object indexes.]
+  .notes: :t
+    Suppose object indexes are being used in tracking four or more objects simultaneously and one of these objects—call it the \emph{first object}—disappears behind a barrier.
+    Later two objects appear from behind the barrier, one on the far side of the barrier (call this the \emph{far object}) and one close to the point where the object disappeared (call this the \emph{near object}).
+    If the system of object indexes relies on assumptions about speed and direction of movement, then the first object and the far object should be assigned the same object index.
+    But this is not what typically happens.
+    Instead it is likely that the first object and the near object are assigned the same object index.%
+    \footnote{
+    See \citet{franconeri:2012_simple}.  Note that this corrects an earlier argument for a contrary view \citep{scholl:1999_tracking}.
+    }
+    If this were what always happened, then we could not fully explain how infants represent objects as persisting by appeal to object indexes because, at least in some cases, infants do use assumptions about speed and direction in interpolating the locations of briefly unperceived objects.
+    There would be a discrepancy between the Principles of Object Perception which characterise how infants represent objects as persisting and the principles that describe how object indexes work.
+  .notes: :t
+    But this is not the whole story about object indexes.
+    It turns out that object indexes behave differently when just one object is being tracked and the object-specific preview benefit is used to detect them.
+    In this case it seems that assumptions about continuity and constancy in speed and direction do play a role in determining whether an object at $t_1$ and an object at $t_2$ are assigned the same object indexes \citep{flombaum:2006_temporal,mitroff:2007_space}.
+    In the terms introduced in the previous paragraph, in this case where just one object is being tracked, the first object and the far object are assigned the same object index.
+    This suggests that the principles which govern object indexes may match the principles which characterise how infants represent objects as persisting.
+    
+    
+//- ------------------
+//- the principles
+
+//-
+//- +slide
+//-   p Principles of Object Perception
+//-   .handout \textbf{Principles of Object Perception \citep{Spelke:1990jn}}
+//-   ul.handout.show
+//-     li cohesion
+//-       span.principle.cohension: :t
+//-         —‘two surface points lie on the same object only if the points are linked by a path of
+//-         connected surface points’
+//-       .handout &nbsp;
+//-     li boundedness
+//-       span.principle.boundedness: :t
+//-         —‘two surface points lie on distinct objects only if no path of connected surface points
+//-         links them’
+//-       // … the boundedness principle implies that … two distinct objects cannot interpenetrate.’
+//-       .handout &nbsp;
+//-     li rigidity
+//-       span.principle.rigidity —‘objects are interpreted as moving rigidly if such an interpretation exists’
+//-       .handout &nbsp;
+//-     li no action at a distance
+//-       span.principle.distance: :t
+//-         —‘separated objects are interpreted as moving independently of one another if such an
+//-         interpretation exists’
+//-       .handout &nbsp;
+//-   p.right (Spelke 1990)
+//-   .handout.notes: :t
+//-     \begin{enumerate}
+//-
+//-     \item We (as perceivers) start with a cross-modal representation of three-dimensional
+//-     perceptual features which includes their locations and trajectories.
+//-
+//-     \item Our task is to get from these representations of features to representations of objects.
+//-
+//-     \item We assign object indexes in a way that is consistent with certain principles
+//-     (perhaps including cohesion, boundedness, rigidity, and no action at a distance).
+//-     \end{enumerate}
+
+

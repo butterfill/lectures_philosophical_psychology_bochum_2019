@@ -1,0 +1,84 @@
+---cson
+layout: 'deck_unit'
+title: "Kourtis et al (2014)"
+tags: []
+description: ""
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
+
++slide({bkg:'kourtis_2014_fig1c-joint.png'})
+  p.source Kourtis et al (2014, figure 1c)
+  .notes: :t()
+    I think we're a long way from having a large body of converging evidence for this conjecture,
+    but there is some that points in this direction.
+    One of the most relevant experiments is this one by \citet{kourtis:2014_attention}.
+  .notes: :t()
+    They contrasted a simple joint action involving two agents clinking glasses.
+
++slide({bkg:'kourtis_2014_fig1c-bimanual.png'})
+  p.source Kourtis et al (2014, figure 1c)
+
++slide({bkg:'kourtis_2014_fig1c-unimanual.png'})
+  p.source Kourtis et al (2014, figure 1c)
+
++slide({bkg:'kourtis_2014_fig1b.png'})
+  p.source Kourtis et al (2014, figure 1b)
+  .notes: :t()
+    Here's the procedure.
+
+
+section.slide
+  div(style="height:75px;")
+  .container_12.figures
+    .grid_4
+      +img('kourtis_2014_fig1c-joint.png','width:150px')
+      p.center joint
+    .grid_4
+      +img('kourtis_2014_fig1c-bimanual.png','width:150px')
+      p.center individual-bimanual
+    .grid_4
+      +img('kourtis_2014_fig1c-unimanual.png','width:150px')
+      p.center individual-unimanual
+  .notes: :t()
+    This is fine but what are we going to measure?
+  +reset
+    +_slide_inner
+      p.source Kourtis et al (2014, figure 1c)
+      div(style="height:300px;")
+      .slide
+        +blur('.source, .figures')
+        p.center CNV
+        .notes: :t
+          This is a signal of motor preparation for action which is time-locked to action onset.
+          In previous research, Kourtis et al show (i) that the CNV occurs when joint action
+          partners act, suggesting that when acting together we represent others' actions motorically
+          as well as our own \cite{kourtis:2012_predictive};
+          and
+          (ii) (roughly) a stronger CNV occurs in relation to actions of others one is engaged in joint action than
+          in relation to actions of others one is merely observing \cite{kourtis:2010_favoritism}.
+        .notes: :t
+          Kourtis et al hypothesised that in actions like clinking glasses,
+          A single outcome represented is motorically,
+          which triggers planning-like processes
+          concerning all the agents' actions.
+          This leads to the prediction that the CNV in joint action will resemble that occurring in
+          bimanual action more than that occuring in unimanual action.
+
+
+
++slide({bkg:'kourtis_2014_fig4a.png'})
+  p.source Kourtis et al (2014, figure 4a)
+  .notes: :t()
+    ... and this is exactly what they found.
+

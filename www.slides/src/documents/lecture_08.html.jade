@@ -1,0 +1,599 @@
+---cson
+layout: 'default2'
+title: 'Lecture 08: Mindreading / Metacognitive Feelings'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  
+  """
+lecture_date: '2016/12/01'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include units/tmp_mixins
+
+- var images = get_images('bali')
+
++title_slide({document:document, images:images})
+  .notes: :t
+
+
+
++slide_middle({bkg:'dual_process_operationalized_5.jpg'})
+  +blur('img.bkg', '5px')
+  .notes: :t
+    Recall what a Dual Process Theory of Mindreading claims.
+    The core claim is just this:
+  .step1
+    p.center.handout.notes.show Dual Process Theory of Mindreading: Schema
+    +fade('img.bkg')
+    p.handout.notes.show: :t
+      Two (or more) mindreading processes are distinct: the conditions which
+      influence whether they occur, and which outputs they generate, do not 
+      completely overlap.
+
++slide({bkg:'dual_process_operationalized_11.jpg'})
+
+
+
+  
++slide_middle
+  .notes: :t
+    To generate readily testable predictions, we need to go beyond the schematic 
+    part of a dual process theory, the part which is common to 
+    dual process theories of memory and of physical cognition.
+    We were focussed on mindreading in the last lecture;
+    but before that we also considered what are actually dual process theories of 
+    object cognition and goal tracking.
+  .notes: :t
+    In each domain,
+    we generate further predictions by filling in the 
+    the domain-specific parts of the dual process theory.
+  .notes: :t
+    table: domain / mechanism-or-model / signature limit / ref. for evidence
+  table.data
+    thead
+      tr
+        td domain
+        td mechanism/model
+        td signature limit
+        td source (e.g.)
+    tbody
+      tr
+        td objects
+        td object indexes
+        td featural cues
+        td Xu & Carey, 1996 
+      tr.even
+        td: p.mindreading minds
+        td minimal theory of mind
+        td identity
+        td Edwards & Low, 2017
+      tr
+        td actions
+        td motor processes
+        td own ability
+        td Kanakogi & Itakura, 2011
+  .slide
+    +highlight-row('.mindreading')
+    .notes: :t
+      Before going further,
+      I want to continue thinking about the case of mindreading,
+      to say a little more in defence of the dual-process theory of mindreading 
+      and explain how it answers the Three Questions about mindreading ...
+
++slide
+  .notes: :t
+    We have to go from the dual process schema to add claims about the 
+    nature of the processes. It’s these claims that give us a theory *of mindreading*.
+  .columns-2.dont-break-paragraphs
+    .mechanisms
+      p.invert 1. Mechanisms
+      p.em-above Conjecture: 
+        span Some mindreading processes are more 
+        span.automatic automatic
+        span  than others.
+      p.em-above Prediction: 
+        span Varying task instructions will differentially affect responses indicative of mindreading.
+    .models
+      //- +blur('.mechanisms')
+      p.invert 2. Models
+      p.em-above Conjecture:  
+        span Some automatic mindreading processes rely on 
+        span.minimal minimal 
+          span.model model
+          span s of the mental.
+        span.
+      p.em-above Prediction: 
+        span Those mindreading processes are subject to the 
+        span.sig-lim signature limits
+        span  of minimal models.
+      
+  .notes.handout.ctd (See \citealp{wang:2015_limits,low:2010_preschoolers,low:2014_quack,edwards:2017_reaction}; contrast \citealp{scott:2015_infants}.)
+      
+
+
+
++insert_unit({unit:'maymon', title_slide:false, images:images, handout:true})
+
+
+
++slide_middle
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+      limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+      
+  .q2
+    p.huge-glow: span Q2
+    p(style='margin-top:-4em;')
+      span Why do infants manifest abilities to 
+      span.track-beliefs track beliefs
+      span  in some cases but not all?
+  
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;'): :t
+      Why is belief-tracking in adults sometimes but not always automatic?
+      How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  +blur('.q1, .q2, .q3')
+  .slide
+    +unblur('.q3')
+    .notes: :t
+      I think we can provide candidate answers to two questions by appeal to a 
+      dual-process theory of mindreading.
+  .slide
+    +blur('.q3')
+    +unblur('.q1')
+  .slide
+    +blur('.q1')
+    +unblur('.q2')
+    .notes: :t
+      What about this question?  Minimal theory of mind is sufficient for solving
+      standard false belief tasks involving location. Why do infants fail many such tasks?
+
+
++insert_unit({unit:'mindreading_development_dual_process', title_slide:false, images:images, handout:true})
+
+
+
++slide_middle
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+      limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+  .q2
+    p.huge-glow: span Q2
+    p(style='margin-top:-4em;')
+      span Why do infants manifest abilities to 
+      span.track-beliefs track beliefs
+      span  in some cases but not all?
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;'): :t
+      Why is belief-tracking in adults sometimes but not always automatic?
+      How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  .notes: :t
+    I think we have now provided candidate answers to two questions by appeal to a 
+    dual-process theory of mindreading.
+
+
++insert_unit({unit:'maymon_motor', title_slide:false, images:images, handout:true})
+
+
++slide_middle
+  p.right.huge-glow dual-process theory of mindreading /end
+  
+
+
+mixin titleText()
+  p.huge-glow-invert-80(style="line-height:0.75em")
+    span Metacognitive Feelings
+  div(style="margin-top:-30px;")
+  p.right  s.butterfill@warwick.ac.uk 
+
+
+section.slide
+  .layer1
+    img.bkg(src='/img/DSC_2627_crop_announce.low.jpg')
+    
+  //- +anim('img.bkg',{opacity:0.5},{duration:10000})
+  +_slide_middle_inner({blend:'overlay'})
+    .firsttitle
+      +titleText
+  +reset
+    +_slide_middle_inner({blend:'multiply'})
+      .secondtitle
+        +titleText
+      //- +style('.secondtitle p',{opacity:0.6})
+  //- +style('.firsttitle',{opacity:0})
+  //- +anim('.firsttitle',{opacity:1},{duration:1000})
+
+  .notes: :t
+    Metacognitive Feelings
+  .notes: :t
+    Now I want to link the discussion of mindreading back to the discussion
+    of object cognition.
+    You almost certainly do not remember that we ended Lecture 05 with an
+    unresolved and rarely considered problem
+    about object cognition ...
+
++insert_unit({unit:'object_index_problem', title_slide:false, images:images, handout:true})
+
+
++slide_middle
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      Can the Revised CLSTX conjecture explain performance on habituation and
+      violation-of-expectation tasks?
+
+
+//- * * * * 
+//- dual process problem
+//- * * * * 
+
++slide({bkg:'dual_process_operationalized_12.jpg'})
+  .notes: :t
+    Earlier I suggested that
+    (a) a dual process theory can help to explain an apparently anomalous pattern of 
+    developmental findings, and that (b) by linking infants’ and 
+    adults’ performance, it generates testable predictions.
+  .notes: :t
+    [repeat] In essence, the idea is this.  If the processes dominating R1 and R2 are different,
+    the different relations between age and performance these responses reveal simply indicate
+    that the two processes develop differently.
+  .notes: :t
+    The process or processes dominating R1 changes relatively little over development, while the
+    process dominating R2 undergoes gradual change over months or years.
+    
+  .slide
+    +blur('img.bkg')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.huge-glow challenge
+      .notes: :t
+        Accepting a dual process theory complicates answering the question we really want
+        answered about the emergence of knowledge in development.
+      .notes: :t
+        [Notes are a bit messy in what follows: originally had three challenges, decided
+        to simplify by collapsing the first two; then realised would make more sense just
+        to introduce the first challenge (and then talk about the third challenge after 
+        (partially) solving the first).]
+      .notes: :t
+        If we do accept a dual process theory in any domain, we are immediately confronted by
+        three questions.
+        \begin{enumerate}
+        \item What is the link between the early-developing processes and the looking-time responses?
+        [Why is a relatively autoamtic process not only influencing attention and motor actions but also
+        causing a ‘stop and think’ reaction?]
+        \item What, if anything, ensures that the processes ever nonaccidentally provide matching answers? [synchronic]
+        \item How do processes which are relatively unchanging over development influence the 
+        emergence, in development, of knowledge of simple facts about particular things? [diachronic]
+        \end{enumerate}
+
+
+
+
++slide({bkg:'dual_process_operationalized_14.jpg'})
+  +blur('img.bkg', '2px', 0)
+  +unblur('img.bkg')
+  .notes: :t
+    First challenge ... why is the early-developing process having effects on things
+    like looking times in habituation and violtion-of-expectation experiments but not
+    influencing things like verbal judgements and the final selection of an answer expressed
+    by selecting a key or a picture?
+  .notes: :t
+    This is a particularly tricky question when the infant or child is responding at chance on
+    an explicit measure like giving verbal judgements. Why is the implicit process not affecting
+    these judgements (or if it is, how is it doing so)?
+  .notes: :t
+    How if at all does the early-developing process influence verbal judgements in adults?
+    Do the processes have entirely independent effects on behaviour, or is there some kind
+    of interface?  If there’s an interface, how does this interface change over development?
+
+
+
++slide_rh_white({step:true})
+  .middle.everything
+    +run_across
+      p.center synchronic 
+      
+    .clear
+    +left_half
+      p.center early-developing process
+      p.center ↓
+      p.center 
+        span.qqq ???
+      p.center ↓
+      p.center looking duration 
+        br
+        span (or dishabituation)
+  
+      .notes: :t
+        So my question was how the early developing process might
+        explain patterns of looking duration in habituation and 
+        violation-of-expectation experiments.
+        My guess is that some operations of object indexes give rise to
+        metacognitive feelings, which in turn influence looking durations.
+  
+    +right_half({step:true})
+
+      div(style="margin-left:1em;margin-right:-1em")
+        p.center early-developing process
+        p.center ↓
+        p.center 
+          span.qqq ? ? ?
+        p.center ↓
+        p.center verbal response 
+          br
+          span (or keypress, ...)
+
+
++slide_middle
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      Can the Revised CLSTX conjecture explain performance on habituation and
+      violation-of-expectation tasks?
+  +blur('.q1', '2px', 0)
+  .q2
+    p.huge-glow: span Q2
+    p(style='margin-top:-4em;'): :t
+      Why do automatic processes measurably influence things like looking times in habituation
+      and violation-of-expectation experiments but not verbal judgements or an answer given by
+      pressing a key or selecting picture?
+
+      
++insert_unit({unit:'sense_of_agency', title_slide:true, images:images, handout:true})
+
+
++insert_unit({unit:'metacognitive_feelings', title_slide:true, images:images, handout:true})
+
++slide_middle
+  .notes: :t
+    Recall the Crude Picture of the Mind. 
+    (Epistemic, Perceptual, Motoric).
+    I wanted to resist introducing an additional state, core cognition or core knowledge.
+  .notes: :t
+    However I have ended up at least postulating one further thing ...
+  +crude_picture_of_the_mind
+    li.slide.metacognitive metacognitive feelings
+      .notes: :t
+        metacognitive feelings
+    .slide
+      +highlight-row('.metacognitive', 'white')
+
+
+
+
+
+
++slide({bkg:'dual_process_operationalized_12.jpg'})
+  +blur('img.bkg', '2px', 0)
+  +reset-escape-inner
+    +_slide_middle_inner
+      p.center.huge-glow challenge?
+  .notes: :t
+     Are metacognitive feelings relevant for solving the Challenges?
+
+
++slide({bkg:'dual_process_operationalized_14.jpg'})
+  .notes: :t
+    Recall the first challenge ... 
+
+
+
++slide({bkg:'wynn_1992_fig1a.png'})
+  p.source Hood et al, 2013
+  .notes: :t
+    For example here.
+  .slide
+    +blur('img.bkg, .source')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.huge-glow feeling of surprise
+        .slide
+          +fade('img.bkg, .source')
+          p.notes.handout.show
+            span ‘the intensity of felt surprise is not only influenced by the unexpectedness of the surprising 
+            span event, but also by the degree of the event’s interference with ongoing mental activity, [...]
+          p.notes.handout.ctd.show
+            span the effect of unexpectedness on surprise is [...] partly mediated by mental interference’
+  
+          .notes.handout.ctd \citep[p.~271]{reisenzein2000subjective}
+          p.right.grey-text Reisenzein et al, 2000 p. 271
+        
+          
+    
+
+
+
+
+
+
+
++slide_rh_white
+  .middle.everything
+    +run_across
+      p.center synchronic 
+      
+    .clear
+    +left_half
+      p.center early-developing process
+      p.center ↓
+      p.center 
+        span.qqq ???
+          br
+          span &nbsp;
+        span.met-feel.remove-me metacognitive feeling
+          br
+          span &nbsp;
+      p.center ↓
+      p.center looking duration 
+        br
+        span (or dishabituation)
+  
+    +right_half
+
+      div(style="margin-left:1em;margin-right:-1em")
+        p.center early-developing process
+        p.center ↓
+        p.center 
+          span.qqq2 ???
+            br
+            span &nbsp;
+          span.met-feel-assoc.remove-me metacognitive feeling
+            br
+            span + 
+            span.learnt-associations learnt associations
+        p.center ↓
+        p.center verbal response 
+          br
+          span (or keypress, ...)
+    
+    .slide
+      +remove('.qqq')
+      +unremove('.met-feel')
+      .notes: :t
+        This is the first of \textbf{two functions metacognitive feelings play in linking 
+        early-developing processes to epistemic processes}:
+        They create stop-and-think moments.
+    .slide
+      +remove('.qqq2')
+      +unremove('.met-feel-assoc')
+      .notes: :t
+        The second function they play is to inform judgements, as when they cause you
+        to judge that something is familiar, or surprising, or done by you. 
+        Their playing this second function depends on learnt associations between metacognitive 
+        feeling, contextual features and interpretations (e.g. surprise, agency, whatever).
+      .notes: :t
+        [It doesn’t matter whether there are several distinct feelings or one (e.g. 
+        surprise and agency may or may not be distinct feelings). As long as they reliably occur in 
+        sufficiently different contexts and as long as associations can be formed between the 
+        feelings, the contexts and the interpretations, the judgements will be secured.]
+      .notes: :t
+        [Dokic rejects the 'water diviner' model because he recognises, correctly, that it cannot
+        explain how metacognitive feelings could play this second function. But whereas he suggests
+        that they have intentional contents in virtue of which they play it, I think that 
+        associations suffice.]
+    .slide
+      +highlight('.learnt-associations')
+      .notes: :t
+        It’s the need for learnt associations to get from metacognitive feelings to judgements which
+        explains why the early-developing process can guide judgements in adults and older children
+        but not infants.  
+        This also explains why the early-developing process and the learnt judgements can come
+        apart in adults: judgements do not depend entirely on metacognitive feelings; they can
+        occur in their absence, and can override them on occasion.
+        [Illustration: Maymon et al helping study]
+
++slide
+  .notes: :t
+    [This is an optional illustration of the POSSIBLE effects of 
+    metacognitive feelings: skip over it but come back to it in discussion.
+    NB: we don’t know what the metacognitive feeling might be in this case 
+    so it’s not the strongest example, more of an illustration of what to look for.]
+
+  +img_clip('maymon_2017_fig4b.png')
+  p.source Maymon et al (pilot), figure 4B, used with permission
+  .notes: :t
+    Here you can see how participants moved in the false belief location condition.
+    There was also a true belief condition.
+  .notes: :t
+    As you can see, participants mostly started off in the right direction.
+    This is the swerve.
+  .notes: :t
+    But there is quite a bit of switching, and a number of 
+  .notes: :t
+    The swerve is correlated with the protagonists’ belief state: 
+    which direction they swerve in differs between true and false beliefs.
+    The direction of swerve is also correlated with proactive gaze
+
+
+
+
++slide_middle
+  .notes: :t
+    This view is consistent with what scientists conjecture about the role of metacognitive feelings
+    in adults ... I’m just extending ideas about adults to development ...
+    
+  p.notes.handout.show: :t
+    ‘the SoA [sense of agency] may provide an important experiential marker, both for alerting to
+    the need for corrective action, and for guiding learning’
+  .notes.handout.ctd \citep[p.~11]{sidarus:2017_how}
+  p.right.grey-text Sidarus et al, 2017 p. 11
+  
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘metacognitive feelings ... allow a transition from the implicit-automatic mode to the
+      explicit-controlled mode of operation.’
+    .notes.handout.ctd \citep[p.~150]{koriat:2000_feeling}
+    p.right.grey-text Koriat, 2000 p. 150
+
+
++slide_middle
+  p.huge-glow.center conclusion
+  
++slide_middle
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      Can the Revised CLSTX conjecture explain performance on habituation and
+      violation-of-expectation tasks?
+  .q2
+    p.huge-glow: span Q2
+    p(style='margin-top:-4em;'): :t
+      Why do automatic processes measurably influence things like looking times in habituation
+      and violation-of-expectation experiments but not verbal judgements or an answer given by
+      pressing a key or selecting picture?
+
+  +blur('.q2', '2px', 0)
+  .notes: :t
+    Can the Revised CLSTX conjecture explain performance on habituation and
+    violation-of-expectation tasks?
+  .notes: :t
+    Yes: object indexes -> metacognitive feelings -> looking times
+  .slide
+    +blur('.q1')
+    +unblur('.q2')
+    .notes: :t
+      Why do automatic processes measurably influence things like looking times in habituation
+      and violation-of-expectation experiments but not verbal judgements or an answer given by
+      pressing a key or selecting picture?
+    .notes: :t
+      Because metacognitive feelings can cause you to stop and look but they don’t have
+      intentional objects.
+
+
++slide_middle
+  p Dual process theories 
+  p.indent of mindreading, object cognition and goal tracking
+  p need
+  p metacognitive feelings.
+
+      
++slide_middle
+  p.handout.show Conjecture
+  .notes: :t
+    Let me offer you a conjecture which I have not argued for but which is perhaps tempting given
+    the difficulty of identifying ways in which processes interact ...
+
+  .notes.handout.ctd.show.em-above
+    span Only metacognitive feelings 
+    br
+    span.indent (and behaviours, and other intentional isolators)
+    br
+    span connect early-developing processes for tracking objects, causes, actions and minds 
+    br
+    span to the epistemic.
+
+  .notes: :t
+    This conjecture linked to a deeply unfashionable picture of the mind as a loosely assembled
+    bunch of systems which can be modified more or less independently of each other ...
+

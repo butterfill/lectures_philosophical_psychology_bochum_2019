@@ -1,0 +1,136 @@
+---cson
+layout: 'deck_unit'
+title: "Introduction to Motor Representation"
+tags: []
+description: ""
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
+
+//-  intro to motor representation
++slide_middle({bkg:'egg.jpg'})
+  +hide('img.bkg', 0)
+  p.center motor representation
+    span.step2.hide s represent goals
+    br
+    span.step3.hide and trigger planning-like processes
+  .notes: :t
+    Let me mention some almost uncontroversial facts about motor representations and 
+    their action-coordinating role.
+  .slide
+    .notes: :t
+      Explaining the coordination of 
+      sequences of very small scale actions appears to involve representations but not, or not 
+      only, intentions.  To a first approximation, \emph{motor representation} is a label for 
+      such representations.  But why accept that motor representations exist?
+    +show('img.bkg')
+    .notes: :t
+      Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.  
+      Even for such mundane, routine actions, the constraints on adequate performance can vary significantly depending on subtle variations in context. For example, the position of a hot pan may require altering the trajectory along which the egg is transported, or time pressures may mean that the action must be performed unusually swiftly on this occasion.
+      Further, many of the constraints on performance involve relations between actions occurring at different times.
+      To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces to which you will subject the egg in lifting it later.
+      It turns out that people reliably grip objects such as eggs just tightly enough across a range of conditions in which the optimal tightness of grip varies.
+      This indicates (along with much other evidence) that information about the cook’s anticipated future hand and arm movements appropriately influences how tightly she initially grips the egg (compare \citealp{kawato:1999_internal}).
+      This anticipatory control of grasp, 
+      like several other features of action performance (\citealp[see][chapter 1]{rosenbaum:2010_human} for more examples),
+      is not plausibly a consequence of mindless physiology, nor of intention and practical reasoning.
+      This is one reason for postulating motor representations, which characteristically play a role in coordinating sequences of very small scale actions such as grasping an egg in order to lift it.%
+      \footnote{% 
+      Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
+      }
+  .slide
+    +show('.step2')
+    +blur('img.bkg', '50px', 1000)
+    .notes: :t
+      What do motor representations represent? An initially attractive, conservative 
+      view would be that they represent bodily configurations and joint displacements, 
+      or perhaps sequences of these, only.
+      However there is now a significant body of evidence that some motor representations 
+      do not specify particular sequences of bodily configurations and joint displacements, 
+      but rather represent outcomes such as the grasping of an egg or the pressing of a switch.  
+      These are outcomes which might, on different occasions, involve very different bodily 
+      configurations and joint displacements
+      (see \citealp{rizzolatti_functional_2010} for a selective review).
+    .notes: :t
+      Such outcomes are abstract relative to bodily configurations and joint displacements 
+      in that there are many different ways of achieving them.
+    .notes: :t
+  .slide
+    +show('.step3')
+      
+      
+      
+//- Use either short or long illustration ...
+
+//- //- SHORT ILLUSTRATION
+//- +slide_middle({bkg:'planning_like/Slide2.jpg'})
+//-   .notes: :t
+//-     Motor representations can also trigger processes which are like planning in some respects.
+//-     These processes are planning-like in that they involve starting with representations of relatively distal outcomes and gradually filling in details, resulting in motor representations whose contents can be hierarchically arranged by the means-end relation \citep{bekkering:2000_imitation,grafton:2007_evidence}.
+//-     Some processes triggered by motor representations are also planning-like in that they involve meeting constraints on the selection of means by which to bring about one outcome that arise from the need to select means by which, later, to bring about another outcome \citep{jeannerod_motor_2006, zhang:2007_planning, rosenbaum:2012_cognition}.
+//-     So motor processes are planning-like both in that they involve computation of means-ends relations and in that they involve satisfying relational constraints on the selection of means.
+//-   p.center motor representation
+//-     span.step2 s represent goals
+//-     br
+//-     span.step3 and trigger planning-like processes
+
+
+//- LONGER ILLUSTRATION
+
+    
++slide({bkg:'action_hierarchy_diagrams/Slide1.jpg'})
+  .notes: :t
+    Consider this case.
+    An agent fills a glass by holding it in one hand, holding the bottle in the other,
+    bringing the two together and pouring from the bottle into the glass. 
+  .notes: :t
+    [*demonstrate].
+
++slide({bkg:'action_hierarchy_diagrams/Slide2.jpg'})
+  .notes: :t
+    It’s a familiar idea that motor representations of outcomes resemble intentions in that they can 
+    trigger processes which are like planning in some respects. 
+    These processes are like planning in that they involve starting with representations of relatively 
+    distal outcomes and gradually filling in details, resulting in a structure of motor representations 
+    that can be hierarchically arranged by the means-end relation \citep{bekkering:2000_imitation,
+    grafton:2007_evidence}. 
+    Processes triggered by motor representations of outcomes are also planning-like in that they 
+    involve selecting means for actions to be performed now in ways that anticipate future actions  
+    \citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}. 
+
++slide({bkg:'action_hierarchy_diagrams/Slide3.jpg'})
+  .notes: :t
+    Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the 
+    exchange between her two hands. 
+    (If her action is fluid, 
+    she may proactively adjust her left hand in advance of the mug’s being lifted by her right hand 
+    \citep[compare][]{diedrichsen:2003_anticipatory,hugon:1982_anticipatory, lum:1992_feedforward}.) 
+    How could such tight coordination be achieved? 
+    Part of the answer involves the fact that motor representations and processes concerning the 
+    actions involving each hand are not entirely independent of each other. 
+    Rather there is a plan-like structure of motor representation for the whole action and motor 
+    representations concerning actions involving each hand are components of this larger plan-like structure. 
+    It is in part because they are components of a larger plan-like structure that the movements of 
+    one hand constrain and are constrained by the movements of the other hand. 
+  .slide
+    +blur('img:eq(0)')
+    .notes: :t
+      But how is any of this relevant to our question about in virtue of what an individuals’ actions can
+      have a goal?
+    .notes: :t
+      The idea is that motor representations can ground the directedness of actions to goals,
+      much as intentions can.
+      For, like intentions, motor representations represent outcomes, trigger
+      planning-like processes which compute means-ends relations, and thereby provide 
+      for the coordination of actions.
+    

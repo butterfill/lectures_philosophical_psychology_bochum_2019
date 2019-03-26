@@ -1,0 +1,289 @@
+---cson
+layout: 'deck_unit'
+title: "Objections to Davidson’s Theory of Radical Interpretation"
+tags: []
+description: """
+  There are some compelling objections to 
+  Davidson’s account of radical interpretation 
+  which motivate searching for ways to improve it.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+
+
++slide_middle
+  .handout (1) No account of social cognition when the targets are wordless agents.
+  p.center Minds without words
+  .notes: :t
+    Dennett: his account is fine for targets of interpretation who lack words,
+    but it offers no way of exploiting evidence about
+    linguistic behaviours in his account of radical interpretation.
+  .notes: :t
+    Davidson: his view has the converse weakness.
+    (Why is this a weakness?  Our inability to use words in communicating with
+    an alien species would not necessarily prevent us from coming to know
+    much about their minds and actions.)
+  .notes: :t
+    An adequate theory of radical interpretation ought to avoid both weaknesses:
+    it should characterise inferences for targets of interpretation without words,
+    and it should characterise the additional complexities for radical 
+    interpretation entailed by the use of words.
+
++slide_middle
+  .handout (2) No account of non-propositional mental phenomena, such as the unfolding of emotions.
+  p.center Emotions unfold
+  .notes: :t
+    What is the point of being there with someone while it’s happening to her?
+    Being there with someone often enables you to know and to regulate---and 
+    even to share, sometimes---what she’s feeling. ...
+  .notes: :t
+    Why is this an objection to the claim that Davidson’s accounnt of 
+    Radical Interpretation is a fully adequate computational description 
+    of social cogntion in humans?  Let me explain ...
+
++slide_middle
+  .handout.notes.show
+    p.one.hem-around 1. On Radical Interpretation (and the Intentional Stance), the outputs of social cognition are (i) propositional attitude ascriptions and (ii) action predictions.
+    .slide
+      p.two.hem-around 2. Emotions unfold ...
+      +fade('.one')
+    .slide
+      p.three.hem-around 3. ... and this is not comprehensible as a series of changes in propositional attitudes.
+      +fade('.two')
+    .slide
+      p.four.hem-around So: 4. Understanding the way emotions unfold is not a matter of ascribing propositional attitudes or predicting actions.
+      +fade('.three')
+    .slide
+      p.five.hem-around But: 5. Humans do sometimes understand the way anothers’ emotions are unfolding.
+      +fade('.four')
+    .slide
+      p.six.hem-around So: 6. Radical Interpretation (and the Intentional Stance) is not a fully adequate computational description of human social cognition.
+      +fade('.five')
+
+
++slide_middle
+  .handout (3) Indeterminacy of reference
+  p.center Indeterminacy of reference
+  .notes: :t
+    On Davidson’s account of radical interpretation, we can think of its upshot
+    as an assignment of propositions to sentences.
+    The propositions give the truth conditions, or meanings, of the sentences and 
+    so enable us to identify the target’s beliefs and other propositional attitudes.
+  .notes: :t
+    Because the evidence Davidson considers is attitudes towards whole sentences,
+    it turns out that, for any assignment of propositions to sentences,
+    there are ways of generating an alternative assigment of propositions to sentences
+    which is exactly as well supported by the evidence as the original assignment
+    of propositions to sentences is.
+  .notes: :t
+    So on Davidson’s account of radical interpretation, there is no possibility 
+    of uniquely determining the truth conditions, or meanings, of sentences.
+  .notes: :t
+    This is analogous to having a computational theory of a GPS device on which 
+    there is just no possibility of the device distinguishing between its being here
+    and its being at the same point on the opposite side of the earth.
+  .notes: :t
+    Let me illustrate how the indeterminacy arises ...
+  .slide
+    p.em-above 
+    table.data
+      thead
+        tr
+          td
+          td ordinary
+          td contrived
+      tbody
+        tr.odd
+          td names
+          td ‘Beatrice’ refers to Beatrice
+          td ‘Beatrice’ refers to shadow-Beatrice
+        tr.even
+          td 
+            span.step2.hide predicates
+          td 
+            span.step2.hide ‘... is happy’ - is true of happy things
+          td 
+            span.step2.hide ‘... is happy’ - is true of things that are the shadows of happy things
+    .notes: :t
+      [Use Shoemaker’s shadows.]
+    .slide
+      +show('.step2')
+      .notes: :t
+        Incidentally, a similar objection involving indeterminacy arises for Dennett.
+      .notes: :t
+        What does the objection tell us?
+        If I gave you a computational theory of the GPS device that suffered from 
+        indeterminacy, you would rightly reject that theory because the device
+        can, as a matter of fact, determine which side of the planet it is on.
+        But should we take the same attitude towards Davidson’s theory.
+        He says not ...
+  .slide
+    +collapse('table')
+    p.handout.notes.show.em-above: :t
+      ‘It makes no sense, on this approach, to complain that a theory comes up with 
+      the right truth conditions time after time, but has the logical form 
+      (or deep structure) wrong. We should take the same view of reference.’
+    .handout.notes.ctd \citep[p.~223]{Davidson:1977kn}
+    p.right.grey-text Davidson (1977, p. 223)
+    .notes: :t
+      But pointing ...
+  
+
++slide_middle
+  .handout (4) A dilemma about The Evidence: actions or joint displacements
+  p.center A dilemma about The Evidence: 
+    span.hide.low-level joint displacements
+    span  or  
+    span.hide.actions actions
+  .notes: :t
+    The evidence Davidson starts from is changes in the attitude of holding
+    a sentence true.  To be detectable, such changes must involve the target
+    of interpretation uttering a sentence.
+    How are such events represented at the outset of radical interpretation?
+  .slide
+    +show('.low-level')
+    .notes: :t
+      If they are represented merely as sequences of joint displacements,
+      bodily configurations and sounds, then we need an account of how it is determined
+      which events are changes in the attitude of holding a particular sentence true.
+  .slide
+    +show('.actions')
+    .notes: :t
+      If, on the other horn, they are represented as intentional actions, then
+      we are presupposing some insight into the contents of the target of radical
+      interpretation’s intentions.  
+      We know that she has an intention to express a particular attitude towards
+      a particular sentence.
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘a radical interpreter is not, at the beginning of his study, informed about 
+      any of the basic propositional attitudes of his subject.’
+    .notes.handout.ctd \citep[p.~17]{Davidson:1984pr}
+    p.right.grey-text Davidson (1984, 17)
+    .notes.handout: :t
+      ‘The important limitation is that [the radical interpreter] doesn’t know in 
+      detail the contents of any of the propositional attitudes of the person to 
+      be interpreted: she doesn’t know what he intends, believes, wants or means 
+      by what he says.’ \citep[p.~]{Davidson:1994ff}
+      
+  .slide
+    +invert('.actions')
+    .notes: :t
+      Davidson might take this horn of the dilemma and just insist that 
+      his view of what an account of radical interpretation aims to achieve 
+      is a bit less exciting than I have been suggesting.
+      It doesn’t start from no insight into what someone intends, just relatively little.
+    .notes: :t
+      I think this response would be unsatisfactory given our interests in 
+      social cognition.  The hardest part is surely to understand the step from
+      *no* insight into others’ minds and actions to *some* such insight.
+      If Davidson’s account of radical interpretation is really just about 
+      the step from *some* insight into others’ minds and actions to a bit more 
+      insight, it might be interesting but it isn’t the theory we were looking for.
+      It won’t after all provide us with a computational theory of social cognition.
+  .slide
+    +uninvert('.actions')
+    +invert('.low-level')
+    .notes: :t
+      Can Davidson instead take the first horn of the dilemma and say that the changes 
+      in attitude are represented merely as sequences of joint displacements,
+      bodily configurations and sounds?
+    .notes: :t
+      He might insist that as long as there is some account of how we get from the
+      joint displacement to the changes in attitude towards the sentence, 
+      there is no problem. 
+    .notes: :t
+      So on this horn, Davidson’s radical interpretation project is the computational
+      theory of social cognition which we are looking for.  But it is incomplete because 
+      it doesn’t include an account of the transition from
+      joint displacements, bodily configurations and their effects (such as sounds)
+      to changes in attitude towards the truth of sentences.
+    .notes: :t
+      On the face of it, this doesn’t sound like there’s going to be an objection
+      to Davidson here.  But things get very interesting when we consider what is
+      currently known about how this transition is made.
+      Essentially, we will see that the capacities involved in getting from joint displacements,
+      bodily configurations and their effects (such as sounds) to goal-directed actions
+      provides a significant form of social cognition in its own right.
+    .notes: :t
+      [This line of objection leads beautifully into speech perception and the motor theory!]
+
+
+
+
++slide_middle
+  p.center diagnosis 
+    span.step2.hide 
+  .notes: :t
+    I think all of these objections arise from a single source.
+    Davidson’s account of radical interpretation starts and ends with 
+    linguistic expressions of changes in attitudes towards whole sentences.
+    It doesn’t consider simple object-directed actions like reaching for a mug
+    or catching a ball, and it doesn’t consider nonlinguistic communicative 
+    activities like pointing; nor does it consider expressions of emotion like 
+    some smiles and grimaces.
+
+
+
++slide_middle
+  p.huge-glow conclusion 1
+  .notes.show
+    p.center Social cognition needs a theory of radical interpretation ...
+    .slide
+      p.center ... but we don’t have one.
+
+
++slide_middle
+  p: span Way forward?
+  .hem-around-children
+    p.first.indent: span --- break it down
+      span.step2.hide  ... perception 
+      span.step3.hide or goal ascription
+    
+    p.second.indent 
+      span --- not just observation: 
+      span.interaction interaction
+      span.interaction.hide.q ???
+  .notes: :t
+    So what next?
+    We have a choice.
+  .slide
+    +highlight-row('.first')
+    .notes: :t
+      I take the view that social cognition involves multiple systems 
+      which operate on quite different principles.  So because I think
+      of an account of radical interpretation as providing a computational
+      description of a system, I have to reject the idea that there is just
+      one account of radical interpretation.
+      Instead we need multiple accounts of radical interpretation for
+      the multiple systems involved in social cognition.
+    .notes: :t
+    .notes: :t
+      In thinking about how to break it down, there are two possibilities.
+    .slide
+      +show('.step2')
+      .notes: :t
+        One possibility would be to consider whether we can 
+        perceptually experience mental states.
+        This appears to involve taking a position substantially at odds with Davidson’s account
+        of radical interpretation insofar as the computational theory will look
+        quite different for perception ... the evidence that we start from will
+        not be linguistic expressions of changes in attitude towards sentences,
+        and the sorts of inference we make will probably not have the causal character
+        of the inferences Davidson makes use of in his account of radical interpretation.
+    .slide
+      +show('.step3')
+      .notes: :t
+        A different possibility would be to try to continue developing Davidson’s account of
+        radical interpretation by thinking about this question:
+        How do humans make the transition from bodily configurations, joint displacements
+        and their effects (e.g. sounds) to goal-directed actions?
+      .notes: :t
+        [I think that these are not strictly speaking different alterantives.
+        Categorical perception of expressions of emotion is a form of goal ascription,
+        just as speech perception is.
+        So the Teleological Stance provides the computational description common to the
+        most fundamental forms of social cognition.]

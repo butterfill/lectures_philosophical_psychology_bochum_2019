@@ -1,0 +1,199 @@
+---cson
+layout: 'deck_unit'
+title: "Davidson’s Theory of Radical Interpretation"
+tags: []
+description: """
+  What is Davidson’s account of radical interpretation?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+//-
+  START: go back to the preference ascription example and point out
+  that choices are a function of belief AND desire.
+  You might think that adding language will help, but of course
+  an utterance is a function not only of belief and desire but also
+  of what you take the words to mean.
+  So introducing language  makes things if anything more complex:
+  linguistic actions are a function of the interdependent effects of 
+  beliefs, desires and meanings.
+  Davidson’s aim is to show how we can infer all three of these things
+  from linguistic acts.
+
+
++slide_middle
+  +radicalInterpretationProject({handout:false, step:false})
+  .slide
+    +invert('.the-evidence')
+    .notes: :t
+      I’m still not completely happy that I’ve properly explained the evidence 
+      which is the starting point.
+      Perhaps this is a better way to put it:
+      the evidence is evidence that you could possess in advance of knowing
+      what any particular individual believes, desires, intends and so on.
+    .notes: :t
+      I’ve just been saying that Dennett’s account of the Intentional Strategy
+      isn’t much use as an accounnt of radical interpretation because it doesn’t
+      explain what sort of evidence would be useful in inferring facts about 
+      minds.
+      Fortunately Davidson’s theory is more illuminating ...
+      
++slide_middle
+  .notes.show
+    p Evidence:
+    p At 
+      span.time-t time t,
+      span    
+      span.Ayesha Ayesha
+      span  
+      span.changes-in-belief comes to
+      span  
+      span.hold-true hold 
+        span.sentence-S ‘Sta piovendo’
+        span  true
+      span  because 
+      span.p  it’s raining
+      span .
+  //- .slide
+  //-   +invert('.Ayesha')
+  //-   .notes: :t
+  //-     Ayesha is just the person we are trying to interpret;
+  //-     she is the target of radical interpretation.
+  //-     We want to what her sentences mean and what she believes.
+  .slide
+    +uninvert('.Ayesha')
+    +invert('.hold-true')
+    .notes: :t
+      Holding true is an attitude Ayesha has to a sentence.
+      To hold a sentence true is to have a belief.
+      So the evidence we are starting with is really evidence about beliefs.
+      But, importantly, can know that Ayesha holds a sentence true 
+      without knowing what the sentence means and so without knowing
+      what Ayesha believes.
+    .notes: :t
+      So evidence of this kind is evidence that is in principle available to a radical
+      interpreter at the start.
+  .slide
+    +uninvert('.hold-true')
+    +invert('.p')
+    .notes: :t
+      The ‘p’ picks out a proposition; it may be that Ayesha holds this 
+      sentence true because it is raining, because her eyes are open,
+      and because there are splashes in the puddle on the roof outside her window.
+  .slide
+    +invert('.changes-in-belief')
+    .notes: :t
+      Note that we are interested not in which sentences Ayesha holds true
+      but in what causes here to change her beliefs---what causes her to
+      come to hold a sentence true.
+  .slide
+    +uninvert('.changes-in-belief')
+    .notes: :t
+      At any particular time there will be many 
+      propositions p such that Ayesha comes to hold S true because p.
+      As already mentioned, Ayesha comes to hold the sentence ‘It is raining’
+      true because it is raining, because she has her eyes open 
+      and because there are splashes in the puddle on the roof outside her window.
+    .notes: :t
+      There is, then, no hope of inferring what Ayesha believes 
+      from a single change in Ayesha’s holding a sentence true.
+  .slide
+    +uninvert('.p')
+    +invert('.time-t')
+    .notes: :t
+      But we can consider many different events of Ayesha coming to hold a sentence true
+      at different times.
+      Consider, for instance, that on one occasion Ayesha comes to hold the sentence ‘It is raining’
+      true because she has her eyes open.
+      On another occasion, she comes to hold this sentence true while cycling through 
+      an intense storm; on this occasion, the fact that she has her eyes open plays no role
+      in her coming to hold the sentence ‘It is raining’ true.
+  .slide
+    +uninvert('.time-t')
+    p.em-above Generalisation:
+    p Ayesha comes to hold 
+      span.sentence-S ‘Sta piovendo’
+      span  true because it’s raining.
+    .notes: :t
+      The evidence confirms or falsifies a generalisation of the form, 
+      Ayesha comes to hold S true because p.
+    .notes: :t
+      The hope is this: if we have enough evidence, we will find that 
+      the only generalisation supported by all the evidence is this one:
+      Ayesha comes to hold the sentence ‘It is raining’ true because it is raining.
+  .slide
+    +invert('.sentence-S')
+    .notes: :t
+      This is unrealistic, of course.
+      However Davidson’s theory doesn’t strictly require this because sentences 
+      are things with structure.  They contain elements, the words, which reoccur
+      in different sentences.
+      Davidson exploits this in making his theory of radical interpretation
+      much more sophisticated than the simplified version I am describing,
+      and avoiding the implausible notion that we would observe Ayesha coming to hold 
+      each sentence true millions of times.
+      But we can ignore the complication as it won’t be central to our interests in
+      social cognition (it would be more relevant for philosophy of language).
+  .slide
+    +uninvert('.sentence-S')
+    .notes: :t
+      So, idealising and simplifying, we have lots of evidence which,
+      for each of many sentences like ‘It’s raining’, supports a unique 
+      generalisation about why Ayesha comes to hold that sentence true.
+      For example, the only generalisation supported by all the evidence
+      for the sentence ‘It’s raining’ is the one that says Ayesha
+      holds this sentence true because it’s raining.
+  .slide
+    p.em-above Assumption:
+    p Ayesha’s beliefs true
+    .notes: :t
+      We already saw that this assumption is required by Dennett’s Intentional Strategy.
+      The assumption allows us to draw a conclusion about meaning:
+  .slide
+    p.em-above Conclusion:
+    p ‘Sta piovendo’ is 
+      span.tiff true if and only if
+      span  it’s raining.
+  .slide
+    +invert('.tiff')
+    .notes: :t
+      For our purposes you could replace this by ‘S means that p’, if you 
+      believed in meanings.
+      (There are good reasons for appealing to truth conditions but they aren’t
+      central on this course.)
+  .slide
+    +uninvert('.tiff')
+    p.notes.show.indent ... so when Ayesha comes to hold ‘Sta piovendo’ true, she comes to believe that it’s raining.
+       
++slide_middle
+    p.notes.show Why is Davidson’s a better theory?
+    .notes: :t
+      Because it specifies the evidence from which radical interpretation can start,
+      and because it allows us to connect multiple events and so at least have a chance
+      of distinguishing different errors someone might make.
+    .slide
+      p.em-above.notes.show How can it be elaborated?
+      .slide
+        p.indent.notes.show --- exploit sentence structure
+      .slide
+        p.indent.notes.show --- include desire
+    .slide
+      p.em-above.notes.show What are its limits?
+      .slide
+        p.indent.notes.show --- no use for wordless targets
+      .slide
+        p.indent.notes.show --- bold assumption about evidence
+        .notes: :t
+          Can we really know which events are events of Ayesha coming to hold a 
+          particular sentence true in advance of knowing anything about
+          her mind and actions?
+          On the face of it, holding true will involve an intententional
+          action!
+        
+    
+      
+      
+  

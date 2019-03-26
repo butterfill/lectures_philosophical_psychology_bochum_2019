@@ -1,0 +1,180 @@
+---cson
+layout: 'deck_unit'
+title: "A Puzzle about Thought, Experience and the Motoric"
+tags: []
+description: """
+  Motor representations occur when merely observing others act and sometimes influence thoughts about the
+  goals of observed actions. Further, these influences are content-respecting: what you think about an
+  action sometimes depends in part on how that action is represented motorically in you. The existence of
+  such content-respecting influences is puzzling. After all, motor representations do not feature
+  alongside beliefs or intentions in reasoning about action; indeed, thoughts are inferentially isolated
+  from motor representations. So how could motor representations have content-respecting influences on
+  thoughts?
+  """
+---
+
+include ../../../fragments/unit_mixins
+
++slide_middle
+  p.hem-around In action observation, motor representations of outcomes 
+    span.step2.hide ...
+  p.hem-around.step2.hide ... underpin functional goal ascription
+    span.step3.hide , and
+  p.hem-around.step3.hide sometimes facilitate the identification of goals in thought.
+  .slide
+    +show('.step2')
+  .slide
+    +show('.step3')
+  .slide
+    p.em-above So
+    p where motor representations influence a thought about an action being directed to a particular outcome, there is normally a motor representation of this outcome, or of a matching outcome.
+    .notes: :t
+      This conclusion entails that motor representations have content-respecting
+      influences on thoughts. It is the fact that one outcome rather than another is represented
+      motorically which explains, at least in part, why the observer takes this outcome (or a matching
+      one) to be an outcome to which the observed action is directed.
+  .slide
+    p.em-above But
+    p how could motor representations have content-respecting influences on thoughts 
+      span.step4.hide given their inferential isolation
+      span ?
+    .notes: :t
+      But how could motor representations
+      have content-respecting influences on thoughts? One familiar way to explain content-respecting
+      influences is to appeal to inferential relations. To illustrate, it is no mystery that your beliefs
+      have content-respecting influences on your intentions, for the two are connected by processes of
+      practical reasoning. But motor representation, unlike belief and intention, does not feature in
+      practical reasoning. Indeed, thought is inferentially isolated from it. How then could any motor
+      representations have content-respecting influences on thoughts?
+    .slide
+      +show('.step4')
+
+section.slide
+  +_slide_middle_inner
+    .q.hide
+      p.center.huge-glow-180.hem-above ?
+  +reset
+    +_slide_middle_inner
+      p.center motor representation ->  
+        span.experience experience of action
+        span   -> thought
+      .notes: :t
+        In something like the way experience may tie thoughts about seen objects to the representations
+        involved in visual processes, so also it is experience that connects what is represented
+        motorically to the objects of thought.
+      .notes: :t
+        [significance]
+        This may matter for understanding thought about action. On the face of it, the inferential
+        isolation of thought from motor representation makes it reasonable to assume that an account of
+        how humans think about actions would not depend on facts about motor representation at all. But
+        the discovery that motor representations sometimes shape experiences revelatory of action
+        justifies reconsidering this assumption. It is plausible that people sometimes have reasons for
+        thoughts about actions, their own or others', that they would not have if it were not for their
+        abilities to represent these actions motorically. To go beyond what we have considered here, it
+        may even turn out that an ability to think about certain types of actions depends on an ability
+        to represent them motorically.
+      .notes: :t
+        [consequence]
+        One consequence of our proposal concerns how experiences of one's own actions relate to
+        experiences of others' actions. For almost any action, performing it would typically involve
+        receiving perceptual information quite different to that involved in observing it. This may
+        suggest that experiences involved in performing a particular action need have nothing in common
+        with experiences involved in observing that action. However, two facts about motor
+        representation, its double life and the way it shapes experience, jointly indicate otherwise. For
+        actions directed to those goals that can be revealed by experiences shaped by motor
+        representations, there are plausibly aspects of phenomenal character common to experiences
+        revelatory of one's own and of others' actions. In some respects, what you experience when others
+        act is what you experience when you yourself act.
+    .slide
+      +show('.q')
+    .slide
+      +highlight('.experience', 'red')
+      .notes: :t
+        The claim that there is expeirence of action is based on an earlier argument.
+        I now want to review and then object to that argument.
+        (The conclusion may be correct, but the argument does not establish it.)
+
+
+
++slide_middle
+  p.center What do we experience when we encounter others’ 
+    span.speech (speech)
+    span  actions?
+  p.em-above.center Indirect Hypothesis 
+    span.direct-h vs Direct Hypothesis
+  
+
++slide({bkg:'categorical_perception_of_speech/Slide10.jpg'})
+  .notes: :t
+    The difference in differences ...
+  .notes: :t
+    Here is the argument. Consider two sequences of sensory encounters: (a) a sequence of sensory
+    encounters with two phonetic events that do not differ with respect to category (both are
+    realisations of /d/, say), and (b) a sequence of sensory encounters with two phonetic events that do
+    so differ (one is a realisation of /d/ the other of /g/, say).11 Let the events encountered in the
+    first sequence differ from each other acoustically in the same way and by the same amount as the
+    events encountered in the second sequence differ from each other. (That it is possible to find two
+    such pairs of events follows from the fact that we enjoy categorical perception of speech.) The two
+    sequences are depicted in Fig. 3. Now:
+
++slide
+  p.hem-around (1) The second sequence of sensory encounters, (b), differ from each other more in phenomenal character than the first sequence of sensory encounters, (a), differ from each other.
+  p.hem-around.slide (2) This difference in differences in phenomenal character is a fact in need of explanation.
+  .slide
+    p.hem-around.claim3 (3) The difference cannot be fully explained by appeal only to perceptual experiences as of acoustic features of the stimuli.
+  p.hem-around.slide (4) The difference can be explained in terms of perceptual experiences as of phonetic properties.
+  p.hem-around.slide (5) There is no better explanation of the difference.
+  +attr('.claim3', 'style', 'z-index:0')
+  .slide
+    +highlight-row('.claim3', 'red')
+    .notes: :t
+      This is less obvious than it might seem.
+      We infer it from the facts about relevant acoustic features of the stimuli, and the
+      way acoustic processes work.
+      But we know that motor processes are also at work.
+      And we can’t assume that motor processes do not influence acoustic processes.
+      In fact we know that motor processes affect acoustic expeirences.
+
++slide_middle
+  p.center motor processes affect acoustic expeirences
+
+
++slide
+  +img_clip('repp_knoblich_2009_fig3.png')
+  p.source Repp & Knoblich 2009, figure 3
+  .notes: :t
+    Repp and Knoblich (\citeyear{repp:2007_action}) asked expert and non-expert pianists to press two keys in sequence, where the first key was sometimes to the left, and sometimes to the right, of the second key.  The key presses produced an \emph{ambiguous tone pair}, that is, a pair with the property that the first tone is sometimes perceived as lower in pitch than the second whereas at other times it is perceived  as higher in pitch \citep{deutsch:1987_tritone}.   
+    The tones always occurred in the same order regardless of which key was pressed first.  By asking subjects to report how they perceived the relative pitches of the tones, Repp and Knoblich found that, for the expert pianists, the direction of the key presses influenced the perceived direction of the change in pitch. Could what influences experience in this case be not a motor representation but merely the occurrence of a movement, or perhaps even the perception of a movement of the subject's own fingers? Against these possibilities, note that the effect was not observed in non-expert pianists: for them the direction of movement did not measurably influence the perceived pitches. Since the direction of movement was the same for both groups, if the influence were due to movement only we would expect it to occur irrespective of piano-playing expertise. Instead it seems likely that differences in expertise between the two groups of subjects affected how the movements they performed were represented motorically, and that these differences in motor representation are in turn what explains their perceptions of relative pitches.  
+  .notes: :t
+    It is not only in performing action that motor representation can influence experience: the same can occur in observing action. Thus in another experiment, Repp and Knoblich (\citeyear{repp:2009_performed}) compared observing someone else perform a sequence of key presses with performing the same sequence oneself.  They found the same effect on experiences of an ambiguous tone pair in expert pianists regardless of whether they were observing or performing the action.  
+    Sometimes, which judgement about pitch an experience provides a reason for depends on what is represented motorically; and this dependence is systematic, of course, for it reflects how pianos work.
+    These studies, and others like them,%
+    \footnote{
+    See also \citet{zwickel:2010_interference} who investigate effects of action on visual experience of motion, and \citet{schutz-bosbach:2007_perceptual} for a review.
+    }
+    provide relatively direct evidence that motor representation can shape experience.
+
++slide_middle
+  p.center motor processes affect acoustic expeirences
+
++slide
+  p.hem-around (1) The second sequence of sensory encounters, (b), differ from each other more in phenomenal character than the first sequence of sensory encounters, (a), differ from each other.
+  p.hem-around (2) This difference in differences in phenomenal character is a fact in need of explanation.
+  p.hem-around.claim3 (3) The difference cannot be fully explained by appeal only to perceptual experiences as of acoustic features of the stimuli.
+  p.hem-around (4) The difference can be explained in terms of perceptual experiences as of phonetic properties.
+  p.hem-around (5) There is no better explanation of the difference.
+  +highlight-row('.claim3', 'red')
+  +attr('.claim3', 'style', 'z-index:0')
+
++slide_middle
+  p.center What do we experience when we encounter others’ 
+    span.speech (speech)
+    span  actions?
+  p.em-above.center Indirect Hypothesis 
+    span.direct-h vs Direct Hypothesis
+  
++slide_middle
+  p.huge-glow Puzzle
+  p(style='margin-top:-1.2em') How could motor representations have content-respecting influences on thoughts given their inferential isolation?
+
+

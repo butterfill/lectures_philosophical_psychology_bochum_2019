@@ -1,0 +1,87 @@
+---cson
+layout: 'deck_unit'
+title: "The Intentional Stance"
+tags: []
+description: """
+  The ‘Intentional Stance’ (also ‘Intentional Strategy’) is Dennett’s name for 
+  a procedure for ascribing desires, beliefs and other mental states to an individual
+  without assuming any prior knowledge of what distinguishes her mind from others’ minds.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
++slide_middle
+  .notes: :t
+    Dennett doesn’t use the term ‘radical interpretation’ but his description
+    of the Intentional Stance does provide a candidate account of radical 
+    interpretation.
+  .notes.handout.show
+    p ‘the intentional stance ...
+    p.slide ‘first you decide to treat the object whose behavior is to be predicted as a rational agent; 
+    p.slide ‘then you figure out what 
+      span.beliefs-ought beliefs that agent 
+        span.ought1 ought
+        span  to have
+      span  , given its place in the world and 
+      span.purpose its purpose
+      span . 
+    p.slide ‘Then you figure out what 
+      span.desires-ought desires it 
+        span.ought2 ought
+        span  to have
+      span , on the same considerations, 
+    .slide 
+      p ‘and finally you predict that this 
+        span.rational-agent rational agent
+        span  will act to further its 
+        span.goal goals
+        span  in the light of its beliefs’
+      .handout.notes \citep[p.~17]{Dennett:1987sf}
+      .notes: :t
+        A couple of things about this are confusing.
+  p.right.grey-text Dennett (1987, 17)
+  .slide
+    +invert('.purpose')
+    .notes: :t
+      First, what is the purpose of me?
+  .slide
+    +uninvert('.purpose')
+    +invert('.goal')
+    .notes: :t
+      Second, where do these goals come from?
+      Does Dennett mean desires here?
+  .slide
+    +uninvert('.goal')
+    +invert('.beliefs-ought')
+    .notes: :t
+      This does make sense to me.
+      Dennett derives this rule from the fundamental injunction to attribute all the beliefs
+      the agent ought to have:
+    .notes.handout: :t
+      ‘one rule for attributing beliefs in the intentional strategy is this: attribute as beliefs all the truths relevant to the system's interests (or desires) that the system's experience to date has made available’ \citep[p.~18]{Dennett:1987sf}
+  .slide
+    +uninvert('.beliefs-ought')
+    +invert('.desires-ought')
+    .notes: :t
+      But what about the desires?
+      Which desires ought we to have?
+      Here Dennett is less helpful.
+    .notes: :t
+      I prefer gold rings to platinum ones; you prefer the converse.
+      Does one of us have the wrong preferences?
+    .notes.handout: :t
+      ‘We attribute the desires the system ought to have. That is the fundamental rule. It dictates, on a first pass, that we attribute the familiar list of highest, or most basic, desires to people: survival, absence of pain, food, comfort, procreation, entertainment.’ \citep[p.~20]{Dennett:1987sf}
+    .notes: :t
+      He also suggests attributing desires for things we believe are good for us,
+      or that will further other desires.
+      From the context, I think Dennett’s idea is that, in essence, we all desire 
+      a small number of basic things but differ in our beliefs about how to get these.
+  .slide
+    +uninvert('.desires-ought')
+    .notes: :t
+      Put aside for the moment the question of whether this succeeds as an account
+      of radical interpretation.
+      I’ll come back to this.
+      First I want to be sure we understand the point of giving
+      an account of radical interpretation.

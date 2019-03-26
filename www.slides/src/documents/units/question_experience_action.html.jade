@@ -1,0 +1,73 @@
+---cson
+layout: 'deck_unit'
+title: "A Question about Experiences of (Speech) Actions"
+tags: []
+description: """
+  What do we experience when we encounter others’ actions?
+  One hypothesis (the Indirect Hypothesis) says that such experiences are all experiences of bodily
+  configurations, of joint displacements and of effects characteristic of particular actions.
+  Another hypothesis (the Direct Hypothesis) says that 
+  in observing an action we sometimes experience not only bodily configurations and joint displacements
+  and their sensory effects but also the action as directed to a particular outcome.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide_middle
+  +timer-element('timer1','120s', {hide:true})
+    .question
+      p.center What do we experience when we 
+        br
+        span encounter others’ 
+        span.speech.hide speech 
+        span  actions?
+      p.em-above.center.indirect-h.hide Indirect Hypothesis 
+        span.direct-h.hide vs Direct Hypothesis
+    
+  .slide
+    +show('.speech')
+  .slide
+    +show('.indirect-h')
+    .notes.handout: :t
+      Indirect Hypothesis: experiences revelatory of action are all experiences of bodily
+      configurations, of joint displacements and of effects characteristic of particular
+      actions. Some such experiences are influenced by motor representations in ways that
+      reliably improve veridicality. And such experiences can provide reasons for judgements
+      about the goals of actions providing that the subject knows, or is entitled to rely on,
+      certain facts about which bodily configurations, joint displacements and sensory effects
+      are characteristic of which actions.
+      
+  .slide
+    +show('.direct-h')
+    .notes.handout: :t
+      Direct Hypothesis some experiences revelatory of action are experiences of actions as
+      directed to particular outcomes. In observing action we experience not only bodily
+      configurations, joint displacements, sounds and the rest but also goal-directed actions.
+      Further, such experiences stand to motor representations somewhat as perceptual
+      experiences stand to perceptual representations. These experiences provide reasons for
+      judgements in something like the way that, on some views, perceptual experience of a
+      physical object might provide a reason for a judgement about that object.
+  
+
++slide_middle
+  audio(width="720", height="300", controls, src="img/mcgurk_audio_only.mp3")
++slide_middle
+  video(width="720", height="300", controls, src="img/McGurk_large_crop.mp4")
++slide_middle
+  video(width="720", height="300", controls, src="img/McGurk_large.mp4")
+      
++slide_middle
+  +timer-element('timer1','120s', {hide:true})
+    .question
+      p.center What do we experience when we 
+        br
+        span encounter others’ 
+        span.speech.hide speech 
+        span  actions?
+      p.em-above.center.indirect-h.hide Indirect Hypothesis 
+        span.direct-h.hide vs Direct Hypothesis
+  +show('.speech, .indirect-h, .direct-h', 0)
+  +show-timer('timer1')
+  +start-timer('timer1')

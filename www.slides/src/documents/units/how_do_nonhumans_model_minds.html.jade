@@ -1,0 +1,213 @@
+---cson
+layout: 'deck_unit'
+title: "The Question, version 0.2"
+tags: []
+description: """
+  ‘chimpanzees probably do not understand others in terms of a fully human-like belief–desire psychology’
+  (Call & Tomasello, 2008 p.~191)
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
++slide_middle
+  p.q What do 
+    span.infants infants
+    span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
+  +line-through('.infants')
+  
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘Comparative psychologists test for mindreading in non-human animals by determining whether they
+      detect the presence and absence of particular cognitive states in a wide variety of
+      circumstances. 
+    .notes.handout.ctd: :t
+      They eliminate potential confounding variables by ensuring that there is no one
+      observable state to which subjects might be responding’ 
+      \citep[p.~487]{halina:2015_there}.
+    p.right.grey-text Halina, 2015 p. 487
+    .notes: :t
+      If we agree with Halina that the ‘Logical Problem’ is a logical problem, should we
+      also accept her claim?
+    .notes: :t
+      I don’t think we should.
+      Researchers have so far focussed on a sceptical problem rather than a hypothesis,
+      but I think this is a mistake.
+  //-
+    .slide
+      p.em-above The ‘Logical Problem’ is a sceptical problem 
+      p ∴ 
+      p the evidence supports mindreading?
+
+
+
++slide_middle
+  p.center Requirement 1: Diversity in Strategies
+  .notes: :t
+    Should we conclude that all animals which can track mental states are doing so by virtue of 
+    representing them?  
+    Two versions of this objection: (a) cross-species:
+    How confident are we that ringtailed lemurs are doing what chimpanzees are doing?
+    (b) within an individual:
+    In humans and other animals, tracking mental states likely involves many different 
+    processes, including plenty of which that rely on simple cues.
+  .notes: :t
+    Requirement 1:
+    We need a theory that allows us to distinguish mental state tracking underpinned
+    by mindreading from other forms of mental state tracking
+
+        
++slide_middle
+  p.center.notes.show Requirement 2: Models
+  .notes: :t
+    The second question concerns how various individuals (or systems within them)
+    model minds and actions.
+    Let me explain with an illustration ...
+        
+section.slide: .middle
+  .clear
+  .container_12.em-above
+    .grid_9
+      p ‘chimpanzees understand … intentions … perception and knowledge,
+      p.step2.hide.hem-above: :t
+        ‘chimpanzees probably do not understand others in terms of a fully human-like belief–desire
+        psychology’ 
+      p.right.grey-text Call & Tomasello, 2008 p.~191
+    .grid_3
+      p.right
+        +img('call_tomasello.jpg', 'width:150px')
+    .handout: :t
+      ‘chimpanzees understand … intentions … perception and knowledge,’ but ‘chimpanzees probably do not
+      understand others in terms of a fully human-like belief–desire psychology’
+      \citet[p.~191]{Call:2008di}.
+  .slide
+    +show('.step2')
+    .notes: :t
+      After claiming that ‘chimpanzees understand … intentions … perception and knowledge,’
+      \citet{Call:2008di} qualify their claim by adding that ‘chimpanzees probably do not understand
+      others in terms of a fully human-like belief–desire psychology’ (p.~191).
+    .notes: :t
+      This is true.
+      The emergence in human development of the most sophisticated abilities to represent mental states
+      probably depends on rich social interactions involving conversation about the mental
+      \citep{Slaughter:1996fv, peterson:2003_opening, moeller:2006_relations}, on linguistic abilities
+      \citep{milligan:2007_language,kovacs:2009_early},
+      (\citet[p.~760]{moeller:2006_relations}: ‘Our results provide support for the concept that access
+      to conversations about the mind is important for deaf children’s ToM development, in that there was
+      a significant relationship between maternal talk about mental states and deaf children’s
+      performance on verbal ToM tasks.’)
+      and on capacities to attend to, hold in mind and inhibit things \citep{benson:2013_individual,
+      devine:2014_relations}.
+      These are all scarce or absent in chimpanzees and other nonhumans.
+      So it seems unlikely that the ways humans at their most reflective represent mental states will
+      match the ways nonhumans represent mental states.
+      Reflecting on how adult humans talk about mental states is no way to understand how others
+      represent them.
+      But then what could enable us to understand how nonhuman animals represent mental states?
+
++slide_middle
+  p.center.notes.show Requirement 2: Models
+  p.em-above.center How do chimps or jays variously model minds and actions?
+  
++slide_middle
+  p.center.notes.show ‘Nonhumans represent mental states’ is not a hypothesis
+  .notes: :t
+     ... or at least not one that generates readily testable predictions.
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘the core theoretical problem in contemporary research on animal mindreading is that the bar—the
+      conception of mindreading that dominates the field—is too low, or more specifically, that it is
+      too underspecified to allow effective communication among researchers, and reliable
+      identification of evolutionary precursors of human mindreading through observation and experiment’
+    .notes.handout.ctd \citep[p.~318]{heyes:2014_animal}
+    p.right.grey-text Heyes, 2014, p. 318
+
++slide({bkg:'folk_psychology_roots/Slide1.jpg'})
++slide({bkg:'folk_psychology_roots/Slide2.jpg'})
++slide({bkg:'folk_psychology_roots/Slide3.jpg'})
+
++slide_middle
+  p.center.notes.show Requirement 3: Predict Dissociations
+  .notes: :t
+    Let me explain by pointing to some cases in which chimpanzees fail to 
+    track others’ beliefs according to one measure but may succeed according to another ...
+
++slide
+  .krupenye_quote.hide.container_12: .grid_6
+    p.notes.handout.show
+      span ‘the present evidence may constitute an 
+      span.implicit implicit
+      span  understanding of belief’
+    .notes.handout.ctd \citep[p.~113]{krupenye:2016_great}
+    p.right.grey-text  Krupenye et al, 2016 p. 113
+  .clear
+  .figure.em-above
+    +img_clip('krachun_2009_fig2a.png', 'rect(0px,999px,999px,350px)')
+  p.source Krachun et al, 2009 figure 2 (part)
+  .notes: :t
+    Chimpanzee anticipatory looking indicates tracking others’ false beliefs.
+  .notes: :t
+    “Looking. Our second measure was whether participants looked at least once at the container the
+    competitor was not reaching for during the couple of seconds it took E to slide the platform towards
+    them.” “Note that proportions are based only on trials in which participants chose the same
+    container as the competitor [ie: incorrect trials], and for apes in version A the measure was face
+    rather than eye orientation. Bars show standard error. * p < .05.”
+  .slide
+    +clip('.figure img','auto')
+    .notes: :t
+      Contrast performance on a competitive object choice task. Ropey looking time measure, but nice to
+      have looking time and action measures for a single scenario.
+  .slide
+    +show('.krupenye_quote')
+    .notes: :t
+      [NB: This quote is from another paper.]
+  .slide
+    +invert('.implicit')
+    .notes: :t
+      This seems reasonable: just as there are dissociations among different measures
+      of mindreading in adults, and developmental dissociations, so it is plausible that
+      there will turn out to be dissociations concerning the tasks that adult humans
+      and adult nonhumans can pass.
+
++slide_middle
+  p.center.notes.show Requirement 3: Predict Dissociations
+  p.em-above.center.notes.show Which tasks should chimps and jays pass and fail?
+  .notes: :t
+    This requires a theory of processes
+    
++slide_middle
+  p.q What do 
+    span.infants infants
+    span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
+  +line-through('.infants')
+  .slide.hem-around-children
+    p.em-above Requirement 1: Diversity in Strategies
+    p Requirement 2: Models
+    p Requirement 3: Predict Dissociations
+
++slide_middle
+  .notes: :t
+    Earlier I mentioned this way of setting up the debate.
+    If you think about the requirements, I think you can see that this is not a 
+    productive way to shape the debate.
+  p.q What do 
+    span.infants infants
+    span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
+  +line-through('.infants')
+  .notes The standard debate
+  .wrong-qq
+    p.indent.em-above -- Is it 
+      span.mental-states mental states
+      span ?
+    p.indent.em-above -- Or only 
+      span.behaviours behaviours
+      span ?
+  .slide.em-above
+    +blur('.wrong-qq')
+    p What models of minds and actions, and of behaviours,
+    p and what kinds of processes,
+    p underpin mental state tracking in different animals?
+
+

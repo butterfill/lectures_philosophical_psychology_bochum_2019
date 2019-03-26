@@ -1,0 +1,346 @@
+---cson
+layout: 'deck_unit'
+title: "The Double Life of Motor Representation (recap)"
+tags: []
+description: """
+  Motor representations live a kind of double life. Although paradigmatically involved in performing
+  actions, they also occur when merely observing others act and sometimes influence thoughts about the
+  goals of observed actions. Further, these influences are content-respecting: what you think about an
+  action sometimes depends in part on how that action is represented motorically in you.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+.notes: :t
+  - - - - - - - -
+.notes: :t
+  Suppose you are reaching for, grasping, transporting and then placing a pen. Performing even
+  relatively simple action sequences like this involves satisfying many constraints that cannot
+  normally be satisfied by explicit practical reasoning, especially if performance is to be rapid and
+  fluent. Rather, such performances require motor representations.
+  These representations are paradigmatically involved in preparing, executing and monitoring actions.%
+  \footnote{%
+  See \citet{wolpert:1995internal, miall:1996_forward, jeannerod:1998nbo, zhang:2007_planning}.
+  Note that motor representations sometimes occur in an agent who has prepared an action and is required (as it turns out) not to perform it: although she has prevented herself from acting, motor representations specifying the action persist, perhaps because they are necessary for monitoring whether prevention has succeeded \citep{bonini:2014_ventral}.
+  }
+  But they also live a double life. Motor representations concerning a particular type of action are
+  involved not only in performing an action of that type but also sometimes in observing one. That is,
+  if you were to observe Ayesha reach for, grasp, transport and then place a pen, motor representations
+  would occur in you much like those that would also occur in you if it were you---not Ayesha---who was
+  doing this.
+.notes: :t
+  Converging evidence for this assertion comes from a variety of methods and measures ...
+  
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 1
+  +reset
+    +_slide_middle_inner
+      p Motor representations occur in action observation (in monkeys).
+  
+
++slide
+  +img_clip('fogassi_2005_fig1B.png')
+  p.source Fogassi et al 2005, figure 1B
+  .notes: :t
+    Single cell recordings in nonhuman primates show that, for each of several types of action, there are
+    populations of neurons that discharge both when an action of this type is performed and when one is
+    observed \citep{pellegrino:1992_understanding, gallese:1996_action,Fogassi:2005nf}.
+
++slide
+  +img_clip('fogassi_2005_fig1C.png')
+  p.source Fogassi et al 2005, figure 1B
+  .notes: :t
+    This is the performance data.  
+  .notes: :t
+    Note that the neurons are firing before the distinctive part of the action has
+    occured: that is, the peak is between movement onset and the monkey first touching
+    the object to be grasped.
+  .notes: :t
+    Now let’s compare 
+    performance with observation.
+      
++slide
+  +img('fogassi_2005_fig5.png')
+  p.source Fogassi et al 2005, figure 5
+  .notes: :t
+    ‘(A) Congruence between the visual and the motor response of a mirror neuron. Unit 169 has a stronger
+    discharge during grasping to eat than during grasping to place, both when the action is executed and
+    when it is observed. Conventions as in Fig. 1. (B) Population-averaged responses during motor and
+    visual tasks (12).’
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 1
+  +reset
+    +_slide_middle_inner
+      p Motor representations occur in action observation (in humans).
+    
+
+
++slide_middle
+  .handout.notes
+    p ‘word listening produces a phoneme specific activation of speech motor centres’ \citep{Fadiga:2002kl}
+    p.em-above ‘Phonemes that require in production a strong activation of tongue muscles, automatically produce, when heard, an activation of the listener's motor centres controlling tongue muscles.’ \citep{Fadiga:2002kl}
+  p ‘word listening produces a phoneme specific activation of speech motor centres’ 
+  .slide
+    p.em-above ‘Phonemes that require in production a strong activation of tongue muscles, automatically produce, when heard, an activation of the listener's motor centres controlling tongue muscles.’ 
+    .notes: :t
+      Good, but this stops short of showing that the motor activations
+      actually faciliatate speech recognition ...
+  p.right.grey-text Fadiga et al (2002)
+  .notes: :t
+    How did they reach these conclusions?
+  .slide.em-above
+    p bi
+      span.rr rr
+      span a / be
+      span.rr rr
+      span o (pseudo-word) / ba
+      span.ff ff
+      span o
+    .slide
+      +highlight('.rr', 'yellow')
+      .notes Inovlves tongue
+    .slide
+      +highlight('.ff', 'blue')
+      .notes No tongue required
+      .notes: :t
+        Given TMS to motor cortex tp amplify activity.
+        Prediction: MEP in tongue muscle stronger for ‘rr’ than ‘ff’.
+
++slide
+  +img_clip('fadiga_2002_fig2.png')
+  p.source Fadiga et al 2002, figure 2
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 1
+  +reset
+    +_slide_middle_inner
+      p Motor representations occur in action observation.
+  
+  
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 2
+  +reset
+    +_slide_middle_inner
+      p Motor representations facilitate goal 
+        span.tracking tracking
+        span .
+  .slide
+    +invert('.tracking')
+
+
++slide
+  img(src='/img/bruderer_2015_fig5.png', width='720px', style='filter:invert(1);')
+  p.source Bruderer et al, 2015 figures 1, 4
+  .notes: :t
+    Experiment 1 : shows that 6-month-old infants can distinguish a phonetic contrast
+    they have never heard before (one that occurs in Hindi but not their linguistic 
+    environments.) (The contrast used was the Hindi dental /d/̪ versus retroflex /ɖ/
+    distinction.)
+  .notes: :t
+    These graphs show a difference in mean looking time between cases in which phonemes 
+    are alternated and cases in which they are not. (Iff infants distinguish, they should
+    find the alternating phonemes more interesting.)
+  .notes: :t
+    Experiment 2: but not when they have a tongue-controlling dummy in their mouths
+  .notes: :t
+    Experiment 3: but yes when they have a dummy which leaves the tongue free.
+//-
+//- +slide({bkg:'kilner_2003/Slide1.jpg'})
+//-   .notes: :t
+//-     Behaviour: interference effects (ovalization)
+//- +slide({bkg:'kilner_2003/Slide2.jpg'})
+//- +slide({bkg:'kilner_2003/Slide3.jpg'})
+//- +slide({bkg:'kilner_2003/Slide4.jpg'})
+//- +slide({bkg:'kilner_2003/Slide5.jpg'})
+//- +slide({bkg:'kilner_2003/Slide6.jpg'})
+//-
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 2
+  +reset
+    +_slide_middle_inner
+      p Motor representations facilitate goal 
+        span.tracking tracking
+        span .
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 3
+  +reset
+    +_slide_middle_inner
+      p Motor representations in observation facilitate anticipation of others’ actions.
+    
+
++slide({bkg:'costantini_2002.png'})
+  p.source Costantini et al, 2012
+  .notes: :t
+    ‘We recorded proactive eye movements while participants observed an actor grasping small or large
+    objects. The participants' right hand either freely rested on the table or held with a suitable grip
+    a large or a small object, respectively. Proactivity of gaze behaviour significantly decreased when
+    participants observed the actor reaching her target with a grip that was incompatible with respect to
+    that used by them to hold the object in their own hand.’
+  .notes: :t
+    Follow ups: tie hands; TMS (impair)
+
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 3
+  +reset
+    +_slide_middle_inner
+      p Motor representations in observation facilitate anticipation of others’ actions.
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 4
+  +reset
+    +_slide_middle_inner
+      p: :t
+        Motor representations in observation facilitate explicit identification of others’ actions.
+      .slide
+        p.center Evidence : training effects
+
++slide({bkg:'casile_giese_fig1.png'})
+  p.source Casile & Giese 2006, figure 1
+  .notes: :t
+    Ability to perform actions: the 180 degree swing is standard walk, whereas
+    225 and 270 degree swings are not standard but can be trained.
+  .notes: :t
+    Visual discrimination task: ‘The visual recognition experiment was based on a forced-choice
+    paradigm. In each trial, two point-light stimuli consisting of a total of nine dots were presented
+    successively, at two different positions on the screen ... Participants had to respond whether both
+    stimuli represented the same gait pattern. Four cycles of each gait pattern were presented, each
+    cycle lasting for about 1.2 s. The start position within the gait cycle was randomized across
+    trials.’
+  .notes: :t
+    Then training while BLINDFOLDED.
+  .notes: :t
+    Then visual recognition task again.
+  .notes: :t
+    ‘One possible explanation of the observed motor-visual transfer is that the
+    participants might have picked up the rhythm that characterizes the trained
+    motor pattern, but not necessarily the details of the learned body
+    movement. To rule out this possibility, we performed a control experiment
+    in which the motor training was replaced by purely visual training.’
+
++slide
+  +img_clip('casile_giese_fig4A.png')
+  p.source Casile & Giese 2006, figure 4A
+  .notes: :t
+    Visual performance correlates with motor performance after (but not before) training.
+    (They also found no correlation with 225 degrees, which was not trained.)
+  .notes: :t
+    This effect is perhaps surprising given that your judgement ultimately rests on purely visual
+    information (this is the point of the lights) whereas nothing could be seen during the training.
+  .notes: :t
+    What explains this difference in judgement before and after training?  Training of this kind typically alters the way things are represented motorically \citep{Calvo-Merino:2006ru}.
+    \label{expertise_affects_motor}
+    For this reason, the increase in the probability of making accurate judgements about the goals of others' actions is plausibly a consequence of differences in motor representations in the observer.
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 4
+  +reset
+    +_slide_middle_inner
+      p: :t
+        Motor representations in observation facilitate explicit identification of others’ actions.
+      .slide
+        p.center Evidence : effects of neurological defects
+
+
++slide
+  +img_clip('pazzaglia_fig1bi.png')
+  p.source Pazzaglia et al 2007, figure 1B (part)
+  .notes: :t
+    task: hear sound, identify one of four pictures.
+  .notes: :t
+    Twenty-eight left-hemisphere-damaged patients with or without limb and/or buccofacial apraxia and
+    seven right- hemisphere-damaged patients with no apraxia were asked to match sounds evoking
+    human-related actions or nonhu- man action sounds with specific visual pictures.
+  .notes: :t
+    ‘In the novel sound-picture matching test used in this study, each patient was asked to listen to a
+    sound and then choose from among four pictures the one corresponding to the heard sound. The sounds
+    used included limb-related action sounds (LRAS), buccofacial-related action sounds (BRAS)
+    [ten sounds were transitive, i.e., object related (e.g., inflating a balloon) and ten were
+    intransitive, i.e., non object related (e.g., coughing). ], and non-human action-related sounds
+    (NHARS) [e.g. sea waves, breaking]’
++slide
+  +img_clip('pazzaglia_fig1bii.png')
+  p.source Pazzaglia et al 2007, figure 1B (part)
+
+
++slide
+  +img_clip('pazzaglia_2008_S1.png')
+  p.source Pazzaglia et al 2007, Appendix S1 (fragment)
+
+
++slide({bkg:'pazzaglia_2008_fig2.png'})
+  p.source Pazzaglia et al 2007, figure 2
+  .notes: :t
+    Beautiful results!
+  .notes: :t
+    Key: limb-related action sounds (LRAS), buccofacial-related action sounds (BRAS), and non-
+    human action-related sounds (NHARS)
+  .notes: :t
+    A+ apraxia; AB+ : buccofacial apraxia; AL+ limb apraxia; LBD: left brain damage; RBD: right brain damage
+
+
+//- Another illustration of MR facilitating identification : speech
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 4
+  +reset
+    +_slide_middle_inner
+      p: :t
+        Motor representations in observation facilitate explicit identification of others’ (speech) actions.
+    
++slide({bkg:'dausilio_2009_fig1.png'})
+  +style('img.bkg',{height:'600px'})
+  p.source D'Ausilio et al (2009, figure 1)
+  .notes: :t
+    ‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical activity specifically in the lip (LipM1) or tongue (TongueM1) area’
+    \citep[p.~381]{dausilio:2009_motor}
+  .notes: :t
+    ‘We hypothesized that focal stimulation would facilitate the perception of 
+    the concordant phonemes ([d] and [t] with TMS to TongueM1), but that 
+    there would be inhibition of perception of the discordant items 
+    ([b] and [p] in this case). Behavioral effects were measured via reaction 
+    times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}
+    
+  
++slide({bkg:'dausilio_2009_fig2.png'})
+  p.source D'Ausilio et al (2009, figure 1)
+  .notes: :t
+    ‘Effect of TMS on RTs show a double dissociation between stimulation 
+    site (TongueM1 and LipM1) and discrimination performance between class 
+    of stimuli (dental and labial). The y axis represents the amount of RT 
+    change induced by the TMS stimulation. Bars depict SEM. Asterisks 
+    indicate significance (p < 0.05) at the post-hoc (Newman-Keuls) comparison.’ 
+    \citep{dausilio:2009_motor}
+
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-150 4
+  +reset
+    +_slide_middle_inner
+      p: :t
+        Motor representations in observation facilitate explicit identification of others’ actions.
+

@@ -1,0 +1,172 @@
+---cson
+layout: 'default2'
+title: 'Lecture 09: Interaction in Radical Interpretation'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  
+  """
+lecture_date: '2016/12/08'
+hidden: true
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bali')
+
++title_slide({document:document, bkg:'AADSC_AB_8178.low.JPG'})
+  .notes: :t
+
+//-   What is a theory of radical interpretation: the question?
++insert_unit({unit:'radical_interpretation_question', title_slide:false, images:images, handout:true})
+
+//-   Illustrate with Dennett’s Intentional Stance
++insert_unit({unit:'dennett_intentional_stance', title_slide:false, images:images, handout:true})
+
+//- 
+  Status of a theory of radical interpretation: computational description
+  (Not what Davidson had in mind, perhaps.)
++insert_unit({unit:'social_cognition_vs_radical_interpretation', title_slide:false, images:images, handout:true})
+
+
++slide_middle
+  p.huge-glow conclusion 1
+  .notes.show
+    p.center Social cognition needs a theory of radical interpretation ...
+    .slide
+      p.center ... but we don’t have one.
+  .notes: :t
+    So far I’ve argued that we need a theory of radical interpretation
+    in order to understand social cognition because a theory of radical
+    interpretation provides a computational description of social cognition.
+  .notes: :t
+    Now I want to argue that there is a problem: 
+    we don't have an adequate theory of radical interpretation.
+    There are actually two main theories of radical interpretaion,
+    Davidson’s and Dennett’s, so strictly I should offer objections to 
+    both.  But here I’ll just consider Dennett’s theory.
+  
+//- 
+  We do not have a good theory of radical interpretation
+  --- Dennett 
++insert_unit({unit:'objection_to_intentional_stance', title_slide:true, images:images, handout:true})
+
+//- 
+  We do not have a good theory of radical interpretation
+  --- Davidson (requires language; also indeterminacy)
+//- Davidson’s theory
++insert_unit({unit:'unit_041', title_slide:true, images:images, handout:true})
+//- Objections to Davidson’s theory
++insert_unit({unit:'unit_061', title_slide:true, images:images, handout:true})
+
+
+
+//- 
+  Way forward: break it down
+  --- Teleological stance
++insert_unit({unit:'teleological_stance_v2', title_slide:true, images:images, handout:true})
+
+
++slide_middle
+  p.huge-glow conclusion 2
+  .notes.show
+    p.center The Teleological Stance is a starting point for a theory of radical interpretation ...
+    .slide
+      p.center ... but it’s limited.
+
+//- 
+  --- problems of opaque means (natural to think that we need belief ascription, but ...)
++insert_unit({unit:'teleological_stance_limits', title_slide:true, images:images, handout:true})
+  
++slide_middle
+  p.huge-glow conclusion 2
+  .notes.show
+    p.center The Teleological Stance is a starting point for a theory of radical interpretation ...
+    .slide
+      p.center ... but it’s limited.
+
+
+//- 
+  Interaction: your-goal-is-my-goal
+    
+  Claim: interaction in mindreading enables us to overcome problem of opaque means
+  without insight into beliefs or other mental states, so potentially provides a foundation
+  for understand these things.
+  
+  Claim: interaction in mindreading enables us to act as if we understand referential 
+  communication, so provides the basis for the beginning of referential communication.
++slide_middle
+  p: span Way forward?
+  .hem-around-children
+    p.first.indent: span --- break it down
+      span.step2  ... perception 
+      span.step3 or goal ascription
+    p.second.indent 
+      span --- not just observation: 
+      span.interaction interaction
+      span.interaction.hide.q ???
+  +highlight-row('.first')
+  .slide
+    +unhighlight-row('.first')
+    +highlight-row('.second')
+  .slide
+    +blur('span:not(.interaction)')
+    +show('.q')
+
++insert_unit({unit:'your_goal_is_my_goal', title_slide:true, images:images, handout:true})
+
+
+  
++slide_middle
+  p.huge-glow conclusion 3
+  .notes.show
+    p.center Interaction makes available routes to knowledge of the goals of actions.
+  .notes.handout: :t
+    Simple forms of interaction enable correct goal ascription in
+    situations where it would not otherwise be possible.
+    So if we are giving a computational description of 
+    social cognition, we must consider the interpreter as not merely
+    observing her target but also potentially interacting with her.
+  .notes: :t
+    I also want to make an observation which leads to a conjecture.
+    Simple forms of interaction simultaneously give rise to a
+    need to identify false beliefs and a means of distinguishing 
+    actions that are guided by such beliefs.
+    This suggests a conjecture: the ability to track false beliefs may be a
+    consequence of the ability to engage in simple forms of social interaction.
+
+
++slide_middle
+  p.invert Conclusions
+  .hem-around-children
+    .c1.slide
+      p 1. Social cognition needs a theory of radical interpretation ...
+      p.indent ... but we don’t have one.
+    .c2.slide
+      p 2. The Teleological Stance is a starting point for a theory of radical interpretation ...
+      p.indent ... but it’s limited.
+    .c3.slide
+      p 3. Interaction makes available routes to knowledge of the goals of actions.
+      
+      .notes: :t
+        This leaves open many outstanding questions.
+      .notes: :t
+        Are there further ways in which interaction matters in radical
+        interpretation? (Or is it merely a facilitator?)
+      .notes: :t
+        How does the theory sketched here contribute to problems of radical interpretation?
+        --- E.g. Indeterminacy resolved?
+      .notes: :t
+        ISSUE: Is there a deep theoretical 
+        obstacle to specifying canonical theory of mind?  Davidson’s
+        claims about normativity (norms of the observer ...)?
+      .notes: :t
+        ASIDE: Extend minimal theory of mind to include preferences, emotions
+      .notes: :t
+        How can we test theories of radical interpretation?
+        --- Signature limits (already mentioned for minimal theory of mind)
+
+
++insert_unit({unit:'nonreferential_communication', title_slide:true, images:images, handout:true})

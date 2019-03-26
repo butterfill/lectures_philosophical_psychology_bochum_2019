@@ -1,0 +1,921 @@
+ %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind: Lecture Notes}
+\def \isubtitle {Lecture 01}
+%comment some of the following out depending on whether anonymous
+\def \iauthor {Stephen A.\ Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+%\date{}
+
+%\input{$HOME/Documents/submissions/preamble_steve_paper4}
+\input{$HOME/Documents/submissions/preamble_steve_lecture_notes}
+
+%no indent, space between paragraphs
+\usepackage{parskip}
+
+%comment these out if not anonymous:
+%\author{}
+%\date{}
+
+%for e reader version: small margins
+% (remove all for paper!)
+%\geometry{headsep=2em} %keep running header away from text
+%\geometry{footskip=1.5cm} %keep page numbers away from text
+%\geometry{top=1cm} %increase to 3.5 if use header
+%\geometry{bottom=2cm} %increase to 3.5 if use header
+%\geometry{left=1cm} %increase to 3.5 if use header
+%\geometry{right=1cm} %increase to 3.5 if use header
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1}
+
+%avoid overhang
+\tolerance=5000
+
+%\setromanfont[Mapping=tex-text]{Sabon LT Std}
+
+
+%for putting citations into main text (for reading):
+% use bibentry command
+% nb this doesn’t work with mynewapa style; use apalike for \bibliographystyle
+% nb2: use \nobibliography to introduce the readings
+\usepackage{bibentry}
+
+%screws up word count for some reason:
+%\bibliographystyle{$HOME/Documents/submissions/mynewapa}
+\bibliographystyle{apalike}
+
+
+\begin{document}
+
+
+
+\setlength\footnotesep{1em}
+
+
+
+
+
+
+%---------------
+%--- start paste
+
+
+      
+I seize little Isabel and swing her around, thereby making her laugh and 
+breaking a vase.
+Asked about this I might say, ‘The goal of my actions was not to break the vase
+but only to make her laugh, of course.’
+In talking about goals in this way I am not talking about mental representations:
+I am talking about actual and possible outcomes of an action, things which did or might 
+have happened.
+ 
+A goal is an outcome to which an outcome is directed.
+ 
+\subsection{slide-3}
+For a process to track a goal of an action is for how that process unfolds to nonaccidentally
+depend in some way on whether that outcome is indeed a goal of the action.
+ 
+\subsection{slide-4}
+In this lecture I propose to introduce a developmental puzzle about goal tracking.
+Along the way I will also introduce some theories of goal-tracking, none of which 
+seems entirely adequate to the evidence.
+ 
+\subsection{slide-5}
+One last thing before I start: my focus is pure goal-tracking, that is, goal-tracking which
+does not depend on any information about mental states.
+ 
+I take pure goal-tracking to be a fundamental capacity, one which anchors abilities to 
+understand others’ minds and underpins capacities to perform joint actions.
+[Because it underpins our abilities to identify mental states and to generate predictions based on
+ascriptions of mental states.]
+ 
+\subsection{slide-2}
+ 
+ 
+\section{When can infants first track goals?}
+ 
+A variety of evidence indicates that 
+infants may be able to track goals from three months of age (or earlier).
+ 
+\subsection{slide-6}
+When can infants first track goals to which actions are directed?
+ 
+\subsection{slide-7}
+Consider a much-replicated study by Woodward and colleagues.
+ 
+\subsection{slide-8}
+'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'
+\citep[p.\ 153]{woodward:2001_making}
+ 
+\subsection{slide-9}
+Using a manipulation we’ll discuss later (‘sticky mittens’),
+\citet{sommerville:2005_action} used this paradigm to show that even
+three-month-olds can form expectations based on the goal of an action
+(for another study with three-month-olds, see also \citealp{luo:2011_threemonthold}).
+ 
+\subsection{slide-10}
+The studies we have considered so far focus on infants’ abilities to identify the targets of actions.
+They do not show that infants can identify the type of an action---for instance, whether it is a grasping or a pushing action.
+ 
+\subsection{slide-11}
+To say that infants can track  goals to which actions are directed implies that they can distinguish both the target and the type of an action.
+So can infants also distinguish between two actions which are directed to the same target but differ in type?
+ 
+\subsection{slide-12}
+To answer this question, we would ideally have pairs of scenarios in which the target of an action
+is kept constant while the type of action varies.
+To the extent that subjects respond appropriately to the difference in type of action, we can be
+confident that they can distinguish actions not just by their targets but also by their types.
+ 
+This is illustrated here, where you are habituated to a grasping event and the test events are
+(a) grasping but with novel kinematics (from a different angle), or (b) a novel goal event (pushing).
+ 
+Unfortunately, as far as I know this has not yet been done.
+But there are some studies which, although not intended to get at exactly the issue of whether
+infants track goals and not just targets of actions, do indirectly shed light on this issue.
+ 
+These studies demonstrate competence in goal-tracking from nine months of age, and give us no reason
+to doubt that, in simple enough cases, infants might show competence in goal tracking much earlier.
+ 
+\citet{Behne:2005dw} created just such pairs of contrasting scenarios.
+In one of their contrasts, an experimenter holds a ball out for an infant to grasp and then
+either ‘accidentally’ drops it or teasingly pulls it back.
+So in each case there is a goal-directed action involving the ball, but in one case the goal
+of the action is to pass the ball to the infant whereas in the other case the goal is to
+tease the infant.
+\citet[Study 2]{Behne:2005dw} found that nine-month-olds (but not six-month-olds)
+consistently and appropriately discriminated between these scenarios by, for example,
+banging more when the ball was ‘accidentally’ dropped than when it was teasingly retracted.
+This and other research
+(e.g. \citealp{ambrosini:2013_looking}) suggests that, at least from nine months of age,
+infants can indeed distinguish both the type and target of a goal-directed action.
+ 
+% \citet{ambrosini:2013_looking} is important: shows that type of grasp and not just target is tracked, implying that anticipatory looking is not merely perceptual animacy.
+ 
+\subsection{slide-13}
+Infants can track goals from nine months of age (or earlier).
+ 
+ 
+ 
+\section{How are infants first able to track goals?}
+ 
+The Teleological Stance provides a computational description of goal tracking.
+It hinges on the principle that the goals of an action are those outcomes which the means are a
+best available way of brining about.
+Given this principle, we can infer goals from means by identifying which outcomes the means 
+are a best available way of brining about.
+But how is this computation performed?
+ 
+\subsection{slide-14}
+Infants can track goals from nine months of age (or earlier).
+ 
+The question, of course, is how?
+ 
+\subsection{slide-16}
+So planning is the process of moving from goals to means,
+whereas tracking goes in the reverse direction, from means to goals.
+But what is common to the two is the relation between means and goals.
+In both cases, planning and goal-tracking, the means that are adopted should be a best available
+way of bringing the goal about.
+ 
+\subsection{slide-18}
+Note that this is not exactly an answer to our question,
+How can infants track goals from nine months of age (or earlier)?
+It provides what Marr would call a computational description.
+ 
+That is, it provides a function
+from 
+facts about events and states of affairs that could be known without knowing which goals any
+particular actions are directed to, nor any facts about particular mental states
+to 
+one or more outcomes which are the goals of an action.
+ 
+Providing this function explains how pure goal-tracking is possible in principle.
+ 
+But what we want to know, of course, is how infants (and adults) actually compute this function.
+If this is (roughly) the function which computationally describes pure goal tracking,
+what are the representations and processes involved in pure goal tracking?
+ 
+\subsection{slide-19}
+An we need to know how they compute to which outcome a means is the best available.
+ 
+\subsection{slide-20}
+The principles comprising the Teleological Stance are things we know or believe, and we are
+able to track goals by making inferences from these principles and our beliefs about the
+means someone is pursuing.
+ 
+Infants and adults engaged in goal-tracking reason about 
+to which outcome a means is the best available
+in fundamentally the same way that you or I do when trying to work it out explicitly.
+ 
+\subsection{slide-21}
+[*TODO: illustrate with picture.]
+ 
+\subsection{slide-22}
+Although I don’t think they have written about it in quite the terms I use,
+I take Gergely and Csibra to be endorsing the Simple View.
+ 
+‘when taking the teleological stance one-year-olds apply the same
+inferential principle of rational action that drives everyday mentalistic
+reasoning about intentional actions in adults’
+ 
+\subsection{slide-23}
+The Simple View makes no use of the idea that there might be action perception.
+ 
+Relation to Q3: no special system.
+[Q3: Are these properties and happenings tracked by modality specific systems, or are they tracked by
+special purpose perceptual mechanisms of their own (e.g. Liberman, 1967)/ cross-modal objects of
+perception?]
+ 
+Relation to Q6: teleological stance is continuous with mindreading (the latter merely involves
+using an enriched model with includes mental states; the two can be parts of a single process).
+[Q6: How do these processes relate to theory of mind abilities (e.g. Simmons et al., 2009)?]
+ 
+\subsection{slide-24}
+Infants can track goals from nine months of age (or earlier).
+ 
+\subsection{goal\_tracking\_limit}
+ 
+ 
+\section{A signature limit of infant goal tracking?}
+ 
+A signature limit of a system is a pattern of behaviour the system exhibits which is both defective
+given what the system is for and peculiar to that system.
+There is some evidence that goal-tracking 
+in infants (and adults) 
+is limited by their abilities to act.
+Could this be a signature limit of infant goal-tracking?
+ 
+\subsection{slide-27}
+To explain this I have to step back and show you something interesting about 
+adults when they perform, and when they observe actions.
+ 
+Performing actions (e.g. stacking blocks): you don't look at your hand but at
+the block it will pick up, or, when holding a block, at the location where it will place a block.
+That is, in acting the eyes move just ahead of the action.
+ 
+\subsection{slide-28}
+\citet{Flanagan:2003lm} showed that the same pattern occurs when adults observe another 
+acting. 
+In observing an action, the eyes move just ahead of the action.
+ 
+This proactive gaze is important for our purposes because it can reveal goal-tracking ...
+ 
+\citet{Flanagan:2003lm} showed that 
+‘patterns of eye–hand coordination are similar when performing and observing a block stacking task’.
+ 
+\subsection{slide-29}
+Kanakogi \& Itakuar, 2011 show that abilities to grasp objects are correlated with
+abilities to track the goal of a grasping action (as measured by proactive gaze).
+ 
+x-axis is alpha, grasping angle. ‘An α angle value from 90 to 180° indicates that the infant
+is engaged in a one-handed grasping action.’
+ 
+‘The angle α is an index of the development of the one­handed grasping action and was
+calculated by measuring the angle of a straight line de ned by the infant’s two hands (the
+apex of the junction of the thumb and index nger) when crossed by an imaginary line
+projecting frontally from the infant (Fig. 2b). If infants grasped for the objects with their
+le hand, we reversed the red right­angled triangle from one side to the other side and
+calculated the angle α in the same way. e angle α value of 90° corresponded to a perfect
+alignment of the hands in a two­handed reach. Therefore, the angle α value deviates from 90°
+towards 180°, and bigger angle α value indicates more mature one­handed grasping. If the
+angle α was over 90°, the infant was considered to be engaged in a one­handed grasping
+action.’
+ 
+‘three action conditions: grasping hand (GH, n = 31), back of hand (BH, n = 31), and
+mechanical claw (MC, n = 32). Pearson’s r reflects the partial correlation between timing of
+gaze arrival at the goal and grasping ability in each condition after controlling for age.
+Asterisk indicates statistical signi cance, P < 0.05; ns, not significant.’
+ 
+\subsection{slide-30}
+Further, changing from a bodily action to the operation of a mechanical claw
+(say) undermines the goal tracking effect.
+ 
+So  Kanakogi \& Itakuar, 2011 make two points:
+(i) goal-tracking depends on action capabilities; and 
+(ii) only works for events involving biomechanically similar affectors
+ 
+\subsection{slide-32}
+Needham et al, 2002 showed that putting ‘sticky mittens’ on 3-month-old infants 
+(for 10-14 play sessions of 10 minutes each) resulted in their spending 
+more time visually and manually exporing novel objects.
+ 
+\subsection{slide-33}
+In this study, I think infants wore the mittens for just 200 seconds
+(so the play sessions were much shorter than in Needhman et al, 2002).
+ 
+\subsection{slide-34}
+The observation was based on this study, which we saw earlier
+ 
+\subsection{slide-37}
+The results show that infants who played wearing the mittens first
+were more attentive to the goal.
+ 
+From at least three months of age, some of infants’ abilities to identify
+the goals of actions they observe are linked to their abilities to perform
+actions \citep{woodward:2009_infants}.
+ 
+But one potential objection to this study concerns observation vs performance.
+The infants who played wearing sticky mittens first had spent longer observing
+actions by the time it came to the violation of expectations trial.
+Could it be observation of action (including one’s own) rather than performance
+that matters?
+ 
+\subsection{slide-38}
+nb something gets stuck to the mittens; it's not really grasping!
+ 
+\subsection{slide-39}
+To address this issue, \citet{sommerville:2008_experience} did a study in 
+which one group had observation while the other group had performance.
+The participants were 10-month-old infants this time.
+ 
+The materials were a bit different: so that training vs observation could 
+be as similar as possible with respect to the causal structure exposed,
+there was a hook to get an object.
+ 
+\subsection{slide-40}
+The results show that infants with the training paid attention to the
+distal goal (choice of toy) whereas those without paid attention to the
+choice of cane.
+ 
+\subsection{slide-41}
+Further support for a link between action performance and goal tracking
+comes from a developmental study by Ambrosini et al which studied whether proactive
+gaze in infants is influenced by pre-shaping of the hand, and, in particular, 
+whether it is influenced by precision grips.
+ 
+\subsection{slide-43}
+By using no shaping (a fist), Ambrosini et al could treat sensitivity
+to whole-hand grasp and precision grip separately.
+ 
+\subsection{slide-44}
+‘infants’ ability to perform specific grasping actions with fewer fingers directly predicted the degree with which they took advantage of the availability of corresponding pre-shape motor information in shifting their gaze towards the goal of others’ actions’ \citep[p.~6]{ambrosini:2013_looking}.
+ 
+\subsection{slide-45}
+In infants (and adults), 
+goal-tracking is limited by their abilities to act.
+ 
+Why is this true?
+Why is goal-tracking in infants (and adult) limited by their abilities to act?
+On the Simple View, goal tracking is a matter of thinking and reasoning about the 
+best means to perform an action. 
+On this View, there’s no obvious reason why 
+your goal-tracking should be limited by your abilities to act in this way.
+ 
+Although I can’t jump over a house, I can perfectly well think about different ways
+to do so and distinguish better and worse approaches, at least to some extent.
+ 
+\subsection{motor\_theory\_goal\_tracking}
+ 
+ 
+\section{The Motor Theory of Goal Tracking}
+ 
+How do infants (and adults) track the goals of others’ actions?
+According to the Motor Theory of Goal Tracking, it is sometimes* by 
+means of motor processes.
+More carefully, the Motor Theory of Goal Tracking consists of these claims: 
+(1) in action observation, possible outcomes of observed actions are represented motorically;
+(2) these representations trigger motor processes much as if the observer were performing actions
+directed to the outcomes;
+(3) such processes generates predictions;
+(4) a triggering representation is weakened if the predictions it generates fail.
+The result is that, often enough, the only only outcomes to which the observed action is a means
+are represented strongly.
+
+(*‘sometimes’ because the Motor Theory is part of a dual-process account of goal-tracking.)
+ 
+\subsection{slide-47}
+Suppose you are reaching for, grasping, transporting and then placing a pen. Performing even
+relatively simple action sequences like this involves satisfying many constraints that cannot
+normally be satisfied by explicit practical reasoning, especially if performance is to be rapid and
+fluent. Rather, such performances require motor representations.
+These representations are paradigmatically involved in preparing, executing and monitoring actions.%
+\footnote{%
+See \citet{wolpert:1995internal, miall:1996_forward, jeannerod:1998nbo, zhang:2007_planning}.
+Note that motor representations sometimes occur in an agent who has prepared an action and is required (as it turns out) not to perform it: although she has prevented herself from acting, motor representations specifying the action persist, perhaps because they are necessary for monitoring whether prevention has succeeded \citep{bonini:2014_ventral}.
+}
+But they also live a double life. Motor representations concerning a particular type of action are
+involved not only in performing an action of that type but also sometimes in observing one. That is,
+if you were to observe Ayesha reach for, grasp, transport and then place a pen, motor representations
+would occur in you much like those that would also occur in you if it were you---not Ayesha---who was
+doing this.
+ 
+Converging evidence for this assertion comes from a variety of methods and measures;
+but I won’t mention any of that here.
+ 
+\subsection{slide-49}
+mTgt is an alternative to the Simple View.
+The idea is that pure goal-tracking involves motor processes rather than thinking
+and reasoning about goals.
+ 
+But how could motor processes enable goal tracking?
+ 
+\subsection{slide-50}
+At this point it is helpful to think about speech.
+To utter a phoneme is to produce complex coordinated movements of the 
+lips, larynx, tongue and velum.
+Further, how these should be moved and what sound should be produced depends on
+many factors including phonemic context, rate of speech and prosody.
+ 
+So uttering a phoneme is unlike pressing a key on a piano keyboard:
+it not a matter of producing a particular sound
+but of performing a complex, goal-directed action.
+ 
+We know from Riikka Möttönen’s research that there is striking new
+evidence for what is sometimes called the Motor Theory of Speech Perception.
+ 
+So speech perception is special case of goal-tracking.
+The perceiver’s task is to recover the goal to which the utterance of a phoneme is directed.
+ 
+mTgt is simply a generalisation of the Motor Theory of Speech Perception
+ 
+In performing an action, there are motor processes which compute means given goals.
+The same processes can be used when observing an action for tracking goals.
+ 
+\subsection{slide-51}
+Goal-tracking is acting in reverse.
+-- in action observation, possible outcomes of observed actions are represented
+-- these representations trigger planning as if performing actions directed to the outcomes
+-- such planning generates predictions
+-- a triggering representation is weakened if its predictions fail
+The result is that the only only outcomes to which the observed action is a means
+are represented strongly.
+ 
+There is evidence that a motor representation of an outcome can cause a determination of which
+movements are likely to be performed to achieve that outcome \citep[see, for
+instance,][]{kilner:2004_motor, urgesi:2010_simulating}. Further, the processes involved in
+determining how observed actions are likely to unfold given their outcomes are closely related,
+or identical, to processes involved in performing actions.
+This is known in part thanks to studies of how observing actions can facilitate performing
+actions congruent with those observed, and can interfere with performing incongruent actions
+\citep{
+	brass:2000_compatibility, 
+	craighero:2002_hand, 
+	kilner:2003_interference, 
+	costantini:2012_does}. 
+Planning-like processes in action observation have also been demonstrated by measuring observers' predictive gaze.  If you were to observe just the early phases of a grasping movement, your eyes might jump to its likely target, ignoring nearby objects \citep{ambrosini:2011_grasping}. These proactive eye movements resemble those you would typically make if you were acting yourself \citep{Flanagan:2003lm}. 
+Importantly, the occurrence of such proactive eye movements in action observation depends on your
+representing the outcome of an action motorically; even temporary interference in the observer's
+motor abilities will interfere with the eye movements \citep{Costantini:2012fk}.
+These proactive eye movements also depend on planning-like processes; requiring the observer to
+perform actions incongruent with those she is observing can eliminate proactive eye movements
+\citep{Costantini:2012uq}. This, then, is further evidence for planning-like motor processes in
+action observation.
+ 
+So observers represent outcomes motorically and these representations trigger planning-like processes
+which generate expectations about how the observed actions will unfold and their sensory consequences.
+Now the mere occurrence of these processes is not sufficient to explain why, in action observation,
+an outcome represented motorically is likely to be an outcome to which the observed action is
+directed.
+ 
+To take a tiny step further, we conjecture that, in action observation, \textbf{motor representations of
+outcomes are weakened to the extent that the expectations they generate are unmet}
+\citep[compare][]{Fogassi:2005nf}.
+A motor representation of an outcome to which an observed action is not directed is likely to
+generate incorrect expectations about how this action will unfold, and failures of these
+expectations to be met will weaken the representation.
+This is what ensures that there is a correspondence between outcomes represented motorically in
+observing actions and the goals of those actions.
+ 
+\subsection{slide-52}
+The mTgt cannot be a full theory of goal-tracking in adults, of course.
+Instead we need a dual process theory of goal-tracking.
+ 
+\subsection{slide-53}
+But what is a dual process theory of goal-tracking?
+I’m so glad you asked.
+It’s very simple ...
+ 
+\subsection{slide-54}
+‘proactive gaze’ and ‘explicit judgement’ are variables whose values represent
+whether there is a proactive gaze or explicit judgement, and what is it to or about.
+Likewise, ‘motor process’ is a variable whose values represent ...
+ 
+The lines depict how the variables are causally related. I’ve used thick and thin
+lines informally, to indicate weaker and stronger influences.
+ 
+\subsection{slide-57}
+The dual-process theory of goal-tracking makes perfect sense of development.
+It says that what we observe in six- and nine-month-olds is motor-based goal-tracking.
+Presumably the more flexible, reasoning-based goal-tracking processes emerge some time
+later in development.
+ 
+\subsection{slide-58}
+Infants can track goals from nine months of age (or earlier).
+ 
+The Motor Theory of Goal Tracking
+ 
+Relation to Q3: special system, namely the motor system.
+ 
+Relation to Q6 [How do these processes relate to theory of mind abilities (e.g. Simmons et al.,
+2009)?]:
+It looks like, in endorsing mTgt, we are postulating a discrepancy between goal-tracking and
+theory of mind abilities, since theory of mind abilities are perhaps unlikely to depend on motor
+processes in the way in which goal-tracking does. 
+However, we should probably be cautious here; in pilot research with Jason Low, we have some
+preliminary evidence that some theory of mind abilities may be more closely tied to motor processes
+than anyone has yet imagined.
+ 
+\subsection{slide-60}
+Important that 
+mTgt is not an alternative to the Teleological Stance but to it plus the claim about reasoning.
+ 
+Simple View and mTgt do not differ on the relation between means and goals that is to be 
+computed in pure goal-tracking.
+The Simple View and mTgt differ only on what processes is responsible for identifying which outcome or
+outcomes the observed means is a best available way of achieving.
+ 
+\subsection{slide-66}
+There’s just one small problem. It’s not quite true to say that 
+infants goal-tracking is limited by action ability.
+Some of it is, but some of it isn’t ...
+ 
+\subsection{slide-61}
+ 
+ 
+\section{A Developmental Puzzle about Goal-Tracking}
+ 
+In infants,
+it appears that
+some,
+but not all,
+goal-tracking is limited by their abilities to act.
+This contradicts both the Simple View and the Motor Theory of Goal Tracking.
+
+A further puzzle arises from the fact that goal-tracking sometimes manifests in dishabitution or
+pupil dilation but not proactive gaze.
+How can we explain, in a principled way, why there should be discrepancies between these measures?
+ 
+\subsection{slide-67}
+Earlier I mentioned this experiment, which shows that infants 
+fail to track goals involving things which would appear to them to be 
+biomechanically non-agent-like events.
+
+But ...
+ 
+\subsection{slide-68}
+\#source 'research/teleological stance -- csibra and gergely.doc'
+ 
+\#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'
+ 
+\#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'
+ 
+When do human infants first track goal-directed actions and not just movements?
+ 
+Here's a classic experiment from way back in 1995.
+ 
+The subjects were 12 month old infants.
+ 
+They were habituated to this sequence of events.
+ 
+\subsection{slide-69}
+There was also a control group who were habituated to a display like this
+one but with the central barrier moved to the right, so that the action
+of the ball is 'non-rational'.
+ 
+\subsection{slide-70}
+For the test condition, infants were divided into two groups.  One saw a new action, ...
+ 
+... the other saw an old action.
+ 
+Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.
+ 
+But if infants are taking goal-related information into action, the 'old action' might be unexpected and so might generate greater dishabituation.
+ 
+\subsection{slide-72}
+You might say, it's bizarre to have used balls in this study, that can't show us anything about infants' understanding of action.
+ 
+But adult humans naturally interpret the movements of even very simple shapes in terms of goals.
+ 
+So using even very simple stimuli doesn't undermine the interpretation of these results.
+ 
+\subsection{slide-73}
+Consider a further experiment by \citet{Csibra:2003jv}, also with
+12-month-olds. This is just like the first ball-jumping experiment
+except that here infants see the action but not the circumstances in
+which it occurs. Do they expect there to be an object in the way behind
+that barrier?
+ 
+\subsection{slide-75}
+Here then is the puzzle about development that I mentioned this talk was about:
+ 
+In infants, 
+it appears that 
+some, 
+but not all, 
+goal-tracking is limited by their abilities to act.
+ 
+Let me recap how we got here and why this is puzzling.
+ 
+I started by asking, How 9-month-olds track can goals?
+The Simple View offers one answer: 
+the principles comprising the Teleological Stance are things they know or believe, and they are able
+to track goals by making inferences from these principles.
+ 
+I suggested that the Simple View should be rejected because it cannot explain why infants’
+abilities to track goals are limited by their abilities to perform actions.
+ 
+At least, mTga provides a better alternative to the Simple View.
+According to mTga,
+Infants’ pure goal-tracking depends on the double life of motor processes.
+ 
+mTga correctly predicts that infants’ pure goal-tracking should be limited by infants’
+abilities to act ...
+ 
+\subsection{slide-76}
+But, unfortunately, there appear to be cases in which infants’ pure goal-tracking
+is not limited by their abilities to act, and this is contrary to mTga.
+ 
+The puzzle, then, to explain how infants can track goals if neither the Simple View
+nor mTga is correct.
+ 
+Even worse, 
+there’s another, apparently unrelated puzzle to explain too ...
+ 
+\subsection{slide-77}
+Daum et al created a modified version of Woodward’s paradigm which allowed them to measure
+both anticipatory looking and dishabituation.
+ 
+where researchers have measured two different responses to a single
+scenario, anticipatory looking and either dishabituation or pupil dilation.
+Generally, they appear to find evidence for goal tracking in dishabituation
+or pupil dilation but not in anticipatory looking. 
+(This is true of Daum et al, 2012; and Gredeback and Melinder, 2010.)
+ 
+Why the discrepancy?
+This is another question we can’t answer with the Motor Theory of Goal
+Tracking.
+ 
+\subsection{slide-78}
+[skip -- just here in case need for discussion; shows that anticipatory looking
+to cartoon fish takes years to develop]
+ 
+\subsection{slide-79}
+Here then is another puzzle about development:
+ 
+In infants, 
+it appears that 
+some, 
+but not all, 
+goal-tracking is limited by their abilities to act ...
+ 
+... and that goal-tracking sometimes manifests in dishabitution or pupil dilation but not proactive gaze.
+ 
+The \textbf{second puzzle} is how to explain, in a principled way, why there should be discrepancies
+between these measures. We cannot do this by invoking mTgt because on mTgt, proactive gaze is a
+case in which goal-tracking is paradigmatically manifest.
+ 
+\subsection{slide-80}
+I want to respond by arguing that not everything which appears to be goal-tracking in infants
+actually is goal-tracking.
+ 
+\subsection{slide-81}
+So I will be arguing that the puzzle is merely apparent.
+The appearance is due to the fact that we do not carefully enough distinguish tracking
+the target of an action from tracking the goal of an action.
+ 
+\subsection{perceptual\_animacy}
+ 
+ 
+\section{Perceptual Animacy}
+ 
+Perceptual animacy is
+the detection by broadly perceptual processes of animate objects and their targets
+\citet[e.g.][]{gao:2009_psychophysics}.
+Could its existence provide us with a solution to the developmental puzzle about 
+goal tracking?
+ 
+\subsection{slide-83}
+\emph{perceptual animacy},
+the detection by broadly perceptual processes of animate objects and their targets.
+ 
+Evidence for the existence of perceptual animacy comes from a variety of studies 
+where adults are given a simple visual task such as identifying which circle is the ‘wolf’
+and which the ‘sheep’, or, in another experiment, moving the sheep around in order to 
+avoid being caught by the wolf.
+ 
+It is also possible to examine how having a sheep and a wolf affects how attention is allocated by
+measuring how well participants can detect probes placed on different shapes.
+ 
+ 
+The literature on perceptual animacy mostly confounds it with goal tracking.
+But there are two key differences.
+ 
+First, perceptual animacy is a broadly
+perceptual phenomenon.
+ 
+Second,
+the perceptual detection of animacy is clearly distinct from goal tracking
+for it involves detecting relations between objects in motion rather than
+outcomes to which actions are directed.
+Relatedly, it does not involve sensitivity to the type of action.
+And the perceptual detection of animacy appears to depend on simple cues
+and heuristics and is unlikely to be correctly described by the
+Teleological Stance.
+So perceptual animacy does not involve tracking goals to which an action is
+directed: it is a matter of tracking objects to which animate movements are
+directed.
+ 
+\subsection{slide-84}
+\emph{{perceptual animacy}},
+the detection by broadly perceptual processes of animate objects and their targets.
+To illustrate, consider a groundbreaking experiment by \citet[experiment 1]{gao:2009_psychophysics}.
+Adults were shown a display which contained some moving circles.
+In some cases the circles moved independently of each other, but in other cases there was a ‘wolf’
+which chased a ‘sheep’ with varying degrees of subtlety.
+The adults’ task was simply to detect the presence of a wolf.
+\citeauthor{gao:2009_psychophysics} established that adults can do this providing the chasing is not too subtle.
+In further experiments, they also showed that adults’ abilities to perceptually detect chasing
+depend on several cues including whether the chaser ‘faces’ its target (‘directionality’) and how
+directly the chaser approaches its target (‘subtlety’).
+The detection of animacy appears to be a broadly perceptual phenomena since it depends on areas of
+the brain associated with vision and influences how perceptual attention is allocated
+\citep{scholl:2013_perceiving} irrespective of your beliefs and intentions
+\citep{buren:2016_automaticity}.
+ 
+\subsection{slide-86}
+[This comparison is a bit confused because pure-goal tracking is the kind of thing 
+that can be (and is) achieved by way of different mechanisms (e.g. reasoning; motor processes),
+whereas perceptual animacy is a mechanism.]
+ 
+The perceptual detection of animacy resembles goal tracking, for it involves detecting a relation
+between a chaser and its target.
+However the perceptual detection of animacy is clearly distinct from goal tracking.%
+\footnote{%
+Contrast \citet{schlottmann:2010_goal,Scholl:2000eq} who all claim that perceptual animacy is a matter of, or involves, tracking goals.
+}
+For one thing, it involves detecting relations between objects in motion rather than outcomes to
+which actions are directed.
+Relatedly, it does not involve sensitivity to the type of action.
+Finally, the perceptual detection of animacy appears to depend on simple cues and heuristics and is
+unlikely to be correctly described by the Teleological Stance.
+For these reasons, we should distinguish the perceptual detection of animacy from tracking goals to which actions are directed.
+ 
+\subsection{slide-89}
+Conjecture
+
+
+          
+In 9-month-olds,
+          
+
+
+          
+all pure goal-tracking is explained by the Motor Theory;
+          
+
+
+          
+appearances that goal-tracking is not limited by their abilities to act
+are due to perceptual animacy.
+          
+
+ 
+\subsection{slide-90}
+Predictions
+            
+
+
+            
+Where 9-month-olds appear to be tracking goals 
+in ways not limited by their abilities to act,
+they will be subject to signature limits of perceptual animacy
+(e.g. subtlety, directionality);
+
+
+            
+and the processes underlying their abilities will be broadly perceptual.
+            
+
+ 
+\subsection{slide-91}
+[Haven’t slides; will use printout from their paper]
+ 
+\subsection{slide-92}
+How does the conjecture help with the puzzles about development?
+ 
+In infants, 
+it appears that 
+some, 
+but not all, 
+goal-tracking is limited by their abilities to act ...
+ 
+... and that goal-tracking sometimes manifests in dishabitution or pupil dilation but not proactive gaze.
+ 
+The second puzzle was a dissociation between dishabituation and pupil dilation on the one
+hand and proactive gaze on the other.
+The conjecture I have formulated suggests a solution: perhaps perceptual animacy is sometimes
+responsible for pupil dilation and dishabituation; but never responsible for proactive gaze.
+ 
+\subsection{slide-93}
+The first puzzle was the appearance of cases of goal-tracking in infancy which is not
+limited by infants’ abilities to act.
+The conjecture I have proposed suggests a solution to this too: those cases 
+are underpinned by perceptual animacy and so not genuine cases of goal-tracking at all.
+ 
+\subsection{slide-95}
+Pupil dilation at 6 and 12-months of age; unlike proactive gaze, it  does not 
+correlate with experience of being fed; but it isn’t plausibly perceptual animacy either.
+(Why would perceptual animacy predict a difference between spoon going to mouth or hand?)
+Instead it may be a consequence of associative learning about the typical sequence
+of chunks of actions.
+ 
+\subsection{slide-96}
+My question was, How can infants in the first 9 months of life track goals?
+Given that infants’ goal-tracking is limited by their abilities to perform actions,
+I proposed to answer this question by appeal to the mTgt:
+Infants’ pure goal-tracking, like much of adults’, depends on the double life of motor processes.
+ 
+This yielded a simple dual-process theory of goal-tracking.
+ 
+But this is much too simple, as
+findings on infants’ goal-tracking in the first 9 months of life confronts us with a puzzle.
+For they appear to show that, in many cases, infants can track the goals of actions 
+performed by cartoon fish and spheres; and these are clearly actions that no infant (or adult)
+could perform.
+ 
+Apparantly, then, we must reject the mTgt. But if we do that, it seems we lack any way of 
+explaining why infants’ goal-tracking is so often limited by their abilities to act.
+ 
+The solution, I suggested, is to invoke perceptual animacy.
+That is what led me to this conjecture ...
+ 
+\subsection{slide-97}
+Conjecture
+
+
+          
+In 9-month-olds,
+          
+
+
+          
+all pure goal-tracking is explained by the Motor Theory;
+          
+
+
+          
+appearances that goal-tracking is not limited by their abilities to act
+are due to perceptual animacy.
+          
+
+ 
+This conjecture is quite bold, but I think it’s one worth betting on partly because,
+as I suggested, it generates readily testable predictions.
+ 
+This conjecture also has another virtue.
+Goal-tracking is so fundamental to social cognition and joint action that it is 
+likely to depend on a rich mix of many kinds of processes, including associative learning.
+We need ways to identify these processes, to distinguish their limits and to understand their 
+synergies.
+Distinguishing motor processes which support goal-tracking by realising the Teleological Stance 
+from perceptual animacy is a step towards meeting this need.
+ 
+So how does this bear on the conference topic,
+Action Perception?
+In short, there isn’t any.
+At least not if actions are goal-directed actions.
+ 
+Why do I say this?  Not because I can rule out the possibility of action perception, of course.
+But goal-tracking is like speech perception in this sense: in both cases, the best supported,
+most carefully developed theories are not about perceptual processes but about motor processes.
+ 
+\subsection{slide-98}
+That, anyway, is my conclusion.
+The double life of motor processes underpins humans’ earliest 
+pure goal-tracking, and so provides a basis for the many and varied forms of social cognition,
+including mindreading, which depend on pure goal-tracking.
+ 
+Many will disagree with this.
+What I hope we will agree about, though, is that solving the developmental puzzle
+about pure-goal tracking is essential if we care at all about the abilities
+which underpin humans’ capacities for social cognition and joint action.
+ 
+
+    
+
+%--- end paste
+%---------------
+
+
+
+
+
+\bibliography{$HOME/endnote/phd_biblio}
+
+
+
+\end{document}

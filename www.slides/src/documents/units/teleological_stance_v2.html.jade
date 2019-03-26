@@ -1,0 +1,188 @@
+---cson
+layout: 'deck_unit'
+title: "The Teleological Stance [recap]"
+tags: []
+description: """
+  The Teleological Stance (Gergeley and Csibra , 1995) provides a computational
+  theory of pure goal ascription.
+  Pure goal ascription is the process of identifying goals to which anothers’
+  actions are directed independently of any knowledge, or beliefs about,
+  the intentions or other mental states of an agent.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide({bkg:'behaviour_reading_25.jpg'})
+  .notes: :t
+    In the lecture on behaviour reading last week, I offered a brief survey 
+    of mechanisms that could be involved in getting from joint displacements and
+    bodily configurations to larger, more abstract bits of behaviour grouped into
+    units in ways that reflect structures of action.
+
++slide_middle
+  .notes: :t
+    An account of pure goal ascription is an account of how you could 
+    in principle infer facts about the goals to which actions are directed from
+    facts about joint displacements, bodily configurations and their effects 
+    (e.g. sounds).
+    Such an account is a computational theory of pure goal ascription.
+  p.huge-glow-60(style='line-height:.7em') pure goal ascription
+  p
+    span.infer Infer
+    span  The Goals from The Evidence
+  .slide
+    p.em-above.indent The Goals: facts which goals particular actions are directed to...
+  .slide
+    p.em-above.indent 
+      span.the-evidence The Evidence
+      span: :t
+        : facts about events and states of affairs that could be known without 
+        knowing which goals any particular actions are directed to, nor any facts
+        about particular mental states ...
+
+section.slide
+  .words: .container_12
+    .grid_3
+      p.quote.notes.handout.show(style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+        span ‘an action can be explained by a goal state if, and only if, it is 
+        span.seen-as seen as 
+        span  the 
+        span.most-justifiable 
+          span.most most
+          span  justifiable action 
+        span towards that 
+        span goal state that is available within the constraints of reality’
+      .notes.handout.ctd \citep[p.~255]{Csibra:1998cx}
+      p.quote.right.grey-text Csibra & Gergely (1998, 255)
+    .slide
+      +highlight('.most-justifiable')
+    .slide
+      .grid_9
+        p.step1.hide 1. action a is directed to some goal;
+        p.step2.hide  2. actions of a’s type are 
+          span.normally normally
+          span  means of realising outcomes of G’s type;
+        p.step3.hide 3. no available alternative action is a significantly  
+          span.better better*
+          span  means of realising outcome G;
+        p.step4.hide 4. the occurrence of outcome G is  
+          span.desirable desirable
+          span ;
+        p.step5.hide 5. there is no other outcome, G′, the occurrence of which would be at least comparably desirable and where (2) and (3) both hold of G′ and a
+        p.step6.hide Therefore:
+        p.step7 6. 
+          span.g G
+          span   is a goal to which action 
+          span.a a
+          span   is directed.
+      .slide
+        +invert('.step7 .g')
+      .slide
+        +uninvert('.step7 .g')
+        +invert('.step7 .a')
+      .slide
+        +uninvert('.step7 .a')
+      .slide
+        +show('.step1')
+        .notes: :t
+          We start with the assumption that we know the event is an action.
+      .slide
+        +show('.step2')
+      .slide
+        +unhighlight('.most-justifiable')
+        +invert('.normally')
+      .slide
+        +invert('.seen-as')
+        .notes: :t
+          Why normally? Because of the ‘seen as’.
+      .slide
+        +uninvert('.normally')
+        +uninvert('.seen-as')
+      .slide
+        +invert('.most')
+      .slide
+        +show('.step3')
+      .slide
+        +uninvert('.most')
+      .slide
+        +blur('.quote')
+        +show('.step6')
+        .notes: :t
+          Any objections?
+        .notes: :t
+          I have an objection.
+          Consider a case in which I perform an action directed to 
+          the outcome of pouring some hot tea into a mug.
+          Could this pattern of inference imply that the outcome be the goal of my action?
+          Only if it also implies that moving my elbow is a goal of my action
+          as well.
+          And pouring some liquid. 
+          And moving air in a certain way.
+          And ...
+        .notes: :t
+          How can we avoid this objection?
+      .slide
+        +show('.step4')
+      .slide
+        +highlight('.desirable')
+        .notes: :t
+          Doesn’t this conflict with the aim of explaining *pure* behaviour reading?
+          Not if desirable is understood as something objective.
+          [explain]
+      .slide
+        +unhighlight('.desirable')
+        .notes: :t
+          Now we are almost done, I think.
+      .slide
+        +show('.step5')
+      .slide
+        +unblur('.quote')
+        .notes: :t
+          OK, I think this is reasonably true to the quote.
+          So we’ve understood the claim.
+          But is it true?
+      .slide
+        +blur('.quote')
+        +invert('.better')
+        .notes: :t
+          How good is the agent at optimising the selection of means to her goals?
+          And how good is the observer at identifying the optimality of means in relation to outcomes?
+          \textbf{
+          For optimally correct goal ascription, we want there to be a match between
+          (i) how well the agent can optimise her choice of means
+          and
+          (i) how well the observer can detect such optimality.}
+          Failing such a match, the inference will not result in correct goal ascription.
+        .notes: :t
+          But I don’t think this is an objection to the Teleological Stance as a
+          computational theory of pure goal ascription.  It is rather a detail
+          which concerns the next level, the level of representations and algorithms.
+          The computational theory imposes demands at the next level.
+        .handout: :t
+          ‘Such calculations require detailed knowledge of biomechanical factors that 
+          determine the motion capabilities and energy expenditure of agents. However, 
+          in the absence of such knowledge, one can appeal to heuristics that approximate 
+          the results of these calculations on the basis of knowledge in other domains 
+          that is certainly available to young infants. For example, the length of 
+          pathways can be assessed by geometrical calculations, taking also into 
+          account some physical factors (like the impenetrability of solid objects). 
+          Similarly, the fewer steps an action sequence takes, the less effort it might 
+          require, and so infants’ numerical competence can also contribute to efficiency 
+          evaluation.’ \citep{csibra:2013_teleological}
+      .slide
+        +uninvert('.better')
+        .notes: :t
+          So this is the teleological stance, a computational description
+          of goal ascription.
+        .notes: :t
+          Although this is rarely noted, 
+          I think the Teleological Stance takes us beyond Dennett’s intentional stance 
+          because it allows us to distinguish between people on the basis of what
+          they do.
+          You reach for the red box; your goal is to retrieve the food.
+          I reach for the blue box, so my goal is to retrieve the poison.
+        .notes: :t
+          But there is a problem for the Teleological Stance ...
+          

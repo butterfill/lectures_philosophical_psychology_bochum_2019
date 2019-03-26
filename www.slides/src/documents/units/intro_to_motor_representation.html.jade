@@ -1,0 +1,447 @@
+---cson
+layout: 'deck_unit'
+title: "Motor Representation"
+tags: []
+description: """
+  Motor representations are involved in performing and preparing actions.
+  Not all representations represent patterns of joint displacements and bodily 
+  configurations: some represent outcomes such as the grasping of an object, which
+  may be done in different ways in different contexts.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+.handout: :t
+  Markers of motor representation 
+  \begin{enumerate}
+  \item are unaffected by variations in kinematic features but not goals 
+    \citep[e.g.][]{cattaneo:2010_state-dependent,umilta:2008pliers,cattaneo:2009_representation,rochat:2010_responses}
+  \item are affected by variations in goals but not kinematic features
+    \citep[e.g.][]{Fogassi:2005nf,bonini:2010_ventral,cattaneo:2007_impairment,Umilta:2001zr,villiger:2010_activity,koch:2010_resonance}
+  \end{enumerate}
+  So:
+  \begin{enumerate}[resume]
+  \item carry information about goals (from 1,2)
+  \end{enumerate}
+  Also
+  \begin{enumerate}[resume]
+  \item Information about outcomes guides planning-like processes
+    \citep[consider][]{grafton:2007_evidence,jeannerod:1998nbo,wolpert:1995internal, miall:1996_forward,arbib:1985_coordinated,mason:2001_hand,santello:2002_patterns}.
+  \end{enumerate}
+
++slide_middle({bkg:'egg.jpg'})
+  +hide('img.bkg', 0)
+  p(style="margin-top:4.5em;")
+    span.some.hide some
+    br
+    span motor representation
+      span.step4.hide s 
+      span.schema.remove-me (/schema) 
+      span.step4.hide represent 
+        span.qqq ???
+      span.step5.hide.outcomes outcomes
+        span.goals.remove-me  = goals
+  .step3.hide
+    .handout: :t
+      ‘a given motor act may change both as a function of what motor act will follow it—a sign of
+      planning—and as a function of what motor act preceded it—a sign
+      of memory’ \citep[p.~294]{cohen:2004_wherea}.
+    p: :t
+      ‘a given motor act may change ... as a function of what motor act will follow it—a sign of
+      planning’
+    p.right.grey-text Cohen & Rosenbaum 2004, p. 294
+    
+  .notes: :t
+    Let me go back and start with some almost uncontroversial facts about motor representations and 
+    their action-coordinating role.
+  .notes: :t
+    Why postulate motor representations at all?  [Dependence of present actions on future actions
+    is one reason for doing so.]
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the
+      shell) into a bowl ready for beating into a carbonara sauce.
+      Even for such mundane, routine actions, the constraints on adequate performance can vary
+      significantly depending on subtle variations in context. For example, the position of a hot pan
+      may require altering the trajectory along which the egg is transported, or time pressures may mean
+      that the action must be performed unusually swiftly on this occasion.
+      Further, many of the constraints on performance involve relations between actions occurring at
+      different times.
+      To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces
+      to which you will subject the egg in lifting it later.
+      It turns out that people reliably grip objects such as eggs just tightly enough across a range of
+      conditions in which the optimal tightness of grip varies.
+      This indicates (along with much other evidence) that information about the cook’s anticipated
+      future hand and arm movements appropriately influences how tightly she initially grips the egg
+      (compare \citealp{kawato:1999_internal}).
+      This anticipatory control of grasp, 
+      like several other features of action performance (\citealp[see][chapter 1]{rosenbaum:2010_human} for more examples),
+      is not plausibly a consequence of mindless physiology, nor of intention and practical reasoning.
+      This is one reason for postulating motor representations, which characteristically play a role in
+      coordinating sequences of very small scale actions such as grasping an egg in order to lift it.
+    .notes: :t
+      [The scale of an actual action can be defined in terms of means-end relations.  
+      Given two actions which are related as means to ends by the processes and representations 
+      involved in their performance, the first is smaller in scale than the second just if the 
+      first is a means to the second.  Generalising, we associate the scale of an actual action 
+      with the depth of the hierarchy of outcomes that are related to it by the transitive closure 
+      of the means-ends relation.  Then, generalising further, a repeatable action (something that 
+      different agents might do independently on several occasions) is associated with a scale 
+      characteristic of the things people do when they perform that action.  Given that actions 
+      such as cooking a meal or painting a house count as small-scale actions, actions such as 
+      grasping an egg or dipping a brush into a can of paint are very-small scale.  Note that we 
+      do not stipulate a tight link between the very small scale and the motoric.  In some cases 
+      intentions may play a role in coordinating sequences of very small scale purposive actions, 
+      and in some cases motor representations may concern actions which are not very small scale.  
+      The claim we wish to consider is only that, often enough, explaining the coordination of 
+      sequences of very small scale actions appears to involve representations but not, or not 
+      only, intentions.  To a first approximation, \emph{motor representation} is a label for 
+      such representations.%
+      \footnote{% 
+      Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
+      }]
+  .slide
+    +show('.step3')
+    .notes: :t
+      ‘a given motor act may change both as a function of what motor act will follow it—a sign of
+      planning—and as a function of what motor act preceded it—a sign
+      of memory’ \citep[p.~294]{cohen:2004_wherea}.
+    
+  .slide
+    +blur('.step3')
+    +show('.step4')
+    +blur('img.bkg', '50px', 1000)
+    .notes: :t
+      What do motor representations represent? An initially attractive, conservative 
+      view would be that they represent bodily configurations and joint displacements, 
+      or perhaps sequences of these, only.
+  .slide
+    +remove('.qqq')
+    +show('.step5')
+    .notes: :t
+      However there is now a significant body of evidence that some motor representations 
+      do not specify particular sequences of bodily configurations and joint displacements, 
+      but rather represent outcomes such as the grasping of an egg or the pressing of a switch.  
+      These are outcomes which might, on different occasions, involve very different bodily 
+      configurations and joint displacements
+      (see \citealp{rizzolatti_functional_2010} for a selective review).
+    .notes: :t
+      Such outcomes are abstract relative to bodily configurations and joint displacements 
+      in that there are many different ways of achieving them.
+  .slide
+    +show('.some')
+    +invert('.some')
+  .slide
+    +uninvert('.some')
+    +invert('.outcomes')
+    .notes: :t
+      Since this is important, let me pause for a moment.
+      To say that something is an outcome is not to say very much: merely that it is a 
+      possible or actual state of affairs which is brought about in some way by an action.
+    .notes: :t
+      What I mean is that motor representations represent the sort of outcomes that are plausibly
+      thought of as goals of actions, things such as transporting and breaking an egg,
+      or flipping a switch.
+    .notes: :t
+      This kind of outcomes are quite different from both patterns of joint displacement and 
+      bodily movements and also from end states.
+  .slide
+    +unremove('.goals')
+    .notes: :t
+      In my terms, a goal is merely outcome.
+      Contrast goals with goal-states, which are mental or functional states which specify goals. 
+      A motor representation is a goal-state; the goal is the thing it represents.
+  
+  .slide
+    +uninvert('.outcomes')
+    +unremove('.schema')
+    +invert('.schema')
+    .notes: :t
+      Motor schema are just motor representations which specify incomplete outcomes.
+      [Of course schema are incomplete, so do not specify outcomes but outcome types.]
+    .notes: :t
+      Motor schema are ‘internal models or stored representations that represent generic knowledge about
+      a certain pattern of action and are implicated in the production and control of action’
+      \citep{mylopoulos:2016_intentions}.
+    .notes: :t
+      ‘Motor schemas are more abstract and stable representations of actions than motor
+      representations.’
+    .notes: :t
+      ‘They are internal models or stored representations that represent generic knowledge
+      about a certain pattern of action and are implicated in the production and control of
+      action. For instance, in the influential Motor Schema Theory proposed by Richard Schmidt
+      (1975, 2003), a motor schema involves a generalized motor program, together with corre-
+      sponding ‘recall’ and ‘recognition’ schemas. The generalized motor program is thought to
+      contain an abstract representation defining the general form or pattern of an action,
+      that is the organization and structure common to a set of motor acts (e.g., invariant
+      features pertaining to the order of events, their spatial configuration, their relative
+      timing and the relative force with which they are produced). This generalized motor
+      program has parameters that control it. In order to determine how an action should be
+      performed on a given occasion, parameter values adapted to the situation must be
+      specified. Thus, a motor schema also includes a rule or system of rules describing the
+      relationships between initial conditions, parameter values and outcomes and allowing us
+      to perform the action over a large range of conditions (the ‘recall schema’ in Schmidt’s
+      terminology). Finally, the motor schema also includes a rule or system of rules
+      describing the relationships between initial conditions, exteroceptive and propri-
+      oceptive sensory feedback during an action, and action outcome (a recognition sche- ma),
+      allowing agents to know when they have made an error – i.e., the action does not have
+      the sensory consequences it is expected to have – and to correct for it.’
+    .notes: :t
+      Are motor schemas an alterantive to motor representations? Tempting to think that where
+      they talk about motor schema, we think of motor representations that represent outcomes
+      that are relatively distal from action (e.g. are affector-neutral).
+    .notes: :t
+      This would explain why they contrast motor schema with motor programmes. We use ‘motor
+      representation’ to include both.
+  
++slide({bkg:'motor_representation_fig/Slide02.jpg'})
+  .notes: :t
+    A goal represented motorically triggers a process which, via computations of things 
+    like end states, starting states and smoothness, eventually results in joint
+    displacements; and when things go well, these joint displacements together with the 
+    resulting bodily configurations bring about, or constitute, the occurrence of the goal.
+    
++slide({bkg:'motor_representation_fig/Slide03.jpg'})
+  .notes: :t
+    But of course this is a simplification. Motor representations can trigger processes
+    which result in further goals being represented, as for example when a motor 
+    representation of the transporting of an object triggers representations of reaching,
+    grasping, placing and releasing.
+    
++slide({bkg:'motor_representation_fig/Slide04.jpg'})
+  .notes: :t
+    The processes linking motor representations are planning like in two respects:
+    (i) means-end ...
+    
++slide({bkg:'motor_representation_fig/Slide05.jpg'})
+  .notes: :t
+    ... and (ii) relational constraints
+    
+    
+
+
+//-  the rest should probably be another unit
+
+
+
++slide_middle
+  p.center How do we know that outcomes are represented motorically?
+  .notes: :t
+    But how do we know that motor representations carry information about such outcomes?
+    I’m glad you asked, let me explain ...
+
+
+
++slide_middle
+  p.center Aside: The Double Life of Motor Representations
+  .notes: :t
+    If you were to observe someone phi-ing,
+    then motor representations would occur in you
+    much like those that would occur in you if it were you, not her, who was phi-ing.
+  .notes: :t
+    This will be a focus of interest in a later session.
+    For now it’s just a handy fact that simplifies testing.
+  .slide
+    p.em-above glossary: TMS
+
++slide
+  +img_clip('dausilio_2009_fig1.png')
+  p.source D'Ausilio et al (2009, figure 1)
+  .notes: :t
+    For a quick illustration of how we know about the double life of motor representation, consider
+    this experiment ....
+  .notes: :t
+    ‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical
+    activity specifically in the lip (LipM1) or tongue (TongueM1) area’
+    \citep[p.~381]{dausilio:2009_motor}
+  .notes: :t
+    ‘We hypothesized that focal stimulation would facilitate the perception of 
+    the concordant phonemes ([d] and [t] with TMS to TongueM1), but that 
+    there would be inhibition of perception of the discordant items 
+    ([b] and [p] in this case). Behavioral effects were measured via reaction 
+    times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}
+
++slide
+  +img_clip('dausilio_2009_fig2.png')
+  p.source D'Ausilio et al (2009, figure 2)
+
+section.slide
+  +_slide_middle_inner
+    +img('rizzolatti_2006_figure1_1.png')
+  +reset
+    +_slide_inner
+      p.source Rizzolatti and Sinigaglia, 2006 figure 1.1
+    .notes: :t
+      ‘The posterior section of the frontal lobe contains the motor areas,’ (p.~4)
+      Now you know as much about the brain as I do.
+    .notes: :t
+      Mention primary and supplementary motor areas : we use the term ‘motor’ loosely
+      (compare ‘visual’, which also has narrower and broader uses in 
+      neuroscience).
+
+
+
+
+
++slide_middle
+  .notes [end of aside on the double life of motor representation]
+  p.center How do we know that outcomes are represented motorically?
+  .notes: :t
+    
+
++slide_middle
+  p.center first illustration: same kinematics, different goal
+  .slide
+    p.em-above glossary: MEP
+  
+section.slide
+  +_slide_middle_inner
+    +img('villiger_2010_fig1ab.png')
+    .step2.hide
+      +img('villiger_2010_fig1cd.png')
+  +reset
+    +_slide_inner
+      p.source Villiger et al, 2010 figure 1AB
+  .notes: :t
+    TMS to measure MEP
+  .slide
+    +show('.step2')
+    .notes: :t
+      They also had an occluded end version ...
+
++slide({bkg:'villiger_2010_fig2.png'})
+  +clip('img.bkg','rect(0px, 400px, 999px,0px)')
+  p.source Villiger et al, 2010 figure 2
+  .notes: :t
+    Incidentally, ‘the observed direction of the modulation was not consistent with previous TMS
+    literature. Specifically, MEP amplitudes were significantly lower in the Object-Present than in the
+    Object-Absent conditions (Fig. 2), suggesting that there was an inhibitory effect of object
+    manipulation on the activity of M1 during action observation.’
+  .slide
+    +clip('img.bkg','auto')
+    
+
++slide_middle
+  p.center.step1 first illustration: same kinematics, different goal
+  .slide
+    +blur('.step1')
+    p.center.em-above second illustration: different kinematics, same goal
+
++slide({bkg:'umilta_2008_figure1.png'})
+  p.source Umiltà et al, 2008 figure 1
+  .notes: :t
+    Umiltà et al, 2008 : single cell recordings in monkeys
+  .notes: :t
+    MEPs (TMS amplified) in humans
+
++slide({bkg:'cattaneo_2010_fig1.png'})
+  p.source Cattaneo et al, 2010 figure 1
+  .notes: :t
+    TMS MEP, humans.
+  .notes: :t
+    Shown video, then a static picture.
+    Is this the same goal as you saw in the video?
+    Press one of two keys.
+    ‘They were explicitly told to ignore the effector and make a judgment on the type of act only.’
+
+
++slide
+  +img('cattaneo_2010_fig3.png')
+  p.source Cattaneo et al, 2010 figure 3
+  .notes: :t
+    Key finding: TMS to both ventral premotor cortex (PMv) and left supramarginal gyrus (SMG)
+    increases RTs regardless of whether it’s the same effector or a different effector.
+    (You can’t see same/different effector in this figure.)
+  .notes: :t
+    KEY: superior temporal sulcus (STS), and a parietofrontal system consisting of the intraparietal
+    sulcus (IPS) and inferior parietal lobule (IPL) plus the ventral premotor cortex (PMv) and caudal
+    part of inferior frontal gyrus (IFG). In some instances also, the superior parietal lobule (SPL)
+
+
++slide
+  +img('cattaneo_2010_fig4.png')
+  p.source Cattaneo et al, 2010 figure 4
+  .notes: :t
+    By contrast, TMS to superior temporal sulcus (STS) increased RT only for judgements
+    where the video effector was the same as the photo effector.
+     
+    
++slide_middle({bkg:'carry_information/Slide1.jpg'})
+  +hide('img.bkg', 0)
+  +left_half
+    p Markers of motor representation 
+      span.step2.hide  ...
+    .notes: :t
+      The experiments providing such evidence typically involve a marker of motor representation, 
+      such as a pattern of neuronal firings, a motor evoked potential or a behavioural performance 
+      profile, which, in controlled settings, allows sameness or difference of motor representation 
+      to be distinguished.  Such markers can be exploited to show that the sameness and difference 
+      of motor representation is linked to the sameness and difference of an outcome such as the 
+      grasping of a particular object.
+      (Pioneering uses of this method include \citealp{rizzolatti:1988_functional,Rizzolatti:2001ug}; 
+      it has since been developed in many ways: see, for example,
+      \citet{hamilton:2008_action, cattaneo:2009_representation, cattaneo:2010_state-dependent, 
+      rochat:2010_responses, bonini:2010_ventral, koch:2010_resonance}.)
+    .slide
+      +show('img.bkg')
+      +show('.step2')
+      p 1. are unaffected by variations in kinematic features but not goals
+    .slide
+      +attr('img.bkg', 'src', '/img/carry_information/Slide2.jpg')
+      p 2. are affected by variations in goals but not kinematic features
+    .slide
+      +attr('img.bkg', 'src', '/img/carry_information/Slide3.jpg')
+      +blur('img.bkg', '5px')
+      p So: 3. 
+        span.carry-information carry information
+        span   about goals  (from 1,2)
+    .slide
+      +invert('.carry-information')
+    .slide
+      +blur('img.bkg', '15px')
+      +uninvert('.carry-information')
+      p.em-above Also
+      p 4. Information about outcomes guides planning-like processes ...
+
++slide_middle({bkg:'planning_like/Slide1.jpg'})
+  .notes: :t
+    To illustrate, consider a sequence of actions which might be involved in shoplifting an apple: you have to secure the apple, transport it, and position it in your pocket.
+    Each of these outcomes can be represented motorically.
++slide_middle({bkg:'planning_like/Slide2.jpg'})
+  .notes: :t
+    Motor processes are planning-like in that they involve computing means from ends.
+    Thus a representation of an end like securing it [the apple] can trigger a process 
+    that results in the representation of outcomes that are means to this end.
+    
++slide_middle({bkg:'planning_like/Slide3.jpg'})
+  .notes: :t
+    Motor processes are also planning-like in that which means are selected in preparing an 
+    action that will occur early in the sequence may affect needs that will arise only later 
+    in a later part of the actions.
+    For instance, how the apple is grasped at an early point in the sequence may be determined 
+    in part by what would be a more comfortable way for the other hand to grasp it later.
++slide_middle({bkg:'planning_like/Slide4.jpg'})
+  .notes: :t
+    So motor representations of outcomes guide planning-like processes.
+    This is why I think it’s not just that they carry information about outcomes
+    like grasping an apple, but that they also represent such outcomes.
+
+
+
+    
++slide_middle
+  +left_half
+    p Markers of motor representation 
+      span.step2.hide  ...
+    p 1. are unaffected by variations in kinematic features but not goals
+    p 2. are affected by variations in goals but not kinematic features
+    p So: 
+    p 3. 
+      span.carry-information carry information
+      span   about goals  (from 1,2)
+    p.em-above Also
+    p 4. Information about outcomes guides planning-like processes.

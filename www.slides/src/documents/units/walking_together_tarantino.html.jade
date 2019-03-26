@@ -1,0 +1,359 @@
+--- cson
+layout: 'deck_unit'
+title: "Walking Together in the Tarantino Sense"
+tags: ['contrast-case', 'simple-view']
+description: """
+  The Simple View, having survived the objection that it involves circularity,
+  now faces a yet more challenging objection.
+  Apparently the Simple View cannot distinguish bewteen all the contrast cases 
+  that an account of shared agency must distinguish.
+  (Contrast cases are pairs of cases where one involves shared agency
+  and the other does not and which are otherwise as similar as possible).
+  """
+depends: ['']
+source: ['']
+duration: 5
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+//- +slide_middle
+//-   p The Simple View
+//-   .em-above
+//-     +simple_account
+//-   .notes: :t
+//-     Here’s the simple view again.  My aim now is to present the most convincing objection
+//-     to it that I can.
+//-
+
++slide_middle
+  p.center Bratman’s ‘mafia case’
+  .notes: :t
+    Suppose that you and I each intend that we, you and I, go to New York together.  
+    If we act on our intentions and succeed, will our going to New York thereby
+    involve an exercise of shared agency?
+  .notes: :t
+    Michael Bratman offers a counterexample.  Suppose we elaborate the story so 
+    that your plan is to point a gun at me and bundle me into the boot (or trunk) of your car.  
+    Then you still intend that we go to New York together, but in a way that doesn't 
+    depend on my intentions.  As you see things, I'm going to New York with you whether 
+    I like it or not.  This doesn't seem like the basis for shared agency.  
+    After all, your plan involves me being abducted.  
+  .notes: :t
+    But it is still a case in which we each intend that we go to New York together and we do.
+    So, apparently, the conditions of the Simple View are met (or almost met) and yet there is
+    no shared agency.
+
+section.slide
+  .container_12
+    .grid_6
+      .words(style='padding-left:1em;')
+        .step1
+          .notes Bratman’s brilliant idea for avoiding this sort of problem is to suggest that we don’t just each intend the action but rather we each intend to act by way of the other's intentions.
+          .notes We can put this by saying that our intentions must interlock: mine specify yours and yours mind.
+          .notes Now this appeal to interlocking intentions enables Bratman to avoid counterexamples like the Tarantino walkers; if I intend that we walk by way of your intention that we walk, I suppose can't rationally also point a gun at you and coerce you to walk.   
+          p ‘each agent does not just intend that the group perform the […] joint action.  
+          p ‘Rather, each agent intends as well that the group perform this joint action in accordance with subplans (of the intentions in favor of the joint action) that mesh’ 
+          p.right (Bratman 1992: 332)
+          .handout `each agent does not just intend that the group perform the […] joint action. Rather, each agent intends as well that the group perform this joint action in accordance with subplans (of the intentions in favor of the joint action) that mesh' \citep[p.\ 332]{Bratman:1992mi}.
+          .handout Our plans are \emph{interconnected} just if facts about your plans feature in mine and conversely.
+          .handout ‘shared intentional agency consists, at bottom, in interconnected planning agency of the participants’ \citep{Bratman:2011fk}.
+    .grid_6.words.slide
+      +blur('.step1')
+      .right-half(style='padding-left:1em;')
+        .notes: :t
+          In making this idea more precise, Bratman proposes sufficient conditions for us to have
+          a shared intention that we J ...
+          ... the idea is then that an intentional joint action is an action that is appropriately 
+          related to a shared intention.
+        .shared-intention-conditions
+          +shared-intention-conditions
+        .handout \begin{minipage}{\columnwidth}
+        .handout \emph{Bratman’s claim}. For you and I to have a collective/shared intention that we J it is sufficient that: 
+        .handout \begin{enumerate}[label=({\arabic*}),itemsep=0pt,topsep=0pt]
+        .handout \item  `(a) I intend that we J and (b) you intend that we J;
+        .handout \item `I intend that we J in accordance with and because of la, lb, and meshing subplans of la and lb; you intend that we J in accordance with and because of la, lb, and meshing subplans of la and lb;
+        .handout \item `1 and 2 are common knowledge between us' \citep[View 4]{Bratman:1993je}
+        .handout \end{enumerate}
+        .handout \end{minipage}
+        .notes: :t
+          How does this rule out the ‘mafia case’?
+    .slide
+      +highlight('.in-accordance-with-and-because-of', 'yellow')
+      .notes: :t
+        This is how it  rules out the ‘mafia case’ ...
+    .slide
+      +unhighlight('.in-accordance-with-and-because-of', 'yellow')
+      .notes: :t
+        Now Bratman’s account initially seems like a friendly ammendment to the Simple View.
+        But if we go down this route, things are going to get hairy very quickly.
+      .notes: :t
+        You might notice that Bratman’s approach has quite a bit in common with Grice’s ideas
+        about meaning ...
+      .notes: :t
+        ... and, as this suggests, there are further counterexamples, increasingly bizarre,
+        which might involve adding further clauses.
+        Although Bratman’s is the leading, best developed account, there are few philosophers
+        who think this approach will work.
+      .notes: :t
+        It’s just here that, in philosophy at least, things get a little wild.
+        Attempts to provide the missing ingredient in characterising joint action 
+        include introducing novel kinds of intentions \citep{Searle:1990em} or 
+        modes \citep{gallotti:2013_social}, novel kinds of agents \citep{helm_plural_2008}, 
+        and novel kinds of reasoning \citep{Gold:2007zd}.
+        Others suggest embedding intentions in special kinds of commitment \citep{gilbert:2014_book}.
+      .notes: :t
+        Before we get into this huge mess, let’s be clear about why we are doing it.
+        So far it is just becase Bratman’s ‘mafia case’ appears to be a counterexample to
+        the Simple View.  But is it really a counterexample? ...
+
++slide_middle
+  .notes: :t
+    We’re considering that Bratman’s ‘mafia case’ provides a counterexample to
+    the Simple View.  But does it really?
+  p Bratman’s ‘mafia case’
+  p.em-above vs
+  p.em-above The Simple View
+  .em-above
+    +simple_account
+  .notes: :t
+  .slide
+    +invert('.appropriately-related')
+    .notes: :t
+      The mafia case fails as a counterexample to the Simple View because if you go through 
+      with your plan, my actions won’t be appropriately related to my intention.
+    .notes: :t
+      And, on the other hand, if you don’t go through with your plan, that it is at best
+      unclear that your having had that plan matters for whether we have shared agency.
+    .notes: :t
+      I suggest that what is wrong in the Mafia Case is not that the agent’s need further
+      intentions, but just that if their intentions don’t connect to their actions in the 
+      right way then there won’t be intentional joint action.
+    .notes: :t
+      Before I go on, let me pause for a second to consider a counterargument,
+      that is, an argument that the mafia case is indeed a counterexample to the simple view.
+
+
+
+//-
+//- +slide_middle
+//-   p.notes.handout.show 1. ‘The notion of a we-intention [shared intention] ... implies the notion of cooperation’
+//-   .notes.handout.ctd \citep[p.~95]{Searle:1990em}
+//-   p.right.grey-text Searle (1990, p. 95)
+//-   .notes: :t
+//-     Why is this relevant.  Because ...
+//-   .slide
+//-     p.notes.handout.show 2. Meeting the condition of the Simple View does not imply that you will cooperate.
+//-     .notes: :t
+//-       This is what Bratman’s mafia case shows.
+//-       So maybe the case does provide the basis for an argument against the Simple View after all?
+//-   .slide
+//-     .notes.show
+//-       p.em-above But ...
+//-       p joint action involves cooperation
+//-       p vs
+//-       p shared intention entails willingness to cooperate
+//-     .notes: :t
+//-       I’m not convinced that Searle’s claim is right.
+//-       Note that I can reject Searle’s claim while holding onto the claim that
+//-       joint action involves cooperation.
+//-   .slide
+//-     .container_12
+//-       .grid_6
+//-         p.center cooperation
+//-         p.center ^
+//-         p(style='margin-top:-1.25em').center |
+//-         p.center shared intention
+//-       .grid_6
+//-         p.center cooperation
+//-         p.center ^
+//-         p(style='margin-top:-1.25em').center |
+//-         p.center joint action
+//-     .clear
+//-     p.em-above.right(style='border-top:1px solid white; padding-top:0') time ->
+//-     .notes: :t
+//-       So: I recognise that there may be more to be said in defence of the claim that
+//-       the mafia case is a counterexample to the Simple View, but I certainly think
+//-       the mafia case is not obviously a counterexample.
+//-       (Given the difficulties entailed by rejecting the Simple View, we want a
+//-       strong reason for rejecting it.)
+                  
++slide_middle({bkg:'tarantino_walkers.jpg'})
+  +hide('img.bkg', "1")
+  p.center Walking together 
+    span.step2.hide in the Tarantino sense
+  .notes: :t
+    Here is my attempt to improve on Bratman’s counterexample.
+    Contrast friends walking together in the way friends ordinarily walk,
+    which is a paradigm example of joint action,
+    with two gangsters who walk together like this ...
+  .notes: :t
+    ... Gangster 1 pulls a gun on Gangster 2 and says: “let’s walk”
+    But Gangster 2 does the same thing to Gangster 1 simultaneously.
+  .slide
+    +show('.step2')
+    .notes: :t
+      We might call this ‘walking together in the Tarrantino sense’.
+    .notes: :t
+      The conditions of the Simple View are met both in ordinary walking together
+      and in walking together in the Tarantino sense.  [*Discuss ‘appropriately related’].
+      So according to the Simple View, both are intentional joint actions.
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      Now I wanted to say that walking together in the Tarantino sense
+      is not an intentional joint action unless the central event of of Reservoir Dogs 
+      is also a case of joint action.
+      And I think it’s pretty clear that that isn’t a joint action.
+      But I was surprised to find that at least two people responded, independently of each other,
+      to this suggestion by saying that walking together in the Tarantino sense really is a joint action.
+    .notes: :t
+      My opponent reasoned that each is acting intentionally, and that coercion is no 
+      bar to shared agency.
+
++slide_middle
+  p.center the threat of collapse: trading intuitions
+  .notes: :t
+    Just here we come to a tricky issue.
+    There is a danger that we will just end up trying to say something systematic 
+    about one or another set of intutitons, where nothing deep underpins these intutions.
+  .notes: :t
+    I think this is a real threat; you’ll see that most philosophers are not careful
+    about their starting point in theorising about shared agency.  They merely give 
+    examples or a couple of contrast cases and off they go.
+    Adopting this undisciplined approach risks achieving nothing more than 
+    organising one’s own inutitions.  (It’s fine to organise intuitions on weekends and evenings,
+    but it shouldn’t be your day job.)
+  .notes: :t
+    That’s why I want to go slowly here --- maybe this is very frustrating and you want to get
+    into the really exciting, weird and crazy stuff about plural subjects, shared emotions 
+    or aggregate animals.  But before we can do this seriously we need some sort of foundation
+    that will ensure we aren’t merely organising intutitions.
+
++slide_middle
+  p.center another contrast case: blocking the asile
+  .notes: :t
+    Imagine two sisters who, getting off an aeroplane, tacitly agree to exact revenge on 
+    the unruly mob of drunken hens behind them by standing so as to block the aisle together.
+    This is a joint action.
+    Meanwhile on another flight, two strangers happen to be so configured that they are 
+    collectively blocking the aisle.
+    The first passenger correctly anticipates that the other passenger, who is a 
+    complete stranger, will not be moving from her current position for some time.
+    This creates an opportunity for the first passenger: she intends that they, 
+    she and the stranger, block the aisle.
+    And, as it happens, the second passenger’s thoughts mirror the first’s.
+  .slide
+    p.em-above -- meets the conditions of the Simple View
+    .notes: :t
+      So the feature under consideration as distinctive of joint action is present: 
+      each passenger is acting on her intention that they, the two passengers, block the aisle.
+  .slide
+    p.em-above -- does not involve shared agency 
+      span.step2.hide.bkg-faint-blue to the same degree
+    .notes: :t
+      But the contrast between this case and the sisters exacting revenge suggests 
+      that these passengers are not taking part in an intentional joint action.
+    .notes: :t
+      Now I’m not confident that we can say there is no intentional joint action
+      outright ...
+  .slide
+    +show('.step2')
+    .notes: :t
+      ...  But I am confident that there is a contrast with respect to shared agency.
+      [*Something about shared agency from the agent’s own perspectives?]
+    .notes: :t
+      And this is all that really matters for us: either the Simple View fails altogether
+      to capture shared agency, or else it captures only a weak form of shared agency.
+      Either way we will need more than the Simple View.
+      
+      
++slide_middle
+  .question.hide
+    p.huge-glow Question
+    p.under-huge-glow(style='margin-top:-3em;'): :t
+      What distinguishes genuine joint actions from parallel but merely individual actions?
+  p.center.line-through The Simple View
+  .notes: :t
+    I’ve been arguing that the Simple View is either outright wrong or else radically incomplete
+    as an account of shared agency.
+  .notes: :t
+    Apparently, it is possible for two or more agents to each intend that 
+    they do one thing together and to act on these intentions without them thereby 
+    exercising shared agency a strong-ish sense.
+  .slide
+    +show('.question')
+    .notes: :t
+      So the Simple View fails to provide a satisfying answer to the question, What distinguishes 
+      genuine joint actions from parallel but merely individual actions?
+    .notes: :t
+      Let me pause to say why this matters and how it fits into the big picture ...
+    .notes: :t
+      Philosophers have offered a tremendous variety of incompatible, wildly complicated and
+      conceptually innovative theories about shared agency.  
+      The Simple View is an obstacle to discussing these theories.
+      If the Simple View is correct, none of the complexity philosophers have offered is needed.
+    .notes: :t
+      The first problem I encounter in thinking about shared agency is that philosophers
+      seem to take for granted without argument that the Simple View can be excluded.
+      In fact it is surprisingly difficult to show that the Simple View is wrong.
+      The usual argument against it is that it is circular, but we saw that this argument 
+      depends on the mistaken assumption that all cases of acting together involve joint action. 
+    .notes: :t
+      A better objection to the Simple View involves counterexamples.
+      But we saw that the standard counterexample, Bratman’s mafia cases, does not work.
+      However refining that counterexample does appear to present a problem for the 
+      Simple View.
+    .notes: :t
+      Note that I don’t claim that the objection to the Simple View is decisive;
+      in fact one of my aims in these lectures is to show that it is possible to
+      save the Simple View.
+      Nevertheless I do think that the objections to it are serious enough that we
+      must now explore what proper philosophers have to say about shared agency. 
+    .notes: :t
+      That’s why your first seminar task is to read and write about Searle’s early
+      article.  This along with some less-readable but perhaps deeper efforts by Raimo Tuomela
+      are often regarded as having initiated contemporary discussions of joint action.
+
+      
+  //- .notes: :t
+  //-   There is something a bit tricky here.  If we consider Beatrice and Baldric, or the people
+  //-   walking in the Tarantino sense, I do think their intentions are appropriately related to
+  //-   their actions; that is, we shouldn’t consider such cases as somehow involving deviant causal
+  //-   chains.  So I don’t think we can take parallel planning as part of an account of what it is for
+  //-   agents’ intentions to be appropriately related to their actions.
+  //-   Instead I think we have to see it as a further additional condition on the relation between
+  //-   intentions and actions.
+  //- .notes: :t
+  //-   This makes my position a bit different from Bratman’s and many other quite standard view.
+  //-   On these standard views, there is a state, or structure of states, which agents have, a
+  //-   shared intention, and their having this shared intention provides a sort of guarantee that,
+  //-   they will act as one (or exercise shared agency).
+  //-   By contrast, I’m not yet convinced that any such state exists.
+  //-   On the view I’m offering, the parents walking in the Tarantino sense and the friends walking
+  //-   in the way friends typically walk might have much the same intentions.  The difference, on
+  //-   my view, is in how the intentions get into action.
+                
+      
+      
+.handout: :t
+  \subsection{Shared Intention}
+.handout: :t
+  What distinguishes joint actions from parallel but individual actions?
+  ‘the key property of joint action lies in [...] the participants’ having a [...] “shared” intention.’
+  \citep{alonso_shared_2009} %[pp.\ 444-5]
+.handout: :t
+  `I take a collective action to involve a collective intention.'  \citep[p.\ 5]{Gilbert:2006wr}
+.handout: :t
+  `The sine qua non of collaborative action is a joint goal [shared intention] and a joint commitment’
+  \citep[p.\ 181]{tomasello:2008origins}
+  
+    
+      
+
+
+  
+  
+

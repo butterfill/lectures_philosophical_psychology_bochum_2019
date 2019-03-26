@@ -1,0 +1,213 @@
+  ---
+layout: 'deck_unit'
+title: "Collective Goals"
+tags: []
+description: ""
+depends: ['']
+source: ['']
+duration: 5
+book: []
+exercises: []
+exercises_fast: []
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
++slide({bkg:'prosecco_accident.png'})
+  .notes: :t
+    Let me first explain something about this notion of a collective goal ...
+  .notes: :t
+    Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+    unfortunately the prosecco misses the glass and soak Zachs’s trousers.  
+  .slide
+    .notes Here are two sentences, both true:
+    .notes.show
+      p The tiny drops fell from the bottle. 
+    p.step2.indent.hide  - distributive
+    .notes.show
+      p.em-above The tiny drops soaked Zach’s trousers. 
+    p.step3.indent.hide  - collective
+  .slide
+    +show('.step2')
+    .notes: :t
+      The first sentence is naturally read *distributively*; that is, as specifying something
+      that each drop did individually.  Perhaps first drop one fell, then another fell.  
+  .slide
+    +show('.step3')
+    .notes: :t
+      But the second sentence is naturally read *collectively*.
+      No one drop soaked Zach’s trousers; rather the soaking was something that the drops
+      accomplised together.
+    .notes: :t
+      If the sentence is true on this reading, the tiny drops' soaking Zach’s trousers is not
+      a matter of each drop soaking Zach’s trousers.
+  .slide
+    +blur('p:lt(4)')
+    .notes: :t
+      Now consider an example involving actions and their outcomes: 
+    p.em-above.notes.show Their thoughtless actions 
+      span.outcome soaked Zach’s trousers.
+      span.hide.causal(style='margin-left:1em')  [causal]
+  .slide
+    p.indent - ambiguous
+    .notes: :t
+      This sentence can be read in two ways, distributively or collectively.
+      We can imagine that we are talking about a sequence of actions done 
+      over a period of time, each of which soaked Zach’s trousers.
+      In this case the outcome, soaking Zach’s trousers, is an outcome of each action.
+    .notes: :t
+      Alternatively we can imagine several actions which have this outcome collectively---as in
+      our illustration where Ayesha holds a glass while Beatrice pours.
+      In this case the outcome, soaking Zach’s trousers, is not necessarily an outcome of any of the 
+      individual actions but it is an outcome of all of them taken together.
+      That is, it is a collective outcome.
+    .notes: :t
+      (Here I'm ignoring complications associated with the possibility that some
+      of the actions collectively soaked Zach’s trousers while others did so distributively.)
+    .notes: :t
+      Note that there is a genuine ambiguity here.
+      To see this, ask yourself how many times Zach’s trousers were soaked.
+      On the distributive reading they were soaked at least as many times as there are actions.
+      On the collective reading they were not necessarily soaked more than once.
+      (On the distributive reading there are several outcomes of the same type and each 
+      action has a different token outcome of this type; on the collective reading there is a single token 
+      outcome which is the outcome of two or more actions.)
+    .notes: :t
+      Conclusion so far: two or more actions involving multiple agents can have outcomes 
+      distributively or collectively.
+      This is not just a matter of words; there is a difference in the relation between
+      the actions and the outcome.
+  .slide
+    .notes Now consider one last sentence:
+    .notes.show
+      p.em-above The 
+        span.goal goal
+        span  of their actions was to fill Zach’s glass.
+        span.hide.teleological(style='margin-left:1em')  [teleological]
+    .slide
+      +show('.causal, .teleological')
+      .notes: :t
+        Whereas the previous sentence was causal, and so concened an actual outcome of some actions,
+        this sentence is teleological, and so concerns an outcome to which actions are directed.
+    p.slide.indent - also ambiguous
+    .notes: :t
+      Like the previous sentence, this sentence has both distributive and collective readings.
+      On the distributive reading, each of their actions was directed to an outcome,
+      namely soaking Zach’s trousers.  So there were as many attempts on his trousers as there 
+      are actions.
+      On the collective reading, by contrast, it is not necessary that any of the actions
+      considered individually was directed to this outcome;
+      rather the actions were collectively directed to this outcome.
+    .notes: :t
+      Conclusion so far: two or more actions involving multiple agents can be collectively
+      directed to an outcome.
+    .slide
+      +invert('.goal')  
+      .notes: :t
+        Where two or more actions are collectively directed to an outcome, we will say that this 
+        outcome is a *collective goal* of the actions.
+        Note two things.
+        First, this definition involves no assumptions about the intentions or other mental states 
+        of the agents.  Relatedly, it is the actions rather than the agents which have a collective goal.
+        Second, a collective goal is just an actual or possible outcome of an action.
+      .handout: :t
+        An outcome is a \emph{collective goal} of two or more actions involving multiple
+        agents if it is an outcome to which those actions are collectively directed.
+        
+    //-   .notes: :t
+    //-     Now there is a key difference between the ideas these last two sentences convey.
+    //- .slide
+    //-   +blur('p:lt(4),p:gt(5)')
+    //-   .notes: :t
+    //-     Because we are familiar with the idea of common effects, it is obvious how
+    //-     two or more actions can have an outcome collectively.
+    //-     You hold the bottle in one place and I hold the glass in a another, too far away,
+    //-     and sure enough Zach’s trousers get soaked
+    //-     as a common effect of our actions.
+    //-     If you had moved the bottle slightly further towards me or if I had moved the glass
+    //-     slightly further towards you, everything would have been fine.
+    //-     This is all that is required for soaking Zach’s trousers to be
+    //-     an outcome that our actions have collectively.
+    //- .slide
+    //-   +unblur('p:gt(5)')
+    //-   +blur('p:lt(6)')
+    //-   .notes: :t
+    //-     By contrast, it is less obvious, I think, how two or more agents' actions might come to be
+    //-     collectively directed to a single outcome.
+    //-   .notes: :t
+    //-     So this is our question: in virtue of what can two or more actions involving multiple agents
+    //-     have a collective goal?
+    
+
++slide({bkg:'collective_goals/slide59.jpg'})
+  +hide('img.bkg',0)
+  +left_half 
+    .notes: :t
+      We can extend our defintion of joint to include the notion 
+      of a collective goal ...
+    .notes.show
+      p Joint action:
+      p.ja-df1 An event with two or more agents.
+      +line-through('.ja-df1')
+      p.ja-df2 An event with two or more agents where the actions have a collective goal.
+    .notes: :t
+      Is this good enough?  I think it isn’t ...
+    .notes: :t
+      Suppose two or more agent’s actions are coordinated around an outcome.
+      That is, their actions are coordinated and they are coordinated in 
+      such a way that, normally, they would bring about this type of action.
+    .notes: :t
+      When this occurs, it seems to me that the actions are directed to the outcome.
+      And because this is (in part, at least) a consequence of their coordination,
+      it is not just that each action is individually directed to the outcome.
+      So the outcome is one to which their actions are collectively directed.
+      That is, it is a collective goal of their actions.
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      One consequence of this is that actions can have collective goals of which
+      the agents may be completely unaware.
+    .notes For example, when two agents between them lift a heavy block by means of each agent pulling on either end of a rope connected to the block via a system of pulleys, their pullings count as coordinated just because the rope relates the force each exerts on the block to the force exerted by the other.  
+    .notes In this  case, the agents' activities are coordinated by a mechanism in their environment, the rope, and not necessarily by any psychological mechanism.
+  .slide
+    +attr('img.bkg', 'src', 'img/collective_goals/slide60.jpg')
+    .notes To make a conjecture based on work with bees and ants, in some cases ...
+    //- +slide({bkg:'collective_goals/slide61.jpg'})
+    .notes the coordination needed for a collective goal may even be supplied by behavioural patterns \citep{seeley2010honeybee}   and  pheromonal signals \citep[pp.\ 178-83, 206-21]{hoelldobler2009superorganism}.
+  .slide
+    +attr('img.bkg', 'src', 'img/collective_goals/slide62.jpg')
+    .notes: :t
+      So the definition seems inadequate.
+      Either it includes things that are not joint actions at all,
+      or else it captures a notion of joint action that is broader than
+      the core cases of shared agency that have been of primary interest to 
+      philosophers.
+    .notes: :t
+      And, to return to the point about cooperation, the bare idea that 
+      our actions have a collective goal implies nothing about cooperation. 
+    .notes: :t
+      \footnote{%
+      This is not to say that collective goals never involve psychological states.
+      As we’ll see, one way for several actions to have a collective goal is for their agents to be acting on a shared intention; 
+      a shared intention supplies the required coordination.
+      }
+  .slide
+    +fade('img.bkg')
+    +blur('img.bkg', '15px')
+    .notes: :t
+      We’ve been considering the idea that we can extend our defintion of joint to include the notion 
+      of a collective goal ... On our current working definition,
+      a joint action is an event with two or more agents where the actions have a collective goal.
+  .slide
+    +line-through('.ja-df2')
+    .clear
+    +left_half
+      p.em-above.right [Still too broad!]
+    .notes: :t
+      The defintion is still too broad.
+      To make progress we need to think not just about collective goals
+      but about the different kinds of thing in virtue of which some actions can 
+      have a collective goal ...

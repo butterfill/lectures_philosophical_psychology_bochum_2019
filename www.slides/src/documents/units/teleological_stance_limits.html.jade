@@ -1,0 +1,194 @@
+---cson
+layout: 'deck_unit'
+title: "Limits of The Teleological Stance"
+tags: []
+description: """
+  The Teleological Stance is subject to at leasttwo limits.
+  One is the Problem of Opaque Means: 
+  ignorance about to which ends actions are means can impair goal ascription.
+  Another is the Problem of False Belief:
+  where agents act on false beliefs, the teleological stance generates
+  systematically incorrect goal ascriptions.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide_middle
+  .container_12.em-above
+    .grid_6
+      //- p.center EITHER:
+      p.center
+        //- img(src='/img/hummus.jpg', style="width:200px; height:169px")
+        +colour-box('red','150')
+      p.center [contains food]
+    .grid_6
+      //- p.center OR:
+      p.center 
+        //- img(src='/img/hamburger.jpeg', style="width:200px")
+        +colour-box('blue','150')
+      p.center [contains poison]
+    .notes: :t
+      Return to my two boxes.
+      Consider what the Teleological Stance says about someone who 
+      reaches for the blue box, which contains posion:
+      The goal of her action is to retrieve the poision.
+    .notes: :t
+      This ascription will be incorrect when the agent
+      has false beliefs about the contents of the box 
+      mental states of another individual.
+    .notes: :t
+      Now you might say, ‘Of course this is a limit.  How could it not be?
+      After all, the whole point of the Teleological Stance is that it doesn’t 
+      involve ascribing mental states.  And how could you correctly identify the 
+      goals of actions based on false beliefs if you aren’t ascribing mental states?’
+    .notes: :t
+      To repeat: how could you correctly identify the 
+      goals of actions based on false beliefs if you aren’t ascribing mental states?
+    .notes: :t
+      I’m so glad you asked ...
+    .clear
+    .grid_12
+    .em-above
+      p.em-above.center
+        table.data
+          thead
+            tr
+              td action
+              td belief
+              td teleological stance
+          tbody
+            tr
+              td blue
+              td true
+              td.center ✓
+            tr
+              td blue
+              td false
+              td.center ✗
+
+
+
++slide_middle
+  p.center Obstacle 2: opaque means  
+    span.impair impair goal ascription
+  .notes.handout: :t
+    The problem of opaque means:
+    failures to identify to which ends actions are means can impair goal ascription.
+  .slide.eg
+    p.em-above e.g. pram -> bus
+      span.step2.hide ; gorilla preparing nettles
+    .notes: :t
+      While wriggling the pram, it looks a lot like she’s trying to throw
+      the baby out, or as if she’s attacking the bus.
+      More prosaically, it’s also hard to tell whether her goal is to 
+      extract the pram from the bus or to get it on.
+  .slide
+    +show('.step2')
+    .notes: :t
+      The case of Byrne’s Rwandan mountain gorilla’s preparing stinging nettles
+      is another good case; it might well be hard for an unskilled 
+      observer to recognise to which end these actions are means.
+  .slide.eg
+    p.em-above e.g. tool use
+    .notes: :t
+      The use by another of an unfamiliar tool to achieve something.
+      For example, maybe she has a novel-to-you tool for hulling rice
+      which involves throwing it into the air; 
+      not recognizing this tool’s function you are puzzled by her action 
+      and unable to identify it’s goal.
+  .slide
+    +blur('.eg')
+    .notes: :t
+      OK, so opaque means impair goal ascription.
+      But why do they do so?
+      Reflection on the teleological stance already gives us the answer ...
+      
+
+    
+
+section.slide
+  .notes: :t
+    Why do opaque means impair goal ascription?
+  .words: .container_12
+    .grid_3
+      p.quote.show(style='border-right:1px grey dashed;padding-right:9px;margin-right:-9px')
+        span ‘an action can be explained by a 
+        span.goal-state goal state
+        span  if, and only if, it is 
+        span.seen-as seen as 
+        span  the 
+        span.most-justifiable 
+          span.most most
+          span  justifiable action 
+        span towards that 
+        span.goal-state goal state
+        span  that is available within the constraints of reality’
+      .notes.ctd \citep[p.~255]{Csibra:1998cx}
+      p.quote.right.grey-text Csibra & Gergely (1998, 255)
+    +blur('.quote')
+    .grid_9
+      p.step1 1. action a is directed to some goal;
+      p.step2  2. actions of a’s type are 
+        span.normally normally
+        span  means of realising outcomes of G’s type;
+      p.step3 3. no available alternative action is a significantly  
+        span.better better*
+        span  means of realising outcome G;
+      p.step4 4. the occurrence of outcome G is  
+        span.desirable desirable
+        span ;
+      p.step5 5. there is no other outcome, G′, the occurrence of which would be at least comparably desirable and where (2) and (3) both hold of G′ and a
+      p.step6 Therefore:
+      p.step7 6. 
+        span.g G
+        span   is a goal to which action 
+        span.a a
+        span   is directed.
+  +highlight-row('.step2')
+  .notes: :t
+    To make this inference, you have to know which outcomes an
+    action is a means of realising.
+    Where the problem of opaque means arises, this is exactly what
+    you don’t know.
+  .notes: :t
+    So the problem of opaque means prevents you from using the teleological
+    stance to identify the goals of an action.
+
++slide_middle
+  p.center.notes.show The Problem of Opaque Means arises for referential communication.
+
++slide_middle
+  p.center Obstacle: opaque means  
+    span.impair impair goal ascription
+  .notes: :t
+    The problem of opaque means:
+    failures to identify to which ends actions are means can impair goal ascription.
+  .eg
+    p.em-above e.g. pram -> bus
+      span.step2 ; gorilla preparing nettles
+  .eg
+    p.em-above e.g. tool use
+  .slide.eg
+    +blur('.eg:lt(2)')
+    p.em-above e.g. communicative actions
+    .notes: :t
+      The problem of opaque means also affects communicative actions 
+      because these characteristically have  goals which the actions 
+      are means to realising only because others recognise them as 
+      means to realising those goals (a Gricean circle). 
+    .handout: :t
+      \emph{A Gricean circle}
+      communicative actions characteristically have  goals which the actions 
+      are means to realising only because others recognise them as 
+      means to realising those goals.
+    .notes: :t
+      To illustrate, you have to imagine that you didn’t understand pointing.
+      We can take a step towards this by imagining 
+      landing on a planet where people point to things with their shoulders 
+      rather than their fingers, and where the shoulders are turned to 
+      a location 35 degrees westwards of the object.
+      It might take a while to figure out that some shoulder movements are pointing
+      gestures.
+

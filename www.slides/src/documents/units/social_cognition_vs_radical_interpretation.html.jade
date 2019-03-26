@@ -1,0 +1,257 @@
+---cson
+layout: 'deck_unit'
+title: "Social Cognition vs Radical Interpretation"
+tags: []
+description: """
+  How would an account of the radical interpretation (which is about how discoveries about
+  minds are in principle possible) further our understanding of actual social 
+  cognition?
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+//- 
+  THIS UNIT: How does the project of interpretation relate to actual social
+  cognition? (a) computational description; (b) charaterises start and end
+  points; nb the start and end points are quite sparse (actually what is the
+  start point? joint displacements?)
+
+
++slide_middle
+  p.notes.handout.show: :t
+    What is the relation between an account of radical interpretation
+    and a theory of social cognition?
+  .notes: :t
+    (This is a way of asking, How is radical interpretation relevant given
+    that our topic is social cognition?)
+  .notes: :t
+    An account of radical interpretation describes a route to knowledge
+    starting from  evidence that can be described without knowing anything about the
+    particular actions, beliefs, desires and other mental states of any individual
+    and ending with knowledge of these particulars.
+  .notes: :t
+    A theory of social cognition is (in part) a theory of the processes by
+    which we actually predict, understand, align with and shape each other.
+  .notes: :t
+    What do these two things have to do with each other?
+
++slide_rh_white({step:true})
+  .notes: :t
+    Sometimes when you read Davidson and Dennett, it seems like an account
+    of radical interpretation just is a theory of social cognition, a theory 
+    of the processes by which we predict, understand, align with and 
+    shape each other  ...
+  +left_half
+    p.notes.handout.show: :t
+      ‘Do people actually use this strategy? Yes, all the time.’
+    .notes.handout.ctd \citep[p.~21]{Dennett:1987sf}
+    p.right.grey-text Dennett (1987, p. 21)
+    .slide
+      p.em-above
+      p.notes.handout.show: :t
+        ‘[a]ll understanding of the speech  [and thoughts] of another involves radical interpretation’ 
+      .notes.handout.ctd \citep[p.~125]{Davidson:1973jx}
+      p.right.grey-text Davidson (1973, 125)
+
+  +right_half({step:true})
+    .notes: :t
+      But elsewhere Davidson says things which give the opposite impression.
+    p.notes.handout.show: :t
+      ‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’
+    .notes.handout.ctd \citep[p.~12]{Davidson:1980xp}
+    p.right.grey-text Davidson (1980, 12) 
+    .notes: :t
+      How should we understand the relation between an account of radical interpretation 
+      and a theory of social cognition?
+      (This is a way of asking, How is radical interpretation relevant given 
+      that our topic is social cognition?)
+
+
++slide_middle
+  .handout: :t
+    \citet[p.~22ff]{Marr:1982kx} distinguishes:
+  .handout: :t
+    \begin{itemize}
+  .handout: :t
+    \item computational description---What is the thing for and how does it achieve this?
+  .handout: :t
+    \item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
+  .handout: :t
+    \item hardware implementation---How are the representations and algorithms physically realised?
+  .handout: :t
+    \end{itemize}
+  .notes: :t
+    One possibility is to appeal to David Marr’s famous three-fold distinction
+    bweteen levels of description of a system: the computational theory, the 
+    representations and algorithm, and the hardware implementation.  
+  .notes: :t
+    This is easy to understand in simple cases.
+    To illustrate, consider a GPS locator.
+    It receives information from four satellites and tells you where on Earth the device is.
+  .notes: :t
+    There are three ways in which we can characterise this device.
+  .no-slide
+    .computational.hem-around
+      p 1. computational description
+      .notes: :t
+        First, we can explain how in theory it is possible to infer the 
+        device’s location from it receives from satellites.
+        This involves a bit of maths: given time signals from four different satellites,
+        you can work out what time it is and how far you are away from each
+        of the satellites.
+        Then, if you know where the satellites are and what shape the Earth is,
+        you can work out where on Earth you are.
+      .no-slide
+        p.indent -- What is the thing for and how does it achieve this?
+      .notes: :t
+        The computational description tells us what the GPS locator does and 
+        what it is for.
+        It also establishes the theoretical possibility of a GPS locator.
+      .notes: :t
+        But merely having the computational description does not enable you to build 
+        a GPS locator, nor to understand how a particular GPS locator works.
+        For that you also need to identify representations and alogrithms ...
+  .no-slide.hem-around
+    p 2. representations and algorithms
+    .notes: :t
+      At the level of representations and algorthms we specify 
+      how the GPS receiver represents the information it receives from the satellites
+      (for example, it might in principle be a number, a vector or a time).
+      We also specify the algorithm the device uses to compute the time and its location.
+      The algorithm will be different from the computational theory: it is a procedure
+      for discovering time and location.
+      The algorithm may involve all kinds of shortcuts and approximations.
+      And, unlike the computational theory, constraints on time, memory and other
+      limited resources will be evident.
+    .no-slide
+      .notes So an account of the representations and algorithms tells us ...
+      p.notes.show.indent -- How are the inputs and outputs represented, and how is the transformation accomplished?
+  .no-slide.hem-around
+    p 3. hardware implementation
+    .notes: :t
+      The final thing we need to understand the GPS locator is a description of the
+      hardware in which the algorithm is implemented.  It’s only here that 
+      we discover whether the device is narrowly mechanical device, using cogs, say, 
+      or an electronic device, or some new kind of biological entity.
+  .no-slide
+    p.indent -- How are the  representations and algorithms physically realised?
+    .notes: :t
+      The hardware implementation tells us how the representations and algorithms are represented physically.
+  p.right.grey-text Marr (1992, 22ff)
+  .slide
+    +blur('p')
+    .notes: :t
+      How is this relevant to my question?
+      My question was, What is the relation between an account of radical interpretation 
+      and a theory of social cognition?
+  .slide
+    +unblur('p')
+    +highlight-row('.computational')
+    .notes: :t
+      I suggest that an account of radical interpretation is supposed to provide
+      a computational description of social cognition; it tells us what social
+      cognition is for and how, in the most abstract sense, it is possible.
+
++slide_rh_white
+  +left_half
+    .firstQ
+      p: :t
+        ‘Do people actually use this strategy? Yes, all the time.’
+      p.right.grey-text Dennett (1987, p. 21)
+    p.em-above
+    .secondQ
+      p: :t
+        ‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’ 
+      p.right.grey-text Davidson (1973, 125)
+
+  +right_half
+    .thirdQ
+      p: :t
+      ‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’
+      p.right.grey-text Davidson (1980, 12) 
+  +blur('.firstQ, .secondQ', '2px', 0)
+  .notes: :t
+    This is why Davidson says that a theory of radical interpretation isn’t
+    ‘meant to throw any direct light on how in real life we come to understand each other’.
+    What he means is that it isn’t about the representations and algorithsm, nor about the 
+    hardware implementation--the neurophysiology in our case--of social cognition.
+  .slide
+    +blur('.thirdQ')
+    +unblur('.secondQ')
+    .notes: :t
+      But he’s also right that all 
+      ‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’.
+      This follows trivially from the fact that 
+      a theory of radical interpretation is supposed to be a computational description
+      of  social cognition. 
+  .slide
+    +blur('.secondQ')
+    +unblur('.firstQ')
+    .notes: :t
+      Finally, the view I’m offering (a theory of radical interpretation is supposed to provide
+      a computational description of social cognition) makes sense of a puzzle about 
+      Dennett’s claim that people use the Intentional Strategy all the time.
+      The puzzle is to understand how he could know this without doing some research.
+      The answer, I think, is that Dennett’s Intentional Stance, like any theory of
+      radical interpretation, isn’t a theory about how individuals understand each other;
+      it is a theory about what it is to understand each other---that is, a computational
+      description of social cognition.
+
++slide_middle
+  .notes: :t
+    I’ve been arguing that 
+  p.center.notes.handout.show: :t
+    A theory of radical interpretation is supposed to provide
+    a computational description of social cognition.
+  .notes: :t
+    If this is right, then an account of radical interpretation makes a fundamental
+    contribution to the study of social cognition.
+  .slide
+    p.center.em-above aside: simulation vs theory
+    .notes: :t
+      Simulation theory and theory theory are theories about  REPRESENTATIONS AND 
+      ALGORITHMS, not about the COMPUTATIONAL DESCRIPTION.
+      For this reason, you could accept Davidson’s theory about radical interpretation
+      while taking any view on simulation vs theory.  The issues ([1]radical interpretation
+      and [2] simluation vs theory) are only indirecty related.
+
++slide_middle
+
+  table.data
+    thead
+      tr
+        td level
+        td social cognition
+    tbody
+      tr.odd
+        td 
+          p computational description 
+          p.indent (What is the thing for and how does it achieve this?)
+        td.hide
+          p theory of radical interpretation
+      tr.even
+        td 
+          p representations and algorithms 
+          p.indent (How are the inputs and outputs represented, and how is the transformation accomplished?)
+        td.hide
+          p simulation, ‘theory theory’, ...
+      tr.odd
+        td
+          p hardware implementation 
+        td.hide
+          p TPJ, ...
+  .slide
+    +show('tr:eq(1) td:eq(1)')
+  .slide
+    +show('tr:eq(2) td:eq(1)')
+    .notes: :t
+      Debates over simulation vs theory theory are debates about alogrithms and representations.
+      Whichever view is selected here, a computational description (theory of radical 
+      interpretation) is still needed. The computational description characterises minds and actions
+      from the point of view of the simulation process (that is, as they are simulated) or
+      from the point of view of the theory (that is, as the theory characterises them as being).
+    
+  .slide
+    +show('tr:eq(3) td:eq(1)')
+

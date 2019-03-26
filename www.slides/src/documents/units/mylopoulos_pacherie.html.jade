@@ -1,0 +1,124 @@
+---cson
+layout: 'deck_unit'
+title: "Mylopoulos and Pacherie’s Proposal"
+tags: []
+description: """
+  Mylopoulos and Pacherie propose that the Interface Problem can be solved
+  by appeal to executable action concepts.
+  This is perhaps also a promising idea for tacking the New Interface Problem too.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+
+
+section.slide
+  .layer.main
+    +_slide_inner
+      .notes.handout: :t
+        ‘As defined by Tutiya et al., an executable concept of a type of movement is a
+        representation, that could guide the formation of a volition, itself the proximal cause of
+        a corresponding movement. Possession of an executable concept of a type of movement thus
+        implies a capacity to form volitions that cause the production of movements that are
+        instances of that type.’
+      .notes.handout.ctd \citep[p.~7]{pacherie:2011_nonconceptual}
+      p.center Mylopoulos and Pacherie:
+      p.em-above 
+        span.step2.hide ‘an 
+        span executable 
+        span.step2.hide  [
+        span.executable action
+        span.step2.hide ] 
+        span.executable concept
+        span.step2.hide  of a 
+          span.type-of-movement type of movement
+          span  is a 
+        span.step2.hide representation, that could guide the formation of a volition, itself the proximal cause of 
+        span.step2.hide a corresponding movement. 
+      p
+        span.step3.hide Possession of an executable concept of a type of movement thus 
+        span.step3.hide implies a capacity to form volitions that cause the production of movements that are 
+        span.step3.hide instances of that type.’
+      .notes: :t
+        There explanation: two different kinds of action concept, one purely
+        observational.  
+        ‘For instance, most of us have a concept of ‘tail wagging’ that we can deploy when we
+        judge, for instance, that Julius the dog is wagging his tail. Or if you are not
+        convinced that tail wagging constitutes purposive behavior, consider the action concept
+        ‘tail swinging’, as in ‘cows constantly swing their tails to flick away flies’.’
+      p.right.step2.hide.grey-text Pacherie 2011, p. 8
+      .slide
+        +show('.step2')
+      .slide
+        +show('.step3')
+        .notes: :t
+          Objections: 
+          (i) It looks like the executable action concept builds in a solution to the interface problem
+          rather than solving it.
+          The executable action concept is a ready-made solution.
+        .notes: :t
+          To answer this objection, we need an account of how concepts and motor representations
+          become bound together.
+      .slide
+        p.em-above.simple-theory-eac
+          span Simple theory of executable action concepts: 
+          br
+          span there are concept--motor schema associations.
+        .notes: :t
+          REPLY: Simple theory of executable action concepts: they’re just associations between 
+          concepts and motor schema (partially specified outcomes that are represented motorically).
+      .slide
+        +blur('.simple-theory-eac')
+        +invert('.type-of-movement')
+        .notes: :t
+          [Objections (ctd):
+          (ii) Fridland: there is a dynamic component to the interface problem. 
+          An an answer to it must specify ‘not just how motor representations are triggered by
+          intentions, but how motor representations’ continue to match intentions as circumstances
+          change in unforeseen ways ‘throughout skill execution’ (Fridland, 2016 p. 19).]
+        .notes: :t
+          (iii) We need to understand how there is matching not only concerning how you act
+          (push vs pull, say) but also on which object you act (this switch or that one, say).
+        .notes: :t
+          On (iii), note that, as Elisabeth has stressed,
+          motor representations represent not only ways of acting but also objects on which actions
+          might be performed and some of their features related to possible action outcomes involving
+          them (for a review see Gallese & Sinigaglia 2011; for discussion see Pacherie 2000, pp.
+          410-3). For example visually encountering a mug sometimes involves representing features
+          such as the orientation and shape of its handle in motor terms (Buccino et al. 2009;
+          Costantini et al. 2010; Cardellicchio et al. 2011; Tucker & Ellis 1998, 2001).
+  .slide
+    +remove('.layer.main')
+    +show('.parts-of-action')
+    .notes: :t
+      Executable action concepts might work for manipulation and form, but are less likely to work
+      for tagets since there are just so many of them. 
+      On the other hand, we might think of the interface problem as having many aspects so that
+      we don't solve it all at once.
+  .slide
+    +hide('.parts-of-action')
+    +unremove('.layer.main')
+    +uninvert('.type-of-movement')
+    .notes: :t
+      Further issues:
+      (iv) knowledge of action: shouldn’t the relation should be such as to allow someone who uses the
+      concept to know which action she is thinking about.
+    .notes: :t
+      (v) 
+  .slide
+    +blur('.step2, .step3')
+    .notes: :t
+      So I think that while there’s much more to be done in thinking through Myrto and Elisabeth’s 
+      proposal about executive action concepts, this is a step forwards but not necessarily a full
+      solution to the interface problem.
+      What other resources are available?
+    
+  .layer.parts-of-action.hide
+    +reset
+      img.bkg(src='/img/motor_representation_fig/Slide14.jpg')
+
+
++slide_middle
+  img(src='/img/mylopoulous_pacherie_sars.jpg', style='filter:contrast(2) brightness(1) grayscale(1) invert(1);', width='720px')

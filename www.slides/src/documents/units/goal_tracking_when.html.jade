@@ -1,0 +1,104 @@
+---cson
+layout: 'deck_unit'
+title: "When can infants first track goals?"
+tags: []
+description: """
+  A variety of evidence indicates that 
+  infants may be able to track goals from three months of age (or earlier).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.center When?
+  .notes: :t
+    When can infants first track goals to which actions are directed?
+    
+
++slide
+  .notes Consider a much-replicated study by Woodward and colleagues.
+  .layer1
+    +img_clip('wodward_2001_fig1.png', 'rect(0,1000px,250px,0)')
+    p.source Woodward et al 2001, figure 1
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes.handout 'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'
+    .notes.handout.ctd \citep[p.\ 153]{woodward:2001_making}
+  .slide.layer2
+    +fade('.layer1')
+    +blur('.layer1')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center from 
+          span.three three
+          span.remove-me.nine  nine
+          span   months of age
+        .notes: :t
+          Using a manipulation we’ll discuss later (‘sticky mittens’),
+          \citet{sommerville:2005_action} used this paradigm to show that even
+          three-month-olds can form expectations based on the goal of an action
+          (for another study with three-month-olds, see also \citealp{luo:2011_threemonthold}).
+        .slide
+          +hide('.layer1')
+          p.center.em-above but:
+          p.center target vs type
+          .notes: :t
+            The studies we have considered so far focus on infants’ abilities to identify the targets of actions.
+            They do not show that infants can identify the type of an action---for instance, whether it is a grasping or a pushing action.
+        .slide
+          +unblur('.layer1',0)
+          +unfade('.layer1',0)
+          +fade('.layer2')
+          +show('.layer1')
+          .notes: :t
+            To say that infants can track  goals to which actions are directed implies that they can distinguish both the target and the type of an action.
+            So can infants also distinguish between two actions which are directed to the same target but differ in type?
+
+
++slide({bkg:'goal_act_type_habituation_study.jpg', style:'filter:grayscale(1) contrast(1.1) brightness(1.6)'})
+  .notes: :t
+    To answer this question, we would ideally have pairs of scenarios in which the target of an action
+    is kept constant while the type of action varies.
+    To the extent that subjects respond appropriately to the difference in type of action, we can be
+    confident that they can distinguish actions not just by their targets but also by their types.
+  .notes: :t
+    This is illustrated here, where you are habituated to a grasping event and the test events are
+    (a) grasping but with novel kinematics (from a different angle), or (b) a novel goal event (pushing).
+  .notes: :t
+    Unfortunately, as far as I know this has not yet been done.
+    But there are some studies which, although not intended to get at exactly the issue of whether
+    infants track goals and not just targets of actions, do indirectly shed light on this issue.
+  .notes: :t
+    These studies demonstrate competence in goal-tracking from nine months of age, and give us no reason
+    to doubt that, in simple enough cases, infants might show competence in goal tracking much earlier.
+  .notes: :t
+    \citet{Behne:2005dw} created just such pairs of contrasting scenarios.
+    In one of their contrasts, an experimenter holds a ball out for an infant to grasp and then
+    either ‘accidentally’ drops it or teasingly pulls it back.
+    So in each case there is a goal-directed action involving the ball, but in one case the goal
+    of the action is to pass the ball to the infant whereas in the other case the goal is to
+    tease the infant.
+    \citet[Study 2]{Behne:2005dw} found that nine-month-olds (but not six-month-olds)
+    consistently and appropriately discriminated between these scenarios by, for example,
+    banging more when the ball was ‘accidentally’ dropped than when it was teasingly retracted.
+    This and other research
+    (e.g. \citealp{ambrosini:2013_looking}) suggests that, at least from nine months of age,
+    infants can indeed distinguish both the type and target of a goal-directed action.
+  .notes: :t
+    % \citet{ambrosini:2013_looking} is important: shows that type of grasp and not just target is tracked, implying that anticipatory looking is not merely perceptual animacy.
+
+
+
+
+section.slide
+  +_slide_middle_inner
+    .hide.how
+      p.center.huge-glow-180(style="font-family:Lato") How?
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show Infants can track goals from nine months of age (or earlier).

@@ -1,0 +1,64 @@
+---cson
+layout: 'deck_unit'
+title: "Motor Representations Ground the Directedness of Actions to Goals"
+tags: []
+description: """
+  How do intentions ground the purposiveness of actions? On any standard view, an intention
+  represents an outcome, causes an action, and does so in a way that would normally facilitate
+  the outcome’s occurrence. Similarly, some motor representations represent action
+  outcomes, play a role in generating actions, and do this in a way that normally facilitates
+  the occurrence of the outcomes represented.  Like intentions, motor representations
+  ground the directedness of actions to outcomes which are thereby goals of the actions.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
++slide
+  +diagram_action_goal({show:['outcome','block-glow','explain-collective-directedness','represents','coordinates']})
+  .notes: :t
+  .slide
+    +remove('.iasmr')
+    +unremove('.mr')
+    +show('.mr')
+    .notes: :t
+      Now as Elisabeth Pacherie has argued (and I’ve had a go at arguing this in joint work with Corrado Sinigaglia recently too),
+      motor representations are relevantly similar to intentions.
+
+      Of course motor representations differ from intentions in some important ways (as Pacherie also notes).
+
+      But they are similar in the respects that matter for explaining the purposiveness of action.
+      (1) Like intentions, some motor representations represent outcomes (and not merely patters of joint displacement, say).
+      (2) Like intentions, some motor representations play a role in coordinating multiple more component activities by virtue of their role as elements in hierarchically structured plans.
+      (3) And, like intentions, some motor representations coordinate these activities in a way that would normally facilitate the outcome’s occurrence.
+
+      The claim is not that \emph{all} purposive actions are linked to outcomes by motor representations, just that some are.
+      In some cases, the purposiveness of an action is grounded in a motor representation of an outcome; in other cases it is grounded in an intention.
+
+      And of course in many cases it may be that both intention and motor representation are involved.
+
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  .notes: :t
+    I started by observing that there are two quite different approaches to 
+    answering the question, Which events are actions?
+    What does the ground I’ve so far tell us about this?
+  .notes: :t
+    I don’t think it tells us much yet (there’s much more to come).
+  .notes: :t
+    First, both stories are stories about purposive actions.
+    So they don’t have clearly demarcated domains.
+  .notes: :t
+    Second, it may make it tempting to think that motor representations are just a kind of intention,
+    and so to take the radical view that there are not really two distinct stories here at all.
+
+  .slide
+    +blur('img.bkg', '10px')
+    p.center intention = motor representation?
+      span.step2.hide   No!
+    .slide
+      +fade('img.bkg')
+      +show('.step2')
+

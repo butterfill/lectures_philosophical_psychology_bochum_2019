@@ -1,0 +1,275 @@
+---cson
+layout: 'deck_unit'
+title: "Mindreading: a Developmental Puzzle"
+tags: []
+description: """
+  The first puzzle concerns apparently conflicting findings about when and how
+  humans acquire awareness of others' beliefs.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/origins_mixins
+
+.handout: :t
+  An \emph{A-Task} is any false belief task that children tend to fail until around 
+  three to five years of age.
+.handout: :t
+  \begin{enumerate}
+  \item Children fail A-tasks
+  because they rely on a model of minds and actions that does not incorporate beliefs.
+  \item Children pass non-A-tasks
+  by relying on a model of minds and actions that does incorporate beliefs.
+  \item At any time, the child has a single model of minds and actions.  
+  \end{enumerate}
+.handout: :t
+  For adults (and children who can do this),
+  representing perceptions and beliefs as such---and even merely holding in mind 
+  what another believes, where no inference is required---involves a measurable 
+  processing cost \citep{apperly:2008_back,apperly:2010_limits}, consumes attention 
+  and working memory in fully competent adults \citealp{Apperly:2009cc, 
+  lin:2010_reflexively, McKinnon:2007rr},  may require inhibition \citep{bull:2008_role} 
+  and makes demands on executive function \citep{apperly:2004_frontal,samson:2005_seeing}.
+  
+
+
++slide_rh_white
+  +run_across
+    p.center Two models of minds and actions
+  +left_half
+    p.center Belief model
+  +right_half
+    p.center Fact model
+  .clear
+  +left_half
+    p Maxi wants his chocolate.
+  +right_half
+    p Maxi wants his chocolate.
+  .clear
+  +left_half
+    p.belief Maxi believes his chocolate is in the blue box.
+  +right_half
+    p Maxi’s chocolate is in the red box.
+  .clear
+  +left_half
+    p Therefore:
+  +right_half
+    p Therefore:
+  .clear
+  +left_half
+    p.prediction Maxi will look in the blue box.
+  +right_half
+    p Maxi will look in the red box.
+  +hide('.right-half, .right-half-white', 0)
+  .slide
+    +show('.right-half, .right-half-white')
+  .slide
+    +highlight-row('.belief')
+  .slide
+    +unhighlight-row('.belief')
+    +highlight-row('.prediction')
+    
+  
++slide
+  .notes: :t
+    Let me start by taking you back to the early eighties.
+    (Has anyone else been enjoying Deutschland drei und achtzig?)
+  
+  .a-tasks
+    p.notes.show 3-year-olds fail false belief tasks
+    .slide
+      .notes: :t
+        3-year-olds fail a wide variety of tasks where they are asked about a 
+        false belief, or  asked to predict how someone with a false belief will 
+        act, ... 
+    
+      p.em-above prediction
+      p.indent 	- action
+        span.float-right.grey-text (Wimmer & Perner 1983)
+    .slide
+      .notes: :t
+        or asked to predict what someone with a false belief will desire ...
+      p.indent 	- desire
+        span.float-right.grey-text (Astington & Gopnik 1991)
+    .slide
+      .notes: :t
+        ... or to retrodict or explain a false belief after being shown how someone acts.  
+      p retrodiction or explanation
+        span.float-right.grey-text (Wimmer & Mayringer 1998)
+      p select a suitable argument
+        span.float-right.grey-text (Bartsch & London 2000)
+    .slide
+      .notes: :t
+        Further, 
+        lots of factors make no difference to 3-year-olds’ performance: they fail 
+        tasks about other’s beliefs and they fail tasks about their own beliefs; 
+
+      p.em-above own beliefs (first person)
+        span.float-right.grey-text (Gopnik & Slaughter 1991)
+
+    .slide
+      .notes: :t
+        they fail when they are merely observers as well as when they are actively 
+        involved;
+      p.em-above involvement (deception)
+        span.float-right.grey-text (Chandler et al 1989)
+
+    .slide
+      .notes: :t
+        they fail when a verbal response is required and also when an 
+        nonverbal communicative response or even a noncommunicative response (such 
+        as hiding an object) is required.
+      p.em-above nonverbal response
+        span.float-right.grey-text (Call et al 1999; Krachun et al, 2010; Low 2010 exp.2)
+
+    .slide
+      .notes: :t
+        And they fail test questions which are word-for-word identical to desire and pretence tasks
+      p.em-above test questions word-for-word identical to desire and pretence tasks
+        span.float-right.grey-text (Gopnik et al 1994; Cluster 1996)
+  .slide
+    +blur('.a-tasks')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.huge-glow A-tasks
+        .notes: :t
+          An A-Task is any false belief task that children tend to fail until around 
+          three to five years of age.
+        .slide
+          +blur('.a-tasks', '10px')
+          .notes: :t
+            Why do children systematically fail A-tasks? There is a simple explanation ...
+          .notes.show
+            p(style='margin-top:-7em;margin-left:4em;') Children fail
+            p(style='margin-top:3em;margin-left:10em;') because they rely on a model of minds and actions that does not incorporate beliefs
+          .notes: :t
+            [Stress that, on this view, children do have a model of minds and actions.
+            It’s just that it doesn’t incorporate belief.]
+            Perner and others have championed the view that children who failed A-tasks
+            lack a metarepresentational understanding of propositional attitudes 
+            altogether.  But this view has recently (well, not that recently, it’s nearly
+            a decade old now) been challenged by Hannes’ discovery
+            that children can solve tasks which are like A-tasks but involve incompatible
+            desires \citep{rakoczy:2007_desire}.  I think this make plausible the thought
+            that there is an age at which 
+            children fail A-tasks not because they have a problem with mental states
+            in general, but because they have a problem with beliefs in particular.
+  
+
+
+  
++slide
+  .notes: :t
+    It turns out that, in the first and second years of life, infants show abilities 
+    to track false beliefs on a variety of measures.
+  .non-a-tasks
+    p Infants’ false-belief tracking abilities
+    p.em-above Violation of expectations
+    p.indent - with change of location
+      span.float-right.grey-text (Onishi & Baillargeon 2005)
+    p.indent - with deceptive contents
+      span.float-right.grey-text (He et al 2011)
+    p.indent - observing verbal comm.
+      span.float-right.grey-text (Song et al 2008; Scott et al 2012)
+    p.em-above Anticipating action 
+      span.float-right.grey-text (Clements et al 1994)
+    p.indent looking 
+      span.float-right.grey-text (Southgate et al 2007)
+    p.indent pointing
+      span.float-right.grey-text (Knudsen & Liszkowski 2011)
+
+    p.em-above Helping
+      span.float-right.grey-text (Buttlemann et al 2009, 2015)
+
+    p.em-above Communicating
+      span.float-right.grey-text (Southgate et al 2010)
+    
+    //- No! Infants is looking time paradigm
+    //- .slide
+    //-   p.em-above Altercentric interference
+    //-     span.float-right.grey-text (Kovacs et al 2010)
+
+  +blur('.non-a-tasks')
+  +reset-escape-inner
+    +_slide_middle_inner
+      .bkg-white-row
+        p.center.huge-glow-invert non-A-tasks
+        .notes: :t
+          A non-A-Task is a task that is not an A-task.  I was tempted to call these
+          B-Tasks, but that would imply that they have a unity.  And whereas we know 
+          from a meta-analysis that A-tasks do seem to measure a single underlying
+          competence, we don’t yet know whether all non-A-tasks measure a single thing
+          or whether there might be several different things.
+        .slide
+          +blur('.non-a-tasks', '10px')
+          .notes: :t
+            Why do infants systematically pass non-A-tasks in the first year
+            or two of life? There is a simple explanation ...
+          p.invert(style='margin-top:-7em;margin-left:4em;') Children pass
+          p.invert(style='margin-top:3em;margin-left:10em;') by relying on a model of minds and actions that does incorporate beliefs
+          .notes: :t
+            And this is *almost* everything we need to generate the puzzle about development.
+
+
+
+  
+
++slide_falseBeliefDevelopmentalPuzzle
+  +hide('.dogma-of-mindreading', 0)
+  .notes: :t
+    We’ve seen that ...
+    To get a contradiction we need one further ingredient.
+  .slide
+    +show('.dogma-of-mindreading')
+    .notes: :t
+      These three claims are jointly inconsistent so one of them must be false.  
+      Researchers disagree about which claim to reject.
+      But I suppose you can tell from how I’ve labelled them which one I 
+      propose to reject.
+    .slide
+      +blur('.one, .two', '5px')
+      +attr('.dogma','style','color:#881616')
+      //- +highlight-row('.dogma', 'red')
+  
+
+
+//- 
+  TODO: do this later (it refers to representations and algorithms, not the
+  computational description)
+  
+
++slide_middle
+
+  table.data.charles-rivera 
+    thead
+      tr
+        td 
+        td.center: span.occlusion occlusion
+        td.center: span.endarkening endarkening
+    tbody
+      tr.violation-of-expectations.v-of-e
+        td.center: span violation-of-expectations
+        td.center: span.occlusion ✔
+        td.center: span.endarkening ✘
+      tr.manual-search.search
+        td.center: span manual search
+        td.center: span.occlusion ✘ (barrier)
+        td.center: span.endarkening ✔
+  
+  .notes: :t
+    The puzzle is a little bit like the puzzle we had in the case of knowledge
+    of physical objects.
+    But it's also different.
+    In the case of physical objects, the conflict was between measures
+    involving looking and measures involving searching.
+    In this case it's different, because on the infant side there is not just
+    looking but also acting (e.g. helping) and even communicating.
+
+
+
+
++slide_falseBeliefDevelopmentalPuzzle
+
+
+
++slide({bkg:'dual_process_operationalized_12.jpg'})

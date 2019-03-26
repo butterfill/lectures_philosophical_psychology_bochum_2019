@@ -1,0 +1,224 @@
+---cson
+layout: 'deck_unit'
+title: "A Developmental Puzzle about Goal-Tracking"
+tags: []
+description: """
+  In infants,
+  it appears that
+  some,
+  but not all,
+  goal-tracking is limited by their abilities to act.
+  This contradicts both the Simple View and the Motor Theory of Goal Tracking.
+  
+  A further puzzle arises from the fact that goal-tracking sometimes manifests in dishabitution or
+  pupil dilation but not proactive gaze.
+  How can we explain, in a principled way, why there should be discrepancies between these measures?
+  """
+---
+  
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
+//- 
+  But: infants’ abilities are (i) not invariably limited in ways that mTgt predicts (cartoon fish,
+  etc); and (ii) limited in ways that mTgt does not predict (dissociations)
+
+
++slide
+  +img_clip('kanakogi_2011_fig1Cii.png')
+  +style('img',{filter:'contrast(1.2) brightness(1.5)'})
+  p.source Kanakogi and Itakura, 2011 figure 1C (part)
+  .notes: :t
+    Earlier I mentioned this experiment, which shows that infants 
+    fail to track goals involving things which would appear to them to be 
+    biomechanically non-agent-like events.
+    
+    But ...
+
+
+
++slide
+  //- sources
+  .notes \#source 'research/teleological stance -- csibra and gergely.doc'
+  .notes \#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'
+  .notes \#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'
+  //- notes for slide
+  .notes When do human infants first track goal-directed actions and not just movements?
+  .notes Here's a classic experiment from way back in 1995.
+  .notes The subjects were 12 month old infants.
+  .notes They were habituated to this sequence of events.
+  +img_clip('gergely_1995_fig1.png', 'rect(0,1000px,250px,0)')
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes: :t
+      There was also a control group who were habituated to a display like this
+      one but with the central barrier moved to the right, so that the action
+      of the ball is 'non-rational'.
+    
+  p.source Gergely et al 1995, figure 1
+  
+
++slide
+  +img_clip('gergely_1995_fig3.png', 'rect(0,1000px,250px,0)')
+  .notes For the test condition, infants were divided into two groups.  One saw a new action, ...
+  +clip('img:eq(0)', 'auto')
+  .notes ... the other saw an old action.
+  .notes Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.
+  .notes But if infants are taking goal-related information into action, the 'old action' might be unexpected and so might generate greater dishabituation.
+  p.source Gergely et al 1995, figure 3
+
+
++slide
+  +img_clip('gergely_1995_fig5.png')
+  p.source Gergely et al 1995, figure 5
+  +clip('img:eq(0)','auto')
+  .handout ‘by the end of the first year infants are indeed capable of taking the intentional stance (Dennett, 1987) in interpreting the goal- directed behavior of rational agents.’
+  .handout.ctd \citep[p.\ 184]{Gergely:1995sq}
+  .handout ‘12-month-old babies could identify the agent’s goal and analyze its actions causally in relation to it’
+  .handout.ctd \citep[p.\ 190]{Gergely:1995sq}
+
+
+
++slide
+  .notes You might say, it's bizarre to have used balls in this study, that can't show us anything about infants' understanding of action.
+  .notes But adult humans naturally interpret the movements of even very simple shapes in terms of goals.
+  .notes So using even very simple stimuli doesn't undermine the interpretation of these results.
+  img(src='/img/heider_1946_fig1.png')
+  p.source Heider and Simmel, figure 1
+
+
+section.slide
+  .container_12
+    .grid_6: .words
+      .notes: :t
+        Consider a further experiment by \citet{Csibra:2003jv}, also with
+        12-month-olds. This is just like the first ball-jumping experiment
+        except that here infants see the action but not the circumstances in
+        which it occurs. Do they expect there to be an object in the way behind
+        that barrier?
+      div(style='margin-top:100px')
+        +img_clip('csibra_2003_fig6.png', 'rect(0,1000px,175px,0)')
+    .slide.grid_6: .words
+      div(style='margin-top:-175px')
+        +img_clip('csibra_2003_fig6.png', 'rect(175px,1000px,1000px,0)')
+  .clear
+  .words
+    p.source Csibra et al 2003, figure 6
+
+
+section.slide
+  .notes: :t
+    Here then is the puzzle about development that I mentioned this talk was about:
+  +_slide_middle_inner
+    p.center.huge-glow-180(style='font-family:lato;') Puzzle
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show 
+        span In infants, 
+        br
+        span it appears that 
+        br
+        span some, 
+        br
+        span.notall but not all, 
+        br
+        span goal-tracking is limited by their abilities to act.
+
+  .notes: :t
+    Let me recap how we got here and why this is puzzling.
+  .notes: :t
+    I started by asking, How 9-month-olds track can goals?
+    The Simple View offers one answer: 
+    the principles comprising the Teleological Stance are things they know or believe, and they are able
+    to track goals by making inferences from these principles.
+  .notes: :t
+    I suggested that the Simple View should be rejected because it cannot explain why infants’
+    abilities to track goals are limited by their abilities to perform actions.
+  .notes: :t
+    At least, mTga provides a better alternative to the Simple View.
+    According to mTga,
+    Infants’ pure goal-tracking depends on the double life of motor processes.
+  .notes: :t
+    mTga correctly predicts that infants’ pure goal-tracking should be limited by infants’
+    abilities to act ...
+  .slide
+    +highlight('.notall', 'red')
+    .notes: :t
+      But, unfortunately, there appear to be cases in which infants’ pure goal-tracking
+      is not limited by their abilities to act, and this is contrary to mTga.
+    .notes: :t
+      The puzzle, then, to explain how infants can track goals if neither the Simple View
+      nor mTga is correct.
+    
+    .notes: :t
+      Even worse, 
+      there’s another, apparently unrelated puzzle to explain too ...
+    
+
++slide
+  +img_clip('daum_2012_fig1.png')
+  p.source Daum et al, 2012 figure 1
+  .notes: :t
+    Daum et al created a modified version of Woodward’s paradigm which allowed them to measure
+    both anticipatory looking and dishabituation.
+  .notes: :t
+    where researchers have measured two different responses to a single
+    scenario, anticipatory looking and either dishabituation or pupil dilation.
+    Generally, they appear to find evidence for goal tracking in dishabituation
+    or pupil dilation but not in anticipatory looking. 
+    (This is true of Daum et al, 2012; and Gredeback and Melinder, 2010.)
+  .notes: :t
+    Why the discrepancy?
+    This is another question we can’t answer with the Motor Theory of Goal
+    Tracking.
+
++slide
+  +img_clip('daum_2012_fig2.png')
+  p.source Daum et al, 2012 figure 2
+  .notes: :t
+    [skip -- just here in case need for discussion; shows that anticipatory looking
+    to cartoon fish takes years to develop]
+
+
+
+section.slide
+  .notes: :t
+    Here then is another puzzle about development:
+  +_slide_middle_inner
+    p.center.huge-glow-180(style='font-family:lato;') Puzzles
+  +reset
+    +_slide_middle_inner
+      p.center.notes.show 
+        span In infants, 
+        br
+        span it 
+        span.appears appears
+        span  that 
+        br
+        span some, 
+        br
+        span but not all, 
+        br
+        span.gt goal-tracking
+        span  is limited by their abilities to act ...
+      p.center.hem-above.notes.show
+        span ... and that 
+        span.gt goal-tracking
+        span  sometimes manifests in dishabitution or pupil dilation but not proactive gaze.
+      .notes: :t
+        The \textbf{second puzzle} is how to explain, in a principled way, why there should be discrepancies
+        between these measures. We cannot do this by invoking mTgt because on mTgt, proactive gaze is a
+        case in which goal-tracking is paradigmatically manifest.
+  .slide
+    +invert('.gt')
+    .notes: :t
+      I want to respond by arguing that not everything which appears to be goal-tracking in infants
+      actually is goal-tracking.
+  .slide
+    +invert('.appears')
+    .notes: :t
+      So I will be arguing that the puzzle is merely apparent.
+      The appearance is due to the fact that we do not carefully enough distinguish tracking
+      the target of an action from tracking the goal of an action.

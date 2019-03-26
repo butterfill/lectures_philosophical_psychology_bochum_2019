@@ -1,0 +1,231 @@
+---
+layout: 'deck_unit'
+title: "Perception of Causation: Key Findings"
+tags: []
+description: "Can humans perceive causal interactions?"
+---
+
+include ../../../fragments/unit_mixins
+
++slide_middle
+  .notes The question for this section is, 
+  p.notes.show.center Can humans perceive causal interactions?
+
++slide
+  .notes: :t
+    Let my try and show you stimuli that were used in an experiment (without yet telling you 
+    anything about the experiment).  What do you see?
+  .notes: :t
+    [If the animation doesn't work, there's a static version on the next slide.]
+  video(width="640", height="480", controls)
+    source(src="/mov/01_launching.mp4",type="video/mp4")
+    source(src="/mov/01_launching.webm",type="video/webm")
+
++slide
+  img(src='/img/thines_1991_fig.png')
+  p.source Thines et al (1991)
+  .notes OK, so adults: (a) verbal reports.  So what?
+  .handout.notes: :t
+    ‘There are some cases … in which a causal impression arises, clear, genuine, and unmistakable, 
+    and the idea of cause can be derived from it by simple abstraction in just the same way as the 
+    idea of shape or movement can be derived from the perception of shape or movement’ 
+    \citep[p.\ 270--1]{Michotte:1946nz}
+
+
++slide
+  .notes: :t
+    Adults will also report experiencing causal interactions including pullling, ...
+  +img_clip('scholl_2000_fig2.png','rect(0px,824px,125px,0px)')
+  p.source Scholl & Tremoulet 2001, figure 2
+  .slide
+    +clip('img','rect(0px,824px,250px,0px)')
+    .notes ... disintegration ...
+  .slide
+    +clip('img','auto')
+    .notes ... and bursting.
+
+
++slide_middle
+  p.center detecting launching effects at 6 months
+  .notes: :t
+    This effect, or one very like
+    it, can also be found in infancy. 
+  .notes: :t
+    Of course, six-month-olds can't tell us about their expeirences.
+    So how can we tell that they detect launching effects?
+      
+  
++slide
+  .notes.handout: :t
+    Infants at around six months of age seem also to distinguish launching from other sequences, 
+    much as adults do \citep{Leslie:1987nr}.
+  .notes: :t
+    [nb: Several people have discussed this in seminars so I won't discuss it here (the reference is on your handout).]
+  .notes: :t
+    In their experiment, they compared two groups of infants.
+    The first group was habituated to the top display, which is just the sort of animation Michotte
+    used to get reports of causal experiences in adults.
+    After habituation, this first group was then shown the same display except that the direction was 
+    reversed.
+    Meanwhile a second group was habituated to a display like the top display here except 
+    that there was a delay between the first object stopping and the second object starting.
+    This delay would mean that, in adults, there are no reports of experiences of a causal interaction.
+    After habituation, this second group was shown the same display except that the direction of 
+    movement was reversed.
+  .notes: :t
+    Of interest was whether the first group showed greater dishabituation to the reversal than 
+    the second group.
+    How could this tell us anything about infants' experiences?
+    Suppose that infants do not have anything like what adults report as an experience of causation.
+    They they experience merely patterns of movement.
+    And, in this case, reversing on sequence should create no more interest than reversing the other.
+    But now suppose that infants do have something like what adults report as an experience 
+    of causation?
+    Then, when reversing the first sequence, there are two changes: there is a change both to the 
+    movement and to the character of the causal interaction.  To put it informally,
+    reversing direction means that the patient of the interaction becomes its agent.
+    So the hypothesis that infants' experiences of Michotte-like stimuli resemble adults 
+    predicts that there will be greater dishabituation when the first, `direct launching` sequence 
+    is reversed.
+  +img_clip('leslie_1987_fig4.png')
+  p.source Leslie & Keeble 1987, figure 4
+  .notes: :t
+    This result seems robust:
+    \citep[p.~ 30]{hubbard:2012_phenomenala}: ‘Belanger and Desrochers (2001) replicated findings of
+    Leslie and Keeble (1987) and others that 6-month old infants dishabituated more to reversal of a
+    launching effect stimulus than to reversal of a noncausal (spatial gap or temporal gap) stimulus.’
+    
+    \citep[pp.~ 30--1]{hubbard:2012_phenomenala}:‘Schlottmann et al. (2012) habituated 4-, 5-, and
+    6-month old infants to displays of a (a) reaction effect stimulus or (b) reaction effect stimulus
+    with a temporal gap between the launcher and the target. ... The data were consistent with Leslie
+    and Keeble’s (1987) finding that 6-month old infants dishabituated more to a reversal of a launching
+    effect stimulus than to a reversal of a noncausal stimulus.’
+    
+  .notes: :t
+    This paradigm also works with chimps:
+    \citep[p.~505]{hubbard:2012_phenomenal}: ‘O’Connell and Dunbar (2005) adapted the habituation paradigm used with human infants (e.g., Leslie 1982; Leslie and Keeble 1987) and presented causal stimuli or noncausal stimuli to chimpanzees. Dishabituation was greater for chimpanzees habituated to a causal stimulus and presented with a noncausal stimulus than for chimpanzees habituated to a noncausal stimulus and presented with a causal stimulus, and this was interpreted as consistent with causal perception.’
+    
++slide
+  .notes: :t
+    And this is just what the researchers found.
+    The table shows mean looking times in second (with standard deviations in brackets).
+    The control group was just like the direct lanunching group except that there was no reversal
+  +img_clip('leslie_keeble_1987_table4.png','auto')
+  p.source Leslie & Keeble 1987, table 4
+
+
+
+
+section.slide
+  .heider-simmel.hide
+    +_slide_inner
+      +img_clip('heider_1946_fig1.png')
+      p.source Heider & Simmel 1946, figure 1
+  +reset
+    +middle
+      p.center Can humans perceive causal interactions?
+  .notes: :t
+    So can humans, adult and infant, perceive causal interactions?
+  .slide
+    +show('.heider-simmel')
+    .notes: :t
+      So far I don't think we have strong reasons to accept that they do.
+      In infants we have discrimination and in adults we have verbal reports.
+      But we shouldn't trust verbal reports.
+      After all, people will say all kinds of things about their experiences.
+      This is nicely illustrated by a famous experiment on apparent behaviour by \citet{Heider:1944ts}.
+      
+
++slide
+  p How to get beyond intuition?
+  .slide
+    .notes.show
+      p.em-above Michotte: the experience of launching depends on interactions among various factors including 
+      ul
+        li the relative speeds of the two objects
+        li the delay between the first and second objects’ movements
+        li the spatial gap between the two objects 
+        li the trajectories of the two objects. 
+    .notes: :t
+      But how does this help us?  Importantly, tiny variations in the parameters will make 
+      big differences in the experiences reported.
+      Let me illustrate this for the delay between the objects' movements.
+
++slide
+  .notes adults: (b) they can discriminate between short gaps and long gaps.
+  .notes That is, the can discriminate gaps of around 50ms.
+  img(src='/img/michotte_1946_table_ix_part.png')
+  p.source Michotte 1946 [1963], p. 115 table IX (part)
+
++slide
+  .notes Maybe this is clearer as a figure.
+  +img_clip('michotte_1946_table_ix_as_figure.png')
+  p.source Michotte 1946 [1963], p. 115 table IX (part)
+  .notes.
+    People can distinguish between stimuli that differ only in that the gap between two movements
+    is approximately 50ms longer in one than the other.
+    A 50ms difference makes the difference between reporting launching and reporting two movements.
+  .notes.
+    We need to do more to understand the effect, ...
+  .notes.
+    NB: Rips 2011 notes that missing out the third category of judgement
+    makes the case for categorical perception seem different than it is.
+
+
++slide_middle
+  .notes.show
+    p.hem-around Consider an encounter with three two-object movements where the delays between movements are 50, 100 and 150ms.
+    p.indent.hem-around (1) The phemomenal difference between the first two encounters is larger than the phenomenal difference between the second two.
+    p.indent.hem-around (2) This difference in differences is a fact in need of explanation.
+    p.indent.hem-around (3) The fact cannot be explained by perceptual experience of objects or their motion.
+    p.indent.hem-around (4) The best explanation for (1) is that we perceptually experience causal interactions.
+
+
+
++slide_middle
+  p.center An alternative argument ...
+  
++slide_middle
+  p.notes.handout.show: :t
+    ‘… why it is that in our experiments certain particular conditions were
+    found necessary in order to give rise to a causal impression. They
+    correspond to the different characteristics of reproduction. …
+  p.notes.handout.ctd.show: :t
+    anyone not very familiar with the procedure involved in framing the
+    physical concepts of inertia, energy, conservation of energy, etc., might
+    think that these concepts are simply derived from the data of immediate
+    experience’
+  .notes.handout.ctd \citep{Michotte:1946nz}
+  p.right.grey-text Michotte, 1946
+  .slide.hem-above
+    .notes.show
+      p.hem-around (1)	A distinctive experience occurs under certain conditions.
+      p.hem-around (2)	The best explanation for (1) is that the experience in question is the experience of a collision.
+    
+
+
+
+
+
++slide_middle
+  .notes: :t
+    The question was how we can get beyond intuition in understanding the verbal reports.
+    I don’t think the argument offered about how to explain the conditions under which the 
+    launching effect works is obvious successful.
+    But I do think it’s right to ignore verbal reports in favour of an attempt to get at the
+    nature of the processes that explain the launching effect.
+  p How to get beyond intuition?
+  p The launching effect: detecting a 50ms difference in the delay between two movements.
+  .notes: :t
+    Part of the answer is this.  We don't worry about the content of the verbal reports.
+    We just focus on the fact that their content changes depending on a tiny, 50 millisecond
+    difference in the delay between two movements.
+    Call this \emph{launching effect}.
+  .notes: :t
+    This doesn't tell us what people are detecting.
+    But it does tell us that the effect is not merely confabulation or making it up.
+    So we have taken a tiny step beyond intuition.  But we also have to answer two questions.
+  .slide
+    ol.notes.show
+      li.hem-around.focus How is launching detected?  For example, does it involve perceptual processes?
+      li.hem-around Why is a delay of up to around 70ms consistent with the launching effect occuring?

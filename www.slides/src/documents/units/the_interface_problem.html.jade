@@ -1,0 +1,160 @@
+---cson
+layout: 'deck_unit'
+title: "The Interface Problem"
+tags: []
+description: """
+  For a single action, which outcomes it is directed to may be multiply
+  determined by an intention and, seemingly independently, by a motor
+  representation. Unless such intentions and motor representations are to pull
+  an agent in incompatible directions, which would typically impair action
+  execution, there are requirements concerning how the outcomes they represent
+  must be related to each other. This is the interface problem: explain how any
+  such requirements could be non-accidentally met.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+.handout: :t
+  The interface problem: explain how intentions and motor representations, with their distinct
+  representational formats, are related in such a way that, in at least some cases, the outcomes they
+  specify non-accidentally match.
+  
+.handout: :t
+  ‘both mundane cases of action slips and pathological conditions, such as apraxia or anarchic hand
+  syndrome (AHS), illustrate the existence of an interface problem’ 
+  \citep[p.~7]{mylopoulos:2016_intentions}.
+  
+.handout: :t
+  Two collections of outcomes, A and B, \emph{match} in a particular context just if, in that context,
+  either the occurrence of the A-outcomes would normally constitute or cause, at least partially, the
+  occurrence of the B-outcomes or vice versa. To illustrate, one way of matching is for the B-outcomes
+  to be the A-outcomes. Another way of matching is for the B-outcomes to stand to the A-outcomes as
+  elements of a more detailed plan stand to those of a less detailed one.
+
+
+
++slide_rh_white({step:true})
+  .notes: :t
+    Imagine that you are strapped to a spinning wheel facing near certain death as it plunges you into
+    freezing water. To your right you can see a lever and to your left there is a button. In deciding
+    that pulling the lever offers you a better chance of survival than pushing the button, you form an
+    intention to pull the lever, hoping that this will stop the wheel. If things go well, and if
+    intentions are not mere epiphenomena, this intention will result in your reaching for, grasping and
+    pulling the lever. These actions---reaching, grasping and pulling---may be directed to specific
+    outcomes in virtue of motor representations which guide their execution. It shouldn't be an accident
+    that, in your situation, you both intend to pull a lever and you end up with motor representations
+    of reaching for, grasping and pulling that very lever, so that the outcomes specified by your
+    intention match those specified by motor representations. If this match between outcomes variously
+    specified by intentions and by motor representations is not to be accidental, what could explain it?
+  +run_across 
+    p.center.problem The Interface Problem:
+    p.center
+      span.qq.hide How are non-accidental matches possible?
+  +left_half
+    p Motor representations specify goals.
+    .notes: :t
+      As we have just seen, motor representations specify goals.
+    p.slide.em-above Intentions specify goals.
+      .notes: :t
+        And of course, so do intentions.
+    p.slide.em-above Some actions involve both intention and motor representation.
+      .notes: :t
+        Further, many actions involve both intention and motor representation.
+        When, for example, you form an intention to turn the lights out, the goal
+        of flipping the light switch may be represented motorically in you.
+      .notes: :t
+        The nonaccidental success of our actions therefore depends on the outcomes
+        specified by our intentions and motor representations matching.
+        
+    p.inf-int.hide.em-above Intention and motor representation are not inferentially integrated
+      span.format.hide  (because representational format?).
+    
+  +right_half({step:true})
+    p: :t
+      Two  outcomes, A and B, match in a particular context just if, in that context, 
+      either the occurrence of A would normally constitute or cause, at least 
+      partially, the occurrence of B or vice versa. 
+    .notes: :t
+      But how should they match?
+      I think they should match in this sense:
+      the occurrence of the outcome specified by the motor representation would 
+      would normally constitute or cause, at least 
+      partially, the occurrence of the outcome specified by the intention.
+  .slide
+    +show('.qq')
+    .notes: :t
+      Now we have to ask, How are nonaccidental matches possible?
+      If you asked a similar question about desire and intention, the answer would be 
+      straightforward: desire and intention are integrated in practical reasoning, so it 
+      is no surprise that what you intend sometimes nonaccidentally conforms to what you intend.
+      But we cannot give the same sort of answer in the case of motor representations and 
+      intentions because ...
+  .slide
+    +show('.inf-int')
+    .notes: :t
+      Intention and motor representation are not inferentially integrated.
+    .notes: :t
+      Beliefs, desires and intentions are related to the premises and conclusions
+      in practical reasoning.  Motor representations are not.
+      Similarly, intentions do not feature in motor processes.
+  .slide
+    +show('.format')
+    .notes: :t
+      Failure of inferential integration follows from the claim that they differ in 
+      format and are not translated. But I suspect that more people will agree that there is a
+      lack of inferential integration than that they differ in representational format.
+      (must illustrate format with maps).
+    //- +highlight('.format')
+  .slide
+    +highlight('.qq', 'pink')
+    .notes: :t
+      So this is the Interface Problem: how do the outcomes specified by intentions and 
+      motor representations ever nonaccidentally match?
+    
+
++slide_middle
+  p
+    span ‘both mundane cases of  
+    span.action-slips action slips
+    span  and pathological conditions, such as 
+    span.apraxia apraxia
+    span  or 
+    span.ahs anarchic hand syndrome (AHS)
+    span , illustrate the existence of an interface problem.’
+  p.grey-text.right Mylopoulos and Pacherie (2016, p. 7)
+  .slide
+    +invert('.action-slips')
+    .notes: :t
+      Having an intention is neither necessary nor sufficient.
+  .slide
+    +uninvert('.action-slips')
+    +invert('.apraxia')
+    .notes: :t
+      Jeannerod 2006, p. 12:
+      ‘the term apraxia was coined by Liepmann to account for higher order motor
+      disorders observed in patients who, in spite of having no problem in executing
+      simple actions (e.g. grasping an object), fail in actions involving more
+      complex, and perhaps more conceptual, representations.’
+    .notes: :t
+      Can people with ideomotor apraxia form intentions?
+  .slide
+    +uninvert('.apraxia')
+    +invert('.ahs')
+    .notes: :t
+      \citep[p.~7]{mylopoulos:2016_intentions}: ‘Typically the result of lesion
+      to SMA or anterior corpus callosum, AHS is a condition in which patients
+      perform complex, goal-oriented movements with their cross-lesional limb
+      that they feel unable to directly inhibit or control. The limb is often
+      disproportionately reactive to environmental stimuli, carrying out
+      habitual behaviors that are inappropriate to the context, e.g., grabbing
+      food from a dinner companion’s plate (Della Sala 2005, 606). It is clear
+      from many of the behaviors observed in these cases that the anarchic limb
+      fails to hook up with the agent’s intentions.’
+
+    .notes: :t
+      In the rest of this talk I’m not going to suggest a solution to the interface problem.
+      Instead, I want to mention some considerations
+      which may complicate attempts to solve it.
+    
+
