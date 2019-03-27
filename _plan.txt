@@ -1,3 +1,27 @@
+bochum plan
+... return to this:
+
++slide_middle
+  p.notes.handout.show How could the objects of categorical perception of speech be articulatory gestures?
+  .notes: :t
+    The puzzle here is twofold.
+    [a] Categorical perception of speech happens raidly, and goal-directed actions
+    are complex.  How can something so complex be computed so quickly?
+    [b] How could you recover articulatory gestures from acoustic and visual inputs?
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘Humans [can] understand speech delivered at a rate of 20 to 30 ... phonemes per second’
+    .notes.handout.ctd  \citep{Devlin:2006qg}
+    p.right.grey-text Devlin (2006)
+    .notes: :t
+      Before facing this problem directly, I want to think about action more generally ...
+  
+
+Seeing causal interactions as a route into metacognitive feelings of surprise?
+
+Introduce a unit on decision theory, RPT, instrumental rationality and dual-process theory of action? (How would this fit with the three questions idea?)
+
+
 ---
 
 Aim: get to the two systems/metacognition issues discussed in London
@@ -34,4 +58,4 @@ Use London metacog talk and Tueb talk
  - expand 2 systems presentation
    - motivate by referring back to earlier discussion of modularity and core systems
    - return explicitly back to Wynn’s mouse
-   
+

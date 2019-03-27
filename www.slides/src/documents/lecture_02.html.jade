@@ -1,243 +1,443 @@
 ---cson
 layout: 'default2'
-title: 'Lecture 02: Pure Goal Tracking - A Developmental Puzzle'
+title: '02: Do Humans Perceive Others’ Feelings?'
 subtitle: ''
 weburl: ''
 units: []
-lecture_date: '2017/10/12'
+abstract: """
+  How could we come to know that another is angry about an insult or happy about an outcome?  
+  Some philosophers have defended the hypothesis that knowledge of others' anger or joy is 
+  sometimes perceptual (e.g. Smith, 2010, 2015; McNeill, 2012a,b).  In this talk I consider 
+  two challenges to this hypothesis.  The first challenge is to identify evidence in favour 
+  of it, or at least to explain what evidence could bear on the hypothesis.  Perhaps this 
+  challenge can be met by considering categorical perception of expressions of emotion, 
+  for which there is some evidence. The second challenge is to specify a model of anger 
+  and other mental states which captures how these mental states appear to the perceivers.  
+  This is a hard challenge to meet because available models arguably render mental states 
+  imperceptible.  In the last part of the talk I propose an alternative way in which knowledge 
+  of others' mental states could be acquired, one that hinges on interaction rather than 
+  perception.  Reflection on what is involved in sharing a smile suggests that one route to 
+  knowledge of others’ mental states might involve interacting with them.
+  """
+lecture_date: '2019/04/01'
+hidden: true
 ---
-
 
 include ../../fragments/lecture_mixins
 include ../../fragments/unit_mixins
 
-//- 
-  AFTER : OBJECTIONS
-  
-  Objection 1:
-    Hernik and Southgate 2012 - Nine-months-old infants do not need to know what the agent prefers
-    in order to 
-    even the original jumping study goes against subtlety
-    
-  
-  make claw agentive do get results [Sam]
-    (a) Luo and Baillargeon 2005?
-    (b) Biro and Leslie, 2007?
-    
-  Mi Hernik:
-    (a) It's not that goal-tracking is LIMITED by motor abilities; it's that they FACILITATE goal-tracking!
-    
-  Skerry, Carey & Spelke
-    3mnth olds PNAS recent sticky mittens
-    nb something gets stuck to the mittents; it's not really grasping!
-    No possible way that the training gives them experience of efficient goal-directed actions
-    PROBLEM FOR ME BECAUSE They shouldn't appreciate the efficiency of the two routes to the 
-    object (they can't reach overhand to the object)!
-    Most likely the infants realise that contact is a candidate for a goal-directed action.
-    
-
-
-//- 
-  IMPROVEMENTS 
-    (a) Introduce Marr’s levels of description
-    (b) cover Skerry, Carey & Spelke [nb: this is an issue if Infants can’t reach overhand]
-
-  
-//-
-  OUTLINE
-  
-  0. Goal tracking is ...
-  
-  1. Infants can track [nb: not ‘identify’] goals from around six months of age. (e.g. Woodward; Ambrosini et al) -- variety of paradigms and measures (violation-of-expectations, anticipatory looking)
-  
-  2. Q1 How do they do this?
-  
-  3. Teleological stance. [Just present it my way, as a computational description of pure goal tracking]
-  
-  4. How is this implemented? By reasoning. Relation to Q3: no special system; relation to Q6: teleological stance is continuous with mindreading (the latter merely involves using an enriched model with includes mental states; the two can be parts of a single process).
-  
-  5. But goal-tracking is limited: own-action constraint
-  
-  6. Q2 In infants and adults, abilities to perform actions enable identifying goals when observing them: Why?
-  
-  7. Motor theory of goal tracking (mTgt).
-  
-  8. Marr’s levels: mTgt is not an alternative to the Teleological Stance but to it plus the claim about reasoning. 
-  
-  9. Importantly, mTgt explains aspects of *adult’s* performance as well as infants.  
-  
-  10. This supports a dual-process theory.
-  
-  11. But: infants’ abilities are (i) not invariably limited in ways that mTgt predicts (cartoon fish,
-      etc); and (ii) limited in ways that mTgt does not predict (dissociations)
-  
-  12. This then is the Developmental Puzzle: there appears to be evidence against
-  both mTgt and Csibra’s view. This makes Q1 hard to answer (How do six month olds track goals?) and so supports the view that the question is a puzzle.
-  
-  13. Perceptual animacy is the answer?
-  
+- var images = get_images('bees')
 
 
 
 
 
-.handout: :t
-  \emph{The Simple View}
-  The principles comprising the Teleological Stance are things infants know or believe, and infants are
-  able to track goals by making inferences from these principles plus their beliefs about the means
-  agents have selected.
-
-
-  
-
-section.slide
-  img.bkg(src='/img/PA301239.JPG', style="filter:contrast(1.5)").hide
-  +_slide_middle_inner({blend:'multiply'})
-    p.center.secondtitle.huge-glow-invert-50.hide(style="margin-top:-30px;")
-      span A Developmental Puzzle
-  +reset
-    +_slide_middle_inner({blend:'overlay'})
-      p.center.firsttitle.huge-glow-110(style="line-height:.9em;")
-          span.huge-glow-invert-110.pure.hide Pure 
-          span Goal
-          span.tracking.hide -Tracking
-  +reset
-    +_slide_inner
-      p.right(style="margin-top:500px;").signature.hide s.butterfill@warwick.ac.uk
-
++title_slide({document:document, images:images})
   .notes: :t
-    I seize little Isabel and swing her around, thereby making her laugh and 
-    breaking a vase.
-    Asked about this I might say, ‘The goal of my actions was not to break the vase
-    but only to make her laugh, of course.’
-    In talking about goals in this way I am not talking about mental representations:
-    I am talking about actual and possible outcomes of an action, things which did or might 
-    have happened.
+    subtitle is:
+    Prospects for the Hypothesis That We Perceive Mental States, 
+    and How Some Limits on What Can Be Perceived Are Overcome through Simple Forms of Social Interaction.
   .notes: :t
-    A goal is an outcome to which an outcome is directed.
-  
-  .slide
-    +show('.tracking')
-    .notes: :t
-      For a process to track a goal of an action is for how that process unfolds to nonaccidentally
-      depend in some way on whether that outcome is indeed a goal of the action.
-      
-  .slide
-    +show('img, .secondtitle, .signature', 1000)
-    
-    .notes: :t
-      In this lecture I propose to introduce a developmental puzzle about goal tracking.
-      Along the way I will also introduce some theories of goal-tracking, none of which 
-      seems entirely adequate to the evidence.
-      
-
-  .slide
-    +show('.pure', 1000)
-    .notes: :t
-      One last thing before I start: my focus is pure goal-tracking, that is, goal-tracking which
-      does not depend on any information about mental states.
-    .notes: :t
-      I take pure goal-tracking to be a fundamental capacity, one which anchors abilities to 
-      understand others’ minds and underpins capacities to perform joint actions.
-      [Because it underpins our abilities to identify mental states and to generate predictions based on
-      ascriptions of mental states.]
-
-
-+insert_unit({unit:'goal_tracking_when', title_slide:false, images:images, handout:true})
-+insert_unit({unit:'goal_tracking_how', title_slide:false, images:images, handout:true})
-+insert_unit({unit:'goal_tracking_limit', title_slide:true, images:images, handout:true})
-+insert_unit({unit:'motor_theory_goal_tracking', title_slide:true, images:images, handout:true})
-+insert_unit({unit:'goal_tracking_developmental_puzzle', title_slide:false, images:images, handout:true})
-+insert_unit({unit:'perceptual_animacy', title_slide:true, images:images, handout:true})
-
-
-
-
+    This talk is about a simple question.
+    Do humans every perceptually expeirence any of another’s mental states?
+    What evidence would help us to answer this question?
+    At the very end, I will switch from perception to interaction,
+    and consider what we might gain by
+    shifting from merely observing expressions of emotion to 
+    jointly expressing an emotion as in sharing a smile.
 
 
 +slide_middle
-  p.huge-glow-120.center Conclusion
+  p How do you know about it?
+    span.object.hide   ・   
+    span.object.hide it = this pen
+    span.emotion.hide   ・   
+    span.emotion.hide it = this joy
+  p.em-above 
+  p.indent percieve indicator, infer its presence
+  p.indent - vs -
+  p.indent.perceive percieve it 
+  //- p.indent - I reasoned about it.
+  //- p.indent - Someone told me about it.
+  //- p.perceive.indent - I felt it (or saw it, or ... perceived it).
+  p.em-above.p-is-e.hide [ but perceiving is inferring 
+    span.tick.hide ✓ 
+    span ]
   .notes: :t
-     My question was, How can infants in the first 9 months of life track goals?
-     Given that infants’ goal-tracking is limited by their abilities to perform actions,
-     I proposed to answer this question by appeal to the mTgt:
-     Infants’ pure goal-tracking, like much of adults’, depends on the double life of motor processes.
-  .notes: :t
-     This yielded a simple dual-process theory of goal-tracking.
-  .notes: :t
-     But this is much too simple, as
-     findings on infants’ goal-tracking in the first 9 months of life confronts us with a puzzle.
-     For they appear to show that, in many cases, infants can track the goals of actions 
-     performed by cartoon fish and spheres; and these are clearly actions that no infant (or adult)
-     could perform.
-  .notes: :t
-     Apparantly, then, we must reject the mTgt. But if we do that, it seems we lack any way of 
-     explaining why infants’ goal-tracking is so often limited by their abilities to act.
-  .notes: :t
-     The solution, I suggested, is to invoke perceptual animacy.
-     That is what led me to this conjecture ...
-     
-
-+slide_rh_white({step:true})
-  +left_half
-    .notes.show
-      p Conjecture
-      p.em-above: :t
-        In 9-month-olds, 
-      p.hem-above: :t
-        all pure goal-tracking is explained by the Motor Theory;
-      p.hem-above: :t
-        appearances that goal-tracking is not limited by their abilities to act
-        are due to perceptual animacy.     
-  .notes: :t
-    This conjecture is quite bold, but I think it’s one worth betting on partly because,
-    as I suggested, it generates readily testable predictions.
-  .notes: :t
-    This conjecture also has another virtue.
-    Goal-tracking is so fundamental to social cognition and joint action that it is 
-    likely to depend on a rich mix of many kinds of processes, including associative learning.
-    We need ways to identify these processes, to distinguish their limits and to understand their 
-    synergies.
-    Distinguishing motor processes which support goal-tracking by realising the Teleological Stance 
-    from perceptual animacy is a step towards meeting this need.
-  
-  .notes: :t
-    So how does this bear on the conference topic,
-    Action Perception?
-    In short, there isn’t any.
-    At least not if actions are goal-directed actions.
-  .notes: :t
-    Why do I say this?  Not because I can rule out the possibility of action perception, of course.
-    But goal-tracking is like speech perception in this sense: in both cases, the best supported,
-    most carefully developed theories are not about perceptual processes but about motor processes.
-    
-
-  
+    Here are three ways of knowing: inference, testimony and perception.
+  .slide
+    +show('.object')
+    .notes: :t
+      Where ‘it’ is an ordinary physical object like my favourite pen,
+      each of these three identifies a process by which knowledge could be acquired.
+    .notes: :t
+      (This is not to say that talk about reasoning invariably picks out a process (cf Alvarez),
+      just that there is a process.)
+    .notes: :t
+      There seems to be a clear contrast the first and last ways of coming to know about it.
+      (Philosophers debate about whether the first and second are genuinely different routes 
+      to knowledge.)
+  .slide
+    +show('.p-is-e')
+    .notes: :t
+      Even if, as do I, you think perception involves inference-like processes, there is still
+      a contrast between inferring and perceiving.
+    .notes: :t
+      For instance, suppose you know that I am all but inseparable from my favourite pen.
+      Then when you see me arrive you can infer that my pen is here too.
+      Contrast this with simply seeing my pen on the table.
+      In one case we see something other than the pen, namely me, and inferring that the
+      pen is here; in the other case you are seeing the pen itself.
+    .notes: :t
+      This is the contrast I need in what follows.
+  .slide
+    +show('.tick')
+  .slide
+    +blur('.object')
+    +show('.emotion')
+  .slide
+    +highlight-row('.perceive')
+    .notes: :t
+      Are mental states the kinds of thing we can come to know about through
+      perceiving them?
+      I will focus on emotions like joy.
 
 section.slide
-  img.bkg(src='/img/PA301239.JPG', style="filter:contrast(1.5)")
-  +_slide_middle_inner({blend:'multiply'})
-    p.center.secondtitle.huge-glow-invert-50(style="margin-top:-30px;")
-      span A Developmental Puzzle
-  +reset
-    +_slide_middle_inner({blend:'overlay'})
-      p.center.firsttitle.huge-glow-110(style="line-height:.9em;")
-          span.huge-glow-invert-110.pure Pure 
-          span Goal
-          span.tracking -Tracking
-  +reset
-    +_slide_inner
-      p.right(style="margin-top:500px;").signature s.butterfill@warwick.ac.uk
-  
+  p.center
+    +img('aviezer_2012_fig2A3.jpg')
+  p.source Aviezer et al (2012, figure 2A3)
   .notes: :t
-    That, anyway, is my conclusion.
-    The double life of motor processes underpins humans’ earliest 
-    pure goal-tracking, and so provides a basis for the many and varied forms of social cognition,
-    including mindreading, which depend on pure goal-tracking.
+    [not relevant yet:] ‘(3) a losing face on a winning body’
   .notes: :t
-    Many will disagree with this.
-    What I hope we will agree about, though, is that solving the developmental puzzle
-    about pure-goal tracking is essential if we care at all about the abilities
-    which underpin humans’ capacities for social cognition and joint action.
+    Emotions are sometimes expressed bodily and vocally.
+    Here is someone who has just won or lost a tennis match, so is feeling
+    joy or anger.  Maybe you can tell which?
+  .notes: :t
+    Here is a natural thought:
+    Bodily and vocal expressions of emotion
+    enable us to perceptually experience the expressed emotions.
+  .notes: :t
+    This natural thought fits with ordinary talk about mental states.
+    Imagine yourself at a tennis match.
+    Reporting the event afterwards, you might say that you saw his ecstacy
+    at winning.
+    It might seem that his ecstacy is as plainly visible as the hair on his head.
+    
++slide_middle
+  p.center.verbal-reports verbal reports and ratings? 
+    span.no.bkg-red.hide No!
+  p.right.grey-text (Scholl & Tremoulet 2000; Schlottman 2006)
+  .notes: :t
+    There are scientists and philosophers who have placed a lot of weight 
+    on verbal reports.
+    They are satisfied that if people use mental state terms to describe what they
+    perceive, then they perceive those mental states.
+    But I think this can’t be right.
+  .notes: :t
+    Go back to the tennis match.
+    Reporting the event afterwards you might say not only that you saw his ecstacy 
+    but also that you saw him win.
+    I take it you can't literally perceptually experience winning or losing 
+    in the sense that, arguably, you can perceptually experience movement or changes in colour.
+    After all, winning or loosing is a matter of rules and conventions.
+  .slide
+    +show('.no')
+    .notes: :t
+      So we can’t straightforwardly take what people say as a guide to what they perceive.
+    .notes: :t
+      Here you might object that we can perceptually experience things like winning or losing,
+      so there is no reason to question verbal reports.
+    .notes: :t
+      But note that taking this line amounts to rejecting the claim I started with.
+  .slide  
+    p.em-above contrast:
+    p.indent percieve indicator, infer its presence
+    p.indent - vs -
+    p.indent percieve it 
+    .notes: :t
+      I claimed that there is a contrast between seeing an indicator and inferrring the
+      presence of an object 
+    .notes: :t
+      If there is a contrast here, what we colloquially call seeing someone win must be 
+      a case of perceiving indicators and inferring winning.
+      So to say that we can straightforwardly infer that people perceive emotions from
+      their verbal reports is to reject the existence of the very contrast that allows
+      us to make sense of the question.
+//-
+//- +slide
+//-   +img('heider_1946_fig1.png')
+//-   p.source Heider & Simmel (1946, figure 1)
+//-   .notes: :t
+//-     \citet[p.\ 257]{Heider:1944ts} famously demonstrated that people  will, in
+//-     describing what they see, spontaneously attribute  motives and needs to animated polygons.
+//-   .slide
+//-     +blur('img, .source','10px')
+//-     +reset-escape-inner
+//-       +_slide_middle_inner
+//-         p perception
+//-         p: :t
+//-           ‘in the sense of cognitive response, i.e. as covering
+//-           all cognitive processes which follow the exposure of a set of receptors to
+//-           stimulation’
+//-         p.right.grey-text Heider & Simmel (1944, p. 243, footnote 1)
+//-         .notes: :t
+//-           Heider and Simmel were clearly operating with such a broad notion, for they stipulated
+//-           that they use the word `perception' ‘in the sense of cognitive response, i.e.\ as covering
+//-           all cognitive processes which follow the exposure of a set of receptors to
+//-           stimulation’ \citep[p.\ 243, footnote 1]{Heider:1944ts}.
+//-           This is a way of saying that they are not concerned with perception at all.
+//-         .notes: :t
+//-           You can insist on using this broad notion of perception if you like, but as I explained,
+//-           doing so means being unable to contrast  perceiving and indictator and inferring its presence
+//-           with perceiving it.
 
-   
++slide_middle
+  p.notes.show ‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ 
+  p.right.grey-text McNeill (2012, p. 573)
+  .handout  \citet[p.\ 573]{mcneill:2012_embodiment}: ‘We sometimes {see} aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ 
+  .slide
+    p.huge-glow challenge 
+    p(style='margin-top:-2.85em;margin-left:3.4em') Evidence?
+
+  
+//-
+//- +insert_unit({unit:'phenomenal_expectations', title_slide:true, images:images, handout:true})
+//-
+//- +insert_unit({unit:'solidity_momentum', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'categorical_perception_emotion', title_slide:true, images:images, handout:true})
+
++slide_middle
+  .notes: :t
+    Earlier I asked, what evidence could bear on the perceptual hypothesis?
+    Now we have a partial answer.
+  p ‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ 
+  p.right.grey-text McNeill (2012, p. 573)
+  p.huge-glow challenge 
+  p(style='margin-top:-2.85em;margin-left:3.4em') Evidence? 
+    span.cp.hide Categorical Perception!
+  .slide
+    +show('.cp')
+    .notes: :t
+      Part of the evidence relevant to the perceptual hypothesis is evidence that 
+      humans can categorically perceive expressions of emotion.
+    .notes: :t
+      But what does the evidence from studies of categorical perception
+      tell us about the truth or falsity of the perceptual hypothesis ?
+
++slide_middle
+  .notes: :t
+    Just here it is natural to take a sceptical line and claim ...
+  div(style="width:66%")
+    p.one(style="margin-top:-.5em;margin-bottom:-.5em;padding-top:.5em;padding-bottom:.5em;"): :t
+      1. The objects of categorical perception, ‘expressions of emotion’, are facial expressions.
+    p.em-above so ...
+    p.em-above 2. The things we perceive in virtue of categorical perception are not emotions.
+    .slide
+      +highlight-row('.one')
+      .notes: :t
+        Just here we have to be extremely careful.
+        We have to ask, What are the objects of categorical perception?
+        That is, What Are the Perceptual Processes Supposed to Categorise?
+
++insert_unit({unit:'objects_of_categorical_perception', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'categorical_perception_speech', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'emotion_vs_speech', title_slide:true, images:images, handout:true})
+
+
++slide_middle
+  .notes: :t
+    So I first asked, what evidence could bear on the perceptual hypothesis?
+    I answered that part of the evidence is from studies of categorical perception
+    of facial expressions of emotion.
+  p ‘We sometimes  
+    span.see see
+    span  aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ 
+  p.right.grey-text McNeill (2012, p. 573)
+  p.huge-glow challenge 
+    span.two.hide 2
+    span.three.hide 3
+  p(style='margin-top:-2.85em;margin-left:3.4em').first-challenge-answer Evidence? 
+    span.cp Categorical Perception!
+  p(style='margin-top:-2.85em;margin-left:3.4em').remove-me.hide.second-challenge-answer Which model of the emotions? 
+  p(style='margin-top:-2.85em;margin-left:3.4em').remove-me.hide.third-challenge-answer Relation to speech and action? 
+  .notes: :t
+    Part of the evidence relevant to the perceptual hypothesis is evidence that 
+    humans can categorically perceive expressions of emotion.
+  .notes: :t
+    Then my next question was,
+    What does the evidence from studies of categorical perception
+    tell us about the truth or falsity of the perceptual hypothesis ?
+  .slide
+    +invert('.cp')
+    .notes: :t
+      Now I think we can answer this question.
+      Or rather, we know that the answer depends on what the objects of categorical perception are.
+    .notes: :t
+      If the objects of categorical perception are merely facial expresssions,
+      then I think the evidence does not support the claim that we see aspects of
+      each others’ mental lives.
+    .notes: :t
+      But if, as I’ve conjectured, the objects of categorical perception are 
+      actions directed to the expression of particular emotions, then I think the 
+      evidence does provide modest support for the claim that we perceive aspects
+      of each others’ mental lives.
+    .notes: :t
+      This claim will need qualifying in various ways.
+  .slide
+    +highlight('.see', 'red')
+    .notes: :t
+      First, the evidence suggests that categorical perception of expressions of emotion,
+      like categorical perception of speech, is not tied to single modality in any very
+      robust way.
+    .notes: :t
+      Second, I suggest elsewhere that categorical perception isn’t exactly like 
+      perception as philosophers standardly understand it.
+      In particular, its phenomenology is to be understood in terms of 
+      \textbf{PHENOMENAL EXPECTATIONS} rather than by analogy with perception of shapes or textures.
+  .slide
+    .notes: :t
+      But let me put these aside because I want to mention a second challenge.
+    +unhighlight('.see', 'red')
+    +uninvert('.cp')
+    +remove('.first-challenge-answer')
+    +unremove('.second-challenge-answer')
+    +show('.two')
+
+  .slide
+    +show('.second-challenge-answer')
+    .notes: :t
+      The challenge is to specify a model of anger and other mental states which captures how these
+      mental states appear to the perceivers. This is a hard challenge to meet because available models
+      arguably render mental states imperceptible.
+    .notes: :t
+      But what is a model of the emotions?
+      Since emotions are mental states, here I think we can step back and think about mental states generally.
+      On a widely accepted view, mental states involve subjects having  attitudes toward contents (see figure).
+      Possible attitudes include believing, wanting, being happy that, and being angry that. 
+      The content is what distinguishes one belief from all others, or one desire from all others.
+      The content is also what determines whether a belief is true or false, and whether a desire is satisfied or unsatisfied.
+
+      There are two main tasks in constructing a model of mental states. 
+      The first task is to characterise some attitudes.
+      This typically involves specifying their distinctive functional and normative roles.%
+      \footnote{
+      For examples, see \citet{Bratman:1987xw} on intention or \citet[][chapter 11]{Velleman:2000fq} on belief.
+      }
+      %
+      The second task is to find a scheme for specifying the contents of mental states.
+      This typically involves one or another kind of proposition, although some  have suggested other abstract entities including map-like representations.%
+      \footnote{
+      See \citet[p.\ 163]{Braddon-Mitchell:1996ce}: ‘what is inside our heads should be thought of as more like maps than sentences.’
+      }
+    .notes.handout: :t
+      ‘emotions are episodic modes of evaluative engagement with the social and practical world’
+      \citep[p.\ 1512]{parkinson:2008_emotions}.
+    .notes: :t
+      FIRST LIMIT:
+      Determinate emotions (the particular evaluation implied by my anger in this case)
+      vs the determinable (anger, in this case).  Categorical perception provides evidence 
+      only for the determinable. (Joel said in discussion that he made this point
+      with an analogy with CP of colour in Smith (2010)).
+    .notes: :t
+      SECOND LIMIT:
+      Static emotions vs emotions unfolding (see notes below from ‘sharing a smile’).
+      It seems that CP doesn’t capture dynamics of emotion.
+    .notes: :t
+      So only a very crude model of the mental would capture emotions as we
+      categorically perceive them.
+      What we need here is a minimal theory of the emotions.
+  .slide
+    +remove('.two')
+    +remove('.second-challenge-answer')
+    +unremove('.third-challenge-answer')
+    +show('.three')
+  .slide
+    +show('.third-challenge-answer')
+    .notes: :t
+      Motor theory of speech perception and goal ascription  ...
+    
+    
+    
+      
+//- +insert_unit({unit:'limits', title_slide:true, images:images, handout:true})
+
++slide_middle
+  p.center.huge-glow conclusion
+
+                    
++slide_middle
+  p How do you know about it?
+    span.object   ・   
+    span.object it = this pen
+    span.emotion   ・   
+    span.emotion it = this joy
+  //- p.indent - I reasoned about it.
+  //- p.indent - Someone told me about it.
+  //- p.perceive.indent - I felt it (or saw it, or ... perceived it).
+  p.em-above 
+  p.indent percieve indicator, infer its presence
+  p.indent - vs -
+  p.indent.perceive percieve it 
+  p.em-above.grey-text.p-is-e [ but perceiving is inferring 
+    span.tick ✓ 
+    span ]
+  .notes: :t
+    Here are three ways of knowing: inference, testimony and perception.
+  +blur('.object', 0)
+  +highlight-row('.perceive')
+  .notes: :t
+    My question was,
+    Are mental states the kinds of thing we can come to know about through
+    perceiving them?
+
++slide_middle
+  p ‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ 
+  p.right.grey-text McNeill (2012, p. 573)
+  .notes: :t
+    Focussing on emotions like joy, I have suggested that 
+    we face two challenges (at least) in answering it.
+  
+  p.em-above challenge 1: evidence?
+  .notes: :t
+    The first challenge is to explain what kind of evidence might
+    bear on the question.
+  .notes: :t
+    Here I suggested that studies of categorical perception of expressions of emotion
+    are relevant.
+    Whether they provide evidence in favour fo the view that we can know others’ mental
+    states through perceiving them depends on what  the objects of categorical perception
+    are.
+  .notes: :t
+    If they are facial configurations, or something like this, then it seems clear that
+    the evidence does not support the view  that we can know others’ mental
+    states through perceiving them.
+    If anything, such evidence would support the view that when we think we are perceiving
+    mental states, we are actually perceiving facial expressions that we associate with
+    particular emotions.
+  .notes: :t
+    But if the objects of categorical perception are actions directed to the goal of expressing
+    particular emotions, then studies of categorical perception do provide some evidence
+    for the view that we have at least phenomenal expectations concerning others’ emotions.
+    
+  p.em-above challenge 2: Which model of the emotions?
+  .notes: :t
+    The second challenge concerned the limits of categorical perception.
+  .notes: :t
+    I suggested that because categorical perception is underpinned by automatic processes 
+    which operate over a short temporal window, the emotions which are the goals of the 
+    actions that are the objects of categorical perception cannot be modelled as propositional
+    attitudes.
+    Instead we need a more minimal model of the mental to understand the nature of these
+    emotions.
+    
+  .notes: :t
+    In the end, we are probably not yet in a position to know whether humans ever perceptually experience others' mental states.
+    But thinking about categorical perception does give us a way of finally making some
+    progress with this question.
+
+                                                                                                    
++insert_unit({unit:'sharing_a_smile', title_slide:true, images:images, handout:true})
+
