@@ -1,0 +1,501 @@
+---cson
+layout: 'default2'
+title: 'yy: Acting Together'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  Acting together with a purpose is a familiar feature of everyday life. People
+  play duets, move pianos together, and drink toasts together. In such cases
+  the actions people perform have a collective goal in at least this sense:
+  they are directed to an outcome and this is not, or not only, a matter of
+  each action being individually directed to this outcome. But in virtue of
+  what do the actions people perform in acting together have collective goals?
+  In considering a counterpart of this question concerning acting alone with a
+  purpose, several philosophers have argued that it is necessary to identify a
+  role for motor representations. By contrast, philosophical discussions of
+  acting together have mainly ignored motor representation. They have also have
+  neglected very small scale cases of acting together with a purpose such as
+  two pianists playing a chord together, two people elevating a piano together,
+  or two people clinking glasses. In this seminar I introduce a proposal to
+  fill both gaps. The strategy is to generalise a view about goals and motor
+  representations in acting alone with a purpose. The conclusion is that some
+  cases of acting together with a purpose constitutively involve motor
+  representations. This may have implications for understanding the varieties
+  of ways in which people can act together.
+  """
+lecture_date: '2017/12/07'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+include ../../fragments/joint_action_mixins
+
+- var images = get_images('joint_action05')
+
+
++title_slide({document:document, images:images})
+  .notes: :t
+    In this lecture, I will outline a minimal framework for theorising
+    about joint action. 
+    I will also argue that attention to the role of 
+    motor representation in coordinating joint action
+    proves unexpectedly helpful in enabling us to understand 
+    the sophisticated sort of cooperative interactions that are often
+    the focus of philosophical discussions of joint action.
+    
+//- the question
++insert_unit({unit:'contrast_cases_simple_view', title_slide:false, images:images, handout:true})
+
+
+//- transition to collective goals (bit hazy)
++slide_middle
+  p.center.huge-glow-50 collective goals
+  .notes: :t
+    My question is, what distinguishes very small scale cases of joint action
+    from parallel but merely individual action?
+    I don’t want to answer this question directly.
+    Instead I want to step back and consider features associated with joint action ...
+
++slide_middle
+  .notes Features characteristic of joint action ....
+  +my-approach-to-joint-action
+  .slide
+    +highlight-row('.collective-goals')
+
+
+
+//-  recap collective goals
+
++slide_middle({bkg:'bkg/bees/DSC_0200_crop.jpg'})
+  +hide('img.bkg',0)
+  +style('img.bkg',{filter:"grayscale(0.9)"})
+  p distributive vs collective
+  p.hem-around.indent.injections ‘The injections saved her life.’
+  .notes: :t
+    Consider the statement, ‘The injections saved her life.’  
+    This could be true in virtue of her receiving several injections on different occasions, each of
+    which saved her life.
+    In this case, the injections saving her life is just a matter of each injection individually
+    saving her life; this is the distributive interpretation.
+    But the statement is also true if she was given two injections on a single occasion where each
+    injection was necessary but not sufficient to save her life.
+    In this case the injections saving her life is not, or not just, a matter of each injection
+    individually saving her life; this is the collective interpretation.
+  .notes: :t
+    The difference between distributive and collective interpretations is clearly substantial, for on
+    the distributive interpretation the statement can only be true if her life has been saved more
+    than once, whereas the truth of the collective interpretation requires only one life-threatening
+    situation.
+      
+  .slide
+    +blur('.injections')
+    .notes: :t
+      Just as some injections can be collectively life-saving, so some actions can be collectively
+      directed to a goal.
+      For example, consider this sentence:
+    p.hem-around.indent.notes.show ‘The 
+      span.goal goal
+      span  of their actions is to find a new home.’
+    .notes: :t
+      This can be interpreted distributively: each of their actions is separately
+      directed to finding a new home.
+      But it can also be interpreted collectively: finding a home is an outcome to which
+      their actions are directed and this is not, or not just, a matter of each of their actions being
+      individually directed to finding a home.
+  .slide
+    +invert('.goal')
+    .notes: :t
+      To say that an outcome is a \emph{collective goal} of some actions is just to say that
+      it is an outcome to which the actions are directed and this is not, or not just, a matter of
+      each action being individually directed to that outcome.
+  .slide
+    +show('img.bkg')
+    .notes: :t
+      Note that collective goals do not plausibly require any kind of intentions or commitments.
+      After all,
+      there is a sense in which some of the actions of swarming bees are directed to finding a nest
+      and this is not, or not just, a matter of each bee’s actions being individually directed to
+      finding a nest. So finding a nest is a collective goal of the bees’ actions.
+
+
+
++slide({bkg:'prosecco_accident.png'})
+  p.question.hide  In virtue of what do actions involving multiple agents ever have collective goals?
+  .notes: :t
+    Recall how Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+    and unfortunately the prosecco misses the glass, soaking Zachs’s trousers.  
+    Ayesha might say, truthfully, ‘The collective goal of our actions was not to soak Zach's trousers in 
+    sparkling wine but only to fill this glass.’  
+    What could make Ayesha’s statement true?
+  .slide
+    +diagram_action_goal
+    .notes: :t
+      As this illustrates, 
+      some actions involving multiple agents are purposive in the sense that 
+  .slide
+    +show('.outcome')
+    .notes: :t
+      among all their actual and possible consequences, 
+  .slide
+    +show('.outcome.block .block-glow')
+    .notes: :t
+      there are outcomes to which they are directed
+  .slide
+    +show('.joint-action .neon-rect')
+    .notes: :t
+      and the actions are collectively directed to this outcome
+  .slide
+    +hide('.joint-action .neon-rect')  
+    +show('.joint-action .neon-ellipse')
+    .notes: :t
+      so it is not just a matter of each individual action being directed to this outcome.
+  .slide
+    +hide('.joint-action .neon-ellipse')
+    +show('.joint-action .neon-rect')
+    .notes: :t
+      In such cases we can say that the actions have a collective goal.
+  .slide
+    +show('.question')
+    .notes: :t
+  .slide
+    +show('.explain-collective-directedness')
+    .notes: :t
+      As what Ayesha and Beatrice are doing---filling a glass together---is a paradigm case of joint action, it might seem natural to answer the question by invoking a notion of shared (or `collective') intention.
+      Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
+      Then, on many accounts of shared intention,
+  .slide
+    +show('.represents')
+    .notes: :t
+      the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
+      or each of them being in some other state which picks out this outcome. 
+  .slide
+    +show('.coordinates')
+    .notes: :t
+      The shared intention also provides for the coordination of their actions (so that, for example, 
+      Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And 
+      coordination of this type would normally facilitate occurrences of the type of outcome intended. 
+      In this way, invoking a notion of shared intention provides one answer to our question about what 
+      it is for some actions to be collectively directed to an outcome.
+  .slide
+    +show('.iasmr')
+    .notes: :t
+      Are there also ways of answering the question which involve psychological structures other than shared intention? In this paper we shall draw on recent discoveries about how multiple agents coordinate their actions to argue that the collective directedness of some actions to an outcome can be explained in terms of a particular interagential structure of motor representations.  
+      Our actions having collective goals is not always only a matter of what we intend: sometimes it constitutively involves motor representation. 
+
+
+
++slide_middle
+  .notes.handout.show
+    p Conjecture : 
+      br
+      span collective goals are represented motorically
+  .notes.handout: :t
+    \begin{enumerate} 
+    \item There is one outcome which each agent represents motorically, and 
+    \item  in each agent this representation triggers planning-like processes
+    \item  concerning all the agents’ actions, with the result that
+    \item  coordination of their actions is facilitated.
+    \end{enumerate} 
+  
+  .slide
+    .notes: :t
+      Let me explain what this amounts to.
+    p.em-above I.e. sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+  .notes
+    +conjecture-iasmr
+  .slide
+    .em-above.conjecture-iasmr
+      +conjecture-iasmr
+    +hide('.conjecture-iasmr li:gt(0), .step-next', 0)
+    .notes: :t
+      What do we need?
+      (i) Evidence that a single outcome to which all the actions are directed is represented motorically.
+  .slide
+    +show('.conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next')
+    .notes: :t
+      (ii) Evidence that this triggers planning-like processes,
+  .slide
+    +show('.conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next')
+    .notes: :t
+      (iii) where these  concern all the agents' actions,
+  .slide
+    +show('.conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next')
+    .notes: :t
+      and (iv) the existence of such representations facilitates coordination of the agents' actions.
+
+
++insert_unit({unit:'della_gatta_drawing_together', title_slide:false, images:images, handout:false})
+
++slide_middle
+  .notes: :t
+    So far I've been providing some evidence for the conjecture that collective goals are represented motorically.
+  .notes: :t
+    It’s important to stress that is is only one bit of the evidence. There’s quite a bit more.
+  .notes.show
+    p Conjecture : 
+      br
+      span collective goals are represented motorically
+  .conjecture-iasmr
+    p.em-above I.e. sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+    .em-above
+      +conjecture-iasmr
+
+
+
++slide
+  p.question  In virtue of what do actions involving multiple agents ever have collective goals?
+  .notes: :t
+    Recall how Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+    and unfortunately the prosecco misses the glass, soaking Zachs’s trousers.  
+    Ayesha might say, truthfully, ‘The collective goal of our actions was not to soak Zach's trousers in 
+    sparkling wine but only to fill this glass.’  
+    What could make Ayesha’s statement true?
+  .slide
+    +diagram_action_goal
+    +show('.outcome')
+    +show('.outcome.block .block-glow')
+    +show('.joint-action .neon-rect')
+    +show('.explain-collective-directedness')
+    +show('.represents')
+    +show('.coordinates')
+    +show('.iasmr')
+    +invert('.iasmr')
+
+
+
+
+
++slide_middle
+  p.center more evidence for the conjecture
+  p.center (collective goals are represented motorically)
+  .notes: :t
+    della Gatta et al : joint vs. parallel
+  .notes: :t
+    Kourtis et al : individual vs joint
+
++insert_unit({unit:'kourtis_2014', title_slide:false, images:images, handout:true})
+
+
++slide_middle
+  .notes: :t
+    So far I've been providing some evidence for the conjecture that collective goals are represented motorically.
+  .notes: :t
+    It’s important to stress that is is only one bit of the evidence. There’s quite a bit more.
+  .notes.show
+    p Conjecture : 
+      br
+      span collective goals are represented motorically
+  .conjecture-iasmr
+    p.em-above I.e. sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:
+    .em-above
+      +conjecture-iasmr
+  .slide
+    +invert('.coordination')
+    .notes: :t
+      In particular the evidence I have provided doesn’t address the issue of coordination.
+    .notes: :t
+      What about coordination?
+      There is a little bit of direct evidence for this that I won't mention.
+      But I do want to take you through why the interagential structure of motor representation
+      might in theory result in the agents actions being coordinated.
+
+
+    
++slide({bkg:'action_hierarchy_diagrams/Slide1.jpg'})
+  .notes: :t
+    Consider this case.
+    An agent fills a glass by holding it in one hand, holding the bottle in the other,
+    bringing the two together and pouring from the bottle into the glass. 
+  .notes: :t
+    [*demonstrate].
+
++slide({bkg:'action_hierarchy_diagrams/Slide2.jpg'})
+  .notes: :t
+    It’s a familiar idea that motor representations of outcomes resemble intentions in that they can 
+    trigger processes which are like planning in some respects. 
+    These processes are like planning in that they involve starting with representations of relatively 
+    distal outcomes and gradually filling in details, resulting in a structure of motor representations 
+    that can be hierarchically arranged by the means-end relation \citep{bekkering:2000_imitation,
+    grafton:2007_evidence}. 
+    Processes triggered by motor representations of outcomes are also planning-like in that they 
+    involve selecting means for actions to be performed now in ways that anticipate future actions  
+    \citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}. 
+
++slide({bkg:'action_hierarchy_diagrams/Slide3.jpg'})
+  .notes: :t
+    Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the 
+    exchange between her two hands. 
+    (If her action is fluid, 
+    she may proactively adjust her left hand in advance of the mug’s being lifted by her right hand 
+    \citep[compare][]{diedrichsen:2003_anticipatory,hugon:1982_anticipatory, lum:1992_feedforward}.) 
+    How could such tight coordination be achieved? 
+    Part of the answer involves the fact that motor representations and processes concerning the 
+    actions involving each hand are not entirely independent of each other. 
+    Rather there is a plan-like structure of motor representation for the whole action and motor 
+    representations concerning actions involving each hand are components of this larger plan-like structure. 
+    It is in part because they are components of a larger plan-like structure that the movements of 
+    one hand constrain and are constrained by the movements of the other hand. 
+  
++slide({bkg:'action_hierarchy_diagrams/Slide3.jpg'})
+  .notes: :t
+    We have just considered what is involved in performing an ordinary, individual action, where an agent 
+    fills a glass from a bottle, taking one in each hand and moving them in a carefully coordinated way.
+    Compare this individual action with the same action performed by two agents as a joint action.
+    One agent takes the glass while the other takes the bottle.
+    The joint action is like the individual action in several respects.
+
++slide({bkg:'action_hierarchy_diagrams/Slide4.jpg'})
+  .notes First, the goal to which the joint action is directed is the same, namely to move the mug from here to there.
+
++slide({bkg:'action_hierarchy_diagrams/Slide5.jpg'})
+  .notes: :t()
+    Second, there is a similar coordination problem---the agents’ two hands have to meet.
+
++slide({bkg:'action_hierarchy_diagrams/Slide6.jpg'})
+  .notes And, third, the evidence we have mentioned suggests that in joint action, motor representations and processes occur in each agent much like those that would occur if this agent were performing the whole action alone.
+  .notes Why would this be helpful?  
+  .notes &nbsp;
+  .notes Suppose the agents' planning-like motor processes are similar enough that, in this context, they will reliably produce approximately the same plan-like structures of motor representations.
+  .notes Then having a single planning-like motor process for the whole joint action in each agent means that
+  .notes \begin{enumerate}
+  .notes \item in each agent there is a plan-like structure of motor representations concerning each of the others’ actions,
+  .notes \item each agent's plan-like structure concerning another's actions is approximately the same as any other agent's plan-like structure concerning those actions,
+  .notes \item each agent's plan-like structure concerning her own actions is constrained by her plan-like structures concerning the other’s actions.
+  .notes \end{enumerate}
+  .notes So each agent’s plan-like structure of motor representations concerning her own actions is indirectly constrained by the other agents' plan-like structures concerning their own actions 
+  .notes by virtue of being directly constrained by her plan-like structures concerning their actions.
+  .notes In this way it is possible to use ordinary planning-like motor processes to achieve coordination in joint action.
+  .notes What enables the two or more agents' plan-like structures of motor representations to mesh is not that they represent each other's plans but that they processes motorically each other's actions and their own as parts of a single action.
+  .notes &nbsp;
+  .notes   So how does the joint action differ from the corresponding individual action?  
+  .notes There are at least two differences.  
+  .notes First, we now have two plan-like structures of motor representations because in each agent there is a planning-like motor process concerning the whole action.
+  .notes These two structures of motor representations have to be identical or similar enough that the differences don’t matter for the coordination of the agents’ actions---let us abbreviate this by saying that they have to \emph{match}.  
+  .notes The need for matching planning-like structures is not specific to joint action;
+  .notes it is also required where one agent observing another is able to predict her actions thanks to planning-like motor processes concerning the other’s actions (we mentioned evidence that this occurs above). 
+
++slide({bkg:'action_hierarchy_diagrams/Slide7.jpg'})
+  .notes A second difference between the joint action and the individual action is this.
+  .notes In joint action there are planning-like motor processes in each agent concerning some actions which she will not eventually perform. 
+  .notes There must therefore be something that prevents part but not all of the planning-like motor process leading all the way to action.
+  .notes Exactly how this selective prevention works is an open question.
+  .notes We expect bodily and environmental constraints are often relevant. 
+  .notes There may also be differences in how others’ actions are processed motorically \citep[compare][]{novembre:2012_distinguishing}.
+  .notes \footnote{\citep[p.\ 2901]{novembre:2012_distinguishing}: 'in the context of a joint action—the motor control system is particularly sensitive to the identity of the agent (self or other) of a represented action and that (social) contextual information is one means for achieving this distinction'}
+  .notes And inhibition could be involved too \citep[compare][]{sebanz:2006_twin_peaks}.
+  .slide
+    +blur('img:eq(0)')
+    +fade('img:eq(0)')
+    .notes: :t
+       My proposal, then, is this.
+       In both practical reasoning and motorically, sometimes agents are able to achieve coordination
+        for joint action not by representing each others’ plans but 
+        by treating each other's actions and their own as if they were parts of a single action.
+    .notes: :t
+      So perhaps joint action is not always only a matter of intention, knowledge or commitment: 
+      perhaps sometimes joint action constitutively involves motor representation.
+
+
++slide_middle
+  p In virtue of what 
+    br
+    span do very small scale joint actions 
+    br 
+    span have collective goals?
+  p Interagential structures of motor representations.
+
+
+  
+
+
+
+//- +insert_unit({unit:'walking_together_tarantino', title_slide:true, images:images, handout:true})
+
+//- +insert_unit({unit:'multi_agent_events', title_slide:true, images:images, handout:true})
+//- +insert_unit({unit:'collective_goals', title_slide:true, images:images, handout:true})
+//- +insert_unit({unit:'collective_goals_and_motor_representations', title_slide:true, images:images, handout:true})
+//- +insert_unit({unit:'motor_representations_and_cooperation', title_slide:true, images:images, handout:true})
+
++slide_middle
+  p.center.huge-glow conclusion
+  .notes: :t
+    In conclusion, my question was about in virtue of what ... collective goals.
+    Many researchers have answered this question by appeal to one or another kind of shared intention.
+    What we have shown is that in some cases the right answer to the question involves 
+    motor representation rather than intention.
+    And, more tentatively, this suggests that there may be a role for motor representation
+    in characterising joint action.
+    Perhaps understanding joint action and shared intention requires appeal not just to intention, commitment and the rest,
+    but also to motor representation. 
+  .notes: :t
+    Questions (i) whether iasmr underpins other characteristics associated with joint action
+    (ii) relation between Simple View and iasmr; (iii) need for aninterface between different
+    forms of joint action?
+
+
++slide_middle
+  .notes Features characteristic of joint action ....
+  +my-approach-to-joint-action
+  .slide
+    +highlight-row('.collective-goals')
+  .slide
+    +unhighlight-row('.collective-goals')
+    +highlight-row('.cooperation')
+    
++slide_middle
+  .notes.handout \emph{The Simple View}
+  p The Simple View
+    span.notes.handout.ctd : 
+  .notes.handout.ctd.show.em-above
+    +simple_account
+  .slide
+    +invert('.phi')
+    .notes: :t
+      We have to be careful in specifying under what description they intend that they phi.
+      To avoid circularity can't always be the case that phi is an intentional joint action.
+      Bratman says it is cooperatively neutral.
+      This is weak.
+      Maybe we can say:
+  .slide
+    p.em-above.notes.show.desc-phi-v1 φ comprises two or more actions involving multiple agents where the actions have a collective goal 
+      span.in-virtue in virtue of an interagential structure of motor representation
+      span .
+  .slide
+    +show('img.bkg')
+    .notes: :t()
+      This looks like a promising connection between the two accounts 
+    .notes: :t()
+      But it faces a problem ...
+  .slide
+    +invert('.in-virtue')
+    .notes: :t()
+      People can't intend phi under this description unless they can identify the 
+      interagential structure of motor representation we have been characterising.
+  .slide
+    +uninvert('.in-virtue')
+    +line-through('.desc-phi-v1')  
+    .notes: :t()
+      So we have to give up on this idea as it stands.
+      But maybe we can modify it.
+  .slide
+    p.em-above interagential structure of motor representation grounds collective goal
+    p.indent > experience of act type 
+    p.indent > concept of act type
+  .slide
+    p.em-above.notes.show.desc-phi-v2 φ is an act-type we know through experiences arising from interagential structure of motor representations grounding collective goals.
+    .notes: :t()
+      Compare individual action.
+      We know what it is to grasp by virtue of experiences created by motor representations.
+      ...
+
+
++slide_middle
+  p In virtue of what 
+    br
+    span do very small scale joint actions 
+    br 
+    span have collective goals?
+  p Interagential structures of motor representations.
+

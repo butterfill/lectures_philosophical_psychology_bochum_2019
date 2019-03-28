@@ -1,0 +1,165 @@
+---
+layout: 'default2'
+title: '15: What Do We Experience of Action?'
+subtitle: ''
+weburl: ''
+units: []
+lecture_date: '2019/04/05'
+hidden: false
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('flowers')
+
+
+
+
+//- 
+  In 2016/7 this whole lecture ended up being mostly a long discussion.
+  I barely got as far as introducing the problems.
+  So lecture 04 is also dedicated to this topic.
+  But in another year you might want to cover this in a single lecture.
+
+
++title_slide({document:document, images:images})
+  .notes: :t
+    I want to start by recalling some issues from the first two lectures.
+    Today I will attempt to tie these together, then, next week, we will move
+    on to a different set of issues.
+    (Perhaps colour?)
+    
+
+
++insert_unit({unit:'the_interface_problem_recap', title_slide:false, images:images, handout:true})
+    
++slide_middle
+  p.center from lecture 2 ...
+
++insert_unit({unit:'motor_theory_goal_tracking_recap', title_slide:false, images:images, handout:true})
+
++slide_rh_white
+  .notes: :t
+    Next I want to build on what we did in lecture 2 and argue that there is a further
+    puzzle.
+    The further puzzle concerns how motor representation may influence judgements about 
+    the goals of actions.
+  .notes: :t
+    To see how the puzzle arises, I want to go back and reconsider the double life of 
+    motor representations. This is something I’ve already mentioned twice; now I want
+    to fill in some details that make it even more puzzling.
+  +left_half
+    p.center(style="margin-top:125px;") Interface Problem
+    p.hem-above intention -> motor representation
+    p.hem-above How could intentions have content-respecting influences on motor representations given their inferential isolation?
+  +right_half
+    p.center(style="margin-top:125px;") New Interface Problem
+    p.hem-above motor representation -> judgement
+    p.hem-above How could motor representations have content-respecting influences on thoughts given their inferential isolation?
+
+
++insert_unit({unit:'double_life_motor_representation', title_slide:true, images:images, handout:true})
+
+//- I’m using bits of this unit:
+//- +insert_unit({unit:'puzzle_thought_experience_motoric', title_slide:true, images:images, handout:true})
++slide_middle
+  p.hem-around In action observation, motor representations of outcomes 
+  p.hem-around.step3.hide sometimes facilitate the identification of goals in thought.
+  .slide
+    +show('.step3')
+  .slide
+    p.em-above So
+    p: :t
+      where motor representations influence a thought about an action being directed to a
+      particular outcome, there is normally a motor representation of this outcome, or of a
+      matching outcome.
+    .notes: :t
+      This conclusion entails that motor representations have content-respecting
+      influences on thoughts. It is the fact that one outcome rather than another is represented
+      motorically which explains, at least in part, why the observer takes this outcome (or a matching
+      one) to be an outcome to which the observed action is directed.
+  .slide
+    p.em-above But
+    p how could motor representations have content-respecting influences on thoughts 
+      span.step4.hide given their inferential isolation
+      span ?
+    .notes: :t
+      But how could motor representations
+      have content-respecting influences on thoughts? One familiar way to explain content-respecting
+      influences is to appeal to inferential relations. To illustrate, it is no mystery that your beliefs
+      have content-respecting influences on your intentions, for the two are connected by processes of
+      practical reasoning. But motor representation, unlike belief and intention, does not feature in
+      practical reasoning. Indeed, thought is inferentially isolated from it. How then could any motor
+      representations have content-respecting influences on thoughts?
+    .slide
+      +show('.step4')
+
++slide_middle
+  +timer-element('timer1','120s')
+    p.center 
+      span How do motor representations
+      br
+      span have content-respecting influences
+      br
+      span on thoughts?
+  +start-timer('timer1')
+          
+
+
+
++insert_unit({unit:'twin_puzzles', title_slide:false, images:images, handout:true})
+//- out of time in 2017-8 (probably could do more another year)
+//- +insert_unit({unit:'mylopoulos_pacherie', title_slide:true, images:images, handout:true})
+//-
+//- +insert_unit({unit:'question_experience_action', title_slide:false, images:images, handout:true})
+//-
+//- +insert_unit({unit:'action_experience', title_slide:true, images:images, handout:true})
+//-
+//-
+//- //- +insert_unit({unit:'categorical_perception_speech', title_slide:true, images:images, handout:true})
+//-
+//- //- TODO : this is copied from action_experience unit!
+//- mixin actionIndexConjecture(p)
+//-   - p = p || {final:false}
+//-   p ‘Action index’ conjecture
+//-   p.em-above.indent Motor representations of outcomes structure
+//-     br
+//-     span experiences
+//-     span.imaginings(class="#{p.final ? '' : 'hide'}") , imaginings and (prospective) memories
+//-   p.indent in ways which provide opportunities for attention to actions directed to those outcomes.
+//-   .step2(class="#{p.final ? '' : 'hide'}")
+//-     p.em-above.indent Forming intentions concerning an outcome can influence attention to the action,
+//-     p.indent which can influence the persistence of a motor representation of the outcome.
+//-
+//- +slide_middle
+//-   p.center.huge-glow conclusion
+//-   .notes: :t
+//-     In conclusion,
+//-     the interface problem is the problem of explaining how there could be nonaccidental matches
+//-     between motor representations and intentions.
+//-   .notes: :t
+//-     The interface problem is complicated by the \textbf{anatomy} of outcomes, the varying \textbf{scales}
+//-     at which intentions can specify actions, and by the possibility of nonaccidental \textbf{dynamical}
+//-     matching.
+//-   .notes: :t
+//-     Part (but not all) of the solution to the interface problem may be what I provisionally called
+//-     the ‘action index’ conjecture.
+//-     According to this conjecture,
+//-   .notes.ctd
+//-     +actionIndexConjecture({final:true})
+//-   .notes: :t
+//-     I’m yet fully convinced that this ‘action index’ conjecture is the right way to think about
+//-     action experiences.  But what I am convinced of is that if we are going to solve the interface
+//-     problem, we will need to understand the ways in which actions can be experienced and the mechanisms
+//-     which make this possible.
+//-
+//- +slide_rh_white
+//-   +left_half
+//-     p.center(style="margin-top:125px;") Interface Problem
+//-     p.hem-above intention -> motor representation
+//-     p.hem-above How could intentions have content-respecting influences on motor representations given their inferential isolation?
+//-   +right_half
+//-     p.center(style="margin-top:125px;") New Interface Problem
+//-     p.hem-above motor representation -> judgement
+//-     p.hem-above How could motor representations have content-respecting influences on thoughts given their inferential isolation?

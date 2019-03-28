@@ -1,3 +1,11 @@
+New sources:
+  MINDREADING
+    conf 2018-6 vuw new zealand jason low dual process mindreading
+    conf 2019-03 paris ICPS
+  OTHER
+    conf 2018-11 tuebingen intention motor representation
+    conf bochum 2019-03 [interface problems]
+
 bochum plan
 ... return to this:
 
@@ -33,7 +41,93 @@ Experiments:
   - joint action with John
 
 
-Introduce a unit on decision theory, RPT, instrumental rationality and dual-process theory of action? (How would this fit with the three questions idea?)
+Introduce a unit on decision theory, RPT, instrumental rationality and dual-process theory of action? (How would this fit with the three questions idea?) Also models and construals (triggered by puzzle about whether agnostic about processes)?
+
+TODO
+====
+  convert tuebingen seminar into motor representions ground goals
+  compile decision theory
+  update mindreading [see conf Edinburgh]
+  update causal perception, eliminate development
+  create what are metacognitive feelings? (Docic vs me). Cover familiarity, sense of agency, ...
+  Should we be instrumentally rational? (implications of dual process theories of (i) motivational states, and (ii) processes underpinning ethical judgements)
+  mindreading and motor representation (use ICPS, talk about Edwards & Low 2018 onwards)
+
+PLAN
+====
+01 seeing red? [71]
+02 what are metacognitive feelings? (Docic vs me) [todo]
+03 perceiving feelings? [move sharing smiles to interaction] [83]
+
+04 decision theory and processes
+05 What is the mark of agency? [tuebingen questions, motor determines goal-directedness [no interface]]
+06 perceiving causal interactions?
+
+   [MINDREADING DAY]
+07 three questions about mindreading (make into two, cut development) [147]
+08 a dual process theory [130]
+09 the method of signature limits [included in 08]
+
+10 speech and motor / the double life of motor representation [puzzles]
+11 motor theory goal tracking
+12 interface problems
+
+13 experience of action (own and others)?
+14 radical interpretation [problems] / Should we be instrumentally rational?
+15 interaction as a route to knowledge? [smile/ygimg]
+
+
+Questions
+  Do humans perceive categorical colour properties?
+  Do humans perceive causal interactions?
+  Do humans perceive others’ feelings?
+    Categorical perception of speech happens raidly, and goal-directed actions are complex.  How can something so complex be computed so quickly?
+  What are those motor representations doing there?
+  What do we experience of action?
+  How should we solve the twin interface problems? (Why do you have experience?)
+  What do infants, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+  Why is belief-tracking in adults sometimes but not always automatic? 
+  How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  How do observations about tracking support conclusions about representing?
+  Why are there dissociations in nonhuman apes’, human infants’ and human adults’ performance on belief-tracking tasks?
+  How are mindreading and motor representation related?
+  What is the mark of agency?
+  What is categorical perception?
+  Is there a route to knowledge of others’ minds that depends on interaction?
+  What are metacognitive feelings?
+
+Notions
+  model
+  dual process theory
+  interface problem
+  motor representation
+  signature limit
+  radical interpretation
+  metacognitive feeling
+
+Ideas
+
+
+NEW
+
+1. Decision Theory
+
+  intro to decision theory using (lecture 3 or 5)
+  https://philosophical-issues-in-behavioural-science.butterfill.com/lecture_03.html#slide-152
+
+https://philosophical-issues-in-behavioural-science.butterfill.com/lecture_03.html#habitual_instrumental
+
+  puzzle about action
+  dual process theory
+
+  Have we shown that decision theory is wrong?
+
+  Puzzle: The range of applications of Decision Theory shows it is agnostic
+  about processes. BUT Dickinson’s instrumental process is characterised by
+  appeal to Decision Theory.
+
+  Solution: construals
+
 
 
 ---

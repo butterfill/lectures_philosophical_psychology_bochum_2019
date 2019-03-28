@@ -1,129 +1,84 @@
 ---cson
 layout: 'default2'
-title: 'Lecture xx: Seeing Red: Do Humans Visually Experience Categorical Colour Properties?'
+title: 'Lecture xx: Developmental Origins of Knowledge of Physical Objects'
 subtitle: ''
-weburl: ''
-units: []
-lecture_date: '2016/10/06'
-hidden : true
+lecture_date: '2017/11/02'
+hidden: false
 ---
-
-
-
-//- TOOD
-//- Jack : Red things do not differ in visual appearance from non-red things *in virtue of their redness*. (clearly the do in virtue of their shades)
-//- John : stress common effect.  It may not be learning the colour words as such, but something involved in learning them, that influences categorical colour perception.
 
 include ../../fragments/lecture_mixins
 include ../../fragments/unit_mixins
 
-- var images = get_images('joint_action01')
+- var images = get_images('bees')
+
+
+
 
 +title_slide({document:document, images:images})
+
   .notes: :t
-    This is a module on Puzzling Questions about Minds in Action.
-    I want to consider a range of cases in which scientific findings 
-    create the sort of puzzles that philosophers seem well-placed 
-    to grapple with.
+    ‘On the Developmental Origins of Knowledge of Physical Objects’
   .notes: :t
-    My plan is to cover a range of topics, as listed on the course outline.
-    There are several themes that are more or less independent of each other.
-    I wanted to start with a question about colour experiences because 
-    partly this is a fun introduction.
-    The other lectures aren’t closely related to this one: I’m guessing that
-    some people won’t realise the module starts in week 1.
-
-+insert_unit({unit:'categorical_colour_assumption', title_slide:false, images:images, handout:true})
-
-+insert_unit({unit:'stokes_categorical_colour_argument', title_slide:false, images:images, handout:true})
-
-+insert_unit({unit:'measure_categorical_colour_appearances', title_slide:false, images:images, handout:true})
-
-+insert_unit({unit:'why_think_we_see_red', title_slide:false, images:images, handout:true})
-
-+slide_middle
-  p.center.huge-glow conclusion
-  p.under-huge-glow: :t
-    Red things do not differ in visual appearance from non-red things in virtue of their redness.
+    Cognitive development---the fact
+    that humans typically begin life with quite
+    limited cognitive abilities and gradually acquire more---raises some fundamentally 
+    philosophical challenges.
+  .notes: :t
+    Despite this, cognitive development has been quite
+    widely ignored by contemporary philosophers of mind. 
+    But it wasn’t always like this ...
     
 
-//- --------------------------
-//- admin
-//-
-//- +section({title:'Admin', images:images, handout:false})
-//- +slide
-//-   .words: .container_12: .grid_12
-//-     p.blur-after lectures
-//-     .notes lectures are at this time every week
-//-     .slide
-//-       p.blur-after web
-//-       .notes there is a web page where you can find slides and handouts from lectures.
-//-     .slide
-//-       p.blur-after assessment = essays
-//-       .notes: :t
-//-         The authoritative source for the deadlines is your undergraduate handbook.
-//-         In case of doubt, please check there.
-//-       .slide
-//-         p.indent --- 15% <1,501 words, due 11:59am on Thursday of Week 8
-//-       .slide
-//-         p.indent --- 85% <2,501 words, due 11:59am on 28 April 2016
-//-       .slide
-//-         p.indent (titles on the web under ‘course materials’)
-//-     .slide
-//-       p.blur-after reading week
-//-       .notes there are no lectures or seminars in reading week (week 6)
-//-     .slide
-//-       p.blur-after seminars
-//-       .notes Seminars start next week and run every week except reading week.
-//-     .slide
-//-       p.blur-after seminar groups
-//-       .notes Sign up on tabula, as usual.
-//-     .slide
-//-       p.blur-after seminar tasks
-//-       p.indent --- online + handout
-//-       .notes: :t
-//-         I've assigned you a series of tasks to do in seminars; these are specified in the
-//-         document going around, which is also on the web page.
-//-
-//- +slide
-//-   p first seminar task
-//-   p.em-above
-//-     span Write and bring a short (<501 words) critical review of Searle (1990).
-//-     span Send it to
-//-     span.your-counterpart your counterpart
-//-     span  and to the lecturer.
-//-   p.em-above: :t
-//-     Read your counterpart’s critical review and formulate a question to ask her in the
-//-     seminar.  (Or, better: meet your counterpart to discuss your critical reviews before the seminar.)
-//-   .slide
-//-     +invert('.your-counterpart')
-//-
-//-
-//-   .notes: :t
-//-     I need to set you up for your first seminar, which starts next week.
-//-
-//-
-//- //- --------------------------
-//- //- back to lecture
-//-
-//-
-//-
-//- +slide
-//-   p Objectives for this lecture:
-//-   ul
-//-     li understand questions about shared agency
-//-     li can use the method of contrast cases
-//-     li understand distributive and collective interpretations of sentences
-//-     li can distinguish acting together from joint action
-//-     li familar with the Simple View
-//-     li can critically assess objections to the Simple View
-//-   +fade('li','1')
-//-   +unfade('li:eq(0)','500')
-//-   +unfade('li:eq(1)','2000')
-//-   +unfade('li:eq(2)','4000')
-//-   +unfade('li:eq(3)','6000')
-//-   +unfade('li:eq(4)','8000')
-//-   +unfade('li:eq(5)','10000')
-//-   .notes: :t
-//-     The last point we're only half way through, more on this next time.
-//-
++slide_middle
+  p.handout.notes.show
+    span.blur1 ‘... ’tis past doubt, 
+    br
+    span.blur1 that Men have in their Minds 
+    span.noblur several Ideas ...:   
+    br
+    span.blur1 It is in the first place to be enquired, 
+    br
+    span.noblur How he comes by them?
+    span.blur1 ’
+    span.handout \citep[p.\ 104]{Locke:1975qo} 
+  p.blur1.right.grey-text (Locke, 1689 p. 104)
+  .notes: :t
+    As Locke saw it, questions about the nature of minds are bound up
+    with questions about their developmental origins.
+  .slide
+    +blur('.blur1')
+    .notes: :t
+      Where Locke asked a question about Ideas, I want to consider a perhaps
+      simpler question about knowledge. How do humans make the transition from
+      not knowing any simple facts about particular things in a given domain 
+      to possessing some such knowledge?
+    .notes: :t
+      Research on this question in developmental psychology motivates a further question.
+      How can we understand partially formed minds and the actions they give
+      rise to? What representations and processes are needed to expalin these
+      actions? (Special kind of knowledge, like ‘core knowledge’?)
+
++slide_middle
+  p.center physical objects
+  .notes: :t
+    In this lecture I shall focus on knowledge of physical objects as a case study.
+  .notes: :t
+    This lecture is about two related questions.
+    First, What is the nature of infants’ earliest cognition of physical objects?
+    And, second, How do you get from these early forms of cognition to 
+    knowledge of simple facts about particular physical objects?
+  .notes: :t
+    I want to start by reviewing some quite famous experimental findings
+    about infants’ capacities to track briefly occluded physical objects.
+    
+
+
+
++insert_unit({unit:'object_permanence', title_slide:false, images:images, handout:true})
+
+
++insert_unit({unit:'core_knowledge_problems', title_slide:false, images:images, handout:true})
+
++insert_unit({unit:'epistemic_motoric_perceptual', title_slide:false, images:images, handout:true})
+
+//- +insert_unit({unit:'object_indexes', title_slide:false, images:images, handout:true})
