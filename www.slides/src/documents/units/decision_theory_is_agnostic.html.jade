@@ -1,0 +1,124 @@
+---cson
+layout: 'deck_unit'
+title: "Descision Theory Is Agnostic about Processes"
+tags: []
+description: """
+  You might be tempted to interpret decision theory as a description
+  of how people reason.  Is any such interpretation obligatory?  
+  Observation of how decision theory is applied supports the conclusion
+  that decision theory is agnostic about processes.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
+
+
+
+
++slide_middle
+  p.center.notes.show You might have been interpreting decision theory as an account of how people figure out what to do ...
+
++slide_middle
+  p.notes.show ... but decision theory is agnostic about processes.
+  .slide
+    .quote1
+      p.em-above.notes.handout.show
+        span On explanation: ‘Many events and outcomes prompt us to ask: Why did that happen?  
+        span [...] 
+        span For example, cutthroat competition 
+        span.business in business
+        span  is the result of the rivals being  
+        span trapped in a prisoners’ dilemma’ 
+      .notes.handout.ctd \citep[p.~36]{dixit:2014_games}.
+      p.right.grey-text Dixit et al, 2014 p. 36
+  .slide
+    +invert('.business')
+    .notes: :t
+      Few would hold that game theory is providing an account of how businesses figure out what to do.
+      After all, few would hold that businesses (as opposed to the people who run them) figure things out.
+    .notes: :t
+      The explanation does not require that any of the players are actually thinking along the lines a game theorist
+      would think. Nor even that the players are capable of thinking.
+  .slide
+    +uninvert('.business')
+    +blur('.quote1')
+    p.em-above: span Games with the Prisoner’s Dilemma structure arise in:
+    p.indent
+      span bower 
+      span.noblur birds (maraud/guard nests)
+    p.indent 
+      span business 
+      span.noblur organisations
+      span  (product pricing)
+    p.indent 
+      span.noblur countries
+      span  (international environmental policy)
+    p.indent 
+      span individual adult 
+      span.noblur humans
+      span  (suspects under arrest)
+    p.right.grey-text: span Dixit et al, 2014 chapter 10
+  .slide
+    +blur('span:not(.noblur)')
+    .notes: :t
+      There is clearly no claim that the same kinds of processes underpin the choices made 
+      in each of these cases.  Suppose, for the sake of illustration, that game theory can 
+      explain otherwise unexpected patterns in performance in each of these cases. 
+      What else follows about the proceses underlying the behaviours? Nothing.
+    .notes: :t
+      Game theory provides a way to identify patterns in behaviours.
+      It does not attempt to explain the underlying causes of those patterns,
+      which may differ between entities.
+
++slide_middle
+  .notes: :t
+    If we look at game theory more generally, we find that game theoretic analysis has been
+    applied to ‘the formation and propagation of patterns in microbial populations’ \citep[e.g.][]{reichenbach:2007_mobility}.
+  p.hem-around
+    span.step2.hide 1. Applications range from 
+    span microbial populations
+    span.step2.hide  to countries.
+  .slide
+    +show('.step2')
+  .slide
+    p.hem-around 2. The explanations are of the same type in every case.
+  .slide
+    p.hem-around 3. The underlying processes probably differ.
+  .slide
+    p.hem-around 4. Therefore, game theory is agnostic about processes.
+  .handout.notes: :t
+    \begin{enumerate}
+    \item Applications of game theory range from interactions between microbial populations to  interactions between countries.
+    \item The explanations are of the same type in every case.
+    \item The underlying processes probably differ.
+    \item Therefore, game theory is agnostic about processes.
+    \end{enumerate}
+
++slide_middle({bkg:'sinervo_fig1.png'})
+  .notes: :t
+    I couldn’t resist this one ... game theory (rock-paper-scissors specifically)
+    has been used to explain ‘evolutionary stable strategy model to a three-morph mating system in the side-blotched lizard’
+    \citep{sinervo:1996_rock}.
+    (The ones on the right resemble sexually receptive females morphologically; they are 
+    ‘sneakers’.)
+  .slide
+    +blur('img.bkg', '5px')
+    p Decision theory is agnostic about processes.
+    .notes What’s the message? Decision theory is agnostic about processes.
+  .slide
+    .notes Let’s have the argument one more time ...
+    p.em-above Compare explanation of patterns of behaviour in:
+    p.indent male side-blotched lizard morphology
+    p.indent vs
+    p.indent children playing rock-paper-scissors.
+    .notes: :t
+      In explaining lizard morphology, it would be strange to think that the behaviours are a 
+      result of anything cognitive at all.
+      By contrast, in the case of humans, and perhaps other animals, there are supposed to be 
+      cognitive factors involved.
+
++slide_middle
+  p.center But psychological sciences are not agnostic about processes ...

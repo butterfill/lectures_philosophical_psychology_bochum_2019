@@ -1,0 +1,50 @@
+---cson
+layout: 'deck_unit'
+title: "Stress"
+tags: []
+description: """
+  When stressed, 
+  your preferences matter less:
+  habits dominate  (Schwabe & Wolf, 2010).
+  """
+---
+
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
+
++slide_middle
+  p.notes.handout.show ‘instrumental behavior itself involves two systems, the goal-directed and the habitual’
+  .notes.handout.ctd: :t
+    \citep[p.~12]{dickinson:2018_actions}
+  .slide
+    p.em-above Illustration: stress (Schwabe & Wolf, 2010)
+
++slide
+  +img_clip('schwabe_2010_fig1.jpg', 'rect(0,999px,135px,0)')
+  +style('img', {filter:'invert(1)'})
+  p.source Schwabe and Wolf, 2010 figure 1
+  .notes: :t
+    ‘Figure 1. (A) Time line of the experiment. Participants were first trained in the instrumental task. After the selective outcome devaluation (satiation with oranges or chocolate pudding) but before the extinction test, subjects were exposed to stress (socially evaluated cold pressor test) or a control condition. (B) The instrumental task (reproduced with permission from the Society for Neuroscience). Participants completed three trial types (chocolate, orange, and neutral). In each trial type, there was one action that led with a high probability to a food outcome and one action that led with a low probability to a food outcome. Depending on the trial type, the high probability action yielded chocolate milk or orange juice with a probability of p = 0.5, a common outcome (peppermint tea) with a probability of p = 0.2, or nothing. The low probability action led to the common liquid with a probability of p = 0.2. After an action was chosen, the referring symbol was highlighted for 3 s before the food was delivered. During the extinction test, chocolate milk and orange juice were no longer presented.’
+  .slide
+    +clip('img', 'auto')
++slide
+  +img_clip('schwabe_2010_fig6.jpg')
+  +style('img', {filter:'invert(1)'})
+  p.source Schwabe and Wolf, 2010 figure 6
+  .notes: :t
+    ‘Figure 6. Percent high probability actions of controls and stressed participants in the last 15-trial block of training and the first 15-trial block of extinction testing. After selective outcome devaluation, controls showed a decrease in the choice of the high probability action associated with the food eaten to satiety (* p < .01) whereas the choice behavior of stressed participants was insensitive to the changes in outcome value. Data represent M ± SEM.’
+  .slide
+    +blur('.source', '5px')
+    +style('img', {filter:'invert(1) blur(5px)'})
+    +reset
+      +middle
+        p When stressed, 
+        p your preferences matter less:
+        p habits dominate.
+
++slide({bkg:'dual_process_action/slide7.jpg'})
++slide({bkg:'dual_process_action/slide8.jpg'})
++slide({bkg:'dual_process_action/slide7.jpg'})

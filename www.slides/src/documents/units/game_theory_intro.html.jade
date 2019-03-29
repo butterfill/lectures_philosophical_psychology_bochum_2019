@@ -1,0 +1,162 @@
+---cson
+layout: 'deck_unit'
+title: "Game Theory"
+tags: []
+description: """
+  A game is ‘any interaction between agents that is governed by a set of rules 
+  specifying the possible moves for each participant and a set of outcomes for each possible combination of moves’
+  (Hargreaves and Varoufakis, 2004 p. 3)
+"""
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow-180(style='margin-top:-50px;') Q
+  +reset
+    +_slide_middle_inner
+      p.notes.handout.show
+        span When two or more agents interact,
+        br
+        span.step2 so that which outcome one agent’s choice brings about depends on how another chooses,
+        br
+        span how do their preferences guide their choices?
+
+section.slide
+  img.bkg.all(src='img/game_theory.png')
+  img.bkg.game.hide(src='img/game_theory2.png', style='mix-blend-mode:screen')
+  img.bkg.theory.hide(src='img/game_theory3.png', style='mix-blend-mode:screen')
+  p.source The Roots, 2006
+  .slide
+    +blur('img.bkg.all, p.source', '5px')
+    +show('img.bkg.game')
+  +_slide_inner
+    .slide
+      p.game-df: :t
+        A game is ‘any interaction between agents that is governed by a set of rules 
+        specifying the possible moves for each participant and a set of outcomes for each possible combination of moves’
+        (Hargreaves and Varoufakis, 2004 p. 3)
+    .slide
+      +hide('img.bkg.game')
+      +show('img.bkg.theory')
+      +blur('.game-df')
+    .slide
+      p.em-above Aim: describe  
+        span.rational rational
+        span  behaviour in 
+        span.social-interaction social interactions
+      .notes: :t
+        Wouldn’t it be cool if we had a way of saying, for any situation, how interacting rational agents would act?
+        Suppose we could specify a general recipe which would tell us,
+        for any situation at all, which actions rational agents would
+        perform. Wouldn’t that be useful to understanding social interactions?
+    .slide
+      .quote
+        p.em-above.handout.notes.show: :t
+          ‘we wish to find the mathematically complete principles which define “rational behavior” for the participants in a social economy, and to derive from them the general characteristics of that behavior’ 
+        .handout.notes.ctd  \citep[p.~31]{neumann:1953_theory}
+        p.right.grey-text von Neumann & Morgenstern, 1953 p. 31
+
+
++slide_middle
+  .notes: :t
+    Here is a very simple situation in which you face a choice.
+    Assuming you prefer £10 to £10, I can predict which box you will open.
+  .notes: :t
+    Alternatively, observing which box you open will tell me whether you prefer
+    to have £10 or £0.
+    (significance [for later]: Revealed Preference interpretation)
+
+  +game0
+
+  +hide('.xplayer, tr .outcome:last-child', 0)
+  .slide
+    +show('.xplayer, tr .outcome:last-child')
+    +hide('.outcome .xplayer', 0)
+    .notes: :t
+      But now consider this situation.
+      Here it is not just your choice that determines the outcome, but also mine.
+      But you don’t have an information about what I will do.
+      So now there’s nothing for you to do but pick a box at random.
+  .slide
+    +show('.outcome .xplayer', 0)
+    .notes: :t
+      The tacit assumption is that I am getting nothing no matter what I do.
+      But suppose we change the game slightly ... suppose you offer me 
+      £2 to put the money in box A.
+      Then your situation changes ...
+
+
++slide_middle
+  +game2
+  .notes: :t
+    If I prefer £2 to £0[, and if I am rational, and ...] then I will put the money in box A.
+    If you know all this, you can predict my action.
+    And if you can predict my action, you can 
+    rationally choose to open box A.
+  .slide
+    +blur('.yplayer')
+    .notes: :t
+      Let me pause over this.
+      Suppose that I don’t care about your reward, only my own.
+      Suppose also that I prefer £2 to £0.
+      Then regardless of what you do, I should put the money into box A
+    .notes: :t
+      This is a relatively simple interaction: the outcome my actions bring about for me does not
+      depend at all on what you do.
+  .slide
+    +unblur('.yplayer')
+    .notes: :t
+      By contrast, which outcomes your actions bring about depends on what actions I select.
+  .slide
+    +highlight('tbody tr:eq(1) .outcome:eq(1) .yplayer', 'blue')
+    .notes: :t
+      Note also that it is rational for you to choose box A even if your preferred outcome would be to get £10 rather than £8.
+      As a rational agent, you want to best satisfy your preferences.
+      But of course you can’t just follow the money: instead you have to take into account how I am likely to act.
+
++slide_middle
+  p How you act 
+    br
+    span is a function of two things:
+    br
+    span.indent your preferences
+    br
+    span.indent and your beliefs about how others will act.
+
+
++slide_middle
+  +game_pd
+  .slide
+    +highlight('tbody tr:eq(0) .outcome:eq(0)', 'white')
+    .notes: :t
+      Consider this profile of actions ...
+      ... you might think that these are the most rational actions to perform
+      since they give each Prisoner what she most prefers. But note that:
+  .slide
+    .notes: :t
+      Prisoner X can improve the ouctome by unilaterally deviating from this profile ...
+    +unhighlight('tbody tr:eq(0) .outcome:eq(0)', 'white')
+    +highlight('tbody tr:eq(0) .outcome:eq(0)', 'grey')
+    +highlight('tbody tr:eq(0) .outcome:eq(1)', 'white')
+  .slide
+    +unhighlight('tbody tr:eq(0) .outcome:eq(0)', 'grey')
+    +unhighlight('tbody tr:eq(0) .outcome:eq(1)', 'white')
+    +highlight('tbody tr:eq(0) .outcome:eq(1)', 'grey')
+    +highlight('tbody tr:eq(1) .outcome:eq(1)', 'white')
+    .notes: :t
+      So this is the only nash equilibrium.
+
+
++slide_middle
+  p How you act 
+    br
+    span is a function of two things:
+    br
+    span.indent your preferences
+    br
+    span.indent and your beliefs about how others will act.
+

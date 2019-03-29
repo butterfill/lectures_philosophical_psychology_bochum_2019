@@ -1,0 +1,435 @@
+---cson
+layout: 'deck_unit'
+title: "Construals of Decision Theory"
+tags: []
+description: """
+  Decision Theory specifies a model of action.
+  Models can be construed in several different ways.
+  Decision Theory says nothing about how the model should be construed.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/lecture_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
++slide_middle
+  .notes.handout: :t
+    My proposal:
+    \begin{quote}
+    Decision Theory (like Game Theory) specifies a model of action.
+    Models can be construed in several different ways.
+    Decision Theory says nothing about how the model should be construed.
+    \end{quote}
+    Alternatives exist.  For instance, \citet{binmore:1994_playing} claims the axioms
+    of game theory are tautologies; on his story, the games are the models.
+
+  p.center model vs construal
+  .notes Source: Godfrey-Smith
+  .slide
+    p.em-above.center e.g. model of a house
+    .notes: :t
+      Model of a house.
+      Initially it’s aspirational [construal 1]. 
+      They you win the lottery.
+      Same model can be construed as a plan [construal 2].
+      Later, when the house is built, you use it as a map of the house [construal 3].
+      Then you realise that people are quite similar
+      and that what you thought was a unique design is something
+      that lots of other people would also want,
+      so you use the model to predict what others will want [construal 4].
+
+
+
++slide_middle
+  p.center another contrast:
+  p.center model vs theory
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘Theories, as they are usually understood by philosophers, make claims about the
+      world [...]
+    .slide
+      p.notes.handout.show: :t
+        Models, in my sense, do not themselves say anything about the
+        world. 
+    .slide
+      p.notes.handout.show: :t
+        Models are structures that can be used by scientists to say various
+        different things about the world, 
+    .slide
+      p.notes.handout.show: :t
+        by means of commentaries that accompany
+        models but are distinct from them’
+  .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}.
+  p.right.grey-text: :t
+    Godfrey-Smith, 2005 p. 4
++slide_middle
+  p.one.notes.handout.show
+    span ‘Two scientists can use the same model to help with the same target system while 
+    span having quite different views of how the model might be representing the target 
+    span system. I will describe this situation by saying that the two scientists have 
+    span different 
+    span.construals construals
+    span  of the model’ 
+  .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
+  .slide
+    +blur('.one span:not(.construals)')
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘one scientist might [construe] some model simply as an input-output device, as a
+      predictive tool. 
+    p.em-above.notes.handout.show: :t
+      Another might [construe] the same model as a faithful map of the
+      inner workings of the target system’
+    .notes.handout.ctd \citep[p.~4]{godfrey-smith:2005_folk}
+  p.right.grey-text: :t
+    Godfrey-Smith, 2005 p. 4
+
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘Basic facility with the folk-psychological model does not require using a
+    particular construal of it. Many construals are possible. 
+  .slide
+    p.notes.handout.show
+      span And it is also 
+      span possible to have facility with the model, and have a sense of which target 
+      span systems are appropriate for it, 
+      span.key while not having much of a construal at all
+      span ’ 
+    .notes.handout.ctd \citep[p.~5]{godfrey-smith:2005_folk}.
+  p.right.grey-text: :t
+    Godfrey-Smith, 2005 p. 5
+  .slide
+    +invert('.key')
+    .notes: :t
+      This is your position!
+
+
+
++slide_middle
+  p.hem-around: :t
+    Decision Theory (like Game Theory) specifies a model.
+  p.hem-around: :t
+    Models can be construed in several different ways.
+  p.hem-around: :t
+    Decision Theory says nothing about how the model should be construed.
+
+
+
++slide_timer
+  p.center What construals of Decision Theory might be useful?
+  +start-timer('timer1')
+
++slide_middle
+  ol.hem-around-children
+    li As a device for identifying behavioural patterns (‘revealed preference theory’)
+    li As a reconstruction of everyday reasoning, by reflective human adults, about what to do
+    li As a normative ideal
+    li As a model of how folk model minds and actions (a meta-model)
+    li As a computational description of a psychological processs
+
+
++slide_middle
+  p.hem-around: :t
+    Decision Theory (like Game Theory) specifies a model.
+  p.hem-around: :t
+    Models can be construed in several different ways.
+  p.hem-around: :t
+    Decision Theory says nothing about how the model should be construed.
+
+
+
++slide_middle
+  p With construals in mind, let’s re-visit some old arguments ...
+
+
++slide_middle
+  .notes: :t
+    If we look at game theory more generally, we find that game theoretic analysis has been
+    applied to ‘the formation and propagation of patterns in microbial populations’ \citep[e.g.][]{reichenbach:2007_mobility}.
+  p.hem-around
+    span 1. Applications range from 
+    span microbial populations
+    span  to countries.
+  .slide
+    p.hem-around.two 2. The explanations are of the same type in every case.
+  .slide
+    p.hem-around 3. The underlying processes probably differ.
+  .slide
+    p.hem-around 4. Therefore, game theory is agnostic about processes.
+  .slide
+    +highlight-row('.two', 'red')
+    .notes: :t
+      The construals are different ... so the explanations differ significantly.
+
++slide_middle
+  p.hem-around: :t
+    Decision Theory (like Game Theory) specifies a model.
+  p.hem-around: :t
+    Models can be construed in several different ways.
+  p.hem-around: :t
+    Decision Theory says nothing about how the model should be construed.
+
+
++slide_middle
+  p.center.huge-glow tension
+  .notes: :t
+    ok, so did we resolve the tensions?
+
++slide_tensions
+  +blur('p:gt(1)')
+  .slide
+    +blur('p')
+    +unblur('p:eq(2), p:eq(3)')
+  //- .slide
+  //-   +blur('p')
+  //-   +unblur('p:gt(3)')
+
++conclusion
+  +_slide_inner: div(style='margin-top:-550px')
+    .slide
+      p.hem-around: :t
+        Decision Theory (like Game Theory) specifies a model.
+      p.hem-around: :t
+        Models can be construed in several different ways.
+      p.hem-around: :t
+        Decision Theory says nothing about how the model should be construed.
+    .slide
+      +blur('p:lt(4)')
+      p.hem-around: :t
+        Whether your objection (or defence) works depends on your construal.
+
+//- end here!
+//- what follows should be in new unit!
+
+//- +slide_middle
+//-   .notes: :t
+//-     Let us consider particular construals
+//-   ol.hem-around-children
+//-     li As a device for identifying behavioural patterns (‘revealed preference theory’)
+//-     li As a reconstruction of everyday reasoning, by reflective human adults, about what to do
+//-     li As a normative ideal
+//-     li As a model of how folk model minds and actions (a meta-model)
+//-     li As a computational description of a psychological processs
+//-   .slide
+//-     +highlight-row('li:eq(0)')
+
+//- +slide_middle
+//-   .notes: :t
+//-     revealed preferences
+//-     Importance: transition from externally given criterion
+//-   .hem-around-children 
+//-     p: :t
+//-       ‘the revealed preference revolution of the 1930s (Samuelson, 1938)
+//-     p.slide: :t
+//-       ... replaced the supposition that people are attempting to
+//-       optimize any externally given criterion (e.g., some psychologically 
+//-       interpretable motion of utility, perhaps to be quantified in units of pleasure and
+//-       pain). 
+//-     p.slide: :t
+//-       Rather, if economic agents are typically assumed to be subject to
+//-       relatively mild consistency conditions (e.g., such as transitivity ...), 
+//-       it can be
+//-       shown that there will exist a set of probabilities and utilities such that each
+//-       agent’s choices will be just “as if” that agent were maximizing expected
+//-       utility’
+//-     p.right.grey-text Chater, 2014
+
+//- +slide_middle
+//-   .notes: :t
+//-     This is important for linking decision theory with belief-desire.
+//-     (Decision theory as a theory about the patterns humans find in behaviour
+//-     (vs as a theory about the patterns that actually are in behaviour).)
+//-   p.notes.handout.show: :t
+//-     ‘we should think of meanings and beliefs as interrelated constructs of a single theory just 
+//-     as we already view subjective values and probabilities as interrelated constructs of decision theory’ 
+//-   .notes.handout.ctd \citep[p.~146]{Davidson:1974gh}
+//-   p.right.grey-text: :t
+//-     Davidson, 1974 p. 146
+//-   .notes: :t
+//-     Since Davidson also thinks of beliefs as causes, maybe we can’t push this too
+//-     far. But Dennett we can ...
+
+//- +slide_middle
+//-   .notes: :t
+//-     Also Dennett.
+//-     Maybe Davidson and Dennett are not so far apart after all.
+//-     This is a version of RPT
+//-   p Dennett’s intentional stance
+//-   p real patterns
+
+//- +slide_middle
+//-   p Is this construal trivial?
+//-   .slide
+//-     .hem-around-children
+//-       p Objections from Observation: humans do not exhibit these patterns
+//-       p Objections from Processes: the processes which guide humans’ actions do not function to produce these patterns
+//-       p.theory Objections from Theory: there is no justification to suppose that the patterns exist 
+//-   .slide
+//-     +highlight-row('.theory')
+//-   .slide
+//-     .notes: :t
+//-       (this argument challenges the view that the axioms characterise a pattern that is rational or instrumentally optimal)
+//-     p.indent.notes.handout.show: :t
+//-       ‘Completeness applies to preference as choice, while transitivity applies to preference 
+//-       as a set of judgments of well-being. Convincing arguments for the axioms taken together 
+//-       cannot be assembled on either definition.’
+//-     .notes.handout.ctd \citep[p.~374]{mandler:2001_difficult}
+//-     p.right.grey-text: :t
+//-       Mandler, 2001 p. 374
+
+
+
+//- +slide_middle
+//-   ol.hem-around-children
+//-     li As a device for identifying behavioural patterns (‘revealed preference theory’)
+//-     li As a reconstruction of everyday reasoning, by reflective human adults, about what to do
+//-     li As a normative ideal
+//-     li As a model of how folk model minds and actions (a meta-model)
+//-     li As a computational description of a psychological processs
+//-   +highlight-row('li:eq(0)')
+//-   .notes: :t
+//-     Note that if we have this construal, we have an effective argument
+//-     for using decision theory to identify patterns ...
+
+
+//- +slide_middle
+//-   p Recall that 
+//-   p applications of Game Theory require an assumption of common knowledge of rationality.
+//-   .slide
+//-     p.em-above Dickinson’s Dual-Process Theory of Action implies
+//-     p.indent you aren’t rational
+//-     p.indent and you probably know you aren’t
+//-     .notes you probably know you aren’t because it’s common sense that habits play a role
+
+//- +slide_middle
+//-   .notes: :t
+//-     Use this to indicate that it may be ok to approximate patterns in behaviour
+//-     as if they were all instrumental ...
+//-   p.notes.handout.show: :t
+//-     ‘once we accept that there are complex and subtle non-intentional processes, such as those mediating
+//-     basic goal-approach and the adjustment to changes in motivational state, that can mimic true
+//-     intentional control in many situations, we can understand why the propensity to perceive actions as
+//-     intentional may have developed. Given that 
+//-   p.first.notes.handout.show: :t
+//-     either there is nothing in the stimulus input per se to
+//-     distinguish intentional from non-intentional behaviour 
+//-   p.notes.handout.show: :t
+//-     or that 
+//-   p.second.notes.handout.show: :t
+//-     such a discrimination yields little of
+//-     consequence in most situations, 
+//-   p.conclusion.notes.handout.show: :t
+//-     it may well pay the perceiver to treat both classes of behaviour as
+//-     intentional in predicting the subsequent course of events’
+//-   .notes.handout.ctd \citep[p.~102]{heyes:1990_intentionality}.
+//-   p.right.grey-text Heyes & Dickinson, 1990 p. 102
+//-   .slide
+//-     +blur('p:not(.first)')
+//-   .slide
+//-     +blur('p.first')
+//-     +unblur('p.second')
+//-   .slide
+//-     +blur('p.second')
+//-     +unblur('p.conclusion')
+
+//- +slide_middle
+//-   ol.hem-around-children
+//-     li As a device for identifying behavioural patterns (‘revealed preference theory’)
+//-     li As a reconstruction of everyday reasoning, by reflective human adults, about what to do
+//-     li As a normative ideal
+//-     li As a model of how folk model minds and actions (a meta-model)
+//-     li As a computational description of a psychological processs
+//-   +highlight-row('li:eq(0)')
+//-   .notes: :t
+//-     Ok, so much for that construal.
+//-     It is most widely adopted.
+//-     But the important point for us is that there’s no reason
+//-     to stick to a single construal.
+//-     It’s not like we should decide once and for all how we’re going to use a model.
+//-     (How wasteful that would be!)
+//-   .slide
+//-     +unhighlight-row('li:eq(0)')
+//-     +highlight-row('li:eq(2)')
+
+
+
+
+//- +slide_middle
+//-   .notes: :t
+//-     A different interpretation of decision theory (normative).
+//-   p.notes.handout.show: :t
+//-     ‘the laws of decision theory (or any other theory of rationality) are not empirical generalisations 
+//-     about all agents. What they do is define what is meant ... by being rational’
+//-   .notes.handout.ctd \citep[p.~43]{Davidson:1987wc}
+//-   p.right.grey-text: :t
+//-     Davidson, 1987 p. 43
+
+//- +slide_middle
+//-   .notes: :t
+//-     This is important for the RPT interpretation, finding structure or patterns in behaviour.
+//-     It also nicely explains what, if any, normative force the theory could have.
+//-   p.notes.handout.show: :t
+//-     ‘As ordinarily understood, the prescription to maximize your expected utility
+//-     presupposes that there is some measure of expected utility that applies to you
+//-     and that your preferences are therefore obliged to maximize. 
+//-   p.slide.notes.handout.ctd.show: :t
+//-     But in the context
+//-     of decision  theory, the utility and probability functions that apply to you are constructed
+//-     out of your preferences, and so your expected utility is not an independent
+//-     measure that your preferences can be obliged to maximize; 
+//-   p.slide.notes.handout.ctd.show: :t
+//-     rather, your
+//-     expected utility is whatever your preferences do maximize, if they obey the
+//-     axioms. 
+//-   p.slide.notes.handout.ctd.show: :t
+//-     Hence, the injunction to maximize your expected utility can at most
+//-     mean that you should have preferences that can be represented as maximizing
+//-     some measure (or measures) of expected utility, which will then apply to you by
+//-     virtue of being maximized by your preferences’ 
+//-   .notes.handout.ctd \citep[p.~149]{Velleman:2000fq}
+//-   p.right.grey-text: :t
+//-     Velleman, 2000 p. 149
+
+
+
+//- //- conclusion of this unit
+
+//- //- 
+//-   section.slide
+//-     +_slide_middle_inner
+//-       p.huge-glow-180(style='margin-top:-50px;') Q
+//-     +reset
+//-       +_slide_middle_inner
+//-         p.notes.handout.show: :t
+//-           What construals of Decision Theory might be useful?
+
+
+//- +slide_middle
+//-   ol.hem-around-children
+//-     li As a device for identifying behavioural patterns (‘revealed preference theory’)
+//-     li As a reconstruction of everyday reasoning, by reflective human adults, about what to do
+//-     li As a normative ideal
+//-     li As a model of how folk model minds and actions (a meta-model)
+//-     li As a computational description of a psychological processs
+//-   +highlight-row('li:eq(2)')
+//-   .slide
+//-     +highlight-row('li:eq(2)')
+
+
+
+//- +conclusion
+//-   +_slide_inner: div(style='margin-top:-550px')
+//-     .slide
+//-       p.hem-around: :t
+//-         Decision Theory (like Game Theory) specifies a model.
+//-       p.hem-around: :t
+//-         Models can be construed in several different ways.
+//-       p.hem-around: :t
+//-         Decision Theory says nothing about how the model should be construed.
+//-     .slide
+//-       +blur('p:lt(4)')
+//-       p.hem-around: :t
+//-         Whether your objection (or defence) works depends on your construal.

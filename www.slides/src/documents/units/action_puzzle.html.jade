@@ -1,0 +1,185 @@
+---cson
+layout: 'deck_unit'
+title: "A Puzzle about Action"
+tags: []
+description: """
+    A rat has been given food contingent on its pressing a level.
+    When it presses the lever, is its action habitual or instrumental?
+    (This part also explains devaluation.)
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
+
++slide_timer({hide:true, blend:'difference'})
+  img(src='img/rat.png', style='filter:invert(1); mix-blend-mode:multiply')
+  .notes: :t
+    You see a rat and a lever.
+    The rat presses the lever occasionally.
+    Now you start rewarding the rat:
+    when it presses the lever it is rewarded with a particular kind of food.
+    As a consequence, the rat presses the lever more often.
+  .slide
+    p Is this lever pressing habitual or instrumental aciton?
+  +show-timer('timer1')
+  +start-timer('timer1')
+    .notes It’s a trick question -- we can’t tell
+
+
++habitualInstrumental2({step:true})
+  .slide
+    +blur('.right-half')
+    +reset
+      +middle
+        p.huge-glow-70 Problem: different hypotheses, same prediction
+
++slide_middle
+  p.center What if we 
+    span.devalue devalue
+    span  the food?
+  .slide
+    +invert('.devalue')
+    .notes Explain devaluation (poison, or satiation)
+  .slide
+    +uninvert('.devalue')
+
+
++habitualInstrumental2
+  +blur('.left-half', '2px', 0)
+  .slide
+    +invert('.preference-step')
+    .notes: :t
+      Devaluation affects Preference, so changes what the instrumental hypothesis predicts.
+  .slide
+    +uninvert('.preference-step')
+  .slide
+    +unblur('.left-half')
+    +blur('.right-half')
+  .slide
+    +invert('.stimulus-action-step')
+    .notes: :t
+      Devaluation does not affect the Simulus-Action link.
+      (It’s the fact that food was preferred in the past that matters:
+      because of this, getting food was rewarding and so strengthened the 
+      Simulus-Action link.)
+  .slide
+    +uninvert('.stimulus-action-step')
+
++slide_timer({hide:true})
+  p.center What if we 
+    span.devalue devalue
+    span  the food?
+  .hem-around-children
+    p.indent Instrumental : 
+      span.step2.hide it will reduce lever pressing 
+        span.to-none (to none)
+    p.indent Habitual : 
+      span.step2.hide it will have no effect on lever pressing
+  +show-timer('timer1')
+  +start-timer('timer1')
+  .slide
+    +show('.step2')
+
++slide
+  .notes: :t
+    ‘Mean lever-press rates during the extinction (left-handpanel) and reacquisitiontests(right-handpanel) followingthe devaluation of either the contingent (group D-N) or non-contingentfood (group N-D).’
+  img(src='img/dickinson_1985_fig3.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; clip:rect(0,210px,999px,0)')
+  p.source Dickinson, 1985 figure 3
+  .slide
+    +clip('img', 'rect(0,365px,999px,0)')
+  .slide
+    +clip('img', 'auto')
+
++slide
+  p.center What if we 
+    span.devalue devalue
+    span  the food?
+  .hem-around-children
+    p.indent.prediction1 Instrumental : it will reduce lever pressing 
+      span.to-none (to none)
+    p.indent Habitual : it will have no effect on lever pressing
+  .slide
+    +highlight-row('.prediction1')
+    .notes: :t
+      (a) Rat’s behaviour is instrumental (explained by their Preferences).
+      (b) Hypotheses about processes underpinning decisions are scientifically testable.
+  .slide: .quote1
+    p.em-above.notes.handout.show
+      span ‘the laboratory rat fits the teleological [instrumental] model; 
+      span performance of this particular instrumental behaviour really does seem to be controlled by
+      span.knowledge knowledge
+      span  about the relation between the action and the goal’
+    .notes.handout.ctd: :t
+      \citep[p.~72]{Dickinson:1985qp}
+    p.right.grey-text Dickinson, 1985 p. 72
+  .slide
+    +blur('.quote1')
+    +invert('.to-none')
+    .notes: :t
+      But there is a complication ...
+  .slide
+    +collapse('.quote1')
+  .slide
+    p.em-above.notes.handout.show: :t
+      ‘we did not conclude that all such responding was of this form. 
+    p.slide.notes.handout.ctd.show: :t
+      Indeed, we observed some residual
+      responding during the post-re-valuation test that appeared to be impervious to outcome devaluation
+      and therefore autonomous of the current incentive value, 
+    p.slide.notes.handout.ctd.show: :t
+      and we speculated that this responding was
+      habitual 
+    .notes.handout.ctd: :t
+      and established by a process akin to the stimulus-response (S-R)/reinforcement mechanism
+      embodied in Thorndike’s classic Law of Effect (Thorndike, 1911).
+    .notes.handout.ctd: :t
+      \citep[p.~179]{dickinson:2016_instrumental}
+    p.right.grey-text Dickinson, 2016 p. 179
+
+    //- p.em-above.notes.handout.show: :t
+    //-   ‘This does not mean, however, that S-R habits play no role in instrumental conditioning. 
+    //- p.notes.handout.show: :t
+    //-   [...] both Adams and Dickinson (1981) and Colwill and Rescorla (1985) observed 
+    //-   residual performance of the action associated with the devalued food outcome even though 
+    //-   the animals would not eat the food following aversion conditioning’
+    //- p.right.grey-text Dickinson, 1994 p. 51
+    //- .notes.handout.ctd: :t
+    //-   \citep[p.~51]{Dickinson:1994sm}
+
++slide
+  .notes: :t
+    ‘Mean lever-press rates during the extinction (left-handpanel) and reacquisitiontests(right-handpanel) followingthe devaluation of either the contingent (group D-N) or non-contingentfood (group N-D).’
+  img(src='img/dickinson_1985_fig3.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute;')
+  p.source Dickinson, 1985 figure 3
+
++slide_timer({hide:true})
+  .handout: :t
+    The puzzle:
+    \begin{enumerate}
+    \item If the action is habitual,  why is it modulated by devaulation?
+    \item If the action is instrumental,  why does it still occur (albeit less frequently) after devaluation?
+    \end{enumerate}
+
+  p.center.huge-glow-180 puzzle
+  p(style='margin-top:-10em;') If the 
+    span.action(style='z-index:0') action
+    span  is habitual, 
+    br
+    span why is it modulated by devaulation?
+  p.em-above If the 
+    span.action(style='z-index:0') action
+    span  is instrumental, 
+    br
+    span why does it still occur (albeit less frequently) after devaluation?
+  +show-timer('timer1')
+  +start-timer('timer1')
+  .slide
+    +hide('#timer1')
+  .slide
+    +highlight('.action', 'red')
+    .notes: :t
+      Solution is to stop thinking that actions can be just one or the other.
+      \emph{The instrumental/habitual distinction concerns proceses, not actions!}

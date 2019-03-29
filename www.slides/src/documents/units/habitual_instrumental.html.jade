@@ -1,0 +1,69 @@
+---cson
+layout: 'deck_unit'
+title: "Processes: Habitual vs Instrumental"
+tags: []
+description: """
+  What kinds of processes in individual animals guide actions?
+  Research in animal learning enables us to distinguish habitual and instrumental processes
+  (see Dickinson, 1985).
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
++slide_middle
+  .notes.handout What kinds of processes in individual animals guide actions?
+  p.step2.hide What kinds of processes in 
+  p individual animals
+  p.step2.hide guide actions?
+  .slide
+    +show('.step2')
+
+
+
++habitualInstrumental({step:true})
+
++slide_middle
+  p Give me an example of habitual action?
+  p No, it’s hard to distinguish habitual from instrumental.
+
+mixin habitualQuestions()
+  p Which of these are habitual actions, and which are instrumental:
+  p.indent doing your teeth;
+  p.indent smoking tobacco;
+  p.indent watching TV;
+  p.indent cycling the same route to work every day?
+
++slide_timer({hide:true, duration:'30s'})
+  +habitualQuestions
+  +show-timer('timer1')
+  +start-timer('timer1')
+
++slide_middle
+  p.center habitual vs habitual
+  p.slide.df.em-above: :t
+    ‘A habitual action, state, or way of behaving is one that someone usually does or has, especially one that is considered to be typical or characteristic of them.’
+  .slide
+    +line-through('.df')
+
++habitualInstrumental({step:false})
+  +blur('.right-half')
+
++slide_middle
+  +habitualQuestions
+
++slide_middle
+  p Habitual
+  p.em-above: :t
+    Thorndyke’s Law of Effect:
+  .notes.handout \emph{Thorndyke’s Law of Effect}:
+  p.notes.handout.ctd.show
+    span ‘The presenta­tion of an effective [=rewarding] outcome following an action [...] rein­forces 
+    br 
+    span a connection between the stimuli present when the action is per­formed and the action itself  
+    br
+    span so that subsequent presentations of these stimuli elicit the [...] action as a response’ 
+  .notes.handout.ctd: :t
+    \citep[p.48]{Dickinson:1994sm}
+  p.right.grey-text Dickinson, 1994 p. 48

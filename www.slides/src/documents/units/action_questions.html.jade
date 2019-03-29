@@ -1,0 +1,234 @@
+---cson
+layout: 'deck_unit'
+title: "Three Questions about Action"
+tags: []
+description: """
+  (1) Donald Davidson asks, ‘What is the mark that distinguishes ... actions?’ Are scientific discoveries relevant to answering this question?
+
+  (2) What is the mark that distinguishes actions?
+
+  (3) How are non-accidental matches between intentions and motor representations possible?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
++slide_middle
+  +actionThreeQ
+  +hide('.q2, .q3', 0)
+
+
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow.center(style='line-height:.4em; filter:opacity(.5)') philosophical
+      br
+      span methods
+  +reset
+    +_slide_middle_inner
+      .em-around-children
+        p.center informal observation, 
+        p.center guesswork (‘intuition’), 
+        p.center reasoning, 
+        p.center & theoretical elegance
+  .notes: :t
+    First, think about the methods philosophers use.
+    Am I missing any?
+  .notes: :t
+    Next, think about how philosophers construct theories of action ...
+
+
++slide({bkg:'folk_psychology_roots/Slide1.jpg'})
+  .notes: :t
+    Here’s Ayesha and she’s about to act, which involves some kind of 
+    processes occurring in her imnd.
+    
++slide({bkg:'folk_psychology_roots/Slide2.jpg'})
+  .notes: :t
+    Ben want’s to predict Ayesha’s action, perhaps so he can coordinate his actions
+    around hers. He is therefore having a think about what Ayesha might be up to.
+  .notes: :t
+    Implicit in Ben’s thinking is a model of actions.
+
++slide({bkg:'folk_psychology_roots/Slide3.jpg'})
+  .notes: :t
+    And along comes the philosopher and attempts to guess what is going on in
+    Ben’s mind when he is thinking about Ayesha.
+    The philosopher asks, in effect, What model of actions is implicit in Ben’s thinking?
+  .notes: :t
+    And this, essentially, is the raw material for philosophical theories of actions.
+
+section.slide
+  img.bkg.two(src='/img/folk_psychology_roots/Slide2.jpg')
+  +reset
+    img.bkg.three(src='/img/folk_psychology_roots/Slide3.jpg', style='mix-blend-mode:screen;')
+  +blur('img.three', '5px')
+  +fade('img.three')
+  .notes: :t
+    Focus on Ben for a moment.
+  .slide
+    +_slide_inner
+      .notes: :t
+        What mundane purposes does thinking about actions serve?
+        Prediction and coordination; ethical (assigning responsibility, blame; living together); 
+        normative (he wants himself and others to live it out as much as to describe how things are;
+        there may also be something about ‘understanding’ here).
+        So it’s not all about accuracy; in fact, of these, only prediction and coordination even
+        potentially requires that his model of actions is accurate.
+      .bens-model
+        p Functions of Ben’s model of minds and actions:
+        ul.hem-around-children
+          li.ethical ethical
+          li.normative normative
+          li.predictive predictive
+            .slide
+              +highlight-row('.predictive')
+              +blur('.ethical, .normative')
+              .notes: :t
+                Second, consider Ben’s concern with making predictions.
+            .slide
+              p.indent --- speed vs accuracy
+                .notes: :t
+                  Whenever you are making predictions about anything at all, you face a 
+                  \textbf{trade-off between accuracy and speed}.
+                  Making more accurate predictions requires considering more information and integrating
+                  it in a more complex model of minds and actions.
+                  By contrast, making faster predictions requires narrowing the information you consider
+                  and using a less complex model of minds and actions.
+                  Since Ben often has to make predictions fast enough to actually coordinate his actions
+                  with Ayesha’s, and since making predictions consumes scarce 
+                  cognitive resources, Ben is usually needs to trade accuracy for speed.
+                .notes: :t
+                  So Ben’s model of minds and actions is not built for accuracy.
+    .slide
+      +hide('.bens-model')
+      .notes: :t
+        So this is the model of minds and actions on which many philosophical theories
+        are based ... they are cast as attempts to characterise this model.
+
++slide_middle
+  p Relying on philosophers to characterise actions 
+    br
+    span would be like 
+    br
+    span relying on Aristotelians to characterise physical objects.
+  .notes: :t
+    In the case of physical objects, I suppose few people seriously think 
+    there is much we can understand without appeal to physics.
+  .notes: :t
+    As Newton stressed, contemporary philosophical methods are not well suited to the task.
+    Contemporary philosophical methods are of limited use in making discoveries about the world.
+
+
++slide_middle
+  +actionThreeQ
+  +hide('.q2, .q3', 0)
+  .notes: :t
+    So I was asking whether scientific discoveries are relevant ot answering Davidson’s 
+    question,  ‘What is the mark that distinguishes ... actions?’ 
+  .notes: :t
+    My conclusion is that PHILOSOPHICAL THEORIES ARE NOT LIKELY TO BE RELEVANT to answering
+    the question. 
+    Because philosophical methods are of limited use in making discoveries about the world.
+  .notes: :t
+    Ultimately, the scientific discoveries are our only hope.
+  .slide
+    +blur('.q1')
+    .notes: :t
+      So why would philosophers think about Davidson’s question at all?
+      One thing philosophical methods are ideally suited to is 
+      identifying limits on scientific theories and asking questions.
+      Not knowing things is what philosophers are best at.
+    .notes: :t
+      This brings me to my next question ...
+  .slide
+    +show('.q2')
+
+
+
++slide({bkg:'intention_and_motor_representation/Slide03.jpg'})
+  .notes: :t
+    Which events are actions?
+    In philosophy, answering this question would typically answered by appeal to intention 
+    or practical reasoning.
+  .notes: :t
+    Such views tend to be neutral on how 
+    the attitudes and processes ultimately connect to bodily movements; 
+    that is considered to be merely an implementation detail ...
+  .notes: :t
+    They are neutral in this sense: the views do not depend in any way on facts about that 
+    distinguish one kind of body from another, or on facts about how the body’s movements 
+    are ultimately controlled ... 
+
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  .notes: :t
+    In cognitive science ... little to say about actions whose purposes
+    involve things the motor system doesn’t care about---your motor system
+    doesn’t care whether the plane you are stepping is headed for Milan or
+    for Rome, but this sort of difference can affect whether your actions succeed or fail.
+  .slide
+    +blur('img.bkg','5px')
+    p.center Are these incommensurable stories?
+    .notes: :t
+      You might just say that the two disciplines are talking past each other,
+      or you might say that they are offering two complementary but independent
+      models of action.
+    .notes: :t
+      Call this the ‘Two Stories View’ (or divorced, but living together).
+    .notes: :t
+      But we want to argue that these two views are components of a single, larger story about action.
+      Although intention and motor representation can usefully be studied in isolation
+      to some extent, a full understanding of action will require understanding
+      interfaces between the two …
+    .notes: :t
+      Why think this?
+
+
+
+
+
+
+
++slide_middle({bkg:'planning_like/Slide4.jpg'})
++slide_middle({bkg:'planning_like/Slide5.jpg'})
+  .notes: :t
+    Imagine you are a hungry shoplifter with a powerful desire for an apple.  After carefully 
+    considering the pile of apples on the stall, you identify one that can be discretely 
+    snatched and form an intention to steal that apple as you casually saunter past the stall.  
+    In grasping, transporting and pocketing the apple your movements are controlled by motor 
+    representations of these outcomes.  So your theft depends on an intention, on some motor 
+    representations and on there being a match between the outcome specified by the intention 
+    and the outcomes specified by the motor representations.
+  .notes: :t
+    In short: practical reasoning and motor processes are part of a single story about the 
+    performance of action; there must be non-accidental matches between the contents of 
+    intentions and motor representations.
+  .notes: :t
+    \textbf{So we can’t accept the Two Stories View because there must sometimes be content-respecting
+    causal interactions involving intentions and motor representations.
+    Without these, our intentions and motor representations would never non-accidentally
+    have synergistic effects on our actions.}
+
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  +blur('img.bkg','5px', 0)
+  p.center Are these incommensurable stories? No!
+
+
++slide_middle
+  +actionThreeQ
+  +blur('.q1', '2px', 0)
+  +hide('.q3', 0)
+  .notes: :t
+    So I want to say that we can’t answer Davidson’ question because we have two answers,
+    neither of which comes close to capturing the full range of phenomena.
+    And, further, because these two answers must ultimately be aspects of a single theory
+    about action.
+  .slide
+    +blur('.q2')
+    +show('.q3')
+

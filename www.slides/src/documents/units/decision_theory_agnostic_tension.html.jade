@@ -1,0 +1,72 @@
+---cson
+layout: 'deck_unit'
+title: "Is Decision Theory Really Agnostic about Processes?"
+tags: []
+description: """
+  The range of applications of decision theory 
+  indicates that it must be agnostic about processes.
+  But the Assumption of Common Knowledge of Rationality implies it is not agnostic about processes.
+  And Dickinson’s instrumental process is characterised by appeal to Decision Theory.
+  How can the apparent tension between these facts be resolved?
+"""
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
+
++slide_middle
+  p.center.huge-glow tension
+  .notes: :t
+    ok, so what is this tension?
+
+
+section.slide
+  .right-half-white(style="z-index:-22;")
+  +_slide_middle_inner
+    +timer-element('timer1', '120s', {hide:true})
+  +reset
+    .container_12
+        +left_half  
+          p The range of applications of Decision Theory shows it is agnostic about processes.
+        +right_half
+          p.slide Assumption of Common Knowledge of Rationality implies it is not agnostic about processes.
+      .clear
+      .slide
+        +blur('p:lt(4)')
+        +left_half  
+          p The range of applications of Decision Theory shows it is agnostic about processes [again].
+        +right_half
+          p.slide Dickinson’s instrumental process is characterised by appeal to 
+            span.dt Decision Theory.
+      .slide
+        +unblur('p')
+
++slide_tensions
+  +invert('.dt')
+  .notes: :t
+    So why does decision theory play a role in characterising
+    instrumental processes?
+
++habitualInstrumental
+  +blur('.left-half')
+  .slide
+    +invert('.last .a-o')
+    .notes This is like an expectation (or a belief)
+  .slide
+    +invert('.last .a-o, .last .preference')
+    .notes: :t
+      How are these combined?
+      In such a way as to maximise expected utility!
+
++slide_tensions
+  +invert('.dt')
+  .notes: :t
+    Before I resolve these tensions, I wanted to consider 
+    decision theory vs game theory. Done that now.
+  .slide
+    +uninvert('.dt')
+    .notes: :t
+      So how can we resolve the tensions?
+      I think the key is to step back and think of Game theory as a model
