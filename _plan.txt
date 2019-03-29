@@ -46,20 +46,18 @@ Introduce a unit on decision theory, RPT, instrumental rationality and dual-proc
 TODO
 ====
   convert tuebingen seminar into motor representions ground goals
-  compile decision theory
   update mindreading [see conf Edinburgh]
   update causal perception, eliminate development
-  create what are metacognitive feelings? (Docic vs me). Cover familiarity, sense of agency, ...
   Should we be instrumentally rational? (implications of dual process theories of (i) motivational states, and (ii) processes underpinning ethical judgements)
   mindreading and motor representation (use ICPS, talk about Edwards & Low 2018 onwards)
 
 PLAN
 ====
 01 seeing red? [71]
-02 what are metacognitive feelings? (Docic vs me) [todo]
+02 what are metacognitive feelings? (Docic vs me) [44]
 03 perceiving feelings? [move sharing smiles to interaction] [83]
 
-04 decision theory and processes
+04 decision theory and processes [218]
 05 What is the mark of agency? [tuebingen questions, motor determines goal-directedness [no interface]]
 06 perceiving causal interactions?
 
