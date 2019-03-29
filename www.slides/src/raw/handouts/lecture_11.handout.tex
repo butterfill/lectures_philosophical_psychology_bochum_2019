@@ -1,0 +1,97 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass[12pt]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Philosophical Psychology}
+
+\def \isubtitle {Lecture 11}
+
+\def \iauthor {Stephen A. Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk}
+\date{}
+
+%for strikethrough
+\usepackage[normalem]{ulem}
+
+\input{$HOME/Documents/submissions/preamble_steve_handout}
+
+%\bibpunct{}{}{,}{s}{}{,}  %use superscript TICS style bib
+%remove hanging indent for TICS style bib
+%TODO doesnt work
+\setlength{\bibhang}{0em}
+%\setlength{\bibsep}{0.5em}
+
+
+%itemize bullet should be dash
+\renewcommand{\labelitemi}{$-$}
+
+\begin{document}
+
+\begin{multicols*}{3}
+
+\setlength\footnotesep{1em}
+
+
+\bibliographystyle{newapa} %apalike
+
+%\maketitle
+%\tableofcontents
+
+
+
+
+%---------------
+%--- start paste
+
+
+
+\def \ititle {11: The Motor Theory of Goal Tracking}
+
+\begin{center}
+
+{\Large
+
+\textbf{\ititle}
+
+}
+
+
+
+\iemail %
+
+\end{center}
+
+ 
+ 
+\section{The Motor Theory of Goal Tracking}
+ 
+
+According to the  Motor Theory, infants’ (and adults’) pure goal-tracking sometimes depends on the double life of motor processes  \citep[see][for details]{sinigaglia:2015_puzzle}.
+ 
+More carefully the \emph{Motor Theory of Goal Tracking} states that:
+\begin{enumerate}
+\item in action observation, possible outcomes of observed actions are represented motorically;
+\item these representations trigger motor processes much as if the observer were performing actions directed to the outcomes;
+\item such processes generates predictions;
+\item a triggering representation is weakened if the predictions it generates fail.
+\end{enumerate}
+The result is that, often enough, the only only outcomes to which the observed action is a means
+are represented strongly.
+ 
+ 
+
+\vfill
+
+
+%--- end paste
+%---------------
+
+\footnotesize
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{multicols*}
+
+\end{document}

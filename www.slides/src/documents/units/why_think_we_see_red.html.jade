@@ -41,6 +41,182 @@ section.slide
       English’ 
     p.right.grey-text: span (Byrne & Hilbert 2003, p. 4)
 
+
++slide({bkg:'categorical_colour_difference3.jpg'})
+  .notes: :t
+    Recall the argument.
+    What we have established does not necessarily contradict the first premise.
+    It may contridict the last premise
+  p.hem-around.first: :t
+    1. The second sequence of sensory encounters, (b), 
+    differ from each other more in phenomenal character than the first sequence of sensory encounters, 
+    (a), differ from each other.
+  +blur('img.bkg','5px')
+  p.hem-around 2. This difference in differences in phenomenal character is a fact in need of explanation.
+  +fade('img.bkg')
+  p.hem-around 3. The difference cannot be fully explained by appeal only to perceptual experiences as of particular shades.
+  p.hem-around 4. The difference can be explained in terms of perceptual experiences as of categorical colour properties.
+  p.hem-around.fifth 5. There is no better explanation of the difference.
+  .slide
+    +highlight-row('.first', 'red')
+  .slide
+    +unhighlight-row('.first', 'red')
+    +highlight-row('.fifth', 'red')
+    .notes: :t
+      I want to have a go at rejecting the fifth premise without rejecting the first premise ...
+
+
+
+
+section.slide
+  .notes: :t
+    As I said, I want to have a go at rejecting the fifth premise without rejecting the first premise.
+  .notes For an example of a category effect which is automatic, I need to introduce you to the odd-ball paradigm.
+  .notes In the odd-ball paradigm, you see a series of things that are all the same; and then, unpredictably, you see something different.
+  .notes We can use sensitivity to odd-balls to measure the difference between the two blues and the blue-green pair.
+  .notes This is useful because odd-ball effects can be detected very early in visual processessing, before attention kicks in.
+  .notes They allow us to probe automatic processes.
+  .words
+    .step2.hide
+      .container_12
+        .grid_2
+          +colour-box('rgb(51,153,255)', 50)
+          p.center 2.5B
+        .grid_2
+          +colour-box('rgb(85,100,255)', 50)
+          p.center 7.5BG
+        .grid_2
+          div(style="border-left: 1px dashed white")
+            +colour-box('rgb(42,162,42)', 50)
+            p.center 2.5BG
+    .container_12: .grid_12
+      p.em-above &nbsp;
+      .nodim(style="float:left; margin-right: 20px")
+        +colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        +colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        +colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        +colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim(style="float:left; margin-right: 20px")
+        +colour-ball('rgb(85,100,255)', 50)
+        p.slide.center odd ball
+      .slide.nodim(style="float:left; margin-right: 20px")
+        +colour-ball('rgb(51,153,255)', 50)
+      .slide.nodim 
+        div(style="float:left; margin-right: 20px")
+          +colour-ball('rgb(51,153,255)', 50)
+        div(style="float:left; margin-right: 20px")
+          .bottom
+            div ...
+            p &nbsp;
+    .step3.hide 
+      .container_12: .grid_12
+        p.em-above &nbsp;
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(85,100,255)', 50)
+          p.center odd ball
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          mixin colour-ball('rgb(42,162,42)', 50)
+        div(style="float:left; margin-right: 20px")
+          .bottom
+            div ...
+            p &nbsp;
+    .slide
+      +show('.step2')
+    .slide
+      +show('.step3')
+
++slide_middle
+  .notes: :t
+    Now suppose we play you an odd ball sequence.
+    We want to know whether an automatic process picks up on the difference.
+    And we want to know whether the automatic process picks up on the difference always or only when a category change is involved.
+    To do this we need to measure an event-related potential called vMMN (which is short for visual mismatch negativity).
+  p.handout.show
+    span vMMN (visual mismatch negativity): an 
+    span.highlight1 event-related potential
+    span   
+    span thought to index pre-attentive change detection in the visual cortex
+  .slide
+    +invert('.highlight1')
+  .notes Now I need to explain what an event-related potential is.
+
+section.slide#EEG
+  .words
+    .container_12
+      .grid_6
+        .nodim.scale-2.scale-out-after
+          img(src='/img/EEG_cap.jpg',height='150px')
+        .slide.nodim.scale-2.scale-out-after
+          img(src='/img/eeg_gamma_graph.jpg',height='150px')
+        .slide.nodim.scale-2.scale-out-after
+          .notes An ERP like the vMMN stands to an overall EEG measurement a bit like the number 78 bus does to a collection of atoms.
+          img(src='/img/clifford_2010_fig.png',height='150px')
+      .slide.right-half-white
+        .notes While we're on methods, let's quickly talk about fMRI.
+        .grid_6
+          .words
+            .nodim.scale-2.scale-out-after
+              img(src='/img/mri_scanner.jpg',height='150px')
+            .slide.nodim.scale-2.scale-out-after
+              img(src='/img/fmri_scan.jpg',height='150px')
+            .slide
+              ul
+                li better spatial resolution
+                li limited temporal resolution
+                li subject can't move
+      
+  
++slide_middle
+  .notes So now we know what an event-related potential is, let's get back to the vMMN (visual mismatch negativity).
+  p vMMN (visual mismatch negativity): an 
+    span.highlight1 event-related potential
+    span   
+    span thought to index pre-attentive change detection in the visual cortex
+  
+
++slide({bkg:'slide_cp_35.jpg'})
+  .notes: :t
+    So let me show you a task that uses this odd-ball effect
+    Fixate on this cross.
+    And when you see the rectangle, press the space bar with both index fingers.
+    That's it.
+    Except that you also see a block of colour on every trial.
+    You're instructed to ignore this block of colour.
+    And generally that's easy because it's always the same colour.
+    But just occasionally it's a different colour.
+    In one condition, the usual and odd-ball colours are the blues.
+    And in the other condition, the usual and odd-ball colours are cross-category, from blue-green.
+    We're interested in whether there's a sign that your brain has detected the change when the odd ball colour occurs.
+  .notes: :t
+    Put roughly, the results show that there is signal of pre-attentive change detection at around 100-200 milliseconds in the left visual field.
++slide({bkg:'slide_cp_36.jpg'})
++slide({bkg:'slide_cp_37.jpg'})
++slide({bkg:'slide_cp_38.jpg'})
++slide({bkg:'slide_cp_40.jpg'})
++slide({bkg:'slide_cp_41.jpg'})
+  .notes This is another way of presenting the same finding.
+  .notes The vMMN is a DRN, but not all DRNs are vMMNs (see the paper).
+  .notes: :t
+    Since this study \citep{clifford_color_2010}, \citet{he:2014_color} have challenged 
+    the results arguing that there is no vMMN when you control for irregularities in
+    colour spaces using JNDs. However \citet{zhong:2015_shortterm} find a vMMN for 
+    newly trained categorical colour properties (which \citep{clifford:2012_neural}) didn’t.
+
+
+
 section.slide
   +_slide_middle_inner
     p.center.huge-glow-180.why why?
@@ -72,7 +248,7 @@ section.slide
         give rise to the impression that properties like \emph{red} affect
         how things appear?
     .slide
-      p.indent Option 1: phenomenal signals
+      p.indent Option 1: sensations
       .notes: :t
         Option 1: The processes of discrimination modulate the overall phenomenal
         character of experience, and do so differently depending on which
@@ -95,4 +271,3 @@ section.slide
       (Compare  \citep[pp.~288--9]{Bornstein:1987vv}:
       “Discriminable wavelengths seem to be categorized together because they appear perceptually similar”.)
   
-    

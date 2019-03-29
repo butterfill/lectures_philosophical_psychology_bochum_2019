@@ -53,6 +53,53 @@ mixin theMethodsSlide()
     block
 
 +slide({bkg:'categorical_colour_difference3.jpg'})
+  .notes: :t
+    The difference in differences ...
+  .notes: :t
+    Here is the argument. Consider two sequences of sensory encounters: (a) a sequence of sensory
+    encounters with two phonetic events that do not differ with respect to category (both are
+    realisations of /d/, say), and (b) a sequence of sensory encounters with two phonetic events that do
+    so differ (one is a realisation of /d/ the other of /g/, say).11 Let the events encountered in the
+    first sequence differ from each other acoustically in the same way and by the same amount as the
+    events encountered in the second sequence differ from each other. (That it is possible to find two
+    such pairs of events follows from the fact that we enjoy categorical perception of speech.) The two
+    sequences are depicted in Fig. 3. Now:
+  .slide
+    +blur('img.bkg')
+    p.hem-around.first: :t
+      1. The second sequence of sensory encounters, (b), 
+      differ from each other more in phenomenal character than the first sequence of sensory encounters, 
+      (a), differ from each other.
+  .slide
+    +blur('img.bkg','5px')
+    p.hem-around 2. This difference in differences in phenomenal character is a fact in need of explanation.
+  .slide
+    +fade('img.bkg')
+    p.hem-around 3. The difference cannot be fully explained by appeal only to perceptual experiences as of particular shades.
+  .slide
+    p.hem-around 4. The difference can be explained in terms of perceptual experiences as of categorical colour properties.
+    .notes: :t
+      The fourth step in this argument, (4), needs some filling in. How would the thesis that categorical
+      perception of speech is a form of perceptual experience explain the difference in differences in
+      phenomenal character? If the thesis is true, the first sequence of sensory encounters, (a), involves
+      two perceptual experiences as of a single phoneme whereas the second sequence of encounters, (b),
+      involves perceptual experiences as of different phonemes.12 Let us assume (not very controversially)
+      that perceptual experiences have phenomenal characters and that which phenomenal character a
+      perceptual experience has depends in part on what it is as of.13 It follows that differences in what
+      perceptual experiences are as of can explain differences in the phenomenal characters of those
+      perceptual experiences. In particular, if it is a fact that (b) involves perceptual experiences as
+      of different things whereas (a) does not, this could explain why the sensory encounters in (b)
+      differ in phenomenal character in a way that the sensory encounters in (a) do not.
+
+  .slide
+    p.hem-around.fifth 5. There is no better explanation of the difference.
+  .slide
+    +highlight-row('.first', 'red')
+  .slide
+    +unhighlight-row('.first', 'red')
+    +highlight-row('.fifth', 'red')
+
+
 
 mixin slide_predictions(p)
   if typeof(p) === 'undefined' 
@@ -64,7 +111,8 @@ mixin slide_predictions(p)
       \begin{center}
       \includegraphics[scale=0.25]{img/categorical_colour_difference3.jpg}
       \end{center}
-    +blur('img.bkg', '3px', 0)
+    +blur('img.bkg', '5px', 0)
+    +fade('img.bkg', 0)
     +reset
       p Hypothesis: Red things differ in visual appearance from non-red things.
       div(class="#{p.step ? 'slide' : ''}")
@@ -85,6 +133,13 @@ mixin slide_predictions(p)
   .slide
     +fade('img.bkg')
     +highlight-row('.discrimination')
+
++slide({bkg:'slide_cp_25.jpg'})
+  .notes Let me show you how speed an accuracy of discimination are usually measured.
+  .notes This is a 2-alternative forced-choice task (2AFC).
++slide({bkg:'slide_cp_26.jpg'})
++slide({bkg:'slide_cp_27.jpg'})
+
 
 +slide
   +img_clip('witzel_2018_fig5.png', 'rect(0,380px,999px,0)')
