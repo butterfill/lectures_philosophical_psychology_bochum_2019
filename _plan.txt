@@ -13,7 +13,7 @@ bochum plan
     p.notes.handout.show How could the objects of categorical perception of speech be articulatory gestures?
     .notes: :t
       The puzzle here is twofold.
-      [a] Categorical perception of speech happens raidly, and goal-directed actions
+      [a] Categorical perception of speech happens rapidly, and goal-directed actions
       are complex.  How can something so complex be computed so quickly?
       [b] How could you recover articulatory gestures from acoustic and visual inputs?
     .slide
@@ -63,13 +63,16 @@ PLAN
 08 a dual process theory [43]
 09 the method of signature limits [93]
 
-10 speech and motor / the double life of motor representation [puzzles]
-11 motor theory goal tracking
-12 interface problems
+10 speech and motor / the double life of motor representation [puzzles] [49]
+11 motor theory goal tracking [93]
+12 Is There a Role for Motor Processes in Mindreading? [24] !!!TODO***
 
-13 experience of action (own and others)?
-14 radical interpretation [problems] / Should we be instrumentally rational?
-15 interaction as a route to knowledge? [smile/ygimg]
+13 twin interface problems
+14 experience of action (own and others)?
+15 sharing a smile
+
+radical interpretation [problems] / Should we be instrumentally rational?
+interaction as a route to knowledge? [smile/ygimg]
 
 
 Questions
