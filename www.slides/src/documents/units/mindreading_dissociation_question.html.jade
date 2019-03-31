@@ -1,0 +1,112 @@
+---cson
+layout: 'deck_unit'
+title: "Question 2: Dissociations"
+tags: []
+description: """
+  Why are there  dissociations in nonhuman apes’, human infants’ and human adults’ performance on belief-tracking tasks?
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+include ../../../fragments/mindreading_mixins
+
+
++slide_middle
+  p.center second complication : dissociations in performance
+
+
++slide_middle
+  .krupenye-quote.hide.container_12: .grid_6
+    p.notes.handout.show
+      span ‘the present evidence may constitute an 
+      span.implicit implicit
+      span  understanding of belief’
+    .notes.handout.ctd \citep[p.~113]{krupenye:2016_great}
+    p.right.grey-text  Krupenye et al, 2016 p. 113
+
+  table.data
+    thead
+      tr
+        td study
+        td type
+        td success?
+    tbody
+      tr.odd
+        td Call et al, 1999
+        td object choice (coop)
+        td fail
+      tr.even
+        td Krachun et al, 2009
+        td ‘chimp chess’ 
+          br
+          span (competitive, action)
+        td fail
+      tr.odd
+        td Krachun et al, 2009
+        td ‘chimp chess’ 
+          br
+          span (competitive, gaze)
+        td pass A, 
+          br
+          span fail B
+      tr.even
+        td Krachun et al, 2010
+        td change of contents
+        td fail
+      tr.odd
+        td Krupenye et al, 2017
+        td anticipatory looking 
+          br
+          span (2 scenarios)
+        td pass both
+
+  .slide
+    +show('.krupenye-quote')
+    +blur('table.data')
+    .notes: :t
+      Commenting on their success in showing that great apes can track false beliefs,
+      Krupenye et al comment that ...
+  .slide
+    +invert('.implicit')
+    .notes: :t
+      Why do they say ‘implicit’?
+    .notes: :t
+      I think it’s because they expect dissociations: just as there are dissociations among different
+      measures of mindreading in adults, and developmental dissociations, so it is plausible that there
+      will turn out to be dissociations concerning the tasks that adult humans and adult nonhumans can
+      pass.
+    .notes: :t
+      Indeed, we can see signs of dissociations if we go back to earlier work with great apes by Karla
+      Krachun and colleagues ...
+  .slide
+    +unblur('table.data')
+    .notes: :t
+      Invoking implicit cannot explain the dissociations because you could have
+      just as well invoked 
+      implicit for a completely different pattern of findings.
+
+
++slide_middle
+  +theMindreadingQs({handout:false})
+  +remove('.q3')
+  +blur('.q1')
+  .notes: :t
+    So now we have a second question to answer
+  .slide
+    +unblur('.q1')
+    .notes: :t
+      We shouldn’t draw conclusions about mindreading from tracking before 
+      we can answer at least these two questions.
+  .slide
+    +invert('.infants')
+  .slide
+    +invert('.adults')
+    .notes: :t
+      Ooops, I almost forgot to mention dissociation in humans ...
+      I’m not going to mention infants much,
+      but we’ll see evidence that’s relevant to adults later
+  .slide
+    +uninvert('.adults, .infants')
+
+

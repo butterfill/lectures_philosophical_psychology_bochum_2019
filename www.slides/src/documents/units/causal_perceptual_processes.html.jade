@@ -1,0 +1,382 @@
+---cson
+layout: 'deck_unit'
+title: "The Launching Effect and Perceptual Processes"
+tags: []
+description: """
+  
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
+
+
+
++slide_middle
+  p How to get beyond intuition?
+  p The launching effect: detecting a 50ms difference in the delay between two movements.
+  ol.notes.show
+    li.hem-around.focus How is launching detected?  For example, does it involve perceptual processes?
+    li.hem-around.q2 Why is a delay of up to around 70ms consistent with the launching effect occuring?
+  .slide
+    +highlight-row('.focus')
+
++slide_middle
+  .notes: :t
+    The question is,
+    How is launching detected?  For example, does it involve perceptual processes?
+    Three bits of evidence are relevant ...
+  .evidence.hem-around-children
+    p 1. Illusory causal crescents
+    p 2. Adaptation
+    p 3. Apparent motion (Kim et al)
+  .slide
+    +highlight-row('.evidence p:eq(2)')
+
+
+
+section.slide
+  +_slide_inner
+    video(width="640", height="480", controls)
+      source(src="/mov/Video_S6--Vertical-launch display--Exp 2.mov",type="video/mp4")
+    p.source Kim et al 2013, S6
+
++slide
+  +img_clip('kim_2016_fig2.png')
+  p.source Kim et al 2013, figure 2
++slide
+  +img_clip('kim_2016_fig3.png')
+  p.source Kim et al 2013, figure 3
+
+//-
+  Could talk about RM representational momentum from Perceiving expressions of emotion paper
+  but it’s just speculation ...
+
++slide_middle
+  .notes: :t
+    The question is,
+    How is launching detected?  For example, does it involve perceptual processes?
+    Three bits of evidence are relevant ...
+  .evidence.hem-around-children
+    p 1. Illusory causal crescents
+    p 2. Adaptation?
+    p 3. Apparent motion
+  +highlight-row('.evidence p:eq(2)')
+  .slide
+    +unhighlight-row('.evidence p:eq(2)')
+    +highlight-row('.evidence p:eq(1)')
+
+
++slide_middle
+  p.center [see appendix]
+
+
++slide_middle
+  .notes: :t
+    The question is,
+    How is launching detected?  For example, does it involve perceptual processes?
+    Three bits of evidence are relevant ...
+  .evidence.hem-around-children
+    p 1. Illusory causal crescents
+    p 2. Adaptation
+    p 3. Apparent motion (Kim et al)
+  +highlight-row('.evidence p:eq(1)')
+  .slide
+    +unhighlight-row('.evidence p:eq(1)')
+    +highlight-row('.evidence p:eq(0)')
+
+
++slide_middle
+  .notes: :t
+    Guess how the launching effect works! A natural thought is this: first you
+    perceive objects, then you identify causal interactions based on contiguity
+    etc. This turns out to be completely wrong.
+  p.center Guess how the launching effect works ...
+
++slide
+  .notes: :t
+    The impression of launching is judgement-independent.
+    So it can't be a consequence of thinking about the interaction.
+    Still, it might be a consequence of perceiving objects in certain relations to each other.
+    However a key finding shows that this is wrong.
+    Surprisingly, we don't first perceive objects and then get the launching effect;
+    rather, the launching effect is tied up with perceptual process of identifying objects' surfaces.
+  p judgement-independent
+  img(src='/img/thines_1991_fig.png')
+  p.source Thines et al (1991)
+
+  
+section.slide
+  .notes: :t
+    [I'm about to talk about illusory causal crescents.  I first show them two videos.
+    This is a full overlap video.
+    You can drag the slider to show them that it's full overlap, but first ask them what they see.]
+    [Static images follow in case video doesn't work.]
+  +_slide_inner
+    video(width="640", height="480", controls)
+      source(src="/mov/01_FullOverlap.mp4",type="video/mp4")
+  .slide
+    +blur('video', '5px')
+    +reset
+      +middle
+        p.center what did you see?
+        .notes: :t
+          Normally, if the two balls overlap completely, subjects report seeing a single object 
+          changing colour.
+    
+  
+section.slide
+  .notes: :t
+    [This is a causal capture video with full overlap.
+    Focus on the top sequence.  Tell me what you saw!
+    You can drag the slider to show them that it's full overlap, but first ask them what they see.]
+    [Static images follow in case video doesn't work.]
+  +_slide_inner
+    video.full-overlap(width="640", height="480", controls)
+      source(src="/mov/02_CausalCapture.mp4",type="video/mp4")
+  .slide
+    +blur('video', '5px')
+    +reset
+      +middle
+        p.center what did you see?
+        .notes: :t
+          Normally in this case people report the impression that the top sequence collided.
+          That is, they didn't pass, they collided.
+        .slide
+          p.center causal capture
+          .notes: :t
+            Causal capture is described by \citep{Scholl:2002eb}.
+            As I said,
+            normally, if the two balls overlap completely, subjects report seeing a single object 
+            changing colour.
+            But if we show subjects a sequence like the launching effect but where the first square 
+            overlaps the second's position before it moves.  When this event is shown is isolation 
+            almost all subjects see it as a single object changing colour.  But when the event is 
+            shown with an 
+            unambiguous launching effect nearby, almost all subjects now see the 'overlap' event as 
+            a launching.
+            Causal capture means that we can show subjects a sequence with complete overlap and 
+            still have the report a causal effect.
+            
+          .notes: :t
+            Why do we care about causal capture?  Because it gives rise to illusory causal 
+            crescents ...
+          
+
+    
++slide
+  .notes: :t
+    [Now I'll explain illusory causal cresecents.]
+  +img_clip('scholl_2004_fig2ab.png', 'rect(0,240px,550px,0px)')
+  p.source Scholl and Nakayama 2004, figure 2 (part)
+  .notes: :t
+    Here's a static image representing the sequence you saw first, when there was full overlap.
+  .slide
+    +clip('img:eq(0)','auto')
+    .notes.handout: :t
+      ‘when there is a launching event beneath the overlap (or underlap event) timed such that 
+      the launch occurs at the point of maximum overlap, observers inaccurately report that 
+      the overlap is incomplete, suggesting that they see an illusory crescent.’ 
+      \citep[p.\ 461]{Scholl:2004dx}
+    .notes.handout: :t
+      Why does the illusory causal crescent appear?  Scholl and Nakayama suggest a  
+      ‘a simple categorical explanation for the Causal Crescents illusion: the visual system, 
+      when led by other means to perceive an event as a causal collision, effectively 
+      ‘refuses’ to see the two objects as fully overlapped, because of an internalized 
+      constraint to the effect that such a spatial arrangement is not physically possible. 
+      As a result, a thin crescent of one object remains uncovered by the other one-as 
+      would in fact be the case in a straight-on billiard-ball collision where the motion 
+      occurs at an angle close to the line of sight.’ 
+      \citep[p.\ 466]{Scholl:2004dx}
+    .notes: :t
+      *here or later?
+      Contrast Spelke’s view.
+      ‘objects are conceived: Humans come to know about an object’s unity, boundaries, and 
+      persistence in ways like those by which we come to know about its material composition 
+      or its market value.’
+      \citep[p.\ 198]{Spelke:1988xc}.
+
++slide
+  +img_clip('scholl_2004_fig5.png')
+  p.source Scholl and Nakayama 2004, figure 5
+  .notes (*This figure just shows when the overlap event was perceived as causal.)
+
++slide_middle
+  .notes: :t
+    The question is,
+    How is launching detected?  For example, does it involve perceptual processes?
+    Three bits of evidence are relevant ...
+  .evidence.hem-around-children
+    p 1. Illusory causal crescents
+    p 2. Adaptation
+    p 3. Apparent motion (Kim et al)
+  +highlight-row('.evidence p:eq(0)')
+  .notes: :t
+    Actually illusory causal crescents seem to take us further
+
++slide_middle
+  .notes Illusory causal crescents fit perfectly with Spelke’s brilliant insight.
+  p.notes.handout.show ‘object perception reflects basic constraints on the motions of physical bodies …’
+  p.right (Spelke 1990: 51)
+  .notes.handout.ctd \citep[p.\ 51]{Spelke:1990jn}
+  p.notes.handout.show.em-above ‘A single system of  
+    span.knowledge knowledge
+    span   … appears to underlie object perception and physical reasoning’
+  .notes.handout.ctd \citep[p.\ 175]{Carey:1994bh}
+  p.right (Carey and Spelke 1994: 175)
+  .notes: :t
+    I think there's something here that should be uncontroversial, and
+    something that's more controversial.
+  .slide
+    +invert('.knowledge')
+    .notes: :t
+      It can’t be knowledge, but let’s not worry about that because there’s a worse objection.
+  .slide
+    +uninvert('.knowledge')
+  .slide
+    p.em-above Rips’ objection (2011, p. 92) [in appendix]
+    .notes: :t
+      ‘This possibility, though, is not one that advocates of Michotte’s
+      hypothesis have taken up. The favored view is one in which separate
+      modules are responsible for descriptions of objects and of their
+      mechanical interactions, with central mechanisms then resolving potential
+      conflicts between them. 
+      For example, Leslie (1988) argues that perceptual
+      modules do not by themselves settle inconsistencies between the spatial
+      positions of objects and their causal interactions. In certain 
+      illusions, adults tend to perceive solid objects passing through each other
+      (Leslie cites the Pulfrich double-pendulum illusion; see Wilson &
+      Robinson, 1986). Thus, the module for object tracking doesn’t prohibit
+      interpretations of physical events that are causally impossible. Of
+      course, people realize that such events cannot really be taking place and
+      are surprised when they perceive them, but that is because they have
+      principles stored in long-term memory—for example, the principle that two
+      solid objects cannot be in the same place at the same time—that classify
+      these events as illusions or anomalies. Leslie’s argument suggests
+      that people individuate objects and calculate their causal relations by
+      means of separate mechanisms; thus, we can’t count on causal constraints
+      being part of the object-tracking module. If Leslie is right, there is
+      reason to question Butterfill’s (2009) conjecture that ‘object
+      perception and causal perception are one and the same process’’ (p.
+      421).’
+    .notes: :t
+      Response: it was too simple to say that 
+      ‘object perception and causal perception are one and the same process’ or to
+      talk about ‘object perception and physical reasoning’ because object perception 
+      is a complicated thing with many aspects.
+      What Carey and Spelke (and following them, Butterfill) should have said is that
+      there is a system of object indexes which assigns indexes in ways that reflects
+      physical constraints such as solidity on objects’ motions, and this is what gives
+      rise to the launching effect.
+
+
++slide_middle
+  .notes: :t
+    The question is,
+    How is launching detected?  For example, does it involve perceptual processes?
+    Three bits of evidence are relevant ...
+  .evidence.hem-around-children
+    p 1. Illusory causal crescents
+    p 2. Adaptation
+    p 3. Apparent motion (Kim et al)
+  +highlight-row('.evidence p:eq(0)')
+  .slide
+    +unhighlight-row('.evidence p:eq(0)')
+
+
+
+
+
+
++slide_middle
+  p How to get beyond intuition?
+  p The launching effect: detecting a 50ms difference in the delay between two movements.
+  ol.notes.show
+    li.hem-around.focus How is launching detected?  For example, does it involve 
+      span.pp perceptual processes
+      span ?
+    li.hem-around.q2 Why is a delay of up to around 70ms consistent with the launching effect occuring?
+  +highlight-row('.focus')
+  .slide
+    +invert('.pp')
+    .notes: :t
+      Ok, but what is the nature of these perceptual processes?
+      Object indexes ...
+  .slide
+    +unhighlight-row('.focus')
+    +highlight-row('.q2')
+    .notes: :t
+      Answering the second question gives us a hint about this ...
+    .notes: :t
+      Ingeniously, Michotte compares launching with the movement of a single object. The single 
+      object moves half way across a screen then pauses before continuing to move. Michotte found 
+      that the longest pause between the two movements consistent with subjects experiencing them 
+      as a single movement is around 80ms, exactly the longest pause consistent with experiences 
+      characteristic of launching \citep[pp.\ 91--8, 124]{Michotte:1946nz}. Accordingly, the 
+      experience characteristic of launching appears to require that the two movements be 
+      experienced as uninterrupted—--this is why they can be separated by a pause of up to but 
+      no longer than 80ms.
+    .notes: :t
+      But what is the significance of the fact that you get a launching effect only when
+      the movements are perceptually consistent with the movements of a single object?
+      It‘s that no delay is perceived.
+  .slide
+    +unhighlight-row('.q2')
+    +highlight-row('.focus')
+    .notes: :t
+      Ok, but what is the nature of these perceptual processes?
+      Object indexes ...
+    
+
+//- +slide_middle
+//-   .notes The question was, 
+//-   ol
+//-     li.em-around.q1.notes.ctd.show.focus: :t
+//-       How is launching detected?  For example, does it involve perceptual processes?
+//-     li.em-around.q2 Why is a delay of up to around 70ms consistent with the launching effect occuring?
+//-   +blur('.q2','2px',0)
+//-   .notes: :t
+//-     We've just taken a step towards answering this first question.  As 
+//-     \citet[p.\ 299]{Scholl:2000eq} put it,
+//-   .handout.notes: :t
+//-     ‘just as the visual system works to recover the physical structure of the world by inferring 
+//-     properties such as 3-D shape, so too does it work to recover the causal …  structure of 
+//-     the world by inferring properties such as causality’ 
+//-     \citep[p.\ 299]{Scholl:2000eq}
+//-   .notes: :t
+//-     But more is needed ...
+//-   .slide
+//-     +unblur('.q2')
+//-     +blur('.q1')
+//-     .notes: :t
+//-       The second question, Why is a delay of up to around 70ms consistent with the 
+//-       launching effect occuring?, remains open.
+
+//-     .notes: :t
+//-       This is an important question insofar as we are concerned with detecting causal interactions.
+//-       Is what people detect when the launching effect occurs a causal interaction?
+//-       You might say, it can't be a causal interaction 
+//-       because no delay between two movements is consistent with a causal interaction.
+//-     .slide
+//-       .notes: :t
+//-         Michotte said this:
+//-       p.em-above.notes.show: :t
+//-         ‘anyone not very familiar with the procedure involved in framing the physical concepts of 
+//-         inertia, energy, conservation of energy, etc., might think that these concepts are simply 
+//-         derived from the data of immediate experience.’
+//-       span.notes.ctd \citep[p.\ 223]{Michotte:1946nz}
+//-       p.right Michotte (1946, p. 223)
+//-       .notes: :t
+//-         How is this consistent with the laws of mechanics—surely no pause can be tolerated? 
+//-         Ingeniously, Michotte compares launching with the movement of a single object. The single 
+//-         object moves half way across a screen then pauses before continuing to move. Michotte found 
+//-         that the longest pause between the two movements consistent with subjects experiencing them 
+//-         as a single movement is around 80ms, exactly the longest pause consistent with experiences 
+//-         characteristic of launching \citep[pp.\ 91--8, 124]{Michotte:1946nz}. Accordingly, the 
+//-         experience characteristic of launching appears to require that the two movements be 
+//-         experienced as uninterrupted—--this is why they can be separated by a pause of up to but 
+//-         no longer than 80ms.
+
+
+

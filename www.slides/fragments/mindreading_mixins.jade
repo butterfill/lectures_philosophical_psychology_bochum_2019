@@ -1,0 +1,38 @@
+
+mixin theMindreadingQs(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('handout' in p)
+    - p.handout = false
+
+  .handout: :t
+    Three questions:
+    \begin{enumerate}
+      \item How do observations about tracking support conclusions about representing?
+      \item Why are there  dissociations in nonhuman apes’, human infants’ and human adults’ performance on belief-tracking tasks?
+      \item Why is belief-tracking in adults sometimes
+      but not always automatic? (And how could
+      belief-tracking ever be automatic if it significantly depends on working memory and consumes attention?)
+    \end{enumerate}
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;')
+      span How do observations about tracking support conclusions about 
+      span.representing representing
+      span.remove-me.models  models
+      span ?
+  .q2
+    p.huge-glow Q2
+    p(style='margin-top:-4em;')
+      span Why are there 
+      span.dissociations dissociations
+      span  in nonhuman apes’, 
+      span.infants human infants’
+      span  and 
+      span.adults human adults’
+      span  performance on belief-tracking tasks?
+  .q3
+    p.huge-glow Q2
+    p(style='margin-top:-4em;')
+      span Why is belief-tracking in adults sometimes but not always automatic?
+      span How could belief-tracking be automatic given evidence that it significantly depends on working memory and consumes attention?

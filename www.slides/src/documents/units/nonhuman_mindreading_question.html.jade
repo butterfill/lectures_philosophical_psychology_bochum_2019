@@ -1,69 +1,336 @@
 ---cson
 layout: 'deck_unit'
-title: "The Question, version 0.1"
+title: "Question 1: Tracking to Representing"
 tags: []
 description: """
-  What could underpin nonhumans’ abilities to track others’ mental states?
+  How do observations about tracking support conclusions about representing?
   """
 ---
 
 include ../../../fragments/unit_mixins
 include ../../../fragments/joint_action_mixins
-
-.handout: :t
-  Many animals including scrub jays \citep{Clayton:2007fh},
-  ravens \citep{bugnyar:2016_ravens},
-  goats \citep{kaminski:2006_goats},
-  dogs \citep{kaminski:2009_domestic},
-  ringtailed lemurs \citep{sandel:2011_evidence},
-  monkeys \citep{burkart:2007_understanding, hattori:2009_tufted}
-  and chimpanzees \citep{melis:2006_chimpanzees,karg:2015_chimpanzees} reliably vary their actions in ways that are appropriate given facts about another’s mental states.
-  What could underpin such abilities to track others’ mental states?
+include ../../../fragments/mindreading_mixins
 
 +slide_middle
-  p.center tracking vs representing mental states
-  .notes: :t
-    Contrast {representing} a mental state with {tracking} one.
-  .notes.handout: :t
-    For you to \emph{track} someone’s mental state (such as a belief that there is food behind that rock)
-    is for there to be a process in you which nonaccidentally depends in some way on whether she has that
-    mental state.
-  .notes: :t
-    Representing mental states is one way, but not the only way, of tracking them.
-    In principle it is possible to track mental states without representing them.
-    For example, it is possible, within limits, to track what another visually represents by representing her line of sight only.
-    More sophisticated illustrations of how you could in principle track mental states without representing them abound \citep[e.g.][pp.~571ff]{buckner:2014_semantic}.
-    What many
-    experiments actually measure is whether certain subjects can track mental states:
-    the question is whether changes in what another sees, believes or desires are reflected in subjects’ choices of route, caching behaviours, or anticipatory looking (say).
-    It is surely possible to infer what is represented by observing what is tracked.
-    But such inferences are never merely logical.
-  .notes: :t
-    Example: toxicity / smell
-    
-+slide({bkg:'logical_problem/Slide1.jpg'})
-+slide({bkg:'logical_problem/Slide2.jpg'})
-+slide({bkg:'logical_problem/Slide3.jpg'})
-
-
-+slide_middle
-  p.q What do 
-    span.infants infants
-    span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
-  +line-through('.infants')
+  p Which action a chimp or jay predicts another will perform
+  p depends to some extent on
+  p what the other sees, knows or believes.
   .slide
-    .notes The standard debate
-    p.indent.em-above -- Is it 
-      span.mental-states mental states
-      span ?
-    .handout.notes.show
-      p.indent.mental-intelligible.hide What could make others’ mental states intelligible (or identifiable) to a chimpanzee
-        span.infants , infant
-        span  or scrub-jab?
-    p.indent.em-above -- Or only 
-      span.behaviours behaviours
-      span ?
-    .handout.notes.show
-      p.indent.behaviour-intelligible.hide What could make others’ behaviours  intelligible (or identifiable)  to a chimpanzee
-        span.infants , infant
-        span  or scrub-jab?
+    p.em-above
+      span ‘In saying that an individual has a 
+      span.theory-of-mind theory of mind,
+      span  we mean that the individual [can ascribe] mental states’ 
+    p.right.grey-text Premack & Woodruff, 1978 p. 515
+
+
+
++slide_middle
+  p.em-above.notes.handout.show
+    span ‘Comparative psychologists test for  
+    span.mindreading mindreading
+    span  in non-human animals by determining whether they 
+    span.detect detect
+    span  the presence and absence of particular cognitive states in a  
+    span.wide wide variety of circumstances
+    span .’
+  .notes.handout.ctd: :t
+    They eliminate potential confounding variables by ensuring that there is no one
+    observable state to which subjects might be responding’ 
+    \citep[p.~487]{halina:2015_there}.
+  p.right.grey-text Halina, 2015 p. 487
+  .slide
+    +highlight('.mindreading', 'yellow')
+    .notes: :t
+      mindreading = using a theory of mind.
+      So mindreading involves representing mental states
+  .slide
+    +highlight('.detect', 'red')
+    .notes: :t
+      detect = track
+      So Halina is inferring representing from tracking.
+
++slide_middle
+  p.center apes track beliefs ∴ they are mindreaders ?
+  .notes: :t
+    For the purposes of this talk, I am going to assume that we can make this inference,
+    at least in some circumstances.
+  .notes: :t
+    But I think there are two COMPLICATIONS which need to be addressed before we can be
+    confident that we understand why we can make the inference. The first is simple: 
+    representing does not logically entail tracking ...
+
++slide_middle
+  p.center
+    table.data
+      thead
+        tr
+          td.left track
+          td.left by representing
+      tbody
+        tr.odd
+          td 
+            p toxicity
+          td
+            p odour
+        tr.even
+          td 
+            p visibility
+          td
+            p line-of-sight
+        tr.odd
+          td
+            p belief
+          td
+            p ?
+  
+  .notes: :t
+    To say that someone tracks beliefs does not entail saying that she represents beliefs.
+    In general, you can track something by representing something else.
+  .notes: :t
+    Note that this complication is not supposed to show that we cannot make 
+    the inference from tracking to mindreading.
+    After all, such inferences are not supposed to be deductive.
+    Nor do I intend to suggest that we should somehow find a different inference
+    which is deductive.
+    Instead my point is simply this: as the inference is not deductive, there are bound
+    to be tricky questions about how the observations support conclusions about tracking.
+    [LATER: one further complication will be that there are multiple models of minds and actions.]
+  
+
++slide_middle
+  +theMindreadingQs({handout:true})
+  +hide('.q2, .q3', 0)
+  .notes: :t
+    To stress: this is a genuine question. The assumption is that you can infer representing
+    from tracking. What we need, I think, is a clearer idea of how such inferences might succeed.
+
+
++slide_middle
+  p.center Requirement 1: Diversity in Strategies
+  .notes: :t
+    Should we conclude that all animals which can track mental states are doing so by virtue of 
+    representing them?  
+    Two versions of this objection: (a) cross-species:
+    How confident are we that ringtailed lemurs are doing what chimpanzees are doing?
+    (b) within an individual:
+    In humans and other animals, tracking mental states likely involves many different 
+    processes, including plenty of which that rely on simple cues.
+  .notes: :t
+    Requirement 1:
+    We need a theory that allows us to distinguish mental state tracking underpinned
+    by mindreading from other forms of mental state tracking
+
+        
++slide_middle
+  p.center.notes.show Requirement 2: Models
+  .notes: :t
+    The second question concerns how various individuals (or systems within them)
+    model minds and actions.
+    Let me explain with an illustration ...
+        
+section.slide: .middle
+  .clear
+  .container_12.em-above
+    .grid_9
+      p ‘chimpanzees understand … intentions … perception and knowledge,
+      p.step2.hide.hem-above: :t
+        ‘chimpanzees probably do not understand others in terms of a fully human-like belief–desire
+        psychology’ 
+      p.right.grey-text Call & Tomasello, 2008 p.~191
+    .grid_3
+      p.right
+        +img('call_tomasello.jpg', 'width:150px')
+    .handout: :t
+      ‘chimpanzees understand … intentions … perception and knowledge,’ but ‘chimpanzees probably do not
+      understand others in terms of a fully human-like belief–desire psychology’
+      \citet[p.~191]{Call:2008di}.
+  .slide
+    +show('.step2')
+    .notes: :t
+      After claiming that ‘chimpanzees understand … intentions … perception and knowledge,’
+      \citet{Call:2008di} qualify their claim by adding that ‘chimpanzees probably do not understand
+      others in terms of a fully human-like belief–desire psychology’ (p.~191).
+    .notes: :t
+      This is true.
+      The emergence in human development of the most sophisticated abilities to represent mental states
+      probably depends on rich social interactions involving conversation about the mental
+      \citep{Slaughter:1996fv, peterson:2003_opening, moeller:2006_relations}, on linguistic abilities
+      \citep{milligan:2007_language,kovacs:2009_early},
+      (\citet[p.~760]{moeller:2006_relations}: ‘Our results provide support for the concept that access
+      to conversations about the mind is important for deaf children’s ToM development, in that there was
+      a significant relationship between maternal talk about mental states and deaf children’s
+      performance on verbal ToM tasks.’)
+      and on capacities to attend to, hold in mind and inhibit things \citep{benson:2013_individual,
+      devine:2014_relations}.
+      These are all scarce or absent in chimpanzees and other nonhumans.
+      So it seems unlikely that the ways humans at their most reflective represent mental states will
+      match the ways nonhumans represent mental states.
+      Reflecting on how adult humans talk about mental states is no way to understand how others
+      represent them.
+      But then what could enable us to understand how nonhuman animals represent mental states?
+
++slide_middle
+  p.center.notes.show Requirement 2: Models
+  p.em-above.center How do chimps or jays variously model minds and actions?
+  
++slide_middle
+  p.center.notes.show ‘Nonhumans represent mental states’ is not a hypothesis
+  .notes: :t
+     ... or at least not one that generates readily testable predictions.
+
+
++slide
+  p.center.notes.show ‘Nonhumans represent mental states’ is not a hypothesis
+  .notes: :t
+     ... or at least not one that generates readily testable predictions.
+  .slide
+    .container_12.em-above
+      .grid_9
+        p
+          span ‘the core theoretical problem in ... animal mindreading is  
+          span that  ... 
+          span.conception the conception of mindreading
+          span  that dominates the field 
+          span ... 
+          span.underspecified is too underspecified
+          span   to allow effective communication among researchers’ 
+        .handout.notes: :t
+          ‘the core theoretical problem in contemporary research on animal mindreading is 
+          that  ... the conception of mindreading that dominates the field
+          ... is too underspecified to allow effective communication among researchers, 
+          and reliable identification of evolutionary precursors of human mindreading through 
+          observation and experiment.’
+        .handout.notes.ctd \citep[p.~321]{heyes:2014_animal}
+        p.right.grey-text Heyes (2015, 321)
+      .grid_3
+        p.right
+          +img('celia_heyes.png', 'width:150px')
+      .notes: :t
+        What does Heyes mean?
+  .slide
+    .clear
+    .container_12.em-above
+      .grid_9
+        p.em-above How confident should we be that we know how adult humans model minds and actions?
+        .slide  
+          .notes: :t
+            Philosophical methods
+            (Previous issue: how accurate are humans’ models of minds and actions?;
+            this issue: how confident should we be that we know how they model minds and actions?)
+          p.indent informal observation, 
+            br
+            span guesswork (‘intuition’), 
+            br
+            span reasoning, 
+            br
+            span and elegance
+
+//- 
+  +slide_middle
+    p How accurate are adult humans’ best everyday models of minds and actions?
+    p.indent Maybe about as accurate as their models of physical objects?
+    .notes: :t
+      Is there reason to think that representations of the self are not bound to be,
+      in many significant respects, misrepresentations?
+      At least, insofar as it’s true that ordinary representations of the \textbf{physical} world are
+      misrepresentations of the physical, we should expect something comparable in the
+      mental case.
+    .slide
+
+
++slide({bkg:'folk_psychology_roots/Slide1.jpg'})
+  .notes: :t
+    Aside ...
+    we don’t know much about adults humans’ mindreading abilities
++slide({bkg:'folk_psychology_roots/Slide2.jpg'})
++slide({bkg:'folk_psychology_roots/Slide3.jpg'})
+
+
+
+
++slide
+  p.center.notes.show ‘Nonhumans represent mental states’ is not a hypothesis
+  .notes: :t
+     ... or at least not one that generates readily testable predictions.
+  .container_12.em-above
+    .grid_9
+      p
+        span ‘the core theoretical problem in ... animal mindreading is  
+        span that  ... 
+        span.conception the conception of mindreading
+        span  that dominates the field 
+        span ... 
+        span.underspecified is too underspecified
+        span   to allow effective communication among researchers’ 
+      .handout.notes: :t
+        ‘the core theoretical problem in contemporary research on animal mindreading is 
+        that  ... the conception of mindreading that dominates the field
+        ... is too underspecified to allow effective communication among researchers, 
+        and reliable identification of evolutionary precursors of human mindreading through 
+        observation and experiment.’
+      .handout.notes.ctd \citep[p.~321]{heyes:2014_animal}
+      p.right.grey-text Heyes (2015, 321)
+    .grid_3
+      p.right
+        +img('celia_heyes.png', 'width:150px')
+  .slide
+    +blur('img, .grey-text, span:not(.conception, .underspecified)')
+    .notes: :t
+      How can we more fully specify mindreading?
+    
+
+
+//- +slide_middle
+//-   p.center tracking vs representing mental states
+//-   .notes: :t
+//-     Contrast {representing} a mental state with {tracking} one.
+//-   .notes.handout: :t
+//-     For you to \emph{track} someone’s mental state (such as a belief that there is food behind that rock)
+//-     is for there to be a process in you which nonaccidentally depends in some way on whether she has that
+//-     mental state.
+//-   .notes: :t
+//-     Representing mental states is one way, but not the only way, of tracking them.
+//-     In principle it is possible to track mental states without representing them.
+//-     For example, it is possible, within limits, to track what another visually represents by representing her line of sight only.
+//-     More sophisticated illustrations of how you could in principle track mental states without representing them abound \citep[e.g.][pp.~571ff]{buckner:2014_semantic}.
+//-     What many
+//-     experiments actually measure is whether certain subjects can track mental states:
+//-     the question is whether changes in what another sees, believes or desires are reflected in subjects’ choices of route, caching behaviours, or anticipatory looking (say).
+//-     It is surely possible to infer what is represented by observing what is tracked.
+//-     But such inferences are never merely logical.
+//-   .notes: :t
+//-     Example: toxicity / smell
+    
+//- +slide({bkg:'logical_problem/Slide1.jpg'})
+//- +slide({bkg:'logical_problem/Slide2.jpg'})
+//- +slide({bkg:'logical_problem/Slide3.jpg'})
+
+
+//- +slide_middle
+//-   p.q What do 
+//-     span.infants infants
+//-     span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
+//-   +line-through('.infants')
+//-   .slide
+//-     .notes The standard debate
+//-     p.indent.em-above -- Is it 
+//-       span.mental-states mental states
+//-       span ?
+//-     .handout.notes.show
+//-       p.indent.mental-intelligible.hide What could make others’ mental states intelligible (or identifiable) to a chimpanzee
+//-         span.infants , infant
+//-         span  or scrub-jab?
+//-     p.indent.em-above -- Or only 
+//-       span.behaviours behaviours
+//-       span ?
+//-     .handout.notes.show
+//-       p.indent.behaviour-intelligible.hide What could make others’ behaviours  intelligible (or identifiable)  to a chimpanzee
+//-         span.infants , infant
+//-         span  or scrub-jab?
+
+
++slide_middle
+  +theMindreadingQs({handout:true})
+  +remove('.q2, .q3', 0)
+  p.em-above.indent Requirement 1: Diversity in strategies
+  p.em-above.indent Requirement 2: Models

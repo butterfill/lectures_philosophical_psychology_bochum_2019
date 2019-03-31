@@ -1,14 +1,18 @@
 ---cson
 layout: 'deck_unit'
-title: "Automatic Belief-tracking"
+title: "Question 3: Automaticity"
 tags: []
 description: """
   In adults, mindreading is sometimes entirely a consequence of relatively automatic
   processes and sometimes not.
+  Why is belief-tracking in adults sometimes
+  but not always automatic? (And how could
+  belief-tracking ever be automatic if it significantly depends on working memory and consumes attention?)
   """
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/mindreading_mixins
 
 .handout Are human adults’ abilities to track others’ beliefs automatic?
 .handout: :t
@@ -27,6 +31,11 @@ include ../../../fragments/unit_mixins
   \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq} and
   that not all mindreading in human adults is
   \citep{apperly:2008_back,apperly_why_2010,Wel:2013uq}.
+
+
++slide_middle
+  +theMindreadingQs({handout:true})
+  +remove('.q3')
 
 
 +slide_middle
@@ -377,3 +386,8 @@ section.slide
   +slide({bkg:'qureshi_2010_table1ii.png'})
 
 
++slide_middle
+  +theMindreadingQs({handout:true})
+  +blur('.q1, .q2', '2px')
+  .slide
+    +unblur('.q1, .q2', '2px')
