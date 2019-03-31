@@ -11,6 +11,7 @@ description: """
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/mindreading_mixins
 
 .handout: :t
   Automatic belief-tracking in adults and
@@ -18,7 +19,18 @@ include ../../../fragments/unit_mixins
   associated with minimal theory of mind
   (\citealp{wang:2015_limits,Low:2012_identity,low:2014_quack,mozuraitis:2015_privileged};
   contrast \citealp{scott:2015_infants}).
-  
+
+
+
++slide_middle
+  +theMindreadingQs({handout:false})
+  +blur('.q2, .q3', '2px', 0)
+  .notes: :t
+    We’re really close to being able to answer this first question ...
+    (Remember Requirement 2, models)
+    But I want to approach this indirectly by asking a related question ...
+
+
 +slide_middle
   .notes.show
     p How can we test 
@@ -196,6 +208,7 @@ section.slide
       p.indent - spontaneous anticipatory looking
       p.indent - looking duration
       p.indent - active helping (Fizke et al, 2017; unpublished data)
+      p.indent - response times
     .notes: :t
       And now you can see the problem.
       Which of these measures are driven by automatic processes?
@@ -213,6 +226,63 @@ section.slide
     These findings complicate the picture: is helping driven by automatic processes only?
     If not, why do we predict that the signature limit of minimal theory of mind
     is found in this case too?
+
+
+
++slide
+  +img_clip('edwards_2017_fig2a.png')
+  p.source Edwards and Low, 2017 figure 7a
+
++slide({bkg:'edwards_2017_fig4.png'})
+  p.source Edwards and Low, 2017 figure 7a
+
++slide({bkg:'edwards_2017_fig7a.png'})
+  p.source Edwards and Low, 2017 figure 7a
+  .slide
+    .notes: :t
+      We need to be cautious in interpreting these results (as Edwards and Low were).
+    +blur('img.bkg, .source', '5px')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p categorical vs non-categorical measures
+        .slide
+          p.em-above: :t
+            ‘The test for a significant [...] effect is concerned only with the
+            question of whether a true difference in response times (RTs) exists in the
+            population, regardless of its size. 
+          p: :t
+            ‘One can conclude from this effect only that some classification of the
+            [actions] has happened, but [...] whether it was more [or less] accurate than in
+            the direct task remain unknown.
+          p: :t
+            To make the claim that the RTs are evidence for good [or bad] unconscious
+            classification, [we] would have needed to show that the RTs can
+            be used to [predict the actions].’
+          //- p: :t
+          //-   Only then
+          //-   would it be possible to compare the accuracy of this indirect classification
+          //-   with that in the direct task.’
+          p.right.grey-text Franz and von Luxburg, 2015 p. 1646
+
+//- 
+  +slide
+    +img_clip('maymon_2017_fig4b.png')
+    p.source Maymon et al (pilot), figure 4B, used with permission
+    .notes: :t
+      Here you can see how participants moved in the false belief location condition.
+      There was also a true belief condition.
+    .notes: :t
+      As you can see, participants mostly started off in the right direction.
+      This is the swerve.
+    .notes: :t
+      But there is quite a bit of switching, and a number of 
+    .notes: :t
+      The swerve is correlated with the protagonists’ belief state: 
+      which direction they swerve in differs between true and false beliefs.
+      The direction of swerve is also correlated with proactive gaze
+
+
+
 
 +slide
   p.center
@@ -250,17 +320,6 @@ section.slide
     
 
 
-+slide_middle
-  .notes: :t
-    A note on the method again ...
-  .hem-around-children
-    p.center  1. a dual-process theory
-    p.center  motivates conjectures about
-    p.center  2. a minimal model of minds and actions
-    p.center  which entails
-    p.center  3. signature limits
-    p.center  that generate predictions.
-
 //- ok but needs to be consistent with what was said in previous unit
   +slide_middle
     .notes To conclude the discussion of limits,
@@ -292,28 +351,28 @@ section.slide
   +slide({bkg:'car_butler_identity/Slide20.jpg'})
   +slide({bkg:'car_butler_identity/Slide21.jpg'})
 
-+slide
-  .notes: :t
-    A wish : an identity version of this van der Wel et al task which uses a paradigm optimal for
-    distinguishing automatic and non-automatic processes ...
-  +img('van_der_wel_2014_fig1_phase1.png', "margin-left:auto;margin-right:auto;display:block;")
-  +img('van_der_wel_2014_fig1_phase2.png', "margin-left:auto;margin-right:auto;display:block;")
-  +img('van_der_wel_2014_fig1_phase3_TF.png', "margin-left:auto;margin-right:auto;display:block;")
-  +img('van_der_wel_2014_fig1_phase4.png', "margin-left:auto;margin-right:auto;display:block;")
-  p.source van der Wel et al (2014, figure 1)
-  .notes: :t()
-    Prediction: when the process is automatic, the difference in curve will vanish 
-    when the task concerns a mistake about identity rather than location. 
-  .notes: :t()
-    To make the task about identity, let the cube (say) transform into a
-    third shape, a diamond (say).  Then let the cylinder transform into a cube
-    and, let the diamond transform into a cylinder.
-    Let this happen when the protagonist is present (id-TB) or absent (id-FB).
-    This should not affect tracking the objects,
-    but it should affect tracking the protagonists' beliefs about the objects.
-    (Good controls are possible because can show the effect still 
-    occurs in location-FB vs location-TB with the transformations
-    (i.e. location-FB+id-TB vs location-TB+id-TB.))
+//- +slide
+//-   .notes: :t
+//-     A wish : an identity version of this van der Wel et al task which uses a paradigm optimal for
+//-     distinguishing automatic and non-automatic processes ...
+//-   +img('van_der_wel_2014_fig1_phase1.png', "margin-left:auto;margin-right:auto;display:block;")
+//-   +img('van_der_wel_2014_fig1_phase2.png', "margin-left:auto;margin-right:auto;display:block;")
+//-   +img('van_der_wel_2014_fig1_phase3_TF.png', "margin-left:auto;margin-right:auto;display:block;")
+//-   +img('van_der_wel_2014_fig1_phase4.png', "margin-left:auto;margin-right:auto;display:block;")
+//-   p.source van der Wel et al (2014, figure 1)
+//-   .notes: :t()
+//-     Prediction: when the process is automatic, the difference in curve will vanish 
+//-     when the task concerns a mistake about identity rather than location. 
+//-   .notes: :t()
+//-     To make the task about identity, let the cube (say) transform into a
+//-     third shape, a diamond (say).  Then let the cylinder transform into a cube
+//-     and, let the diamond transform into a cylinder.
+//-     Let this happen when the protagonist is present (id-TB) or absent (id-FB).
+//-     This should not affect tracking the objects,
+//-     but it should affect tracking the protagonists' beliefs about the objects.
+//-     (Good controls are possible because can show the effect still 
+//-     occurs in location-FB vs location-TB with the transformations
+//-     (i.e. location-FB+id-TB vs location-TB+id-TB.))
 
 +slide_middle
   .notes We've just seen evidence for the second claim, as promised.

@@ -45,8 +45,6 @@ Introduce a unit on decision theory, RPT, instrumental rationality and dual-proc
 
 TODO
 ====
-  update causal perception, eliminate development
-  update mindreading [see conf Edinburgh]
   Should we be instrumentally rational? (implications of dual process theories of (i) motivational states, and (ii) processes underpinning ethical judgements)
   mindreading and motor representation (use ICPS, talk about Edwards & Low 2018 onwards)
 
@@ -56,14 +54,14 @@ PLAN
 02 what are metacognitive feelings? (Docic vs me) [44]
 03 perceiving feelings? [move sharing smiles to interaction] [83]
 
-04 perceiving causal interactions? 
+04 perceiving causal interactions? [148]
 05 What is the mark of agency? [tuebingen questions, motor determines goal-directedness [no interface]] [78]
 06 decision theory and processes [218]
 
    [MINDREADING DAY]
-07 three questions about mindreading (make into two, cut development) [147]
-08 a dual process theory [130]
-09 the method of signature limits [included in 08]
+07 three questions about mindreading [103]
+08 a dual process theory [43]
+09 the method of signature limits [93]
 
 10 speech and motor / the double life of motor representation [puzzles]
 11 motor theory goal tracking

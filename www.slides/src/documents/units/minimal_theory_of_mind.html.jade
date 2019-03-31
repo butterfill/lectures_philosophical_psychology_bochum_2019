@@ -11,34 +11,60 @@ description: """
 
 include ../../../fragments/unit_mixins
 
+  
++slide_middle
+  p.em-above.center 
+    span.hide Which 
+    span.model model
+    span.hide s of minds and actions underpin which mental state tracking processes?
+
+
++slide({bkg:'minimal/Slide01.jpg'})
++slide({bkg:'minimal/Slide02.jpg'})
++slide({bkg:'minimal/Slide03.jpg'})
++slide({bkg:'minimal/Slide19.jpg'})
 
 
 +slide_middle
-  .q1.hide
-    p.huge-glow Q1
-    p(style='margin-top:-4em;'): :t
-      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
-      limits, to track others’ perceptions, knowledge, beliefs and other mental states?
-      
-  .q2.hide
-    p.huge-glow: span.hide Q2
-    p(style='margin-top:-4em;')
-      span.hide Why do infants manifest abilities to 
-      span.track-beliefs track beliefs
-      span.hide  in some cases but not all?
-    
-  .q3
-    p.huge-glow Q3
-    p(style='margin-top:-4em;')
-      span.a Why is belief-tracking in adults sometimes but not always automatic?
-      span.b How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
-  +blur('.q3 .a')
-  
-  
-+slide_middle
-  p.em-above.center Which model of minds and actions characterises automatic mindreading?
+  p.hide.step2(style="margin-bottom:-3em;padding-left:200px") the
+  p.center.huge-glow-120 dogma
+  p.hide.step2(style="padding-left:450px;margin-top:-3.33em") of mindreading
+  +show('.step2',5000)
+  .notes: :t
+    To make progress in understanding how minds might be intelligible to chimpanzees,
+    we need to reject a dogma.
+    The dogma is that there is one model of the mental and mindreading
+    involves the use of that model.
+    Or, more carefully (to accommodate Wellman et al), the dogma is that
+    there is either just one model or else a family of models where 
+    one of the models, the best and most sophisticated model,
+    contains all of the states that are contained in 
+    any of the models.
+  .notes: :t
+    [Is this way of putting is clearer? :
+    the mental states included in each model
+    are a subset of the mental states included in the best, most 
+    sophisticated model.
+    (The idea is that there is a model containing all the states in
+    the union of the sets of states contained in each model.)
+    ]
+  .notes: :t
+    Lots of researchers’ views and arguments depend on this dogma.
+    But I think you can see that the dogma is not something we should take
+    for granted by drawing a parallel between mindreading and 
+    physical cognition.
 
-+slide({bkg:'model_of_the_mental.jpg'})
+
+
++slide_middle
+  p.em-above.center 
+    span.hide Which 
+    span.model model 
+    span.hide s of minds and actions underpin which mental state tracking processes?
+  .slide
+    +show('span:not(.model)')
+
+
 
 +slide({bkg:'unit_441/slide_cambridge_model_031.jpg'})
   .handout An agent’s \emph{field} is a set of objects related to the agent by proximity, orientation and other factors.
