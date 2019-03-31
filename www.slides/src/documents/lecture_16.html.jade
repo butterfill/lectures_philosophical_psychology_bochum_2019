@@ -19,9 +19,75 @@ include ../../fragments/unit_mixins
 +title_slide({document:document, images:images})
 
 //- define instrumental rationality
++slide_middle
+  p What is rationality?
+  p.em-above.indent preferences
+  .notes: :t
+    Your preferences impose a ranking on outcomes.
+    (Ignore cardinal preference functions for now.)
+  .slide
+    p.hem-above.indent To exhibit instrumental rationality is to select those actions which you expect to best satisfy your preferences.
+    .notes.handout: :t
+      To exhibit \emph{instrumental rationality} is to select those actions which you expect to best satisfy your preferences.
+      (See \citet[p.~4]{osborne:1994_game} for a concise and simple formal presentation.)
+
++insert_unit({unit:'decision_theory_intro', title_slide:false, images:images, handout:true})
+
+
++slide_middle
+  .notes: :t
+    A different interpretation of decision theory (normative).
+  p.notes.handout.show: :t
+    ‘the laws of decision theory (or any other theory of rationality) are not empirical generalisations 
+    about all agents. What they do is define what is meant ... by being rational’
+  .notes.handout.ctd \citep[p.~43]{Davidson:1987wc}
+  p.right.grey-text: :t
+    Davidson, 1987 p. 43
+
++slide_middle
+  .notes: :t
+    This is important for the RPT interpretation, finding structure or patterns in behaviour.
+    It also nicely explains what, if any, normative force the theory could have.
+  p.notes.handout.show: :t
+    ‘As ordinarily understood, the prescription to maximize your expected utility
+    presupposes that there is some measure of expected utility that applies to you
+    and that your preferences are therefore obliged to maximize. 
+  p.slide.notes.handout.ctd.show: :t
+    But in the context
+    of decision  theory, the utility and probability functions that apply to you are constructed
+    out of your preferences, and so your expected utility is not an independent
+    measure that your preferences can be obliged to maximize; 
+  p.slide.notes.handout.ctd.show: :t
+    rather, your
+    expected utility is whatever your preferences do maximize, if they obey the
+    axioms. 
+  p.slide.notes.handout.ctd.show: :t
+    Hence, the injunction to maximize your expected utility can at most
+    mean that you should have preferences that can be represented as maximizing
+    some measure (or measures) of expected utility, which will then apply to you by
+    virtue of being maximized by your preferences’ 
+  .notes.handout.ctd \citep[p.~149]{Velleman:2000fq}
+  p.right.grey-text: :t
+    Velleman, 2000 p. 149
+
+
+
 //- include normative construal of decision theory (Velleman quote)
 //- two kinds of motivational state
 //- maybe nonaccidental harmony is an ultimate end goal, but only ever imprefectly reached
+
++insert_unit({unit:'motivational_states', title_slide:false, images:images, handout:true})
+
+
++slide_middle
+  .notes: :t
+    Recall Davidson ...
+  p.notes.handout.show: :t
+    ‘the laws of decision theory (or any other theory of rationality) are not empirical generalisations 
+    about all agents. What they do is define what is meant ... by being rational’
+  .notes.handout.ctd \citep[p.~43]{Davidson:1987wc}
+  p.right.grey-text: :t
+    Davidson, 1987 p. 43
 
 
 +slide_rh_white
@@ -31,3 +97,40 @@ include ../../fragments/unit_mixins
     p Prioritise one kind of motivational state over all others.
   +right_half
     p Assume that despite multiple kinds of motivational state at the level of representations and algorithms, the system as a whole will satisfy the axioms governing preferences (e.g. transitivity).
+
+
++slide_middle
+  .notes: :t
+    Also recall Velleman ...
+  p.notes.show: :t
+    ‘As ordinarily understood, the prescription to maximize your expected utility
+    presupposes that there is some measure of expected utility that applies to you
+    and that your preferences are therefore obliged to maximize. 
+  p.notes.ctd.show: :t
+    But in the context
+    of decision  theory, the utility and probability functions that apply to you are constructed
+    out of your preferences, and so your expected utility is not an independent
+    measure that your preferences can be obliged to maximize; 
+  p.notes.ctd.show: :t
+    rather, your
+    expected utility is whatever your preferences do maximize, if they obey the
+    axioms. 
+  p.notes.ctd.show: :t
+    Hence, the injunction to maximize your expected utility can at most
+    mean that you should have preferences that can be represented as maximizing
+    some measure (or measures) of expected utility, which will then apply to you by
+    virtue of being maximized by your preferences’ 
+  .notes.ctd \citep[p.~149]{Velleman:2000fq}
+  p.right.grey-text: :t
+    Velleman, 2000 p. 149
+
+
+
++slide_rh_white
+  +run_across
+    p.center dilemma
+  +left_half
+    p Prioritise one kind of motivational state over all others.
+  +right_half
+    p Assume that despite multiple kinds of motivational state at the level of representations and algorithms, the system as a whole will satisfy the axioms governing preferences (e.g. transitivity).
+

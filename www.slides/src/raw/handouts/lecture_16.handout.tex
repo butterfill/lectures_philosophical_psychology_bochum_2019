@@ -1,0 +1,186 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass[12pt]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Philosophical Psychology}
+
+\def \isubtitle {Lecture 16}
+
+\def \iauthor {Stephen A. Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk}
+\date{}
+
+%for strikethrough
+\usepackage[normalem]{ulem}
+
+\input{$HOME/latex_imports/preamble_steve_handout}
+
+%\bibpunct{}{}{,}{s}{}{,}  %use superscript TICS style bib
+%remove hanging indent for TICS style bib
+%TODO doesnt work
+\setlength{\bibhang}{0em}
+%\setlength{\bibsep}{0.5em}
+
+
+%itemize bullet should be dash
+\renewcommand{\labelitemi}{$-$}
+
+\begin{document}
+
+\begin{multicols*}{3}
+
+\setlength\footnotesep{1em}
+
+
+\bibliographystyle{newapa} %apalike
+
+%\maketitle
+%\tableofcontents
+
+
+
+
+%---------------
+%--- start paste
+
+
+
+      
+\def \ititle {16: Should You Be Instrumentally Rational?}
+ 
+\begin{center}
+ 
+{\Large
+ 
+\textbf{\ititle}
+ 
+}
+ 
+ 
+ 
+\iemail %
+ 
+\end{center}
+ 
+To exhibit \emph{instrumental rationality} is to select those actions which you expect to best satisfy your preferences \citep[textbook:][]{Jeffrey:1983oe}.
+ 
+ 
+‘the laws of decision theory (or any other theory of rationality) are not empirical generalisations 
+about all agents. What they do is define what is meant ... by being rational’
+\citep[p.~43]{Davidson:1987wc}
+
+‘the revealed preference revolution of the 1930s (Samuelson, 1938)
+  ... replaced the supposition that people are attempting to
+  optimize any externally given criterion (e.g., some psychologically 
+  interpretable motion of utility, perhaps to be quantified in units of pleasure and
+  pain). 
+  Rather, if economic agents are typically assumed to be subject to
+  relatively mild consistency conditions (e.g., such as transitivity ...), 
+  it can be
+  shown that there will exist a set of probabilities and utilities such that each
+  agent’s choices will be just “as if” that agent were maximizing expected
+  utility’
+  \citep{chater:2014_cognitive}.
+ 
+What being instrumentally rational require?
+‘As ordinarily understood, the prescription to maximize your expected utility
+presupposes that there is some measure of expected utility that applies to you
+and that your preferences are therefore obliged to maximize.
+But in the context
+of decision  theory, the utility and probability functions that apply to you are constructed
+out of your preferences, and so your expected utility is not an independent
+measure that your preferences can be obliged to maximize;
+rather, your
+expected utility is whatever your preferences do maximize, if they obey the
+axioms.
+Hence, the injunction to maximize your expected utility can at most
+mean that you should have preferences that can be represented as maximizing
+some measure (or measures) of expected utility, which will then apply to you by
+virtue of being maximized by your preferences’
+\citep[p.~149]{Velleman:2000fq}
+ 
+ 
+ 
+\section{Motivational States}
+ 
+‘The pattern of results accords [...] with a role for an incentive learning
+process in the reinforcer devaluation effect;
+not only must consumption of
+the reinforcer be paired with toxicosis,
+the animals must also have an
+opportunity to contact the reinforcer after aversion conditioning if there is
+to be a change in instrumental performance’
+\citep[p.~293]{balleine:1991_instrumental}
+
+ 
+‘The pattern of results accords [...] with a role for an incentive learning
+process in the reinforcer devaluation effect;
+not only must consumption of
+the reinforcer be paired with toxicosis,
+the animals must also have an
+opportunity to contact the reinforcer after aversion conditioning if there is
+to be a change in instrumental performance’
+\citep[p.~293]{balleine:1991_instrumental}
+ 
+‘we should search in vain among the literature for a consensus about the
+psychological processes by which primary motivational states, 
+such as hunger and thirst, regulate simple goal-directed [i.e. instrumental] acts’
+\citep[p.~1]{dickinson:1994_motivational}
+ 
+\subsection{Complication: Discrepant Actions}
+‘The dissociation between lever pressing and magazine entries produced by
+re-exposure is [...] problematic for the incentive learning account.
+To
+recapitulate, this explanation assumes that instrumental performance is
+mediated by some “representation” of the relationship between the instrumental 
+action and reinforcer that also encodes the current incentive value of
+the reinforcer. The represented incentive value can only be changed, however,
+after aversion conditioning by exposure to the reinforcer.
+Given this account,
+the question immediately arises as to why re-exposure is necessary for a change
+in lever pressing but not magazine entries’
+\citep[p.~293]{balleine:1991_instrumental}
+ 
+‘A possible resolution to this discrepancy lies with the differing contingencies controlling lever pressing and magazine entry. There is evidence that simple anticipatory approach to a food source, such as magazine entry, is primarily under the control of Pavlovian as opposed to instrumental contingencies (e.g. Holland, 1979),thus raising the possibility that incentive learning is necessary for instrumental but not Pavlovian reinforcer revaluation effects. There is, in fact, independent evidence that accords with this analysis’ \citep[p.~294]{balleine:1991_instrumental}
+ 
+
+\section{Dilemma}
+
+Horn 1. Prioritise one kind of motivational state over all others. Define instrumental rationality in terms of optimally satisfying motivational states of this kind.
+
+Horn 2. Assume that despite multiple kinds of motivational state at the level of representations and algorithms, the system as a whole will satisfy the axioms governing preferences (e.g. transitivity).
+
+\section{Appendix: Consequences for Mindreading?}
+If we have multiple, somewhat independent systems of motivational states,
+how can we justify using decision theory to charaterise behaviour?
+
+‘once we accept that there are complex and subtle non-intentional processes, such as those mediating
+basic goal-approach and the adjustment to changes in motivational state, that can mimic true
+intentional control in many situations, we can understand why the propensity to perceive actions as
+intentional may have developed. Given that either there is nothing in the stimulus input per se to
+distinguish intentional from non-intentional behaviour or that such a discrimination yields little of
+consequence in most situations, it may well pay the perceiver to treat both classes of behaviour as
+intentional in predicting the subsequent course of events’
+\citep[p.~102]{heyes:1990_intentionality}.
+ 
+    
+
+\vfill
+
+
+
+
+
+
+%--- end paste
+%---------------
+
+\footnotesize
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{multicols*}
+
+\end{document}

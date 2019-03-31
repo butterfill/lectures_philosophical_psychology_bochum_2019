@@ -1,0 +1,264 @@
+---cson
+layout: 'deck_unit'
+title: "Motivational States"
+tags: []
+description: """
+  Your preferences can be incompatible with your aversions
+  (and with primary motivational states).
+  This shows that there is not a single system of preferences in rats or humans.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+
+
++slide_rh_white({step:true})
+  +hide('.left-half', 0)
+  +run_across
+    p.center motivational states
+    .notes When we think about motivational states, the most familiar kind is ...
+  +left_half
+    p.center primary motivational states
+    p.hem-around.step2.hide not directly modifiable by learning
+    ul.hem-around-children.step3.hide
+      li hunger
+      li thirst
+      li lust
+      li disgust
+      li ...
+  +right_half({step:true})
+    .notes: :t
+      ... preference. These states change over time in under the influence of learning (and fashion, ...)
+      I prefer chocolate over rhubarb right now, but might later have the reverse preference.
+    p.center preferences
+    p.hem-around changing, influenced by learning (and fashion, ...)
+    ul.hem-around-children
+      li chocolate over rhubarb
+      li lime over lemon
+      li red over blue
+      li ...
+  .slide
+    +blur('.right-half')
+    +show('.left-half')
+    .notes: :t
+      Another familiar kind of motivational state is what animal learning theorists
+      call ‘primary motivational states’.
+  .slide
+    .notes: :t
+      These do not change over time and are not modifiable by learning,
+      or at least not readily modifiable.
+    +show('.step2')
+  .slide
+    .notes: :t
+      They inlcude hunger, thirst, lust and disgust.
+    +show('.step3')
+
++slide_middle
+  p.q1 Can your primary motivational states diverge from your preferences?
+  //- .slide
+  //-   p.em-above.q1-ex For example, can sugar solution rank highly among your preferences even after you have become averse to it?
+
++slide
+  img.lever.hide(src='img/rat.png', style='filter:invert(1); mix-blend-mode:multiply')
+  p &nbsp;
+  img.sick.hide(src='img/rat_sick.png', style='filter:invert(1); mix-blend-mode:multiply')
+  +reset
+    img.fig.standard-procedure.hide(src='img/dickinson_1985_fig3.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; clip:rect(0,210px,999px,0); mix-blend-mode:difference')
+  +reset
+    img.fig.no-exposure-procedure.hide(src='img/balleine_1991_fig1b.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; mix-blend-mode:difference')
+  +reset
+    img.fig.magazine-entries.hide(src='img/balleine_1991_fig1a.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; mix-blend-mode:difference;margin-left:400px')
+
+  .notes: :t
+    You see a rat and a lever.
+    The rat presses the lever occasionally.
+    Now you start rewarding the rat:
+    when it presses the lever it is rewarded with a particular kind of food.
+    As a consequence, the rat presses the lever more often.
+  +reset
+    .procedure(style='margin-left:300px;')
+      p.hem-around Devaluation - standard procedure:
+      .slide
+        +show('img.lever')
+        p.hem-around Training: Rat is put in chamber with Lever; pressing Lever dispenses sucrose (novel food).
+      .slide 
+        +show('img.sick')
+        p.hem-around Devaluation: Rat is taken into another chamber, poisoned, 
+          span.exposed and then exposed to sucrose
+          span .
+      .slide 
+        p.hem-around Extinction Test: Rat returns to chamber with Lever; pressing Lever does nothing.
+  p.source Dickinson, 1985 figure 3;  Balleine & Dickinson, 1991 figure 1 (part)
+  .slide
+    +style('img.lever, img.sick', {filter:'invert(1) blur(2px)'})
+    +show('img.fig.standard-procedure')
+    .notes: :t
+      ‘Mean lever-press rates during the extinction (left-handpanel) and reacquisitiontests(right-handpanel) followingthe devaluation of either the contingent (group D-N) or non-contingentfood (group N-D).’
+  .slide
+    +hide('.procedure')
+    +clip('img', 'rect(0,365px,999px,0)')
+  .slide
+    +clip('img', 'auto')
+  .slide
+    +hide('img.fig.standard-procedure')
+    +show('.procedure')
+  .slide
+    +invert('.exposed')
+  .slide
+    +uninvert('.exposed')
+    +line-through('.exposed')
+  .slide
+    +fade('img.lever, img.sick')
+    +blur('.procedure')
+    +show('.fig.no-exposure-procedure')
+    .notes: :t
+      ‘Experiment I: Mean number of lever presses ... during the extinction test session 
+      ...
+      The various groups received either immediate (Groups IMM/SUC and IMM/ H20) or delayed (Groups DELjSUC and DEL/H2O) 
+      toxicosis [delayed did not cause aversion] and were re-exposed either to the sucrose solution (Groups IMM/SUC and DEL/SUC) 
+      or to water (Groups IMM/H2O and DEL/H20).’
+  .slide
+    +hide('.procedure, .lever, .sick')
+    +show('.magazine-entries')
+    .notes Pavlovain conditioning, primary motivational states can have a direct effect on actions.
+
+//- +slide
+//-   .notes: :t
+//-     ‘Mean lever-press rates during the extinction (left-handpanel) and reacquisitiontests(right-handpanel) followingthe devaluation of either the contingent (group D-N) or non-contingentfood (group N-D).’
+//-   img(src='img/dickinson_1985_fig3.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; clip:rect(0,210px,999px,0)')
+//-   p.source Dickinson, 1985 figure 3
+//-   .slide
+//-     +clip('img', 'rect(0,365px,999px,0)')
+//-   .slide
+//-     +clip('img', 'auto')
+
+
+
+
+//- +slide_middle
+//-   .notes: :t
+//-     Now consider a question.
+//-   .background
+//-     p.hem-above 
+//-       span.step2.hide What causes 
+//-       span devaluation
+//-       span.step2.hide ?
+//-       .notes: :t
+//-         Devaluation is defined as a reversal in \emph{preference}.
+//-   .slide
+//-     +show('.step2')
+//-   .slide
+//-     .background
+//-       p.hem-above In the standard procedure, the subjects are 
+//-         span.poisoned poisoned
+//-         span  then re-exposed to the food.
+//-   .slide
+//-     +invert('.poisoned')
+//-     .notes: :t
+//-       Poisoning changes primary motivational state. Does it also change preferences?
+//-   .slide
+//-     +blur('.background')
+//-     p.hem-above.q2 Q2: What happens if we poison the subjects but do not re-expose them to the food?
+//-     .notes: :t
+//-       Is just poisoning enough?
+//-   .slide
+//-     p.hem-above Hypothesis 1: Poisoning does directly influence preferences 
+//-   .slide
+//-     p.indent.prediction1 Prediction: 
+//-       span  lever-pressing should reduce (as in the standard procedure)
+//-   .slide
+//-     p.hem-above Hypothesis 2: Poisoning does not directly influence preferences 
+//-   .slide
+//-     p.indent.prediction2 Prediction: 
+//-       span  lever-pressing should not reduce (unlike in the standard procedure)
+//-   .slide
+//-     +highlight-row('.prediction2', 'limegreen')
+//- +slide
+//-   +img_clip('balleine_1991_fig1.png', 'rect(0px, 460px, 999px, 230px)')
+//-   +style('img', {filter:'invert(1)'})
+//-   p.source Balleine & Dickinson, 1991 figure 1 (part)
+//-   .notes: :t
+//-     ‘Experiment I: Mean number of lever presses ... during the extinction test session 
+//-     ...
+//-     The various groups received either immediate (Groups IMM/SUC and IMM/ H20) or delayed (Groups DELjSUC and DEL/H2O) 
+//-     toxicosis [delayed did not cause aversion] and were re-exposed either to the sucrose solution (Groups IMM/SUC and DEL/SUC) 
+//-     or to water (Groups IMM/H2O and DEL/H20).’
+//-   .slide
+//-     +clip('img', 'rect(0px,999px,999px,230px')
+//-     .notes: :t
+//-       ‘lever presses during the re-acquisition session in 5-min blocks (right-hand panel)’
+//-       re-acquisition : i.e. you now have exposure to the sucrose solution
+
+
++slide_middle
+  p Aversion does not directly influence preferences.
+  .slide
+    p.notes.handout.show.step3.hide: :t
+      ‘The pattern of results accords [...] with a role for an incentive learning
+      process in the reinforcer devaluation effect; 
+    p.hem-above.notes.handout.show.ctd: :t
+      not only must consumption of
+      the reinforcer be paired with toxicosis, 
+    .slide
+      p.hem-above.notes.handout.show.ctd: :t
+        the animals must also have an
+        opportunity to contact the reinforcer after aversion conditioning if there is
+        to be a change in instrumental performance’
+    .notes.handout.ctd \citep[p.~293]{balleine:1991_instrumental}
+    p.right.grey-text: :t
+      Balleine & Dickinson, 1991 p. 293
+    .slide
+      +show('.step3')
+      .notes: :t
+        [To introduce the term ‘incentive learning’]
+
+
+
++slide_middle
+  .notes A moment ago I asked, What happens if we poison the subjects but do not re-expose them to the food?
+  p.q1.hem-around Can your primary motivational states dissociate from your preferences?
+  //- .prev
+  //-   p.em-above.q1-ex For example, can sugar solution rank highly among your preferences even after you have become averse to it?
+  //-   p.em-above
+  //-     span.step2 What causes 
+  //-     span devaluation
+  //-     span.step2 ?
+  //-   p.hem-above In the standard procedure, the subjects are 
+  //-     span.poisoned poisoned
+  //-     span  then exposed to the food.
+  //- +blur('.prev', '2px', 0)
+  //- p.hem-around.q2 Q2: What happens if we poison the subjects but do not re-expose them to the food?
+  //- .slide
+  //-   +highlight-row('.q2')
+  //- .slide
+  //-   +unhighlight-row('.q2')
+  //-   +highlight-row('.q1')
+
+
+
+
++slide_rh_white
+  .notes: :t
+    The two kinds of motivational states can dissociate
+  +run_across
+    p.center motivational states
+  +left_half
+    p.center primary motivational states
+    p.hem-around.step2 not directly modifiable by learning
+    ul.hem-around-children.step3
+      li hunger
+      li thirst
+      li satiety
+      li disgust
+      li ...
+  +right_half
+    p.center preferences
+    p.hem-around changing, influenced by learning (and fashion, ...)
+    ul.hem-around-children
+      li chocolate over rhubarb
+      li lime over lemon
+      li red over blue
+      li ...
+

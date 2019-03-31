@@ -1,0 +1,151 @@
+---cson
+layout: 'deck_unit'
+title: "An Interface Problem: Preferences"
+tags: []
+description: """
+  ***
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/philosophical_behavioural_science_mixins
+
+//- +motivationalStates
+
++slide_middle
+  p An interface problem ...
+  p.em-above.notes.handout.show
+    span ‘we should search in vain among the literature for a consensus about the 
+    span psychological processes by which 
+    span.noblur primary motivational states
+    span ,  
+    span such as hunger and thirst, 
+    span.noblur regulate simple goal-directed [i.e. instrumental] acts
+    span ’ 
+  .notes.handout.ctd \citep[p.~1]{dickinson:1994_motivational}
+  p.right.grey-text: :t
+    Dickinson & Balleine , 1994 p. 1
+  .slide
+    +blur('span:not(.noblur)')
+    .notes: :t
+      This is a very basic question.
+      Why do you go to the kitchen and press the lever to get some water
+      when you are thirsty?
+
+
+//- +slide({bkg:'DSC_AA_4025.JPG', blend:'overlay'})
+//-   +hide('img.bkg', 0)
+//-   +reset-escape-inner
+//-     +_slide_rh_white_inner
++slide_rh_white
+  +run_across
+    p.center An Interface Problem
+      span.q.hide :
+    p.center.q.hide How are non-accidental 
+      span.match matche
+      span s possible?
+  +left_half
+    .hem-around-children.notes.handout.show
+      p.slide Primary motivational states guide some actions.
+      p.slide Preferences guide some actions.
+      p.slide Pursuing a single goal can involve both kinds of state.
+        .notes: :t
+          As in the case of lever pressing then magazine entry to get the sugar solution.
+          (Not demonstrated in this talk.)
+      p.slide Primary motivational states can differ from preferences.
+    
+  +right_half
+    p.notes.handout.show.hem-around.match-df.hide: :t
+      Two motivational states match 
+      in a particular context
+      just if, in that context,
+      the actions one would cause and the actions the other would cause
+      are not too different.
+  .slide
+    +show('.q')
+  .slide
+    +highlight('.match')
+  .slide
+    +show('.match-df')
+  .slide
+    +unhighlight('.match')
+  //- .slide
+  //-   +show('img.bkg', 2000)
+  //-   +hide('p, .right-half', 2000)
+
++slide({bkg:'DSC_AA_4025.JPG', blend:'overlay'})
+  .notes: :t
+    ... an interface problem where there are two sets of preferences.
+    Here there’s conversation to sort them out
+    (although that doesn’t work so well)
+//- +motivationalStates
+
+
++slide_middle
+  p Experience is key 
+    span.step2.hide  ...
+  .step2.hide
+    p.notes.handout.show.em-above
+      span ‘primary motivational states, such as hunger, do not determine the value of an 
+      span instrumental goal directly; 
+  .slide
+    +show('.step2')
+  .slide
+    p.notes.handout.show.ctd.hem-above
+      span rather, animals have to learn about the value of a 
+      span commodity in a particular motivational state through direct 
+      span.experience experience 
+      span  with it in that state’
+  .notes.handout.ctd \citep[p.~7]{dickinson:1994_motivational}
+  .notes.handout: :t
+      ‘primary motivational states have no direct impact on the current value that an
+      agent assigns to a past outcome of an instrumental action; rather, it appears
+      that agents have to learn about the value of an outcome through direct experience with 
+      it, a process that we refer to as \emph{incentive learning}’
+  .notes.handout.ctd \citep[p.~8]{dickinson:1994_motivational}
+  p.right.grey-text.step2.hide: :t
+    Dickinson & Balleine , 1994 p. 7
+  .slide
+    +invert('.experience')
+    .notes: :t
+      A role for experience in solving the interface problem.
+
+
++slide({bkg:'experience_dickinson_fig/slide1.jpg'})
++slide({bkg:'experience_dickinson_fig/slide2.jpg'})
++slide({bkg:'experience_dickinson_fig/slide3.jpg'})
++slide({bkg:'experience_dickinson_fig/slide4.jpg'})
+
+
++slide_middle
+  .hem-around-children
+    p Why are rats (and you) aware of bodily states such as hunger and revulsion?
+    p.slide Because this awareness enables your preferences to be coupled, 
+      br
+      span but only losely,
+      br
+      span to your primary motivational states.
+
+
++slide_middle
+  p
+    span Isn’t it  
+    span.redunant.noblur redunant
+    span   to have dissociable kinds of motivational state?
+  .slide
+    p.notes.handout.show.em-above: span: :t
+      ‘the motivational control over goal-directed actions is, at least in part,
+      indirect and mediated by learning about one's own reactions to primary
+      incentives. 
+    p.notes.handout.ctd.show.hem-above
+      span By this process [...], goal-directed actions are 
+      span liberated from 
+      span.tyranny.noblur the tyranny of primary motivation
+      span ’
+    .notes.handout.ctd \citep[p.~16]{dickinson:1994_motivational}
+    p.right.grey-text: :t
+      Dickinson & Balleine , 1994 p. 16
+    .slide
+      +blur('span:not(.noblur)')
+
+
