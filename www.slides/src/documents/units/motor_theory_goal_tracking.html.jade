@@ -3,7 +3,7 @@ layout: 'deck_unit'
 title: "The Motor Theory of Goal Tracking"
 tags: []
 description: """
-  How do infants (and adults) track the goals of others’ actions?
+  How do humans track the goals of others’ actions?
   According to the Motor Theory of Goal Tracking, it is sometimes* by 
   means of motor processes.
   More carefully, the Motor Theory of Goal Tracking consists of these claims: 
@@ -56,6 +56,34 @@ include ../../../fragments/joint_action_mixins
       independently of the manipulated action experience.’
 
   
+      
++slide_middle({bkg:'teleological_stance_diy.jpeg'})
+  +hide('img.bkg',0)
+  p.center The Simple View
+  .slide
+    p.em-above.notes.show: :t
+      The principles comprising the Teleological Stance are things we know or believe, and we are
+      able to track goals by making inferences from these principles and our beliefs about the
+      means someone is pursuing.
+    .notes: :t
+      Infants and adults engaged in goal-tracking reason about 
+      to which outcome a means is the best available
+      in fundamentally the same way that you or I do when trying to work it out explicitly.
+  .slide
+    +show('img.bkg')
+    .notes  [*TODO: illustrate with picture.]
+    
+  .slide.step2
+    +blur('img.bkg','5px')
+    .notes: :t
+      Although I don’t think they have written about it in quite the terms I use,
+      I take Gergely and Csibra to be endorsing the Simple View.
+    p.em-above.notes.show: :t
+      ‘when taking the teleological stance one-year-olds apply the same
+      inferential principle of rational action that drives everyday mentalistic
+      reasoning about intentional actions in adults’ 
+    p.right.grey-text (Gergely and Csibra 2003; cf. Csibra, Bíró, et al. 2003; Csibra and Gergely 1998: 259)
+  
 
 
 
@@ -83,8 +111,18 @@ include ../../../fragments/joint_action_mixins
     but I won’t mention any of that here.
     
 
+
+
 +slide_middle
-  p.center What are those motor representations doing there?
+  .notes: :t
+    Recall this, it’s time to make good on the answer ...
+  .notes.show
+    p.huge-glow-70 Old Puzzle
+    p.below-huge-glow(style='margin-top:-2em;') What are those motor representations doing here?
+    p.right.em-above Motor representations concerning the goals of observed actions sometimes facilitate the identification of goals.
+    p.center.huge-glow-70 New Question
+    p.center(style='margin-top:-2em;')  How?
+  .notes Question: How is it that motor representations concerning the goals of observed actions sometimes facilitate identification of goals?
 
 
 +slide_middle
@@ -123,8 +161,25 @@ include ../../../fragments/joint_action_mixins
       The same processes can be used when observing an action for tracking goals.
     
 
-+slide
-  +img_clip('sinigaglia_butterfill_2005_fig1.png')
++slide({bkg:'motor_mindreading/slide01.jpg'})
+  .notes: :t
+    Outcomes such as reaching for and grasping of a cup can be represented motorically.
++slide({bkg:'motor_mindreading/slide02.jpg'})
+  .notes: :t
+    As a body of research on mirror neurons and motor simulation more generally demonstrates,
+    motor representations of outcomes can generate expectations concerning another agent’s behaviour
+
++slide({bkg:'motor_mindreading/slide03.jpg'})
+  .notes: :t
+    These expectations are plausibly compared with the behavior that is actually observed.
+
++slide({bkg:'motor_mindreading/slide04.jpg'})
+  .notes: :t
+    And we conjecture that the result of this comparison modulates the strength of the motor representation of the outcome.
+  .notes: :t
+    Within limits, this modulation will ensures that an outcome represented motorically is likely to be a goal of the observed action.
+  .notes: :t
+    In this way, motor representations enable goal tracking.
   p.source Sinigalia & Butterfill 2015, figure 1
   .notes: :t
     Goal-tracking is acting in reverse.
@@ -216,89 +271,4 @@ include ../../../fragments/joint_action_mixins
 
 
 
-section.slide
-  +_slide_middle_inner
-    p.center.huge-glow-180(style="font-family:Lato") How?
-  +reset
-    +_slide_middle_inner
-      p.center.notes.show Infants can track goals from nine months of age (or earlier).
 
-  .notes: :t
-    The Motor Theory of Goal Tracking
-  .notes: :t
-    Relation to Q3: special system, namely the motor system.
-  .notes: :t
-    Relation to Q6 [How do these processes relate to theory of mind abilities (e.g. Simmons et al.,
-    2009)?]:
-    It looks like, in endorsing mTgt, we are postulating a discrepancy between goal-tracking and
-    theory of mind abilities, since theory of mind abilities are perhaps unlikely to depend on motor
-    processes in the way in which goal-tracking does. 
-    However, we should probably be cautious here; in pilot research with Jason Low, we have some
-    preliminary evidence that some theory of mind abilities may be more closely tied to motor processes
-    than anyone has yet imagined.
-
-
-
-+slide_rh_white
-  .teleological
-    +run_across
-      p.center
-        span The ‘Teleological Stance’
-        br
-        span(style='mix-blend-mode:difference') ~ The goals of an action are those outcomes which the means is a best available way of brining about.
-    p.right.invert Csibra & Gergely
-    
-  +left_half
-  +right_half
-    p.center.noinvert Tracking
-    p.hem-around.one 1. This means, m, has been adopted (observation)
-    p.hem-around.two 2. G is an outcome such that: m is a best available
-      span.star *
-      span  way of brining G about
-    p.hem-above 3. ∴ G is a goal of the observed action
-
-  .slide
-    +highlight-row('.two')
-    .notes: :t
-      Important that 
-      mTgt is not an alternative to the Teleological Stance but to it plus the claim about reasoning. 
-    .notes: :t
-      Simple View and mTgt do not differ on the relation between means and goals that is to be 
-      computed in pure goal-tracking.
-      The Simple View and mTgt differ only on what processes is responsible for identifying which outcome or
-      outcomes the observed means is a best available way of achieving.
-
-+slide_middle
-  table.data
-    thead
-      tr
-        td
-        td The Simple View
-        td Motor Theory of Goal-Tracking
-    tbody
-      tr.odd.first
-        td What is the function to be computed?
-        td [Teleological Stance]
-        td [Teleological Stance]
-      tr.even.second.slide
-        td How is this function computed?
-        td.slide By reasoning from knowledge.
-        td.slide By using motor processes ‘in reverse’.
-      tr.odd.third.hide
-        td 
-          span.why-limited Why is goal-tracking limited by action ability?
-        td ???
-        td Because both rely on motor processes.
-      tr
-        td
-        td
-        td
-  .slide
-    +blur('.first,.second')
-    +show('.third')
-  .slide
-    +highlight('.why-limited', 'red')
-    .notes: :t
-      There’s just one small problem. It’s not quite true to say that 
-      infants goal-tracking is limited by action ability.
-      Some of it is, but some of it isn’t ...

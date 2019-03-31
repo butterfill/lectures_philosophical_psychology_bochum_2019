@@ -15,9 +15,30 @@ include ../../fragments/unit_mixins
 
 - var images = get_images('bali')
 
-
-
-
-
 +title_slide({document:document, images:images})
-  
+
+
++slide
+  .notes: :t
+    Recall this experiment ... it indicates that there is an effect
+    of FB on automatic imitation!
+  +img_clip('edwards_2017_fig2a.png')
+  p.source Edwards and Low, 2017 figure 7a
+
++slide({bkg:'edwards_2017_fig4.png'})
+  p.source Edwards and Low, 2017 figure 7a
+
++slide({bkg:'edwards_2017_fig7a.png'})
+  p.source Edwards and Low, 2017 figure 7a
+
++insert_unit({unit:'motor_mindreading', title_slide:false, images:images, handout:true})
+
++conclusion
+  +_slide_inner: div(style='margin-top:-550px')
+    .slide
+      p Is there a role for motor processes in mindreading?
+      p.em-above Conjectures: 
+      p.indent: :t
+        1. Automatic belief-tracking depends on outcomes being represented motorically
+      p.indent: :t
+        2. Automatic belief-tracking can influence motor processes that underpin goal-tracking

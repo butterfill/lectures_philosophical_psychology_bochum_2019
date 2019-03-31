@@ -1,0 +1,99 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Philosophical Psychology}
+
+\def \isubtitle {Lecture 10}
+
+\def \iauthor {Stephen A. Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk}
+\date{}
+
+%for strikethrough
+\usepackage[normalem]{ulem}
+
+\input{$HOME/latex_imports/preamble_steve_handout}
+
+%\bibpunct{}{}{,}{s}{}{,}  %use superscript TICS style bib
+%remove hanging indent for TICS style bib
+%TODO doesnt work
+\setlength{\bibhang}{0em}
+%\setlength{\bibsep}{0.5em}
+
+
+%itemize bullet should be dash
+\renewcommand{\labelitemi}{$-$}
+
+\begin{document}
+
+\begin{multicols*}{3}
+
+\setlength\footnotesep{1em}
+
+
+\bibliographystyle{newapa} %apalike
+
+%\maketitle
+%\tableofcontents
+
+
+
+
+%---------------
+%--- start paste
+
+
+\def \ititle {10: What Are Those Motor Representations Doing There?}
+
+\begin{center}
+
+{\Large
+
+\textbf{\ititle}
+
+}
+
+
+
+\iemail %
+
+\end{center}
+
+
+
+‘word listening produces a phoneme specific activation of speech motor centres’ \citep{Fadiga:2002kl}
+            
+‘Phonemes that require in production a strong activation of tongue muscles, automatically produce, when heard, an activation of the listener's motor centres controlling tongue muscles.’ \citep{Fadiga:2002kl}
+
+\emph{The Double Life of Motor Representation}
+Motor representations concerning a particular type of action are involved not only in performing an action of that type but also sometimes in observing one.   That is, if you were to observe Ayesha reach for, grasp, transport and then place a pen, motor representations would occur in you much like those that would also occur in you if it were you---not Ayesha---who was doing this.  
+
+Evidence for the double life:
+
+1. Single cell recordings in nonhuman primates show that, for each of several types of action, there are populations of neurons that discharge both when an action of this type is performed and when one is observed \citep{pellegrino:1992_understanding, gallese:1996_action,Fogassi:2005nf}.
+
+2. In humans, enhancing motor activation during action observation can produce patterns of muscle activation in the observer similar to those in the agent  \citep{fadiga:1995_motor}.  
+
+3. Behaviourally, observing one action sometimes interferes with the simultaneous performance of a second action in much the way that performing the first action oneself would \citep{kilner:2003_interference}.  
+All of this and more shows that motor representations sometimes occur in action observation \citep[for reviews, see][]{rizzolatti_mirrors_2008,rizzolatti_functional_2010}.
+
+Sometimes motor representations concerning particular observed actions influence thoughts about to which goals those actions are directed \citep{casile:2006_nonvisual,beets:2010_nonvisual}. 
+
+It is not just your long-term expertise but also the occurrence of motor representations in observation that matters for making judgements about goals.
+Evidence: a temporary lesion to a motor area of your brain involved in planning and performing actions will affect your ability to make judgements about goals but not body parts; whereas a temporary lesion to an area involved in higher-order visual processing will have the converse effect \citep[compare][]{urgesi:2007_representation}.  Permanent lesions have similar effects \citep{pazzaglia:2008_sound_}.
+
+
+
+
+%--- end paste
+%---------------
+
+\footnotesize
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{multicols*}
+
+\end{document}
