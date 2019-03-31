@@ -25,7 +25,6 @@ bochum plan
         Before facing this problem directly, I want to think about action more generally ...
 
 
-Must work in Tuebingen seminar with three questions about action (because the questions approach is good)
 
 Seeing causal interactions as a route into metacognitive feelings of surprise?
 
@@ -41,12 +40,10 @@ Experiments:
   - joint action with John
 
 
-Introduce a unit on decision theory, RPT, instrumental rationality and dual-process theory of action? (How would this fit with the three questions idea?) Also models and construals (triggered by puzzle about whether agnostic about processes)?
 
 TODO
 ====
   Should we be instrumentally rational? (implications of dual process theories of (i) motivational states, and (ii) processes underpinning ethical judgements)
-  mindreading and motor representation (use ICPS, talk about Edwards & Low 2018 onwards)
 
 PLAN
 ====
@@ -63,13 +60,14 @@ PLAN
 08 a dual process theory [43]
 09 the method of signature limits [93]
 
-10 speech and motor / the double life of motor representation [puzzles] [49]
+10 speech and motor / the double life of motor representation [puzzles] [49] !too short?*
 11 motor theory goal tracking [93]
-12 Is There a Role for Motor Processes in Mindreading? [24] !!!TODO***
+12 Is There a Role for Motor Processes in Mindreading? [24] !too short?* !!!TODO***
 
-13 twin interface problems
-14 experience of action (own and others)?
-15 sharing a smile
+13 twin interface problems [50] !too short?*
+14 experience of action (own and others)? [20] !too short?*
+15 sharing a smile [19] !too short?*
+16 should you be instrumentally rational? [45]
 
 radical interpretation [problems] / Should we be instrumentally rational?
 interaction as a route to knowledge? [smile/ygimg]
@@ -103,7 +101,7 @@ Notions
   radical interpretation
   metacognitive feeling
 
-Ideas
+
 
 
 NEW
@@ -125,43 +123,4 @@ https://philosophical-issues-in-behavioural-science.butterfill.com/lecture_03.ht
   appeal to Decision Theory.
 
   Solution: construals
-
-
-
----
-
-Aim: get to the two systems/metacognition issues discussed in London
-  http://www.butterfill.com/talk-slides/london_metacognition_2017/#slide-16
-
-This requires (i) the identity limit; (ii) the developmental discrepancy
-
-Mindreading in nonhumans: What is theory of mind anyway?
-Mindreading in humans: automaticity motivates efficiency motivates MtM, leads to prediction about signature limits, which has successfully been tested.
-
-
---- older
-
-phil psych lecture plan
-
-05 metacognition / dual process general
-
-06 mindreading in nonhumans - behaviour reading theory - minimal theory of mind
-
-07 mindreading in humans (Adults) - dual process
-
-08 do humans perceive others’ feelings?
-
-09 joint action
-
----
-
-phil psych lecture 05
-
-Use London metacog talk and Tueb talk
- - go with Tuebingen as far as the CLSTX+ conjecture and then the puzzle that motivates metacognitive feelings; prepare to stop here
- - switch to London talk.
- - [part of the idea is to contrast a minimally dual process view with modularity/core systems]
- - expand 2 systems presentation
-   - motivate by referring back to earlier discussion of modularity and core systems
-   - return explicitly back to Wynn’s mouse
 
