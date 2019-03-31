@@ -13,11 +13,82 @@ hidden: false
 include ../../fragments/lecture_mixins
 include ../../fragments/unit_mixins
 
-- var images = get_images('bees')
+- var images = get_images('bali')
 
 
 
 
 
 +title_slide({document:document, images:images})
-  
+
+
+mixin twoQ()
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-3em;') Donald Davidson asks, ‘What is the mark that distinguishes ... actions?’ Are scientific discoveries relevant to answering this question?
+  .q2
+    p.huge-glow Q2
+    p(style='margin-top:-3em;') What is the mark that distinguishes actions?
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-3em;') How are non-accidental matches between intentions and motor representations possible?
+
++slide_middle
+  +twoQ
+  +hide('.q2, .q3', 0)
+
++insert_unit({unit:'philosophical_methods', title_slide:false, images:images, handout:true})
+
+
+
++slide_middle
+  +twoQ
+  +hide('.q2, .q3', 0)
+  .notes: :t
+    So I was asking whether scientific discoveries are relevant ot answering Davidson’s 
+    question,  ‘What is the mark that distinguishes ... actions?’ 
+  .notes: :t
+    My conclusion is that PHILOSOPHICAL THEORIES ARE NOT LIKELY TO BE RELEVANT to answering
+    the question. 
+    Because philosophical methods are of limited use in making discoveries about the world.
+  .notes: :t
+    Ultimately, the scientific discoveries are our only hope.
+  .slide
+    +blur('.q1')
+    .notes: :t
+      So why would philosophers think about Davidson’s question at all?
+      One thing philosophical methods are ideally suited to is 
+      identifying limits on scientific theories and asking questions.
+      Not knowing things is what philosophers are best at.
+    .notes: :t
+      This brings me to my next question ...
+  .slide
+    +show('.q2')
+
+
+
++insert_unit({unit:'intention_goal', title_slide:false, images:images, handout:true})
++insert_unit({unit:'intro_to_motor_representation', title_slide:false, images:images, handout:true})
+
++insert_unit({unit:'motor_representations_ground_goals', title_slide:false, images:images, handout:true})
+
+
+
+
+
++slide_middle
+  +twoQ
+  +hide('.q3', 0)
+  +blur('.q1', '2px', 0)
+  .slide
+    +unblur('.q1')
+    .notes: :t
+      In conclusion, here are my questions.
+    .notes: :t
+      The answer to the first question is that, ultimately,
+      scientific discoveries are our only hope.
+      And in fully answering the second question,
+      we will have to appeal to both motor representation and a state 
+      that is like intention.
+       
+

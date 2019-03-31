@@ -1,0 +1,127 @@
+---cson
+layout: 'deck_unit'
+title: "Philosophical Methods"
+tags: []
+description: """
+  Philosophical methods include
+  informal observation, 
+  guesswork (‘intuition’), 
+  reasoning, 
+  & theoretical elegance.
+  """
+---
+
+include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
+
+
+
+
+section.slide
+  +_slide_middle_inner
+    p.huge-glow.center(style='line-height:.4em; filter:opacity(.5)') philosophical
+      br
+      span methods
+  +reset
+    +_slide_middle_inner
+      .em-around-children
+        p.center informal observation, 
+        p.center guesswork (‘intuition’), 
+        p.center reasoning, 
+        p.center & theoretical elegance
+  .notes: :t
+    First, think about the methods philosophers use.
+    Am I missing any?
+  .notes: :t
+    Next, think about how philosophers construct theories of action ...
+
+
++slide({bkg:'folk_psychology_roots/Slide1.jpg'})
+  .notes: :t
+    Here’s Ayesha and she’s about to act, which involves some kind of 
+    processes occurring in her imnd.
+    
++slide({bkg:'folk_psychology_roots/Slide2.jpg'})
+  .notes: :t
+    Ben want’s to predict Ayesha’s action, perhaps so he can coordinate his actions
+    around hers. He is therefore having a think about what Ayesha might be up to.
+  .notes: :t
+    Implicit in Ben’s thinking is a model of actions.
+
++slide({bkg:'folk_psychology_roots/Slide3.jpg'})
+  .notes: :t
+    And along comes the philosopher and attempts to guess what is going on in
+    Ben’s mind when he is thinking about Ayesha.
+    The philosopher asks, in effect, What model of actions is implicit in Ben’s thinking?
+  .notes: :t
+    And this, essentially, is the raw material for philosophical theories of actions.
+
+section.slide
+  img.bkg.two(src='/img/folk_psychology_roots/Slide2.jpg')
+  +reset
+    img.bkg.three(src='/img/folk_psychology_roots/Slide3.jpg', style='mix-blend-mode:screen;')
+  +blur('img.three', '5px')
+  +fade('img.three')
+  .notes: :t
+    Focus on Ben for a moment.
+  .slide
+    +_slide_inner
+      .notes: :t
+        What mundane purposes does thinking about actions serve?
+        Prediction and coordination; ethical (assigning responsibility, blame; living together); 
+        normative (he wants himself and others to live it out as much as to describe how things are;
+        there may also be something about ‘understanding’ here).
+        So it’s not all about accuracy; in fact, of these, only prediction and coordination even
+        potentially requires that his model of actions is accurate.
+      .bens-model
+        p Functions of Ben’s model of minds and actions:
+        ul.hem-around-children
+          li.ethical ethical
+          li.normative normative
+          li.predictive predictive
+            .slide
+              +highlight-row('.predictive')
+              +blur('.ethical, .normative')
+              .notes: :t
+                Second, consider Ben’s concern with making predictions.
+            .slide
+              p.indent --- speed vs accuracy
+                .notes: :t
+                  Whenever you are making predictions about anything at all, you face a 
+                  \textbf{trade-off between accuracy and speed}.
+                  Making more accurate predictions requires considering more information and integrating
+                  it in a more complex model of minds and actions.
+                  By contrast, making faster predictions requires narrowing the information you consider
+                  and using a less complex model of minds and actions.
+                  Since Ben often has to make predictions fast enough to actually coordinate his actions
+                  with Ayesha’s, and since making predictions consumes scarce 
+                  cognitive resources, Ben is usually needs to trade accuracy for speed.
+                .notes: :t
+                  So Ben’s model of minds and actions is not built for accuracy.
+    .slide
+      +hide('.bens-model')
+      .notes: :t
+        So this is the model of minds and actions on which many philosophical theories
+        are based ... they are cast as attempts to characterise this model.
+
++slide_middle
+  p Relying on philosophers to characterise actions 
+    br
+    span would be like 
+    br
+    span relying on Aristotelians to characterise physical objects.
+  .notes: :t
+    In the case of physical objects, I suppose few people seriously think 
+    there is much we can understand without appeal to physics.
+  .notes: :t
+    As Newton stressed, contemporary philosophical methods are not well suited to the task.
+    Contemporary philosophical methods are of limited use in making discoveries about the world.
+
+
++slide_middle
+  p Looking ahead ...
+  p.em-above Godfrey-Smith contrasts models with theories,
+    br
+    span and suggests that philosophers are often 
+    br
+    span best seen as constructing models rather than theories.
