@@ -453,6 +453,114 @@ mixin habitualInstrumental(p)
         +highlight-row('.expln')
     block
 
+
+
+mixin habitualOnly(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - theCls = ''
+  if p.step
+    - theCls = 'slide'
+  +slide_rh_white({step:p.step})
+    +left_half
+      p.center: span habitual
+      .hem-around-children
+        p(class=theCls)
+          span.action Action
+          span  occurs in the presence of 
+          span.stimulus Stimulus
+          span .
+        p(class=theCls)
+          span.agent Agent
+          span  is 
+          span.rewarded rewarded
+          span  [/punished]
+        p(class=theCls)
+          span.stimulus-action-link Stimulus-Action Link 
+          span is strengthened [/weakened] due to reward [/punishment]
+        p(class=theCls, style='position:inherit').expln
+          span Given 
+          span.stimulus Stimulus
+          span , will 
+          span.action Action
+          span  occur? It depends on the strength of the 
+          span.stimulus-action-links Stimulus-Action Link
+          span .
+    if p.step
+      .slide
+        +blur('.left-half span:not(.stimulus)')
+        .notes Let’s check we all understand the key terms here.
+      .slide
+        +blur('.left-half span.stimulus')
+        +unblur('.left-half span.action')
+        .notes Action may be a complex, coordinated goal-directed action, such as pressing a lever.
+      .slide
+        +blur('.left-half span.action')
+        +unblur('.left-half span.stimulus-action-link')
+      .slide
+        +unblur('.left-half span')
+
+
+
+mixin instrumentalOnly(p)
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('step' in p)
+    - p.step = false
+  - theCls = ''
+  if p.step
+    - theCls = 'slide'
+  +slide_rh_white({step:p.step})
+    +left_half
+      p.center: span habitual
+      .hem-around-children
+        p
+          span.action Action
+          span  occurs in the presence of 
+          span.stimulus Stimulus
+          span .
+        p
+          span.agent Agent
+          span  is 
+          span.rewarded rewarded
+          span  [/punished]
+        p
+          span.stimulus-action-link Stimulus-Action Link 
+          span is strengthened [/weakened] due to reward [/punishment]
+        p(style='position:inherit').expln
+          span Given 
+          span.stimulus Stimulus
+          span , will 
+          span.action Action
+          span  occur? It depends on the strength of the 
+          span.stimulus-action-links Stimulus-Action Link
+          span .
+    +right_half(p)
+      if p.step
+        +blur('.left-half')
+      p.center instrumental
+      .hem-around-children
+        p(class=theCls) Action leads to Outcome.
+          br
+          span &nbsp;
+        p(class=theCls) Action-Outcome Link is strengthened.
+        p(class=theCls) Agent has strong [/weak] positive [/negative] 
+          span.preference Preference
+          span  for 
+          span.outcome Outcome
+        p(class=theCls).last Will Action occur? It depends on the strength of 
+          span.a-o Action-Outcome Link
+          span  and  Agent’s 
+          span.preference Preference
+          span .
+    if p.step
+      .slide
+        +unblur('.left-half')
+        +highlight-row('.expln')
+    block
+
 mixin habitualInstrumental2(p)
   if typeof(p) === 'undefined'
     - p = {}
@@ -567,10 +675,6 @@ mixin slide_tensions(p)
   +slide_rh_white
     +left_half  
       p The range of applications of Decision Theory shows it is agnostic about processes.
-    +right_half
-      p Assumption of Common Knowledge of Rationality implies it is not agnostic about processes.
-    +left_half  
-      p The range of applications of Decision Theory shows it is agnostic about processes [again].
     +right_half
       p Dickinson’s instrumental process is characterised by appeal to 
         span.dt Decision Theory.

@@ -21,9 +21,6 @@ include ../../../fragments/philosophical_behavioural_science_mixins
   +hide('.q2, .q3', 0)
 
 
-
-
-
 section.slide
   +_slide_middle_inner
     p.huge-glow.center(style='line-height:.4em; filter:opacity(.5)') philosophical
@@ -34,8 +31,9 @@ section.slide
       .em-around-children
         p.center informal observation, 
         p.center guesswork (‘intuition’), 
-        p.center reasoning, 
-        p.center & theoretical elegance
+        p.center imagination (including for ‘thought experiments’),
+        p.center reasoning and argument, 
+        p.center & pursuit of theoretical elegance
   .notes: :t
     First, think about the methods philosophers use.
     Am I missing any?
@@ -105,11 +103,86 @@ section.slide
                   cognitive resources, Ben is usually needs to trade accuracy for speed.
                 .notes: :t
                   So Ben’s model of minds and actions is not built for accuracy.
+
++slide_middle
+  p.center speed vs accuracy
+  .notes: :t
+    Since this is an important point for me, let me repeat:
+    any broadly inferrential process must make a trade-off between
+    speed and accuracy.
+  .slide
+    +img('henmon_1911_table2.png')
+    p.right.grey-text Henmon (1911, table 2)
+  
+  .notes speed vs accuracy:
+  .notes: :t
+    Here you see the results of an old experiment by Henmon
+    who had subjects judge which of two only very slightly different 
+    lines was longer.
+    He noted that ‘under each category of judgment the wrong judgments 
+    are in general shorter’.
+  .slide
+    +blur('img', '3px')
+    +reset
+      p.center(style='margin-top:200px;'): :t
+        ‘the wrong judgments 
+        are in general shorter’
+    .notes: :t
+      This experiment doesn’t provide evidence for a speed-accuracy
+      trade off and wasn’t designed to (speed was not experimentally manipulated).
+      But it’s interesting that the idea of a speed-accuracy trade-off 
+      goes back such a long way.
+    .notes: :t
+      Henmon p. 195: ‘A continuation of this investigation (1) where the time of 
+      exposure of stimuli was limited, (2) where the time of judgment was voluntarily 
+      shortened or prolonged, (3) and with
+      varying differences in stimuli, should give significant results.
+      footnote: The writer had planned such an investigation, but a change of work 
+      has necessitated its indefinite postponement; hence the publication of these 
+      preliminary results.’
+    .notes: :t
+      \textbf{The value of having two systems which process inputs from a single
+      domain arises from this trade-off.}  Having multiple systems enables 
+      complementary trade-offs to be made.
+      So it is not obvious that there could not be 
+      two systems both of which can predict the trajectories of moving objects.
+    
+
+section.slide
+  img.bkg.two(src='/img/folk_psychology_roots/Slide2.jpg')
+  +reset
+    img.bkg.three(src='/img/folk_psychology_roots/Slide3.jpg', style='mix-blend-mode:screen;')
+  +blur('img.three', '5px')
+  +fade('img.three')
+  .notes: :t
+    Focus on Ben for a moment.
+  .noslide
+    +_slide_inner
+      .notes: :t
+        What mundane purposes does thinking about actions serve?
+        Prediction and coordination; ethical (assigning responsibility, blame; living together); 
+        normative (he wants himself and others to live it out as much as to describe how things are;
+        there may also be something about ‘understanding’ here).
+        So it’s not all about accuracy; in fact, of these, only prediction and coordination even
+        potentially requires that his model of actions is accurate.
+      .bens-model
+        p Functions of Ben’s model of minds and actions:
+        ul.hem-around-children
+          li.ethical ethical
+          li.normative normative
+          li.predictive predictive
+            p.indent --- speed vs accuracy
+          .noslide
+            +highlight-row('.predictive')
+            +blur('.ethical, .normative')
+            +style('.predictive', {'z-index':0})
     .slide
       +hide('.bens-model')
       .notes: :t
         So this is the model of minds and actions on which many philosophical theories
         are based ... they are cast as attempts to characterise this model.
+
+
 
 +slide_middle
   p Relying on philosophers to characterise actions 

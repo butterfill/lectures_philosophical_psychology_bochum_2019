@@ -22,23 +22,8 @@ include ../../../fragments/philosophical_behavioural_science_mixins
 
 
 
-+habitualInstrumental({step:true})
++habitualOnly({step:true})
 
-+slide_middle
-  p Give me an example of habitual action?
-  p No, it’s hard to distinguish habitual from instrumental.
-
-mixin habitualQuestions()
-  p Which of these are habitual actions, and which are instrumental:
-  p.indent doing your teeth;
-  p.indent smoking tobacco;
-  p.indent watching TV;
-  p.indent cycling the same route to work every day?
-
-+slide_timer({hide:true, duration:'30s'})
-  +habitualQuestions
-  +show-timer('timer1')
-  +start-timer('timer1')
 
 +slide_middle
   p.center habitual vs habitual
@@ -46,12 +31,6 @@ mixin habitualQuestions()
     ‘A habitual action, state, or way of behaving is one that someone usually does or has, especially one that is considered to be typical or characteristic of them.’
   .slide
     +line-through('.df')
-
-+habitualInstrumental({step:false})
-  +blur('.right-half')
-
-+slide_middle
-  +habitualQuestions
 
 +slide_middle
   p Habitual
@@ -67,3 +46,30 @@ mixin habitualQuestions()
   .notes.handout.ctd: :t
     \citep[p.48]{Dickinson:1994sm}
   p.right.grey-text Dickinson, 1994 p. 48
+
++instrumentalOnly({step:true})
+
+
+
+//- +slide_middle
+//-   p Give me an example of habitual action?
+//-   p No, it’s hard to distinguish habitual from instrumental.
+
+//- mixin habitualQuestions()
+//-   p Which of these are habitual actions, and which are instrumental:
+//-   p.indent doing your teeth;
+//-   p.indent smoking tobacco;
+//-   p.indent watching TV;
+//-   p.indent cycling the same route to work every day?
+
+//- +slide_timer({hide:true, duration:'30s'})
+//-   +habitualQuestions
+//-   +show-timer('timer1')
+//-   +start-timer('timer1')
+
+
+//- +habitualInstrumental({step:false})
+//-   +blur('.right-half')
+
+//- +slide_middle
+//-   +habitualQuestions

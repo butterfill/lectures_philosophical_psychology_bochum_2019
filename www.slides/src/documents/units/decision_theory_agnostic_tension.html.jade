@@ -5,8 +5,7 @@ tags: []
 description: """
   The range of applications of decision theory 
   indicates that it must be agnostic about processes.
-  But the Assumption of Common Knowledge of Rationality implies it is not agnostic about processes.
-  And Dickinson’s instrumental process is characterised by appeal to Decision Theory.
+  But Dickinson’s instrumental process is characterised by appeal to Decision Theory.
   How can the apparent tension between these facts be resolved?
 """
 ---
@@ -22,32 +21,13 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     ok, so what is this tension?
 
 
-section.slide
-  .right-half-white(style="z-index:-22;")
-  +_slide_middle_inner
-    +timer-element('timer1', '120s', {hide:true})
-  +reset
-    .container_12
-        +left_half  
-          p The range of applications of Decision Theory shows it is agnostic about processes.
-        +right_half
-          p.slide Assumption of Common Knowledge of Rationality implies it is not agnostic about processes.
-      .clear
-      .slide
-        +blur('p:lt(4)')
-        +left_half  
-          p The range of applications of Decision Theory shows it is agnostic about processes [again].
-        +right_half
-          p.slide Dickinson’s instrumental process is characterised by appeal to 
-            span.dt Decision Theory.
-      .slide
-        +unblur('p')
 
 +slide_tensions
-  +invert('.dt')
-  .notes: :t
-    So why does decision theory play a role in characterising
-    instrumental processes?
+  .slide
+    +invert('.dt')
+    .notes: :t
+      So why does decision theory play a role in characterising
+      instrumental processes?
 
 +habitualInstrumental
   +blur('.left-half')

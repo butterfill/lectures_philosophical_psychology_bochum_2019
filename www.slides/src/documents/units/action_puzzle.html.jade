@@ -14,7 +14,7 @@ include ../../../fragments/philosophical_behavioural_science_mixins
 
 
 
-+slide_timer({hide:true, blend:'difference'})
++slide_middle
   img(src='img/rat.png', style='filter:invert(1); mix-blend-mode:multiply')
   .notes: :t
     You see a rat and a lever.
@@ -24,9 +24,6 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     As a consequence, the rat presses the lever more often.
   .slide
     p Is this lever pressing habitual or instrumental aciton?
-  +show-timer('timer1')
-  +start-timer('timer1')
-    .notes It’s a trick question -- we can’t tell
 
 
 +habitualInstrumental2({step:true})
@@ -68,20 +65,17 @@ include ../../../fragments/philosophical_behavioural_science_mixins
   .slide
     +uninvert('.stimulus-action-step')
 
-+slide_timer({hide:true})
++slide_middle
   p.center What if we 
     span.devalue devalue
     span  the food?
-  .hem-around-children
-    p.indent Instrumental : 
-      span.step2.hide it will reduce lever pressing 
-        span.to-none (to none)
-    p.indent Habitual : 
-      span.step2.hide it will have no effect on lever pressing
-  +show-timer('timer1')
-  +start-timer('timer1')
   .slide
-    +show('.step2')
+    p.hem-around.indent Instrumental : 
+      span.step2 it will reduce lever pressing 
+        span.to-none (to none)
+  .slide
+    p.hem-around.indent Habitual : 
+      span.step2 it will have no effect on lever pressing
 
 +slide
   .notes: :t
@@ -155,7 +149,7 @@ include ../../../fragments/philosophical_behavioural_science_mixins
   img(src='img/dickinson_1985_fig3.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute;')
   p.source Dickinson, 1985 figure 3
 
-+slide_timer({hide:true})
++slide_middle
   .handout: :t
     The puzzle:
     \begin{enumerate}
@@ -174,10 +168,6 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     span  is instrumental, 
     br
     span why does it still occur (albeit less frequently) after devaluation?
-  +show-timer('timer1')
-  +start-timer('timer1')
-  .slide
-    +hide('#timer1')
   .slide
     +highlight('.action', 'red')
     .notes: :t

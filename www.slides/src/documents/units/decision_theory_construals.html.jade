@@ -24,7 +24,6 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     \end{quote}
     Alternatives exist.  For instance, \citet{binmore:1994_playing} claims the axioms
     of game theory are tautologies; on his story, the games are the models.
-
   p.center model vs construal
   .notes Source: Godfrey-Smith
   .slide
@@ -39,7 +38,6 @@ include ../../../fragments/philosophical_behavioural_science_mixins
       and that what you thought was a unique design is something
       that lots of other people would also want,
       so you use the model to predict what others will want [construal 4].
-
 
 
 +slide_middle
@@ -87,7 +85,7 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     Godfrey-Smith, 2005 p. 4
 
 
-+slide_middle
++slide_middle({style:'background-color:purple'})
   p.notes.handout.show: :t
     ‘Basic facility with the folk-psychological model does not require using a
     particular construal of it. Many construals are possible. 
@@ -107,6 +105,22 @@ include ../../../fragments/philosophical_behavioural_science_mixins
       This is your position!
 
 
++slide_middle
+  p [Aside]
+  p.em-above Relying on philosophers to characterise actions 
+    br
+    span would be like 
+    br
+    span relying on Aristotelians to characterise physical objects.
+  .slide
+    p.em-above Looking ahead ...
+    p.hem-above Godfrey-Smith contrasts models with theories,
+      br
+      span and suggests that philosophers are often 
+      br
+      span best seen as constructing models rather than theories.
+    p.em-above [/Aside]
+
 
 +slide_middle
   p.hem-around: :t
@@ -118,9 +132,8 @@ include ../../../fragments/philosophical_behavioural_science_mixins
 
 
 
-+slide_timer
++slide_middle
   p.center What construals of Decision Theory might be useful?
-  +start-timer('timer1')
 
 +slide_middle
   ol.hem-around-children
@@ -142,10 +155,6 @@ include ../../../fragments/philosophical_behavioural_science_mixins
 
 
 +slide_middle
-  p With construals in mind, let’s re-visit some old arguments ...
-
-
-+slide_middle
   .notes: :t
     If we look at game theory more generally, we find that game theoretic analysis has been
     applied to ‘the formation and propagation of patterns in microbial populations’ \citep[e.g.][]{reichenbach:2007_mobility}.
@@ -153,12 +162,9 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     span 1. Applications range from 
     span microbial populations
     span  to countries.
-  .slide
-    p.hem-around.two 2. The explanations are of the same type in every case.
-  .slide
-    p.hem-around 3. The underlying processes probably differ.
-  .slide
-    p.hem-around 4. Therefore, game theory is agnostic about processes.
+  p.hem-around.two 2. The explanations are of the same type in every case.
+  p.hem-around 3. The underlying processes probably differ.
+  p.hem-around 4. Therefore, game theory is agnostic about processes.
   .slide
     +highlight-row('.two', 'red')
     .notes: :t
@@ -179,27 +185,7 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     ok, so did we resolve the tensions?
 
 +slide_tensions
-  +blur('p:gt(1)')
-  .slide
-    +blur('p')
-    +unblur('p:eq(2), p:eq(3)')
-  //- .slide
-  //-   +blur('p')
-  //-   +unblur('p:gt(3)')
-
-+conclusion
-  +_slide_inner: div(style='margin-top:-550px')
-    .slide
-      p.hem-around: :t
-        Decision Theory (like Game Theory) specifies a model.
-      p.hem-around: :t
-        Models can be construed in several different ways.
-      p.hem-around: :t
-        Decision Theory says nothing about how the model should be construed.
-    .slide
-      +blur('p:lt(4)')
-      p.hem-around: :t
-        Whether your objection (or defence) works depends on your construal.
+      
 
 //- end here!
 //- what follows should be in new unit!
