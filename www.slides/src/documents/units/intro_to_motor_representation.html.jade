@@ -246,42 +246,75 @@ include ../../../fragments/joint_action_mixins
     This will be a focus of interest in a later session.
     For now it’s just a handy fact that simplifies testing.
   .slide
-    p.em-above glossary: TMS
+    .handout.notes
+      p ‘word listening produces a phoneme specific activation of speech motor centres’ \citep{Fadiga:2002kl}
+      p.em-above ‘Phonemes that require in production a strong activation of tongue muscles, automatically produce, when heard, an activation of the listener's motor centres controlling tongue muscles.’ \citep{Fadiga:2002kl}
+    //- p ‘word listening produces a phoneme specific activation of speech motor centres’
+    p.em-above: :t
+       ‘Phonemes that require in production a strong activation of tongue muscles,
+       automatically produce, when heard, an activation of the listener’s motor centres
+       controlling tongue muscles.’
+  p.right.grey-text Fadiga et al (2002)
+  .notes: :t
+    How did they reach these conclusions?
+  .slide
+    p.em-above bi
+      span.rr rr
+      span a / be
+      span.rr rr
+      span o (pseudo-word) / ba
+      span.ff ff
+      span o
+    .slide
+      +highlight('.rr', 'yellow')
+      .notes Inovlves tongue
+    .slide
+      +highlight('.ff', 'blue')
+      .notes No tongue required
+      .notes: :t
+        Given TMS to motor cortex tp amplify activity.
+        Prediction: MEP in tongue muscle stronger for ‘rr’ than ‘ff’.
 
 +slide
-  +img_clip('dausilio_2009_fig1.png')
-  p.source D'Ausilio et al (2009, figure 1)
-  .notes: :t
-    For a quick illustration of how we know about the double life of motor representation, consider
-    this experiment ....
-  .notes: :t
-    ‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical
-    activity specifically in the lip (LipM1) or tongue (TongueM1) area’
-    \citep[p.~381]{dausilio:2009_motor}
-  .notes: :t
-    ‘We hypothesized that focal stimulation would facilitate the perception of 
-    the concordant phonemes ([d] and [t] with TMS to TongueM1), but that 
-    there would be inhibition of perception of the discordant items 
-    ([b] and [p] in this case). Behavioral effects were measured via reaction 
-    times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}
+  +img_clip('fadiga_2002_fig2.png')
+  p.source Fadiga et al 2002, figure 2
 
-+slide
-  +img_clip('dausilio_2009_fig2.png')
-  p.source D'Ausilio et al (2009, figure 2)
 
-section.slide
-  +_slide_middle_inner
-    +img('rizzolatti_2006_figure1_1.png')
-  +reset
-    +_slide_inner
-      p.source Rizzolatti and Sinigaglia, 2006 figure 1.1
-    .notes: :t
-      ‘The posterior section of the frontal lobe contains the motor areas,’ (p.~4)
-      Now you know as much about the brain as I do.
-    .notes: :t
-      Mention primary and supplementary motor areas : we use the term ‘motor’ loosely
-      (compare ‘visual’, which also has narrower and broader uses in 
-      neuroscience).
+//- not sure why this is relevant to the ‘double life’ idea!
+//- +slide
+//-   +img_clip('dausilio_2009_fig1.png')
+//-   p.source D'Ausilio et al (2009, figure 1)
+//-   .notes: :t
+//-     For a quick illustration of how we know about the double life of motor representation, consider
+//-     this experiment ....
+//-   .notes: :t
+//-     ‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical
+//-     activity specifically in the lip (LipM1) or tongue (TongueM1) area’
+//-     \citep[p.~381]{dausilio:2009_motor}
+//-   .notes: :t
+//-     ‘We hypothesized that focal stimulation would facilitate the perception of 
+//-     the concordant phonemes ([d] and [t] with TMS to TongueM1), but that 
+//-     there would be inhibition of perception of the discordant items 
+//-     ([b] and [p] in this case). Behavioral effects were measured via reaction 
+//-     times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}
+
+//- +slide
+//-   +img_clip('dausilio_2009_fig2.png')
+//-   p.source D'Ausilio et al (2009, figure 2)
+
+//- section.slide
+//-   +_slide_middle_inner
+//-     +img('rizzolatti_2006_figure1_1.png')
+//-   +reset
+//-     +_slide_inner
+//-       p.source Rizzolatti and Sinigaglia, 2006 figure 1.1
+//-     .notes: :t
+//-       ‘The posterior section of the frontal lobe contains the motor areas,’ (p.~4)
+//-       Now you know as much about the brain as I do.
+//-     .notes: :t
+//-       Mention primary and supplementary motor areas : we use the term ‘motor’ loosely
+//-       (compare ‘visual’, which also has narrower and broader uses in 
+//-       neuroscience).
 
 
 

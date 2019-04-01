@@ -15,13 +15,166 @@ include ../../fragments/unit_mixins
 
 
 
-
-
 +title_slide({document:document, images:images})
+
+section.slide
+  +_slide_middle_inner
+    p.center.notes.show What can we experience 
+      br
+      span when we encounter or perform 
+      br
+      span.vss very small-scale
+      span  
+      span.purposive purposive
+      span  actions?
+    .slide
+      +invert('.vss')
+      .notes: :t
+        By ‘very small scale actions’ I mean things like 
+        grasping [instrumental]
+        producing an phonemic gesture in speaking [communicative]
+        or producing a bodily expression of emotion, as in frowning.
+    .slide
+      +uninvert('.vss')
+      +invert('.purposive')
+      .notes: :t
+        I take all of these very small scale actions to be goal-directed.
+        To illustrate, consider producing a phonemic gesture.
+        This involves a complex coordinated movement of lips, larynx, tounge and velum.
+        Which movements are required to produce a particular phonemic gesture varies
+        significantly depending on the context and situation. It is also possible to
+        fail to articulate a phoneme.
+        So I take the production of a phonemic gesture to be a purposive action:
+        the goal is the articulation of a particular phoneme.
+      .notes Now contrast two views ...
+    .slide
+      +uninvert('.purposive')
+    //-   p.center.em-above Indirect Hypothesis
+    //-     span.step2.hide vs Direct Hypothesis
+    //-   .notes.handout: :t
+    //-     The \emph{Indirect Hypothesis}: experiences revelatory of action are all experiences of bodily
+    //-     configurations, of joint displacements and of effects characteristic of particular actions.
+    //- .slide
+    //-   +show('.step2')
+    //-   .notes.handout: :t
+    //-     The \emph{Direct Hypothesis}: some experiences revelatory of action are experiences of actions as
+    //-     directed to particular outcomes.
+    //-   .notes: :t
+    //-     So in observing action we experience not only bodily configurations,
+    //-     joint displacements, sounds and the rest but also goal-directed actions.
+  .slide
+    +reset
+      +_slide_middle_inner({blend:'multiply'})
+        p.center.huge-glow-120
+          span.red-text evidence?
+        .notes: :t
+          To find evidence that might discriminate these views, we first need to
+          consider the psychological mechanisms that underpin the performance of 
+          very small scale actions \textbf{and that make them the actions they are} ...
+
+
++slide_middle
   .notes: :t
-    I want to start by recalling some issues from the first two lectures.
-    Today I will attempt to tie these together, then, next week, we will move
-    on to a different set of issues.
-    (Perhaps colour?)
+    Ideally we want to identify pairs of cases with these features: in each case there is an experience
+    revelatory of action; the two cases differ regarding what is represented motorically, but are
+    otherwise as similar as possible; and which goal is revealed in each case matches what is
+    represented motorically.
+  p.center hemiplegia: with vs without anosognosia
+
++slide
+  +img_clip('garbarini_2012_fig3.png', 'rect(0,335px,270px,0)')
+  .slide
+    +clip('img', 'rect(0,335px,999px,0)')
+    .notes: :t
+      Hemiplegic (HP)
+  .slide
+    +clip('img', 'rect(0,999px,270px,0)')
+    .notes: :t
+      AHP patient
+  .slide
+    +clip('img', 'auto')
     
-+insert_unit({unit:'action_experience_new', title_slide:false, images:images, handout:true})
+  p.source Garbarini et al, 2012 figure 3
+  .notes: :t
+    ‘Figure3
+    Examples of subjects’ right hand trajectory in Bimanual Circle-Line condition.
+    Note the increased ovalization for healthy controls (A) and for patients with AHP (B), but not for
+    hemiplegic (HP; C) or patients with motor neglect (MN; D).’
+  .notes: :t
+    One source of such cases is research on anosognosia for hemiplegia. Patients with anosognosia for
+    hemiplegia will sometimes deny, and appear in some ways unaware of, a severe paralysis of one or
+    more limbs on one side of their bodies. Some such patients lack concurrent awareness of failures to
+    move their plegic limbs but do not suffer from severe sensory deficits or neglect, and cannot move
+    their hemiplegic limbs at all. For our purposes it is useful to focus only on these patients.
+  .notes: :t
+    On the leading, best supported explanation, in these cases anosognosia for hemiplegia arises from deficiencies in monitoring action \citep{berti:2005_shared,berti:2008_motor}.
+    To illustrate, consider a patient who was asked to brush her hair holding a brush in her paralysed hand. Although she was unable to move the hand, she proceeded to move her head as if her hair was being brushed and then reported having successfully brushed her hair \citep[pp.\ 173--4]{berti:2008_motor}.  
+    How could a deficit in monitoring action explain this?  When a subject with anosognosia for hemiplegia is asked to perform an action involving her hemiparetic limb, motor representations occur as they might do in ordinary subjects \citep{berti:2005_shared,garbarini:2012_moving}.
+    However, in ordinary subjects monitoring processes reliably ensure that any failures to act are detected; motor representations adjust accordingly \citep{Haggard:2005sc}.
+    By contrast, in these cases of anosognosia for hemiplegia, there is damage to the monitoring processes or to capacities underlying them.
+    A consequence is that motor representations are isolated from information relevant to failures to act.
+    This is why some patients with anosognosia for hemiplegia sometimes act as if their hemiparetic limbs were actually moving.
+  .notes: :t
+    How is anosognosia for hemiplegia relevant to our concern with experiences revelatory of action?
+    Consider an anosognosic patient like those just mentioned and a patient with hemiplegia but no
+    anosognosia. Suppose each is asked to draw simultaneously with both hands, where the unaffected hand
+    was supposed to continuously draw a vertical line and the paralysed hand to continuously draw a
+    circle. There will be a difference in their experiences.
+    The anosognosic patient will sometimes judge that she is performing a bimanual action; this indicates that she has an experience which reveals the goal of drawing both lines and circles.  
+    By contrast, the non-anosognosic patient with hemiplegia will report performing a unimanual action
+    and not the bimanual action, of course; this confirms that, as expected, she has no experience
+    revealing the goal of drawing both lines and circles. What could explain this difference in
+    experience between the two patients? The sensory information available to each patient should be the
+    same: after all, hemiplegic individuals can of course only actually move one hand, and the patients
+    we are concerned with do not have relevant sensory deficits. But there is a difference between the
+    patients' motor representations. In the anosognosic patient, deficient monitoring means that motor
+    representations should occur much like those that would occur were she not hemiplegic: there will be
+    motor representations concerning the movements of left and right hands. By contrast, in the
+    hemiplegic but non-anosognosic patient intact monitoring ensures that these motor representations do
+    not occur or do not persist: there will only be motor representations concerning the movements of
+    the unaffected hand. The predicted difference in motor representation can be confirmed by measuring
+    how straight the lines drawn are: in the anosognosic patient's case only, the attempted straight
+    line will show interference of the sort that, ordinarily, would be expected only if the other hand
+    were actually drawing a circle \citep{garbarini:2012_moving}. So comparing hemiplegic patients with
+    and without anosognosia yields a pair of cases fitting our criteria: there are differences in which
+    goals experiences reveal, and these differences appear to be determined by differences in what is
+    represented motorically.
+
+
++slide_middle
+  .notes My question was, 
+  p.center.notes.ctd.show What can we experience 
+    br
+    span when we encounter 
+    br
+    span.vss very small-scale
+    span  
+    span.purposive purposive
+    span  actions?
+  .notes: :t
+    My conclusion so far is this ...
+  .slide
+    p.em-above.center.notes.show
+      span Experiences revelatory of action
+      br  
+      span.slide shaped by motor representations
+      span .
+    .notes: :t
+      Note: not making commitments on what these experiences are experiences of,
+      so not deciding between the Direct and Indirect Hypotheses.
+    .notes: :t
+      Open question: how do the motor representations relate to the experiences.
+    .notes: :t
+      One model: visual representation -> visual experience.
+    .notes: :t
+      Another model: object indexes -> experience of objects.
+      (Motor representations structure experiences of events.)
+
+
+
+//- previous stuff was compatible with either hypothesis
++insert_unit({unit:'question_experience_action', title_slide:true, images:images, handout:true})
+
+
+
++insert_unit({unit:'action_experience_new', title_slide:true, images:images, handout:true})

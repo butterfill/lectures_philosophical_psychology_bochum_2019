@@ -43,7 +43,9 @@ Experiments:
 
 TODO
 ====
-  Should we be instrumentally rational? (implications of dual process theories of (i) motivational states, and (ii) processes underpinning ethical judgements)
+  Evidence for mTgt -- in particular, that mTgt influences judgements (disorders, etc)
+  Should we be instrumentally rational? Add something on (ii) processes underpinning ethical judgements? [Not sure what I had in mind]
+  
 
 PLAN
 ====
