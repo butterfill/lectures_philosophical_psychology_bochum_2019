@@ -11,11 +11,58 @@ include ../../../fragments/unit_mixins
 include ../../../fragments/joint_action_mixins
 include ../../../fragments/mindreading_mixins
 
+
++slide_middle
+  p.center tracking 
+    span.slide vs representing
+
++slide_middle
+  p.center
+    table.data
+      thead
+        tr
+          td.left track
+          td.left by representing
+      tbody
+        tr.odd
+          td 
+            p toxicity
+          td
+            p odour
+        tr.even
+          td 
+            p visibility
+          td
+            p line-of-sight
+        tr.odd
+          td
+            p belief
+          td
+            p ?
+  .notes: :t
+    To say that someone tracks beliefs does not entail saying that she represents beliefs.
+    In general, you can track something by representing something else.
+  .notes: :t
+    Note that this complication is not supposed to show that we cannot make 
+    the inference from tracking to mindreading.
+    After all, such inferences are not supposed to be deductive.
+    Nor do I intend to suggest that we should somehow find a different inference
+    which is deductive.
+    Instead my point is simply this: as the inference is not deductive, there are bound
+    to be tricky questions about how the observations support conclusions about tracking.
+    [LATER: one further complication will be that there are multiple models of minds and actions.]
+  
+
+
 +slide_middle
   p Which action a chimp or jay predicts another will perform
   p depends to some extent on
   p what the other sees, knows or believes.
   .slide
+    p.em-above This is directly evidence for tracking ...
+    p ... but what about representing?
+  .slide
+    .notes Mindreading requires representing
     p.em-above
       span ‘In saying that an individual has a 
       span.theory-of-mind theory of mind,
@@ -23,8 +70,8 @@ include ../../../fragments/mindreading_mixins
     p.right.grey-text Premack & Woodruff, 1978 p. 515
 
 
-
 +slide_middle
+  .notes Some don’t see a gap here ...
   p.em-above.notes.handout.show
     span ‘Comparative psychologists test for  
     span.mindreading mindreading
@@ -55,47 +102,10 @@ include ../../../fragments/mindreading_mixins
     For the purposes of this talk, I am going to assume that we can make this inference,
     at least in some circumstances.
   .notes: :t
-    But I think there are two COMPLICATIONS which need to be addressed before we can be
-    confident that we understand why we can make the inference. The first is simple: 
-    representing does not logically entail tracking ...
+    But since
+    representing does not logically entail tracking,
+    I don’t think it’s at all straightforward ...
 
-+slide_middle
-  p.center
-    table.data
-      thead
-        tr
-          td.left track
-          td.left by representing
-      tbody
-        tr.odd
-          td 
-            p toxicity
-          td
-            p odour
-        tr.even
-          td 
-            p visibility
-          td
-            p line-of-sight
-        tr.odd
-          td
-            p belief
-          td
-            p ?
-  
-  .notes: :t
-    To say that someone tracks beliefs does not entail saying that she represents beliefs.
-    In general, you can track something by representing something else.
-  .notes: :t
-    Note that this complication is not supposed to show that we cannot make 
-    the inference from tracking to mindreading.
-    After all, such inferences are not supposed to be deductive.
-    Nor do I intend to suggest that we should somehow find a different inference
-    which is deductive.
-    Instead my point is simply this: as the inference is not deductive, there are bound
-    to be tricky questions about how the observations support conclusions about tracking.
-    [LATER: one further complication will be that there are multiple models of minds and actions.]
-  
 
 +slide_middle
   +theMindreadingQs({handout:false})
@@ -173,11 +183,6 @@ section.slide: .middle
   p.center.notes.show Requirement 2: Models
   p.em-above.center How do chimps or jays variously model minds and actions?
   
-+slide_middle
-  p.center.notes.show ‘Nonhumans represent mental states’ is not a hypothesis
-  .notes: :t
-     ... or at least not one that generates readily testable predictions.
-
 
 +slide
   p.center.notes.show ‘Nonhumans represent mental states’ is not a hypothesis
