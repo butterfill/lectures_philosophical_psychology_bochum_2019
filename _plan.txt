@@ -51,7 +51,7 @@ PLAN
 ====
 01 seeing red? [71]
 02 what are metacognitive feelings? (Docic vs me) [44]
-03 perceiving feelings? [move sharing smiles to interaction] [83]
+03 perceiving feelings? [83]
 
 04 perceiving causal interactions? [139]
 05 What is the mark of agency? [tuebingen questions, motor determines goal-directedness [no interface]] [83]
