@@ -124,6 +124,98 @@ include ../../../fragments/philosophical_behavioural_science_mixins
     +show('.magazine-entries')
     .notes Pavlovain conditioning, primary motivational states can have a direct effect on actions.
 
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘The dissociation between lever pressing and magazine entries produced by
+    re-exposure is [...] problematic for the incentive learning account. 
+  p.notes.handout.ctd.show.slide: :t
+    To
+    recapitulate, this explanation assumes that instrumental performance is
+    mediated by some “representation” of the relationship between the instrumental 
+    action and reinforcer that also encodes the current incentive value of
+    the reinforcer. The represented incentive value can only be changed, however,
+    after aversion conditioning by exposure to the reinforcer. 
+  p.notes.handout.ctd.show.slide: :t
+    Given this account,
+    the question immediately arises as to why re-exposure is necessary for a change
+    in lever pressing but not magazine entries’
+  .notes.handout.ctd \citep[p.~293]{balleine:1991_instrumental}
+  p.right.grey-text: :t
+    Balleine & Dickinson, 1991 p. 293
+  
+
++slide_timer({hide:true})
+  p Why do 
+  p the two actions, 
+  p.indent lever pressing 
+  p and 
+  p.indent magazine entry,
+  p dissociate in this way?
+  +show-timer('timer1')
+  +start-timer('timer1')
+
++pavlovianVsOperant({step:true})
++habitualInstrumental({step:false})
++pavlovianVsOperant({step:false})
+
++slide_middle
+  p Why do 
+  p the two actions, 
+  p.indent lever pressing 
+  p and 
+  p.indent magazine entry,
+  p dissociate in this way?
+  .slide
+    p.em-above Because
+    p.em-above  magazine entry but not lever pressing ‘is under the control of Pavlovian ... contingencies’
+  .slide
+    p.em-above and Pavlovian contingenies enable primary motivational states directly influence action.
+    p.right.grey-text Balleine & Dickinson, 1991 p. 294
+    .notes.handout: :t
+      ‘A possible resolution to this discrepancy lies with the differing contingencies controlling lever pressing and magazine entry. There is evidence that simple anticipatory approach to a food source, such as magazine entry, is primarily under the control of Pavlovian as opposed to instrumental contingencies (e.g. Holland, 1979),thus raising the possibility that incentive learning is necessary for instrumental but not Pavlovian reinforcer revaluation effects. There is, in fact, independent evidence that accords with this analysis’ \citep[p.~294]{balleine:1991_instrumental}
+
+
++slide
+  img.lever.hide(src='img/rat.png', style='filter:invert(1); mix-blend-mode:multiply')
+  p &nbsp;
+  img.sick.hide(src='img/rat_sick.png', style='filter:invert(1); mix-blend-mode:multiply')
+  +reset
+    img.fig.standard-procedure.hide(src='img/dickinson_1985_fig3.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; clip:rect(0,210px,999px,0); mix-blend-mode:difference')
+  +reset
+    img.fig.no-exposure-procedure.hide(src='img/balleine_1991_fig1b.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; mix-blend-mode:difference')
+  +reset
+    img.fig.magazine-entries.hide(src='img/balleine_1991_fig1a.png', style='filter:invert(1); max-width:650px; max-height:500px; position:absolute; mix-blend-mode:difference;margin-left:400px')
+
+  .notes: :t
+    You see a rat and a lever.
+    The rat presses the lever occasionally.
+    Now you start rewarding the rat:
+    when it presses the lever it is rewarded with a particular kind of food.
+    As a consequence, the rat presses the lever more often.
+  +reset
+    .procedure(style='margin-left:300px;')
+      p.hem-around Devaluation - standard procedure:
+      .noslide
+        p.hem-around Training: Rat is put in chamber with Lever; pressing Lever dispenses sucrose (novel food).
+      .noslide 
+        p.hem-around Devaluation: Rat is taken into another chamber, poisoned, 
+          span.exposed and then exposed to sucrose
+          span .
+      .noslide 
+        p.hem-around Extinction Test: Rat returns to chamber with Lever; pressing Lever does nothing.
+  p.source Dickinson, 1985 figure 3;  Balleine & Dickinson, 1991 figure 1 (part)
+  .noslide
+    +show('img.fig.standard-procedure')
+    +clip('img', 'auto')
+    +hide('img.fig.standard-procedure')
+    +line-through('.exposed')
+    +show('.fig.no-exposure-procedure')
+    +hide('.procedure, .lever, .sick')
+    +show('.magazine-entries')
+    .notes Pavlovain conditioning, primary motivational states can have a direct effect on actions.
+  .slide
+    +hide('.magazine-entries')
 //- +slide
 //-   .notes: :t
 //-     ‘Mean lever-press rates during the extinction (left-handpanel) and reacquisitiontests(right-handpanel) followingthe devaluation of either the contingent (group D-N) or non-contingentfood (group N-D).’
@@ -261,4 +353,16 @@ include ../../../fragments/philosophical_behavioural_science_mixins
       li lime over lemon
       li red over blue
       li ...
+
+
++slide_middle
+  .notes.handout What kinds of processes in individual animals guide actions?
+  p What kinds of processes in 
+  p individual animals
+  p guide actions?
+  .slide
+    p.em-above Two conclusions:
+    p.hem-around.indent.one 1. two kinds of process -- habitual vs instrumental
+    p.hem-around.indent.two 2. two kinds of motivational state -- primary vs preferences
+
 

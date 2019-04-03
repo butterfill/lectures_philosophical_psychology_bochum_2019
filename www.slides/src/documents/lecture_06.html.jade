@@ -17,21 +17,6 @@ include ../../fragments/philosophical_behavioural_science_mixins
 - var images = get_images('bali')
 
 
-//- 
-  TODO
-  
-  Drop in Davidson quote about folk psychology and decision theory earlier
-  Ask a question about how fitting game theory can explain (e.g. side botched lizards; 
-  prisoner’s dilemma explains cutthroat competiion in business;
-  there seems to be a sense in which if we see the pattern we have explained something
-  How does that work?)
-
-  on rationality question include:
-  1. consequences of game theory & nash equilibrium 
-    https://philosophical-issues-in-behavioural-science.butterfill.com/lecture_02.html#slide-24
-  2. thf include Nash equilibruium idea in intro to game theory
-  3. chater quote there are no preferences 
-    https://philosophical-issues-in-behavioural-science.butterfill.com/lecture_02.html#slide-69
 
 +title_slide({document:document, images:images})
 
@@ -82,6 +67,65 @@ include ../../fragments/philosophical_behavioural_science_mixins
 +insert_unit({unit:'action_puzzle', title_slide:true, images:images, handout:true})
 +insert_unit({unit:'dual_process_action', title_slide:true, images:images, handout:true})
 +insert_unit({unit:'stress', title_slide:true, images:images, handout:true})
+
+
++slide_middle
+  +actionThreeQ
+  +hide('.q3', 0)
+  .notes: :t
+    Back to these questions ... is Dickinson relevant?
+    We’re confident that the lever pressing is an action 
+    independently of whether it was caused by instrumental, habitual
+    or some combination of these.
+
++slide({bkg:'intention_and_motor_representation/Slide03.jpg'})
+  .notes: :t
+    Which events are actions?
+    In philosophy, answering this question would typically answered by appeal to intention 
+    or practical reasoning.
+  .notes: :t
+    Such views tend to be neutral on how 
+    the attitudes and processes ultimately connect to bodily movements; 
+    that is considered to be merely an implementation detail ...
+  .notes: :t
+    They are neutral in this sense: the views do not depend in any way on facts about that 
+    distinguish one kind of body from another, or on facts about how the body’s movements 
+    are ultimately controlled ... 
+
++slide_middle
+  p: :t
+    If events can be actions despite being dominated by habitual processes,
+    why are several philosophers confident that all actions are intentional?
+
++slide_middle
+  p.notes.handout.show: :t
+    ‘once we accept that there are complex and subtle non-intentional processes, such as those mediating
+    basic goal-approach and the adjustment to changes in motivational state, that can mimic true
+    intentional control in many situations, we can understand why the propensity to perceive actions as
+    intentional may have developed. Given that 
+  p.first.notes.handout.show: :t
+    either there is nothing in the stimulus input per se to
+    distinguish intentional from non-intentional behaviour 
+  p.notes.handout.show: :t
+    or that 
+  p.second.notes.handout.show: :t
+    such a discrimination yields little of
+    consequence in most situations, 
+  p.conclusion.notes.handout.show: :t
+    it may well pay the perceiver to treat both classes of behaviour as
+    intentional in predicting the subsequent course of events’
+  .notes.handout.ctd \citep[p.~102]{heyes:1990_intentionality}.
+  p.right.grey-text Heyes & Dickinson, 1990 p. 102
+  .slide
+    +blur('p:not(.first)')
+  .slide
+    +blur('p.first')
+    +unblur('p.second')
+  .slide
+    +blur('p.second')
+    +unblur('p.conclusion')
+
+
 
 +insert_unit({unit:'decision_theory_agnostic_tension', title_slide:false, images:images, handout:true})
 

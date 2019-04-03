@@ -160,3 +160,139 @@ section.slide
     br
     span.indent and your beliefs about how others will act.
 
+
+
+section.slide
+  img.bkg.all(src='img/game_theory.png')
+  img.bkg.game.hide(src='img/game_theory2.png', style='mix-blend-mode:screen')
+  img.bkg.theory.hide(src='img/game_theory3.png', style='mix-blend-mode:screen')
+  p.source The Roots, 2006
+  +blur('img.bkg.all, p.source', '5px')
+  +show('img.bkg.game')
+  +_slide_inner
+    p.game-df: :t
+      A game is ‘any interaction between agents that is governed by a set of rules 
+      specifying the possible moves for each participant and a set of outcomes for each possible combination of moves’
+      (Hargreaves and Varoufakis, 2004 p. 3)
+    +hide('img.bkg.game')
+    +show('img.bkg.theory')
+    +blur('.game-df')
+    p.em-above Aim: describe  
+      span.rational rational
+      span  behaviour in 
+      span.social-interaction social interactions
+    .notes: :t
+      Wouldn’t it be cool if we had a way of saying, for any situation, how interacting rational agents would act?
+      Suppose we could specify a general recipe which would tell us,
+      for any situation at all, which actions rational agents would
+      perform. Wouldn’t that be useful to understanding social interactions?
+    .quote
+      p.em-above.handout.notes.show: :t
+        ‘we wish to find the mathematically complete principles which define “rational behavior” for the participants in a social economy, and to derive from them the general characteristics of that behavior’ 
+      .handout.notes.ctd  \citep[p.~31]{neumann:1953_theory}
+      p.right.grey-text von Neumann & Morgenstern, 1953 p. 31
+
+
+
+
+
++slide_middle
+  p.handout.notes.show
+    +nash-equilibrium
+    
+  p.right.grey-text see Osborne & Rubinstein, 1994 p. 14; Dixit et al, 2014 p. 95
+  .notes Let’s see another example
+  .slide
+    +invert('.action')
+  .slide
+    +uninvert('.action')
+  .slide
+    +invert('.profile')
+  .slide
+    +uninvert('.profile')
+  .slide
+    +invert('.profitably')
+  .slide
+    +uninvert('.profitably')
+  .slide
+    +invert('.unilaterally')
+  .slide
+    +uninvert('.unilaterally')
+
++slide_middle
+  +game_pd
+  .slide
+    +highlight('tbody tr:eq(0) .outcome:eq(0)', 'white')
+    .notes: :t
+      Consider this profile of actions ...
+      ... you might think that these are the most rational actions to perform
+      since they give each Prisoner what she most prefers. But note that:
+  .slide
+    .notes: :t
+      Prisoner X can improve the ouctome by unilaterally deviating from this profile ...
+    +unhighlight('tbody tr:eq(0) .outcome:eq(0)', 'white')
+    +highlight('tbody tr:eq(0) .outcome:eq(0)', 'grey')
+    +highlight('tbody tr:eq(0) .outcome:eq(1)', 'white')
+  .slide
+    +unhighlight('tbody tr:eq(0) .outcome:eq(0)', 'grey')
+    +unhighlight('tbody tr:eq(0) .outcome:eq(1)', 'white')
+    +highlight('tbody tr:eq(0) .outcome:eq(1)', 'grey')
+    +highlight('tbody tr:eq(1) .outcome:eq(1)', 'white')
+    .notes: :t
+      So this is the only nash equilibrium.
+
+
+
++slide_middle
+  +game_hawk_dove
+  .slide
+    +highlight('tbody tr:eq(0) .outcome:eq(1)', 'white')
+  .slide
+    +unhighlight('tbody tr:eq(0) .outcome:eq(1)', 'white')
+    +highlight('tbody tr:eq(1) .outcome:eq(0)', 'white')
+
+
+
++slide_middle
+  p.center Game Theory
+  p.em-above Aim: describe  
+    span.rational rational
+    span  behaviour in 
+    span.social-interaction social interactions
+    span .
+  p.em-above An action is rational 
+    br
+    span.step2 in a 
+      span.noncooperative noncooperative
+      span  game 
+    br
+    span  if it is a member of a nash equilibrium?
+
+
++slide_middle
+  .notes: :t
+    Why is the notion of a nash equilibrium so cool? Consider:
+  p How you act 
+    br
+    span is a function of two things:
+    br
+    span.indent your preferences
+    br
+    span.indent and your beliefs about how others will act.
+  .slide
+    p.em-above.indent Your beliefs about how others will act
+      br
+      span are a function of your knowledge of two things:
+      br
+      span.indent your beliefs about their preferences
+      br
+      span.indent and your beliefs about how they believe others will act.
+  .slide
+    p.em-above.indent
+      span.indent Your beliefs about how they believe others will act ...
+    .notes: :t
+      Consider all this complexity. 
+      The notion of a nash equilibrium cuts it out.
+      It allows us to identify rationally optimal actions in a way that doesn’t 
+      involve working through how these beliefs might be formed.
+      Or does it?

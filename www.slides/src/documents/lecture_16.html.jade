@@ -18,8 +18,16 @@ include ../../fragments/unit_mixins
 
 //- 
   TODO
-  restore explaination of magazine re-entries
-  add a question about why appealing to game theory counts as an explanation
+  
+  add a question about why appealing to game theory counts as an explanation ...
+  i.e. ask a question about how fitting game theory can explain (e.g. side botched lizards; 
+  prisoner’s dilemma explains cutthroat competiion in business;
+  there seems to be a sense in which if we see the pattern we have explained something
+  How does that work?)
+
+
+
+//- After this, can go to Preferences Interface problme if need more material
 
 +title_slide({document:document, images:images})
 
@@ -36,18 +44,55 @@ include ../../fragments/unit_mixins
       To exhibit \emph{instrumental rationality} is to select those actions which you expect to best satisfy your preferences.
       (See \citet[p.~4]{osborne:1994_game} for a concise and simple formal presentation.)
 
-+insert_unit({unit:'decision_theory_intro', title_slide:false, images:images, handout:true})
-
+    
++slide({bkg:'decision_theory/slide1.jpg'})
++slide({bkg:'decision_theory/slide2.jpg'})
++slide({bkg:'decision_theory/slide3.jpg'})
++slide({bkg:'decision_theory/slide4.jpg'})
++slide({bkg:'decision_theory/slide5.jpg'})
 
 +slide_middle
-  .notes: :t
-    A different interpretation of decision theory (normative).
   p.notes.handout.show: :t
     ‘the laws of decision theory (or any other theory of rationality) are not empirical generalisations 
     about all agents. What they do is define what is meant ... by being rational’
   .notes.handout.ctd \citep[p.~43]{Davidson:1987wc}
   p.right.grey-text: :t
     Davidson, 1987 p. 43
+
++slide_middle
+  .notes: :t
+    revealed preferences
+    Importance: transition from externally given criterion
+    Explains why this way of thinking about rationality is attractive
+  .hem-around-children 
+    p: :t
+      ‘the revealed preference revolution of the 1930s (Samuelson, 1938)
+    p.slide: :t
+      ... replaced the supposition that people are attempting to
+      optimize any externally given criterion (e.g., some psychologically 
+      interpretable motion of utility, perhaps to be quantified in units of pleasure and
+      pain). 
+    p.slide: :t
+      Rather, if economic agents are typically assumed to be subject to
+      relatively mild consistency conditions (e.g., such as transitivity ...), 
+      it can be
+      shown that there will exist a set of probabilities and utilities such that each
+      agent’s choices will be just “as if” that agent were maximizing expected
+      utility’
+    p.right.grey-text Chater, 2014
+
++slide_middle
+  .hem-around-children
+    p: :t
+      ‘Suppose that A and B are [outcomes] between which the agent is not indifferent, and that N is an ethically neutral condition [i.e. the agent is indifferent between N and not N]. 
+    p: :t
+      Then N has probability 1/2 if and only if the agent is indifferent between the following two gambles.
+    p.indent: :t
+      B if N, A if not 
+    p.indent: :t
+      A if N, B if not'
+  p.right.grey-text Jeffrey, 1983 p. 47
+
 
 +slide_middle
   .notes: :t
@@ -66,14 +111,18 @@ include ../../fragments/unit_mixins
     rather, your
     expected utility is whatever your preferences do maximize, if they obey the
     axioms. 
-  p.slide.notes.handout.ctd.show: :t
-    Hence, the injunction to maximize your expected utility can at most
-    mean that you should have preferences that can be represented as maximizing
-    some measure (or measures) of expected utility, which will then apply to you by
-    virtue of being maximized by your preferences’ 
-  .notes.handout.ctd \citep[p.~149]{Velleman:2000fq}
+  p.slide.notes.ctd.show
+    span Hence, 
+    span.noblur the injunction to maximize your expected utility can at most 
+    span.noblur mean that you should have preferences that can be represented as maximizing 
+    span.noblur some measure (or measures) of expected utility
+    span , which will then apply to you by 
+    span virtue of being maximized by your preferences’  
+  .notes.ctd \citep[p.~149]{Velleman:2000fq}
   p.right.grey-text: :t
     Velleman, 2000 p. 149
+  .slide
+    +blur('span:not(.noblur)')
 
 
 
@@ -109,27 +158,27 @@ include ../../fragments/unit_mixins
   .notes: :t
     This is important for the RPT interpretation, finding structure or patterns in behaviour.
     It also nicely explains what, if any, normative force the theory could have.
-  p.notes.handout.show: span: :t
+  p.notes.show: span: :t
     ‘As ordinarily understood, the prescription to maximize your expected utility
     presupposes that there is some measure of expected utility that applies to you
     and that your preferences are therefore obliged to maximize. 
-  p.slide.notes.handout.ctd.show: span: :t
+  p.notes.ctd.show: span: :t
     But in the context
     of decision  theory, the utility and probability functions that apply to you are constructed
     out of your preferences, and so your expected utility is not an independent
     measure that your preferences can be obliged to maximize; 
-  p.slide.notes.handout.ctd.show: span: :t
+  p.notes.ctd.show: span: :t
     rather, your
     expected utility is whatever your preferences do maximize, if they obey the
     axioms. 
-  p.slide.notes.handout.ctd.show
+  p.notes.ctd.show
     span Hence, 
     span.noblur the injunction to maximize your expected utility can at most 
     span.noblur mean that you should have preferences that can be represented as maximizing 
     span.noblur some measure (or measures) of expected utility
     span , which will then apply to you by 
     span virtue of being maximized by your preferences’  
-  .notes.handout.ctd \citep[p.~149]{Velleman:2000fq}
+  .notes.ctd \citep[p.~149]{Velleman:2000fq}
   p.right.grey-text: :t
     Velleman, 2000 p. 149
   +blur('span:not(.noblur)')
@@ -142,3 +191,72 @@ include ../../fragments/unit_mixins
   +right_half
     p Assume that despite multiple kinds of motivational state at the level of representations and algorithms, the system as a whole will satisfy the axioms governing preferences (e.g. transitivity).
 
++slide_middle
+  p.center Should we try to resolve or escape the dilemma?
+
++slide_middle
+  p.center Game Theory
+  p.em-above Aim: describe  
+    span.rational rational
+    span  behaviour in 
+    span.social-interaction social interactions
+    span .
+  .slide
+    p.em-above An action is rational 
+      br
+      span.step2 in a 
+        span.noncooperative noncooperative
+        span  game 
+      br
+      span  if it is a member of a nash equilibrium?
+  .slide
+    p.em-above Entails:
+    p.indent Resisting (‘cooperating’) is not rational in the Prisoner’s Dilemma.
+    p.indent Choosing ‘Low’ in Hi-Low is rational.
+
+
++slide_middle
+  p.hem-around: :t
+    ‘The problem with measuring risk preferences is not that measurement is
+    difficult and inaccurate; it is that there are no risk preferences to
+    measure – there is simply no answer to how, ‘deep down’, we wish to balance
+    risk and reward. 
+  p.slide.hem-around: :t
+    And, while we’re at it, the same goes for the way people
+    trade off present against future; how altruistic we are and to whom; how
+    far we display prejudice on gender, race, and so on... 
+  p.slide.hem-around: :t
+    ... there can be no method...that can conceivably
+    answer this question, not because our mental motives, desires and
+    preferences are impenetrable, but because they don‘t exist’
+  p.right.grey-text Chater 2008, p. 123--4
+  .notes.handout \citep[pp.~123--4]{chater:2018_mind}
+
+
++slide_middle({bkg:'sinervo_fig1.png'})
+  .notes: :t
+    If we give up on the claim about rationality,
+    can decision theory be used to explain patterns in other cases?
+    Why, for example, does this seem like an explanation?
+  .notes: :t
+    I couldn’t resist this one ... game theory (rock-paper-scissors specifically)
+    has been used to explain ‘evolutionary stable strategy model to a three-morph mating system in the side-blotched lizard’
+    \citep{sinervo:1996_rock}.
+    (The ones on the right resemble sexually receptive females morphologically; they are 
+    ‘sneakers’.)
+
++slide_middle
+  .notes: :t
+    If we give up on the claim about rationality,
+    can decision theory be used to explain patterns in other cases?
+    Why, for example, does this seem like an explanation?
+  .quote1
+    p.em-above.notes.handout.show
+      span On explanation: ‘Many events and outcomes prompt us to ask: Why did that happen?  
+      span [...] 
+      span For example, cutthroat competition 
+      span.business in business
+      span  is the result of the rivals being  
+      span trapped in a prisoners’ dilemma’ 
+    .notes.handout.ctd \citep[p.~36]{dixit:2014_games}.
+    p.right.grey-text Dixit et al, 2014 p. 36
