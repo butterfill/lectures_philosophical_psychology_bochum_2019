@@ -16,6 +16,11 @@ include ../../fragments/unit_mixins
 - var images = get_images('bali')
 
 
+//- 
+  TODO
+  restore explaination of magazine re-entries
+  add a question about why appealing to game theory counts as an explanation
+
 +title_slide({document:document, images:images})
 
 //- define instrumental rationality
@@ -99,32 +104,35 @@ include ../../fragments/unit_mixins
     p Assume that despite multiple kinds of motivational state at the level of representations and algorithms, the system as a whole will satisfy the axioms governing preferences (e.g. transitivity).
 
 
+
 +slide_middle
   .notes: :t
-    Also recall Velleman ...
-  p.notes.show: :t
+    This is important for the RPT interpretation, finding structure or patterns in behaviour.
+    It also nicely explains what, if any, normative force the theory could have.
+  p.notes.handout.show: span: :t
     ‘As ordinarily understood, the prescription to maximize your expected utility
     presupposes that there is some measure of expected utility that applies to you
     and that your preferences are therefore obliged to maximize. 
-  p.notes.ctd.show: :t
+  p.slide.notes.handout.ctd.show: span: :t
     But in the context
     of decision  theory, the utility and probability functions that apply to you are constructed
     out of your preferences, and so your expected utility is not an independent
     measure that your preferences can be obliged to maximize; 
-  p.notes.ctd.show: :t
+  p.slide.notes.handout.ctd.show: span: :t
     rather, your
     expected utility is whatever your preferences do maximize, if they obey the
     axioms. 
-  p.notes.ctd.show: :t
-    Hence, the injunction to maximize your expected utility can at most
-    mean that you should have preferences that can be represented as maximizing
-    some measure (or measures) of expected utility, which will then apply to you by
-    virtue of being maximized by your preferences’ 
-  .notes.ctd \citep[p.~149]{Velleman:2000fq}
+  p.slide.notes.handout.ctd.show
+    span Hence, 
+    span.noblur the injunction to maximize your expected utility can at most 
+    span.noblur mean that you should have preferences that can be represented as maximizing 
+    span.noblur some measure (or measures) of expected utility
+    span , which will then apply to you by 
+    span virtue of being maximized by your preferences’  
+  .notes.handout.ctd \citep[p.~149]{Velleman:2000fq}
   p.right.grey-text: :t
     Velleman, 2000 p. 149
-
-
+  +blur('span:not(.noblur)')
 
 +slide_rh_white
   +run_across
