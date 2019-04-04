@@ -59,22 +59,24 @@ include ../../../fragments/joint_action_mixins
       
 +slide_middle({bkg:'teleological_stance_diy.jpeg'})
   +hide('img.bkg',0)
-  p.center The Simple View
-  .slide
-    p.em-above.notes.show: :t
-      The principles comprising the Teleological Stance are things we know or believe, and we are
-      able to track goals by making inferences from these principles and our beliefs about the
-      means someone is pursuing.
-    .notes: :t
-      Infants and adults engaged in goal-tracking reason about 
-      to which outcome a means is the best available
-      in fundamentally the same way that you or I do when trying to work it out explicitly.
+  .sv
+    p.center The Simple View
+    .slide
+      p.em-above.notes.show: :t
+        The principles comprising the Teleological Stance are things we know or believe, and we are
+        able to track goals by making inferences from these principles and our beliefs about the
+        means someone is pursuing.
+      .notes: :t
+        Infants and adults engaged in goal-tracking reason about 
+        to which outcome a means is the best available
+        in fundamentally the same way that you or I do when trying to work it out explicitly.
   .slide
     +show('img.bkg')
-    .notes  [*TODO: illustrate with picture.]
-    
+    +blur('.sv', '5px')
   .slide.step2
     +blur('img.bkg','5px')
+    +unblur('.sv')
+  .slide
     .notes: :t
       Although I don’t think they have written about it in quite the terms I use,
       I take Gergely and Csibra to be endorsing the Simple View.
@@ -226,7 +228,8 @@ include ../../../fragments/joint_action_mixins
     This is what ensures that there is a correspondence between outcomes represented motorically in
     observing actions and the goals of those actions.
 
-
++slide_middle
+  p.center objection: direction of fit
 
 //- dual-process theory of goal tracking
 
