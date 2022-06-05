@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=http://localhost:8080/schema-project.json
+
+id: b48c8356-14ab-44c8-86da-40f9003f49cd
+title: "Philosophical Psychology: A Partial Survey of Puzzling Questions about Minds in Action"
+url: 
+  - https://philosophical-psychology-bochum.butterfill.com/
+git-remote:
+  - git@github.com:butterfill/lectures_philosophical_psychology_bochum_2019.git
+type: lectures
+location: Ruhr-Universität Bochum
+authors: 
+  - Stephen A. Butterfill
+year: 2018-19
+date: April, 2019
+status: completed
+notes:
+  - add parents
