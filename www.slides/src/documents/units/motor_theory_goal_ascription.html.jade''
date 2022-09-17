@@ -1,21 +1,9 @@
 ---cson
 layout: 'deck_unit'
-title: "The Motor Theory of Goal Tracking (recap)"
+title: "The Motor Theory of Goal Ascription"
 tags: []
 description: """
-  How do humas track the goals of others’ actions?
-  According to the Motor Theory of Goal Tracking, it is sometimes* by 
-  means of motor processes.
-  More carefully, the Motor Theory of Goal Tracking consists of these claims: 
-  (1) in action observation, possible outcomes of observed actions are represented motorically;
-  (2) these representations trigger motor processes much as if the observer were performing actions
-  directed to the outcomes;
-  (3) such processes generates predictions;
-  (4) a triggering representation is weakened if the predictions it generates fail.
-  The result is that, often enough, the only only outcomes to which the observed action is a means
-  are represented strongly.
   
-  (*‘sometimes’ because the Motor Theory is part of a dual-process account of goal-tracking.)
   """
 ---
 
@@ -23,9 +11,10 @@ include ../../../fragments/unit_mixins
 
 +slide_middle
   p.center
-    span.representational goal ascription
-    span  &nbsp; &nbsp;
-    span.functional.hide goal tracking
+    span.representational representational
+    span &nbsp; 
+    span.functional.hide  functional 
+    span  goal ascription
   .notes: :t
     Two forms of goal ascription, representational and functional (\citealp{gallese:2011_what}).
     In \emph{representational goal ascription}, three things must be represented: an action, an outcome and the relation between this outcome and the action in virtue of which the outcome is a goal of the action.
@@ -92,7 +81,7 @@ include ../../../fragments/unit_mixins
     motor abilities will interfere with the eye movements \citep{Costantini:2012fk}.
     These proactive eye movements also depend on planning-like processes; requiring the observer to
     perform actions incongruent with those she is observing can eliminate proactive eye movements
-    \citep{costantini:2012_does}. This, then, is further evidence for planning-like motor processes in
+    \citep{Costantini:2012uq}. This, then, is further evidence for planning-like motor processes in
     action observation.
   .notes: :t
     So observers represent outcomes motorically and these representations trigger planning-like processes

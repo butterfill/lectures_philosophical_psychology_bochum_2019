@@ -22,7 +22,7 @@ include ../../../fragments/joint_action_mixins
   fluent. Rather, such performances require motor representations.
   These representations are paradigmatically involved in preparing, executing and monitoring actions.%
   \footnote{%
-  See \citet{wolpert:1995internal, miall:1996_forward, jeannerod:1988_neural, zhang:2007_planning}.
+  See \citet{wolpert:1995internal, miall:1996_forward, jeannerod:1998nbo, zhang:2007_planning}.
   Note that motor representations sometimes occur in an agent who has prepared an action and is required (as it turns out) not to perform it: although she has prevented herself from acting, motor representations specifying the action persist, perhaps because they are necessary for monitoring whether prevention has succeeded \citep{bonini:2014_ventral}.
   }
   But they also live a double life. Motor representations concerning a particular type of action are

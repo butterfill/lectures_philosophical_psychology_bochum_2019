@@ -220,7 +220,7 @@ include ../../../fragments/origins_mixins
     .notes: :t
       We know that 18-month-olds’ helping behaviours are sometimes track 
       facts about what another believes     
-      (\citealp{Buttelmann:2009gy}; but see \citealp{crivello:2017_infants,poulin-dubois:_probing}).
+      (\citealp{Buttelmann:2009gy}; but see \citealp{crivello:2017_helping,poulin-dubois:_probing}).
   
   +slide({bkg:'dual_process_general/slide20.jpg'})
     p.source Buttelmann et al, 2009; Maymon et al, (pilot); Fizke et al, 2017
@@ -271,7 +271,7 @@ include ../../../fragments/origins_mixins
           .notes: :t
             We know that 18-month-olds’ helping behaviours are sometimes track 
             facts about what another believes     
-            (\citealp{Buttelmann:2009gy}; but see \citealp{crivello:2017_infants,poulin-dubois:_probing}).
+            (\citealp{Buttelmann:2009gy}; but see \citealp{crivello:2017_helping,poulin-dubois:_probing}).
         .slide
           p ... and we can distinguish two belief-tracking processes in adult helping 
             span.grey-text (Maymon et al, pilot)
